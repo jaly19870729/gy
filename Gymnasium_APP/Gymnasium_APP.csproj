@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D80D27E-B031-4554-B970-86082AC2F5DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gymnasium_APP</RootNamespace>
+    <AssemblyName>Gymnasium_APP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ico1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gymnasium_APP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="IrisSkin, Version=2006.3.22.45, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\IrisSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackCardFrom\BackCardDg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackCardFrom\BackCardDg.Designer.cs">
+      <DependentUpon>BackCardDg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackCardFrom\HasBackCardFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackCardFrom\HasBackCardFrm.Designer.cs">
+      <DependentUpon>HasBackCardFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackCardFrom\HasBackCardCastFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackCardFrom\HasBackCardCastFrm.Designer.cs">
+      <DependentUpon>HasBackCardCastFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackCardFrom\NoBackCardFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackCardFrom\NoBackCardFrm.Designer.cs">
+      <DependentUpon>NoBackCardFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackCardFrom\NoBackCardCastFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackCardFrom\NoBackCardCastFrm.Designer.cs">
+      <DependentUpon>NoBackCardCastFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardType\AddCardTypeInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardType\AddCardTypeInfoForm.Designer.cs">
+      <DependentUpon>AddCardTypeInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardType\UpdateCardTypeInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardType\UpdateCardTypeInfoForm.Designer.cs">
+      <DependentUpon>UpdateCardTypeInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CunsumeFrom\CunsumeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CunsumeFrom\CunsumeFrm.Designer.cs">
+      <DependentUpon>CunsumeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionFrom\ExtensionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFrom\ExtensionFrm.Designer.cs">
+      <DependentUpon>ExtensionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionFrom\AllExtensionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFrom\AllExtensionFrm.Designer.cs">
+      <DependentUpon>AllExtensionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LossFrom\LossFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LossFrom\LossFrm.Designer.cs">
+      <DependentUpon>LossFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LossFrom\LossCastFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LossFrom\LossCastFrm.Designer.cs">
+      <DependentUpon>LossCastFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberForm\MemberBusinessType.cs" />
+    <Compile Include="MemberForm\MemberEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberForm\MemberEditFrm.Designer.cs">
+      <DependentUpon>MemberEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleForm\AddRoleInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleForm\AddRoleInfoForm.Designer.cs">
+      <DependentUpon>AddRoleInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleForm\UpdateRoleInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleForm\UpdateRoleInfoForm.Designer.cs">
+      <DependentUpon>UpdateRoleInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellCardForm\SellCardCastFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellCardForm\SellCardCastFrm.Designer.cs">
+      <DependentUpon>SellCardCastFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellCard\AddAndUpdateSellCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellCard\AddAndUpdateSellCardForm.Designer.cs">
+      <DependentUpon>AddAndUpdateSellCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwipeCardFrom\SwipeCardFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SwipeCardFrom\SwipeCardFrm.Designer.cs">
+      <DependentUpon>SwipeCardFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Page.Designer.cs">
+      <DependentUpon>UC_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoForm\AddUserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoForm\AddUserInfoForm.Designer.cs">
+      <DependentUpon>AddUserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoForm\UpdateUserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoForm\UpdateUserInfoForm.Designer.cs">
+      <DependentUpon>UpdateUserInfoForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BackCardFrom\BackCardDg.resx">
+      <DependentUpon>BackCardDg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackCardFrom\HasBackCardFrm.resx">
+      <DependentUpon>HasBackCardFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackCardFrom\HasBackCardCastFrm.resx">
+      <DependentUpon>HasBackCardCastFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackCardFrom\NoBackCardFrm.resx">
+      <DependentUpon>NoBackCardFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackCardFrom\NoBackCardCastFrm.resx">
+      <DependentUpon>NoBackCardCastFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardType\AddCardTypeInfoForm.resx">
+      <DependentUpon>AddCardTypeInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardType\UpdateCardTypeInfoForm.resx">
+      <DependentUpon>UpdateCardTypeInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CunsumeFrom\CunsumeFrm.resx">
+      <DependentUpon>CunsumeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFrom\ExtensionFrm.resx">
+      <DependentUpon>ExtensionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFrom\AllExtensionFrm.resx">
+      <DependentUpon>AllExtensionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LossFrom\LossFrm.resx">
+      <DependentUpon>LossFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LossFrom\LossCastFrm.resx">
+      <DependentUpon>LossCastFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberForm\MemberEditFrm.resx">
+      <DependentUpon>MemberEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoleForm\AddRoleInfoForm.resx">
+      <DependentUpon>AddRoleInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleForm\UpdateRoleInfoForm.resx">
+      <DependentUpon>UpdateRoleInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellCardForm\SellCardCastFrm.resx">
+      <DependentUpon>SellCardCastFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellCard\AddAndUpdateSellCardForm.resx">
+      <DependentUpon>AddAndUpdateSellCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwipeCardFrom\SwipeCardFrm.resx">
+      <DependentUpon>SwipeCardFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Page.resx">
+      <DependentUpon>UC_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoForm\AddUserInfoForm.resx">
+      <DependentUpon>AddUserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoForm\UpdateUserInfoForm.resx">
+      <DependentUpon>UpdateUserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ico1.ico" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\1305774588258.png" />
+    <None Include="Resources\3215.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\camera.png" />
+    <None Include="Resources\Ico1.ico" />
+    <None Include="Resources\200887847395377801.png" />
+    <None Include="Resources\bj2.png" />
+    <None Include="Resources\Ioc.ico" />
+    <None Include="Resources\bj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{BC98770E-9AAB-44CB-9FE6-F450C2169D28}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{94837B93-0811-4D7B-BB84-D8DF0B9F8C99}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
