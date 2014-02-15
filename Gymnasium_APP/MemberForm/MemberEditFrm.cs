@@ -8,6 +8,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Gymnasium_APP.BLL;
+using Gymnasium_APP.Model;
 using Gymnasium_APP.SellCardForm;
 
 namespace Gymnasium_APP.MemberForm
@@ -15,6 +17,7 @@ namespace Gymnasium_APP.MemberForm
     public partial class MemberEditFrm : Form
     {
         private MemberBusinessType businessType;
+        private MemberInfoManager memberInfoManager=new MemberInfoManager();
         private String formTitle;
         /// <summary>
         /// 设置窗体标题
@@ -129,7 +132,54 @@ namespace Gymnasium_APP.MemberForm
             //    this.leftCountTxt.Enabled = true;
             //}
         }
+        
+        /// <summary>
+        /// 查看数据
+        /// </summary>
+        /// <param name="swipingInfoModel"></param>
+        public void DetialModel(MemberInfoModel memberInfoModel)
+        {
 
+            this.addTimeTp.Text = memberInfoModel.AddTime;
+            this.addTimeTp.Enabled = false;
+            this.addressTxt.Text = memberInfoModel.Unit;
+            this.addressTxt.Enabled = false;
+            this.birthdayDp.Text = memberInfoModel.Birthday;
+            this.birthdayDp.Enabled = false;
+            this.bsTitleLb.Text = "查看会员信息";
+            this.btn_OK.Visible = false;
+            this.cardTypeCbx.Text = memberInfoModel.CardType;
+            this.cardTypeCbx.Enabled = false;
+            this.emailTxt.Text = memberInfoModel.Mail;
+            this.emailTxt.Enabled = false;
+            this.endTimeTp.Text = memberInfoModel.EndTime;
+            this.endTimeTp.Enabled = false;
+            this.idNoTxt.Text = memberInfoModel.IDCard;
+            this.idNoTxt.Enabled = false;
+            this.idTypeCbx.Text = memberInfoModel.IDCardType;
+            this.idTypeCbx.Enabled = false;
+            this.leftCountTxt.Text = memberInfoModel.Count;
+            this.leftCountTxt.Enabled = false;
+            this.memberCardNoTxt.Text = memberInfoModel.CardID;
+            this.memberCardNoTxt.Enabled = false;
+            this.memberNameTxt.Text = memberInfoModel.Name;
+            this.memberNameTxt.Enabled = false;
+            this.memberSexCbx.Text = memberInfoModel.Sex;
+
+            this.memberSexCbx.Enabled = false;
+            this.phoneTxt.Text = memberInfoModel.Phone;
+            this.phoneTxt.Enabled = false;
+            if (memberInfoModel.Photo != null && memberInfoModel.Photo.Length > 0)
+            {
+                this.pictureBox1.Image = ByteToImg(memberInfoModel.Photo);
+            }
+            
+            this.pictureBox1.Enabled = false;
+            this.startTimeTp.Text = memberInfoModel.StartTime;
+            this.startTimeTp.Enabled = false;
+            
+
+        }
         private void submitBt_Click(object sender, EventArgs e)
         {
             

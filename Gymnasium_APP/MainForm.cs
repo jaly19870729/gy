@@ -38,6 +38,8 @@ namespace Gymnasium_APP
         }
         #endregion
 
+        private MemberInfoManager memberInfoManager=new MemberInfoManager();
+
         public static string userName = string.Empty;
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -940,6 +942,17 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             new SwipeCardFrm().Show();
         }
         #endregion
+
+        private void dgv_Main_Member_Manager_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            object id = this.dgv_Main_Member_Manager.Rows[e.RowIndex].Cells["dgv_Main_Member_ID"].Value;
+            
+            MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(id));
+            MemberEditFrm memberEditFrm=new MemberEditFrm();
+            memberEditFrm.DetialModel(memberInfoModel);
+            memberEditFrm.Show();
+
+        }
 
      
 

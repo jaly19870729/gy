@@ -257,9 +257,9 @@
             // 
             // tlp_Main
             // 
-            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlp_Main.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tlp_Main.ColumnCount = 2;
             this.tlp_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
@@ -278,9 +278,9 @@
             // 
             // pl_Mind
             // 
-            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pl_Mind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pl_Mind.Controls.Add(this.tabc_Mian);
             this.pl_Mind.Controls.Add(this.tabc_SystemManager);
@@ -292,9 +292,9 @@
             // 
             // tabc_Mian
             // 
-            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_Mian.Controls.Add(this.tabPage1);
             this.tabc_Mian.Controls.Add(this.tab_SellCast);
             this.tabc_Mian.Controls.Add(this.tabPage3);
@@ -319,9 +319,9 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Controls.Add(this.uC_Page_Main_Member);
             this.panel4.Controls.Add(this.btn_Main_Member_Select);
@@ -435,9 +435,9 @@
             // 
             this.dgv_Main_Member_Manager.AllowUserToAddRows = false;
             this.dgv_Main_Member_Manager.AllowUserToResizeRows = false;
-            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Main_Member_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Main_Member_Manager.ColumnHeadersHeight = 25;
             this.dgv_Main_Member_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -450,13 +450,16 @@
             this.dgv_Main_Member_Desc,
             this.dgv_Main_Member_MemberAddTime});
             this.dgv_Main_Member_Manager.Location = new System.Drawing.Point(3, 100);
+            this.dgv_Main_Member_Manager.MultiSelect = false;
             this.dgv_Main_Member_Manager.Name = "dgv_Main_Member_Manager";
+            this.dgv_Main_Member_Manager.ReadOnly = true;
             this.dgv_Main_Member_Manager.RowHeadersVisible = false;
             this.dgv_Main_Member_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Main_Member_Manager.RowTemplate.Height = 23;
             this.dgv_Main_Member_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(838, 489);
             this.dgv_Main_Member_Manager.TabIndex = 215;
+            this.dgv_Main_Member_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Main_Member_Manager_CellDoubleClick);
             // 
             // dgv_Main_Member_cb
             // 
@@ -466,6 +469,7 @@
             this.dgv_Main_Member_cb.HeaderText = "选择";
             this.dgv_Main_Member_cb.MinimumWidth = 60;
             this.dgv_Main_Member_cb.Name = "dgv_Main_Member_cb";
+            this.dgv_Main_Member_cb.ReadOnly = true;
             this.dgv_Main_Member_cb.Visible = false;
             this.dgv_Main_Member_cb.Width = 60;
             // 
@@ -473,6 +477,7 @@
             // 
             this.dgv_Main_Member_MemberID.HeaderText = "MemberID";
             this.dgv_Main_Member_MemberID.Name = "dgv_Main_Member_MemberID";
+            this.dgv_Main_Member_MemberID.ReadOnly = true;
             this.dgv_Main_Member_MemberID.Visible = false;
             // 
             // dgv_Main_Member_ID
@@ -483,6 +488,7 @@
             this.dgv_Main_Member_ID.HeaderText = "序号";
             this.dgv_Main_Member_ID.MinimumWidth = 50;
             this.dgv_Main_Member_ID.Name = "dgv_Main_Member_ID";
+            this.dgv_Main_Member_ID.ReadOnly = true;
             this.dgv_Main_Member_ID.Width = 65;
             // 
             // dgv_Main_Member_CardID
@@ -490,6 +496,7 @@
             this.dgv_Main_Member_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dgv_Main_Member_CardID.HeaderText = "卡号";
             this.dgv_Main_Member_CardID.Name = "dgv_Main_Member_CardID";
+            this.dgv_Main_Member_CardID.ReadOnly = true;
             this.dgv_Main_Member_CardID.Width = 65;
             // 
             // dgv_Main_Member_MemberCardType
@@ -497,6 +504,7 @@
             this.dgv_Main_Member_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dgv_Main_Member_MemberCardType.HeaderText = "卡类型";
             this.dgv_Main_Member_MemberCardType.Name = "dgv_Main_Member_MemberCardType";
+            this.dgv_Main_Member_MemberCardType.ReadOnly = true;
             this.dgv_Main_Member_MemberCardType.Width = 81;
             // 
             // dgv_Main_Member_MemberName
@@ -506,6 +514,7 @@
             this.dgv_Main_Member_MemberName.HeaderText = "姓名";
             this.dgv_Main_Member_MemberName.MinimumWidth = 80;
             this.dgv_Main_Member_MemberName.Name = "dgv_Main_Member_MemberName";
+            this.dgv_Main_Member_MemberName.ReadOnly = true;
             this.dgv_Main_Member_MemberName.Width = 80;
             // 
             // dgv_Main_Member_Desc
@@ -513,6 +522,7 @@
             this.dgv_Main_Member_Desc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dgv_Main_Member_Desc.HeaderText = "描述";
             this.dgv_Main_Member_Desc.Name = "dgv_Main_Member_Desc";
+            this.dgv_Main_Member_Desc.ReadOnly = true;
             this.dgv_Main_Member_Desc.Width = 65;
             // 
             // dgv_Main_Member_MemberAddTime
@@ -520,6 +530,7 @@
             this.dgv_Main_Member_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgv_Main_Member_MemberAddTime.HeaderText = "刷卡时间";
             this.dgv_Main_Member_MemberAddTime.Name = "dgv_Main_Member_MemberAddTime";
+            this.dgv_Main_Member_MemberAddTime.ReadOnly = true;
             // 
             // tab_SellCast
             // 
@@ -534,9 +545,9 @@
             // 
             // panel11
             // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel11.Controls.Add(this.uC_Page_Main_SellCast);
             this.panel11.Controls.Add(this.btn_Main_SellCast_Select);
@@ -652,9 +663,9 @@
             // 
             this.dgv_Main_SellCast_Manager.AllowUserToAddRows = false;
             this.dgv_Main_SellCast_Manager.AllowUserToResizeRows = false;
-            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Main_SellCast_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Main_SellCast_Manager.ColumnHeadersHeight = 25;
             this.dgv_Main_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -766,9 +777,9 @@
             // 
             // tabc_SystemManager
             // 
-            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_SystemManager.Controls.Add(this.tp_UserManager);
             this.tabc_SystemManager.Controls.Add(this.tp_PrivilegeManager);
             this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
@@ -799,9 +810,9 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.btn_UserManager_Update);
             this.panel3.Controls.Add(this.btn_UserManager_Delete);
@@ -1081,9 +1092,9 @@
             // 
             this.dgv_UserManager.AllowUserToAddRows = false;
             this.dgv_UserManager.AllowUserToResizeRows = false;
-            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_UserManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_UserManager.ColumnHeadersHeight = 25;
             this.dgv_UserManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1191,9 +1202,9 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
@@ -1223,9 +1234,9 @@
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.Controls.Add(this.uC_Page_RoleManager);
             this.panel8.Controls.Add(this.btn_RoleManager_Delete);
@@ -1265,9 +1276,9 @@
             // 
             this.dgv_RoleManager.AllowUserToAddRows = false;
             this.dgv_RoleManager.AllowUserToResizeRows = false;
-            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_RoleManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_RoleManager.ColumnHeadersHeight = 25;
             this.dgv_RoleManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1339,9 +1350,9 @@
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel9.Controls.Add(this.uC_Page_CardTypeManager);
             this.panel9.Controls.Add(this.btn_Delete_CardTypeManager);
@@ -1381,9 +1392,9 @@
             // 
             this.dgv_CardTypeManager.AllowUserToAddRows = false;
             this.dgv_CardTypeManager.AllowUserToResizeRows = false;
-            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_CardTypeManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_CardTypeManager.ColumnHeadersHeight = 25;
             this.dgv_CardTypeManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1487,9 +1498,9 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(0, 3);
@@ -1499,9 +1510,9 @@
             // 
             // panel7
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.Controls.Add(this.uC_Page_SystemLog);
             this.panel7.Controls.Add(this.cb_SystemLog);
@@ -1658,9 +1669,9 @@
             // 
             this.dgv_SystemLogManager.AllowUserToAddRows = false;
             this.dgv_SystemLogManager.AllowUserToResizeRows = false;
-            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_SystemLogManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_SystemLogManager.ColumnHeadersHeight = 25;
             this.dgv_SystemLogManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1780,9 +1791,9 @@
             // 
             // tbc_Statistics
             // 
-            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbc_Statistics.Controls.Add(this.tabPage4);
             this.tbc_Statistics.Controls.Add(this.tabPage5);
             this.tbc_Statistics.Font = new System.Drawing.Font("宋体", 12F);
@@ -1805,9 +1816,9 @@
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.uC_Page_Statistics_Member);
             this.panel10.Controls.Add(this.btn_Statistics_Member_Select);
@@ -1940,9 +1951,9 @@
             // 
             this.dgv_Statistics_MemberManager.AllowUserToAddRows = false;
             this.dgv_Statistics_MemberManager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_MemberManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_MemberManager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_MemberManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2095,9 +2106,9 @@
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
@@ -2108,9 +2119,9 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.btn_MainPage);
             this.flowLayoutPanel1.Controls.Add(this.btn_Sell);
             this.flowLayoutPanel1.Controls.Add(this.btn_Continue);
@@ -2261,9 +2272,9 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.tlp_Main.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
@@ -2274,9 +2285,9 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2304,9 +2315,9 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
@@ -2321,9 +2332,9 @@
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Exit.Location = new System.Drawing.Point(138, 3);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(68, 35);
