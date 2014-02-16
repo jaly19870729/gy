@@ -945,12 +945,17 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
 
         private void dgv_Main_Member_Manager_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            object id = this.dgv_Main_Member_Manager.Rows[e.RowIndex].Cells["dgv_Main_Member_ID"].Value;
+            object id = this.dgv_Main_Member_Manager.Rows[e.RowIndex].Cells["dgv_Main_Member_CardID"].Value;
             
-            MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(id));
-            MemberEditFrm memberEditFrm=new MemberEditFrm();
-            memberEditFrm.DetialModel(memberInfoModel);
-            memberEditFrm.Show();
+            DataSet dataSet=memberInfoManager.GetList("CardID='"+id+"'");
+            AddAndUpdateSellCardForm addAndUpdateSellCardForm=new AddAndUpdateSellCardForm("查看会员详情");
+            if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count>0)
+            {
+                MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
+                addAndUpdateSellCardForm.DetialModel(memberInfoModel);
+                addAndUpdateSellCardForm.Show();
+            }
+            
 
         }
 

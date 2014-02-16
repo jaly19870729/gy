@@ -160,7 +160,7 @@ namespace Gymnasium_APP.SellCard
                 model.Count = txt_Count.Text.Trim();
                 model.Unit = txt_Unit.Text.Trim();
                 model.AddTime = CommTools.GetDateFormatStrot(DateTime.Now);
-                if (buffer == null)
+                if (buffer != null)
                 {
                     Image image = this.pictureBox1.Image;
                     model.Photo = CommTools.GetByteFromImage(this.pictureBox1);
@@ -201,7 +201,78 @@ namespace Gymnasium_APP.SellCard
 
             }
         }
+        /// <summary>
+        /// 查看数据
+        /// </summary>
+        /// <param name="swipingInfoModel"></param>
+        public void DetialModel(MemberInfoModel memberInfoModel)
+        {
 
+            this.dtp_AddTime.Text = memberInfoModel.AddTime;
+            List<Control> filter = new List<Control>();
+           // filter.Add(this.cardTypeCbx);
+            DisableControls(filter);
+            //this.addTimeTp.Enabled = false;
+            this.txt_Unit.Text = memberInfoModel.Unit;
+            //this.addressTxt.Enabled = false;
+            this.dtp_Birthday.Text = memberInfoModel.Birthday;
+            //this.birthdayDp.Enabled = false;
+            this.label1.Text = "查看会员信息";
+            this.btn_OK.Visible = false;
+            this.cmb_CardType.Items.Add(memberInfoModel.CardType);
+            this.cmb_CardType.SelectedItem = memberInfoModel.CardType;
+            // this.cardTypeCbx.Text = memberInfoModel.CardType;
+            //this.cardTypeCbx.Enabled = false;
+            this.txt_Mail.Text = memberInfoModel.Mail;
+            //this.emailTxt.Enabled = false;
+            this.dtp_EndTime.Text = memberInfoModel.EndTime;
+            //this.endTimeTp.Enabled = false;
+            this.txt_IDCard.Text = memberInfoModel.IDCard;
+            // this.idNoTxt.Enabled = false;
+            this.cmb_IDType.Text = memberInfoModel.IDCardType;
+            //this.idTypeCbx.Enabled = false;
+            this.txt_Count.Text = memberInfoModel.Count;
+            //this.leftCountTxt.Enabled = false;
+            this.txt_CardNumber.Text = memberInfoModel.CardID;
+            // this.memberCardNoTxt.Enabled = false;
+            this.txt_Name.Text = memberInfoModel.Name;
+            //this.memberNameTxt.Enabled = false;
+            this.cmb_Sex.Text = memberInfoModel.Sex;
+
+            // this.memberSexCbx.Enabled = false;
+            this.txt_Phone.Text = memberInfoModel.Phone;
+            // this.phoneTxt.Enabled = false;
+            if (memberInfoModel.Photo != null && memberInfoModel.Photo.Length > 0)
+            {
+                this.pictureBox1.Image = CommTools.ByteToImg(memberInfoModel.Photo);
+            }
+
+            // this.pictureBox1.Enabled = false;
+            this.dtp_StartTime.Text = memberInfoModel.StartTime;
+            // this.startTimeTp.Enabled = false;
+
+
+        }
+        private void DisableControls(List<Control> filter)
+        {
+            foreach (Control ctr in this.tableLayoutPanel2.Controls)
+            {
+                if (filter != null && filter.Contains(ctr))
+                {
+                    ctr.Enabled = true;
+                }
+                else if (ctr.GetType().Equals(typeof(TextBox)) || ctr.GetType().Equals(typeof(DateTimePicker)) ||
+                     ctr.GetType().Equals(typeof(ComboBox)))
+                {
+                    ctr.Enabled = false;
+                }
+                else
+                {
+                    ctr.Enabled = true;
+                }
+
+            }
+        }
         private void btn_Abolish_Click(object sender, EventArgs e)
         {
             this.Close();

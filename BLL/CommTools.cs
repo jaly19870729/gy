@@ -43,7 +43,37 @@ namespace Gymnasium_APP.BLL
         }
         #endregion
 
+        /// <summary>
+        /// 将byte[]数组转换成Image
+        /// </summary>
+        /// <param name="btImage">byte[]</param>
+        /// <returns>Image img</returns>
+        public static Image ByteToImg(byte[] btImage)
+        {
+            MemoryStream memStream = new MemoryStream();
+            //Stream memStream = null;
+            memStream.Write(btImage, 0, btImage.Length);
+            memStream.Position = 0;
+            memStream.Seek(0, SeekOrigin.Begin);
+            //Bitmap bmp = new Bitmap(memStream, true);
+            Image img;
+            try
+            {
+                img = Image.FromStream(memStream, true);
+                memStream.Close();
+                //img = new Bitmap(memStream);
 
+            }
+            catch (Exception ex)
+            {
+                img = null;
+            }
+            finally
+            {
+                //memStream.Close();
+            }
+            return img;
+        }
 
         /// <summary>
         /// 图片转化为二进制
