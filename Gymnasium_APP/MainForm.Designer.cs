@@ -682,6 +682,7 @@
             this.dgv_Main_SellCast_AddTime});
             this.dgv_Main_SellCast_Manager.Location = new System.Drawing.Point(3, 100);
             this.dgv_Main_SellCast_Manager.Name = "dgv_Main_SellCast_Manager";
+            this.dgv_Main_SellCast_Manager.ReadOnly = true;
             this.dgv_Main_SellCast_Manager.RowHeadersVisible = false;
             this.dgv_Main_SellCast_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Main_SellCast_Manager.RowTemplate.Height = 23;
@@ -697,6 +698,7 @@
             this.dgv_Main_SellCast_cb.HeaderText = "选择";
             this.dgv_Main_SellCast_cb.MinimumWidth = 60;
             this.dgv_Main_SellCast_cb.Name = "dgv_Main_SellCast_cb";
+            this.dgv_Main_SellCast_cb.ReadOnly = true;
             this.dgv_Main_SellCast_cb.Visible = false;
             this.dgv_Main_SellCast_cb.Width = 60;
             // 
@@ -704,6 +706,7 @@
             // 
             this.dgv_Main_SellCast_CastID.HeaderText = "CastID";
             this.dgv_Main_SellCast_CastID.Name = "dgv_Main_SellCast_CastID";
+            this.dgv_Main_SellCast_CastID.ReadOnly = true;
             this.dgv_Main_SellCast_CastID.Visible = false;
             // 
             // dgv_Main_SellCast_ID
@@ -714,6 +717,7 @@
             this.dgv_Main_SellCast_ID.HeaderText = "序号";
             this.dgv_Main_SellCast_ID.MinimumWidth = 50;
             this.dgv_Main_SellCast_ID.Name = "dgv_Main_SellCast_ID";
+            this.dgv_Main_SellCast_ID.ReadOnly = true;
             this.dgv_Main_SellCast_ID.Width = 65;
             // 
             // dgv_Main_SellCast_TypeName
@@ -721,6 +725,7 @@
             this.dgv_Main_SellCast_TypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dgv_Main_SellCast_TypeName.HeaderText = "消费类型";
             this.dgv_Main_SellCast_TypeName.Name = "dgv_Main_SellCast_TypeName";
+            this.dgv_Main_SellCast_TypeName.ReadOnly = true;
             this.dgv_Main_SellCast_TypeName.Width = 97;
             // 
             // dgv_Main_SellCast_Prices
@@ -730,6 +735,7 @@
             this.dgv_Main_SellCast_Prices.HeaderText = "单价";
             this.dgv_Main_SellCast_Prices.MinimumWidth = 80;
             this.dgv_Main_SellCast_Prices.Name = "dgv_Main_SellCast_Prices";
+            this.dgv_Main_SellCast_Prices.ReadOnly = true;
             this.dgv_Main_SellCast_Prices.Width = 80;
             // 
             // dgv_Main_SellCast_Peoples
@@ -737,33 +743,39 @@
             this.dgv_Main_SellCast_Peoples.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dgv_Main_SellCast_Peoples.HeaderText = "人数";
             this.dgv_Main_SellCast_Peoples.Name = "dgv_Main_SellCast_Peoples";
+            this.dgv_Main_SellCast_Peoples.ReadOnly = true;
             this.dgv_Main_SellCast_Peoples.Width = 65;
             // 
             // dgv_Main_SellCast_PriceAmount
             // 
             this.dgv_Main_SellCast_PriceAmount.HeaderText = "总额";
             this.dgv_Main_SellCast_PriceAmount.Name = "dgv_Main_SellCast_PriceAmount";
+            this.dgv_Main_SellCast_PriceAmount.ReadOnly = true;
             // 
             // dgv_Main_SellCast_PaymentAmount
             // 
             this.dgv_Main_SellCast_PaymentAmount.HeaderText = "实收金额";
             this.dgv_Main_SellCast_PaymentAmount.Name = "dgv_Main_SellCast_PaymentAmount";
+            this.dgv_Main_SellCast_PaymentAmount.ReadOnly = true;
             // 
             // dgv_Main_SellCast_ChangeAmount
             // 
             this.dgv_Main_SellCast_ChangeAmount.HeaderText = "找零金额";
             this.dgv_Main_SellCast_ChangeAmount.Name = "dgv_Main_SellCast_ChangeAmount";
+            this.dgv_Main_SellCast_ChangeAmount.ReadOnly = true;
             // 
             // dgv_Main_SellCast_Desc
             // 
             this.dgv_Main_SellCast_Desc.HeaderText = "描述";
             this.dgv_Main_SellCast_Desc.Name = "dgv_Main_SellCast_Desc";
+            this.dgv_Main_SellCast_Desc.ReadOnly = true;
             // 
             // dgv_Main_SellCast_AddTime
             // 
             this.dgv_Main_SellCast_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgv_Main_SellCast_AddTime.HeaderText = "消费时间";
             this.dgv_Main_SellCast_AddTime.Name = "dgv_Main_SellCast_AddTime";
+            this.dgv_Main_SellCast_AddTime.ReadOnly = true;
             // 
             // tabPage3
             // 
@@ -1971,6 +1983,7 @@
             this.dgv_StatisticsMember_MemberAddTime});
             this.dgv_Statistics_MemberManager.Location = new System.Drawing.Point(3, 100);
             this.dgv_Statistics_MemberManager.Name = "dgv_Statistics_MemberManager";
+            this.dgv_Statistics_MemberManager.ReadOnly = true;
             this.dgv_Statistics_MemberManager.RowHeadersVisible = false;
             this.dgv_Statistics_MemberManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Statistics_MemberManager.RowTemplate.Height = 23;
@@ -1978,12 +1991,14 @@
             this.dgv_Statistics_MemberManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(843, 489);
             this.dgv_Statistics_MemberManager.TabIndex = 215;
+            this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
             // 
             // dgv_StatisticsMember_MemberID
             // 
             this.dgv_StatisticsMember_MemberID.Frozen = true;
             this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
             this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
+            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
             this.dgv_StatisticsMember_MemberID.Visible = false;
             // 
             // dgv_StatisticsMember_ID
@@ -1994,6 +2009,7 @@
             this.dgv_StatisticsMember_ID.HeaderText = "序号";
             this.dgv_StatisticsMember_ID.MinimumWidth = 50;
             this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
+            this.dgv_StatisticsMember_ID.ReadOnly = true;
             this.dgv_StatisticsMember_ID.Width = 65;
             // 
             // dgv_StatisticsMember_CardID
@@ -2002,6 +2018,7 @@
             this.dgv_StatisticsMember_CardID.Frozen = true;
             this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
             this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
+            this.dgv_StatisticsMember_CardID.ReadOnly = true;
             this.dgv_StatisticsMember_CardID.Width = 65;
             // 
             // dgv_StatisticsMember_MemberName
@@ -2012,6 +2029,7 @@
             this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
             this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
             this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
+            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
             this.dgv_StatisticsMember_MemberName.Width = 80;
             // 
             // dgv_StatisticsMember_MemberPhone
@@ -2021,6 +2039,7 @@
             this.dgv_StatisticsMember_MemberPhone.Frozen = true;
             this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
             this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
+            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
             this.dgv_StatisticsMember_MemberPhone.Width = 65;
             // 
             // dgv_StatisticsMember_MemberSex
@@ -2030,6 +2049,7 @@
             this.dgv_StatisticsMember_MemberSex.Frozen = true;
             this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
             this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
+            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
             this.dgv_StatisticsMember_MemberSex.Width = 65;
             // 
             // dgv_StatisticsMember_MemberCardType
@@ -2039,6 +2059,7 @@
             this.dgv_StatisticsMember_MemberCardType.Frozen = true;
             this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
             this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
+            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
             this.dgv_StatisticsMember_MemberCardType.Width = 81;
             // 
             // dgv_StatisticsMember_MemberStartTime
@@ -2048,6 +2069,7 @@
             this.dgv_StatisticsMember_MemberStartTime.Frozen = true;
             this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
             this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
+            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
             this.dgv_StatisticsMember_MemberStartTime.Width = 97;
             // 
             // dgv_StatisticsMember_MemberEndTime
@@ -2057,6 +2079,7 @@
             this.dgv_StatisticsMember_MemberEndTime.Frozen = true;
             this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
             this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
+            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
             this.dgv_StatisticsMember_MemberEndTime.Width = 97;
             // 
             // dgv_StatisticsMember_MemberCount
@@ -2066,6 +2089,7 @@
             this.dgv_StatisticsMember_MemberCount.Frozen = true;
             this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
             this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
+            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
             this.dgv_StatisticsMember_MemberCount.Width = 97;
             // 
             // dgv_StatisticsMember_MemberAddUserName
@@ -2074,6 +2098,7 @@
             this.dgv_StatisticsMember_MemberAddUserName.Frozen = true;
             this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
             this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
+            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
             this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
             // 
             // dgv_StatisticsMember_MemberAddTime
@@ -2081,6 +2106,7 @@
             this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
             this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
+            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
             // 
             // btn_Statistics_Member_Update
             // 

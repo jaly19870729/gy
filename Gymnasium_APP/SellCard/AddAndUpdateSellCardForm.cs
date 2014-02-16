@@ -218,7 +218,10 @@ namespace Gymnasium_APP.SellCard
             this.dtp_Birthday.Text = memberInfoModel.Birthday;
             //this.birthdayDp.Enabled = false;
             this.label1.Text = "查看会员信息";
+            this.Text = "查看会员信息";
             this.btn_OK.Visible = false;
+            this.btn_Abolish.Text = "关闭";
+            this.btn_Abolish.Location = new Point(this.Width / 2 - this.btn_Abolish.Size.Width / 2, this.btn_Abolish.Location.Y);
             this.cmb_CardType.Items.Add(memberInfoModel.CardType);
             this.cmb_CardType.SelectedItem = memberInfoModel.CardType;
             // this.cardTypeCbx.Text = memberInfoModel.CardType;

@@ -8,54 +8,55 @@ using System.Text;
 using System.Windows.Forms;
 using Gymnasium_APP.Model;
 using Gymnasium_APP.BLL;
+using System.IO;
+using Gymnasium_APP.SellCardForm;
 
 namespace Gymnasium_APP.SellCardForm
 {
     public partial class SellCardCastFrm : Form
     {
-        //private MemberInfo memberInfo;
         private MemberInfoModel addMemberModel = new MemberInfoModel();
-       // GymnasiumDbDataContext dataContext=new GymnasiumDbDataContext();
-        //public void SetMemberInfo()
-        //{
-            
-        //}
         CardTypeInfoManager cardTypeManager = new CardTypeInfoManager();
+        private SellCastManager manager = new SellCastManager();
+        private SellCastModel model = new SellCastModel();
+
         public SellCardCastFrm(MemberInfoModel memberModel)
         {
             InitializeComponent();
             addMemberModel = memberModel;
-            this.cartTypeTxt.Enabled = false;
-            this.startTimeTp.Enabled = false;
-            this.endTimeTp.Enabled = false;
-            this.priceAmountTxt.Enabled = false;
-            this.changeAmountTxt.Enabled = false;
+            this.txt_CardType.Enabled = false;
+            this.dtp_StartTime.Enabled = false;
+            this.dtp_EndTime.Enabled = false;
+            this.txt_PriceAmount.Enabled = false;
+            this.txt_ChangeAmount.Enabled = false;
             if (addMemberModel != null)
             {
-                cartTypeTxt.Text = addMemberModel.CardType;
-                startTimeTp.Text = addMemberModel.StartTime;
-                endTimeTp.Text = addMemberModel.EndTime;
-                leftCountTxt.Text = addMemberModel.Count;
-                List<CardTypeInfoModel> cardtypeModelList = cardTypeManager.GetModelList(" CardTypeName='"+addMemberModel.CardType+"'");
+                txt_CardType.Text = addMemberModel.CardType;
+                dtp_StartTime.Text = addMemberModel.StartTime;
+                dtp_EndTime.Text = addMemberModel.EndTime;
+                txt_LeftCount.Text = addMemberModel.Count;
+                List<CardTypeInfoModel> cardtypeModelList = cardTypeManager.GetModelList(" CardTypeName='" + addMemberModel.CardType + "'");
                 if (cardtypeModelList.Count > 0)
                 {
-                    priceAmountTxt.Text = cardtypeModelList[0].MonthsPrice;
+                    txt_PriceAmount.Text = cardtypeModelList[0].MonthsPrice;
                 }
             }
+
         }
 
-        private void SellCardCastFrm_Load(object sender, EventArgs e)
+        private void SellCardCastFrmBak_Load(object sender, EventArgs e)
         {
+
         }
 
-        private void paymentAmountTxt_TextChanged(object sender, EventArgs e)
+        private void txt_PaymentAmount_TextChanged(object sender, EventArgs e)
         {
             double payAmount = 0;
-            if (!String.IsNullOrEmpty(this.paymentAmountTxt.Text) &&
-                double.TryParse(this.paymentAmountTxt.Text, out payAmount))
+            if (!String.IsNullOrEmpty(this.txt_PaymentAmount.Text) &&
+                double.TryParse(this.txt_PaymentAmount.Text, out payAmount))
             {
-                this.changeAmountTxt.Text =
-                    Convert.ToString(Convert.ToDecimal(this.paymentAmountTxt.Text) - Convert.ToDecimal(this.priceAmountTxt.Text));
+                this.txt_ChangeAmount.Text =
+                    Convert.ToString(Convert.ToDecimal(this.txt_PaymentAmount.Text) - Convert.ToDecimal(this.txt_PriceAmount.Text));
             }
         }
 
@@ -63,9 +64,9 @@ namespace Gymnasium_APP.SellCardForm
         {
             model.CastId = manager.GetMaxId();
             model.MemberId = addMemberModel.MemberID.ToString();
-            model.PriceAmount = Convert.ToDecimal(priceAmountTxt.Text.Trim());
-            model.PaymentAmount = Convert.ToDecimal(paymentAmountTxt.Text.Trim());
-            model.ChangeAmount = Convert.ToDecimal(changeAmountTxt.Text.Trim());
+            model.PriceAmount = Convert.ToDecimal(txt_PriceAmount.Text.Trim());
+            model.PaymentAmount = Convert.ToDecimal(txt_PaymentAmount.Text.Trim());
+            model.ChangeAmount = Convert.ToDecimal(txt_ChangeAmount.Text.Trim());
             model.CreateTime = Convert.ToDateTime(CommTools.GetDateFormatStrot(DateTime.Now));
             model.AddTypeName = addMemberModel.CardType;
             model.CardID = addMemberModel.CardID;
@@ -78,8 +79,6 @@ namespace Gymnasium_APP.SellCardForm
             this.Close();
         }
 
-        private SellCastManager manager = new SellCastManager();
-        private SellCastModel model = new SellCastModel();
         private void btn_Abolish_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("您确认要退出当前操作吗?", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
@@ -87,7 +86,9 @@ namespace Gymnasium_APP.SellCardForm
             {
                 this.Close();
             }
-           
         }
+        
+
+       
     }
 }
