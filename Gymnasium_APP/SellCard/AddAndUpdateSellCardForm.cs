@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Gymnasium_APP.MemberForm;
 using Gymnasium_APP.Model;
 using Gymnasium_APP.BLL;
 using System.IO;
@@ -16,7 +17,41 @@ namespace Gymnasium_APP.SellCard
     public partial class AddAndUpdateSellCardForm : Form
     {
         string FormName = string.Empty;
-        public AddAndUpdateSellCardForm(string formName)
+        private MemberBusinessType memberBusinessType;
+
+        CardTypeInfoManager cardTypeManager = new CardTypeInfoManager();
+        MemberInfoManager manager = new MemberInfoManager();
+        MemberHistoryInfoManager hisManager = new MemberHistoryInfoManager();
+
+        /// <summary>
+        /// 设置处理业务逻辑类型
+        /// </summary>
+        /// <param name="type"></param>
+        public void SetBusinessType(MemberBusinessType type)
+        {
+            this.memberBusinessType = type;
+        }
+        public AddAndUpdateSellCardForm(string formName, MemberBusinessType type)
+        {
+            this.memberBusinessType = type;
+            switch (memberBusinessType)
+            {
+                    case MemberBusinessType.SellCardType:
+                    InitFormForSellCard(formName);
+                    break;
+                    case MemberBusinessType.ContinuedCardType:
+                    InitFormForContinued(formName);
+                    break;
+            }
+            
+
+        }
+        #region 售卡逻辑
+        /// <summary>
+        /// 初始化售卡
+        /// </summary>
+        /// <param name="formName"></param>
+        private void InitFormForSellCard(String formName)
         {
             this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.UserPaint |
             ControlStyles.AllPaintingInWmPaint, true);
@@ -31,12 +66,12 @@ namespace Gymnasium_APP.SellCard
             {
                 this.Name = "会员信息 — 修改 ";
             }
-
         }
-        CardTypeInfoManager cardTypeManager = new CardTypeInfoManager();
-        MemberInfoManager manager = new MemberInfoManager();
-        MemberHistoryInfoManager hisManager = new MemberHistoryInfoManager();
-        private void AddAndUpdateSellCardForm_Load(object sender, EventArgs e)
+        
+        /// <summary>
+        /// 加载售卡
+        /// </summary>
+        private void LoadFormForSellCard()
         {
             List<CardTypeInfoModel> cardTypeInfoList = cardTypeManager.GetModelList(" 1=1");
             if (cardTypeInfoList != null)
@@ -49,8 +84,10 @@ namespace Gymnasium_APP.SellCard
             cmb_IDType.SelectedIndex = 0;
             cmb_Sex.SelectedIndex = 0;
         }
-
-        private void btn_OK_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 提交售卡
+        /// </summary>
+        private void SubmitForSellCard()
         {
             errorProvider1.Clear();
             if (txt_CardNumber.Text.Trim() == "")
@@ -65,7 +102,7 @@ namespace Gymnasium_APP.SellCard
                 {
                     errorProvider1.SetError(txt_CardNumber, "卡号已经存在，请更换！");
                     return;
-                }  
+                }
             }
             if (txt_Mail.Text.Trim() == "")
             {
@@ -142,7 +179,7 @@ namespace Gymnasium_APP.SellCard
                 return;
             }
             //添加
-            if (FormName.Equals("ADD"))
+            if (FormName.Equals("ADD") || FormName.Equals("CONTINUED"))
             {
                 MemberInfoModel model = new MemberInfoModel();
                 model.MemberID = manager.GetMaxId();
@@ -160,7 +197,7 @@ namespace Gymnasium_APP.SellCard
                 model.Count = txt_Count.Text.Trim();
                 model.Unit = txt_Unit.Text.Trim();
                 model.AddTime = CommTools.GetDateFormatStrot(DateTime.Now);
-                if (buffer != null)
+                if (buffer != null || this.pictureBox1.Image!=null)
                 {
                     Image image = this.pictureBox1.Image;
                     model.Photo = CommTools.GetByteFromImage(this.pictureBox1);
@@ -168,9 +205,28 @@ namespace Gymnasium_APP.SellCard
                 model.InfoType = "正常";
                 MainForm mf = (MainForm)this.Owner;
                 model.AddUserName = mf.lbl_login_name.Text.Trim().Split(':')[1];
-                int isAdd = manager.Add(model);
-                MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd >0 ? "成功！" : "失败！"));
-                CommTools.AddSystemLog("添加", "会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd >0 ? "成功！" : "失败！"));
+                int isAdd = 0;
+                switch (memberBusinessType)
+                {
+                        case MemberBusinessType.SellCardType:
+                         isAdd= manager.Add(model);
+                MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd > 0 ? "成功！" : "失败！"));
+                CommTools.AddSystemLog("添加", "会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd > 0 ? "成功！" : "失败！"));
+                        break;
+                        case MemberBusinessType.ContinuedCardType:
+                        List<MemberInfoModel> memberInfoModels = manager.GetModelList("CardID='" + model.CardID + "'");
+                        if (memberInfoModels != null && memberInfoModels.Count > 0)
+                        {
+                            model.MemberID = memberInfoModels[0].MemberID;
+                            bool isFlag = manager.Update(model);
+                            if (isFlag) isAdd = 1;
+                            MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 续卡" + (isAdd > 0 ? "成功！" : "失败！"));
+                            CommTools.AddSystemLog("续卡", "会员：" + txt_Name.Text.Trim() + " 续卡" + (isAdd > 0 ? "成功！" : "失败！"));
+                        }
+                       
+                        break;
+                }
+                
                 //添加历史记录
                 MemberHistoryInfoModel hisModel = new MemberHistoryInfoModel();
                 hisModel.MemberID = manager.GetMaxId();
@@ -199,6 +255,164 @@ namespace Gymnasium_APP.SellCard
                 sellCardCastForm.Owner = this.Owner;
                 sellCardCastForm.Show();
 
+            }
+        }
+        /// <summary>
+        /// 售卡卡类型变化
+        /// </summary>
+        private void CardTypeChangeForSellCard()
+        {
+            if (cmb_CardType.SelectedValue is Int32)
+            {
+                CardTypeInfoModel cardtypeModel = cardTypeManager.GetModel(Convert.ToInt32(cmb_CardType.SelectedValue));
+                if (cardtypeModel.TypeName.Equals("计时产品"))
+                {
+                    txt_Count.Enabled = false;
+                    dtp_StartTime.Text = DateTime.Now.ToString();
+                    dtp_EndTime.Text = DateTime.Now.AddMonths(Convert.ToInt32(cardtypeModel.Months)).ToString();
+                }
+                if (cardtypeModel.TypeName.Equals("计次产品"))
+                {
+                    dtp_StartTime.Text = DateTime.Now.ToString();
+                    dtp_EndTime.Text = DateTime.Now.AddMonths(Convert.ToInt32(cardtypeModel.Months)).ToString();
+                    txt_Count.Enabled = true;
+                }
+            }
+        }
+        #endregion
+
+        #region 续卡逻辑
+        /// <summary>
+        /// 初始化续卡
+        /// </summary>
+        /// <param name="formName"></param>
+        private void InitFormForContinued(String formName)
+        {
+            this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.UserPaint |
+            ControlStyles.AllPaintingInWmPaint, true);
+            this.UpdateStyles();
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true); // 禁止擦除背景.
+            SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
+            InitializeComponent();
+            this.Name = "续卡 ";
+            this.Text = "续卡";
+            this.label1.Text = "续卡";
+            FormName = formName;
+            
+        }
+        /// <summary>
+        /// 加载续卡
+        /// </summary>
+        private void LoadFormForContinued()
+        {
+            List<CardTypeInfoModel> cardTypeInfoList = cardTypeManager.GetModelList(" 1=1");
+            if (cardTypeInfoList != null)
+            {
+                cmb_CardType.DataSource = cardTypeInfoList;
+                cmb_CardType.DisplayMember = "CardTypeName";
+                cmb_CardType.ValueMember = "CardTypeID";
+                cmb_CardType.SelectedIndex = 0;
+            }
+            cmb_IDType.SelectedIndex = 0;
+            cmb_Sex.SelectedIndex = 0;
+
+            List<Control> filterList=new List<Control>();
+            filterList.Add(this.cmb_CardType);
+            filterList.Add(this.txt_CardNumber);
+            DisableControls(filterList);
+
+        }
+        /// <summary>
+        /// 续卡卡号变化
+        /// </summary>
+        private void CardNumTextChangeForContinued()
+        {
+            if (!String.IsNullOrEmpty(this.txt_CardNumber.Text))
+            {
+                List<MemberInfoModel> memberInfoModels =
+                    manager.GetModelList("CardID='" + this.txt_CardNumber.Text + "'");
+                if (memberInfoModels != null && memberInfoModels.Count > 0)
+                {
+                    this.cmb_CardType.SelectedText = memberInfoModels[0].CardType;
+                    foreach (CardTypeInfoModel item in this.cmb_CardType.Items)
+                    {
+                        if (item.CardTypeName.Equals(memberInfoModels[0].CardType))
+                        {
+                            this.cmb_CardType.SelectedItem = item;
+                            break;
+                        }
+                    }
+                    this.txt_Name.Text = memberInfoModels[0].Name;
+                    this.cmb_Sex.Items.Add(memberInfoModels[0].Sex);
+                    this.cmb_Sex.SelectedItem = memberInfoModels[0].Sex;
+                    this.dtp_Birthday.Text = memberInfoModels[0].Birthday;
+                    this.cmb_IDType.Items.Add(memberInfoModels[0].IDCardType);
+                    this.cmb_IDType.SelectedItem = memberInfoModels[0].IDCardType;
+                    this.txt_IDCard.Text = memberInfoModels[0].IDCard;
+                    this.dtp_StartTime.Text =Convert.ToString(Convert.ToDateTime(memberInfoModels[0].StartTime).AddDays(1));
+                    this.txt_Phone.Text = memberInfoModels[0].Phone;
+                    this.dtp_EndTime.Text = memberInfoModels[0].EndTime;
+                    this.txt_Mail.Text = memberInfoModels[0].Mail;
+                    this.txt_Count.Text = memberInfoModels[0].Count;
+                    this.txt_Unit.Text = memberInfoModels[0].Unit;
+                    this.dtp_AddTime.Text = memberInfoModels[0].AddTime;
+                    if (memberInfoModels[0].Photo != null && memberInfoModels[0].Photo.Length > 0)
+                    {
+                        this.pictureBox1.Image = CommTools.ByteToImg(memberInfoModels[0].Photo);
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// 卡类别变化
+        /// </summary>
+        private void CardTypeChangeForContinued()
+        {
+            if (cmb_CardType.SelectedValue is Int32)
+            {
+                CardTypeInfoModel cardtypeModel = cardTypeManager.GetModel(Convert.ToInt32(cmb_CardType.SelectedValue));
+                if (cardtypeModel.TypeName.Equals("计时产品"))
+                {
+                    txt_Count.Enabled = false;
+                    dtp_StartTime.Text = DateTime.Now.ToString();
+                    dtp_EndTime.Text = DateTime.Now.AddMonths(Convert.ToInt32(cardtypeModel.Months)).ToString();
+                }
+                //todo:次数计算
+                if (cardtypeModel.TypeName.Equals("计次产品"))
+                {
+                    dtp_StartTime.Text = DateTime.Now.ToString();
+                    dtp_EndTime.Text = DateTime.Now.AddMonths(Convert.ToInt32(cardtypeModel.Months)).ToString();
+                    txt_Count.Enabled = true;
+                }
+            }
+        }
+        #endregion
+
+        
+        private void AddAndUpdateSellCardForm_Load(object sender, EventArgs e)
+        {
+            switch (memberBusinessType)
+            {
+                    case MemberBusinessType.SellCardType:
+                    LoadFormForSellCard();
+                    break;
+                    case MemberBusinessType.ContinuedCardType:
+                    LoadFormForContinued();
+                    break;
+            }
+        }
+
+        private void btn_OK_Click(object sender, EventArgs e)
+        {
+            switch (memberBusinessType)
+            {
+                    case MemberBusinessType.SellCardType:
+                    SubmitForSellCard();
+                    break;
+                    case MemberBusinessType.ContinuedCardType:
+                    SubmitForSellCard();
+                    break;
             }
         }
         /// <summary>
@@ -283,21 +497,15 @@ namespace Gymnasium_APP.SellCard
 
         private void cmb_CardType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_CardType.SelectedValue is Int32)
+            switch (memberBusinessType)
             {
-                CardTypeInfoModel cardtypeModel = cardTypeManager.GetModel(Convert.ToInt32(cmb_CardType.SelectedValue));
-                if (cardtypeModel.TypeName.Equals("计时产品"))
-                {
-                    txt_Count.Enabled = false;
-                    dtp_StartTime.Text = DateTime.Now.ToString();
-                    dtp_EndTime.Text = DateTime.Now.AddMonths(Convert.ToInt32(cardtypeModel.Months)).ToString();
-                }
-                if (cardtypeModel.TypeName.Equals("计次产品"))
-                {
-                    dtp_StartTime.Text = DateTime.Now.ToString();
-                    dtp_EndTime.Text = DateTime.Now.AddMonths(Convert.ToInt32(cardtypeModel.Months)).ToString();
-                    txt_Count.Enabled = true;
-                }
+                case MemberBusinessType.SellCardType:
+                    CardTypeChangeForSellCard();
+                    break;
+                case MemberBusinessType.ContinuedCardType:
+                    CardTypeChangeForContinued();
+                    break;
+
             }
         }
         //定义一个图片对象
@@ -328,6 +536,16 @@ namespace Gymnasium_APP.SellCard
                 fs.Close();
             }
 
+        }
+
+        private void txt_CardNumber_TextChanged(object sender, EventArgs e)
+        {
+            switch (memberBusinessType)
+            {
+                    case MemberBusinessType.ContinuedCardType:
+                    CardNumTextChangeForContinued();
+                    break;
+            }
         }
 
        

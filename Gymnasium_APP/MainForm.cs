@@ -732,7 +732,8 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         #region 售卡
         private void btn_Sell_Click(object sender, EventArgs e)
         {
-            AddAndUpdateSellCardForm sellCardForm = new AddAndUpdateSellCardForm("ADD");
+            AddAndUpdateSellCardForm sellCardForm = new AddAndUpdateSellCardForm("ADD", MemberBusinessType.SellCardType);
+            sellCardForm.SetBusinessType(MemberBusinessType.SellCardType);
             sellCardForm.Owner = this;
             sellCardForm.Show();
             //MemberEditFrm memberEditFrm=new MemberEditFrm();
@@ -890,11 +891,10 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         #region 续卡
         private void btn_Continue_Click(object sender, EventArgs e)
         {
-            MemberEditFrm memberEditFrm = new MemberEditFrm();
-            memberEditFrm.SetTitle("续卡");
-            memberEditFrm.SetBusinessType(MemberBusinessType.ContinuedCardType);
-            memberEditFrm.Owner = this;
-            memberEditFrm.Show();
+            AddAndUpdateSellCardForm sellCardForm = new AddAndUpdateSellCardForm("CONTINUED", MemberBusinessType.ContinuedCardType);
+            sellCardForm.SetBusinessType(MemberBusinessType.ContinuedCardType);
+            sellCardForm.Owner = this;
+            sellCardForm.Show();
 
         }
         #endregion
@@ -948,7 +948,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             object id = this.dgv_Main_Member_Manager.Rows[e.RowIndex].Cells["dgv_Main_Member_CardID"].Value;
             
             DataSet dataSet=memberInfoManager.GetList("CardID='"+id+"'");
-            AddAndUpdateSellCardForm addAndUpdateSellCardForm=new AddAndUpdateSellCardForm("查看会员详情");
+            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
             if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count>0)
             {
                 MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
@@ -964,7 +964,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             object id = this.dgv_Statistics_MemberManager.Rows[e.RowIndex].Cells["dgv_StatisticsMember_CardID"].Value;
 
             DataSet dataSet = memberInfoManager.GetList("CardID='" + id + "'");
-            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情");
+            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.ContinuedCardType);
             if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
             {
                 MemberInfoModel memberInfoModel = memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
