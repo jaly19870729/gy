@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardTypeInfoModel.cs" />
+    <Compile Include="ExtensionCard.cs" />
     <Compile Include="MemberHistoryInfoModel.cs" />
     <Compile Include="MemberInfoModel.cs" />
     <Compile Include="MenuModel.cs" />

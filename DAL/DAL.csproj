@@ -47,6 +47,7 @@
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DbHelperSQL.cs" />
     <Compile Include="DESEncrypt.cs" />
+    <Compile Include="ExtensionCardDal.cs" />
     <Compile Include="MemberHistoryInfoDal.cs" />
     <Compile Include="MemberInfoDal.cs" />
     <Compile Include="MenuDal.cs" />

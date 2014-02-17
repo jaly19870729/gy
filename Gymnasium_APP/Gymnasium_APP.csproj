@@ -141,12 +141,6 @@
     <Compile Include="ExtensionFrom\ExtensionFrm.Designer.cs">
       <DependentUpon>ExtensionFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExtensionFrom\AllExtensionFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExtensionFrom\AllExtensionFrm.Designer.cs">
-      <DependentUpon>AllExtensionFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,9 +248,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExtensionFrom\ExtensionFrm.resx">
       <DependentUpon>ExtensionFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExtensionFrom\AllExtensionFrm.resx">
-      <DependentUpon>AllExtensionFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

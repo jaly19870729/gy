@@ -47,6 +47,7 @@
     <Compile Include="Bitmap.cs" />
     <Compile Include="CardTypeInfoManager.cs" />
     <Compile Include="CommTools.cs" />
+    <Compile Include="ExtensionCardManager.cs" />
     <Compile Include="MemberHistoryInfoManager.cs" />
     <Compile Include="MemberInfoManager.cs" />
     <Compile Include="MenuManager.cs" />
