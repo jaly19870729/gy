@@ -104,29 +104,29 @@ namespace Gymnasium_APP.BLL
             if (Convert.ToInt32(month) < 10)
             {
 
-                month = month.Substring(month.LastIndexOf("0") + 1).ToLower(); ;
+                month = "0" + month.Substring(month.LastIndexOf("0") + 1).ToLower(); ;
             }
             if (Convert.ToInt32(day) < 10)
             {
-                day = day.Substring(day.LastIndexOf("0") + 1).ToLower(); ;
+                day = "0" + day.Substring(day.LastIndexOf("0") + 1).ToLower(); ;
                 //day = day;
             }
             if (Convert.ToInt32(hour) < 10)
             {
-                hour = hour.Substring(hour.LastIndexOf("0") + 1).ToLower(); ;
+                hour = "0" + hour.Substring(hour.LastIndexOf("0") + 1).ToLower(); ;
                 //day = day;
             }
             if (Convert.ToInt32(min) < 10)
             {
-                min = min.Substring(min.LastIndexOf("0") + 1).ToLower(); ;
+                min = "0" + min.Substring(min.LastIndexOf("0") + 1).ToLower(); ;
                 //day = day;
             }
             if (Convert.ToInt32(mm) < 10)
             {
-                mm = mm.Substring(mm.LastIndexOf("0") + 1).ToLower(); ;
+                mm = "0" + mm.Substring(mm.LastIndexOf("0") + 1).ToLower(); ;
                 //day = day;
             }
-            return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + mm;
+            return year + "-" + month + "-" + day ;
         }
         public static string GetDateFormatStrot2(DateTime date)
         {
@@ -140,26 +140,26 @@ namespace Gymnasium_APP.BLL
             if (Convert.ToInt32(month) < 10)
             {
 
-                month = month.Substring(month.LastIndexOf("0") + 1).ToLower(); ;
+                month = "0"+month.Substring(month.LastIndexOf("0") + 1).ToLower();
             }
             if (Convert.ToInt32(day) < 10)
             {
-                day = day.Substring(day.LastIndexOf("0") + 1).ToLower(); ;
+                day = "0" + day.Substring(day.LastIndexOf("0") + 1).ToLower();
                 //day = day;
             }
             if (Convert.ToInt32(hour) < 10)
             {
-                hour = hour.Substring(hour.LastIndexOf("0") + 1).ToLower(); ;
+                hour = "0" + hour.Substring(hour.LastIndexOf("0") + 1).ToLower();
                 //day = day;
             }
             if (Convert.ToInt32(min) < 10)
             {
-                min = min.Substring(min.LastIndexOf("0") + 1).ToLower(); ;
+                min = "0" + min.Substring(min.LastIndexOf("0") + 1).ToLower();
                 //day = day;
             }
             if (Convert.ToInt32(mm) < 10)
             {
-                mm = mm.Substring(mm.LastIndexOf("0") + 1).ToLower(); ;
+                mm = "0" + mm.Substring(mm.LastIndexOf("0") + 1).ToLower();
                 //day = day;
             }
             return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + mm;
