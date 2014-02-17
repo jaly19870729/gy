@@ -86,7 +86,7 @@ namespace Gymnasium_APP.CardType
             model.Months = txt_Months.Text.Trim();
             model.MonthsPrice = txt_Price.Text.Trim();
             model.DayPrice = txt_DayPrice.Text.Trim();
-            model.DateTime = CommTools.GetDateFormatStrot(DateTime.Now);
+            model.DateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             bool isAdd = manager.Add(model);
             MessageBox.Show("消费型产品：" + txt_CardTypeName.Text.Trim() + " 添加" + (isAdd == true ? "成功！" : "失败！"));
             CommTools.AddSystemLog("添加", "消费型产品：" + txt_CardTypeName.Text.Trim() + " 添加" + (isAdd == true ? "成功！" : "失败！"));

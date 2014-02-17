@@ -41,7 +41,7 @@ namespace Gymnasium_APP.RoleForm
             model.RoleId = roleManager.GetMaxId();
             model.RoleName = txt_RoleName.Text.Trim();
             model.RoleSynopsis = txt_Desc.Text.Trim();
-            model.DataTime = CommTools.GetDateFormatStrot(DateTime.Now);
+            model.DataTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             bool isAdd=roleManager.Add(model);
             MessageBox.Show("角色：" + txt_RoleName.Text.Trim() + " 添加" + (isAdd == true ? "成功！" : "失败！"));
             CommTools.AddSystemLog("添加","角色：" + txt_RoleName.Text.Trim() + " 添加" + (isAdd == true ? "成功！" : "失败！"));

@@ -124,7 +124,7 @@ namespace Gymnasium_APP.UserInfoForm
                 userModel.Sex = cmb_Sex.Text.Trim();
                 userModel.State = cmb_State.Text.Trim();
                 userModel.RoleID = Convert.ToInt32(cmb_Role.SelectedValue);
-                userModel.DateTime = CommTools.GetDateFormatStrot(DateTime.Now);
+                userModel.DateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
                 bool isAdd = userManager.Update(userModel);
                 MessageBox.Show("用户：" + txt_UserName.Text.Trim() + " 修改" + (isAdd == true ? "成功！" : "失败！"));
                 CommTools.AddSystemLog("修改", "用户：" + txt_UserName.Text.Trim() + " 修改" + (isAdd == true ? "成功！" : "失败！"));

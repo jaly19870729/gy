@@ -190,13 +190,13 @@ namespace Gymnasium_APP.SellCard
                 model.Name = txt_Name.Text.Trim();
                 model.IDCard = txt_IDCard.Text.Trim();
                 model.Sex = cmb_Sex.Text.Trim();
-                model.StartTime = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_StartTime.Text.Trim()));
-                model.Birthday = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_Birthday.Text.Trim()));
-                model.EndTime = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_EndTime.Text.Trim()));
+                model.StartTime = CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_StartTime.Text.Trim()));
+                model.Birthday = CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Birthday.Text.Trim()));
+                model.EndTime = CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_EndTime.Text.Trim()));
                 model.Phone = txt_Phone.Text.Trim();
                 model.Count = txt_Count.Text.Trim();
                 model.Unit = txt_Unit.Text.Trim();
-                model.AddTime = CommTools.GetDateFormatStrot(DateTime.Now);
+                model.AddTime = CommTools.GetDateFormatStrot2(DateTime.Now);
                 if (buffer != null || this.pictureBox1.Image!=null)
                 {
                     Image image = this.pictureBox1.Image;
@@ -239,13 +239,13 @@ namespace Gymnasium_APP.SellCard
                 hisModel.Sex = cmb_Sex.Text.Trim();
                 hisModel.Photo = model.Photo;
                 hisModel.InfoType = model.InfoType;
-                hisModel.StartTime = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_StartTime.Text.Trim()));
-                hisModel.Birthday = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_Birthday.Text.Trim()));
-                hisModel.EndTime = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_EndTime.Text.Trim()));
+                hisModel.StartTime = CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_StartTime.Text.Trim()));
+                hisModel.Birthday = CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Birthday.Text.Trim()));
+                hisModel.EndTime = CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_EndTime.Text.Trim()));
                 hisModel.Phone = txt_Phone.Text.Trim();
                 hisModel.Count = txt_Count.Text.Trim();
                 hisModel.Unit = txt_Unit.Text.Trim();
-                hisModel.AddTime = CommTools.GetDateFormatStrot(DateTime.Now);
+                hisModel.AddTime = CommTools.GetDateFormatStrot2(DateTime.Now);
                 hisModel.AddUserName = mf.lbl_login_name.Text.Trim().Split(':')[1];
                 hisModel.InfoType = "添加";
                 int isAddHis = hisManager.Add(hisModel);

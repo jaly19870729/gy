@@ -199,7 +199,7 @@ namespace Gymnasium_APP
             GetMainCellCastList();
         }
 
-        private string Main_SellCast_TiaoJian = " 1=1 and CreateTime like '%"+CommTools.GetDateFormatStrot(DateTime.Now)+"%'";
+        private string Main_SellCast_TiaoJian = " 1=1 and CreateTime like '%" + CommTools.GetDateFormatStrot(DateTime.Now) + "%'";
         private SellCastManager sellCastManager = new SellCastManager();
         private void GetMainCellCastList()
         {

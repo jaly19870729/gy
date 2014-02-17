@@ -61,7 +61,7 @@ namespace Gymnasium_APP.RoleForm
                 model.RoleId = roleid;
                 model.RoleName = txt_RoleName.Text.Trim();
                 model.RoleSynopsis = txt_Desc.Text.Trim();
-                model.DataTime = CommTools.GetDateFormatStrot(DateTime.Now);
+                model.DataTime = CommTools.GetDateFormatStrot2(DateTime.Now);
                 bool isUpdate = manager.Update(model);
                 MessageBox.Show("角色：" + txt_RoleName.Text.Trim() + " 修改" + (isUpdate == true ? "成功！" : "失败！"));
                 CommTools.AddSystemLog("修改", "角色：" + txt_RoleName.Text.Trim() + " 修改" + (isUpdate == true ? "成功！" : "失败！"));

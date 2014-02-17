@@ -67,7 +67,7 @@ namespace Gymnasium_APP.SellCardForm
             model.PriceAmount = Convert.ToDecimal(txt_PriceAmount.Text.Trim());
             model.PaymentAmount = Convert.ToDecimal(txt_PaymentAmount.Text.Trim());
             model.ChangeAmount = Convert.ToDecimal(txt_ChangeAmount.Text.Trim());
-            model.CreateTime = Convert.ToDateTime(CommTools.GetDateFormatStrot(DateTime.Now));
+            model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             model.AddTypeName = addMemberModel.CardType;
             model.CardID = addMemberModel.CardID;
             model.TypeName = "现金消费";

@@ -156,7 +156,7 @@ namespace Gymnasium_APP
                 systemLoginLogModel.UserId = userModel.UserID;
                 systemLoginLogModel.LoginType = "登录";
                 systemLoginLogModel.LoginCont = txt_username.Text.Trim() + " 登录系统";
-                systemLoginLogModel.LoginDate = CommTools.GetDateFormatStrot(DateTime.Now);
+                systemLoginLogModel.LoginDate = CommTools.GetDateFormatStrot2(DateTime.Now);
                 systemLoginLogManager.Add(systemLoginLogModel);
                 CommTools.RunBar(this.progressBar1,40, 50);
             }
