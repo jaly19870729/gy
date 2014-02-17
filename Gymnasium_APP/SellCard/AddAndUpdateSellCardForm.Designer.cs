@@ -178,7 +178,7 @@
             // 
             this.dtp_Birthday.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtp_Birthday.CalendarFont = new System.Drawing.Font("宋体", 14F);
-            this.dtp_Birthday.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Birthday.CustomFormat = "yyyy-MM-dd";
             this.dtp_Birthday.Font = new System.Drawing.Font("宋体", 13F);
             this.dtp_Birthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Birthday.Location = new System.Drawing.Point(105, 189);
