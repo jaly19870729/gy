@@ -830,7 +830,8 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
 
         private void btn_Postpone_Click(object sender, EventArgs e)
         {
-            new ExtensionFrm().Show();
+
+            new ExtensionDialog().Show();
         }
         #endregion
 

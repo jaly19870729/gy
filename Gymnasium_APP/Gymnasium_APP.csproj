@@ -135,11 +135,23 @@
     <Compile Include="CunsumeFrom\CunsumeFrm.Designer.cs">
       <DependentUpon>CunsumeFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtensionFrom\SingleExtensionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFrom\SingleExtensionFrm.Designer.cs">
+      <DependentUpon>SingleExtensionFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExtensionFrom\ExtensionFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExtensionFrom\ExtensionFrm.Designer.cs">
       <DependentUpon>ExtensionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionFrom\ExtensionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFrom\ExtensionDialog.Designer.cs">
+      <DependentUpon>ExtensionDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -246,8 +258,14 @@
     <EmbeddedResource Include="CunsumeFrom\CunsumeFrm.resx">
       <DependentUpon>CunsumeFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFrom\SingleExtensionFrm.resx">
+      <DependentUpon>SingleExtensionFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExtensionFrom\ExtensionFrm.resx">
       <DependentUpon>ExtensionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFrom\ExtensionDialog.resx">
+      <DependentUpon>ExtensionDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
