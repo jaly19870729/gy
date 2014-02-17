@@ -15,7 +15,7 @@ namespace Gymnasium_APP.Model
 		private decimal _priceamount;
 		private decimal _paymentamount;
 		private decimal _changeamount;
-		private DateTime _createtime;
+		private string _createtime;
 		private string _addusername;
 		private string _addtypename;
 		private string _cardid;
@@ -66,7 +66,7 @@ namespace Gymnasium_APP.Model
 		/// <summary>
 		/// 创建时间
 		/// </summary>
-		public DateTime CreateTime
+		public string CreateTime
 		{
 			set{ _createtime=value;}
 			get{return _createtime;}

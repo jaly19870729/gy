@@ -55,7 +55,7 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@PriceAmount", SqlDbType.Decimal,9),
 					new SqlParameter("@PaymentAmount", SqlDbType.Decimal,9),
 					new SqlParameter("@ChangeAmount", SqlDbType.Decimal,9),
-					new SqlParameter("@CreateTime", SqlDbType.DateTime),
+					new SqlParameter("@CreateTime", SqlDbType.VarChar,50),
 					new SqlParameter("@AddUserName", SqlDbType.VarChar,50),
 					new SqlParameter("@AddTypeName", SqlDbType.VarChar,50),
 					new SqlParameter("@CardID", SqlDbType.VarChar,50),
@@ -111,7 +111,7 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@PriceAmount", SqlDbType.Decimal,9),
 					new SqlParameter("@PaymentAmount", SqlDbType.Decimal,9),
 					new SqlParameter("@ChangeAmount", SqlDbType.Decimal,9),
-					new SqlParameter("@CreateTime", SqlDbType.DateTime),
+					new SqlParameter("@CreateTime", SqlDbType.VarChar,50),
 					new SqlParameter("@AddUserName", SqlDbType.VarChar,50),
 					new SqlParameter("@AddTypeName", SqlDbType.VarChar,50),
 					new SqlParameter("@CardID", SqlDbType.VarChar,50),
@@ -244,9 +244,9 @@ namespace Gymnasium_APP.DAL
 				{
 					model.ChangeAmount=decimal.Parse(row["ChangeAmount"].ToString());
 				}
-				if(row["CreateTime"]!=null && row["CreateTime"].ToString()!="")
+				if(row["CreateTime"]!=null)
 				{
-					model.CreateTime=DateTime.Parse(row["CreateTime"].ToString());
+					model.CreateTime=row["CreateTime"].ToString();
 				}
 				if(row["AddUserName"]!=null)
 				{

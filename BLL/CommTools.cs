@@ -200,7 +200,7 @@ namespace Gymnasium_APP.BLL
             systemLoginLogModel.UserId = UserID;
             systemLoginLogModel.LoginType = type;
             systemLoginLogModel.LoginCont = content;
-            systemLoginLogModel.LoginDate = CommTools.GetDateFormatStrot(DateTime.Now);
+            systemLoginLogModel.LoginDate = CommTools.GetDateFormatStrot2(DateTime.Now);
             systemLoginLogManager.Add(systemLoginLogModel);
         }
         #endregion
