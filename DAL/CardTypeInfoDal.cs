@@ -9,7 +9,7 @@ namespace Gymnasium_APP.DAL
 	/// <summary>
 	/// 数据访问类:CardTypeInfoDal
 	/// </summary>
-	public partial class CardTypeInfoDal:ICardTypeInfoDal
+    public partial class CardTypeInfoDal : ICardTypeInfoDal
 	{
 		public CardTypeInfoDal()
 		{}
@@ -30,9 +30,10 @@ namespace Gymnasium_APP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("select count(1) from CardTypeInfo");
-			strSql.Append(" where CardTypeID=@CardTypeID ");
+			strSql.Append(" where CardTypeID=@CardTypeID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@CardTypeID", SqlDbType.Int,4)			};
+					new SqlParameter("@CardTypeID", SqlDbType.Int,4)
+			};
 			parameters[0].Value = CardTypeID;
 
 			return DbHelperSQL.Exists(strSql.ToString(),parameters);
@@ -42,37 +43,38 @@ namespace Gymnasium_APP.DAL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public bool Add(Gymnasium_APP.Model.CardTypeInfoModel model)
+		public int Add(Gymnasium_APP.Model.CardTypeInfoModel model)
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into CardTypeInfo(");
-			strSql.Append("CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName)");
+			strSql.Append("CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName,CardCount)");
 			strSql.Append(" values (");
-			strSql.Append("@CardTypeID,@CardTypeName,@MonthsPrice,@Months,@DayPrice,@DateTime,@TypeName)");
+			strSql.Append("@CardTypeName,@MonthsPrice,@Months,@DayPrice,@DateTime,@TypeName,@CardCount)");
+			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
-					new SqlParameter("@CardTypeID", SqlDbType.Int,4),
 					new SqlParameter("@CardTypeName", SqlDbType.VarChar,150),
 					new SqlParameter("@MonthsPrice", SqlDbType.VarChar,150),
 					new SqlParameter("@Months", SqlDbType.VarChar,150),
 					new SqlParameter("@DayPrice", SqlDbType.VarChar,150),
 					new SqlParameter("@DateTime", SqlDbType.VarChar,150),
-					new SqlParameter("@TypeName", SqlDbType.VarChar,50)};
-			parameters[0].Value = model.CardTypeID;
-			parameters[1].Value = model.CardTypeName;
-			parameters[2].Value = model.MonthsPrice;
-			parameters[3].Value = model.Months;
-			parameters[4].Value = model.DayPrice;
-			parameters[5].Value = model.DateTime;
-			parameters[6].Value = model.TypeName;
+					new SqlParameter("@TypeName", SqlDbType.VarChar,50),
+					new SqlParameter("@CardCount", SqlDbType.VarChar,50)};
+			parameters[0].Value = model.CardTypeName;
+			parameters[1].Value = model.MonthsPrice;
+			parameters[2].Value = model.Months;
+			parameters[3].Value = model.DayPrice;
+			parameters[4].Value = model.DateTime;
+			parameters[5].Value = model.TypeName;
+			parameters[6].Value = model.CardCount;
 
-			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
-			if (rows > 0)
+			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
+			if (obj == null)
 			{
-				return true;
+				return 0;
 			}
 			else
 			{
-				return false;
+				return Convert.ToInt32(obj);
 			}
 		}
 		/// <summary>
@@ -87,8 +89,9 @@ namespace Gymnasium_APP.DAL
 			strSql.Append("Months=@Months,");
 			strSql.Append("DayPrice=@DayPrice,");
 			strSql.Append("DateTime=@DateTime,");
-			strSql.Append("TypeName=@TypeName");
-			strSql.Append(" where CardTypeID=@CardTypeID ");
+			strSql.Append("TypeName=@TypeName,");
+			strSql.Append("CardCount=@CardCount");
+			strSql.Append(" where CardTypeID=@CardTypeID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@CardTypeName", SqlDbType.VarChar,150),
 					new SqlParameter("@MonthsPrice", SqlDbType.VarChar,150),
@@ -96,6 +99,7 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@DayPrice", SqlDbType.VarChar,150),
 					new SqlParameter("@DateTime", SqlDbType.VarChar,150),
 					new SqlParameter("@TypeName", SqlDbType.VarChar,50),
+					new SqlParameter("@CardCount", SqlDbType.VarChar,50),
 					new SqlParameter("@CardTypeID", SqlDbType.Int,4)};
 			parameters[0].Value = model.CardTypeName;
 			parameters[1].Value = model.MonthsPrice;
@@ -103,7 +107,8 @@ namespace Gymnasium_APP.DAL
 			parameters[3].Value = model.DayPrice;
 			parameters[4].Value = model.DateTime;
 			parameters[5].Value = model.TypeName;
-			parameters[6].Value = model.CardTypeID;
+			parameters[6].Value = model.CardCount;
+			parameters[7].Value = model.CardTypeID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -124,9 +129,10 @@ namespace Gymnasium_APP.DAL
 			
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("delete from CardTypeInfo ");
-			strSql.Append(" where CardTypeID=@CardTypeID ");
+			strSql.Append(" where CardTypeID=@CardTypeID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@CardTypeID", SqlDbType.Int,4)			};
+					new SqlParameter("@CardTypeID", SqlDbType.Int,4)
+			};
 			parameters[0].Value = CardTypeID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
@@ -166,10 +172,11 @@ namespace Gymnasium_APP.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName from CardTypeInfo ");
-			strSql.Append(" where CardTypeID=@CardTypeID ");
+			strSql.Append("select  top 1 CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName,CardCount from CardTypeInfo ");
+			strSql.Append(" where CardTypeID=@CardTypeID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@CardTypeID", SqlDbType.Int,4)			};
+					new SqlParameter("@CardTypeID", SqlDbType.Int,4)
+			};
 			parameters[0].Value = CardTypeID;
 
 			Gymnasium_APP.Model.CardTypeInfoModel model=new Gymnasium_APP.Model.CardTypeInfoModel();
@@ -221,6 +228,10 @@ namespace Gymnasium_APP.DAL
 				{
 					model.TypeName=row["TypeName"].ToString();
 				}
+				if(row["CardCount"]!=null)
+				{
+					model.CardCount=row["CardCount"].ToString();
+				}
 			}
 			return model;
 		}
@@ -231,7 +242,7 @@ namespace Gymnasium_APP.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName ");
+			strSql.Append("select CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName,CardCount ");
 			strSql.Append(" FROM CardTypeInfo ");
 			if(strWhere.Trim()!="")
 			{
@@ -251,7 +262,7 @@ namespace Gymnasium_APP.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName ");
+			strSql.Append(" CardTypeID,CardTypeName,MonthsPrice,Months,DayPrice,DateTime,TypeName,CardCount ");
 			strSql.Append(" FROM CardTypeInfo ");
 			if(strWhere.Trim()!="")
 			{
@@ -337,6 +348,10 @@ namespace Gymnasium_APP.DAL
 		#region  ExtensionMethod
 
 		#endregion  ExtensionMethod
-	}
+
+
+       
+        
+    }
 }
 

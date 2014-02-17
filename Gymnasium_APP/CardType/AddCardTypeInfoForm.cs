@@ -65,6 +65,23 @@ namespace Gymnasium_APP.CardType
                 errorProvider1.SetError(txt_DayPrice, "请输入单日价格！");
                 return;
             }
+            if (cmb_TypeName.Text.Contains("次"))
+            {
+                if (txt_CardCount.Text.Trim() == "")
+                {
+                    errorProvider1.SetError(txt_CardCount,"请输入使用次数！");
+                    return;
+                }
+                try
+                {
+                    Convert.ToInt32(txt_CardCount.Text.Trim());
+                }
+                catch (Exception ex)
+                {
+                    errorProvider1.SetError(txt_CardCount, "使用次数输入错误，请重新输入！");
+                    return;
+                }
+            }
             if (txt_Months.Text.Trim() == "")
             {
                 errorProvider1.SetError(txt_Months,"请输入产品有效期！");
@@ -86,10 +103,11 @@ namespace Gymnasium_APP.CardType
             model.Months = txt_Months.Text.Trim();
             model.MonthsPrice = txt_Price.Text.Trim();
             model.DayPrice = txt_DayPrice.Text.Trim();
+            model.CardCount = txt_CardCount.Text.Trim();
             model.DateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
-            bool isAdd = manager.Add(model);
-            MessageBox.Show("消费型产品：" + txt_CardTypeName.Text.Trim() + " 添加" + (isAdd == true ? "成功！" : "失败！"));
-            CommTools.AddSystemLog("添加", "消费型产品：" + txt_CardTypeName.Text.Trim() + " 添加" + (isAdd == true ? "成功！" : "失败！"));
+            int isAdd = manager.Add(model);
+            MessageBox.Show("消费型产品：" + txt_CardTypeName.Text.Trim() + " 添加" + (isAdd >0 ? "成功！" : "失败！"));
+            CommTools.AddSystemLog("添加", "消费型产品：" + txt_CardTypeName.Text.Trim() + " 添加" + (isAdd >0 ? "成功！" : "失败！"));
             MainForm mf = (MainForm)this.Owner;
             mf.GetCardTypeDataList();
             this.Close();

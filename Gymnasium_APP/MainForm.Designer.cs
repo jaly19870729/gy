@@ -32,22 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tlp_Main = new System.Windows.Forms.TableLayoutPanel();
             this.pl_Mind = new System.Windows.Forms.Panel();
-            this.tabc_Mian = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dgv_Main_Member_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_Main_Member_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Main_Member_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_Member_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_Member_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_Member_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_Member_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_Member_Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_Member_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tab_SellCast = new System.Windows.Forms.TabPage();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.dgv_Main_SellCast_Manager = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabc_SystemManager = new System.Windows.Forms.TabControl();
             this.tp_UserManager = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -106,6 +90,7 @@
             this.dgv_CardTypeManager_CardTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_CardTypeManager_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_CardTypeManager_MonthsPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardType_CardCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_CardTypeManager_Months = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_CardTypeManager_DayPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_CardTypeManager_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -166,6 +151,33 @@
             this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Statistics_Member_Update = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabc_Mian = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dgv_Main_Member_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Main_Member_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Main_Member_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_Member_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_Member_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_Member_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_Member_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_Member_Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_Member_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tab_SellCast = new System.Windows.Forms.TabPage();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.dgv_Main_SellCast_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Main_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Main_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_Peoples = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Main_SellCast_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_MainPage = new System.Windows.Forms.Button();
@@ -186,32 +198,14 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.dgv_Main_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Main_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_Peoples = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Main_SellCast_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
             this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
             this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
             this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
             this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
-            this.tabc_Mian.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_Member_Manager)).BeginInit();
-            this.tab_SellCast.SuspendLayout();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_SellCast_Manager)).BeginInit();
             this.tabc_SystemManager.SuspendLayout();
             this.tp_UserManager.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -230,6 +224,13 @@
             this.tabPage4.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_MemberManager)).BeginInit();
+            this.tabc_Mian.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_Member_Manager)).BeginInit();
+            this.tab_SellCast.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_SellCast_Manager)).BeginInit();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -239,9 +240,9 @@
             // 
             // tlp_Main
             // 
-            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tlp_Main.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tlp_Main.ColumnCount = 2;
             this.tlp_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
@@ -260,9 +261,9 @@
             // 
             // pl_Mind
             // 
-            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pl_Mind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pl_Mind.Controls.Add(this.tabc_Mian);
             this.pl_Mind.Controls.Add(this.tabc_SystemManager);
@@ -272,217 +273,11 @@
             this.pl_Mind.Size = new System.Drawing.Size(859, 653);
             this.pl_Mind.TabIndex = 2;
             // 
-            // tabc_Mian
-            // 
-            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabc_Mian.Controls.Add(this.tabPage1);
-            this.tabc_Mian.Controls.Add(this.tab_SellCast);
-            this.tabc_Mian.Controls.Add(this.tabPage3);
-            this.tabc_Mian.Font = new System.Drawing.Font("宋体", 12F);
-            this.tabc_Mian.Location = new System.Drawing.Point(-1, -1);
-            this.tabc_Mian.Name = "tabc_Mian";
-            this.tabc_Mian.SelectedIndex = 0;
-            this.tabc_Mian.Size = new System.Drawing.Size(844, 654);
-            this.tabc_Mian.TabIndex = 3;
-            this.tabc_Mian.SelectedIndexChanged += new System.EventHandler(this.tabc_Mian_SelectedIndexChanged);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 26);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(836, 624);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "会员信息";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.uC_Page_Main_Member);
-            this.panel4.Controls.Add(this.dgv_Main_Member_Manager);
-            this.panel4.Location = new System.Drawing.Point(-4, 1);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(849, 622);
-            this.panel4.TabIndex = 4;
-            // 
-            // dgv_Main_Member_Manager
-            // 
-            this.dgv_Main_Member_Manager.AllowUserToAddRows = false;
-            this.dgv_Main_Member_Manager.AllowUserToResizeRows = false;
-            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Main_Member_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Main_Member_Manager.ColumnHeadersHeight = 25;
-            this.dgv_Main_Member_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_Main_Member_cb,
-            this.dgv_Main_Member_MemberID,
-            this.dgv_Main_Member_ID,
-            this.dgv_Main_Member_CardID,
-            this.dgv_Main_Member_MemberCardType,
-            this.dgv_Main_Member_MemberName,
-            this.dgv_Main_Member_Desc,
-            this.dgv_Main_Member_MemberAddTime});
-            this.dgv_Main_Member_Manager.Location = new System.Drawing.Point(3, 2);
-            this.dgv_Main_Member_Manager.MultiSelect = false;
-            this.dgv_Main_Member_Manager.Name = "dgv_Main_Member_Manager";
-            this.dgv_Main_Member_Manager.ReadOnly = true;
-            this.dgv_Main_Member_Manager.RowHeadersVisible = false;
-            this.dgv_Main_Member_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Main_Member_Manager.RowTemplate.Height = 23;
-            this.dgv_Main_Member_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(838, 587);
-            this.dgv_Main_Member_Manager.TabIndex = 215;
-            this.dgv_Main_Member_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Main_Member_Manager_CellDoubleClick);
-            // 
-            // dgv_Main_Member_cb
-            // 
-            this.dgv_Main_Member_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_Member_cb.FillWeight = 1F;
-            this.dgv_Main_Member_cb.Frozen = true;
-            this.dgv_Main_Member_cb.HeaderText = "选择";
-            this.dgv_Main_Member_cb.MinimumWidth = 60;
-            this.dgv_Main_Member_cb.Name = "dgv_Main_Member_cb";
-            this.dgv_Main_Member_cb.ReadOnly = true;
-            this.dgv_Main_Member_cb.Visible = false;
-            this.dgv_Main_Member_cb.Width = 60;
-            // 
-            // dgv_Main_Member_MemberID
-            // 
-            this.dgv_Main_Member_MemberID.HeaderText = "MemberID";
-            this.dgv_Main_Member_MemberID.Name = "dgv_Main_Member_MemberID";
-            this.dgv_Main_Member_MemberID.ReadOnly = true;
-            this.dgv_Main_Member_MemberID.Visible = false;
-            // 
-            // dgv_Main_Member_ID
-            // 
-            this.dgv_Main_Member_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_Member_ID.FillWeight = 28.73418F;
-            this.dgv_Main_Member_ID.Frozen = true;
-            this.dgv_Main_Member_ID.HeaderText = "序号";
-            this.dgv_Main_Member_ID.MinimumWidth = 50;
-            this.dgv_Main_Member_ID.Name = "dgv_Main_Member_ID";
-            this.dgv_Main_Member_ID.ReadOnly = true;
-            this.dgv_Main_Member_ID.Width = 65;
-            // 
-            // dgv_Main_Member_CardID
-            // 
-            this.dgv_Main_Member_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_Member_CardID.HeaderText = "卡号";
-            this.dgv_Main_Member_CardID.Name = "dgv_Main_Member_CardID";
-            this.dgv_Main_Member_CardID.ReadOnly = true;
-            this.dgv_Main_Member_CardID.Width = 65;
-            // 
-            // dgv_Main_Member_MemberCardType
-            // 
-            this.dgv_Main_Member_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_Member_MemberCardType.HeaderText = "卡类型";
-            this.dgv_Main_Member_MemberCardType.Name = "dgv_Main_Member_MemberCardType";
-            this.dgv_Main_Member_MemberCardType.ReadOnly = true;
-            this.dgv_Main_Member_MemberCardType.Width = 81;
-            // 
-            // dgv_Main_Member_MemberName
-            // 
-            this.dgv_Main_Member_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_Main_Member_MemberName.FillWeight = 57.46837F;
-            this.dgv_Main_Member_MemberName.HeaderText = "姓名";
-            this.dgv_Main_Member_MemberName.MinimumWidth = 80;
-            this.dgv_Main_Member_MemberName.Name = "dgv_Main_Member_MemberName";
-            this.dgv_Main_Member_MemberName.ReadOnly = true;
-            this.dgv_Main_Member_MemberName.Width = 80;
-            // 
-            // dgv_Main_Member_Desc
-            // 
-            this.dgv_Main_Member_Desc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_Member_Desc.HeaderText = "描述";
-            this.dgv_Main_Member_Desc.Name = "dgv_Main_Member_Desc";
-            this.dgv_Main_Member_Desc.ReadOnly = true;
-            this.dgv_Main_Member_Desc.Width = 65;
-            // 
-            // dgv_Main_Member_MemberAddTime
-            // 
-            this.dgv_Main_Member_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_Main_Member_MemberAddTime.HeaderText = "刷卡时间";
-            this.dgv_Main_Member_MemberAddTime.Name = "dgv_Main_Member_MemberAddTime";
-            this.dgv_Main_Member_MemberAddTime.ReadOnly = true;
-            // 
-            // tab_SellCast
-            // 
-            this.tab_SellCast.Controls.Add(this.panel11);
-            this.tab_SellCast.Location = new System.Drawing.Point(4, 26);
-            this.tab_SellCast.Name = "tab_SellCast";
-            this.tab_SellCast.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_SellCast.Size = new System.Drawing.Size(836, 624);
-            this.tab_SellCast.TabIndex = 1;
-            this.tab_SellCast.Text = "消费信息 ";
-            this.tab_SellCast.UseVisualStyleBackColor = true;
-            // 
-            // panel11
-            // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel11.Controls.Add(this.uC_Page_Main_SellCast);
-            this.panel11.Controls.Add(this.dgv_Main_SellCast_Manager);
-            this.panel11.Location = new System.Drawing.Point(-4, 1);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(848, 622);
-            this.panel11.TabIndex = 5;
-            // 
-            // dgv_Main_SellCast_Manager
-            // 
-            this.dgv_Main_SellCast_Manager.AllowUserToAddRows = false;
-            this.dgv_Main_SellCast_Manager.AllowUserToResizeRows = false;
-            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Main_SellCast_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Main_SellCast_Manager.ColumnHeadersHeight = 25;
-            this.dgv_Main_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_Main_SellCast_cb,
-            this.dgv_Main_SellCast_CastID,
-            this.dgv_Main_SellCast_ID,
-            this.dgv_Main_SellCast_TypeName,
-            this.dgv_Main_SellCast_Prices,
-            this.dgv_Main_SellCast_Peoples,
-            this.dgv_Main_SellCast_PriceAmount,
-            this.dgv_Main_SellCast_PaymentAmount,
-            this.dgv_Main_SellCast_ChangeAmount,
-            this.dgv_Main_SellCast_Desc,
-            this.dgv_Main_SellCast_AddTime});
-            this.dgv_Main_SellCast_Manager.Location = new System.Drawing.Point(3, 3);
-            this.dgv_Main_SellCast_Manager.Name = "dgv_Main_SellCast_Manager";
-            this.dgv_Main_SellCast_Manager.ReadOnly = true;
-            this.dgv_Main_SellCast_Manager.RowHeadersVisible = false;
-            this.dgv_Main_SellCast_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Main_SellCast_Manager.RowTemplate.Height = 23;
-            this.dgv_Main_SellCast_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Main_SellCast_Manager.Size = new System.Drawing.Size(837, 586);
-            this.dgv_Main_SellCast_Manager.TabIndex = 215;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(836, 624);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "场地信息";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // tabc_SystemManager
             // 
-            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_SystemManager.Controls.Add(this.tp_UserManager);
             this.tabc_SystemManager.Controls.Add(this.tp_PrivilegeManager);
             this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
@@ -513,9 +308,9 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.btn_UserManager_Update);
             this.panel3.Controls.Add(this.btn_UserManager_Delete);
@@ -795,9 +590,9 @@
             // 
             this.dgv_UserManager.AllowUserToAddRows = false;
             this.dgv_UserManager.AllowUserToResizeRows = false;
-            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_UserManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_UserManager.ColumnHeadersHeight = 25;
             this.dgv_UserManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -905,9 +700,9 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
@@ -937,9 +732,9 @@
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.Controls.Add(this.uC_Page_RoleManager);
             this.panel8.Controls.Add(this.btn_RoleManager_Delete);
@@ -979,9 +774,9 @@
             // 
             this.dgv_RoleManager.AllowUserToAddRows = false;
             this.dgv_RoleManager.AllowUserToResizeRows = false;
-            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_RoleManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_RoleManager.ColumnHeadersHeight = 25;
             this.dgv_RoleManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1053,9 +848,9 @@
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel9.Controls.Add(this.uC_Page_CardTypeManager);
             this.panel9.Controls.Add(this.btn_Delete_CardTypeManager);
@@ -1095,9 +890,9 @@
             // 
             this.dgv_CardTypeManager.AllowUserToAddRows = false;
             this.dgv_CardTypeManager.AllowUserToResizeRows = false;
-            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_CardTypeManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_CardTypeManager.ColumnHeadersHeight = 25;
             this.dgv_CardTypeManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1106,6 +901,7 @@
             this.dgv_CardTypeManager_CardTypeName,
             this.dgv_CardTypeManager_TypeName,
             this.dgv_CardTypeManager_MonthsPrice,
+            this.dgv_CardType_CardCount,
             this.dgv_CardTypeManager_Months,
             this.dgv_CardTypeManager_DayPrice,
             this.dgv_CardTypeManager_DateTime});
@@ -1115,7 +911,7 @@
             this.dgv_CardTypeManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_CardTypeManager.RowTemplate.Height = 23;
             this.dgv_CardTypeManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_CardTypeManager.Size = new System.Drawing.Size(843, 540);
+            this.dgv_CardTypeManager.Size = new System.Drawing.Size(839, 540);
             this.dgv_CardTypeManager.TabIndex = 215;
             // 
             // dgv_CardTypeManager_CardTypeID
@@ -1156,6 +952,12 @@
             this.dgv_CardTypeManager_MonthsPrice.HeaderText = "价格（元）";
             this.dgv_CardTypeManager_MonthsPrice.Name = "dgv_CardTypeManager_MonthsPrice";
             this.dgv_CardTypeManager_MonthsPrice.Width = 113;
+            // 
+            // dgv_CardType_CardCount
+            // 
+            this.dgv_CardType_CardCount.HeaderText = "使用次数";
+            this.dgv_CardType_CardCount.Name = "dgv_CardType_CardCount";
+            this.dgv_CardType_CardCount.Width = 97;
             // 
             // dgv_CardTypeManager_Months
             // 
@@ -1201,9 +1003,9 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(0, 3);
@@ -1213,9 +1015,9 @@
             // 
             // panel7
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.Controls.Add(this.uC_Page_SystemLog);
             this.panel7.Controls.Add(this.cb_SystemLog);
@@ -1372,9 +1174,9 @@
             // 
             this.dgv_SystemLogManager.AllowUserToAddRows = false;
             this.dgv_SystemLogManager.AllowUserToResizeRows = false;
-            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_SystemLogManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_SystemLogManager.ColumnHeadersHeight = 25;
             this.dgv_SystemLogManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1494,9 +1296,9 @@
             // 
             // tbc_Statistics
             // 
-            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tbc_Statistics.Controls.Add(this.tabPage4);
             this.tbc_Statistics.Controls.Add(this.tabPage5);
             this.tbc_Statistics.Font = new System.Drawing.Font("宋体", 12F);
@@ -1519,9 +1321,9 @@
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.uC_Page_Statistics_Member);
             this.panel10.Controls.Add(this.btn_Statistics_Member_Select);
@@ -1654,9 +1456,9 @@
             // 
             this.dgv_Statistics_MemberManager.AllowUserToAddRows = false;
             this.dgv_Statistics_MemberManager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_MemberManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_MemberManager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_MemberManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1821,11 +1623,305 @@
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // tabc_Mian
+            // 
+            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_Mian.Controls.Add(this.tabPage1);
+            this.tabc_Mian.Controls.Add(this.tab_SellCast);
+            this.tabc_Mian.Controls.Add(this.tabPage3);
+            this.tabc_Mian.Font = new System.Drawing.Font("宋体", 12F);
+            this.tabc_Mian.Location = new System.Drawing.Point(-1, -1);
+            this.tabc_Mian.Name = "tabc_Mian";
+            this.tabc_Mian.SelectedIndex = 0;
+            this.tabc_Mian.Size = new System.Drawing.Size(844, 654);
+            this.tabc_Mian.TabIndex = 3;
+            this.tabc_Mian.SelectedIndexChanged += new System.EventHandler(this.tabc_Mian_SelectedIndexChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(836, 624);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "会员信息";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.uC_Page_Main_Member);
+            this.panel4.Controls.Add(this.dgv_Main_Member_Manager);
+            this.panel4.Location = new System.Drawing.Point(-4, 1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(849, 622);
+            this.panel4.TabIndex = 4;
+            // 
+            // dgv_Main_Member_Manager
+            // 
+            this.dgv_Main_Member_Manager.AllowUserToAddRows = false;
+            this.dgv_Main_Member_Manager.AllowUserToResizeRows = false;
+            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_Member_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Main_Member_Manager.ColumnHeadersHeight = 25;
+            this.dgv_Main_Member_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Main_Member_cb,
+            this.dgv_Main_Member_MemberID,
+            this.dgv_Main_Member_ID,
+            this.dgv_Main_Member_CardID,
+            this.dgv_Main_Member_MemberCardType,
+            this.dgv_Main_Member_MemberName,
+            this.dgv_Main_Member_Desc,
+            this.dgv_Main_Member_MemberAddTime});
+            this.dgv_Main_Member_Manager.Location = new System.Drawing.Point(3, 2);
+            this.dgv_Main_Member_Manager.MultiSelect = false;
+            this.dgv_Main_Member_Manager.Name = "dgv_Main_Member_Manager";
+            this.dgv_Main_Member_Manager.ReadOnly = true;
+            this.dgv_Main_Member_Manager.RowHeadersVisible = false;
+            this.dgv_Main_Member_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Main_Member_Manager.RowTemplate.Height = 23;
+            this.dgv_Main_Member_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(838, 587);
+            this.dgv_Main_Member_Manager.TabIndex = 215;
+            this.dgv_Main_Member_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Main_Member_Manager_CellDoubleClick);
+            // 
+            // dgv_Main_Member_cb
+            // 
+            this.dgv_Main_Member_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_Member_cb.FillWeight = 1F;
+            this.dgv_Main_Member_cb.Frozen = true;
+            this.dgv_Main_Member_cb.HeaderText = "选择";
+            this.dgv_Main_Member_cb.MinimumWidth = 60;
+            this.dgv_Main_Member_cb.Name = "dgv_Main_Member_cb";
+            this.dgv_Main_Member_cb.ReadOnly = true;
+            this.dgv_Main_Member_cb.Visible = false;
+            this.dgv_Main_Member_cb.Width = 60;
+            // 
+            // dgv_Main_Member_MemberID
+            // 
+            this.dgv_Main_Member_MemberID.HeaderText = "MemberID";
+            this.dgv_Main_Member_MemberID.Name = "dgv_Main_Member_MemberID";
+            this.dgv_Main_Member_MemberID.ReadOnly = true;
+            this.dgv_Main_Member_MemberID.Visible = false;
+            // 
+            // dgv_Main_Member_ID
+            // 
+            this.dgv_Main_Member_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_Member_ID.FillWeight = 28.73418F;
+            this.dgv_Main_Member_ID.Frozen = true;
+            this.dgv_Main_Member_ID.HeaderText = "序号";
+            this.dgv_Main_Member_ID.MinimumWidth = 50;
+            this.dgv_Main_Member_ID.Name = "dgv_Main_Member_ID";
+            this.dgv_Main_Member_ID.ReadOnly = true;
+            this.dgv_Main_Member_ID.Width = 65;
+            // 
+            // dgv_Main_Member_CardID
+            // 
+            this.dgv_Main_Member_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_Member_CardID.HeaderText = "卡号";
+            this.dgv_Main_Member_CardID.Name = "dgv_Main_Member_CardID";
+            this.dgv_Main_Member_CardID.ReadOnly = true;
+            this.dgv_Main_Member_CardID.Width = 65;
+            // 
+            // dgv_Main_Member_MemberCardType
+            // 
+            this.dgv_Main_Member_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_Member_MemberCardType.HeaderText = "卡类型";
+            this.dgv_Main_Member_MemberCardType.Name = "dgv_Main_Member_MemberCardType";
+            this.dgv_Main_Member_MemberCardType.ReadOnly = true;
+            this.dgv_Main_Member_MemberCardType.Width = 81;
+            // 
+            // dgv_Main_Member_MemberName
+            // 
+            this.dgv_Main_Member_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_Main_Member_MemberName.FillWeight = 57.46837F;
+            this.dgv_Main_Member_MemberName.HeaderText = "姓名";
+            this.dgv_Main_Member_MemberName.MinimumWidth = 80;
+            this.dgv_Main_Member_MemberName.Name = "dgv_Main_Member_MemberName";
+            this.dgv_Main_Member_MemberName.ReadOnly = true;
+            this.dgv_Main_Member_MemberName.Width = 80;
+            // 
+            // dgv_Main_Member_Desc
+            // 
+            this.dgv_Main_Member_Desc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_Member_Desc.HeaderText = "描述";
+            this.dgv_Main_Member_Desc.Name = "dgv_Main_Member_Desc";
+            this.dgv_Main_Member_Desc.ReadOnly = true;
+            this.dgv_Main_Member_Desc.Width = 65;
+            // 
+            // dgv_Main_Member_MemberAddTime
+            // 
+            this.dgv_Main_Member_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_Main_Member_MemberAddTime.HeaderText = "刷卡时间";
+            this.dgv_Main_Member_MemberAddTime.Name = "dgv_Main_Member_MemberAddTime";
+            this.dgv_Main_Member_MemberAddTime.ReadOnly = true;
+            // 
+            // tab_SellCast
+            // 
+            this.tab_SellCast.Controls.Add(this.panel11);
+            this.tab_SellCast.Location = new System.Drawing.Point(4, 26);
+            this.tab_SellCast.Name = "tab_SellCast";
+            this.tab_SellCast.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_SellCast.Size = new System.Drawing.Size(836, 624);
+            this.tab_SellCast.TabIndex = 1;
+            this.tab_SellCast.Text = "消费信息 ";
+            this.tab_SellCast.UseVisualStyleBackColor = true;
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel11.Controls.Add(this.uC_Page_Main_SellCast);
+            this.panel11.Controls.Add(this.dgv_Main_SellCast_Manager);
+            this.panel11.Location = new System.Drawing.Point(-4, 1);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(848, 622);
+            this.panel11.TabIndex = 5;
+            // 
+            // dgv_Main_SellCast_Manager
+            // 
+            this.dgv_Main_SellCast_Manager.AllowUserToAddRows = false;
+            this.dgv_Main_SellCast_Manager.AllowUserToResizeRows = false;
+            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_SellCast_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Main_SellCast_Manager.ColumnHeadersHeight = 25;
+            this.dgv_Main_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Main_SellCast_cb,
+            this.dgv_Main_SellCast_CastID,
+            this.dgv_Main_SellCast_ID,
+            this.dgv_Main_SellCast_TypeName,
+            this.dgv_Main_SellCast_Prices,
+            this.dgv_Main_SellCast_Peoples,
+            this.dgv_Main_SellCast_PriceAmount,
+            this.dgv_Main_SellCast_PaymentAmount,
+            this.dgv_Main_SellCast_ChangeAmount,
+            this.dgv_Main_SellCast_Desc,
+            this.dgv_Main_SellCast_AddTime});
+            this.dgv_Main_SellCast_Manager.Location = new System.Drawing.Point(3, 3);
+            this.dgv_Main_SellCast_Manager.Name = "dgv_Main_SellCast_Manager";
+            this.dgv_Main_SellCast_Manager.ReadOnly = true;
+            this.dgv_Main_SellCast_Manager.RowHeadersVisible = false;
+            this.dgv_Main_SellCast_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Main_SellCast_Manager.RowTemplate.Height = 23;
+            this.dgv_Main_SellCast_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Main_SellCast_Manager.Size = new System.Drawing.Size(837, 586);
+            this.dgv_Main_SellCast_Manager.TabIndex = 215;
+            // 
+            // dgv_Main_SellCast_cb
+            // 
+            this.dgv_Main_SellCast_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_SellCast_cb.FillWeight = 1F;
+            this.dgv_Main_SellCast_cb.Frozen = true;
+            this.dgv_Main_SellCast_cb.HeaderText = "选择";
+            this.dgv_Main_SellCast_cb.MinimumWidth = 60;
+            this.dgv_Main_SellCast_cb.Name = "dgv_Main_SellCast_cb";
+            this.dgv_Main_SellCast_cb.ReadOnly = true;
+            this.dgv_Main_SellCast_cb.Visible = false;
+            this.dgv_Main_SellCast_cb.Width = 60;
+            // 
+            // dgv_Main_SellCast_CastID
+            // 
+            this.dgv_Main_SellCast_CastID.HeaderText = "CastID";
+            this.dgv_Main_SellCast_CastID.Name = "dgv_Main_SellCast_CastID";
+            this.dgv_Main_SellCast_CastID.ReadOnly = true;
+            this.dgv_Main_SellCast_CastID.Visible = false;
+            // 
+            // dgv_Main_SellCast_ID
+            // 
+            this.dgv_Main_SellCast_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_SellCast_ID.FillWeight = 28.73418F;
+            this.dgv_Main_SellCast_ID.Frozen = true;
+            this.dgv_Main_SellCast_ID.HeaderText = "序号";
+            this.dgv_Main_SellCast_ID.MinimumWidth = 50;
+            this.dgv_Main_SellCast_ID.Name = "dgv_Main_SellCast_ID";
+            this.dgv_Main_SellCast_ID.ReadOnly = true;
+            this.dgv_Main_SellCast_ID.Width = 65;
+            // 
+            // dgv_Main_SellCast_TypeName
+            // 
+            this.dgv_Main_SellCast_TypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_SellCast_TypeName.HeaderText = "消费类型";
+            this.dgv_Main_SellCast_TypeName.Name = "dgv_Main_SellCast_TypeName";
+            this.dgv_Main_SellCast_TypeName.ReadOnly = true;
+            this.dgv_Main_SellCast_TypeName.Visible = false;
+            this.dgv_Main_SellCast_TypeName.Width = 78;
+            // 
+            // dgv_Main_SellCast_Prices
+            // 
+            this.dgv_Main_SellCast_Prices.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_Main_SellCast_Prices.FillWeight = 57.46837F;
+            this.dgv_Main_SellCast_Prices.HeaderText = "单价";
+            this.dgv_Main_SellCast_Prices.MinimumWidth = 80;
+            this.dgv_Main_SellCast_Prices.Name = "dgv_Main_SellCast_Prices";
+            this.dgv_Main_SellCast_Prices.ReadOnly = true;
+            this.dgv_Main_SellCast_Prices.Width = 80;
+            // 
+            // dgv_Main_SellCast_Peoples
+            // 
+            this.dgv_Main_SellCast_Peoples.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Main_SellCast_Peoples.HeaderText = "人数";
+            this.dgv_Main_SellCast_Peoples.Name = "dgv_Main_SellCast_Peoples";
+            this.dgv_Main_SellCast_Peoples.ReadOnly = true;
+            this.dgv_Main_SellCast_Peoples.Width = 65;
+            // 
+            // dgv_Main_SellCast_PriceAmount
+            // 
+            this.dgv_Main_SellCast_PriceAmount.HeaderText = "总额";
+            this.dgv_Main_SellCast_PriceAmount.Name = "dgv_Main_SellCast_PriceAmount";
+            this.dgv_Main_SellCast_PriceAmount.ReadOnly = true;
+            // 
+            // dgv_Main_SellCast_PaymentAmount
+            // 
+            this.dgv_Main_SellCast_PaymentAmount.HeaderText = "实收金额";
+            this.dgv_Main_SellCast_PaymentAmount.Name = "dgv_Main_SellCast_PaymentAmount";
+            this.dgv_Main_SellCast_PaymentAmount.ReadOnly = true;
+            // 
+            // dgv_Main_SellCast_ChangeAmount
+            // 
+            this.dgv_Main_SellCast_ChangeAmount.HeaderText = "找零金额";
+            this.dgv_Main_SellCast_ChangeAmount.Name = "dgv_Main_SellCast_ChangeAmount";
+            this.dgv_Main_SellCast_ChangeAmount.ReadOnly = true;
+            // 
+            // dgv_Main_SellCast_Desc
+            // 
+            this.dgv_Main_SellCast_Desc.HeaderText = "描述";
+            this.dgv_Main_SellCast_Desc.Name = "dgv_Main_SellCast_Desc";
+            this.dgv_Main_SellCast_Desc.ReadOnly = true;
+            // 
+            // dgv_Main_SellCast_AddTime
+            // 
+            this.dgv_Main_SellCast_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_Main_SellCast_AddTime.HeaderText = "消费时间";
+            this.dgv_Main_SellCast_AddTime.Name = "dgv_Main_SellCast_AddTime";
+            this.dgv_Main_SellCast_AddTime.ReadOnly = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(836, 624);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "场地信息";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
@@ -1836,9 +1932,9 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.btn_MainPage);
             this.flowLayoutPanel1.Controls.Add(this.btn_Sell);
             this.flowLayoutPanel1.Controls.Add(this.btn_Continue);
@@ -1989,9 +2085,9 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.tlp_Main.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
@@ -2002,9 +2098,9 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2032,9 +2128,9 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
@@ -2049,9 +2145,9 @@
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Exit.Location = new System.Drawing.Point(138, 3);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(68, 35);
@@ -2080,93 +2176,14 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
             // 
-            // dgv_Main_SellCast_cb
+            // uC_Page_Statistics_Member
             // 
-            this.dgv_Main_SellCast_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_SellCast_cb.FillWeight = 1F;
-            this.dgv_Main_SellCast_cb.Frozen = true;
-            this.dgv_Main_SellCast_cb.HeaderText = "选择";
-            this.dgv_Main_SellCast_cb.MinimumWidth = 60;
-            this.dgv_Main_SellCast_cb.Name = "dgv_Main_SellCast_cb";
-            this.dgv_Main_SellCast_cb.ReadOnly = true;
-            this.dgv_Main_SellCast_cb.Visible = false;
-            this.dgv_Main_SellCast_cb.Width = 60;
-            // 
-            // dgv_Main_SellCast_CastID
-            // 
-            this.dgv_Main_SellCast_CastID.HeaderText = "CastID";
-            this.dgv_Main_SellCast_CastID.Name = "dgv_Main_SellCast_CastID";
-            this.dgv_Main_SellCast_CastID.ReadOnly = true;
-            this.dgv_Main_SellCast_CastID.Visible = false;
-            // 
-            // dgv_Main_SellCast_ID
-            // 
-            this.dgv_Main_SellCast_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_SellCast_ID.FillWeight = 28.73418F;
-            this.dgv_Main_SellCast_ID.Frozen = true;
-            this.dgv_Main_SellCast_ID.HeaderText = "序号";
-            this.dgv_Main_SellCast_ID.MinimumWidth = 50;
-            this.dgv_Main_SellCast_ID.Name = "dgv_Main_SellCast_ID";
-            this.dgv_Main_SellCast_ID.ReadOnly = true;
-            this.dgv_Main_SellCast_ID.Width = 65;
-            // 
-            // dgv_Main_SellCast_TypeName
-            // 
-            this.dgv_Main_SellCast_TypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_SellCast_TypeName.HeaderText = "消费类型";
-            this.dgv_Main_SellCast_TypeName.Name = "dgv_Main_SellCast_TypeName";
-            this.dgv_Main_SellCast_TypeName.ReadOnly = true;
-            this.dgv_Main_SellCast_TypeName.Visible = false;
-            this.dgv_Main_SellCast_TypeName.Width = 78;
-            // 
-            // dgv_Main_SellCast_Prices
-            // 
-            this.dgv_Main_SellCast_Prices.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_Main_SellCast_Prices.FillWeight = 57.46837F;
-            this.dgv_Main_SellCast_Prices.HeaderText = "单价";
-            this.dgv_Main_SellCast_Prices.MinimumWidth = 80;
-            this.dgv_Main_SellCast_Prices.Name = "dgv_Main_SellCast_Prices";
-            this.dgv_Main_SellCast_Prices.ReadOnly = true;
-            this.dgv_Main_SellCast_Prices.Width = 80;
-            // 
-            // dgv_Main_SellCast_Peoples
-            // 
-            this.dgv_Main_SellCast_Peoples.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Main_SellCast_Peoples.HeaderText = "人数";
-            this.dgv_Main_SellCast_Peoples.Name = "dgv_Main_SellCast_Peoples";
-            this.dgv_Main_SellCast_Peoples.ReadOnly = true;
-            this.dgv_Main_SellCast_Peoples.Width = 65;
-            // 
-            // dgv_Main_SellCast_PriceAmount
-            // 
-            this.dgv_Main_SellCast_PriceAmount.HeaderText = "总额";
-            this.dgv_Main_SellCast_PriceAmount.Name = "dgv_Main_SellCast_PriceAmount";
-            this.dgv_Main_SellCast_PriceAmount.ReadOnly = true;
-            // 
-            // dgv_Main_SellCast_PaymentAmount
-            // 
-            this.dgv_Main_SellCast_PaymentAmount.HeaderText = "实收金额";
-            this.dgv_Main_SellCast_PaymentAmount.Name = "dgv_Main_SellCast_PaymentAmount";
-            this.dgv_Main_SellCast_PaymentAmount.ReadOnly = true;
-            // 
-            // dgv_Main_SellCast_ChangeAmount
-            // 
-            this.dgv_Main_SellCast_ChangeAmount.HeaderText = "找零金额";
-            this.dgv_Main_SellCast_ChangeAmount.Name = "dgv_Main_SellCast_ChangeAmount";
-            this.dgv_Main_SellCast_ChangeAmount.ReadOnly = true;
-            // 
-            // dgv_Main_SellCast_Desc
-            // 
-            this.dgv_Main_SellCast_Desc.HeaderText = "描述";
-            this.dgv_Main_SellCast_Desc.Name = "dgv_Main_SellCast_Desc";
-            this.dgv_Main_SellCast_Desc.ReadOnly = true;
-            // 
-            // dgv_Main_SellCast_AddTime
-            // 
-            this.dgv_Main_SellCast_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_Main_SellCast_AddTime.HeaderText = "消费时间";
-            this.dgv_Main_SellCast_AddTime.Name = "dgv_Main_SellCast_AddTime";
-            this.dgv_Main_SellCast_AddTime.ReadOnly = true;
+            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(248, 593);
+            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
+            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Member.TabIndex = 242;
             // 
             // uC_Page_Main_Member
             // 
@@ -2213,15 +2230,6 @@
             this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_SystemLog.TabIndex = 242;
             // 
-            // uC_Page_Statistics_Member
-            // 
-            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(248, 593);
-            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
-            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Member.TabIndex = 242;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2240,13 +2248,6 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tlp_Main.ResumeLayout(false);
             this.pl_Mind.ResumeLayout(false);
-            this.tabc_Mian.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_Member_Manager)).EndInit();
-            this.tab_SellCast.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_SellCast_Manager)).EndInit();
             this.tabc_SystemManager.ResumeLayout(false);
             this.tp_UserManager.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -2268,6 +2269,13 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_MemberManager)).EndInit();
+            this.tabc_Mian.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_Member_Manager)).EndInit();
+            this.tab_SellCast.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Main_SellCast_Manager)).EndInit();
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -2356,14 +2364,6 @@
         private System.Windows.Forms.Button btn_Add_CardTypeManager;
         private System.Windows.Forms.DataGridView dgv_CardTypeManager;
         private System.Windows.Forms.Button btn_Update_CardTypeManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_CardTypeID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_CardTypeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_TypeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_MonthsPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_Months;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_DayPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_DateTime;
         private System.Windows.Forms.DataGridViewCheckBoxColumn cbox;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemLog_LoginID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemLog_ID;
@@ -2458,6 +2458,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Main_SellCast_ChangeAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Main_SellCast_Desc;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Main_SellCast_AddTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_CardTypeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_CardTypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_TypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_MonthsPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardType_CardCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_Months;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_DayPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_CardTypeManager_DateTime;
  
     }
 }

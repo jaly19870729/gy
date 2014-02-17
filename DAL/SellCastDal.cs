@@ -383,7 +383,7 @@ namespace Gymnasium_APP.DAL
 			parameters[2].Value = PageSize;
 			parameters[3].Value = PageIndex;
 			parameters[4].Value = 0;
-			parameters[5].Value = 0;
+			parameters[5].Value = 1;
 			parameters[6].Value = strWhere;	
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}

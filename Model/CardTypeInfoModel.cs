@@ -17,6 +17,7 @@ namespace Gymnasium_APP.Model
 		private string _dayprice;
 		private string _datetime;
 		private string _typename;
+		private string _cardcount;
 		/// <summary>
 		/// 主键
 		/// </summary>
@@ -72,6 +73,14 @@ namespace Gymnasium_APP.Model
 		{
 			set{ _typename=value;}
 			get{return _typename;}
+		}
+		/// <summary>
+		/// 卡次数
+		/// </summary>
+		public string CardCount
+		{
+			set{ _cardcount=value;}
+			get{return _cardcount;}
 		}
 		#endregion Model
 

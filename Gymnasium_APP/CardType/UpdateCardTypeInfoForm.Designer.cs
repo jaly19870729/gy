@@ -44,6 +44,8 @@
             this.txt_CardTypeName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_CardCount = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +71,7 @@
             // txt_Months
             // 
             this.txt_Months.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Months.Location = new System.Drawing.Point(111, 180);
+            this.txt_Months.Location = new System.Drawing.Point(111, 226);
             this.txt_Months.MaxLength = 20;
             this.txt_Months.Name = "txt_Months";
             this.txt_Months.Size = new System.Drawing.Size(189, 26);
@@ -79,7 +81,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F);
-            this.label4.Location = new System.Drawing.Point(17, 190);
+            this.label4.Location = new System.Drawing.Point(17, 236);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
             this.label4.TabIndex = 38;
@@ -135,7 +137,7 @@
             // btn_Abolish
             // 
             this.btn_Abolish.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Abolish.Location = new System.Drawing.Point(214, 234);
+            this.btn_Abolish.Location = new System.Drawing.Point(214, 272);
             this.btn_Abolish.Name = "btn_Abolish";
             this.btn_Abolish.Size = new System.Drawing.Size(89, 43);
             this.btn_Abolish.TabIndex = 34;
@@ -146,7 +148,7 @@
             // btn_OK
             // 
             this.btn_OK.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_OK.Location = new System.Drawing.Point(100, 234);
+            this.btn_OK.Location = new System.Drawing.Point(100, 272);
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.Size = new System.Drawing.Size(89, 43);
             this.btn_OK.TabIndex = 33;
@@ -177,17 +179,38 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 12F);
-            this.label5.Location = new System.Drawing.Point(299, 187);
+            this.label5.Location = new System.Drawing.Point(299, 233);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 16);
             this.label5.TabIndex = 41;
             this.label5.Text = "月";
             // 
+            // txt_CardCount
+            // 
+            this.txt_CardCount.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_CardCount.Location = new System.Drawing.Point(111, 183);
+            this.txt_CardCount.MaxLength = 20;
+            this.txt_CardCount.Name = "txt_CardCount";
+            this.txt_CardCount.Size = new System.Drawing.Size(189, 26);
+            this.txt_CardCount.TabIndex = 42;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("宋体", 12F);
+            this.label7.Location = new System.Drawing.Point(33, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 16);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "使用次数";
+            // 
             // UpdateCardTypeInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 292);
+            this.ClientSize = new System.Drawing.Size(364, 322);
+            this.Controls.Add(this.txt_CardCount);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_DayPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_Months);
@@ -203,9 +226,9 @@
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(360, 330);
+            this.MaximumSize = new System.Drawing.Size(380, 360);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(360, 330);
+            this.MinimumSize = new System.Drawing.Size(380, 360);
             this.Name = "UpdateCardTypeInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "消费型产品信息 — 修改";
@@ -232,5 +255,7 @@
         private System.Windows.Forms.TextBox txt_CardTypeName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_CardCount;
+        private System.Windows.Forms.Label label7;
     }
 }

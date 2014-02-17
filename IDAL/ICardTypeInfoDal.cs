@@ -23,7 +23,7 @@ namespace IDAL
         /// <summary>
         /// 增加一条数据
         /// </summary>
-        bool Add(Gymnasium_APP.Model.CardTypeInfoModel model);
+        int Add(Gymnasium_APP.Model.CardTypeInfoModel model);
 
         /// <summary>
         /// 更新一条数据

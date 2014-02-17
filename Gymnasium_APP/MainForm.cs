@@ -338,10 +338,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
 
         private void btn_UserManager_Update_Click(object sender, EventArgs e)
         {
-            string str = this.dgv_UserManager.SelectedCells[0].Value.ToString();
-            UpdateUserInfoForm uuf = new UpdateUserInfoForm(Convert.ToInt32(str));
-            uuf.Owner = this;
-            uuf.ShowDialog();
+            if (dgv_UserManager.RowCount > 0)
+            {
+                string str = this.dgv_UserManager.SelectedCells[0].Value.ToString();
+                UpdateUserInfoForm uuf = new UpdateUserInfoForm(Convert.ToInt32(str));
+                uuf.Owner = this;
+                uuf.ShowDialog();
+            }
         }
         private void cmb_UserManager_page_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -558,10 +561,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
 
         private void btn_RoleManager_Update_Click(object sender, EventArgs e)
         {
-            string str = this.dgv_RoleManager.SelectedCells[0].Value.ToString();
-            UpdateRoleInfoForm urf = new UpdateRoleInfoForm(Convert.ToInt32(str));
-            urf.Owner = this;
-            urf.ShowDialog();
+            if (dgv_RoleManager.RowCount > 0)
+            {
+                string str = this.dgv_RoleManager.SelectedCells[0].Value.ToString();
+                UpdateRoleInfoForm urf = new UpdateRoleInfoForm(Convert.ToInt32(str));
+                urf.Owner = this;
+                urf.ShowDialog();
+            }
         }
         #endregion
 
@@ -587,6 +593,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
                     this.dgv_CardTypeManager.Rows[i].Cells["dgv_CardTypeManager_DayPrice"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["DayPrice"].ToString();
                     this.dgv_CardTypeManager.Rows[i].Cells["dgv_CardTypeManager_DateTime"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["DateTime"].ToString();
                     this.dgv_CardTypeManager.Rows[i].Cells["dgv_CardTypeManager_TypeName"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["TypeName"].ToString();
+                    this.dgv_CardTypeManager.Rows[i].Cells["dgv_CardType_CardCount"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["CardCount"].ToString();
                     
                 }
                 
@@ -630,11 +637,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
 
         private void btn_Update_CardTypeManager_Click(object sender, EventArgs e)
         {
-            string str = this.dgv_CardTypeManager.SelectedCells[0].Value.ToString();
-            UpdateCardTypeInfoForm uctf = new UpdateCardTypeInfoForm(Convert.ToInt32(str));
-            uctf.Owner = this;
-            uctf.ShowDialog();
-
+            if (dgv_CardTypeManager.RowCount > 0)
+            {
+                string str = this.dgv_CardTypeManager.SelectedCells[0].Value.ToString();
+                UpdateCardTypeInfoForm uctf = new UpdateCardTypeInfoForm(Convert.ToInt32(str));
+                uctf.Owner = this;
+                uctf.ShowDialog();
+            }
         }
         #endregion
         private void tabc_SystemManager_SelectedIndexChanged(object sender, EventArgs e)
@@ -659,7 +668,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         #region 售卡
         private void btn_Sell_Click(object sender, EventArgs e)
         {
-            AddAndUpdateSellCardForm sellCardForm = new AddAndUpdateSellCardForm("ADD", MemberBusinessType.SellCardType);
+            AddAndUpdateSellCardForm sellCardForm = new AddAndUpdateSellCardForm("ADD",0);
             sellCardForm.SetBusinessType(MemberBusinessType.SellCardType);
             sellCardForm.Owner = this;
             sellCardForm.Show();
@@ -728,7 +737,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
       
         private void btn_Statistics_Member_Update_Click(object sender, EventArgs e)
         {
-
+            if (dgv_Statistics_MemberManager.RowCount > 0)
+            {
+                string str = this.dgv_Statistics_MemberManager.SelectedCells[0].Value.ToString();
+                AddAndUpdateSellCardForm updateForm = new AddAndUpdateSellCardForm("UPDATE", Convert.ToInt32(str));
+                updateForm.Owner = this;
+                updateForm.ShowDialog();
+            }
         }
         private void btn_Statistics_Click(object sender, EventArgs e)
         {
@@ -818,7 +833,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         #region 续卡
         private void btn_Continue_Click(object sender, EventArgs e)
         {
-            AddAndUpdateSellCardForm sellCardForm = new AddAndUpdateSellCardForm("CONTINUED", MemberBusinessType.ContinuedCardType);
+            RenewCardForm sellCardForm = new RenewCardForm("CONTINUED", MemberBusinessType.ContinuedCardType);
             sellCardForm.SetBusinessType(MemberBusinessType.ContinuedCardType);
             sellCardForm.Owner = this;
             sellCardForm.Show();
@@ -876,13 +891,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             object id = this.dgv_Main_Member_Manager.Rows[e.RowIndex].Cells["dgv_Main_Member_CardID"].Value;
             
             DataSet dataSet=memberInfoManager.GetList("CardID='"+id+"'");
-            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
-            if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count>0)
-            {
-                MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
-                addAndUpdateSellCardForm.DetialModel(memberInfoModel);
-                addAndUpdateSellCardForm.Show();
-            }
+            //AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
+            //if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count>0)
+            //{
+            //    MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
+            //    addAndUpdateSellCardForm.DetialModel(memberInfoModel);
+            //    addAndUpdateSellCardForm.Show();
+            //}
             
 
         }
@@ -892,13 +907,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             object id = this.dgv_Statistics_MemberManager.Rows[e.RowIndex].Cells["dgv_StatisticsMember_CardID"].Value;
 
             DataSet dataSet = memberInfoManager.GetList("CardID='" + id + "'");
-            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
-            if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
-            {
-                MemberInfoModel memberInfoModel = memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
-                addAndUpdateSellCardForm.DetialModel(memberInfoModel);
-                addAndUpdateSellCardForm.Show();
-            }
+            //AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
+            //if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
+            //{
+            //    MemberInfoModel memberInfoModel = memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
+            //    addAndUpdateSellCardForm.DetialModel(memberInfoModel);
+            //    addAndUpdateSellCardForm.Show();
+            //}
         }
 
      

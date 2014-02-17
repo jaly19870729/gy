@@ -57,6 +57,23 @@ namespace Gymnasium_APP.CardType
                 errorProvider1.SetError(txt_DayPrice, "价格输入错误，请重新输入！");
                 return;
             }
+            if (cmb_TypeName.Text.Contains("次"))
+            {
+                if (txt_CardCount.Text.Trim() == "")
+                {
+                    errorProvider1.SetError(txt_CardCount, "请输入使用次数！");
+                    return;
+                }
+                try
+                {
+                    Convert.ToInt32(txt_CardCount.Text.Trim());
+                }
+                catch (Exception ex)
+                {
+                    errorProvider1.SetError(txt_CardCount, "使用次数输入错误，请重新输入！");
+                    return;
+                }
+            }
             if (txt_DayPrice.Text.Trim() == "")
             {
                 errorProvider1.SetError(txt_DayPrice, "请输入单日价格！");
@@ -83,6 +100,7 @@ namespace Gymnasium_APP.CardType
             model.Months = txt_Months.Text.Trim();
             model.MonthsPrice = txt_Price.Text.Trim();
             model.DayPrice = txt_DayPrice.Text.Trim();
+            model.CardCount = txt_CardCount.Text.Trim();
             model.DateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             bool isAdd = manager.Update(model);
             MessageBox.Show("消费型产品：" + txt_CardTypeName.Text.Trim() + " 修改" + (isAdd == true ? "成功！" : "失败！"));
@@ -107,6 +125,7 @@ namespace Gymnasium_APP.CardType
                 txt_Months.Text = cardTypeModel.Months;
                 txt_DayPrice.Text = cardTypeModel.DayPrice;
                 cmb_TypeName.Text = cardTypeModel.TypeName;
+                txt_CardCount.Text = cardTypeModel.CardCount;
             }
 
         }

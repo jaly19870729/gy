@@ -36,7 +36,7 @@ namespace Gymnasium_APP.BLL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public bool Add(Gymnasium_APP.Model.CardTypeInfoModel model)
+		public int  Add(Gymnasium_APP.Model.CardTypeInfoModel model)
 		{
 			return dal.Add(model);
 		}
@@ -74,6 +74,7 @@ namespace Gymnasium_APP.BLL
 			return dal.GetModel(CardTypeID);
 		}
 
+		
 
 		/// <summary>
 		/// 获得数据列表
