@@ -348,6 +348,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="20140218.sql" />
     <Content Include="Ico1.ico" />
     <None Include="Resources\people.png" />
     <None Include="Resources\1305774588258.png" />
