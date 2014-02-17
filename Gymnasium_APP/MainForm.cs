@@ -32,7 +32,7 @@ namespace Gymnasium_APP
             UpdateStyles();
             notifyIcon1.Visible = true;
             string titleStr = AppConfigTools.GetAppValue("SystemName");
-            this.Text = titleStr + " — 主界面";
+            this.Text = titleStr + "";
             label1.Text = AppConfigTools.GetAppValue("SystemName");
             tabc_SystemManager.Visible = false;
         }
@@ -133,9 +133,12 @@ namespace Gymnasium_APP
         {
             if (tabc_Mian.SelectedIndex == 1)
             {
-                cmb_Main_SellCast_Type.SelectedIndex = 0;
-                dtp_Main_SellCast_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
+                
                 GetMainCellCastList();
+            }
+            if (tabc_Mian.SelectedIndex == 0)
+            {
+                GetMain_MemberList();
             }
         }
         #region 会员刷卡信息
@@ -144,59 +147,14 @@ namespace Gymnasium_APP
             tabc_Mian.Visible = true;
             tabc_SystemManager.Visible = false;
             tbc_Statistics.Visible = false;
-            List<CardTypeInfoModel> cardTypeInfoList = cardTypeManager.GetModelList(" 1=1");
-            if (cardTypeInfoList != null)
-            {
-                CardTypeInfoModel model = new CardTypeInfoModel();
-                model.CardTypeName = "全部";
-                model.CardTypeID = 0;
-                cardTypeInfoList.Add(model);
-
-                cmb_Main_Member_Type.DataSource = cardTypeInfoList;
-                cmb_Main_Member_Type.DisplayMember = "CardTypeName";
-                cmb_Main_Member_Type.ValueMember = "CardTypeID";
-                cmb_Main_Member_Type.SelectedIndex = 0;
-            }
-            dtp_Main_Member_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
-            cmb_Main_Member_Type.SelectedIndex = cardTypeInfoList.Count - 1;
+            
             GetMain_MemberList();
         }
 
-        private void btn_Main_Member_Select_Click(object sender, EventArgs e)
-        {
-
-            if (dtp_Main_Member_StartTime.Value > dtp_Main_SellCast_EndTime.Value)
-            {
-                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //dt_SystemLogManager_BeginTime.Value = StartTime;
-                return;
-            }
-            if (dtp_Main_SellCast_EndTime.Value < dtp_Main_Member_StartTime.Value)
-            {
-                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //dtStopTime.Value = StopTime;
-                return;
-            }
-            Main_MemberNamager_TiaoJian = " 1=1";
-
-            if (txt_Statistics_Member_Name.Text.Trim() != "")
-            {
-
-                Main_MemberNamager_TiaoJian += " and (CardID  like '%" + txt_Statistics_Member_Name.Text.Trim() + "%' or Name like '%" + txt_Statistics_Member_Name.Text.Trim() + "%')";
-
-            }
-
-            if (cmb_Statistics_Member_Type.Text.Trim() != "" && cmb_Statistics_Member_Type.Text.Trim() != "全部")
-            {
-                Main_MemberNamager_TiaoJian += " and CardType='" + cmb_Statistics_Member_Type.Text.Trim() + "'";
-            }
-            Main_MemberNamager_TiaoJian += " and (AddTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Main_Member_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  AddTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Main_SellCast_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
-            uC_Page_Main_Member.tp.CurrentPage = 1;
-            GetMain_MemberList();
-        }
+   
         private SwipingInfoManager swipManager = new SwipingInfoManager();
 
-        private string Main_MemberNamager_TiaoJian = " 1=1";
+        private string Main_MemberNamager_TiaoJian = " 1=1 and AddTime like '%" + CommTools.GetDateFormatStrot(DateTime.Now)+ "%'";
         private void GetMain_MemberList()
         {
             this.dgv_Main_Member_Manager.Rows.Clear();
@@ -241,12 +199,12 @@ namespace Gymnasium_APP
             GetMainCellCastList();
         }
 
-        private string Main_SellCast_TiaoJian = " 1=1";
+        private string Main_SellCast_TiaoJian = " 1=1 and CreateTime like '%"+CommTools.GetDateFormatStrot(DateTime.Now)+"%'";
         private SellCastManager sellCastManager = new SellCastManager();
         private void GetMainCellCastList()
         {
             this.dgv_Main_SellCast_Manager.Rows.Clear();
-            uC_Page_Main_SellCast.tp.DataTotalCount = sellCastManager.GetRecordCount(Main_MemberNamager_TiaoJian);
+            uC_Page_Main_SellCast.tp.DataTotalCount = sellCastManager.GetRecordCount(Main_SellCast_TiaoJian);
             DataSet ds_List = sellCastManager.GetList(uC_Page_Main_SellCast.tp.Count,
                                                                  uC_Page_Main_SellCast.tp.CurrentPage, Main_SellCast_TiaoJian);
             if (ds_List != null && ds_List.Tables[0].Rows.Count > 0)
@@ -284,38 +242,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
                                               uC_Page_Main_SellCast.tp.PageTotalCount + "页";
         }
 
-        private void btn_Main_SellCast_Select_Click(object sender, EventArgs e)
-        {
-
-            if (dtp_Main_SellCast_StartTime.Value > dtp_Main_SellCast_EndTime.Value)
-            {
-                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //dt_SystemLogManager_BeginTime.Value = StartTime;
-                return;
-            }
-            if (dtp_Main_SellCast_EndTime.Value < dtp_Main_SellCast_StartTime.Value)
-            {
-                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //dtStopTime.Value = StopTime;
-                return;
-            }
-            Main_SellCast_TiaoJian = " 1=1";
-
-            if (txt_Main_SellCast_Name.Text.Trim() != "")
-            {
-
-                Main_SellCast_TiaoJian += " and CardID  like '%" + txt_Main_SellCast_Name.Text.Trim() + "%'";
-
-            }
-
-            if (cmb_Main_SellCast_Type.Text.Trim() != "" && cmb_Main_SellCast_Type.Text.Trim() != "全部")
-            {
-                Main_SellCast_TiaoJian += " and TypeName='" + cmb_Main_SellCast_Type.Text.Trim() + "'";
-            }
-            Main_SellCast_TiaoJian += " and (CreateTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Main_SellCast_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  CreateTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Main_SellCast_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
-            uC_Page_Main_SellCast.tp.CurrentPage = 1;
-            GetMainCellCastList();
-        }
+       
         #endregion
 
         #endregion

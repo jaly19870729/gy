@@ -32,7 +32,7 @@ namespace Gymnasium_APP
             skinEngine1.ApplyAdditionalBuiltInSkins(Convert.ToInt32(AppConfigTools.GetAppValue("CurSkinIndex")));
             this.notifyIcon1.Visible = true;
             label1.Text = AppConfigTools.GetAppValue("SystemName");
-            this.Text = label1.Text + " — 登录";
+            this.Text = label1.Text + "";
             txt_username.Focus();
         }
         

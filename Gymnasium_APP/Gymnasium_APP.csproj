@@ -321,13 +321,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Gymnasium.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Gymnasium_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Gymnasium.mdf</DependentUpon>
-    </Content>
     <Content Include="Ico1.ico" />
     <None Include="Resources\people.png" />
     <None Include="Resources\1305774588258.png" />
