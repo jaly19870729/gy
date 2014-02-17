@@ -892,7 +892,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             object id = this.dgv_Statistics_MemberManager.Rows[e.RowIndex].Cells["dgv_StatisticsMember_CardID"].Value;
 
             DataSet dataSet = memberInfoManager.GetList("CardID='" + id + "'");
-            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.ContinuedCardType);
+            AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
             if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
             {
                 MemberInfoModel memberInfoModel = memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
