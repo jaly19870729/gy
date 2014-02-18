@@ -111,10 +111,12 @@ namespace Gymnasium_APP.ExtensionFrom
         /// <returns></returns>
         private bool ValidateCtronl()
         {
+            errorProvider1.Clear();
             Regex regex=new Regex("^\\w{8}$");
             bool flag = regex.IsMatch(this.txt_CardNumber.Text);
             if (!flag)
             {
+                errorProvider1.SetError(txt_CardNumber, "卡号输入有误,卡号8位!");
               //  MessageBox.Show("卡号输入有误!");
             }
             return flag;
@@ -124,7 +126,8 @@ namespace Gymnasium_APP.ExtensionFrom
         /// 窗体卡号变化
         /// </summary>
         private void CardNumChange()
-        {
+        { 
+            errorProvider1.Clear();
             if (!String.IsNullOrEmpty(this.txt_CardNumber.Text))
             {
                 // todo:需要selectOne函数
@@ -158,7 +161,7 @@ namespace Gymnasium_APP.ExtensionFrom
                 }
                 else
                 {
-                    MessageBox.Show("没有此卡号信息!");
+                    errorProvider1.SetError(txt_CardNumber, "没有此卡号信息!");
                 }
 
 
