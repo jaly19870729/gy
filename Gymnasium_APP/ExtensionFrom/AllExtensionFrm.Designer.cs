@@ -34,14 +34,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtp_ExtensionEndTime = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dtp_ExtensionStartTime = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.btn_Abolish = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdUpload = new System.Windows.Forms.OpenFileDialog();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtp_ExtensionStartTime = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dtp_ExtensionEndTime = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -107,15 +107,67 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(680, 156);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // dtp_ExtensionEndTime
+            // 
+            this.dtp_ExtensionEndTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtp_ExtensionEndTime.CalendarFont = new System.Drawing.Font("宋体", 14F);
+            this.dtp_ExtensionEndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_ExtensionEndTime.Font = new System.Drawing.Font("宋体", 13F);
+            this.dtp_ExtensionEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_ExtensionEndTime.Location = new System.Drawing.Point(445, 64);
+            this.dtp_ExtensionEndTime.Name = "dtp_ExtensionEndTime";
+            this.dtp_ExtensionEndTime.Size = new System.Drawing.Size(221, 27);
+            this.dtp_ExtensionEndTime.TabIndex = 31;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 14F);
+            this.label8.Location = new System.Drawing.Point(343, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 156);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "全体延期结束时间";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // dtp_ExtensionStartTime
+            // 
+            this.dtp_ExtensionStartTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtp_ExtensionStartTime.CalendarFont = new System.Drawing.Font("宋体", 14F);
+            this.dtp_ExtensionStartTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_ExtensionStartTime.Font = new System.Drawing.Font("宋体", 13F);
+            this.dtp_ExtensionStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_ExtensionStartTime.Location = new System.Drawing.Point(105, 64);
+            this.dtp_ExtensionStartTime.Name = "dtp_ExtensionStartTime";
+            this.dtp_ExtensionStartTime.Size = new System.Drawing.Size(221, 27);
+            this.dtp_ExtensionStartTime.TabIndex = 29;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 14F);
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 156);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "全体延期开始时间";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btn_Abolish
             // 
@@ -144,60 +196,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 14F);
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 156);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "全体延期开始时间";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // dtp_ExtensionStartTime
-            // 
-            this.dtp_ExtensionStartTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtp_ExtensionStartTime.CalendarFont = new System.Drawing.Font("宋体", 14F);
-            this.dtp_ExtensionStartTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp_ExtensionStartTime.Enabled = false;
-            this.dtp_ExtensionStartTime.Font = new System.Drawing.Font("宋体", 13F);
-            this.dtp_ExtensionStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_ExtensionStartTime.Location = new System.Drawing.Point(105, 64);
-            this.dtp_ExtensionStartTime.Name = "dtp_ExtensionStartTime";
-            this.dtp_ExtensionStartTime.Size = new System.Drawing.Size(221, 27);
-            this.dtp_ExtensionStartTime.TabIndex = 29;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 14F);
-            this.label8.Location = new System.Drawing.Point(343, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 156);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "全体延期结束时间";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // dtp_ExtensionEndTime
-            // 
-            this.dtp_ExtensionEndTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtp_ExtensionEndTime.CalendarFont = new System.Drawing.Font("宋体", 14F);
-            this.dtp_ExtensionEndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp_ExtensionEndTime.Enabled = false;
-            this.dtp_ExtensionEndTime.Font = new System.Drawing.Font("宋体", 13F);
-            this.dtp_ExtensionEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_ExtensionEndTime.Location = new System.Drawing.Point(445, 64);
-            this.dtp_ExtensionEndTime.Name = "dtp_ExtensionEndTime";
-            this.dtp_ExtensionEndTime.Size = new System.Drawing.Size(221, 27);
-            this.dtp_ExtensionEndTime.TabIndex = 31;
             // 
             // AllExtensionFrm
             // 

@@ -28,6 +28,7 @@ namespace Gymnasium_APP.LossFrom
         private LossCastManager lossCastManager=new LossCastManager();
         private String cardNumber;
         private int lossCardId;
+        //todo:金额不确定
         private decimal payableAmount = 10;
         #endregion
 
@@ -52,7 +53,7 @@ namespace Gymnasium_APP.LossFrom
 
         private void btn_Abolish_Click(object sender, EventArgs e)
         {
-            //此处为bug
+            //todo:此处为bug
             this.Close();
         }
         #endregion
