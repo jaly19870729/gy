@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAndUpdateSellCardForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowCardInfo));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -63,10 +63,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtp_StartTime = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Abolish = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdUpload = new System.Windows.Forms.OpenFileDialog();
@@ -80,9 +77,9 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
@@ -109,9 +106,9 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Location = new System.Drawing.Point(3, 55);
@@ -121,9 +118,9 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
@@ -179,6 +176,7 @@
             this.dtp_Birthday.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtp_Birthday.CalendarFont = new System.Drawing.Font("宋体", 14F);
             this.dtp_Birthday.CustomFormat = "yyyy-MM-dd";
+            this.dtp_Birthday.Enabled = false;
             this.dtp_Birthday.Font = new System.Drawing.Font("宋体", 13F);
             this.dtp_Birthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Birthday.Location = new System.Drawing.Point(105, 189);
@@ -190,6 +188,7 @@
             // 
             this.cmb_Sex.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cmb_Sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Sex.Enabled = false;
             this.cmb_Sex.Font = new System.Drawing.Font("宋体", 14F);
             this.cmb_Sex.FormattingEnabled = true;
             this.cmb_Sex.Items.AddRange(new object[] {
@@ -202,9 +201,9 @@
             // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("宋体", 14F);
             this.label11.Location = new System.Drawing.Point(3, 180);
@@ -216,9 +215,9 @@
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 14F);
             this.label8.Location = new System.Drawing.Point(3, 135);
@@ -231,6 +230,7 @@
             // txt_Name
             // 
             this.txt_Name.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Name.Enabled = false;
             this.txt_Name.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Name.Location = new System.Drawing.Point(105, 98);
             this.txt_Name.Name = "txt_Name";
@@ -239,9 +239,9 @@
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 14F);
             this.label6.Location = new System.Drawing.Point(3, 90);
@@ -253,9 +253,9 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 14F);
             this.label4.Location = new System.Drawing.Point(3, 45);
@@ -267,9 +267,9 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 14F);
             this.label2.Location = new System.Drawing.Point(3, 0);
@@ -282,17 +282,18 @@
             // txt_CardNumber
             // 
             this.txt_CardNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_CardNumber.Enabled = false;
             this.txt_CardNumber.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_CardNumber.Location = new System.Drawing.Point(105, 8);
             this.txt_CardNumber.Name = "txt_CardNumber";
             this.txt_CardNumber.Size = new System.Drawing.Size(221, 29);
             this.txt_CardNumber.TabIndex = 1;
-            this.txt_CardNumber.TextChanged += new System.EventHandler(this.txt_CardNumber_TextChanged);
             // 
             // cmb_CardType
             // 
             this.cmb_CardType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cmb_CardType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_CardType.Enabled = false;
             this.cmb_CardType.Font = new System.Drawing.Font("宋体", 14F);
             this.cmb_CardType.FormattingEnabled = true;
             this.cmb_CardType.Location = new System.Drawing.Point(105, 54);
@@ -303,9 +304,9 @@
             // 
             // label14
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("宋体", 14F);
             this.label14.Location = new System.Drawing.Point(3, 405);
@@ -318,6 +319,7 @@
             // txt_Unit
             // 
             this.txt_Unit.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Unit.Enabled = false;
             this.txt_Unit.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Unit.Location = new System.Drawing.Point(105, 415);
             this.txt_Unit.Name = "txt_Unit";
@@ -328,6 +330,7 @@
             // 
             this.cmb_IDType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cmb_IDType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_IDType.Enabled = false;
             this.cmb_IDType.Font = new System.Drawing.Font("宋体", 14F);
             this.cmb_IDType.FormattingEnabled = true;
             this.cmb_IDType.Items.AddRange(new object[] {
@@ -341,9 +344,9 @@
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 14F);
             this.label5.Location = new System.Drawing.Point(3, 225);
@@ -355,9 +358,9 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 14F);
             this.label7.Location = new System.Drawing.Point(3, 270);
@@ -370,6 +373,7 @@
             // txt_IDCard
             // 
             this.txt_IDCard.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_IDCard.Enabled = false;
             this.txt_IDCard.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_IDCard.Location = new System.Drawing.Point(105, 278);
             this.txt_IDCard.Name = "txt_IDCard";
@@ -378,9 +382,9 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("宋体", 14F);
             this.label12.Location = new System.Drawing.Point(3, 315);
@@ -393,6 +397,7 @@
             // txt_Phone
             // 
             this.txt_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Phone.Enabled = false;
             this.txt_Phone.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Phone.Location = new System.Drawing.Point(105, 323);
             this.txt_Phone.Name = "txt_Phone";
@@ -401,9 +406,9 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 14F);
             this.label3.Location = new System.Drawing.Point(3, 360);
@@ -416,6 +421,7 @@
             // txt_Mail
             // 
             this.txt_Mail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Mail.Enabled = false;
             this.txt_Mail.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Mail.Location = new System.Drawing.Point(105, 368);
             this.txt_Mail.Name = "txt_Mail";
@@ -424,9 +430,9 @@
             // 
             // label15
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("宋体", 14F);
             this.label15.Location = new System.Drawing.Point(343, 405);
@@ -451,9 +457,9 @@
             // 
             // label13
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 14F);
             this.label13.Location = new System.Drawing.Point(343, 360);
@@ -475,9 +481,9 @@
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("宋体", 14F);
             this.label10.Location = new System.Drawing.Point(343, 315);
@@ -502,9 +508,9 @@
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 14F);
             this.label9.Location = new System.Drawing.Point(343, 270);
@@ -532,8 +538,6 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel2.SetColumnSpan(this.panel2, 2);
-            this.panel2.Controls.Add(this.linkLabel2);
-            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(359, 3);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
@@ -541,31 +545,6 @@
             this.tableLayoutPanel2.SetRowSpan(this.panel2, 6);
             this.panel2.Size = new System.Drawing.Size(306, 264);
             this.panel2.TabIndex = 27;
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkLabel2.Location = new System.Drawing.Point(253, 241);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(40, 16);
-            this.linkLabel2.TabIndex = 2;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "上传";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkLabel1.Location = new System.Drawing.Point(207, 241);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(40, 16);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "拍照";
             // 
             // pictureBox1
             // 
@@ -579,23 +558,11 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_Abolish
-            // 
-            this.btn_Abolish.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Abolish.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Abolish.Location = new System.Drawing.Point(380, 536);
-            this.btn_Abolish.Name = "btn_Abolish";
-            this.btn_Abolish.Size = new System.Drawing.Size(146, 43);
-            this.btn_Abolish.TabIndex = 16;
-            this.btn_Abolish.Text = "取消";
-            this.btn_Abolish.UseVisualStyleBackColor = true;
-            this.btn_Abolish.Click += new System.EventHandler(this.btn_Abolish_Click);
-            // 
             // btn_OK
             // 
             this.btn_OK.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_OK.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_OK.Location = new System.Drawing.Point(187, 536);
+            this.btn_OK.Location = new System.Drawing.Point(261, 534);
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.Size = new System.Drawing.Size(146, 43);
             this.btn_OK.TabIndex = 15;
@@ -607,12 +574,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // AddAndUpdateSellCardForm
+            // ShowCardInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 589);
-            this.Controls.Add(this.btn_Abolish);
             this.Controls.Add(this.btn_OK);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
@@ -620,7 +586,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(690, 490);
-            this.Name = "AddAndUpdateSellCardForm";
+            this.Name = "ShowCardInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "会员信息 — 添加 ";
             this.Load += new System.EventHandler(this.AddAndUpdateSellCardForm_Load);
@@ -630,7 +596,6 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -664,7 +629,6 @@
         private System.Windows.Forms.TextBox txt_Unit;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txt_Count;
-        private System.Windows.Forms.Button btn_Abolish;
         private System.Windows.Forms.Button btn_OK;
         private System.Windows.Forms.ComboBox cmb_CardType;
         private System.Windows.Forms.ComboBox cmb_IDType;
@@ -676,8 +640,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         public System.Windows.Forms.OpenFileDialog ofdUpload;
     }
 }

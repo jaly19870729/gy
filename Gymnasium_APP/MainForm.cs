@@ -49,6 +49,8 @@ namespace Gymnasium_APP
             uC_Page_Statistics_Member.OnPageChanged += new EventHandler(uC_Page_Statistics_Member_OnPageChanged);
             uC_Page_Main_Member.OnPageChanged += new EventHandler(uC_Page_Main_Member_OnPageChanged);
             uC_Page_Main_SellCast.OnPageChanged += new EventHandler(uC_Page_Main_SellCast_OnPageChanged);
+            uC_Page_Statistics_SellCast.OnPageChanged += new EventHandler(uC_Page_Statistics_SellCast_OnPageChanged);
+            uC_Page_Statistics_Swiping.OnPageChanged += new EventHandler(uC_Page_Statistics_Swiping_OnPageChanged);
             tabc_SystemManager.Visible = false;
             tabc_Mian.Visible = true;
             tbc_Statistics.Visible = false;
@@ -56,8 +58,7 @@ namespace Gymnasium_APP
             btn_MainPage_Click(sender, e);
         }
 
-     
-     
+ 
 
         private void notifyIcon1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -234,6 +235,9 @@ namespace Gymnasium_APP
          ds_List.Tables[0].Rows[i]["Des"].ToString();
                     this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_AddTime"].Value =
 ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
+                    this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_CardID"].Value =
+ds_List.Tables[0].Rows[i]["CardID"].ToString();
+                    
                 }
 
             }
@@ -745,11 +749,36 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
                 updateForm.ShowDialog();
             }
         }
+        #region 统计
+        private void tbc_Statistics_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tbc_Statistics.SelectedIndex == 0)
+            {
+
+            }
+            if (tbc_Statistics.SelectedIndex == 1)
+            {
+                dtp_Statistics_SellCast_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
+                cmb_Statistics_SellCast_Type.SelectedIndex = 0;
+                uC_Page_Statistics_SellCast.tp.CurrentPage = 1;
+                GetStatisticsCellCastList();
+            }
+            if (tbc_Statistics.SelectedIndex == 2)
+            {
+                dtp_Statistics_Swiping_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
+                cmb_Statistics_Swiping_TypeName.SelectedIndex = 0;
+                uC_Page_Statistics_Swiping.tp.CurrentPage = 1;
+                GetStatistics_SwipingList();
+            }
+        }
+
+    
         private void btn_Statistics_Click(object sender, EventArgs e)
         {
             tbc_Statistics.Visible = true;
             tabc_Mian.Visible = false;
             tabc_SystemManager.Visible = false;
+            uC_Page_Statistics_Member.tp.CurrentPage = 1;
             dtp_Statistics_Member_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
             GetStatisticsMemberList();
             List<CardTypeInfoModel> cardTypeInfoList = cardTypeManager.GetModelList(" 1=1");
@@ -765,9 +794,178 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
                 cmb_Statistics_Member_Type.ValueMember = "CardTypeID";
                 cmb_Statistics_Member_Type.SelectedIndex = 0;
             }
-            cmb_Statistics_Member_Type.SelectedIndex = cardTypeInfoList.Count-1;
+            cmb_Statistics_Member_Type.SelectedIndex = cardTypeInfoList.Count - 1;
             
         }
+
+        #region 消费信息
+        private void btn_Statistics_SellCast_Select_Click(object sender, EventArgs e)
+        {
+            if (dtp_Statistics_SellCast_StartTime.Value > dtp_Statistics_SellCast_EndTime.Value)
+            {
+                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dt_SystemLogManager_BeginTime.Value = StartTime;
+                return;
+            }
+            if (dtp_Statistics_SellCast_EndTime.Value < dtp_Statistics_SellCast_StartTime.Value)
+            {
+                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dtStopTime.Value = StopTime;
+                return;
+            }
+            Statistics_SellCast_TiaoJian = " 1=1";
+
+            if (txt_Statistics_SellCast_CardID.Text.Trim() != "")
+            {
+
+                Statistics_SellCast_TiaoJian += " and (CardID  like '%" + txt_Statistics_SellCast_CardID.Text.Trim() + "%')";
+
+            }
+
+            if (cmb_Statistics_SellCast_Type.Text.Trim() != "" && cmb_Statistics_SellCast_Type.Text.Trim() != "全部")
+            {
+                Statistics_SellCast_TiaoJian += " and TypeName='" + cmb_Statistics_SellCast_Type.Text.Trim() + "'";
+            }
+            Statistics_SellCast_TiaoJian += " and (CreateTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_SellCast_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  CreateTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_SellCast_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
+            uC_Page_Statistics_SellCast.tp.CurrentPage = 1;
+            GetStatisticsCellCastList();
+
+        }
+        private string Statistics_SellCast_TiaoJian = " 1=1 ";
+        private void GetStatisticsCellCastList()
+        {
+            this.dgv_Statistics_SellCast_Manager.Rows.Clear();
+            uC_Page_Statistics_SellCast.tp.DataTotalCount = sellCastManager.GetRecordCount(Statistics_SellCast_TiaoJian);
+            DataSet ds_List = sellCastManager.GetList(uC_Page_Statistics_SellCast.tp.Count,
+                                                                 uC_Page_Statistics_SellCast.tp.CurrentPage, Statistics_SellCast_TiaoJian);
+            if (ds_List != null && ds_List.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_List.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_List.Tables[0].Rows[i] != null)
+                        this.dgv_Statistics_SellCast_Manager.Rows.Add();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_Num"].Value =
+                        (uC_Page_Statistics_SellCast.tp.CurrentPage * uC_Page_Statistics_SellCast.tp.Count) - uC_Page_Statistics_SellCast.tp.Count + i +
+                        1; //序号
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CastID"].Value =
+                        ds_List.Tables[0].Rows[i]["CastID"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_AddType"].Value =
+                        ds_List.Tables[0].Rows[i]["AddTypeName"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_TypeName"].Value =
+                     ds_List.Tables[0].Rows[i]["TypeName"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CardID"].Value =
+                     ds_List.Tables[0].Rows[i]["CardID"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_Prices"].Value =
+          ds_List.Tables[0].Rows[i]["Prices"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_Peoples"].Value =
+          ds_List.Tables[0].Rows[i]["Peoples"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_PriceAmount"].Value =
+         ds_List.Tables[0].Rows[i]["PriceAmount"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_PaymentAmount"].Value =
+         ds_List.Tables[0].Rows[i]["PaymentAmount"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_ChangeAmount"].Value =
+         ds_List.Tables[0].Rows[i]["ChangeAmount"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_Des"].Value =
+         ds_List.Tables[0].Rows[i]["Des"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CreateTime"].Value =
+ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_AddUserName"].Value =
+ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
+                }
+
+            }
+            uC_Page_Statistics_SellCast.lbl_Count.Text = uC_Page_Statistics_SellCast.tp.DataTotalCount.ToString();
+            uC_Page_Statistics_SellCast.lbl_Page.Text = uC_Page_Statistics_SellCast.tp.CurrentPage + "/" +
+                                              uC_Page_Statistics_SellCast.tp.PageTotalCount + "页";
+        }
+        void uC_Page_Statistics_SellCast_OnPageChanged(object sender, EventArgs e)
+        {
+            GetStatisticsCellCastList();
+        }
+
+
+        #endregion
+
+        #region 会员刷卡信息
+        private void btn_Statistics_Swiping_Select_Click(object sender, EventArgs e)
+        {
+
+            if (dtp_Statistics_Swiping_StartTime.Value > dtp_Statistics_Swiping_EndTime.Value)
+            {
+                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dt_SystemLogManager_BeginTime.Value = StartTime;
+                return;
+            }
+            if (dtp_Statistics_Swiping_EndTime.Value < dtp_Statistics_Swiping_StartTime.Value)
+            {
+                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dtStopTime.Value = StopTime;
+                return;
+            }
+            Statistics_SwipingNamager_TiaoJian = " 1=1";
+
+            if (txt_Statistics_Swiping_CardID.Text.Trim() != "")
+            {
+
+                Statistics_SwipingNamager_TiaoJian += " and (CardID  like '%" + txt_Statistics_Swiping_CardID.Text.Trim() + "%')";
+
+            }
+
+            if (cmb_Statistics_Swiping_TypeName.Text.Trim() != "" && cmb_Statistics_Swiping_TypeName.Text.Trim() != "全部")
+            {
+                Statistics_SwipingNamager_TiaoJian += " and SwipingType='" + cmb_Statistics_Swiping_TypeName.Text.Trim() + "'";
+            }
+            Statistics_SwipingNamager_TiaoJian += " and (AddTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_Swiping_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  AddTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_Swiping_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
+            uC_Page_Statistics_Swiping.tp.CurrentPage = 1;
+            GetStatistics_SwipingList();
+        }
+        void uC_Page_Statistics_Swiping_OnPageChanged(object sender, EventArgs e)
+        {
+            GetStatistics_SwipingList();
+        }
+        private string Statistics_SwipingNamager_TiaoJian = " 1=1";
+        private void GetStatistics_SwipingList()
+        {
+            this.dgv_Statistics_Swiping_Manager.Rows.Clear();
+            uC_Page_Statistics_Swiping.tp.DataTotalCount = swipManager.GetRecordCount(Statistics_SwipingNamager_TiaoJian);
+            DataSet ds_List = swipManager.GetList(uC_Page_Statistics_Swiping.tp.Count,
+                                                                 uC_Page_Statistics_Swiping.tp.CurrentPage, Statistics_SwipingNamager_TiaoJian);
+            if (ds_List != null && ds_List.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_List.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_List.Tables[0].Rows[i] != null)
+                        this.dgv_Statistics_Swiping_Manager.Rows.Add();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_Num"].Value =
+                        (uC_Page_Statistics_Swiping.tp.CurrentPage * uC_Page_Statistics_Swiping.tp.Count) - uC_Page_Statistics_Swiping.tp.Count + i +
+                        1; //序号
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_ID"].Value =
+                        ds_List.Tables[0].Rows[i]["ID"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_CardID"].Value =
+                        ds_List.Tables[0].Rows[i]["CardID"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_Name"].Value =
+                        ds_List.Tables[0].Rows[i]["Name"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_CardTypeName"].Value =
+                     ds_List.Tables[0].Rows[i]["CardType"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_Des"].Value =
+          ds_List.Tables[0].Rows[i]["Desc"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_Type"].Value =
+    ds_List.Tables[0].Rows[i]["SwipingType"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_PeoPles"].Value =
+      ds_List.Tables[0].Rows[i]["SwipingPeoPle"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_AddTime"].Value =
+         ds_List.Tables[0].Rows[i]["AddTime"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_AddUserName"].Value =
+       ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
+                }
+
+            }
+            uC_Page_Statistics_Swiping.lbl_Count.Text = uC_Page_Statistics_Swiping.tp.DataTotalCount.ToString();
+            uC_Page_Statistics_Swiping.lbl_Page.Text = uC_Page_Statistics_Swiping.tp.CurrentPage + "/" +
+                                              uC_Page_Statistics_Swiping.tp.PageTotalCount + "页";
+        }
+
+        #endregion
 
         #region 会员管理
         private string MemberNamager_TiaoJian = " 1=1";
@@ -821,6 +1019,8 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
             GetStatisticsMemberList();
         }
         #endregion
+
+        #endregion 
 
         private void btn_Statistics_Member_Add_Click(object sender, EventArgs e)
         {
@@ -886,18 +1086,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         }
         #endregion
 
+        #region 列表双击查看会员信息
         private void dgv_Main_Member_Manager_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             object id = this.dgv_Main_Member_Manager.Rows[e.RowIndex].Cells["dgv_Main_Member_CardID"].Value;
-            
-            DataSet dataSet=memberInfoManager.GetList("CardID='"+id+"'");
-            //AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
-            //if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count>0)
-            //{
-            //    MemberInfoModel memberInfoModel=memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
-            //    addAndUpdateSellCardForm.DetialModel(memberInfoModel);
-            //    addAndUpdateSellCardForm.Show();
-            //}
+
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
             
 
         }
@@ -906,25 +1101,36 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         {
             object id = this.dgv_Statistics_MemberManager.Rows[e.RowIndex].Cells["dgv_StatisticsMember_CardID"].Value;
 
-            DataSet dataSet = memberInfoManager.GetList("CardID='" + id + "'");
-            //AddAndUpdateSellCardForm addAndUpdateSellCardForm = new AddAndUpdateSellCardForm("查看会员详情", MemberBusinessType.SellCardType);
-            //if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
-            //{
-            //    MemberInfoModel memberInfoModel = memberInfoManager.GetModel(Convert.ToInt32(dataSet.Tables[0].Rows[0]["MemberID"].ToString()));
-            //    addAndUpdateSellCardForm.DetialModel(memberInfoModel);
-            //    addAndUpdateSellCardForm.Show();
-            //}
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
         }
 
-     
+        private void dgv_Statistics_SellCast_Manager_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            object id = this.dgv_Statistics_SellCast_Manager.Rows[e.RowIndex].Cells["dgv_Statistics_SellCast_CardID"].Value;
 
-       
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
+        }
 
-    
+        private void dgv_Statistics_Swiping_Manager_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            object id = this.dgv_Statistics_Swiping_Manager.Rows[e.RowIndex].Cells["dgv_Statistics_Swiping_CardID"].Value;
 
-       
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
+        }
 
-      
+        #endregion
+
+
+        private void dgv_Main_SellCast_Manager_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            object id = this.dgv_Main_SellCast_Manager.Rows[e.RowIndex].Cells["dgv_Main_SellCast_CardID"].Value;
+
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
+        }
 
     }
 }
