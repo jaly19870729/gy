@@ -43,6 +43,9 @@
   <ItemGroup>
     <Compile Include="CardTypeInfoModel.cs" />
     <Compile Include="ExtensionCard.cs" />
+    <Compile Include="ExtensionCardInfoModel.cs" />
+    <Compile Include="LossCardModel.cs" />
+    <Compile Include="LossCastModel.cs" />
     <Compile Include="MemberHistoryInfoModel.cs" />
     <Compile Include="MemberInfoModel.cs" />
     <Compile Include="MenuModel.cs" />

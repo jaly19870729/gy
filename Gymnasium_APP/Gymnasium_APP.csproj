@@ -153,17 +153,23 @@
     <Compile Include="ExtensionFrom\ExtensionDialog.Designer.cs">
       <DependentUpon>ExtensionDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtensionFrom\AllExtensionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFrom\AllExtensionFrm.Designer.cs">
+      <DependentUpon>AllExtensionFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LossFrom\LossFrm.cs">
+    <Compile Include="LossFrom\LossCardFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LossFrom\LossFrm.Designer.cs">
-      <DependentUpon>LossFrm.cs</DependentUpon>
+    <Compile Include="LossFrom\LossCardFrm.Designer.cs">
+      <DependentUpon>LossCardFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="LossFrom\LossCastFrm.cs">
       <SubType>Form</SubType>
@@ -279,11 +285,14 @@
     <EmbeddedResource Include="ExtensionFrom\ExtensionDialog.resx">
       <DependentUpon>ExtensionDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFrom\AllExtensionFrm.resx">
+      <DependentUpon>AllExtensionFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LossFrom\LossFrm.resx">
-      <DependentUpon>LossFrm.cs</DependentUpon>
+    <EmbeddedResource Include="LossFrom\LossCardFrm.resx">
+      <DependentUpon>LossCardFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LossFrom\LossCastFrm.resx">
       <DependentUpon>LossCastFrm.cs</DependentUpon>

@@ -37,7 +37,8 @@ namespace Gymnasium_APP.ExtensionFrom
         }
         private void btn_AllExtension_Click(object sender, EventArgs e)
         {
-
+            new AllExtensionFrm().Show();
+            this.Close();
         }
         #endregion
 

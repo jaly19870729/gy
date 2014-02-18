@@ -27,6 +27,7 @@ namespace Gymnasium_APP.ExtensionFrom
         private MemberInfoManager memberInfoManager=new MemberInfoManager();
         private ExtensionCardManager extensionCardManager=new ExtensionCardManager();
         private CardTypeInfoManager cardTypeInfoManager=new CardTypeInfoManager();
+        private ExtensionCardInfoManager extensionCardInfoManager=new ExtensionCardInfoManager();
         private int memberId = 0;
         #endregion
 
@@ -69,7 +70,23 @@ namespace Gymnasium_APP.ExtensionFrom
             int result=extensionCardManager.Add(extensionCard);
             MessageBox.Show("单卡延期卡号：" + this.txt_CardNumber.Text + " 添加" + (result > 0 ? "成功！" : "失败！"));
             CommTools.AddSystemLog("单卡延期卡号", "卡号：" + txt_Name.Text.Trim() + " 添加" + (result > 0 ? "成功！" : "失败！"));
+            // 添加记录
+            AdddLog(extensionCard);
            this.Close();
+        }
+        /// <summary>
+        /// 添加日志
+        /// </summary>
+        /// <param name="extensionCard"></param>
+        private void AdddLog(ExtensionCard extensionCard)
+        {
+            ExtensionCardInfoModel extensionCardInfoModel=new ExtensionCardInfoModel();
+            extensionCardInfoModel.CreateTime = extensionCard.CreateTime;
+            extensionCardInfoModel.ExtensionEndTm = extensionCard.ExtensionEndTm;
+            extensionCardInfoModel.ExtensionStartTm = extensionCard.ExtensionStartTm;
+            extensionCardInfoModel.MemberId = extensionCard.MemberId;
+            int result=extensionCardInfoManager.Add(extensionCardInfoModel);
+            
         }
         /// <summary>
         /// 初始化窗体
@@ -98,7 +115,7 @@ namespace Gymnasium_APP.ExtensionFrom
             bool flag = regex.IsMatch(this.txt_CardNumber.Text);
             if (!flag)
             {
-                MessageBox.Show("卡号输入有误!");
+              //  MessageBox.Show("卡号输入有误!");
             }
             return flag;
         }

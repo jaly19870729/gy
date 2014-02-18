@@ -853,7 +853,7 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
         #region 挂失
         private void btn_Lose_Click(object sender, EventArgs e)
         {
-            new LossFrm().Show();
+            new LossCardFrm().Show();
         }
         #endregion
 
