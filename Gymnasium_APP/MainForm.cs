@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Gymnasium_APP.BLL;
 using Gymnasium_APP.CardType;
 using Gymnasium_APP.MemberForm;
+using Gymnasium_APP.UC;
 using Model;
 using Gymnasium_APP.Model;
 using Gymnasium_APP.RoleForm;
@@ -51,15 +52,14 @@ namespace Gymnasium_APP
             uC_Page_Main_SellCast.OnPageChanged += new EventHandler(uC_Page_Main_SellCast_OnPageChanged);
             uC_Page_Statistics_SellCast.OnPageChanged += new EventHandler(uC_Page_Statistics_SellCast_OnPageChanged);
             uC_Page_Statistics_Swiping.OnPageChanged += new EventHandler(uC_Page_Statistics_Swiping_OnPageChanged);
+            uC_Page_Statistics_BackCard.OnPageChanged += new EventHandler(uC_Page_Statistics_BackCard_OnPageChanged);
+            uC_Page_Statistics_LossCard.OnPageChanged += new EventHandler(uC_Page_Statistics_LossCard_OnPageChanged);
             tabc_SystemManager.Visible = false;
             tabc_Mian.Visible = true;
             tbc_Statistics.Visible = false;
             userName = lbl_login_name.Text.Trim().Split(':')[1];
             btn_MainPage_Click(sender, e);
         }
-
- 
-
         private void notifyIcon1_MouseDown(object sender, MouseEventArgs e)
         {
             this.Visible = true;
@@ -770,6 +770,33 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
                 uC_Page_Statistics_Swiping.tp.CurrentPage = 1;
                 GetStatistics_SwipingList();
             }
+            if (tbc_Statistics.SelectedIndex == 3)
+            {
+                dtp_Statistics_BackCard_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
+                List<CardTypeInfoModel> cardTypeInfoList = cardTypeManager.GetModelList(" 1=1");
+                if (cardTypeInfoList != null)
+                {
+                    CardTypeInfoModel model = new CardTypeInfoModel();
+                    model.CardTypeName = "全部";
+                    model.CardTypeID = 0;
+                    cardTypeInfoList.Add(model);
+
+                    cmb_Statistics_BackCard_CardType.DataSource = cardTypeInfoList;
+                    cmb_Statistics_BackCard_CardType.DisplayMember = "CardTypeName";
+                    cmb_Statistics_BackCard_CardType.ValueMember = "CardTypeID";
+                    cmb_Statistics_BackCard_CardType.SelectedIndex = 0;
+                }
+                cmb_Statistics_BackCard_CardType.SelectedIndex = cardTypeInfoList.Count - 1;
+                uC_Page_Statistics_BackCard.tp.CurrentPage = 1;
+                GetStatistics_BackCardList();
+            
+            }
+            if (tbc_Statistics.SelectedIndex == 4)
+            {
+                dtp_Statistics_LossCard_CardID_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
+                uC_Page_Statistics_LossCard.tp.CurrentPage = 1;
+                GetStatistics_LossCardList();
+            }
         }
 
     
@@ -967,6 +994,177 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
 
         #endregion
 
+        #region 退卡信息
+        void uC_Page_Statistics_BackCard_OnPageChanged(object sender, EventArgs e)
+        {
+            GetStatistics_BackCardList();
+        }
+
+        private void btn_Statistics_BackCard_Select_Click(object sender, EventArgs e)
+        {
+            if (dtp_Statistics_BackCard_StartTime.Value > dtp_Statistics_BackCard_EndTime.Value)
+            {
+                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dt_SystemLogManager_BeginTime.Value = StartTime;
+                return;
+            }
+            if (dtp_Statistics_BackCard_EndTime.Value < dtp_Statistics_BackCard_StartTime.Value)
+            {
+                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dtStopTime.Value = StopTime;
+                return;
+            }
+            Statistics_BackCard_TiaoJian = " 1=1";
+
+            if (txt_Statistics_BackCard_CardID.Text.Trim() != "")
+            {
+
+                Statistics_BackCard_TiaoJian += " and (CardID  like '%" + txt_Statistics_BackCard_CardID.Text.Trim() + "%')";
+
+            }
+
+            if (cmb_Statistics_BackCard_CardType.Text.Trim() != "" && cmb_Statistics_BackCard_CardType.Text.Trim() != "全部")
+            {
+                Statistics_BackCard_TiaoJian += " and CardType='" + cmb_Statistics_BackCard_CardType.Text.Trim() + "'";
+            }
+            Statistics_BackCard_TiaoJian += " and (CreateTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_BackCard_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  CreateTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_BackCard_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
+            uC_Page_Statistics_BackCard.tp.CurrentPage = 1;
+            GetStatistics_BackCardList();
+        }
+        private BackCardInfoManager backCardInfoManager = new BackCardInfoManager();
+        private string Statistics_BackCard_TiaoJian = " 1=1";
+        private void GetStatistics_BackCardList()
+        {
+            this.dgv_Statistics_BackCard_Manager.Rows.Clear();
+            uC_Page_Statistics_BackCard.tp.DataTotalCount = backCardInfoManager.GetRecordCount(Statistics_BackCard_TiaoJian);
+            DataSet ds_List = backCardInfoManager.GetList(uC_Page_Statistics_BackCard.tp.Count,
+                                                                 uC_Page_Statistics_BackCard.tp.CurrentPage, Statistics_BackCard_TiaoJian);
+            if (ds_List != null && ds_List.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_List.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_List.Tables[0].Rows[i] != null)
+                        this.dgv_Statistics_BackCard_Manager.Rows.Add();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_Num"].Value =
+                        (uC_Page_Statistics_BackCard.tp.CurrentPage * uC_Page_Statistics_BackCard.tp.Count) - uC_Page_Statistics_BackCard.tp.Count + i +
+                        1; //序号
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_ID"].Value =
+                        ds_List.Tables[0].Rows[i]["Id"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_CardID"].Value =
+                        ds_List.Tables[0].Rows[i]["CardNumber"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_Name"].Value =
+                        ds_List.Tables[0].Rows[i]["Name"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_CardType"].Value =
+                     ds_List.Tables[0].Rows[i]["CardType"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_TotalDays"].Value =
+          ds_List.Tables[0].Rows[i]["TotalDays"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_LeftDays"].Value =
+    ds_List.Tables[0].Rows[i]["LeftDays"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_TotalTimes"].Value =
+      ds_List.Tables[0].Rows[i]["TotalTimes"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_LeftTimes"].Value =
+         ds_List.Tables[0].Rows[i]["LeftTimes"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_PaidAmount"].Value =
+       ds_List.Tables[0].Rows[i]["PaidAmount"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_ChangeAmount"].Value =
+     ds_List.Tables[0].Rows[i]["ChangeAmount"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_PatchAmount"].Value =
+     ds_List.Tables[0].Rows[i]["PatchAmount"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_UsedAmount"].Value =
+     ds_List.Tables[0].Rows[i]["UsedAmount"].ToString();
+                    this.dgv_Statistics_BackCard_Manager.Rows[i].Cells["dgv_Statistics_BackCard_AddTime"].Value =
+    ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
+                }
+
+            }
+            uC_Page_Statistics_BackCard.lbl_Count.Text = uC_Page_Statistics_BackCard.tp.DataTotalCount.ToString();
+            uC_Page_Statistics_BackCard.lbl_Page.Text = uC_Page_Statistics_BackCard.tp.CurrentPage + "/" +
+                                              uC_Page_Statistics_BackCard.tp.PageTotalCount + "页";
+        }
+
+        #endregion
+
+        #region 挂失信息
+        private LossCardManager lossCardManager = new LossCardManager();
+        private LossCastManager lossCastManager = new LossCastManager();
+        private void btn_Statistics_LossCard_Select_Click(object sender, EventArgs e)
+        {
+            if (dtp_Statistics_LossCard_CardID_StartTime.Value > dtp_Statistics_LossCard_EndTime.Value)
+            {
+                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dt_SystemLogManager_BeginTime.Value = StartTime;
+                return;
+            }
+            if (dtp_Statistics_LossCard_EndTime.Value < dtp_Statistics_LossCard_CardID_StartTime.Value)
+            {
+                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dtStopTime.Value = StopTime;
+                return;
+            }
+            Statistics_LossCard_TiaoJian = " 1=1";
+
+            if (txt_Statistics_LossCard_CardID.Text.Trim() != "")
+            {
+
+                Statistics_LossCard_TiaoJian += " and (OldCardNumber  like '%" + txt_Statistics_LossCard_CardID.Text.Trim() + "%' or PatchCardNo  like '%" + txt_Statistics_LossCard_CardID.Text.Trim() + "%')";
+
+            }
+            Statistics_LossCard_TiaoJian += " and (CreateTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_LossCard_CardID_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  CreateTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Statistics_LossCard_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
+            uC_Page_Statistics_LossCard.tp.CurrentPage = 1;
+            GetStatistics_LossCardList();
+        }
+        void uC_Page_Statistics_LossCard_OnPageChanged(object sender, EventArgs e)
+        {
+            GetStatistics_LossCardList();
+        }
+        private string Statistics_LossCard_TiaoJian = " 1=1";
+        private void GetStatistics_LossCardList()
+        {
+            this.dgv_Statistics_LossCard_Manager.Rows.Clear();
+            uC_Page_Statistics_LossCard.tp.DataTotalCount = lossCardManager.GetRecordCount(Statistics_LossCard_TiaoJian);
+            DataSet ds_List = lossCardManager.GetList(uC_Page_Statistics_LossCard.tp.Count,
+                                                                 uC_Page_Statistics_LossCard.tp.CurrentPage, Statistics_LossCard_TiaoJian);
+            if (ds_List != null && ds_List.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_List.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_List.Tables[0].Rows[i] != null)
+                        this.dgv_Statistics_LossCard_Manager.Rows.Add();
+                    this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_Num"].Value =
+                        (uC_Page_Statistics_LossCard.tp.CurrentPage * uC_Page_Statistics_LossCard.tp.Count) - uC_Page_Statistics_LossCard.tp.Count + i +
+                        1; //序号
+                    this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_ID"].Value =
+                        ds_List.Tables[0].Rows[i]["Id"].ToString();
+                    this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_CardIDOld"].Value =
+                        ds_List.Tables[0].Rows[i]["OldCardNumber"].ToString();
+                    this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_NewCardID"].Value =
+                        ds_List.Tables[0].Rows[i]["PatchCardNo"].ToString();
+                    LossCastModel lossCastModel =
+                        lossCastManager.GetModel(Convert.ToInt32(ds_List.Tables[0].Rows[i]["Id"]));
+                    if (lossCastModel != null)
+                    {
+                        this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_PayableAmount"]
+                            .Value =
+                            lossCastModel.PayableAmount;
+                        this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_PaymentAmount"]
+                            .Value =
+                            lossCastModel.PaymentAmount;
+                        this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_ChangeAmount"].Value
+                            =
+                            lossCastModel.ChangeAmount;
+                    }
+                    this.dgv_Statistics_LossCard_Manager.Rows[i].Cells["dgv_Statistics_LossCard_AddTime"].Value =
+                    ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
+
+                }
+
+            }
+            uC_Page_Statistics_LossCard.lbl_Count.Text = uC_Page_Statistics_LossCard.tp.DataTotalCount.ToString();
+            uC_Page_Statistics_LossCard.lbl_Page.Text = uC_Page_Statistics_LossCard.tp.CurrentPage + "/" +
+                                              uC_Page_Statistics_LossCard.tp.PageTotalCount + "页";
+        }
+        #endregion
+
         #region 会员管理
         private string MemberNamager_TiaoJian = " 1=1";
         private MemberInfoManager memberManager = new MemberInfoManager();
@@ -1029,7 +1227,6 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
 
         #endregion
 
-
         #region 续卡
         private void btn_Continue_Click(object sender, EventArgs e)
         {
@@ -1078,7 +1275,6 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
         }
         #endregion
 
-
         #region 刷卡
         private void btn_Swiping_Click(object sender, EventArgs e)
         {
@@ -1123,7 +1319,6 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
 
         #endregion
 
-
         private void dgv_Main_SellCast_Manager_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             object id = this.dgv_Main_SellCast_Manager.Rows[e.RowIndex].Cells["dgv_Main_SellCast_CardID"].Value;
@@ -1131,6 +1326,25 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
             ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
             showCardInfo.ShowDialog();
         }
+
+        private void dgv_Statistics_BackCard_Manager_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            object id = this.dgv_Statistics_BackCard_Manager.Rows[e.RowIndex].Cells["dgv_Statistics_BackCard_CardID"].Value;
+
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
+        }
+
+        private void dgv_Statistics_LossCard_Manager_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            object id = this.dgv_Statistics_LossCard_Manager.Rows[e.RowIndex].Cells["dgv_Statistics_LossCard_NewCardID"].Value;
+
+            ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
+            showCardInfo.ShowDialog();
+        }
+
+     
+
 
     }
 }

@@ -365,7 +365,7 @@ namespace Gymnasium_APP.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
-		/*
+		
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
@@ -381,14 +381,14 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@strWhere", SqlDbType.VarChar,1000),
 					};
 			parameters[0].Value = "BackCardInfo";
-			parameters[1].Value = "UserID";
+			parameters[1].Value = "Id";
 			parameters[2].Value = PageSize;
 			parameters[3].Value = PageIndex;
 			parameters[4].Value = 0;
 			parameters[5].Value = 0;
 			parameters[6].Value = strWhere;	
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
-		}*/
+		}
 
 		#endregion  BasicMethod
 		#region  ExtensionMethod
