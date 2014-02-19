@@ -12,6 +12,7 @@ namespace Gymnasium_APP.Model
 		#region Model
 		private int _id;
 		private int _memberid;
+		private string _oldcardnumber;
 		private string _patchcardno;
 		private DateTime _patchtime;
 		private DateTime _createtime;
@@ -30,6 +31,14 @@ namespace Gymnasium_APP.Model
 		{
 			set{ _memberid=value;}
 			get{return _memberid;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string OldCardNumber
+		{
+			set{ _oldcardnumber=value;}
+			get{return _oldcardnumber;}
 		}
 		/// <summary>
 		/// 领补卡号

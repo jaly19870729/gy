@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Collections.Generic;
-using DAL;
+using Gymnasium_APP.Model;
 namespace Gymnasium_APP.BLL
 {
 	/// <summary>
@@ -71,7 +71,6 @@ namespace Gymnasium_APP.BLL
 			return dal.GetModel(Id);
 		}
 
-		
 
 		/// <summary>
 		/// 获得数据列表

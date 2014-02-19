@@ -24,6 +24,8 @@ namespace Gymnasium_APP.LossFrom
              InitializeComponent();
         }
         #region 局部变量
+
+        private MemberInfoModel toupdateMemberInfo;
         private MemberInfoManager memberInfoManager=new MemberInfoManager();
         private LossCardManager lossCardManager=new LossCardManager();
         private int memberId=0;
@@ -80,7 +82,17 @@ namespace Gymnasium_APP.LossFrom
                 lossCardModel.MemberId = memberId;
                 lossCardModel.PatchCardNo = this.txt_PatchCardNumber.Text;
                 lossCardModel.PatchTime = DateTime.Now;
+                if (toupdateMemberInfo != null)
+                {
+                    lossCardModel.OldCardNumber = toupdateMemberInfo.CardID;
+                }
                 int result=lossCardManager.Add(lossCardModel);
+                if (toupdateMemberInfo != null)
+                {
+                    toupdateMemberInfo.CardID = lossCardModel.PatchCardNo;
+                    toupdateMemberInfo.AddTime = Convert.ToString(lossCardModel.PatchTime);
+                    memberInfoManager.Update(toupdateMemberInfo);
+                }
                 // 日志
                 CommTools.AddSystemLog("挂失","挂失补领卡号： "+lossCardModel.PatchCardNo+" "+(result>0?" 成功":"失败"));
                 MessageBox.Show("挂失补领卡号： " + lossCardModel.PatchCardNo + " " + (result > 0 ? " 成功" : "失败"));
@@ -155,9 +167,9 @@ namespace Gymnasium_APP.LossFrom
             List<MemberInfoModel> memberInfoModels = memberInfoManager.GetModelList("IDCardType='" +this.cmb_IDCardType.Text+ "' and  IDCard='"+this.txt_IDNumber.Text+"'");
             if (memberInfoModels != null && memberInfoModels.Count > 0)
             {
-                MemberInfoModel memberInfoModel = memberInfoModels[0];
-                
-                return memberInfoModel;
+               
+                toupdateMemberInfo = memberInfoModels[0];
+                return memberInfoModels[0];
             }
             else
             {

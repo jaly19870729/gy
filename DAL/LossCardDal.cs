@@ -46,19 +46,21 @@ namespace Gymnasium_APP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into LossCard(");
-			strSql.Append("MemberId,PatchCardNo,PatchTime,CreateTime)");
+			strSql.Append("MemberId,OldCardNumber,PatchCardNo,PatchTime,CreateTime)");
 			strSql.Append(" values (");
-			strSql.Append("@MemberId,@PatchCardNo,@PatchTime,@CreateTime)");
+			strSql.Append("@MemberId,@OldCardNumber,@PatchCardNo,@PatchTime,@CreateTime)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@MemberId", SqlDbType.Int,4),
+					new SqlParameter("@OldCardNumber", SqlDbType.VarChar,50),
 					new SqlParameter("@PatchCardNo", SqlDbType.VarChar,50),
 					new SqlParameter("@PatchTime", SqlDbType.DateTime),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime)};
 			parameters[0].Value = model.MemberId;
-			parameters[1].Value = model.PatchCardNo;
-			parameters[2].Value = model.PatchTime;
-			parameters[3].Value = model.CreateTime;
+			parameters[1].Value = model.OldCardNumber;
+			parameters[2].Value = model.PatchCardNo;
+			parameters[3].Value = model.PatchTime;
+			parameters[4].Value = model.CreateTime;
 
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
@@ -78,21 +80,24 @@ namespace Gymnasium_APP.DAL
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update LossCard set ");
 			strSql.Append("MemberId=@MemberId,");
+			strSql.Append("OldCardNumber=@OldCardNumber,");
 			strSql.Append("PatchCardNo=@PatchCardNo,");
 			strSql.Append("PatchTime=@PatchTime,");
 			strSql.Append("CreateTime=@CreateTime");
 			strSql.Append(" where Id=@Id");
 			SqlParameter[] parameters = {
 					new SqlParameter("@MemberId", SqlDbType.Int,4),
+					new SqlParameter("@OldCardNumber", SqlDbType.VarChar,50),
 					new SqlParameter("@PatchCardNo", SqlDbType.VarChar,50),
 					new SqlParameter("@PatchTime", SqlDbType.DateTime),
 					new SqlParameter("@CreateTime", SqlDbType.DateTime),
 					new SqlParameter("@Id", SqlDbType.Int,4)};
 			parameters[0].Value = model.MemberId;
-			parameters[1].Value = model.PatchCardNo;
-			parameters[2].Value = model.PatchTime;
-			parameters[3].Value = model.CreateTime;
-			parameters[4].Value = model.Id;
+			parameters[1].Value = model.OldCardNumber;
+			parameters[2].Value = model.PatchCardNo;
+			parameters[3].Value = model.PatchTime;
+			parameters[4].Value = model.CreateTime;
+			parameters[5].Value = model.Id;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -156,7 +161,7 @@ namespace Gymnasium_APP.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 Id,MemberId,PatchCardNo,PatchTime,CreateTime from LossCard ");
+			strSql.Append("select  top 1 Id,MemberId,OldCardNumber,PatchCardNo,PatchTime,CreateTime from LossCard ");
 			strSql.Append(" where Id=@Id");
 			SqlParameter[] parameters = {
 					new SqlParameter("@Id", SqlDbType.Int,4)
@@ -192,6 +197,10 @@ namespace Gymnasium_APP.DAL
 				{
 					model.MemberId=int.Parse(row["MemberId"].ToString());
 				}
+				if(row["OldCardNumber"]!=null)
+				{
+					model.OldCardNumber=row["OldCardNumber"].ToString();
+				}
 				if(row["PatchCardNo"]!=null)
 				{
 					model.PatchCardNo=row["PatchCardNo"].ToString();
@@ -214,7 +223,7 @@ namespace Gymnasium_APP.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select Id,MemberId,PatchCardNo,PatchTime,CreateTime ");
+			strSql.Append("select Id,MemberId,OldCardNumber,PatchCardNo,PatchTime,CreateTime ");
 			strSql.Append(" FROM LossCard ");
 			if(strWhere.Trim()!="")
 			{
@@ -234,7 +243,7 @@ namespace Gymnasium_APP.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" Id,MemberId,PatchCardNo,PatchTime,CreateTime ");
+			strSql.Append(" Id,MemberId,OldCardNumber,PatchCardNo,PatchTime,CreateTime ");
 			strSql.Append(" FROM LossCard ");
 			if(strWhere.Trim()!="")
 			{
