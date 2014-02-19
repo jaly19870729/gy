@@ -28,6 +28,7 @@ namespace Gymnasium_APP.BackCardFrom
         #region 局部变量
 
         private decimal patchAmount = 10;
+        private MemberInfoModel toupdateMemberInfo;
         private BackCardType backCardType;
         private CardTypeInfoManager cardTypeInfoManager=new CardTypeInfoManager();
         private MemberInfoManager memberInfoManager = new MemberInfoManager();
@@ -93,8 +94,12 @@ namespace Gymnasium_APP.BackCardFrom
         private MemberInfoModel GetMemberInfoByID()
         {
             List<MemberInfoModel> memberInfoModels =
-               memberInfoManager.GetModelList("IDCardType='" + this.cmb_IDType.Text + "' and IDCard='"+this.txt_IDCard.Text+"'");
-            if (memberInfoModels != null && memberInfoModels.Count > 0) return memberInfoModels[0];
+               memberInfoManager.GetModelList("IDCardType='" + this.cmb_IDType.Text + "' and IDCard='" + this.txt_IDCard.Text + "'  and InfoType='正常'");
+            if (memberInfoModels != null && memberInfoModels.Count > 0)
+            {
+                toupdateMemberInfo = memberInfoModels[0];
+                return memberInfoModels[0];
+            }
             return null;
         }
         /// <summary>
@@ -146,6 +151,12 @@ namespace Gymnasium_APP.BackCardFrom
             backCardInfoModel.UsedAmount = backCardInfoModel.PaidAmount - backCardInfoModel.ChangeAmount;
             backCardInfoModel.PatchAmount = patchAmount;
             bool result=backCardInfoManager.Add(backCardInfoModel);
+            //todo:删除会员信息
+            if (toupdateMemberInfo != null)
+            {
+                toupdateMemberInfo.InfoType = "已退卡";
+                memberInfoManager.Update(toupdateMemberInfo);
+            }
             CommTools.AddSystemLog(this.label1.Text,this.label1.Text+"卡号："+backCardInfoModel.CardNumber+(result==true?"成功":"失败"));
             MessageBox.Show(this.label1.Text+"卡号：" + backCardInfoModel.CardNumber + (result == true ? "成功" : "失败"));
             if (backCardType == BackCardType.HasCard)
@@ -166,8 +177,12 @@ namespace Gymnasium_APP.BackCardFrom
         private MemberInfoModel GetMemberInfo()
         {
             List<MemberInfoModel> memberInfoModels =
-                memberInfoManager.GetModelList("CardID='" + this.txt_CardNumber.Text + "'");
-            if (memberInfoModels != null && memberInfoModels.Count > 0) return memberInfoModels[0];
+                memberInfoManager.GetModelList("CardID='" + this.txt_CardNumber.Text + "' and InfoType='正常'");
+            if (memberInfoModels != null && memberInfoModels.Count > 0)
+            {
+                toupdateMemberInfo = memberInfoModels[0];
+                return memberInfoModels[0];
+            }
             return null;
         }
 
