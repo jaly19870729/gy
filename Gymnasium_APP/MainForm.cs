@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Gymnasium_APP.BLL;
+using Gymnasium_APP.CardType;
 using Gymnasium_APP.MemberForm;
 using Model;
 using Gymnasium_APP.Model;
 using Gymnasium_APP.RoleForm;
 using Gymnasium_APP.UserInfoForm;
-using Gymnasium_APP.CardType;
 using Gymnasium_APP.SellCard;
 using Gymnasium_APP.ExtensionFrom;
 using Gymnasium_APP.LossFrom;
@@ -1060,7 +1060,7 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
         #region 退卡
         private void btn_Return_Click(object sender, EventArgs e)
         {
-            new BackCardDg().Show();
+            new BackCardDialog().Show();
         }
         #endregion 
 

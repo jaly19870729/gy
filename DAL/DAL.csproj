@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackCardInfoDal.cs" />
     <Compile Include="CardTypeInfoDal.cs" />
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DbHelperSQL.cs" />

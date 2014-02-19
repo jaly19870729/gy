@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigTools.cs" />
+    <Compile Include="BackCardInfoManager.cs" />
     <Compile Include="Bitmap.cs" />
     <Compile Include="CardTypeInfoManager.cs" />
     <Compile Include="CommTools.cs" />

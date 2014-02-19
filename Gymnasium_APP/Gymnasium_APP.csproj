@@ -87,35 +87,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackCardFrom\BackCardDg.cs">
+    <Compile Include="BackCardFrom\HasCardBackFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackCardFrom\BackCardDg.Designer.cs">
-      <DependentUpon>BackCardDg.cs</DependentUpon>
+    <Compile Include="BackCardFrom\HasCardBackFrm.Designer.cs">
+      <DependentUpon>HasCardBackFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackCardFrom\HasBackCardFrm.cs">
+    <Compile Include="BackCardFrom\BackCardDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackCardFrom\HasBackCardFrm.Designer.cs">
-      <DependentUpon>HasBackCardFrm.cs</DependentUpon>
+    <Compile Include="BackCardFrom\BackCardDialog.Designer.cs">
+      <DependentUpon>BackCardDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackCardFrom\HasBackCardCastFrm.cs">
+    <Compile Include="BackCardFrom\BackCardCast.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackCardFrom\HasBackCardCastFrm.Designer.cs">
-      <DependentUpon>HasBackCardCastFrm.cs</DependentUpon>
+    <Compile Include="BackCardFrom\BackCardCast.Designer.cs">
+      <DependentUpon>BackCardCast.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackCardFrom\NoBackCardFrm.cs">
+    <Compile Include="BackCardFrom\NoCardBackCardCast.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackCardFrom\NoBackCardFrm.Designer.cs">
-      <DependentUpon>NoBackCardFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BackCardFrom\NoBackCardCastFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BackCardFrom\NoBackCardCastFrm.Designer.cs">
-      <DependentUpon>NoBackCardCastFrm.cs</DependentUpon>
+    <Compile Include="BackCardFrom\NoCardBackCardCast.Designer.cs">
+      <DependentUpon>NoCardBackCardCast.cs</DependentUpon>
     </Compile>
     <Compile Include="CardType\AddCardTypeInfoForm.cs">
       <SubType>Form</SubType>
@@ -129,6 +123,7 @@
     <Compile Include="CardType\UpdateCardTypeInfoForm.Designer.cs">
       <DependentUpon>UpdateCardTypeInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Config\AppConfig.cs" />
     <Compile Include="CunsumeFrom\CunsumeFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,20 +247,17 @@
     <Compile Include="UserInfoForm\UpdateUserInfoForm.Designer.cs">
       <DependentUpon>UpdateUserInfoForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BackCardFrom\BackCardDg.resx">
-      <DependentUpon>BackCardDg.cs</DependentUpon>
+    <EmbeddedResource Include="BackCardFrom\HasCardBackFrm.resx">
+      <DependentUpon>HasCardBackFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BackCardFrom\HasBackCardFrm.resx">
-      <DependentUpon>HasBackCardFrm.cs</DependentUpon>
+    <EmbeddedResource Include="BackCardFrom\BackCardDialog.resx">
+      <DependentUpon>BackCardDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BackCardFrom\HasBackCardCastFrm.resx">
-      <DependentUpon>HasBackCardCastFrm.cs</DependentUpon>
+    <EmbeddedResource Include="BackCardFrom\BackCardCast.resx">
+      <DependentUpon>BackCardCast.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BackCardFrom\NoBackCardFrm.resx">
-      <DependentUpon>NoBackCardFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BackCardFrom\NoBackCardCastFrm.resx">
-      <DependentUpon>NoBackCardCastFrm.cs</DependentUpon>
+    <EmbeddedResource Include="BackCardFrom\NoCardBackCardCast.resx">
+      <DependentUpon>NoCardBackCardCast.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CardType\AddCardTypeInfoForm.resx">
       <DependentUpon>AddCardTypeInfoForm.cs</DependentUpon>

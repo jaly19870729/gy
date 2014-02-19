@@ -174,7 +174,18 @@ namespace Gymnasium_APP.LossFrom
         {
             String idCardType = this.cmb_IDCardType.Text;
             String idNumber = this.txt_IDNumber.Text;
-            if (String.IsNullOrEmpty(idNumber)) return false;
+            if (String.IsNullOrEmpty(idNumber))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_IDNumber,"请输入证件号码");
+                return false;
+            }
+            if (String.IsNullOrEmpty(idCardType))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.cmb_IDCardType, "请选择证件类型");
+                return false;
+            }
             switch (idCardType)
             {
                 case "身份证":
@@ -186,6 +197,8 @@ namespace Gymnasium_APP.LossFrom
                     }
                     else
                     {
+                        this.errorProvider1.Clear();
+                        this.errorProvider1.SetError(this.txt_IDNumber, "证件号码输入错误，身份证号码不正确");
                         return false;
                     }
                     break;
