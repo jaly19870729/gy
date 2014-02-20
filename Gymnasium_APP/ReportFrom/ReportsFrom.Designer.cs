@@ -32,7 +32,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +52,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.webBrowser2);
             this.tabPage1.Controls.Add(this.webBrowser1);
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
@@ -84,14 +82,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // webBrowser2
-            // 
-            this.webBrowser2.Location = new System.Drawing.Point(371, 143);
-            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(250, 250);
-            this.webBrowser2.TabIndex = 1;
+
             // 
             // ReportsFrom
             // 
@@ -116,6 +107,5 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.WebBrowser webBrowser2;
     }
 }
