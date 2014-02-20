@@ -18,8 +18,6 @@ namespace Gymnasium_APP.ReportFrom
 
         private void ReportsFrom_Load(object sender, EventArgs e)
         {
-            webBrowser1.Location = new Point(0, 0);
-            webBrowser1.Size = tabPage1.Size;
             
             string reportPath = Application.StartupPath.Substring(0, Application.StartupPath.Substring(0, Application.StartupPath.LastIndexOf("\\")).LastIndexOf("\\"));
             string url = reportPath + "\\ReportFrom\\Pie3D\\Pie3D.html";
