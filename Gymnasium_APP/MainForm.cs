@@ -20,6 +20,7 @@ using Gymnasium_APP.LossFrom;
 using Gymnasium_APP.BackCardFrom;
 using Gymnasium_APP.CunsumeFrom;
 using Gymnasium_APP.SwipeCardFrom;
+using Gymnasium_APP.ReportFrom;
 
 namespace Gymnasium_APP
 {
@@ -1341,6 +1342,12 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
 
             ShowCardInfo showCardInfo = new ShowCardInfo("SELECT", id.ToString());
             showCardInfo.ShowDialog();
+        }
+
+        private void btn_Report_Manager_Click(object sender, EventArgs e)
+        {
+            ReportsFrom reportform = new ReportsFrom();
+            reportform.Show();
         }
 
      

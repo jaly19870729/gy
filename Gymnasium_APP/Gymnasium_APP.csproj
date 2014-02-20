@@ -187,6 +187,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportFrom\ReportsFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFrom\ReportsFrom.Designer.cs">
+      <DependentUpon>ReportsFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoleForm\AddRoleInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +311,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportFrom\ReportsFrom.resx">
+      <DependentUpon>ReportsFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoleForm\AddRoleInfoForm.resx">
       <DependentUpon>AddRoleInfoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,6 +360,13 @@
   <ItemGroup>
     <Content Include="20140218.sql" />
     <Content Include="Ico1.ico" />
+    <Content Include="ReportFrom\js\FusionCharts.js" />
+    <Content Include="ReportFrom\Pie3D\char.xml" />
+    <Content Include="ReportFrom\Pie3D\Pie3D.html" />
+    <Content Include="ReportFrom\Pie3D\Pie3D.swf" />
+    <Content Include="ReportFrom\Scatter\char.xml" />
+    <Content Include="ReportFrom\Scatter\Scatter.html" />
+    <Content Include="ReportFrom\Scatter\Scatter.swf" />
     <None Include="Resources\people.png" />
     <None Include="Resources\1305774588258.png" />
     <None Include="Resources\3215.png" />

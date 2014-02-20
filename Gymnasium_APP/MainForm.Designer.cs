@@ -32,9 +32,140 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tlp_Main = new System.Windows.Forms.TableLayoutPanel();
             this.pl_Mind = new System.Windows.Forms.Panel();
+            this.tbc_Statistics = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
+            this.btn_Statistics_Member_Select = new System.Windows.Forms.Button();
+            this.dtp__Statistics_Member_EndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Statistics_Member_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btn_Statistics_Member_Delete = new System.Windows.Forms.Button();
+            this.cmb_Statistics_Member_Type = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_Statistics_Member_Name = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dgv_Statistics_MemberManager = new System.Windows.Forms.DataGridView();
+            this.dgv_StatisticsMember_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberAddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Statistics_Member_Update = new System.Windows.Forms.Button();
+            this.tab_Statistics_SellCast = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btn_Statistics_SellCast_Select = new System.Windows.Forms.Button();
+            this.dtp_Statistics_SellCast_EndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Statistics_SellCast_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmb_Statistics_SellCast_Type = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txt_Statistics_SellCast_CardID = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.uC_Page_Statistics_SellCast = new Gymnasium_APP.UC.UC_Page();
+            this.dgv_Statistics_SellCast_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_AddType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CreateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.btn_Statistics_Swiping_Select = new System.Windows.Forms.Button();
+            this.dtp_Statistics_Swiping_EndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Statistics_Swiping_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.cmb_Statistics_Swiping_TypeName = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txt_Statistics_Swiping_CardID = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.uC_Page_Statistics_Swiping = new Gymnasium_APP.UC.UC_Page();
+            this.dgv_Statistics_Swiping_Manager = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Statistics_Swiping_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_CardTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_Swiping_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.btn_Statistics_BackCard_Select = new System.Windows.Forms.Button();
+            this.dtp_Statistics_BackCard_EndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Statistics_BackCard_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cmb_Statistics_BackCard_CardType = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txt_Statistics_BackCard_CardID = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.uC_Page_Statistics_BackCard = new Gymnasium_APP.UC.UC_Page();
+            this.dgv_Statistics_BackCard_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Statistics_BackCard_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Statistics_BackCard_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_CardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_StartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_EndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_TotalDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_LeftDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_TotalTimes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_LeftTimes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_PaidAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_PatchAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_UsedAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_BackCard_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.btn_Statistics_LossCard_Select = new System.Windows.Forms.Button();
+            this.dtp_Statistics_LossCard_EndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Statistics_LossCard_CardID_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txt_Statistics_LossCard_CardID = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.uC_Page_Statistics_LossCard = new Gymnasium_APP.UC.UC_Page();
+            this.dgv_Statistics_LossCard_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Statistics_LossCard_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Statistics_LossCard_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_CardIDOld = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_NewCardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_PatchTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_PayableAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_LossCard_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabc_Mian = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Main_Member_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Main_Member_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Main_Member_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +177,7 @@
             this.dgv_Main_Member_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab_SellCast = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Main_SellCast_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Main_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Main_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,6 +231,7 @@
             this.tp_PrivilegeManager = new System.Windows.Forms.TabPage();
             this.tp_RoleManager = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
             this.btn_RoleManager_Delete = new System.Windows.Forms.Button();
             this.btn_RoleManager_Add = new System.Windows.Forms.Button();
             this.dgv_RoleManager = new System.Windows.Forms.DataGridView();
@@ -110,6 +243,7 @@
             this.btn_RoleManager_Update = new System.Windows.Forms.Button();
             this.tp_CardTypeManager = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
             this.btn_Delete_CardTypeManager = new System.Windows.Forms.Button();
             this.btn_Add_CardTypeManager = new System.Windows.Forms.Button();
             this.dgv_CardTypeManager = new System.Windows.Forms.DataGridView();
@@ -126,6 +260,7 @@
             this.tp_SystemLog = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
             this.cb_SystemLog = new System.Windows.Forms.CheckBox();
             this.btn_SystemLogManager_Select = new System.Windows.Forms.Button();
             this.dt_SystemLogManager_StopTime = new System.Windows.Forms.DateTimePicker();
@@ -151,82 +286,6 @@
             this.dgv_SystemLog_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_SystemLog_Cont = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            this.tbc_Statistics = new System.Windows.Forms.TabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btn_Statistics_Member_Select = new System.Windows.Forms.Button();
-            this.dtp__Statistics_Member_EndTime = new System.Windows.Forms.DateTimePicker();
-            this.dtp_Statistics_Member_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btn_Statistics_Member_Delete = new System.Windows.Forms.Button();
-            this.cmb_Statistics_Member_Type = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt_Statistics_Member_Name = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dgv_Statistics_MemberManager = new System.Windows.Forms.DataGridView();
-            this.dgv_StatisticsMember_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberAddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Statistics_Member_Update = new System.Windows.Forms.Button();
-            this.tab_Statistics_SellCast = new System.Windows.Forms.TabPage();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.btn_Statistics_SellCast_Select = new System.Windows.Forms.Button();
-            this.dtp_Statistics_SellCast_EndTime = new System.Windows.Forms.DateTimePicker();
-            this.dtp_Statistics_SellCast_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cmb_Statistics_SellCast_Type = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_Statistics_SellCast_CardID = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dgv_Statistics_SellCast_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_AddType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CreateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btn_Statistics_Swiping_Select = new System.Windows.Forms.Button();
-            this.dtp_Statistics_Swiping_EndTime = new System.Windows.Forms.DateTimePicker();
-            this.dtp_Statistics_Swiping_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cmb_Statistics_Swiping_TypeName = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txt_Statistics_Swiping_CardID = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.dgv_Statistics_Swiping_Manager = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Statistics_Swiping_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_CardTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_Swiping_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_MainPage = new System.Windows.Forms.Button();
@@ -248,67 +307,24 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.btn_Statistics_BackCard_Select = new System.Windows.Forms.Button();
-            this.dtp_Statistics_BackCard_EndTime = new System.Windows.Forms.DateTimePicker();
-            this.dtp_Statistics_BackCard_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.cmb_Statistics_BackCard_CardType = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txt_Statistics_BackCard_CardID = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.dgv_Statistics_BackCard_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_Statistics_BackCard_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Statistics_BackCard_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_CardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_StartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_EndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_TotalDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_LeftDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_TotalTimes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_LeftTimes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_PaidAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_PatchAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_UsedAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_BackCard_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btn_Statistics_LossCard_Select = new System.Windows.Forms.Button();
-            this.dtp_Statistics_LossCard_EndTime = new System.Windows.Forms.DateTimePicker();
-            this.dtp_Statistics_LossCard_CardID_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.txt_Statistics_LossCard_CardID = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.dgv_Statistics_LossCard_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_Statistics_LossCard_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Statistics_LossCard_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_CardIDOld = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_NewCardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_PatchTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_PayableAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_LossCard_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_SellCast = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_Swiping = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_BackCard = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_LossCard = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
+            this.tbc_Statistics.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_MemberManager)).BeginInit();
+            this.tab_Statistics_SellCast.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_SellCast_Manager)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_Swiping_Manager)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_BackCard_Manager)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_LossCard_Manager)).BeginInit();
             this.tabc_Mian.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -330,27 +346,11 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemLogManager)).BeginInit();
-            this.tbc_Statistics.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_MemberManager)).BeginInit();
-            this.tab_Statistics_SellCast.SuspendLayout();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_SellCast_Manager)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_Swiping_Manager)).BeginInit();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_BackCard_Manager)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_LossCard_Manager)).BeginInit();
             this.SuspendLayout();
             // 
             // tlp_Main
@@ -387,6 +387,1437 @@
             this.pl_Mind.Name = "pl_Mind";
             this.pl_Mind.Size = new System.Drawing.Size(859, 653);
             this.pl_Mind.TabIndex = 2;
+            // 
+            // tbc_Statistics
+            // 
+            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbc_Statistics.Controls.Add(this.tabPage4);
+            this.tbc_Statistics.Controls.Add(this.tab_Statistics_SellCast);
+            this.tbc_Statistics.Controls.Add(this.tabPage2);
+            this.tbc_Statistics.Controls.Add(this.tabPage5);
+            this.tbc_Statistics.Controls.Add(this.tabPage6);
+            this.tbc_Statistics.Font = new System.Drawing.Font("宋体", 12F);
+            this.tbc_Statistics.Location = new System.Drawing.Point(0, 0);
+            this.tbc_Statistics.Name = "tbc_Statistics";
+            this.tbc_Statistics.SelectedIndex = 0;
+            this.tbc_Statistics.Size = new System.Drawing.Size(848, 652);
+            this.tbc_Statistics.TabIndex = 2;
+            this.tbc_Statistics.SelectedIndexChanged += new System.EventHandler(this.tbc_Statistics_SelectedIndexChanged);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel10);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(840, 622);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "会员信息";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.uC_Page_Statistics_Member);
+            this.panel10.Controls.Add(this.btn_Statistics_Member_Select);
+            this.panel10.Controls.Add(this.dtp__Statistics_Member_EndTime);
+            this.panel10.Controls.Add(this.dtp_Statistics_Member_StartTime);
+            this.panel10.Controls.Add(this.label8);
+            this.panel10.Controls.Add(this.label9);
+            this.panel10.Controls.Add(this.btn_Statistics_Member_Delete);
+            this.panel10.Controls.Add(this.cmb_Statistics_Member_Type);
+            this.panel10.Controls.Add(this.label10);
+            this.panel10.Controls.Add(this.txt_Statistics_Member_Name);
+            this.panel10.Controls.Add(this.label11);
+            this.panel10.Controls.Add(this.dgv_Statistics_MemberManager);
+            this.panel10.Controls.Add(this.btn_Statistics_Member_Update);
+            this.panel10.Location = new System.Drawing.Point(-4, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(849, 622);
+            this.panel10.TabIndex = 3;
+            // 
+            // uC_Page_Statistics_Member
+            // 
+            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(248, 593);
+            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
+            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Member.TabIndex = 242;
+            // 
+            // btn_Statistics_Member_Select
+            // 
+            this.btn_Statistics_Member_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_Member_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_Member_Select.Location = new System.Drawing.Point(552, 45);
+            this.btn_Statistics_Member_Select.Name = "btn_Statistics_Member_Select";
+            this.btn_Statistics_Member_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_Member_Select.TabIndex = 232;
+            this.btn_Statistics_Member_Select.Text = "查询";
+            this.btn_Statistics_Member_Select.UseVisualStyleBackColor = true;
+            this.btn_Statistics_Member_Select.Click += new System.EventHandler(this.btn_Statistics_Member_Select_Click);
+            // 
+            // dtp__Statistics_Member_EndTime
+            // 
+            this.dtp__Statistics_Member_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp__Statistics_Member_EndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp__Statistics_Member_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp__Statistics_Member_EndTime.Location = new System.Drawing.Point(648, 7);
+            this.dtp__Statistics_Member_EndTime.Name = "dtp__Statistics_Member_EndTime";
+            this.dtp__Statistics_Member_EndTime.Size = new System.Drawing.Size(189, 26);
+            this.dtp__Statistics_Member_EndTime.TabIndex = 239;
+            // 
+            // dtp_Statistics_Member_StartTime
+            // 
+            this.dtp_Statistics_Member_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_Member_StartTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_Member_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_Member_StartTime.Location = new System.Drawing.Point(375, 8);
+            this.dtp_Statistics_Member_StartTime.Name = "dtp_Statistics_Member_StartTime";
+            this.dtp_Statistics_Member_StartTime.Size = new System.Drawing.Size(191, 26);
+            this.dtp_Statistics_Member_StartTime.TabIndex = 238;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 12F);
+            this.label8.Location = new System.Drawing.Point(302, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 16);
+            this.label8.TabIndex = 236;
+            this.label8.Text = "开始时间";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 12F);
+            this.label9.Location = new System.Drawing.Point(577, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(72, 16);
+            this.label9.TabIndex = 237;
+            this.label9.Text = "结束时间";
+            // 
+            // btn_Statistics_Member_Delete
+            // 
+            this.btn_Statistics_Member_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_Member_Delete.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_Member_Delete.Location = new System.Drawing.Point(649, 45);
+            this.btn_Statistics_Member_Delete.Name = "btn_Statistics_Member_Delete";
+            this.btn_Statistics_Member_Delete.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_Member_Delete.TabIndex = 234;
+            this.btn_Statistics_Member_Delete.Text = "删除";
+            this.btn_Statistics_Member_Delete.UseVisualStyleBackColor = true;
+            this.btn_Statistics_Member_Delete.Click += new System.EventHandler(this.btn_Statistics_Member_Delete_Click);
+            // 
+            // cmb_Statistics_Member_Type
+            // 
+            this.cmb_Statistics_Member_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Statistics_Member_Type.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Statistics_Member_Type.FormattingEnabled = true;
+            this.cmb_Statistics_Member_Type.Items.AddRange(new object[] {
+            "全部",
+            "登录",
+            "浏览",
+            "添加",
+            "删除",
+            "修改"});
+            this.cmb_Statistics_Member_Type.Location = new System.Drawing.Point(206, 9);
+            this.cmb_Statistics_Member_Type.Name = "cmb_Statistics_Member_Type";
+            this.cmb_Statistics_Member_Type.Size = new System.Drawing.Size(90, 24);
+            this.cmb_Statistics_Member_Type.TabIndex = 229;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("宋体", 12F);
+            this.label10.Location = new System.Drawing.Point(168, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 16);
+            this.label10.TabIndex = 228;
+            this.label10.Text = "类型";
+            // 
+            // txt_Statistics_Member_Name
+            // 
+            this.txt_Statistics_Member_Name.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Statistics_Member_Name.Location = new System.Drawing.Point(62, 7);
+            this.txt_Statistics_Member_Name.Name = "txt_Statistics_Member_Name";
+            this.txt_Statistics_Member_Name.Size = new System.Drawing.Size(100, 26);
+            this.txt_Statistics_Member_Name.TabIndex = 227;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("宋体", 12F);
+            this.label11.Location = new System.Drawing.Point(9, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 16);
+            this.label11.TabIndex = 226;
+            this.label11.Text = "用户名";
+            // 
+            // dgv_Statistics_MemberManager
+            // 
+            this.dgv_Statistics_MemberManager.AllowUserToAddRows = false;
+            this.dgv_Statistics_MemberManager.AllowUserToResizeRows = false;
+            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_MemberManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Statistics_MemberManager.ColumnHeadersHeight = 25;
+            this.dgv_Statistics_MemberManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_StatisticsMember_MemberID,
+            this.dgv_StatisticsMember_ID,
+            this.dgv_StatisticsMember_CardID,
+            this.dgv_StatisticsMember_MemberName,
+            this.dgv_StatisticsMember_MemberPhone,
+            this.dgv_StatisticsMember_MemberSex,
+            this.dgv_StatisticsMember_MemberCardType,
+            this.dgv_StatisticsMember_MemberStartTime,
+            this.dgv_StatisticsMember_MemberEndTime,
+            this.dgv_StatisticsMember_MemberCount,
+            this.dgv_StatisticsMember_MemberAddUserName,
+            this.dgv_StatisticsMember_MemberAddTime});
+            this.dgv_Statistics_MemberManager.Location = new System.Drawing.Point(3, 83);
+            this.dgv_Statistics_MemberManager.Name = "dgv_Statistics_MemberManager";
+            this.dgv_Statistics_MemberManager.ReadOnly = true;
+            this.dgv_Statistics_MemberManager.RowHeadersVisible = false;
+            this.dgv_Statistics_MemberManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Statistics_MemberManager.RowTemplate.Height = 23;
+            this.dgv_Statistics_MemberManager.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgv_Statistics_MemberManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(843, 506);
+            this.dgv_Statistics_MemberManager.TabIndex = 215;
+            this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
+            // 
+            // dgv_StatisticsMember_MemberID
+            // 
+            this.dgv_StatisticsMember_MemberID.Frozen = true;
+            this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
+            this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
+            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberID.Visible = false;
+            // 
+            // dgv_StatisticsMember_ID
+            // 
+            this.dgv_StatisticsMember_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_ID.FillWeight = 28.73418F;
+            this.dgv_StatisticsMember_ID.Frozen = true;
+            this.dgv_StatisticsMember_ID.HeaderText = "序号";
+            this.dgv_StatisticsMember_ID.MinimumWidth = 50;
+            this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
+            this.dgv_StatisticsMember_ID.ReadOnly = true;
+            this.dgv_StatisticsMember_ID.Width = 65;
+            // 
+            // dgv_StatisticsMember_CardID
+            // 
+            this.dgv_StatisticsMember_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_CardID.Frozen = true;
+            this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
+            this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
+            this.dgv_StatisticsMember_CardID.ReadOnly = true;
+            this.dgv_StatisticsMember_CardID.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberName
+            // 
+            this.dgv_StatisticsMember_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberName.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberName.Frozen = true;
+            this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
+            this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
+            this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
+            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberName.Width = 80;
+            // 
+            // dgv_StatisticsMember_MemberPhone
+            // 
+            this.dgv_StatisticsMember_MemberPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberPhone.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberPhone.Frozen = true;
+            this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
+            this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
+            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberPhone.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberSex
+            // 
+            this.dgv_StatisticsMember_MemberSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberSex.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberSex.Frozen = true;
+            this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
+            this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
+            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberSex.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberCardType
+            // 
+            this.dgv_StatisticsMember_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberCardType.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberCardType.Frozen = true;
+            this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
+            this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
+            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberCardType.Width = 81;
+            // 
+            // dgv_StatisticsMember_MemberStartTime
+            // 
+            this.dgv_StatisticsMember_MemberStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberStartTime.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberStartTime.Frozen = true;
+            this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
+            this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
+            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberStartTime.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberEndTime
+            // 
+            this.dgv_StatisticsMember_MemberEndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberEndTime.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberEndTime.Frozen = true;
+            this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
+            this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
+            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberEndTime.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberCount
+            // 
+            this.dgv_StatisticsMember_MemberCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberCount.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberCount.Frozen = true;
+            this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
+            this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
+            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberCount.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberAddUserName
+            // 
+            this.dgv_StatisticsMember_MemberAddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberAddUserName.Frozen = true;
+            this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
+            this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
+            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
+            // 
+            // dgv_StatisticsMember_MemberAddTime
+            // 
+            this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
+            this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
+            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
+            // 
+            // btn_Statistics_Member_Update
+            // 
+            this.btn_Statistics_Member_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_Member_Update.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_Member_Update.Location = new System.Drawing.Point(747, 45);
+            this.btn_Statistics_Member_Update.Name = "btn_Statistics_Member_Update";
+            this.btn_Statistics_Member_Update.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_Member_Update.TabIndex = 235;
+            this.btn_Statistics_Member_Update.Text = "修改";
+            this.btn_Statistics_Member_Update.UseVisualStyleBackColor = true;
+            this.btn_Statistics_Member_Update.Click += new System.EventHandler(this.btn_Statistics_Member_Update_Click);
+            // 
+            // tab_Statistics_SellCast
+            // 
+            this.tab_Statistics_SellCast.Controls.Add(this.panel12);
+            this.tab_Statistics_SellCast.Location = new System.Drawing.Point(4, 26);
+            this.tab_Statistics_SellCast.Name = "tab_Statistics_SellCast";
+            this.tab_Statistics_SellCast.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Statistics_SellCast.Size = new System.Drawing.Size(840, 622);
+            this.tab_Statistics_SellCast.TabIndex = 1;
+            this.tab_Statistics_SellCast.Text = "消费信息";
+            this.tab_Statistics_SellCast.UseVisualStyleBackColor = true;
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel12.Controls.Add(this.btn_Statistics_SellCast_Select);
+            this.panel12.Controls.Add(this.dtp_Statistics_SellCast_EndTime);
+            this.panel12.Controls.Add(this.dtp_Statistics_SellCast_StartTime);
+            this.panel12.Controls.Add(this.label12);
+            this.panel12.Controls.Add(this.label13);
+            this.panel12.Controls.Add(this.cmb_Statistics_SellCast_Type);
+            this.panel12.Controls.Add(this.label14);
+            this.panel12.Controls.Add(this.txt_Statistics_SellCast_CardID);
+            this.panel12.Controls.Add(this.label15);
+            this.panel12.Controls.Add(this.uC_Page_Statistics_SellCast);
+            this.panel12.Controls.Add(this.dgv_Statistics_SellCast_Manager);
+            this.panel12.Location = new System.Drawing.Point(-4, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(848, 622);
+            this.panel12.TabIndex = 6;
+            // 
+            // btn_Statistics_SellCast_Select
+            // 
+            this.btn_Statistics_SellCast_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_SellCast_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_SellCast_Select.Location = new System.Drawing.Point(748, 42);
+            this.btn_Statistics_SellCast_Select.Name = "btn_Statistics_SellCast_Select";
+            this.btn_Statistics_SellCast_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_SellCast_Select.TabIndex = 249;
+            this.btn_Statistics_SellCast_Select.Text = "查询";
+            this.btn_Statistics_SellCast_Select.UseVisualStyleBackColor = true;
+            this.btn_Statistics_SellCast_Select.Click += new System.EventHandler(this.btn_Statistics_SellCast_Select_Click);
+            // 
+            // dtp_Statistics_SellCast_EndTime
+            // 
+            this.dtp_Statistics_SellCast_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_SellCast_EndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_SellCast_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_SellCast_EndTime.Location = new System.Drawing.Point(647, 7);
+            this.dtp_Statistics_SellCast_EndTime.Name = "dtp_Statistics_SellCast_EndTime";
+            this.dtp_Statistics_SellCast_EndTime.Size = new System.Drawing.Size(189, 26);
+            this.dtp_Statistics_SellCast_EndTime.TabIndex = 255;
+            // 
+            // dtp_Statistics_SellCast_StartTime
+            // 
+            this.dtp_Statistics_SellCast_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_SellCast_StartTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_SellCast_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_SellCast_StartTime.Location = new System.Drawing.Point(374, 8);
+            this.dtp_Statistics_SellCast_StartTime.Name = "dtp_Statistics_SellCast_StartTime";
+            this.dtp_Statistics_SellCast_StartTime.Size = new System.Drawing.Size(191, 26);
+            this.dtp_Statistics_SellCast_StartTime.TabIndex = 254;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("宋体", 12F);
+            this.label12.Location = new System.Drawing.Point(301, 16);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 16);
+            this.label12.TabIndex = 252;
+            this.label12.Text = "开始时间";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("宋体", 12F);
+            this.label13.Location = new System.Drawing.Point(576, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(72, 16);
+            this.label13.TabIndex = 253;
+            this.label13.Text = "结束时间";
+            // 
+            // cmb_Statistics_SellCast_Type
+            // 
+            this.cmb_Statistics_SellCast_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Statistics_SellCast_Type.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Statistics_SellCast_Type.FormattingEnabled = true;
+            this.cmb_Statistics_SellCast_Type.Items.AddRange(new object[] {
+            "全部",
+            "现金消费",
+            "刷卡消费"});
+            this.cmb_Statistics_SellCast_Type.Location = new System.Drawing.Point(205, 9);
+            this.cmb_Statistics_SellCast_Type.Name = "cmb_Statistics_SellCast_Type";
+            this.cmb_Statistics_SellCast_Type.Size = new System.Drawing.Size(90, 24);
+            this.cmb_Statistics_SellCast_Type.TabIndex = 248;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("宋体", 12F);
+            this.label14.Location = new System.Drawing.Point(167, 15);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(40, 16);
+            this.label14.TabIndex = 247;
+            this.label14.Text = "类型";
+            // 
+            // txt_Statistics_SellCast_CardID
+            // 
+            this.txt_Statistics_SellCast_CardID.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Statistics_SellCast_CardID.Location = new System.Drawing.Point(61, 7);
+            this.txt_Statistics_SellCast_CardID.Name = "txt_Statistics_SellCast_CardID";
+            this.txt_Statistics_SellCast_CardID.Size = new System.Drawing.Size(100, 26);
+            this.txt_Statistics_SellCast_CardID.TabIndex = 246;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("宋体", 12F);
+            this.label15.Location = new System.Drawing.Point(15, 17);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(40, 16);
+            this.label15.TabIndex = 245;
+            this.label15.Text = "卡号";
+            // 
+            // uC_Page_Statistics_SellCast
+            // 
+            this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(249, 594);
+            this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
+            this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_SellCast.TabIndex = 244;
+            // 
+            // dgv_Statistics_SellCast_Manager
+            // 
+            this.dgv_Statistics_SellCast_Manager.AllowUserToAddRows = false;
+            this.dgv_Statistics_SellCast_Manager.AllowUserToResizeRows = false;
+            this.dgv_Statistics_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_SellCast_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Statistics_SellCast_Manager.ColumnHeadersHeight = 25;
+            this.dgv_Statistics_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Statistics_SellCast_cb,
+            this.dgv_Statistics_SellCast_CastID,
+            this.dgv_Statistics_SellCast_Num,
+            this.dgv_Statistics_SellCast_AddType,
+            this.dgv_Statistics_SellCast_TypeName,
+            this.dgv_Statistics_SellCast_PriceAmount,
+            this.dgv_Statistics_SellCast_PaymentAmount,
+            this.dgv_Statistics_SellCast_ChangeAmount,
+            this.dgv_Statistics_SellCast_CardID,
+            this.dgv_Statistics_SellCast_Prices,
+            this.dgv_Statistics_SellCast_PeoPles,
+            this.dgv_Statistics_SellCast_Des,
+            this.dgv_Statistics_SellCast_AddUserName,
+            this.dgv_Statistics_SellCast_CreateTime});
+            this.dgv_Statistics_SellCast_Manager.Location = new System.Drawing.Point(3, 83);
+            this.dgv_Statistics_SellCast_Manager.Name = "dgv_Statistics_SellCast_Manager";
+            this.dgv_Statistics_SellCast_Manager.ReadOnly = true;
+            this.dgv_Statistics_SellCast_Manager.RowHeadersVisible = false;
+            this.dgv_Statistics_SellCast_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Statistics_SellCast_Manager.RowTemplate.Height = 23;
+            this.dgv_Statistics_SellCast_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Statistics_SellCast_Manager.Size = new System.Drawing.Size(837, 506);
+            this.dgv_Statistics_SellCast_Manager.TabIndex = 215;
+            this.dgv_Statistics_SellCast_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_SellCast_Manager_CellContentDoubleClick);
+            // 
+            // dgv_Statistics_SellCast_cb
+            // 
+            this.dgv_Statistics_SellCast_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_cb.FillWeight = 1F;
+            this.dgv_Statistics_SellCast_cb.Frozen = true;
+            this.dgv_Statistics_SellCast_cb.HeaderText = "选择";
+            this.dgv_Statistics_SellCast_cb.MinimumWidth = 60;
+            this.dgv_Statistics_SellCast_cb.Name = "dgv_Statistics_SellCast_cb";
+            this.dgv_Statistics_SellCast_cb.ReadOnly = true;
+            this.dgv_Statistics_SellCast_cb.Visible = false;
+            this.dgv_Statistics_SellCast_cb.Width = 60;
+            // 
+            // dgv_Statistics_SellCast_CastID
+            // 
+            this.dgv_Statistics_SellCast_CastID.HeaderText = "CastID";
+            this.dgv_Statistics_SellCast_CastID.Name = "dgv_Statistics_SellCast_CastID";
+            this.dgv_Statistics_SellCast_CastID.ReadOnly = true;
+            this.dgv_Statistics_SellCast_CastID.Visible = false;
+            // 
+            // dgv_Statistics_SellCast_Num
+            // 
+            this.dgv_Statistics_SellCast_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_Num.FillWeight = 28.73418F;
+            this.dgv_Statistics_SellCast_Num.Frozen = true;
+            this.dgv_Statistics_SellCast_Num.HeaderText = "序号";
+            this.dgv_Statistics_SellCast_Num.MinimumWidth = 50;
+            this.dgv_Statistics_SellCast_Num.Name = "dgv_Statistics_SellCast_Num";
+            this.dgv_Statistics_SellCast_Num.ReadOnly = true;
+            this.dgv_Statistics_SellCast_Num.Width = 65;
+            // 
+            // dgv_Statistics_SellCast_AddType
+            // 
+            this.dgv_Statistics_SellCast_AddType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_AddType.HeaderText = "消费类型";
+            this.dgv_Statistics_SellCast_AddType.Name = "dgv_Statistics_SellCast_AddType";
+            this.dgv_Statistics_SellCast_AddType.ReadOnly = true;
+            this.dgv_Statistics_SellCast_AddType.Width = 97;
+            // 
+            // dgv_Statistics_SellCast_TypeName
+            // 
+            this.dgv_Statistics_SellCast_TypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_TypeName.HeaderText = "交易类型";
+            this.dgv_Statistics_SellCast_TypeName.Name = "dgv_Statistics_SellCast_TypeName";
+            this.dgv_Statistics_SellCast_TypeName.ReadOnly = true;
+            this.dgv_Statistics_SellCast_TypeName.Width = 97;
+            // 
+            // dgv_Statistics_SellCast_PriceAmount
+            // 
+            this.dgv_Statistics_SellCast_PriceAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_PriceAmount.HeaderText = "总额";
+            this.dgv_Statistics_SellCast_PriceAmount.Name = "dgv_Statistics_SellCast_PriceAmount";
+            this.dgv_Statistics_SellCast_PriceAmount.ReadOnly = true;
+            this.dgv_Statistics_SellCast_PriceAmount.Width = 65;
+            // 
+            // dgv_Statistics_SellCast_PaymentAmount
+            // 
+            this.dgv_Statistics_SellCast_PaymentAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_PaymentAmount.HeaderText = "实收金额";
+            this.dgv_Statistics_SellCast_PaymentAmount.Name = "dgv_Statistics_SellCast_PaymentAmount";
+            this.dgv_Statistics_SellCast_PaymentAmount.ReadOnly = true;
+            this.dgv_Statistics_SellCast_PaymentAmount.Width = 97;
+            // 
+            // dgv_Statistics_SellCast_ChangeAmount
+            // 
+            this.dgv_Statistics_SellCast_ChangeAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_ChangeAmount.HeaderText = "找零金额";
+            this.dgv_Statistics_SellCast_ChangeAmount.Name = "dgv_Statistics_SellCast_ChangeAmount";
+            this.dgv_Statistics_SellCast_ChangeAmount.ReadOnly = true;
+            this.dgv_Statistics_SellCast_ChangeAmount.Width = 97;
+            // 
+            // dgv_Statistics_SellCast_CardID
+            // 
+            this.dgv_Statistics_SellCast_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_CardID.HeaderText = "卡号";
+            this.dgv_Statistics_SellCast_CardID.Name = "dgv_Statistics_SellCast_CardID";
+            this.dgv_Statistics_SellCast_CardID.ReadOnly = true;
+            this.dgv_Statistics_SellCast_CardID.Width = 65;
+            // 
+            // dgv_Statistics_SellCast_Prices
+            // 
+            this.dgv_Statistics_SellCast_Prices.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_Prices.FillWeight = 57.46837F;
+            this.dgv_Statistics_SellCast_Prices.HeaderText = "单价";
+            this.dgv_Statistics_SellCast_Prices.MinimumWidth = 80;
+            this.dgv_Statistics_SellCast_Prices.Name = "dgv_Statistics_SellCast_Prices";
+            this.dgv_Statistics_SellCast_Prices.ReadOnly = true;
+            this.dgv_Statistics_SellCast_Prices.Width = 80;
+            // 
+            // dgv_Statistics_SellCast_PeoPles
+            // 
+            this.dgv_Statistics_SellCast_PeoPles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_PeoPles.HeaderText = "人数";
+            this.dgv_Statistics_SellCast_PeoPles.Name = "dgv_Statistics_SellCast_PeoPles";
+            this.dgv_Statistics_SellCast_PeoPles.ReadOnly = true;
+            this.dgv_Statistics_SellCast_PeoPles.Width = 65;
+            // 
+            // dgv_Statistics_SellCast_Des
+            // 
+            this.dgv_Statistics_SellCast_Des.HeaderText = "描述";
+            this.dgv_Statistics_SellCast_Des.Name = "dgv_Statistics_SellCast_Des";
+            this.dgv_Statistics_SellCast_Des.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_AddUserName
+            // 
+            this.dgv_Statistics_SellCast_AddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_SellCast_AddUserName.HeaderText = "操作员";
+            this.dgv_Statistics_SellCast_AddUserName.Name = "dgv_Statistics_SellCast_AddUserName";
+            this.dgv_Statistics_SellCast_AddUserName.ReadOnly = true;
+            this.dgv_Statistics_SellCast_AddUserName.Width = 81;
+            // 
+            // dgv_Statistics_SellCast_CreateTime
+            // 
+            this.dgv_Statistics_SellCast_CreateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_Statistics_SellCast_CreateTime.HeaderText = "消费时间";
+            this.dgv_Statistics_SellCast_CreateTime.Name = "dgv_Statistics_SellCast_CreateTime";
+            this.dgv_Statistics_SellCast_CreateTime.ReadOnly = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.panel13);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(840, 622);
+            this.tabPage2.TabIndex = 2;
+            this.tabPage2.Text = "刷卡信息";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel13
+            // 
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel13.Controls.Add(this.btn_Statistics_Swiping_Select);
+            this.panel13.Controls.Add(this.dtp_Statistics_Swiping_EndTime);
+            this.panel13.Controls.Add(this.dtp_Statistics_Swiping_StartTime);
+            this.panel13.Controls.Add(this.label16);
+            this.panel13.Controls.Add(this.label17);
+            this.panel13.Controls.Add(this.cmb_Statistics_Swiping_TypeName);
+            this.panel13.Controls.Add(this.label18);
+            this.panel13.Controls.Add(this.txt_Statistics_Swiping_CardID);
+            this.panel13.Controls.Add(this.label19);
+            this.panel13.Controls.Add(this.uC_Page_Statistics_Swiping);
+            this.panel13.Controls.Add(this.dgv_Statistics_Swiping_Manager);
+            this.panel13.Location = new System.Drawing.Point(-4, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(849, 622);
+            this.panel13.TabIndex = 5;
+            // 
+            // btn_Statistics_Swiping_Select
+            // 
+            this.btn_Statistics_Swiping_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_Swiping_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_Swiping_Select.Location = new System.Drawing.Point(745, 43);
+            this.btn_Statistics_Swiping_Select.Name = "btn_Statistics_Swiping_Select";
+            this.btn_Statistics_Swiping_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_Swiping_Select.TabIndex = 260;
+            this.btn_Statistics_Swiping_Select.Text = "查询";
+            this.btn_Statistics_Swiping_Select.UseVisualStyleBackColor = true;
+            this.btn_Statistics_Swiping_Select.Click += new System.EventHandler(this.btn_Statistics_Swiping_Select_Click);
+            // 
+            // dtp_Statistics_Swiping_EndTime
+            // 
+            this.dtp_Statistics_Swiping_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_Swiping_EndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_Swiping_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_Swiping_EndTime.Location = new System.Drawing.Point(644, 8);
+            this.dtp_Statistics_Swiping_EndTime.Name = "dtp_Statistics_Swiping_EndTime";
+            this.dtp_Statistics_Swiping_EndTime.Size = new System.Drawing.Size(189, 26);
+            this.dtp_Statistics_Swiping_EndTime.TabIndex = 264;
+            // 
+            // dtp_Statistics_Swiping_StartTime
+            // 
+            this.dtp_Statistics_Swiping_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_Swiping_StartTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_Swiping_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_Swiping_StartTime.Location = new System.Drawing.Point(371, 9);
+            this.dtp_Statistics_Swiping_StartTime.Name = "dtp_Statistics_Swiping_StartTime";
+            this.dtp_Statistics_Swiping_StartTime.Size = new System.Drawing.Size(191, 26);
+            this.dtp_Statistics_Swiping_StartTime.TabIndex = 263;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("宋体", 12F);
+            this.label16.Location = new System.Drawing.Point(298, 17);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(72, 16);
+            this.label16.TabIndex = 261;
+            this.label16.Text = "开始时间";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("宋体", 12F);
+            this.label17.Location = new System.Drawing.Point(573, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(72, 16);
+            this.label17.TabIndex = 262;
+            this.label17.Text = "结束时间";
+            // 
+            // cmb_Statistics_Swiping_TypeName
+            // 
+            this.cmb_Statistics_Swiping_TypeName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Statistics_Swiping_TypeName.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Statistics_Swiping_TypeName.FormattingEnabled = true;
+            this.cmb_Statistics_Swiping_TypeName.Items.AddRange(new object[] {
+            "全部",
+            "会员刷卡",
+            "临时刷卡"});
+            this.cmb_Statistics_Swiping_TypeName.Location = new System.Drawing.Point(202, 10);
+            this.cmb_Statistics_Swiping_TypeName.Name = "cmb_Statistics_Swiping_TypeName";
+            this.cmb_Statistics_Swiping_TypeName.Size = new System.Drawing.Size(90, 24);
+            this.cmb_Statistics_Swiping_TypeName.TabIndex = 259;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("宋体", 12F);
+            this.label18.Location = new System.Drawing.Point(164, 16);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(40, 16);
+            this.label18.TabIndex = 258;
+            this.label18.Text = "类型";
+            // 
+            // txt_Statistics_Swiping_CardID
+            // 
+            this.txt_Statistics_Swiping_CardID.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Statistics_Swiping_CardID.Location = new System.Drawing.Point(58, 8);
+            this.txt_Statistics_Swiping_CardID.Name = "txt_Statistics_Swiping_CardID";
+            this.txt_Statistics_Swiping_CardID.Size = new System.Drawing.Size(100, 26);
+            this.txt_Statistics_Swiping_CardID.TabIndex = 257;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 12F);
+            this.label19.Location = new System.Drawing.Point(12, 18);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(40, 16);
+            this.label19.TabIndex = 256;
+            this.label19.Text = "卡号";
+            // 
+            // uC_Page_Statistics_Swiping
+            // 
+            this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(250, 594);
+            this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
+            this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Swiping.TabIndex = 244;
+            // 
+            // dgv_Statistics_Swiping_Manager
+            // 
+            this.dgv_Statistics_Swiping_Manager.AllowUserToAddRows = false;
+            this.dgv_Statistics_Swiping_Manager.AllowUserToResizeRows = false;
+            this.dgv_Statistics_Swiping_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_Swiping_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Statistics_Swiping_Manager.ColumnHeadersHeight = 25;
+            this.dgv_Statistics_Swiping_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewCheckBoxColumn1,
+            this.dgv_Statistics_Swiping_ID,
+            this.dgv_Statistics_Swiping_Num,
+            this.dgv_Statistics_Swiping_CardID,
+            this.dgv_Statistics_Swiping_CardTypeName,
+            this.dgv_Statistics_Swiping_Type,
+            this.dgv_Statistics_Swiping_Name,
+            this.dgv_Statistics_Swiping_PeoPles,
+            this.dgv_Statistics_Swiping_Des,
+            this.dgv_Statistics_Swiping_AddUserName,
+            this.dgv_Statistics_Swiping_AddTime});
+            this.dgv_Statistics_Swiping_Manager.Location = new System.Drawing.Point(3, 83);
+            this.dgv_Statistics_Swiping_Manager.MultiSelect = false;
+            this.dgv_Statistics_Swiping_Manager.Name = "dgv_Statistics_Swiping_Manager";
+            this.dgv_Statistics_Swiping_Manager.ReadOnly = true;
+            this.dgv_Statistics_Swiping_Manager.RowHeadersVisible = false;
+            this.dgv_Statistics_Swiping_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Statistics_Swiping_Manager.RowTemplate.Height = 23;
+            this.dgv_Statistics_Swiping_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Statistics_Swiping_Manager.Size = new System.Drawing.Size(838, 506);
+            this.dgv_Statistics_Swiping_Manager.TabIndex = 215;
+            this.dgv_Statistics_Swiping_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_Swiping_Manager_CellContentDoubleClick);
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewCheckBoxColumn1.FillWeight = 1F;
+            this.dataGridViewCheckBoxColumn1.Frozen = true;
+            this.dataGridViewCheckBoxColumn1.HeaderText = "选择";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 60;
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn1.Visible = false;
+            this.dataGridViewCheckBoxColumn1.Width = 60;
+            // 
+            // dgv_Statistics_Swiping_ID
+            // 
+            this.dgv_Statistics_Swiping_ID.HeaderText = "ID";
+            this.dgv_Statistics_Swiping_ID.Name = "dgv_Statistics_Swiping_ID";
+            this.dgv_Statistics_Swiping_ID.ReadOnly = true;
+            this.dgv_Statistics_Swiping_ID.Visible = false;
+            // 
+            // dgv_Statistics_Swiping_Num
+            // 
+            this.dgv_Statistics_Swiping_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_Num.FillWeight = 28.73418F;
+            this.dgv_Statistics_Swiping_Num.Frozen = true;
+            this.dgv_Statistics_Swiping_Num.HeaderText = "序号";
+            this.dgv_Statistics_Swiping_Num.MinimumWidth = 50;
+            this.dgv_Statistics_Swiping_Num.Name = "dgv_Statistics_Swiping_Num";
+            this.dgv_Statistics_Swiping_Num.ReadOnly = true;
+            this.dgv_Statistics_Swiping_Num.Width = 65;
+            // 
+            // dgv_Statistics_Swiping_CardID
+            // 
+            this.dgv_Statistics_Swiping_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_CardID.HeaderText = "卡号";
+            this.dgv_Statistics_Swiping_CardID.Name = "dgv_Statistics_Swiping_CardID";
+            this.dgv_Statistics_Swiping_CardID.ReadOnly = true;
+            this.dgv_Statistics_Swiping_CardID.Width = 65;
+            // 
+            // dgv_Statistics_Swiping_CardTypeName
+            // 
+            this.dgv_Statistics_Swiping_CardTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_CardTypeName.HeaderText = "卡类型";
+            this.dgv_Statistics_Swiping_CardTypeName.Name = "dgv_Statistics_Swiping_CardTypeName";
+            this.dgv_Statistics_Swiping_CardTypeName.ReadOnly = true;
+            this.dgv_Statistics_Swiping_CardTypeName.Width = 81;
+            // 
+            // dgv_Statistics_Swiping_Type
+            // 
+            this.dgv_Statistics_Swiping_Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_Type.HeaderText = "刷卡类型";
+            this.dgv_Statistics_Swiping_Type.Name = "dgv_Statistics_Swiping_Type";
+            this.dgv_Statistics_Swiping_Type.ReadOnly = true;
+            this.dgv_Statistics_Swiping_Type.Width = 97;
+            // 
+            // dgv_Statistics_Swiping_Name
+            // 
+            this.dgv_Statistics_Swiping_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_Name.FillWeight = 57.46837F;
+            this.dgv_Statistics_Swiping_Name.HeaderText = "姓名";
+            this.dgv_Statistics_Swiping_Name.MinimumWidth = 80;
+            this.dgv_Statistics_Swiping_Name.Name = "dgv_Statistics_Swiping_Name";
+            this.dgv_Statistics_Swiping_Name.ReadOnly = true;
+            this.dgv_Statistics_Swiping_Name.Width = 80;
+            // 
+            // dgv_Statistics_Swiping_PeoPles
+            // 
+            this.dgv_Statistics_Swiping_PeoPles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_PeoPles.HeaderText = "刷卡人数";
+            this.dgv_Statistics_Swiping_PeoPles.Name = "dgv_Statistics_Swiping_PeoPles";
+            this.dgv_Statistics_Swiping_PeoPles.ReadOnly = true;
+            this.dgv_Statistics_Swiping_PeoPles.Width = 97;
+            // 
+            // dgv_Statistics_Swiping_Des
+            // 
+            this.dgv_Statistics_Swiping_Des.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_Des.HeaderText = "描述";
+            this.dgv_Statistics_Swiping_Des.Name = "dgv_Statistics_Swiping_Des";
+            this.dgv_Statistics_Swiping_Des.ReadOnly = true;
+            this.dgv_Statistics_Swiping_Des.Width = 65;
+            // 
+            // dgv_Statistics_Swiping_AddUserName
+            // 
+            this.dgv_Statistics_Swiping_AddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_Swiping_AddUserName.HeaderText = "操作员";
+            this.dgv_Statistics_Swiping_AddUserName.Name = "dgv_Statistics_Swiping_AddUserName";
+            this.dgv_Statistics_Swiping_AddUserName.ReadOnly = true;
+            this.dgv_Statistics_Swiping_AddUserName.Width = 81;
+            // 
+            // dgv_Statistics_Swiping_AddTime
+            // 
+            this.dgv_Statistics_Swiping_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_Statistics_Swiping_AddTime.HeaderText = "刷卡时间";
+            this.dgv_Statistics_Swiping_AddTime.Name = "dgv_Statistics_Swiping_AddTime";
+            this.dgv_Statistics_Swiping_AddTime.ReadOnly = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.panel14);
+            this.tabPage5.Location = new System.Drawing.Point(4, 26);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(840, 622);
+            this.tabPage5.TabIndex = 3;
+            this.tabPage5.Text = "退卡信息";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel14.Controls.Add(this.btn_Statistics_BackCard_Select);
+            this.panel14.Controls.Add(this.dtp_Statistics_BackCard_EndTime);
+            this.panel14.Controls.Add(this.dtp_Statistics_BackCard_StartTime);
+            this.panel14.Controls.Add(this.label20);
+            this.panel14.Controls.Add(this.label21);
+            this.panel14.Controls.Add(this.cmb_Statistics_BackCard_CardType);
+            this.panel14.Controls.Add(this.label22);
+            this.panel14.Controls.Add(this.txt_Statistics_BackCard_CardID);
+            this.panel14.Controls.Add(this.label23);
+            this.panel14.Controls.Add(this.uC_Page_Statistics_BackCard);
+            this.panel14.Controls.Add(this.dgv_Statistics_BackCard_Manager);
+            this.panel14.Location = new System.Drawing.Point(-3, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(845, 622);
+            this.panel14.TabIndex = 6;
+            // 
+            // btn_Statistics_BackCard_Select
+            // 
+            this.btn_Statistics_BackCard_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_BackCard_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_BackCard_Select.Location = new System.Drawing.Point(741, 43);
+            this.btn_Statistics_BackCard_Select.Name = "btn_Statistics_BackCard_Select";
+            this.btn_Statistics_BackCard_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_BackCard_Select.TabIndex = 260;
+            this.btn_Statistics_BackCard_Select.Text = "查询";
+            this.btn_Statistics_BackCard_Select.UseVisualStyleBackColor = true;
+            this.btn_Statistics_BackCard_Select.Click += new System.EventHandler(this.btn_Statistics_BackCard_Select_Click);
+            // 
+            // dtp_Statistics_BackCard_EndTime
+            // 
+            this.dtp_Statistics_BackCard_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_BackCard_EndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_BackCard_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_BackCard_EndTime.Location = new System.Drawing.Point(644, 8);
+            this.dtp_Statistics_BackCard_EndTime.Name = "dtp_Statistics_BackCard_EndTime";
+            this.dtp_Statistics_BackCard_EndTime.Size = new System.Drawing.Size(189, 26);
+            this.dtp_Statistics_BackCard_EndTime.TabIndex = 264;
+            // 
+            // dtp_Statistics_BackCard_StartTime
+            // 
+            this.dtp_Statistics_BackCard_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_BackCard_StartTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_BackCard_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_BackCard_StartTime.Location = new System.Drawing.Point(371, 9);
+            this.dtp_Statistics_BackCard_StartTime.Name = "dtp_Statistics_BackCard_StartTime";
+            this.dtp_Statistics_BackCard_StartTime.Size = new System.Drawing.Size(191, 26);
+            this.dtp_Statistics_BackCard_StartTime.TabIndex = 263;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("宋体", 12F);
+            this.label20.Location = new System.Drawing.Point(298, 17);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(72, 16);
+            this.label20.TabIndex = 261;
+            this.label20.Text = "开始时间";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("宋体", 12F);
+            this.label21.Location = new System.Drawing.Point(573, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(72, 16);
+            this.label21.TabIndex = 262;
+            this.label21.Text = "结束时间";
+            // 
+            // cmb_Statistics_BackCard_CardType
+            // 
+            this.cmb_Statistics_BackCard_CardType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Statistics_BackCard_CardType.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Statistics_BackCard_CardType.FormattingEnabled = true;
+            this.cmb_Statistics_BackCard_CardType.Items.AddRange(new object[] {
+            "全部",
+            "会员刷卡",
+            "临时刷卡"});
+            this.cmb_Statistics_BackCard_CardType.Location = new System.Drawing.Point(202, 10);
+            this.cmb_Statistics_BackCard_CardType.Name = "cmb_Statistics_BackCard_CardType";
+            this.cmb_Statistics_BackCard_CardType.Size = new System.Drawing.Size(90, 24);
+            this.cmb_Statistics_BackCard_CardType.TabIndex = 259;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("宋体", 12F);
+            this.label22.Location = new System.Drawing.Point(164, 16);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(40, 16);
+            this.label22.TabIndex = 258;
+            this.label22.Text = "类型";
+            // 
+            // txt_Statistics_BackCard_CardID
+            // 
+            this.txt_Statistics_BackCard_CardID.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Statistics_BackCard_CardID.Location = new System.Drawing.Point(58, 8);
+            this.txt_Statistics_BackCard_CardID.Name = "txt_Statistics_BackCard_CardID";
+            this.txt_Statistics_BackCard_CardID.Size = new System.Drawing.Size(100, 26);
+            this.txt_Statistics_BackCard_CardID.TabIndex = 257;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("宋体", 12F);
+            this.label23.Location = new System.Drawing.Point(12, 18);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 16);
+            this.label23.TabIndex = 256;
+            this.label23.Text = "卡号";
+            // 
+            // uC_Page_Statistics_BackCard
+            // 
+            this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(246, 594);
+            this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
+            this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_BackCard.TabIndex = 244;
+            // 
+            // dgv_Statistics_BackCard_Manager
+            // 
+            this.dgv_Statistics_BackCard_Manager.AllowUserToAddRows = false;
+            this.dgv_Statistics_BackCard_Manager.AllowUserToResizeRows = false;
+            this.dgv_Statistics_BackCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_BackCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Statistics_BackCard_Manager.ColumnHeadersHeight = 25;
+            this.dgv_Statistics_BackCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Statistics_BackCard_cb,
+            this.dgv_Statistics_BackCard_ID,
+            this.dgv_Statistics_BackCard_Num,
+            this.dgv_Statistics_BackCard_CardID,
+            this.dgv_Statistics_BackCard_CardType,
+            this.dgv_Statistics_BackCard_Name,
+            this.dgv_Statistics_BackCard_StartTime,
+            this.dgv_Statistics_BackCard_EndTime,
+            this.dgv_Statistics_BackCard_TotalDays,
+            this.dgv_Statistics_BackCard_LeftDays,
+            this.dgv_Statistics_BackCard_TotalTimes,
+            this.dgv_Statistics_BackCard_LeftTimes,
+            this.dgv_Statistics_BackCard_PaidAmount,
+            this.dgv_Statistics_BackCard_ChangeAmount,
+            this.dgv_Statistics_BackCard_PatchAmount,
+            this.dgv_Statistics_BackCard_UsedAmount,
+            this.dgv_Statistics_BackCard_AddTime});
+            this.dgv_Statistics_BackCard_Manager.Location = new System.Drawing.Point(3, 83);
+            this.dgv_Statistics_BackCard_Manager.MultiSelect = false;
+            this.dgv_Statistics_BackCard_Manager.Name = "dgv_Statistics_BackCard_Manager";
+            this.dgv_Statistics_BackCard_Manager.ReadOnly = true;
+            this.dgv_Statistics_BackCard_Manager.RowHeadersVisible = false;
+            this.dgv_Statistics_BackCard_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Statistics_BackCard_Manager.RowTemplate.Height = 23;
+            this.dgv_Statistics_BackCard_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Statistics_BackCard_Manager.Size = new System.Drawing.Size(839, 506);
+            this.dgv_Statistics_BackCard_Manager.TabIndex = 215;
+            this.dgv_Statistics_BackCard_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_BackCard_Manager_CellContentDoubleClick);
+            // 
+            // dgv_Statistics_BackCard_cb
+            // 
+            this.dgv_Statistics_BackCard_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_cb.FillWeight = 1F;
+            this.dgv_Statistics_BackCard_cb.Frozen = true;
+            this.dgv_Statistics_BackCard_cb.HeaderText = "选择";
+            this.dgv_Statistics_BackCard_cb.MinimumWidth = 60;
+            this.dgv_Statistics_BackCard_cb.Name = "dgv_Statistics_BackCard_cb";
+            this.dgv_Statistics_BackCard_cb.ReadOnly = true;
+            this.dgv_Statistics_BackCard_cb.Visible = false;
+            this.dgv_Statistics_BackCard_cb.Width = 60;
+            // 
+            // dgv_Statistics_BackCard_ID
+            // 
+            this.dgv_Statistics_BackCard_ID.HeaderText = "ID";
+            this.dgv_Statistics_BackCard_ID.Name = "dgv_Statistics_BackCard_ID";
+            this.dgv_Statistics_BackCard_ID.ReadOnly = true;
+            this.dgv_Statistics_BackCard_ID.Visible = false;
+            // 
+            // dgv_Statistics_BackCard_Num
+            // 
+            this.dgv_Statistics_BackCard_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_Num.FillWeight = 28.73418F;
+            this.dgv_Statistics_BackCard_Num.Frozen = true;
+            this.dgv_Statistics_BackCard_Num.HeaderText = "序号";
+            this.dgv_Statistics_BackCard_Num.MinimumWidth = 50;
+            this.dgv_Statistics_BackCard_Num.Name = "dgv_Statistics_BackCard_Num";
+            this.dgv_Statistics_BackCard_Num.ReadOnly = true;
+            this.dgv_Statistics_BackCard_Num.Width = 65;
+            // 
+            // dgv_Statistics_BackCard_CardID
+            // 
+            this.dgv_Statistics_BackCard_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_CardID.HeaderText = "卡号";
+            this.dgv_Statistics_BackCard_CardID.Name = "dgv_Statistics_BackCard_CardID";
+            this.dgv_Statistics_BackCard_CardID.ReadOnly = true;
+            this.dgv_Statistics_BackCard_CardID.Width = 65;
+            // 
+            // dgv_Statistics_BackCard_CardType
+            // 
+            this.dgv_Statistics_BackCard_CardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_CardType.HeaderText = "卡类型";
+            this.dgv_Statistics_BackCard_CardType.Name = "dgv_Statistics_BackCard_CardType";
+            this.dgv_Statistics_BackCard_CardType.ReadOnly = true;
+            this.dgv_Statistics_BackCard_CardType.Width = 81;
+            // 
+            // dgv_Statistics_BackCard_Name
+            // 
+            this.dgv_Statistics_BackCard_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_Name.HeaderText = "姓名";
+            this.dgv_Statistics_BackCard_Name.Name = "dgv_Statistics_BackCard_Name";
+            this.dgv_Statistics_BackCard_Name.ReadOnly = true;
+            this.dgv_Statistics_BackCard_Name.Width = 65;
+            // 
+            // dgv_Statistics_BackCard_StartTime
+            // 
+            this.dgv_Statistics_BackCard_StartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_StartTime.FillWeight = 57.46837F;
+            this.dgv_Statistics_BackCard_StartTime.HeaderText = "开始时间";
+            this.dgv_Statistics_BackCard_StartTime.MinimumWidth = 80;
+            this.dgv_Statistics_BackCard_StartTime.Name = "dgv_Statistics_BackCard_StartTime";
+            this.dgv_Statistics_BackCard_StartTime.ReadOnly = true;
+            this.dgv_Statistics_BackCard_StartTime.Visible = false;
+            this.dgv_Statistics_BackCard_StartTime.Width = 80;
+            // 
+            // dgv_Statistics_BackCard_EndTime
+            // 
+            this.dgv_Statistics_BackCard_EndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_EndTime.HeaderText = "结束时间";
+            this.dgv_Statistics_BackCard_EndTime.Name = "dgv_Statistics_BackCard_EndTime";
+            this.dgv_Statistics_BackCard_EndTime.ReadOnly = true;
+            this.dgv_Statistics_BackCard_EndTime.Visible = false;
+            this.dgv_Statistics_BackCard_EndTime.Width = 78;
+            // 
+            // dgv_Statistics_BackCard_TotalDays
+            // 
+            this.dgv_Statistics_BackCard_TotalDays.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_TotalDays.HeaderText = "总天数";
+            this.dgv_Statistics_BackCard_TotalDays.Name = "dgv_Statistics_BackCard_TotalDays";
+            this.dgv_Statistics_BackCard_TotalDays.ReadOnly = true;
+            this.dgv_Statistics_BackCard_TotalDays.Width = 81;
+            // 
+            // dgv_Statistics_BackCard_LeftDays
+            // 
+            this.dgv_Statistics_BackCard_LeftDays.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_LeftDays.HeaderText = "剩余天数";
+            this.dgv_Statistics_BackCard_LeftDays.Name = "dgv_Statistics_BackCard_LeftDays";
+            this.dgv_Statistics_BackCard_LeftDays.ReadOnly = true;
+            this.dgv_Statistics_BackCard_LeftDays.Width = 97;
+            // 
+            // dgv_Statistics_BackCard_TotalTimes
+            // 
+            this.dgv_Statistics_BackCard_TotalTimes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_TotalTimes.HeaderText = "总次数";
+            this.dgv_Statistics_BackCard_TotalTimes.Name = "dgv_Statistics_BackCard_TotalTimes";
+            this.dgv_Statistics_BackCard_TotalTimes.ReadOnly = true;
+            this.dgv_Statistics_BackCard_TotalTimes.Width = 81;
+            // 
+            // dgv_Statistics_BackCard_LeftTimes
+            // 
+            this.dgv_Statistics_BackCard_LeftTimes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_LeftTimes.HeaderText = "剩余次数";
+            this.dgv_Statistics_BackCard_LeftTimes.Name = "dgv_Statistics_BackCard_LeftTimes";
+            this.dgv_Statistics_BackCard_LeftTimes.ReadOnly = true;
+            this.dgv_Statistics_BackCard_LeftTimes.Width = 97;
+            // 
+            // dgv_Statistics_BackCard_PaidAmount
+            // 
+            this.dgv_Statistics_BackCard_PaidAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_PaidAmount.HeaderText = "已缴费用";
+            this.dgv_Statistics_BackCard_PaidAmount.Name = "dgv_Statistics_BackCard_PaidAmount";
+            this.dgv_Statistics_BackCard_PaidAmount.ReadOnly = true;
+            this.dgv_Statistics_BackCard_PaidAmount.Width = 97;
+            // 
+            // dgv_Statistics_BackCard_ChangeAmount
+            // 
+            this.dgv_Statistics_BackCard_ChangeAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_ChangeAmount.HeaderText = "退还费用";
+            this.dgv_Statistics_BackCard_ChangeAmount.Name = "dgv_Statistics_BackCard_ChangeAmount";
+            this.dgv_Statistics_BackCard_ChangeAmount.ReadOnly = true;
+            this.dgv_Statistics_BackCard_ChangeAmount.Width = 97;
+            // 
+            // dgv_Statistics_BackCard_PatchAmount
+            // 
+            this.dgv_Statistics_BackCard_PatchAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_PatchAmount.HeaderText = "补交费用";
+            this.dgv_Statistics_BackCard_PatchAmount.Name = "dgv_Statistics_BackCard_PatchAmount";
+            this.dgv_Statistics_BackCard_PatchAmount.ReadOnly = true;
+            this.dgv_Statistics_BackCard_PatchAmount.Width = 97;
+            // 
+            // dgv_Statistics_BackCard_UsedAmount
+            // 
+            this.dgv_Statistics_BackCard_UsedAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_BackCard_UsedAmount.HeaderText = "已用费用";
+            this.dgv_Statistics_BackCard_UsedAmount.Name = "dgv_Statistics_BackCard_UsedAmount";
+            this.dgv_Statistics_BackCard_UsedAmount.ReadOnly = true;
+            this.dgv_Statistics_BackCard_UsedAmount.Width = 97;
+            // 
+            // dgv_Statistics_BackCard_AddTime
+            // 
+            this.dgv_Statistics_BackCard_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_Statistics_BackCard_AddTime.HeaderText = "时间";
+            this.dgv_Statistics_BackCard_AddTime.Name = "dgv_Statistics_BackCard_AddTime";
+            this.dgv_Statistics_BackCard_AddTime.ReadOnly = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.panel15);
+            this.tabPage6.Location = new System.Drawing.Point(4, 26);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(840, 622);
+            this.tabPage6.TabIndex = 4;
+            this.tabPage6.Text = "挂失信息";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // panel15
+            // 
+            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel15.Controls.Add(this.btn_Statistics_LossCard_Select);
+            this.panel15.Controls.Add(this.dtp_Statistics_LossCard_EndTime);
+            this.panel15.Controls.Add(this.dtp_Statistics_LossCard_CardID_StartTime);
+            this.panel15.Controls.Add(this.label24);
+            this.panel15.Controls.Add(this.label25);
+            this.panel15.Controls.Add(this.txt_Statistics_LossCard_CardID);
+            this.panel15.Controls.Add(this.label27);
+            this.panel15.Controls.Add(this.uC_Page_Statistics_LossCard);
+            this.panel15.Controls.Add(this.dgv_Statistics_LossCard_Manager);
+            this.panel15.Location = new System.Drawing.Point(-2, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(845, 622);
+            this.panel15.TabIndex = 7;
+            // 
+            // btn_Statistics_LossCard_Select
+            // 
+            this.btn_Statistics_LossCard_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Statistics_LossCard_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Statistics_LossCard_Select.Location = new System.Drawing.Point(741, 43);
+            this.btn_Statistics_LossCard_Select.Name = "btn_Statistics_LossCard_Select";
+            this.btn_Statistics_LossCard_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_Statistics_LossCard_Select.TabIndex = 260;
+            this.btn_Statistics_LossCard_Select.Text = "查询";
+            this.btn_Statistics_LossCard_Select.UseVisualStyleBackColor = true;
+            this.btn_Statistics_LossCard_Select.Click += new System.EventHandler(this.btn_Statistics_LossCard_Select_Click);
+            // 
+            // dtp_Statistics_LossCard_EndTime
+            // 
+            this.dtp_Statistics_LossCard_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_LossCard_EndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_LossCard_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_LossCard_EndTime.Location = new System.Drawing.Point(644, 8);
+            this.dtp_Statistics_LossCard_EndTime.Name = "dtp_Statistics_LossCard_EndTime";
+            this.dtp_Statistics_LossCard_EndTime.Size = new System.Drawing.Size(189, 26);
+            this.dtp_Statistics_LossCard_EndTime.TabIndex = 264;
+            // 
+            // dtp_Statistics_LossCard_CardID_StartTime
+            // 
+            this.dtp_Statistics_LossCard_CardID_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dtp_Statistics_LossCard_CardID_StartTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Statistics_LossCard_CardID_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Statistics_LossCard_CardID_StartTime.Location = new System.Drawing.Point(371, 9);
+            this.dtp_Statistics_LossCard_CardID_StartTime.Name = "dtp_Statistics_LossCard_CardID_StartTime";
+            this.dtp_Statistics_LossCard_CardID_StartTime.Size = new System.Drawing.Size(191, 26);
+            this.dtp_Statistics_LossCard_CardID_StartTime.TabIndex = 263;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("宋体", 12F);
+            this.label24.Location = new System.Drawing.Point(298, 17);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 16);
+            this.label24.TabIndex = 261;
+            this.label24.Text = "开始时间";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("宋体", 12F);
+            this.label25.Location = new System.Drawing.Point(573, 16);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(72, 16);
+            this.label25.TabIndex = 262;
+            this.label25.Text = "结束时间";
+            // 
+            // txt_Statistics_LossCard_CardID
+            // 
+            this.txt_Statistics_LossCard_CardID.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Statistics_LossCard_CardID.Location = new System.Drawing.Point(192, 9);
+            this.txt_Statistics_LossCard_CardID.Name = "txt_Statistics_LossCard_CardID";
+            this.txt_Statistics_LossCard_CardID.Size = new System.Drawing.Size(100, 26);
+            this.txt_Statistics_LossCard_CardID.TabIndex = 257;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("宋体", 12F);
+            this.label27.Location = new System.Drawing.Point(146, 19);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(40, 16);
+            this.label27.TabIndex = 256;
+            this.label27.Text = "卡号";
+            // 
+            // uC_Page_Statistics_LossCard
+            // 
+            this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 594);
+            this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
+            this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_LossCard.TabIndex = 244;
+            // 
+            // dgv_Statistics_LossCard_Manager
+            // 
+            this.dgv_Statistics_LossCard_Manager.AllowUserToAddRows = false;
+            this.dgv_Statistics_LossCard_Manager.AllowUserToResizeRows = false;
+            this.dgv_Statistics_LossCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_LossCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Statistics_LossCard_Manager.ColumnHeadersHeight = 25;
+            this.dgv_Statistics_LossCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Statistics_LossCard_cb,
+            this.dgv_Statistics_LossCard_ID,
+            this.dgv_Statistics_LossCard_Num,
+            this.dgv_Statistics_LossCard_CardIDOld,
+            this.dgv_Statistics_LossCard_NewCardID,
+            this.dgv_Statistics_LossCard_PatchTime,
+            this.dgv_Statistics_LossCard_PayableAmount,
+            this.dgv_Statistics_LossCard_PaymentAmount,
+            this.dgv_Statistics_LossCard_ChangeAmount,
+            this.dgv_Statistics_LossCard_AddTime});
+            this.dgv_Statistics_LossCard_Manager.Location = new System.Drawing.Point(3, 83);
+            this.dgv_Statistics_LossCard_Manager.MultiSelect = false;
+            this.dgv_Statistics_LossCard_Manager.Name = "dgv_Statistics_LossCard_Manager";
+            this.dgv_Statistics_LossCard_Manager.ReadOnly = true;
+            this.dgv_Statistics_LossCard_Manager.RowHeadersVisible = false;
+            this.dgv_Statistics_LossCard_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Statistics_LossCard_Manager.RowTemplate.Height = 23;
+            this.dgv_Statistics_LossCard_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Statistics_LossCard_Manager.Size = new System.Drawing.Size(839, 506);
+            this.dgv_Statistics_LossCard_Manager.TabIndex = 215;
+            this.dgv_Statistics_LossCard_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_LossCard_Manager_CellContentDoubleClick);
+            // 
+            // dgv_Statistics_LossCard_cb
+            // 
+            this.dgv_Statistics_LossCard_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_cb.FillWeight = 1F;
+            this.dgv_Statistics_LossCard_cb.Frozen = true;
+            this.dgv_Statistics_LossCard_cb.HeaderText = "选择";
+            this.dgv_Statistics_LossCard_cb.MinimumWidth = 60;
+            this.dgv_Statistics_LossCard_cb.Name = "dgv_Statistics_LossCard_cb";
+            this.dgv_Statistics_LossCard_cb.ReadOnly = true;
+            this.dgv_Statistics_LossCard_cb.Visible = false;
+            this.dgv_Statistics_LossCard_cb.Width = 60;
+            // 
+            // dgv_Statistics_LossCard_ID
+            // 
+            this.dgv_Statistics_LossCard_ID.HeaderText = "ID";
+            this.dgv_Statistics_LossCard_ID.Name = "dgv_Statistics_LossCard_ID";
+            this.dgv_Statistics_LossCard_ID.ReadOnly = true;
+            this.dgv_Statistics_LossCard_ID.Visible = false;
+            // 
+            // dgv_Statistics_LossCard_Num
+            // 
+            this.dgv_Statistics_LossCard_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_Num.FillWeight = 28.73418F;
+            this.dgv_Statistics_LossCard_Num.Frozen = true;
+            this.dgv_Statistics_LossCard_Num.HeaderText = "序号";
+            this.dgv_Statistics_LossCard_Num.MinimumWidth = 50;
+            this.dgv_Statistics_LossCard_Num.Name = "dgv_Statistics_LossCard_Num";
+            this.dgv_Statistics_LossCard_Num.ReadOnly = true;
+            this.dgv_Statistics_LossCard_Num.Width = 65;
+            // 
+            // dgv_Statistics_LossCard_CardIDOld
+            // 
+            this.dgv_Statistics_LossCard_CardIDOld.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_CardIDOld.HeaderText = "旧卡号";
+            this.dgv_Statistics_LossCard_CardIDOld.Name = "dgv_Statistics_LossCard_CardIDOld";
+            this.dgv_Statistics_LossCard_CardIDOld.ReadOnly = true;
+            this.dgv_Statistics_LossCard_CardIDOld.Width = 81;
+            // 
+            // dgv_Statistics_LossCard_NewCardID
+            // 
+            this.dgv_Statistics_LossCard_NewCardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_NewCardID.HeaderText = "新卡号";
+            this.dgv_Statistics_LossCard_NewCardID.Name = "dgv_Statistics_LossCard_NewCardID";
+            this.dgv_Statistics_LossCard_NewCardID.ReadOnly = true;
+            this.dgv_Statistics_LossCard_NewCardID.Width = 81;
+            // 
+            // dgv_Statistics_LossCard_PatchTime
+            // 
+            this.dgv_Statistics_LossCard_PatchTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_PatchTime.HeaderText = "补领时间";
+            this.dgv_Statistics_LossCard_PatchTime.Name = "dgv_Statistics_LossCard_PatchTime";
+            this.dgv_Statistics_LossCard_PatchTime.ReadOnly = true;
+            this.dgv_Statistics_LossCard_PatchTime.Width = 97;
+            // 
+            // dgv_Statistics_LossCard_PayableAmount
+            // 
+            this.dgv_Statistics_LossCard_PayableAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_PayableAmount.HeaderText = "应交费用";
+            this.dgv_Statistics_LossCard_PayableAmount.Name = "dgv_Statistics_LossCard_PayableAmount";
+            this.dgv_Statistics_LossCard_PayableAmount.ReadOnly = true;
+            this.dgv_Statistics_LossCard_PayableAmount.Width = 97;
+            // 
+            // dgv_Statistics_LossCard_PaymentAmount
+            // 
+            this.dgv_Statistics_LossCard_PaymentAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_PaymentAmount.HeaderText = "缴费金额";
+            this.dgv_Statistics_LossCard_PaymentAmount.Name = "dgv_Statistics_LossCard_PaymentAmount";
+            this.dgv_Statistics_LossCard_PaymentAmount.ReadOnly = true;
+            this.dgv_Statistics_LossCard_PaymentAmount.Width = 97;
+            // 
+            // dgv_Statistics_LossCard_ChangeAmount
+            // 
+            this.dgv_Statistics_LossCard_ChangeAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Statistics_LossCard_ChangeAmount.HeaderText = "找零金额";
+            this.dgv_Statistics_LossCard_ChangeAmount.Name = "dgv_Statistics_LossCard_ChangeAmount";
+            this.dgv_Statistics_LossCard_ChangeAmount.ReadOnly = true;
+            this.dgv_Statistics_LossCard_ChangeAmount.Width = 97;
+            // 
+            // dgv_Statistics_LossCard_AddTime
+            // 
+            this.dgv_Statistics_LossCard_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_Statistics_LossCard_AddTime.HeaderText = "时间";
+            this.dgv_Statistics_LossCard_AddTime.Name = "dgv_Statistics_LossCard_AddTime";
+            this.dgv_Statistics_LossCard_AddTime.ReadOnly = true;
             // 
             // tabc_Mian
             // 
@@ -427,6 +1858,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(849, 622);
             this.panel4.TabIndex = 4;
+            // 
+            // uC_Page_Main_Member
+            // 
+            this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Main_Member.Location = new System.Drawing.Point(250, 594);
+            this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
+            this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Main_Member.TabIndex = 244;
             // 
             // dgv_Main_Member_Manager
             // 
@@ -552,6 +1992,15 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(848, 622);
             this.panel11.TabIndex = 5;
+            // 
+            // uC_Page_Main_SellCast
+            // 
+            this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(249, 594);
+            this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
+            this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Main_SellCast.TabIndex = 244;
             // 
             // dgv_Main_SellCast_Manager
             // 
@@ -1164,6 +2613,15 @@
             this.panel8.Size = new System.Drawing.Size(849, 622);
             this.panel8.TabIndex = 3;
             // 
+            // uC_Page_RoleManager
+            // 
+            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_RoleManager.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
+            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_RoleManager.TabIndex = 236;
+            // 
             // btn_RoleManager_Delete
             // 
             this.btn_RoleManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1279,6 +2737,15 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(849, 622);
             this.panel9.TabIndex = 4;
+            // 
+            // uC_Page_CardTypeManager
+            // 
+            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
+            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_CardTypeManager.TabIndex = 236;
             // 
             // btn_Delete_CardTypeManager
             // 
@@ -1456,6 +2923,15 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(849, 622);
             this.panel7.TabIndex = 2;
+            // 
+            // uC_Page_SystemLog
+            // 
+            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemLog.Location = new System.Drawing.Point(248, 596);
+            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
+            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemLog.TabIndex = 242;
             // 
             // cb_SystemLog
             // 
@@ -1712,863 +3188,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
             // 
-            // tbc_Statistics
-            // 
-            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbc_Statistics.Controls.Add(this.tabPage4);
-            this.tbc_Statistics.Controls.Add(this.tab_Statistics_SellCast);
-            this.tbc_Statistics.Controls.Add(this.tabPage2);
-            this.tbc_Statistics.Controls.Add(this.tabPage5);
-            this.tbc_Statistics.Controls.Add(this.tabPage6);
-            this.tbc_Statistics.Font = new System.Drawing.Font("宋体", 12F);
-            this.tbc_Statistics.Location = new System.Drawing.Point(0, 0);
-            this.tbc_Statistics.Name = "tbc_Statistics";
-            this.tbc_Statistics.SelectedIndex = 0;
-            this.tbc_Statistics.Size = new System.Drawing.Size(848, 652);
-            this.tbc_Statistics.TabIndex = 2;
-            this.tbc_Statistics.SelectedIndexChanged += new System.EventHandler(this.tbc_Statistics_SelectedIndexChanged);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.panel10);
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(840, 622);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "会员信息";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel10.Controls.Add(this.uC_Page_Statistics_Member);
-            this.panel10.Controls.Add(this.btn_Statistics_Member_Select);
-            this.panel10.Controls.Add(this.dtp__Statistics_Member_EndTime);
-            this.panel10.Controls.Add(this.dtp_Statistics_Member_StartTime);
-            this.panel10.Controls.Add(this.label8);
-            this.panel10.Controls.Add(this.label9);
-            this.panel10.Controls.Add(this.btn_Statistics_Member_Delete);
-            this.panel10.Controls.Add(this.cmb_Statistics_Member_Type);
-            this.panel10.Controls.Add(this.label10);
-            this.panel10.Controls.Add(this.txt_Statistics_Member_Name);
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Controls.Add(this.dgv_Statistics_MemberManager);
-            this.panel10.Controls.Add(this.btn_Statistics_Member_Update);
-            this.panel10.Location = new System.Drawing.Point(-4, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(849, 622);
-            this.panel10.TabIndex = 3;
-            // 
-            // btn_Statistics_Member_Select
-            // 
-            this.btn_Statistics_Member_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_Member_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Select.Location = new System.Drawing.Point(552, 45);
-            this.btn_Statistics_Member_Select.Name = "btn_Statistics_Member_Select";
-            this.btn_Statistics_Member_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_Member_Select.TabIndex = 232;
-            this.btn_Statistics_Member_Select.Text = "查询";
-            this.btn_Statistics_Member_Select.UseVisualStyleBackColor = true;
-            this.btn_Statistics_Member_Select.Click += new System.EventHandler(this.btn_Statistics_Member_Select_Click);
-            // 
-            // dtp__Statistics_Member_EndTime
-            // 
-            this.dtp__Statistics_Member_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp__Statistics_Member_EndTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp__Statistics_Member_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp__Statistics_Member_EndTime.Location = new System.Drawing.Point(648, 7);
-            this.dtp__Statistics_Member_EndTime.Name = "dtp__Statistics_Member_EndTime";
-            this.dtp__Statistics_Member_EndTime.Size = new System.Drawing.Size(189, 26);
-            this.dtp__Statistics_Member_EndTime.TabIndex = 239;
-            // 
-            // dtp_Statistics_Member_StartTime
-            // 
-            this.dtp_Statistics_Member_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_Member_StartTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_Member_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_Member_StartTime.Location = new System.Drawing.Point(375, 8);
-            this.dtp_Statistics_Member_StartTime.Name = "dtp_Statistics_Member_StartTime";
-            this.dtp_Statistics_Member_StartTime.Size = new System.Drawing.Size(191, 26);
-            this.dtp_Statistics_Member_StartTime.TabIndex = 238;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 12F);
-            this.label8.Location = new System.Drawing.Point(302, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 16);
-            this.label8.TabIndex = 236;
-            this.label8.Text = "开始时间";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 12F);
-            this.label9.Location = new System.Drawing.Point(577, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 16);
-            this.label9.TabIndex = 237;
-            this.label9.Text = "结束时间";
-            // 
-            // btn_Statistics_Member_Delete
-            // 
-            this.btn_Statistics_Member_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_Member_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Delete.Location = new System.Drawing.Point(649, 45);
-            this.btn_Statistics_Member_Delete.Name = "btn_Statistics_Member_Delete";
-            this.btn_Statistics_Member_Delete.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_Member_Delete.TabIndex = 234;
-            this.btn_Statistics_Member_Delete.Text = "删除";
-            this.btn_Statistics_Member_Delete.UseVisualStyleBackColor = true;
-            this.btn_Statistics_Member_Delete.Click += new System.EventHandler(this.btn_Statistics_Member_Delete_Click);
-            // 
-            // cmb_Statistics_Member_Type
-            // 
-            this.cmb_Statistics_Member_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Statistics_Member_Type.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_Statistics_Member_Type.FormattingEnabled = true;
-            this.cmb_Statistics_Member_Type.Items.AddRange(new object[] {
-            "全部",
-            "登录",
-            "浏览",
-            "添加",
-            "删除",
-            "修改"});
-            this.cmb_Statistics_Member_Type.Location = new System.Drawing.Point(206, 9);
-            this.cmb_Statistics_Member_Type.Name = "cmb_Statistics_Member_Type";
-            this.cmb_Statistics_Member_Type.Size = new System.Drawing.Size(90, 24);
-            this.cmb_Statistics_Member_Type.TabIndex = 229;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("宋体", 12F);
-            this.label10.Location = new System.Drawing.Point(168, 15);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 16);
-            this.label10.TabIndex = 228;
-            this.label10.Text = "类型";
-            // 
-            // txt_Statistics_Member_Name
-            // 
-            this.txt_Statistics_Member_Name.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_Member_Name.Location = new System.Drawing.Point(62, 7);
-            this.txt_Statistics_Member_Name.Name = "txt_Statistics_Member_Name";
-            this.txt_Statistics_Member_Name.Size = new System.Drawing.Size(100, 26);
-            this.txt_Statistics_Member_Name.TabIndex = 227;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("宋体", 12F);
-            this.label11.Location = new System.Drawing.Point(9, 17);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 16);
-            this.label11.TabIndex = 226;
-            this.label11.Text = "用户名";
-            // 
-            // dgv_Statistics_MemberManager
-            // 
-            this.dgv_Statistics_MemberManager.AllowUserToAddRows = false;
-            this.dgv_Statistics_MemberManager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Statistics_MemberManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Statistics_MemberManager.ColumnHeadersHeight = 25;
-            this.dgv_Statistics_MemberManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_StatisticsMember_MemberID,
-            this.dgv_StatisticsMember_ID,
-            this.dgv_StatisticsMember_CardID,
-            this.dgv_StatisticsMember_MemberName,
-            this.dgv_StatisticsMember_MemberPhone,
-            this.dgv_StatisticsMember_MemberSex,
-            this.dgv_StatisticsMember_MemberCardType,
-            this.dgv_StatisticsMember_MemberStartTime,
-            this.dgv_StatisticsMember_MemberEndTime,
-            this.dgv_StatisticsMember_MemberCount,
-            this.dgv_StatisticsMember_MemberAddUserName,
-            this.dgv_StatisticsMember_MemberAddTime});
-            this.dgv_Statistics_MemberManager.Location = new System.Drawing.Point(3, 83);
-            this.dgv_Statistics_MemberManager.Name = "dgv_Statistics_MemberManager";
-            this.dgv_Statistics_MemberManager.ReadOnly = true;
-            this.dgv_Statistics_MemberManager.RowHeadersVisible = false;
-            this.dgv_Statistics_MemberManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Statistics_MemberManager.RowTemplate.Height = 23;
-            this.dgv_Statistics_MemberManager.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgv_Statistics_MemberManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(843, 506);
-            this.dgv_Statistics_MemberManager.TabIndex = 215;
-            this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
-            // 
-            // dgv_StatisticsMember_MemberID
-            // 
-            this.dgv_StatisticsMember_MemberID.Frozen = true;
-            this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
-            this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
-            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberID.Visible = false;
-            // 
-            // dgv_StatisticsMember_ID
-            // 
-            this.dgv_StatisticsMember_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_ID.FillWeight = 28.73418F;
-            this.dgv_StatisticsMember_ID.Frozen = true;
-            this.dgv_StatisticsMember_ID.HeaderText = "序号";
-            this.dgv_StatisticsMember_ID.MinimumWidth = 50;
-            this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
-            this.dgv_StatisticsMember_ID.ReadOnly = true;
-            this.dgv_StatisticsMember_ID.Width = 65;
-            // 
-            // dgv_StatisticsMember_CardID
-            // 
-            this.dgv_StatisticsMember_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_CardID.Frozen = true;
-            this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
-            this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
-            this.dgv_StatisticsMember_CardID.ReadOnly = true;
-            this.dgv_StatisticsMember_CardID.Width = 65;
-            // 
-            // dgv_StatisticsMember_MemberName
-            // 
-            this.dgv_StatisticsMember_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberName.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberName.Frozen = true;
-            this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
-            this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
-            this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
-            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberName.Width = 80;
-            // 
-            // dgv_StatisticsMember_MemberPhone
-            // 
-            this.dgv_StatisticsMember_MemberPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberPhone.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberPhone.Frozen = true;
-            this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
-            this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
-            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberPhone.Width = 65;
-            // 
-            // dgv_StatisticsMember_MemberSex
-            // 
-            this.dgv_StatisticsMember_MemberSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberSex.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberSex.Frozen = true;
-            this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
-            this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
-            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberSex.Width = 65;
-            // 
-            // dgv_StatisticsMember_MemberCardType
-            // 
-            this.dgv_StatisticsMember_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberCardType.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberCardType.Frozen = true;
-            this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
-            this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
-            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberCardType.Width = 81;
-            // 
-            // dgv_StatisticsMember_MemberStartTime
-            // 
-            this.dgv_StatisticsMember_MemberStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberStartTime.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberStartTime.Frozen = true;
-            this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
-            this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
-            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberStartTime.Width = 97;
-            // 
-            // dgv_StatisticsMember_MemberEndTime
-            // 
-            this.dgv_StatisticsMember_MemberEndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberEndTime.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberEndTime.Frozen = true;
-            this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
-            this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
-            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberEndTime.Width = 97;
-            // 
-            // dgv_StatisticsMember_MemberCount
-            // 
-            this.dgv_StatisticsMember_MemberCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberCount.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberCount.Frozen = true;
-            this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
-            this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
-            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberCount.Width = 97;
-            // 
-            // dgv_StatisticsMember_MemberAddUserName
-            // 
-            this.dgv_StatisticsMember_MemberAddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberAddUserName.Frozen = true;
-            this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
-            this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
-            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
-            // 
-            // dgv_StatisticsMember_MemberAddTime
-            // 
-            this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
-            this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
-            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
-            // 
-            // btn_Statistics_Member_Update
-            // 
-            this.btn_Statistics_Member_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_Member_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Update.Location = new System.Drawing.Point(747, 45);
-            this.btn_Statistics_Member_Update.Name = "btn_Statistics_Member_Update";
-            this.btn_Statistics_Member_Update.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_Member_Update.TabIndex = 235;
-            this.btn_Statistics_Member_Update.Text = "修改";
-            this.btn_Statistics_Member_Update.UseVisualStyleBackColor = true;
-            this.btn_Statistics_Member_Update.Click += new System.EventHandler(this.btn_Statistics_Member_Update_Click);
-            // 
-            // tab_Statistics_SellCast
-            // 
-            this.tab_Statistics_SellCast.Controls.Add(this.panel12);
-            this.tab_Statistics_SellCast.Location = new System.Drawing.Point(4, 26);
-            this.tab_Statistics_SellCast.Name = "tab_Statistics_SellCast";
-            this.tab_Statistics_SellCast.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Statistics_SellCast.Size = new System.Drawing.Size(840, 622);
-            this.tab_Statistics_SellCast.TabIndex = 1;
-            this.tab_Statistics_SellCast.Text = "消费信息";
-            this.tab_Statistics_SellCast.UseVisualStyleBackColor = true;
-            // 
-            // panel12
-            // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel12.Controls.Add(this.btn_Statistics_SellCast_Select);
-            this.panel12.Controls.Add(this.dtp_Statistics_SellCast_EndTime);
-            this.panel12.Controls.Add(this.dtp_Statistics_SellCast_StartTime);
-            this.panel12.Controls.Add(this.label12);
-            this.panel12.Controls.Add(this.label13);
-            this.panel12.Controls.Add(this.cmb_Statistics_SellCast_Type);
-            this.panel12.Controls.Add(this.label14);
-            this.panel12.Controls.Add(this.txt_Statistics_SellCast_CardID);
-            this.panel12.Controls.Add(this.label15);
-            this.panel12.Controls.Add(this.uC_Page_Statistics_SellCast);
-            this.panel12.Controls.Add(this.dgv_Statistics_SellCast_Manager);
-            this.panel12.Location = new System.Drawing.Point(-4, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(848, 622);
-            this.panel12.TabIndex = 6;
-            // 
-            // btn_Statistics_SellCast_Select
-            // 
-            this.btn_Statistics_SellCast_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_SellCast_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_SellCast_Select.Location = new System.Drawing.Point(748, 42);
-            this.btn_Statistics_SellCast_Select.Name = "btn_Statistics_SellCast_Select";
-            this.btn_Statistics_SellCast_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_SellCast_Select.TabIndex = 249;
-            this.btn_Statistics_SellCast_Select.Text = "查询";
-            this.btn_Statistics_SellCast_Select.UseVisualStyleBackColor = true;
-            this.btn_Statistics_SellCast_Select.Click += new System.EventHandler(this.btn_Statistics_SellCast_Select_Click);
-            // 
-            // dtp_Statistics_SellCast_EndTime
-            // 
-            this.dtp_Statistics_SellCast_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_SellCast_EndTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_SellCast_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_SellCast_EndTime.Location = new System.Drawing.Point(647, 7);
-            this.dtp_Statistics_SellCast_EndTime.Name = "dtp_Statistics_SellCast_EndTime";
-            this.dtp_Statistics_SellCast_EndTime.Size = new System.Drawing.Size(189, 26);
-            this.dtp_Statistics_SellCast_EndTime.TabIndex = 255;
-            // 
-            // dtp_Statistics_SellCast_StartTime
-            // 
-            this.dtp_Statistics_SellCast_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_SellCast_StartTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_SellCast_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_SellCast_StartTime.Location = new System.Drawing.Point(374, 8);
-            this.dtp_Statistics_SellCast_StartTime.Name = "dtp_Statistics_SellCast_StartTime";
-            this.dtp_Statistics_SellCast_StartTime.Size = new System.Drawing.Size(191, 26);
-            this.dtp_Statistics_SellCast_StartTime.TabIndex = 254;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("宋体", 12F);
-            this.label12.Location = new System.Drawing.Point(301, 16);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 16);
-            this.label12.TabIndex = 252;
-            this.label12.Text = "开始时间";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("宋体", 12F);
-            this.label13.Location = new System.Drawing.Point(576, 15);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 16);
-            this.label13.TabIndex = 253;
-            this.label13.Text = "结束时间";
-            // 
-            // cmb_Statistics_SellCast_Type
-            // 
-            this.cmb_Statistics_SellCast_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Statistics_SellCast_Type.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_Statistics_SellCast_Type.FormattingEnabled = true;
-            this.cmb_Statistics_SellCast_Type.Items.AddRange(new object[] {
-            "全部",
-            "现金消费",
-            "刷卡消费"});
-            this.cmb_Statistics_SellCast_Type.Location = new System.Drawing.Point(205, 9);
-            this.cmb_Statistics_SellCast_Type.Name = "cmb_Statistics_SellCast_Type";
-            this.cmb_Statistics_SellCast_Type.Size = new System.Drawing.Size(90, 24);
-            this.cmb_Statistics_SellCast_Type.TabIndex = 248;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("宋体", 12F);
-            this.label14.Location = new System.Drawing.Point(167, 15);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(40, 16);
-            this.label14.TabIndex = 247;
-            this.label14.Text = "类型";
-            // 
-            // txt_Statistics_SellCast_CardID
-            // 
-            this.txt_Statistics_SellCast_CardID.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_SellCast_CardID.Location = new System.Drawing.Point(61, 7);
-            this.txt_Statistics_SellCast_CardID.Name = "txt_Statistics_SellCast_CardID";
-            this.txt_Statistics_SellCast_CardID.Size = new System.Drawing.Size(100, 26);
-            this.txt_Statistics_SellCast_CardID.TabIndex = 246;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("宋体", 12F);
-            this.label15.Location = new System.Drawing.Point(15, 17);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 16);
-            this.label15.TabIndex = 245;
-            this.label15.Text = "卡号";
-            // 
-            // dgv_Statistics_SellCast_Manager
-            // 
-            this.dgv_Statistics_SellCast_Manager.AllowUserToAddRows = false;
-            this.dgv_Statistics_SellCast_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Statistics_SellCast_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Statistics_SellCast_Manager.ColumnHeadersHeight = 25;
-            this.dgv_Statistics_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_Statistics_SellCast_cb,
-            this.dgv_Statistics_SellCast_CastID,
-            this.dgv_Statistics_SellCast_Num,
-            this.dgv_Statistics_SellCast_AddType,
-            this.dgv_Statistics_SellCast_TypeName,
-            this.dgv_Statistics_SellCast_PriceAmount,
-            this.dgv_Statistics_SellCast_PaymentAmount,
-            this.dgv_Statistics_SellCast_ChangeAmount,
-            this.dgv_Statistics_SellCast_CardID,
-            this.dgv_Statistics_SellCast_Prices,
-            this.dgv_Statistics_SellCast_PeoPles,
-            this.dgv_Statistics_SellCast_Des,
-            this.dgv_Statistics_SellCast_AddUserName,
-            this.dgv_Statistics_SellCast_CreateTime});
-            this.dgv_Statistics_SellCast_Manager.Location = new System.Drawing.Point(3, 83);
-            this.dgv_Statistics_SellCast_Manager.Name = "dgv_Statistics_SellCast_Manager";
-            this.dgv_Statistics_SellCast_Manager.ReadOnly = true;
-            this.dgv_Statistics_SellCast_Manager.RowHeadersVisible = false;
-            this.dgv_Statistics_SellCast_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Statistics_SellCast_Manager.RowTemplate.Height = 23;
-            this.dgv_Statistics_SellCast_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_SellCast_Manager.Size = new System.Drawing.Size(837, 506);
-            this.dgv_Statistics_SellCast_Manager.TabIndex = 215;
-            this.dgv_Statistics_SellCast_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_SellCast_Manager_CellContentDoubleClick);
-            // 
-            // dgv_Statistics_SellCast_cb
-            // 
-            this.dgv_Statistics_SellCast_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_cb.FillWeight = 1F;
-            this.dgv_Statistics_SellCast_cb.Frozen = true;
-            this.dgv_Statistics_SellCast_cb.HeaderText = "选择";
-            this.dgv_Statistics_SellCast_cb.MinimumWidth = 60;
-            this.dgv_Statistics_SellCast_cb.Name = "dgv_Statistics_SellCast_cb";
-            this.dgv_Statistics_SellCast_cb.ReadOnly = true;
-            this.dgv_Statistics_SellCast_cb.Visible = false;
-            this.dgv_Statistics_SellCast_cb.Width = 60;
-            // 
-            // dgv_Statistics_SellCast_CastID
-            // 
-            this.dgv_Statistics_SellCast_CastID.HeaderText = "CastID";
-            this.dgv_Statistics_SellCast_CastID.Name = "dgv_Statistics_SellCast_CastID";
-            this.dgv_Statistics_SellCast_CastID.ReadOnly = true;
-            this.dgv_Statistics_SellCast_CastID.Visible = false;
-            // 
-            // dgv_Statistics_SellCast_Num
-            // 
-            this.dgv_Statistics_SellCast_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_Num.FillWeight = 28.73418F;
-            this.dgv_Statistics_SellCast_Num.Frozen = true;
-            this.dgv_Statistics_SellCast_Num.HeaderText = "序号";
-            this.dgv_Statistics_SellCast_Num.MinimumWidth = 50;
-            this.dgv_Statistics_SellCast_Num.Name = "dgv_Statistics_SellCast_Num";
-            this.dgv_Statistics_SellCast_Num.ReadOnly = true;
-            this.dgv_Statistics_SellCast_Num.Width = 65;
-            // 
-            // dgv_Statistics_SellCast_AddType
-            // 
-            this.dgv_Statistics_SellCast_AddType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_AddType.HeaderText = "消费类型";
-            this.dgv_Statistics_SellCast_AddType.Name = "dgv_Statistics_SellCast_AddType";
-            this.dgv_Statistics_SellCast_AddType.ReadOnly = true;
-            this.dgv_Statistics_SellCast_AddType.Width = 97;
-            // 
-            // dgv_Statistics_SellCast_TypeName
-            // 
-            this.dgv_Statistics_SellCast_TypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_TypeName.HeaderText = "交易类型";
-            this.dgv_Statistics_SellCast_TypeName.Name = "dgv_Statistics_SellCast_TypeName";
-            this.dgv_Statistics_SellCast_TypeName.ReadOnly = true;
-            this.dgv_Statistics_SellCast_TypeName.Width = 97;
-            // 
-            // dgv_Statistics_SellCast_PriceAmount
-            // 
-            this.dgv_Statistics_SellCast_PriceAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_PriceAmount.HeaderText = "总额";
-            this.dgv_Statistics_SellCast_PriceAmount.Name = "dgv_Statistics_SellCast_PriceAmount";
-            this.dgv_Statistics_SellCast_PriceAmount.ReadOnly = true;
-            this.dgv_Statistics_SellCast_PriceAmount.Width = 65;
-            // 
-            // dgv_Statistics_SellCast_PaymentAmount
-            // 
-            this.dgv_Statistics_SellCast_PaymentAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_PaymentAmount.HeaderText = "实收金额";
-            this.dgv_Statistics_SellCast_PaymentAmount.Name = "dgv_Statistics_SellCast_PaymentAmount";
-            this.dgv_Statistics_SellCast_PaymentAmount.ReadOnly = true;
-            this.dgv_Statistics_SellCast_PaymentAmount.Width = 97;
-            // 
-            // dgv_Statistics_SellCast_ChangeAmount
-            // 
-            this.dgv_Statistics_SellCast_ChangeAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_ChangeAmount.HeaderText = "找零金额";
-            this.dgv_Statistics_SellCast_ChangeAmount.Name = "dgv_Statistics_SellCast_ChangeAmount";
-            this.dgv_Statistics_SellCast_ChangeAmount.ReadOnly = true;
-            this.dgv_Statistics_SellCast_ChangeAmount.Width = 97;
-            // 
-            // dgv_Statistics_SellCast_CardID
-            // 
-            this.dgv_Statistics_SellCast_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_CardID.HeaderText = "卡号";
-            this.dgv_Statistics_SellCast_CardID.Name = "dgv_Statistics_SellCast_CardID";
-            this.dgv_Statistics_SellCast_CardID.ReadOnly = true;
-            this.dgv_Statistics_SellCast_CardID.Width = 65;
-            // 
-            // dgv_Statistics_SellCast_Prices
-            // 
-            this.dgv_Statistics_SellCast_Prices.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_Prices.FillWeight = 57.46837F;
-            this.dgv_Statistics_SellCast_Prices.HeaderText = "单价";
-            this.dgv_Statistics_SellCast_Prices.MinimumWidth = 80;
-            this.dgv_Statistics_SellCast_Prices.Name = "dgv_Statistics_SellCast_Prices";
-            this.dgv_Statistics_SellCast_Prices.ReadOnly = true;
-            this.dgv_Statistics_SellCast_Prices.Width = 80;
-            // 
-            // dgv_Statistics_SellCast_PeoPles
-            // 
-            this.dgv_Statistics_SellCast_PeoPles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_PeoPles.HeaderText = "人数";
-            this.dgv_Statistics_SellCast_PeoPles.Name = "dgv_Statistics_SellCast_PeoPles";
-            this.dgv_Statistics_SellCast_PeoPles.ReadOnly = true;
-            this.dgv_Statistics_SellCast_PeoPles.Width = 65;
-            // 
-            // dgv_Statistics_SellCast_Des
-            // 
-            this.dgv_Statistics_SellCast_Des.HeaderText = "描述";
-            this.dgv_Statistics_SellCast_Des.Name = "dgv_Statistics_SellCast_Des";
-            this.dgv_Statistics_SellCast_Des.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_AddUserName
-            // 
-            this.dgv_Statistics_SellCast_AddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_SellCast_AddUserName.HeaderText = "操作员";
-            this.dgv_Statistics_SellCast_AddUserName.Name = "dgv_Statistics_SellCast_AddUserName";
-            this.dgv_Statistics_SellCast_AddUserName.ReadOnly = true;
-            this.dgv_Statistics_SellCast_AddUserName.Width = 81;
-            // 
-            // dgv_Statistics_SellCast_CreateTime
-            // 
-            this.dgv_Statistics_SellCast_CreateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_Statistics_SellCast_CreateTime.HeaderText = "消费时间";
-            this.dgv_Statistics_SellCast_CreateTime.Name = "dgv_Statistics_SellCast_CreateTime";
-            this.dgv_Statistics_SellCast_CreateTime.ReadOnly = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.panel13);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(840, 622);
-            this.tabPage2.TabIndex = 2;
-            this.tabPage2.Text = "刷卡信息";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // panel13
-            // 
-            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel13.Controls.Add(this.btn_Statistics_Swiping_Select);
-            this.panel13.Controls.Add(this.dtp_Statistics_Swiping_EndTime);
-            this.panel13.Controls.Add(this.dtp_Statistics_Swiping_StartTime);
-            this.panel13.Controls.Add(this.label16);
-            this.panel13.Controls.Add(this.label17);
-            this.panel13.Controls.Add(this.cmb_Statistics_Swiping_TypeName);
-            this.panel13.Controls.Add(this.label18);
-            this.panel13.Controls.Add(this.txt_Statistics_Swiping_CardID);
-            this.panel13.Controls.Add(this.label19);
-            this.panel13.Controls.Add(this.uC_Page_Statistics_Swiping);
-            this.panel13.Controls.Add(this.dgv_Statistics_Swiping_Manager);
-            this.panel13.Location = new System.Drawing.Point(-4, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(849, 622);
-            this.panel13.TabIndex = 5;
-            // 
-            // btn_Statistics_Swiping_Select
-            // 
-            this.btn_Statistics_Swiping_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_Swiping_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Swiping_Select.Location = new System.Drawing.Point(745, 43);
-            this.btn_Statistics_Swiping_Select.Name = "btn_Statistics_Swiping_Select";
-            this.btn_Statistics_Swiping_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_Swiping_Select.TabIndex = 260;
-            this.btn_Statistics_Swiping_Select.Text = "查询";
-            this.btn_Statistics_Swiping_Select.UseVisualStyleBackColor = true;
-            this.btn_Statistics_Swiping_Select.Click += new System.EventHandler(this.btn_Statistics_Swiping_Select_Click);
-            // 
-            // dtp_Statistics_Swiping_EndTime
-            // 
-            this.dtp_Statistics_Swiping_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_Swiping_EndTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_Swiping_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_Swiping_EndTime.Location = new System.Drawing.Point(644, 8);
-            this.dtp_Statistics_Swiping_EndTime.Name = "dtp_Statistics_Swiping_EndTime";
-            this.dtp_Statistics_Swiping_EndTime.Size = new System.Drawing.Size(189, 26);
-            this.dtp_Statistics_Swiping_EndTime.TabIndex = 264;
-            // 
-            // dtp_Statistics_Swiping_StartTime
-            // 
-            this.dtp_Statistics_Swiping_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_Swiping_StartTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_Swiping_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_Swiping_StartTime.Location = new System.Drawing.Point(371, 9);
-            this.dtp_Statistics_Swiping_StartTime.Name = "dtp_Statistics_Swiping_StartTime";
-            this.dtp_Statistics_Swiping_StartTime.Size = new System.Drawing.Size(191, 26);
-            this.dtp_Statistics_Swiping_StartTime.TabIndex = 263;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("宋体", 12F);
-            this.label16.Location = new System.Drawing.Point(298, 17);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(72, 16);
-            this.label16.TabIndex = 261;
-            this.label16.Text = "开始时间";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("宋体", 12F);
-            this.label17.Location = new System.Drawing.Point(573, 16);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(72, 16);
-            this.label17.TabIndex = 262;
-            this.label17.Text = "结束时间";
-            // 
-            // cmb_Statistics_Swiping_TypeName
-            // 
-            this.cmb_Statistics_Swiping_TypeName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Statistics_Swiping_TypeName.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_Statistics_Swiping_TypeName.FormattingEnabled = true;
-            this.cmb_Statistics_Swiping_TypeName.Items.AddRange(new object[] {
-            "全部",
-            "会员刷卡",
-            "临时刷卡"});
-            this.cmb_Statistics_Swiping_TypeName.Location = new System.Drawing.Point(202, 10);
-            this.cmb_Statistics_Swiping_TypeName.Name = "cmb_Statistics_Swiping_TypeName";
-            this.cmb_Statistics_Swiping_TypeName.Size = new System.Drawing.Size(90, 24);
-            this.cmb_Statistics_Swiping_TypeName.TabIndex = 259;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("宋体", 12F);
-            this.label18.Location = new System.Drawing.Point(164, 16);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(40, 16);
-            this.label18.TabIndex = 258;
-            this.label18.Text = "类型";
-            // 
-            // txt_Statistics_Swiping_CardID
-            // 
-            this.txt_Statistics_Swiping_CardID.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_Swiping_CardID.Location = new System.Drawing.Point(58, 8);
-            this.txt_Statistics_Swiping_CardID.Name = "txt_Statistics_Swiping_CardID";
-            this.txt_Statistics_Swiping_CardID.Size = new System.Drawing.Size(100, 26);
-            this.txt_Statistics_Swiping_CardID.TabIndex = 257;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 12F);
-            this.label19.Location = new System.Drawing.Point(12, 18);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 16);
-            this.label19.TabIndex = 256;
-            this.label19.Text = "卡号";
-            // 
-            // dgv_Statistics_Swiping_Manager
-            // 
-            this.dgv_Statistics_Swiping_Manager.AllowUserToAddRows = false;
-            this.dgv_Statistics_Swiping_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_Swiping_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Statistics_Swiping_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Statistics_Swiping_Manager.ColumnHeadersHeight = 25;
-            this.dgv_Statistics_Swiping_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn1,
-            this.dgv_Statistics_Swiping_ID,
-            this.dgv_Statistics_Swiping_Num,
-            this.dgv_Statistics_Swiping_CardID,
-            this.dgv_Statistics_Swiping_CardTypeName,
-            this.dgv_Statistics_Swiping_Type,
-            this.dgv_Statistics_Swiping_Name,
-            this.dgv_Statistics_Swiping_PeoPles,
-            this.dgv_Statistics_Swiping_Des,
-            this.dgv_Statistics_Swiping_AddUserName,
-            this.dgv_Statistics_Swiping_AddTime});
-            this.dgv_Statistics_Swiping_Manager.Location = new System.Drawing.Point(3, 83);
-            this.dgv_Statistics_Swiping_Manager.MultiSelect = false;
-            this.dgv_Statistics_Swiping_Manager.Name = "dgv_Statistics_Swiping_Manager";
-            this.dgv_Statistics_Swiping_Manager.ReadOnly = true;
-            this.dgv_Statistics_Swiping_Manager.RowHeadersVisible = false;
-            this.dgv_Statistics_Swiping_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Statistics_Swiping_Manager.RowTemplate.Height = 23;
-            this.dgv_Statistics_Swiping_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_Swiping_Manager.Size = new System.Drawing.Size(838, 506);
-            this.dgv_Statistics_Swiping_Manager.TabIndex = 215;
-            this.dgv_Statistics_Swiping_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_Swiping_Manager_CellContentDoubleClick);
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewCheckBoxColumn1.FillWeight = 1F;
-            this.dataGridViewCheckBoxColumn1.Frozen = true;
-            this.dataGridViewCheckBoxColumn1.HeaderText = "选择";
-            this.dataGridViewCheckBoxColumn1.MinimumWidth = 60;
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Visible = false;
-            this.dataGridViewCheckBoxColumn1.Width = 60;
-            // 
-            // dgv_Statistics_Swiping_ID
-            // 
-            this.dgv_Statistics_Swiping_ID.HeaderText = "ID";
-            this.dgv_Statistics_Swiping_ID.Name = "dgv_Statistics_Swiping_ID";
-            this.dgv_Statistics_Swiping_ID.ReadOnly = true;
-            this.dgv_Statistics_Swiping_ID.Visible = false;
-            // 
-            // dgv_Statistics_Swiping_Num
-            // 
-            this.dgv_Statistics_Swiping_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_Num.FillWeight = 28.73418F;
-            this.dgv_Statistics_Swiping_Num.Frozen = true;
-            this.dgv_Statistics_Swiping_Num.HeaderText = "序号";
-            this.dgv_Statistics_Swiping_Num.MinimumWidth = 50;
-            this.dgv_Statistics_Swiping_Num.Name = "dgv_Statistics_Swiping_Num";
-            this.dgv_Statistics_Swiping_Num.ReadOnly = true;
-            this.dgv_Statistics_Swiping_Num.Width = 65;
-            // 
-            // dgv_Statistics_Swiping_CardID
-            // 
-            this.dgv_Statistics_Swiping_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_CardID.HeaderText = "卡号";
-            this.dgv_Statistics_Swiping_CardID.Name = "dgv_Statistics_Swiping_CardID";
-            this.dgv_Statistics_Swiping_CardID.ReadOnly = true;
-            this.dgv_Statistics_Swiping_CardID.Width = 65;
-            // 
-            // dgv_Statistics_Swiping_CardTypeName
-            // 
-            this.dgv_Statistics_Swiping_CardTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_CardTypeName.HeaderText = "卡类型";
-            this.dgv_Statistics_Swiping_CardTypeName.Name = "dgv_Statistics_Swiping_CardTypeName";
-            this.dgv_Statistics_Swiping_CardTypeName.ReadOnly = true;
-            this.dgv_Statistics_Swiping_CardTypeName.Width = 81;
-            // 
-            // dgv_Statistics_Swiping_Type
-            // 
-            this.dgv_Statistics_Swiping_Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_Type.HeaderText = "刷卡类型";
-            this.dgv_Statistics_Swiping_Type.Name = "dgv_Statistics_Swiping_Type";
-            this.dgv_Statistics_Swiping_Type.ReadOnly = true;
-            this.dgv_Statistics_Swiping_Type.Width = 97;
-            // 
-            // dgv_Statistics_Swiping_Name
-            // 
-            this.dgv_Statistics_Swiping_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_Name.FillWeight = 57.46837F;
-            this.dgv_Statistics_Swiping_Name.HeaderText = "姓名";
-            this.dgv_Statistics_Swiping_Name.MinimumWidth = 80;
-            this.dgv_Statistics_Swiping_Name.Name = "dgv_Statistics_Swiping_Name";
-            this.dgv_Statistics_Swiping_Name.ReadOnly = true;
-            this.dgv_Statistics_Swiping_Name.Width = 80;
-            // 
-            // dgv_Statistics_Swiping_PeoPles
-            // 
-            this.dgv_Statistics_Swiping_PeoPles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_PeoPles.HeaderText = "刷卡人数";
-            this.dgv_Statistics_Swiping_PeoPles.Name = "dgv_Statistics_Swiping_PeoPles";
-            this.dgv_Statistics_Swiping_PeoPles.ReadOnly = true;
-            this.dgv_Statistics_Swiping_PeoPles.Width = 97;
-            // 
-            // dgv_Statistics_Swiping_Des
-            // 
-            this.dgv_Statistics_Swiping_Des.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_Des.HeaderText = "描述";
-            this.dgv_Statistics_Swiping_Des.Name = "dgv_Statistics_Swiping_Des";
-            this.dgv_Statistics_Swiping_Des.ReadOnly = true;
-            this.dgv_Statistics_Swiping_Des.Width = 65;
-            // 
-            // dgv_Statistics_Swiping_AddUserName
-            // 
-            this.dgv_Statistics_Swiping_AddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_Swiping_AddUserName.HeaderText = "操作员";
-            this.dgv_Statistics_Swiping_AddUserName.Name = "dgv_Statistics_Swiping_AddUserName";
-            this.dgv_Statistics_Swiping_AddUserName.ReadOnly = true;
-            this.dgv_Statistics_Swiping_AddUserName.Width = 81;
-            // 
-            // dgv_Statistics_Swiping_AddTime
-            // 
-            this.dgv_Statistics_Swiping_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_Statistics_Swiping_AddTime.HeaderText = "刷卡时间";
-            this.dgv_Statistics_Swiping_AddTime.Name = "dgv_Statistics_Swiping_AddTime";
-            this.dgv_Statistics_Swiping_AddTime.ReadOnly = true;
-            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -2732,8 +3351,9 @@
             this.btn_Report_Manager.Name = "btn_Report_Manager";
             this.btn_Report_Manager.Size = new System.Drawing.Size(130, 45);
             this.btn_Report_Manager.TabIndex = 245;
-            this.btn_Report_Manager.Text = "报表管理";
+            this.btn_Report_Manager.Text = "报表统计";
             this.btn_Report_Manager.UseVisualStyleBackColor = true;
+            this.btn_Report_Manager.Click += new System.EventHandler(this.btn_Report_Manager_Click);
             // 
             // btn_SystemManager
             // 
@@ -2840,625 +3460,6 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.panel14);
-            this.tabPage5.Location = new System.Drawing.Point(4, 26);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(840, 622);
-            this.tabPage5.TabIndex = 3;
-            this.tabPage5.Text = "退卡信息";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // panel14
-            // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel14.Controls.Add(this.btn_Statistics_BackCard_Select);
-            this.panel14.Controls.Add(this.dtp_Statistics_BackCard_EndTime);
-            this.panel14.Controls.Add(this.dtp_Statistics_BackCard_StartTime);
-            this.panel14.Controls.Add(this.label20);
-            this.panel14.Controls.Add(this.label21);
-            this.panel14.Controls.Add(this.cmb_Statistics_BackCard_CardType);
-            this.panel14.Controls.Add(this.label22);
-            this.panel14.Controls.Add(this.txt_Statistics_BackCard_CardID);
-            this.panel14.Controls.Add(this.label23);
-            this.panel14.Controls.Add(this.uC_Page_Statistics_BackCard);
-            this.panel14.Controls.Add(this.dgv_Statistics_BackCard_Manager);
-            this.panel14.Location = new System.Drawing.Point(-3, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(845, 622);
-            this.panel14.TabIndex = 6;
-            // 
-            // btn_Statistics_BackCard_Select
-            // 
-            this.btn_Statistics_BackCard_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_BackCard_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_BackCard_Select.Location = new System.Drawing.Point(741, 43);
-            this.btn_Statistics_BackCard_Select.Name = "btn_Statistics_BackCard_Select";
-            this.btn_Statistics_BackCard_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_BackCard_Select.TabIndex = 260;
-            this.btn_Statistics_BackCard_Select.Text = "查询";
-            this.btn_Statistics_BackCard_Select.UseVisualStyleBackColor = true;
-            this.btn_Statistics_BackCard_Select.Click += new System.EventHandler(this.btn_Statistics_BackCard_Select_Click);
-            // 
-            // dtp_Statistics_BackCard_EndTime
-            // 
-            this.dtp_Statistics_BackCard_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_BackCard_EndTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_BackCard_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_BackCard_EndTime.Location = new System.Drawing.Point(644, 8);
-            this.dtp_Statistics_BackCard_EndTime.Name = "dtp_Statistics_BackCard_EndTime";
-            this.dtp_Statistics_BackCard_EndTime.Size = new System.Drawing.Size(189, 26);
-            this.dtp_Statistics_BackCard_EndTime.TabIndex = 264;
-            // 
-            // dtp_Statistics_BackCard_StartTime
-            // 
-            this.dtp_Statistics_BackCard_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_BackCard_StartTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_BackCard_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_BackCard_StartTime.Location = new System.Drawing.Point(371, 9);
-            this.dtp_Statistics_BackCard_StartTime.Name = "dtp_Statistics_BackCard_StartTime";
-            this.dtp_Statistics_BackCard_StartTime.Size = new System.Drawing.Size(191, 26);
-            this.dtp_Statistics_BackCard_StartTime.TabIndex = 263;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("宋体", 12F);
-            this.label20.Location = new System.Drawing.Point(298, 17);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(72, 16);
-            this.label20.TabIndex = 261;
-            this.label20.Text = "开始时间";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("宋体", 12F);
-            this.label21.Location = new System.Drawing.Point(573, 16);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(72, 16);
-            this.label21.TabIndex = 262;
-            this.label21.Text = "结束时间";
-            // 
-            // cmb_Statistics_BackCard_CardType
-            // 
-            this.cmb_Statistics_BackCard_CardType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Statistics_BackCard_CardType.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_Statistics_BackCard_CardType.FormattingEnabled = true;
-            this.cmb_Statistics_BackCard_CardType.Items.AddRange(new object[] {
-            "全部",
-            "会员刷卡",
-            "临时刷卡"});
-            this.cmb_Statistics_BackCard_CardType.Location = new System.Drawing.Point(202, 10);
-            this.cmb_Statistics_BackCard_CardType.Name = "cmb_Statistics_BackCard_CardType";
-            this.cmb_Statistics_BackCard_CardType.Size = new System.Drawing.Size(90, 24);
-            this.cmb_Statistics_BackCard_CardType.TabIndex = 259;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 12F);
-            this.label22.Location = new System.Drawing.Point(164, 16);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(40, 16);
-            this.label22.TabIndex = 258;
-            this.label22.Text = "类型";
-            // 
-            // txt_Statistics_BackCard_CardID
-            // 
-            this.txt_Statistics_BackCard_CardID.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_BackCard_CardID.Location = new System.Drawing.Point(58, 8);
-            this.txt_Statistics_BackCard_CardID.Name = "txt_Statistics_BackCard_CardID";
-            this.txt_Statistics_BackCard_CardID.Size = new System.Drawing.Size(100, 26);
-            this.txt_Statistics_BackCard_CardID.TabIndex = 257;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("宋体", 12F);
-            this.label23.Location = new System.Drawing.Point(12, 18);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(40, 16);
-            this.label23.TabIndex = 256;
-            this.label23.Text = "卡号";
-            // 
-            // dgv_Statistics_BackCard_Manager
-            // 
-            this.dgv_Statistics_BackCard_Manager.AllowUserToAddRows = false;
-            this.dgv_Statistics_BackCard_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_BackCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Statistics_BackCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Statistics_BackCard_Manager.ColumnHeadersHeight = 25;
-            this.dgv_Statistics_BackCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_Statistics_BackCard_cb,
-            this.dgv_Statistics_BackCard_ID,
-            this.dgv_Statistics_BackCard_Num,
-            this.dgv_Statistics_BackCard_CardID,
-            this.dgv_Statistics_BackCard_CardType,
-            this.dgv_Statistics_BackCard_Name,
-            this.dgv_Statistics_BackCard_StartTime,
-            this.dgv_Statistics_BackCard_EndTime,
-            this.dgv_Statistics_BackCard_TotalDays,
-            this.dgv_Statistics_BackCard_LeftDays,
-            this.dgv_Statistics_BackCard_TotalTimes,
-            this.dgv_Statistics_BackCard_LeftTimes,
-            this.dgv_Statistics_BackCard_PaidAmount,
-            this.dgv_Statistics_BackCard_ChangeAmount,
-            this.dgv_Statistics_BackCard_PatchAmount,
-            this.dgv_Statistics_BackCard_UsedAmount,
-            this.dgv_Statistics_BackCard_AddTime});
-            this.dgv_Statistics_BackCard_Manager.Location = new System.Drawing.Point(3, 83);
-            this.dgv_Statistics_BackCard_Manager.MultiSelect = false;
-            this.dgv_Statistics_BackCard_Manager.Name = "dgv_Statistics_BackCard_Manager";
-            this.dgv_Statistics_BackCard_Manager.ReadOnly = true;
-            this.dgv_Statistics_BackCard_Manager.RowHeadersVisible = false;
-            this.dgv_Statistics_BackCard_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Statistics_BackCard_Manager.RowTemplate.Height = 23;
-            this.dgv_Statistics_BackCard_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_BackCard_Manager.Size = new System.Drawing.Size(839, 506);
-            this.dgv_Statistics_BackCard_Manager.TabIndex = 215;
-            this.dgv_Statistics_BackCard_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_BackCard_Manager_CellContentDoubleClick);
-            // 
-            // dgv_Statistics_BackCard_cb
-            // 
-            this.dgv_Statistics_BackCard_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_cb.FillWeight = 1F;
-            this.dgv_Statistics_BackCard_cb.Frozen = true;
-            this.dgv_Statistics_BackCard_cb.HeaderText = "选择";
-            this.dgv_Statistics_BackCard_cb.MinimumWidth = 60;
-            this.dgv_Statistics_BackCard_cb.Name = "dgv_Statistics_BackCard_cb";
-            this.dgv_Statistics_BackCard_cb.ReadOnly = true;
-            this.dgv_Statistics_BackCard_cb.Visible = false;
-            this.dgv_Statistics_BackCard_cb.Width = 60;
-            // 
-            // dgv_Statistics_BackCard_ID
-            // 
-            this.dgv_Statistics_BackCard_ID.HeaderText = "ID";
-            this.dgv_Statistics_BackCard_ID.Name = "dgv_Statistics_BackCard_ID";
-            this.dgv_Statistics_BackCard_ID.ReadOnly = true;
-            this.dgv_Statistics_BackCard_ID.Visible = false;
-            // 
-            // dgv_Statistics_BackCard_Num
-            // 
-            this.dgv_Statistics_BackCard_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_Num.FillWeight = 28.73418F;
-            this.dgv_Statistics_BackCard_Num.Frozen = true;
-            this.dgv_Statistics_BackCard_Num.HeaderText = "序号";
-            this.dgv_Statistics_BackCard_Num.MinimumWidth = 50;
-            this.dgv_Statistics_BackCard_Num.Name = "dgv_Statistics_BackCard_Num";
-            this.dgv_Statistics_BackCard_Num.ReadOnly = true;
-            this.dgv_Statistics_BackCard_Num.Width = 65;
-            // 
-            // dgv_Statistics_BackCard_CardID
-            // 
-            this.dgv_Statistics_BackCard_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_CardID.HeaderText = "卡号";
-            this.dgv_Statistics_BackCard_CardID.Name = "dgv_Statistics_BackCard_CardID";
-            this.dgv_Statistics_BackCard_CardID.ReadOnly = true;
-            this.dgv_Statistics_BackCard_CardID.Width = 65;
-            // 
-            // dgv_Statistics_BackCard_CardType
-            // 
-            this.dgv_Statistics_BackCard_CardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_CardType.HeaderText = "卡类型";
-            this.dgv_Statistics_BackCard_CardType.Name = "dgv_Statistics_BackCard_CardType";
-            this.dgv_Statistics_BackCard_CardType.ReadOnly = true;
-            this.dgv_Statistics_BackCard_CardType.Width = 81;
-            // 
-            // dgv_Statistics_BackCard_Name
-            // 
-            this.dgv_Statistics_BackCard_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_Name.HeaderText = "姓名";
-            this.dgv_Statistics_BackCard_Name.Name = "dgv_Statistics_BackCard_Name";
-            this.dgv_Statistics_BackCard_Name.ReadOnly = true;
-            this.dgv_Statistics_BackCard_Name.Width = 65;
-            // 
-            // dgv_Statistics_BackCard_StartTime
-            // 
-            this.dgv_Statistics_BackCard_StartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_StartTime.FillWeight = 57.46837F;
-            this.dgv_Statistics_BackCard_StartTime.HeaderText = "开始时间";
-            this.dgv_Statistics_BackCard_StartTime.MinimumWidth = 80;
-            this.dgv_Statistics_BackCard_StartTime.Name = "dgv_Statistics_BackCard_StartTime";
-            this.dgv_Statistics_BackCard_StartTime.ReadOnly = true;
-            this.dgv_Statistics_BackCard_StartTime.Visible = false;
-            this.dgv_Statistics_BackCard_StartTime.Width = 80;
-            // 
-            // dgv_Statistics_BackCard_EndTime
-            // 
-            this.dgv_Statistics_BackCard_EndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_EndTime.HeaderText = "结束时间";
-            this.dgv_Statistics_BackCard_EndTime.Name = "dgv_Statistics_BackCard_EndTime";
-            this.dgv_Statistics_BackCard_EndTime.ReadOnly = true;
-            this.dgv_Statistics_BackCard_EndTime.Visible = false;
-            this.dgv_Statistics_BackCard_EndTime.Width = 78;
-            // 
-            // dgv_Statistics_BackCard_TotalDays
-            // 
-            this.dgv_Statistics_BackCard_TotalDays.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_TotalDays.HeaderText = "总天数";
-            this.dgv_Statistics_BackCard_TotalDays.Name = "dgv_Statistics_BackCard_TotalDays";
-            this.dgv_Statistics_BackCard_TotalDays.ReadOnly = true;
-            this.dgv_Statistics_BackCard_TotalDays.Width = 81;
-            // 
-            // dgv_Statistics_BackCard_LeftDays
-            // 
-            this.dgv_Statistics_BackCard_LeftDays.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_LeftDays.HeaderText = "剩余天数";
-            this.dgv_Statistics_BackCard_LeftDays.Name = "dgv_Statistics_BackCard_LeftDays";
-            this.dgv_Statistics_BackCard_LeftDays.ReadOnly = true;
-            this.dgv_Statistics_BackCard_LeftDays.Width = 97;
-            // 
-            // dgv_Statistics_BackCard_TotalTimes
-            // 
-            this.dgv_Statistics_BackCard_TotalTimes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_TotalTimes.HeaderText = "总次数";
-            this.dgv_Statistics_BackCard_TotalTimes.Name = "dgv_Statistics_BackCard_TotalTimes";
-            this.dgv_Statistics_BackCard_TotalTimes.ReadOnly = true;
-            this.dgv_Statistics_BackCard_TotalTimes.Width = 81;
-            // 
-            // dgv_Statistics_BackCard_LeftTimes
-            // 
-            this.dgv_Statistics_BackCard_LeftTimes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_LeftTimes.HeaderText = "剩余次数";
-            this.dgv_Statistics_BackCard_LeftTimes.Name = "dgv_Statistics_BackCard_LeftTimes";
-            this.dgv_Statistics_BackCard_LeftTimes.ReadOnly = true;
-            this.dgv_Statistics_BackCard_LeftTimes.Width = 97;
-            // 
-            // dgv_Statistics_BackCard_PaidAmount
-            // 
-            this.dgv_Statistics_BackCard_PaidAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_PaidAmount.HeaderText = "已缴费用";
-            this.dgv_Statistics_BackCard_PaidAmount.Name = "dgv_Statistics_BackCard_PaidAmount";
-            this.dgv_Statistics_BackCard_PaidAmount.ReadOnly = true;
-            this.dgv_Statistics_BackCard_PaidAmount.Width = 97;
-            // 
-            // dgv_Statistics_BackCard_ChangeAmount
-            // 
-            this.dgv_Statistics_BackCard_ChangeAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_ChangeAmount.HeaderText = "退还费用";
-            this.dgv_Statistics_BackCard_ChangeAmount.Name = "dgv_Statistics_BackCard_ChangeAmount";
-            this.dgv_Statistics_BackCard_ChangeAmount.ReadOnly = true;
-            this.dgv_Statistics_BackCard_ChangeAmount.Width = 97;
-            // 
-            // dgv_Statistics_BackCard_PatchAmount
-            // 
-            this.dgv_Statistics_BackCard_PatchAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_PatchAmount.HeaderText = "补交费用";
-            this.dgv_Statistics_BackCard_PatchAmount.Name = "dgv_Statistics_BackCard_PatchAmount";
-            this.dgv_Statistics_BackCard_PatchAmount.ReadOnly = true;
-            this.dgv_Statistics_BackCard_PatchAmount.Width = 97;
-            // 
-            // dgv_Statistics_BackCard_UsedAmount
-            // 
-            this.dgv_Statistics_BackCard_UsedAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_BackCard_UsedAmount.HeaderText = "已用费用";
-            this.dgv_Statistics_BackCard_UsedAmount.Name = "dgv_Statistics_BackCard_UsedAmount";
-            this.dgv_Statistics_BackCard_UsedAmount.ReadOnly = true;
-            this.dgv_Statistics_BackCard_UsedAmount.Width = 97;
-            // 
-            // dgv_Statistics_BackCard_AddTime
-            // 
-            this.dgv_Statistics_BackCard_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_Statistics_BackCard_AddTime.HeaderText = "时间";
-            this.dgv_Statistics_BackCard_AddTime.Name = "dgv_Statistics_BackCard_AddTime";
-            this.dgv_Statistics_BackCard_AddTime.ReadOnly = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.panel15);
-            this.tabPage6.Location = new System.Drawing.Point(4, 26);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(840, 622);
-            this.tabPage6.TabIndex = 4;
-            this.tabPage6.Text = "挂失信息";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // panel15
-            // 
-            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel15.Controls.Add(this.btn_Statistics_LossCard_Select);
-            this.panel15.Controls.Add(this.dtp_Statistics_LossCard_EndTime);
-            this.panel15.Controls.Add(this.dtp_Statistics_LossCard_CardID_StartTime);
-            this.panel15.Controls.Add(this.label24);
-            this.panel15.Controls.Add(this.label25);
-            this.panel15.Controls.Add(this.txt_Statistics_LossCard_CardID);
-            this.panel15.Controls.Add(this.label27);
-            this.panel15.Controls.Add(this.uC_Page_Statistics_LossCard);
-            this.panel15.Controls.Add(this.dgv_Statistics_LossCard_Manager);
-            this.panel15.Location = new System.Drawing.Point(-2, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(845, 622);
-            this.panel15.TabIndex = 7;
-            // 
-            // btn_Statistics_LossCard_Select
-            // 
-            this.btn_Statistics_LossCard_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Statistics_LossCard_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_LossCard_Select.Location = new System.Drawing.Point(741, 43);
-            this.btn_Statistics_LossCard_Select.Name = "btn_Statistics_LossCard_Select";
-            this.btn_Statistics_LossCard_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_Statistics_LossCard_Select.TabIndex = 260;
-            this.btn_Statistics_LossCard_Select.Text = "查询";
-            this.btn_Statistics_LossCard_Select.UseVisualStyleBackColor = true;
-            this.btn_Statistics_LossCard_Select.Click += new System.EventHandler(this.btn_Statistics_LossCard_Select_Click);
-            // 
-            // dtp_Statistics_LossCard_EndTime
-            // 
-            this.dtp_Statistics_LossCard_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_LossCard_EndTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_LossCard_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_LossCard_EndTime.Location = new System.Drawing.Point(644, 8);
-            this.dtp_Statistics_LossCard_EndTime.Name = "dtp_Statistics_LossCard_EndTime";
-            this.dtp_Statistics_LossCard_EndTime.Size = new System.Drawing.Size(189, 26);
-            this.dtp_Statistics_LossCard_EndTime.TabIndex = 264;
-            // 
-            // dtp_Statistics_LossCard_CardID_StartTime
-            // 
-            this.dtp_Statistics_LossCard_CardID_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
-            this.dtp_Statistics_LossCard_CardID_StartTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dtp_Statistics_LossCard_CardID_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_LossCard_CardID_StartTime.Location = new System.Drawing.Point(371, 9);
-            this.dtp_Statistics_LossCard_CardID_StartTime.Name = "dtp_Statistics_LossCard_CardID_StartTime";
-            this.dtp_Statistics_LossCard_CardID_StartTime.Size = new System.Drawing.Size(191, 26);
-            this.dtp_Statistics_LossCard_CardID_StartTime.TabIndex = 263;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("宋体", 12F);
-            this.label24.Location = new System.Drawing.Point(298, 17);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 16);
-            this.label24.TabIndex = 261;
-            this.label24.Text = "开始时间";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("宋体", 12F);
-            this.label25.Location = new System.Drawing.Point(573, 16);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(72, 16);
-            this.label25.TabIndex = 262;
-            this.label25.Text = "结束时间";
-            // 
-            // txt_Statistics_LossCard_CardID
-            // 
-            this.txt_Statistics_LossCard_CardID.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_LossCard_CardID.Location = new System.Drawing.Point(192, 9);
-            this.txt_Statistics_LossCard_CardID.Name = "txt_Statistics_LossCard_CardID";
-            this.txt_Statistics_LossCard_CardID.Size = new System.Drawing.Size(100, 26);
-            this.txt_Statistics_LossCard_CardID.TabIndex = 257;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("宋体", 12F);
-            this.label27.Location = new System.Drawing.Point(146, 19);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(40, 16);
-            this.label27.TabIndex = 256;
-            this.label27.Text = "卡号";
-            // 
-            // dgv_Statistics_LossCard_Manager
-            // 
-            this.dgv_Statistics_LossCard_Manager.AllowUserToAddRows = false;
-            this.dgv_Statistics_LossCard_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_LossCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Statistics_LossCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Statistics_LossCard_Manager.ColumnHeadersHeight = 25;
-            this.dgv_Statistics_LossCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_Statistics_LossCard_cb,
-            this.dgv_Statistics_LossCard_ID,
-            this.dgv_Statistics_LossCard_Num,
-            this.dgv_Statistics_LossCard_CardIDOld,
-            this.dgv_Statistics_LossCard_NewCardID,
-            this.dgv_Statistics_LossCard_PatchTime,
-            this.dgv_Statistics_LossCard_PayableAmount,
-            this.dgv_Statistics_LossCard_PaymentAmount,
-            this.dgv_Statistics_LossCard_ChangeAmount,
-            this.dgv_Statistics_LossCard_AddTime});
-            this.dgv_Statistics_LossCard_Manager.Location = new System.Drawing.Point(3, 83);
-            this.dgv_Statistics_LossCard_Manager.MultiSelect = false;
-            this.dgv_Statistics_LossCard_Manager.Name = "dgv_Statistics_LossCard_Manager";
-            this.dgv_Statistics_LossCard_Manager.ReadOnly = true;
-            this.dgv_Statistics_LossCard_Manager.RowHeadersVisible = false;
-            this.dgv_Statistics_LossCard_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_Statistics_LossCard_Manager.RowTemplate.Height = 23;
-            this.dgv_Statistics_LossCard_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_LossCard_Manager.Size = new System.Drawing.Size(839, 506);
-            this.dgv_Statistics_LossCard_Manager.TabIndex = 215;
-            this.dgv_Statistics_LossCard_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_LossCard_Manager_CellContentDoubleClick);
-            // 
-            // dgv_Statistics_LossCard_cb
-            // 
-            this.dgv_Statistics_LossCard_cb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_cb.FillWeight = 1F;
-            this.dgv_Statistics_LossCard_cb.Frozen = true;
-            this.dgv_Statistics_LossCard_cb.HeaderText = "选择";
-            this.dgv_Statistics_LossCard_cb.MinimumWidth = 60;
-            this.dgv_Statistics_LossCard_cb.Name = "dgv_Statistics_LossCard_cb";
-            this.dgv_Statistics_LossCard_cb.ReadOnly = true;
-            this.dgv_Statistics_LossCard_cb.Visible = false;
-            this.dgv_Statistics_LossCard_cb.Width = 60;
-            // 
-            // dgv_Statistics_LossCard_ID
-            // 
-            this.dgv_Statistics_LossCard_ID.HeaderText = "ID";
-            this.dgv_Statistics_LossCard_ID.Name = "dgv_Statistics_LossCard_ID";
-            this.dgv_Statistics_LossCard_ID.ReadOnly = true;
-            this.dgv_Statistics_LossCard_ID.Visible = false;
-            // 
-            // dgv_Statistics_LossCard_Num
-            // 
-            this.dgv_Statistics_LossCard_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_Num.FillWeight = 28.73418F;
-            this.dgv_Statistics_LossCard_Num.Frozen = true;
-            this.dgv_Statistics_LossCard_Num.HeaderText = "序号";
-            this.dgv_Statistics_LossCard_Num.MinimumWidth = 50;
-            this.dgv_Statistics_LossCard_Num.Name = "dgv_Statistics_LossCard_Num";
-            this.dgv_Statistics_LossCard_Num.ReadOnly = true;
-            this.dgv_Statistics_LossCard_Num.Width = 65;
-            // 
-            // dgv_Statistics_LossCard_CardIDOld
-            // 
-            this.dgv_Statistics_LossCard_CardIDOld.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_CardIDOld.HeaderText = "旧卡号";
-            this.dgv_Statistics_LossCard_CardIDOld.Name = "dgv_Statistics_LossCard_CardIDOld";
-            this.dgv_Statistics_LossCard_CardIDOld.ReadOnly = true;
-            this.dgv_Statistics_LossCard_CardIDOld.Width = 81;
-            // 
-            // dgv_Statistics_LossCard_NewCardID
-            // 
-            this.dgv_Statistics_LossCard_NewCardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_NewCardID.HeaderText = "新卡号";
-            this.dgv_Statistics_LossCard_NewCardID.Name = "dgv_Statistics_LossCard_NewCardID";
-            this.dgv_Statistics_LossCard_NewCardID.ReadOnly = true;
-            this.dgv_Statistics_LossCard_NewCardID.Width = 81;
-            // 
-            // dgv_Statistics_LossCard_PatchTime
-            // 
-            this.dgv_Statistics_LossCard_PatchTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_PatchTime.HeaderText = "补领时间";
-            this.dgv_Statistics_LossCard_PatchTime.Name = "dgv_Statistics_LossCard_PatchTime";
-            this.dgv_Statistics_LossCard_PatchTime.ReadOnly = true;
-            this.dgv_Statistics_LossCard_PatchTime.Width = 97;
-            // 
-            // dgv_Statistics_LossCard_PayableAmount
-            // 
-            this.dgv_Statistics_LossCard_PayableAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_PayableAmount.HeaderText = "应交费用";
-            this.dgv_Statistics_LossCard_PayableAmount.Name = "dgv_Statistics_LossCard_PayableAmount";
-            this.dgv_Statistics_LossCard_PayableAmount.ReadOnly = true;
-            this.dgv_Statistics_LossCard_PayableAmount.Width = 97;
-            // 
-            // dgv_Statistics_LossCard_PaymentAmount
-            // 
-            this.dgv_Statistics_LossCard_PaymentAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_PaymentAmount.HeaderText = "缴费金额";
-            this.dgv_Statistics_LossCard_PaymentAmount.Name = "dgv_Statistics_LossCard_PaymentAmount";
-            this.dgv_Statistics_LossCard_PaymentAmount.ReadOnly = true;
-            this.dgv_Statistics_LossCard_PaymentAmount.Width = 97;
-            // 
-            // dgv_Statistics_LossCard_ChangeAmount
-            // 
-            this.dgv_Statistics_LossCard_ChangeAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_Statistics_LossCard_ChangeAmount.HeaderText = "找零金额";
-            this.dgv_Statistics_LossCard_ChangeAmount.Name = "dgv_Statistics_LossCard_ChangeAmount";
-            this.dgv_Statistics_LossCard_ChangeAmount.ReadOnly = true;
-            this.dgv_Statistics_LossCard_ChangeAmount.Width = 97;
-            // 
-            // dgv_Statistics_LossCard_AddTime
-            // 
-            this.dgv_Statistics_LossCard_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_Statistics_LossCard_AddTime.HeaderText = "时间";
-            this.dgv_Statistics_LossCard_AddTime.Name = "dgv_Statistics_LossCard_AddTime";
-            this.dgv_Statistics_LossCard_AddTime.ReadOnly = true;
-            // 
-            // uC_Page_Statistics_Member
-            // 
-            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(248, 593);
-            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
-            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Member.TabIndex = 242;
-            // 
-            // uC_Page_Statistics_SellCast
-            // 
-            this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(249, 594);
-            this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
-            this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_SellCast.TabIndex = 244;
-            // 
-            // uC_Page_Statistics_Swiping
-            // 
-            this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(250, 594);
-            this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
-            this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Swiping.TabIndex = 244;
-            // 
-            // uC_Page_Statistics_BackCard
-            // 
-            this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(246, 594);
-            this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
-            this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_BackCard.TabIndex = 244;
-            // 
-            // uC_Page_Statistics_LossCard
-            // 
-            this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 594);
-            this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
-            this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_LossCard.TabIndex = 244;
-            // 
-            // uC_Page_Main_Member
-            // 
-            this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_Member.Location = new System.Drawing.Point(250, 594);
-            this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
-            this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Main_Member.TabIndex = 244;
-            // 
-            // uC_Page_Main_SellCast
-            // 
-            this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(249, 594);
-            this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
-            this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Main_SellCast.TabIndex = 244;
-            // 
-            // uC_Page_RoleManager
-            // 
-            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_RoleManager.Location = new System.Drawing.Point(247, 593);
-            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
-            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_RoleManager.TabIndex = 236;
-            // 
-            // uC_Page_CardTypeManager
-            // 
-            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(247, 593);
-            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
-            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_CardTypeManager.TabIndex = 236;
-            // 
-            // uC_Page_SystemLog
-            // 
-            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemLog.Location = new System.Drawing.Point(248, 596);
-            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
-            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_SystemLog.TabIndex = 242;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -3477,6 +3478,27 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tlp_Main.ResumeLayout(false);
             this.pl_Mind.ResumeLayout(false);
+            this.tbc_Statistics.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_MemberManager)).EndInit();
+            this.tab_Statistics_SellCast.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_SellCast_Manager)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_Swiping_Manager)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_BackCard_Manager)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_LossCard_Manager)).EndInit();
             this.tabc_Mian.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -3500,19 +3522,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemLogManager)).EndInit();
-            this.tbc_Statistics.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_MemberManager)).EndInit();
-            this.tab_Statistics_SellCast.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_SellCast_Manager)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_Swiping_Manager)).EndInit();
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -3520,14 +3529,6 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_BackCard_Manager)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Statistics_LossCard_Manager)).EndInit();
             this.ResumeLayout(false);
 
         }
