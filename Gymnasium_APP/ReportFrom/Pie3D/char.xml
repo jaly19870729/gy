@@ -1,16 +1,5 @@
-<!-- <chart caption="系统日志统计" xAxisName="用户" yAxisName="次数" showValues="0" palette="2" shownames="1" legendBorderAlpha="0" useRoundEdges="1"
-animation="1" decimalPrecision="0" formatNumberScale="0" baseFont="Arial" baseFontSize="12" rotateYAxisName='0' showFCMenuItem="0"> -->
-<chart palette="4" decimals="0" enableSmartLabels="1" enableRotation="0" bgColor="99CCFF,FFFFFF" bgAlpha="40,100" bgRatio="0,100" bgAngle="360" showBorder="1" startingAngle="70" baseFont="Arial" baseFontSize="12" caption="会员人数统计" xAxisName="用户" showFCMenuItem="0">
-  <set label="管理员" value="17" />
-  <set label="监控中心" value="12" />
-  <set label="维护人员" value="18" />
-  <set label="师大监控中心" value="8" isSliced="1" />
-  <set label="管理员1" value="10" isSliced="1" />
-  <set label="管理员2" value="16" isSliced="1" />
-  <set label="管理员3" value="11" />
-  <set label="管理员4" value="12" />
-  <set label="管理员5" value="8" />
-  <set label="管理员6" value="10" />
-  <set label="管理员7" value="19" />
-  <set label="管理员8" value="15" />
-  </chart>
+<chart palette="4" decimals="0" enableSmartLabels="1" enableRotation="0" bgColor="99CCFF,FFFFFF" bgAlpha="40,100" bgRatio="0,100" bgAngle="360" showBorder="1" startingAngle="70" baseFont="Arial" baseFontSize="12" caption="��Ա����ͳ��" xAxisName="��Ա��Ϣ" showFCMenuItem="0"> 
+ <set label="���꿨" value="1" /> 
+ <set label="���꿨" value="1" /> 
+ <set label="������" value="3" /> 
+</chart> 
