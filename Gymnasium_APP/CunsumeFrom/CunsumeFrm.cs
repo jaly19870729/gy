@@ -68,13 +68,16 @@ namespace Gymnasium_APP.CunsumeFrom
                 SetChangeAmount();
             }
         }
+
         private void txt_CardNumber_TextChanged(object sender, EventArgs e)
         {
-            if (ValidateMember())
-            {
-                
-            }
-        }
+
+                if (ValidateMember())
+                {
+
+                }
+            
+    }
 
         #endregion
 
@@ -110,11 +113,12 @@ namespace Gymnasium_APP.CunsumeFrom
         /// <returns></returns>
         private bool ValidateMember()
         {
+            this.errorProvider1.Clear();
             if (AppConfig.ValidateCardNumber(this.txt_CardNumber.Text))
             {
                 List<MemberInfoModel> memberInfoModels =
                     this.memberInfoManager.GetModelList("CardID='" +this.txt_CardNumber.Text+ "' AND InfoType='正常'");
-                if (memberInfoModels != null && memberInfoModels.Count > 0)
+                if (memberInfoModels != null && memberInfoModels.Count > 0 && memberInfoModels[0].CardType.Contains("次"))
                 {
                     memberId = memberInfoModels[0].MemberID;
                     return false;

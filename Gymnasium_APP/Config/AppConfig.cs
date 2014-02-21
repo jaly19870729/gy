@@ -73,7 +73,7 @@ namespace Gymnasium_APP.Config
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static bool ValidateXingMing(String name)
+        public static bool ValidateXingMing(string name)
         {
             Regex regex=new Regex(XingMingRegex);
             return regex.IsMatch(name);
@@ -83,9 +83,24 @@ namespace Gymnasium_APP.Config
         /// </summary>
         /// <param name="carNumber"></param>
         /// <returns></returns>
-        public static bool ValidateCardNumber(String carNumber)
+        public static bool ValidateCardNumber(string carNumber)
         {
-            Regex regex=new Regex(CardNumberRegex);
+            //bool istrue = true;
+            //if (carNumber.Length != 8)
+            //{
+            //    istrue = false;
+            //}
+            //try
+            //{
+            //    Convert.ToInt64(carNumber);
+            //}
+            //catch (Exception)
+            //{
+            //    istrue = false;
+            //    return istrue;
+            //}
+            //return istrue;
+            Regex regex = new Regex(CardNumberRegex);
             return regex.IsMatch(carNumber);
         }
         /// <summary>
