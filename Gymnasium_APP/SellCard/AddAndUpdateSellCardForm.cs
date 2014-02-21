@@ -50,6 +50,7 @@ namespace Gymnasium_APP.SellCard
             SetStyle(ControlStyles.AllPaintingInWmPaint, true); // 禁止擦除背景.
             SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             InitializeComponent();
+            LoadFormForSellCard();
             this.Text = "会员信息 — 添加 ";
             FormName = formName;
             if (!formName.Equals("ADD"))
@@ -459,12 +460,9 @@ namespace Gymnasium_APP.SellCard
         
         private void AddAndUpdateSellCardForm_Load(object sender, EventArgs e)
         {
-            switch (memberBusinessType)
-            {
-                    case MemberBusinessType.SellCardType:
-                    LoadFormForSellCard();
-                    break;
-            }
+
+                  
+
         }
 
         private void btn_OK_Click(object sender, EventArgs e)

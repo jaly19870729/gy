@@ -50,6 +50,7 @@ namespace Gymnasium_APP.SellCard
             SetStyle(ControlStyles.AllPaintingInWmPaint, true); // 禁止擦除背景.
             SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             InitializeComponent();
+            LoadFormForSellCard();
             this.Text = "会员信息 — 浏览 ";
             FormName = formName;
             if (formName.Equals("SELECT"))
@@ -138,7 +139,7 @@ namespace Gymnasium_APP.SellCard
             switch (memberBusinessType)
             {
                     case MemberBusinessType.SellCardType:
-                    LoadFormForSellCard();
+                   
                     break;
             }
         }
