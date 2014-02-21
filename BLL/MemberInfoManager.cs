@@ -80,6 +80,15 @@ namespace Gymnasium_APP.BLL
 		{
 			return dal.GetList(strWhere);
 		}
+        	/// <summary>
+		/// 获得数据列表
+		/// </summary>
+        public DataSet GetMemberInfoQuery(string strWhere)
+		{
+            return dal.GetMemberInfoQuery(strWhere);
+		}
+
+        
 		/// <summary>
 		/// 获得前几行数据
 		/// </summary>

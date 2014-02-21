@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Collections.Generic;
-using Maticsoft.Common;
 using Gymnasium_APP.Model;
 namespace Gymnasium_APP.BLL
 {
@@ -72,30 +71,7 @@ namespace Gymnasium_APP.BLL
 			return dal.GetModel(Id);
 		}
 
-		/// <summary>
-		/// 得到一个对象实体，从缓存中
-		/// </summary>
-		public Gymnasium_APP.Model.CunsumeCastModel GetModelByCache(int Id)
-		{
-			
-			string CacheKey = "CunsumeCastModelModel-" + Id;
-			object objModel = Maticsoft.Common.DataCache.GetCache(CacheKey);
-			if (objModel == null)
-			{
-				try
-				{
-					objModel = dal.GetModel(Id);
-					if (objModel != null)
-					{
-						int ModelCache = Maticsoft.Common.ConfigHelper.GetConfigInt("ModelCache");
-						Maticsoft.Common.DataCache.SetCache(CacheKey, objModel, DateTime.Now.AddMinutes(ModelCache), TimeSpan.Zero);
-					}
-				}
-				catch{}
-			}
-			return (Gymnasium_APP.Model.CunsumeCastModel)objModel;
-		}
-
+	
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>

@@ -339,7 +339,13 @@ namespace Gymnasium_APP.DAL
 			}
 			return DbHelperSQL.Query(strSql.ToString());
 		}
-
+       	/// <summary>
+		/// 获得数据列表
+		/// </summary>
+        public DataSet GetMemberInfoQuery(string strWhere)
+		{
+            return DbHelperSQL.Query(strWhere.ToString());
+		} 
 		/// <summary>
 		/// 获得前几行数据
 		/// </summary>

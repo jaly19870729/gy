@@ -16,7 +16,7 @@ namespace Gymnasium_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReportsFrom());
+            Application.Run(new LoginForm());
         }
     }
 }
