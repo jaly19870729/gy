@@ -47,18 +47,6 @@
             this.txt_Statistics_Member_Name = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.dgv_Statistics_MemberManager = new System.Windows.Forms.DataGridView();
-            this.dgv_StatisticsMember_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberAddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Statistics_Member_Update = new System.Windows.Forms.Button();
             this.tab_Statistics_SellCast = new System.Windows.Forms.TabPage();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -307,6 +295,19 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.dgv_StatisticsMember_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberAddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
             this.tbc_Statistics.SuspendLayout();
@@ -576,6 +577,7 @@
             this.dgv_StatisticsMember_MemberPhone,
             this.dgv_StatisticsMember_MemberSex,
             this.dgv_StatisticsMember_MemberCardType,
+            this.dgv_StatisticsMember_State,
             this.dgv_StatisticsMember_MemberStartTime,
             this.dgv_StatisticsMember_MemberEndTime,
             this.dgv_StatisticsMember_MemberCount,
@@ -592,121 +594,6 @@
             this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(843, 506);
             this.dgv_Statistics_MemberManager.TabIndex = 215;
             this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
-            // 
-            // dgv_StatisticsMember_MemberID
-            // 
-            this.dgv_StatisticsMember_MemberID.Frozen = true;
-            this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
-            this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
-            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberID.Visible = false;
-            // 
-            // dgv_StatisticsMember_ID
-            // 
-            this.dgv_StatisticsMember_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_ID.FillWeight = 28.73418F;
-            this.dgv_StatisticsMember_ID.Frozen = true;
-            this.dgv_StatisticsMember_ID.HeaderText = "序号";
-            this.dgv_StatisticsMember_ID.MinimumWidth = 50;
-            this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
-            this.dgv_StatisticsMember_ID.ReadOnly = true;
-            this.dgv_StatisticsMember_ID.Width = 65;
-            // 
-            // dgv_StatisticsMember_CardID
-            // 
-            this.dgv_StatisticsMember_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_CardID.Frozen = true;
-            this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
-            this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
-            this.dgv_StatisticsMember_CardID.ReadOnly = true;
-            this.dgv_StatisticsMember_CardID.Width = 65;
-            // 
-            // dgv_StatisticsMember_MemberName
-            // 
-            this.dgv_StatisticsMember_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberName.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberName.Frozen = true;
-            this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
-            this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
-            this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
-            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberName.Width = 80;
-            // 
-            // dgv_StatisticsMember_MemberPhone
-            // 
-            this.dgv_StatisticsMember_MemberPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberPhone.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberPhone.Frozen = true;
-            this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
-            this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
-            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberPhone.Width = 65;
-            // 
-            // dgv_StatisticsMember_MemberSex
-            // 
-            this.dgv_StatisticsMember_MemberSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberSex.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberSex.Frozen = true;
-            this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
-            this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
-            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberSex.Width = 65;
-            // 
-            // dgv_StatisticsMember_MemberCardType
-            // 
-            this.dgv_StatisticsMember_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberCardType.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberCardType.Frozen = true;
-            this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
-            this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
-            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberCardType.Width = 81;
-            // 
-            // dgv_StatisticsMember_MemberStartTime
-            // 
-            this.dgv_StatisticsMember_MemberStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberStartTime.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberStartTime.Frozen = true;
-            this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
-            this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
-            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberStartTime.Width = 97;
-            // 
-            // dgv_StatisticsMember_MemberEndTime
-            // 
-            this.dgv_StatisticsMember_MemberEndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberEndTime.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberEndTime.Frozen = true;
-            this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
-            this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
-            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberEndTime.Width = 97;
-            // 
-            // dgv_StatisticsMember_MemberCount
-            // 
-            this.dgv_StatisticsMember_MemberCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberCount.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberCount.Frozen = true;
-            this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
-            this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
-            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberCount.Width = 97;
-            // 
-            // dgv_StatisticsMember_MemberAddUserName
-            // 
-            this.dgv_StatisticsMember_MemberAddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberAddUserName.Frozen = true;
-            this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
-            this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
-            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
-            // 
-            // dgv_StatisticsMember_MemberAddTime
-            // 
-            this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
-            this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
-            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
             // 
             // btn_Statistics_Member_Update
             // 
@@ -3460,6 +3347,125 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
             // 
+            // dgv_StatisticsMember_MemberID
+            // 
+            this.dgv_StatisticsMember_MemberID.Frozen = true;
+            this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
+            this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
+            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberID.Visible = false;
+            // 
+            // dgv_StatisticsMember_ID
+            // 
+            this.dgv_StatisticsMember_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_ID.FillWeight = 28.73418F;
+            this.dgv_StatisticsMember_ID.Frozen = true;
+            this.dgv_StatisticsMember_ID.HeaderText = "序号";
+            this.dgv_StatisticsMember_ID.MinimumWidth = 50;
+            this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
+            this.dgv_StatisticsMember_ID.ReadOnly = true;
+            this.dgv_StatisticsMember_ID.Width = 65;
+            // 
+            // dgv_StatisticsMember_CardID
+            // 
+            this.dgv_StatisticsMember_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_CardID.Frozen = true;
+            this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
+            this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
+            this.dgv_StatisticsMember_CardID.ReadOnly = true;
+            this.dgv_StatisticsMember_CardID.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberName
+            // 
+            this.dgv_StatisticsMember_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberName.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberName.Frozen = true;
+            this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
+            this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
+            this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
+            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberName.Width = 80;
+            // 
+            // dgv_StatisticsMember_MemberPhone
+            // 
+            this.dgv_StatisticsMember_MemberPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberPhone.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberPhone.Frozen = true;
+            this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
+            this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
+            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberPhone.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberSex
+            // 
+            this.dgv_StatisticsMember_MemberSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberSex.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberSex.Frozen = true;
+            this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
+            this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
+            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberSex.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberCardType
+            // 
+            this.dgv_StatisticsMember_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberCardType.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberCardType.Frozen = true;
+            this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
+            this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
+            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberCardType.Width = 81;
+            // 
+            // dgv_StatisticsMember_State
+            // 
+            this.dgv_StatisticsMember_State.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_State.HeaderText = "状态";
+            this.dgv_StatisticsMember_State.Name = "dgv_StatisticsMember_State";
+            this.dgv_StatisticsMember_State.ReadOnly = true;
+            this.dgv_StatisticsMember_State.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberStartTime
+            // 
+            this.dgv_StatisticsMember_MemberStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberStartTime.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
+            this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
+            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberStartTime.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberEndTime
+            // 
+            this.dgv_StatisticsMember_MemberEndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberEndTime.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
+            this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
+            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberEndTime.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberCount
+            // 
+            this.dgv_StatisticsMember_MemberCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberCount.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
+            this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
+            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberCount.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberAddUserName
+            // 
+            this.dgv_StatisticsMember_MemberAddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
+            this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
+            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
+            // 
+            // dgv_StatisticsMember_MemberAddTime
+            // 
+            this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
+            this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
+            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -3658,18 +3664,6 @@
         private UC.UC_Page uC_Page_CardTypeManager;
         private UC.UC_Page uC_Page_Statistics_Member;
         private UC.UC_Page uC_Page_Main_Member;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_CardID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberSex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberCardType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberStartTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberEndTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberCount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberAddUserName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberAddTime;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dgv_Main_Member_cb;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Main_Member_MemberID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Main_Member_ID;
@@ -3816,6 +3810,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_LossCard_PaymentAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_LossCard_ChangeAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_LossCard_AddTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_CardID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberSex;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberCardType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_State;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberStartTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberEndTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberAddUserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberAddTime;
  
     }
 }

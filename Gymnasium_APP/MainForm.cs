@@ -1206,6 +1206,8 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
           ds_StatisticsMemberList.Tables[0].Rows[i]["AddUserName"].ToString();
                     this.dgv_Statistics_MemberManager.Rows[i].Cells["dgv_StatisticsMember_MemberAddTime"].Value =
          ds_StatisticsMemberList.Tables[0].Rows[i]["AddTime"].ToString();
+                    this.dgv_Statistics_MemberManager.Rows[i].Cells["dgv_StatisticsMember_State"].Value =
+       ds_StatisticsMemberList.Tables[0].Rows[i]["InfoType"].ToString();
                 }
 
             }

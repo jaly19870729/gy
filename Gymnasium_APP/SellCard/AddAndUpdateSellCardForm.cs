@@ -394,7 +394,7 @@ namespace Gymnasium_APP.SellCard
                     Image image = this.pictureBox1.Image;
                     model.Photo = CommTools.GetByteFromImage(this.pictureBox1);
                 }
-                model.InfoType = "正常";
+                //model.InfoType = "正常";
                 MainForm mf = (MainForm)this.Owner;
                 model.AddUserName = mf.lbl_login_name.Text.Trim().Split(':')[1];
 
@@ -526,6 +526,11 @@ namespace Gymnasium_APP.SellCard
                 fs.Flush();
                 fs.Close();
             }
+
+        }
+
+        private void txt_CardNumber_TextChanged(object sender, EventArgs e)
+        {
 
         }
 

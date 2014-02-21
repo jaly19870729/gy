@@ -287,6 +287,7 @@
             this.txt_CardNumber.Name = "txt_CardNumber";
             this.txt_CardNumber.Size = new System.Drawing.Size(221, 29);
             this.txt_CardNumber.TabIndex = 1;
+            this.txt_CardNumber.TextChanged += new System.EventHandler(this.txt_CardNumber_TextChanged);
             // 
             // cmb_CardType
             // 
