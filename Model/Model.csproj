@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="BackCardInfoModel.cs" />
     <Compile Include="CardTypeInfoModel.cs" />
+    <Compile Include="CunsumeCastModel.cs" />
+    <Compile Include="CunsumeTypeModel.cs" />
     <Compile Include="ExtensionCard.cs" />
     <Compile Include="ExtensionCardInfoModel.cs" />
     <Compile Include="LossCardModel.cs" />

@@ -48,6 +48,8 @@
     <Compile Include="Bitmap.cs" />
     <Compile Include="CardTypeInfoManager.cs" />
     <Compile Include="CommTools.cs" />
+    <Compile Include="CunsumeCastManager.cs" />
+    <Compile Include="CunsumeTypeManager.cs" />
     <Compile Include="ExtensionCardInfoManager.cs" />
     <Compile Include="ExtensionCardManager.cs" />
     <Compile Include="LossCardManager.cs" />

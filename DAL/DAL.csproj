@@ -46,6 +46,8 @@
     <Compile Include="BackCardInfoDal.cs" />
     <Compile Include="CardTypeInfoDal.cs" />
     <Compile Include="CommandInfo.cs" />
+    <Compile Include="CunsumeCastDal.cs" />
+    <Compile Include="CunsumeTypeDal.cs" />
     <Compile Include="DbHelperSQL.cs" />
     <Compile Include="DESEncrypt.cs" />
     <Compile Include="ExtensionCardDal.cs" />

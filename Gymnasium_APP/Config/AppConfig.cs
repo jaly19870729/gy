@@ -151,5 +151,13 @@ namespace Gymnasium_APP.Config
             return true;
         }
         #endregion
+
+        #region 初始数据
+        /// <summary>
+        /// 单次消费金额
+        /// </summary>
+        public static int CunsumePriceAmount = 10;
+
+        #endregion
     }
 }
