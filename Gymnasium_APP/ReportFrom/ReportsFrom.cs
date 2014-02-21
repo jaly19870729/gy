@@ -80,6 +80,7 @@ namespace Gymnasium_APP.ReportFrom
             else
             {
                 MessageBox.Show("无法查询数据结果！");
+                return;
             }
 
             string url = reportPath + "\\ReportFrom\\Pie3D\\Pie3D.html";
