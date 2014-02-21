@@ -23,5 +23,13 @@ namespace Gymnasium_APP.ReportFrom
             string url = reportPath + "\\ReportFrom\\Pie3D\\Pie3D.html";
             this.webBrowser1.Url = new System.Uri(url);
         }
+
+        private void ReportsFrom_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F5)
+            {
+                new PictureForm(GetFromPicture.GetWindowCapture(this.webBrowser1.Handle)).Show();
+            }
+        }
     }
 }

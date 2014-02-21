@@ -187,6 +187,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportFrom\GetFromPicture.cs" />
+    <Compile Include="ReportFrom\PictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFrom\PictureForm.Designer.cs">
+      <DependentUpon>PictureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportFrom\ReportsFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +318,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportFrom\PictureForm.resx">
+      <DependentUpon>PictureForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportFrom\ReportsFrom.resx">
       <DependentUpon>ReportsFrom.cs</DependentUpon>
     </EmbeddedResource>
