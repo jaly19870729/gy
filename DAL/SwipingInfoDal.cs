@@ -45,7 +45,7 @@ namespace Gymnasium_APP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into SwipingInfo(");
-			strSql.Append("ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Desc)");
+			strSql.Append("ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,[Desc])");
 			strSql.Append(" values (");
 			strSql.Append("@ID,@SwipingType,@CardID,@CardType,@SwipingPeople,@AddTime,@AddUserName,@Name,@Desc)");
 			SqlParameter[] parameters = {
