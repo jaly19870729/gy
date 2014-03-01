@@ -15,7 +15,7 @@ namespace Gymnasium_APP.Config
         /// <summary>
         /// 卡号验证
         /// </summary>
-        private static String CardNumberRegex = @"^\w{8}$";
+        public static String CardNumberRegex = @"^\w{8}$";
         /// <summary>
         /// 卡号验证错误信息
         /// </summary>

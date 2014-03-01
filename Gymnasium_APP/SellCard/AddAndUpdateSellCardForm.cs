@@ -11,6 +11,7 @@ using Gymnasium_APP.Model;
 using Gymnasium_APP.BLL;
 using System.IO;
 using Gymnasium_APP.SellCardForm;
+using Gymnasium_APP.Config;
 
 namespace Gymnasium_APP.SellCard
 {
@@ -467,6 +468,14 @@ namespace Gymnasium_APP.SellCard
 
         private void btn_OK_Click(object sender, EventArgs e)
         {
+            this.errorProvider1.Clear();
+            if (!AppConfig.ValidateCardNumber(this.txt_CardNumber.Text))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_CardNumber, AppConfig.CardNumberRegexError);
+                return;
+
+            }
             //添加
             if (FormName.Equals("ADD"))
             {
@@ -531,7 +540,14 @@ namespace Gymnasium_APP.SellCard
 
         private void txt_CardNumber_TextChanged(object sender, EventArgs e)
         {
+            this.errorProvider1.Clear();
+            if (!AppConfig.ValidateCardNumber(this.txt_CardNumber.Text))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_CardNumber, AppConfig.CardNumberRegexError);
+                return;
 
+            }
         }
 
        

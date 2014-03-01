@@ -14,6 +14,7 @@ using Gymnasium_APP.BLL;
 using Gymnasium_APP.Model;
 using System.Security.Cryptography;
 using System.Web.Security;
+using Gymnasium_APP.Config;
 namespace Gymnasium_APP
 {
     public partial class LoginForm : Form
@@ -34,6 +35,8 @@ namespace Gymnasium_APP
             label1.Text = AppConfigTools.GetAppValue("SystemName");
             this.Text = label1.Text + "";
             txt_username.Focus();
+            AppConfig.CardNumberRegex = @"^\w{" + AppConfigTools.GetAppValue("CardLength") + "}$"; ;
+            AppConfig.CardNumberRegexError = "卡号为" + AppConfigTools.GetAppValue("CardLength") + "位数字";
         }
         
         private void button1_Click(object sender, EventArgs e)
