@@ -35,7 +35,6 @@
             this.tbc_Statistics = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
             this.btn_Statistics_Member_Select = new System.Windows.Forms.Button();
             this.dtp__Statistics_Member_EndTime = new System.Windows.Forms.DateTimePicker();
             this.dtp_Statistics_Member_StartTime = new System.Windows.Forms.DateTimePicker();
@@ -47,6 +46,19 @@
             this.txt_Statistics_Member_Name = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.dgv_Statistics_MemberManager = new System.Windows.Forms.DataGridView();
+            this.dgv_StatisticsMember_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberAddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Statistics_Member_Update = new System.Windows.Forms.Button();
             this.tab_Statistics_SellCast = new System.Windows.Forms.TabPage();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -59,7 +71,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txt_Statistics_SellCast_CardID = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.uC_Page_Statistics_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Statistics_SellCast_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,7 +97,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txt_Statistics_Swiping_CardID = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.uC_Page_Statistics_Swiping = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Statistics_Swiping_Manager = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Statistics_Swiping_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -110,7 +120,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.txt_Statistics_BackCard_CardID = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.uC_Page_Statistics_BackCard = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Statistics_BackCard_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Statistics_BackCard_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Statistics_BackCard_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,7 +147,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.txt_Statistics_LossCard_CardID = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.uC_Page_Statistics_LossCard = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Statistics_LossCard_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Statistics_LossCard_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Statistics_LossCard_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -153,7 +161,6 @@
             this.tabc_Mian = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Main_Member_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Main_Member_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Main_Member_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -165,7 +172,6 @@
             this.dgv_Main_Member_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab_SellCast = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Main_SellCast_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Main_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Main_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -219,7 +225,6 @@
             this.tp_PrivilegeManager = new System.Windows.Forms.TabPage();
             this.tp_RoleManager = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
             this.btn_RoleManager_Delete = new System.Windows.Forms.Button();
             this.btn_RoleManager_Add = new System.Windows.Forms.Button();
             this.dgv_RoleManager = new System.Windows.Forms.DataGridView();
@@ -231,7 +236,6 @@
             this.btn_RoleManager_Update = new System.Windows.Forms.Button();
             this.tp_CardTypeManager = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
             this.btn_Delete_CardTypeManager = new System.Windows.Forms.Button();
             this.btn_Add_CardTypeManager = new System.Windows.Forms.Button();
             this.dgv_CardTypeManager = new System.Windows.Forms.DataGridView();
@@ -248,7 +252,6 @@
             this.tp_SystemLog = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
             this.cb_SystemLog = new System.Windows.Forms.CheckBox();
             this.btn_SystemLogManager_Select = new System.Windows.Forms.Button();
             this.dt_SystemLogManager_StopTime = new System.Windows.Forms.DateTimePicker();
@@ -295,19 +298,28 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.dgv_StatisticsMember_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberCardType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberAddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_StatisticsMember_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp_SystemCunsumeType = new System.Windows.Forms.TabPage();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.btn_SystemCunsumeType_Delete = new System.Windows.Forms.Button();
+            this.btn_SystemCunsumeType_Add = new System.Windows.Forms.Button();
+            this.dgv_SystemCunsumeType_Manager = new System.Windows.Forms.DataGridView();
+            this.btn_SystemCunsumeType_Update = new System.Windows.Forms.Button();
+            this.dgv_SystemCunsumeType_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_SystemCunsumeType = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Statistics_SellCast = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Statistics_Swiping = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Statistics_BackCard = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Statistics_LossCard = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
             this.tbc_Statistics.SuspendLayout();
@@ -352,6 +364,9 @@
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tp_SystemCunsumeType.SuspendLayout();
+            this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemCunsumeType_Manager)).BeginInit();
             this.SuspendLayout();
             // 
             // tlp_Main
@@ -381,9 +396,9 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.pl_Mind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_Mind.Controls.Add(this.tabc_SystemManager);
             this.pl_Mind.Controls.Add(this.tbc_Statistics);
             this.pl_Mind.Controls.Add(this.tabc_Mian);
-            this.pl_Mind.Controls.Add(this.tabc_SystemManager);
             this.pl_Mind.Location = new System.Drawing.Point(153, 53);
             this.pl_Mind.Name = "pl_Mind";
             this.pl_Mind.Size = new System.Drawing.Size(859, 653);
@@ -441,15 +456,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(849, 622);
             this.panel10.TabIndex = 3;
-            // 
-            // uC_Page_Statistics_Member
-            // 
-            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(248, 593);
-            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
-            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Member.TabIndex = 242;
             // 
             // btn_Statistics_Member_Select
             // 
@@ -595,6 +601,125 @@
             this.dgv_Statistics_MemberManager.TabIndex = 215;
             this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
             // 
+            // dgv_StatisticsMember_MemberID
+            // 
+            this.dgv_StatisticsMember_MemberID.Frozen = true;
+            this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
+            this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
+            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberID.Visible = false;
+            // 
+            // dgv_StatisticsMember_ID
+            // 
+            this.dgv_StatisticsMember_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_ID.FillWeight = 28.73418F;
+            this.dgv_StatisticsMember_ID.Frozen = true;
+            this.dgv_StatisticsMember_ID.HeaderText = "序号";
+            this.dgv_StatisticsMember_ID.MinimumWidth = 50;
+            this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
+            this.dgv_StatisticsMember_ID.ReadOnly = true;
+            this.dgv_StatisticsMember_ID.Width = 65;
+            // 
+            // dgv_StatisticsMember_CardID
+            // 
+            this.dgv_StatisticsMember_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_CardID.Frozen = true;
+            this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
+            this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
+            this.dgv_StatisticsMember_CardID.ReadOnly = true;
+            this.dgv_StatisticsMember_CardID.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberName
+            // 
+            this.dgv_StatisticsMember_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberName.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberName.Frozen = true;
+            this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
+            this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
+            this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
+            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberName.Width = 80;
+            // 
+            // dgv_StatisticsMember_MemberPhone
+            // 
+            this.dgv_StatisticsMember_MemberPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberPhone.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberPhone.Frozen = true;
+            this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
+            this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
+            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberPhone.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberSex
+            // 
+            this.dgv_StatisticsMember_MemberSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberSex.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberSex.Frozen = true;
+            this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
+            this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
+            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberSex.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberCardType
+            // 
+            this.dgv_StatisticsMember_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberCardType.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberCardType.Frozen = true;
+            this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
+            this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
+            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberCardType.Width = 81;
+            // 
+            // dgv_StatisticsMember_State
+            // 
+            this.dgv_StatisticsMember_State.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_State.HeaderText = "状态";
+            this.dgv_StatisticsMember_State.Name = "dgv_StatisticsMember_State";
+            this.dgv_StatisticsMember_State.ReadOnly = true;
+            this.dgv_StatisticsMember_State.Width = 65;
+            // 
+            // dgv_StatisticsMember_MemberStartTime
+            // 
+            this.dgv_StatisticsMember_MemberStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberStartTime.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
+            this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
+            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberStartTime.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberEndTime
+            // 
+            this.dgv_StatisticsMember_MemberEndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberEndTime.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
+            this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
+            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberEndTime.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberCount
+            // 
+            this.dgv_StatisticsMember_MemberCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberCount.FillWeight = 57.46837F;
+            this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
+            this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
+            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberCount.Width = 97;
+            // 
+            // dgv_StatisticsMember_MemberAddUserName
+            // 
+            this.dgv_StatisticsMember_MemberAddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
+            this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
+            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
+            this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
+            // 
+            // dgv_StatisticsMember_MemberAddTime
+            // 
+            this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
+            this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
+            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
+            // 
             // btn_Statistics_Member_Update
             // 
             this.btn_Statistics_Member_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -733,15 +858,6 @@
             this.label15.Size = new System.Drawing.Size(40, 16);
             this.label15.TabIndex = 245;
             this.label15.Text = "卡号";
-            // 
-            // uC_Page_Statistics_SellCast
-            // 
-            this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(249, 594);
-            this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
-            this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_SellCast.TabIndex = 244;
             // 
             // dgv_Statistics_SellCast_Manager
             // 
@@ -1022,15 +1138,6 @@
             this.label19.TabIndex = 256;
             this.label19.Text = "卡号";
             // 
-            // uC_Page_Statistics_Swiping
-            // 
-            this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(250, 594);
-            this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
-            this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Swiping.TabIndex = 244;
-            // 
             // dgv_Statistics_Swiping_Manager
             // 
             this.dgv_Statistics_Swiping_Manager.AllowUserToAddRows = false;
@@ -1285,15 +1392,6 @@
             this.label23.Size = new System.Drawing.Size(40, 16);
             this.label23.TabIndex = 256;
             this.label23.Text = "卡号";
-            // 
-            // uC_Page_Statistics_BackCard
-            // 
-            this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(246, 594);
-            this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
-            this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_BackCard.TabIndex = 244;
             // 
             // dgv_Statistics_BackCard_Manager
             // 
@@ -1580,15 +1678,6 @@
             this.label27.TabIndex = 256;
             this.label27.Text = "卡号";
             // 
-            // uC_Page_Statistics_LossCard
-            // 
-            this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 594);
-            this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
-            this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_LossCard.TabIndex = 244;
-            // 
             // dgv_Statistics_LossCard_Manager
             // 
             this.dgv_Statistics_LossCard_Manager.AllowUserToAddRows = false;
@@ -1746,15 +1835,6 @@
             this.panel4.Size = new System.Drawing.Size(849, 622);
             this.panel4.TabIndex = 4;
             // 
-            // uC_Page_Main_Member
-            // 
-            this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_Member.Location = new System.Drawing.Point(250, 594);
-            this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
-            this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Main_Member.TabIndex = 244;
-            // 
             // dgv_Main_Member_Manager
             // 
             this.dgv_Main_Member_Manager.AllowUserToAddRows = false;
@@ -1879,15 +1959,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(848, 622);
             this.panel11.TabIndex = 5;
-            // 
-            // uC_Page_Main_SellCast
-            // 
-            this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(249, 594);
-            this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
-            this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Main_SellCast.TabIndex = 244;
             // 
             // dgv_Main_SellCast_Manager
             // 
@@ -2037,6 +2108,7 @@
             this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
             this.tabc_SystemManager.Controls.Add(this.tp_CardTypeManager);
             this.tabc_SystemManager.Controls.Add(this.tp_SystemLog);
+            this.tabc_SystemManager.Controls.Add(this.tp_SystemCunsumeType);
             this.tabc_SystemManager.Font = new System.Drawing.Font("宋体", 12F);
             this.tabc_SystemManager.Location = new System.Drawing.Point(-1, -1);
             this.tabc_SystemManager.Margin = new System.Windows.Forms.Padding(0);
@@ -2500,15 +2572,6 @@
             this.panel8.Size = new System.Drawing.Size(849, 622);
             this.panel8.TabIndex = 3;
             // 
-            // uC_Page_RoleManager
-            // 
-            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_RoleManager.Location = new System.Drawing.Point(247, 593);
-            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
-            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_RoleManager.TabIndex = 236;
-            // 
             // btn_RoleManager_Delete
             // 
             this.btn_RoleManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -2624,15 +2687,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(849, 622);
             this.panel9.TabIndex = 4;
-            // 
-            // uC_Page_CardTypeManager
-            // 
-            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(247, 593);
-            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
-            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_CardTypeManager.TabIndex = 236;
             // 
             // btn_Delete_CardTypeManager
             // 
@@ -2811,15 +2865,6 @@
             this.panel7.Size = new System.Drawing.Size(849, 622);
             this.panel7.TabIndex = 2;
             // 
-            // uC_Page_SystemLog
-            // 
-            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemLog.Location = new System.Drawing.Point(248, 596);
-            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
-            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_SystemLog.TabIndex = 242;
-            // 
             // cb_SystemLog
             // 
             this.cb_SystemLog.AutoSize = true;
@@ -2905,6 +2950,7 @@
             this.button6.Text = "添加";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // cmb_SystemLogManager_State
             // 
@@ -3347,124 +3393,229 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
             // 
-            // dgv_StatisticsMember_MemberID
+            // tp_SystemCunsumeType
             // 
-            this.dgv_StatisticsMember_MemberID.Frozen = true;
-            this.dgv_StatisticsMember_MemberID.HeaderText = "MemberID";
-            this.dgv_StatisticsMember_MemberID.Name = "dgv_StatisticsMember_MemberID";
-            this.dgv_StatisticsMember_MemberID.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberID.Visible = false;
+            this.tp_SystemCunsumeType.Controls.Add(this.panel16);
+            this.tp_SystemCunsumeType.Location = new System.Drawing.Point(4, 24);
+            this.tp_SystemCunsumeType.Name = "tp_SystemCunsumeType";
+            this.tp_SystemCunsumeType.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_SystemCunsumeType.Size = new System.Drawing.Size(838, 624);
+            this.tp_SystemCunsumeType.TabIndex = 8;
+            this.tp_SystemCunsumeType.Text = "消费类型";
+            this.tp_SystemCunsumeType.UseVisualStyleBackColor = true;
             // 
-            // dgv_StatisticsMember_ID
+            // panel16
             // 
-            this.dgv_StatisticsMember_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_ID.FillWeight = 28.73418F;
-            this.dgv_StatisticsMember_ID.Frozen = true;
-            this.dgv_StatisticsMember_ID.HeaderText = "序号";
-            this.dgv_StatisticsMember_ID.MinimumWidth = 50;
-            this.dgv_StatisticsMember_ID.Name = "dgv_StatisticsMember_ID";
-            this.dgv_StatisticsMember_ID.ReadOnly = true;
-            this.dgv_StatisticsMember_ID.Width = 65;
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel16.Controls.Add(this.uC_Page_SystemCunsumeType);
+            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Delete);
+            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Add);
+            this.panel16.Controls.Add(this.dgv_SystemCunsumeType_Manager);
+            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Update);
+            this.panel16.Location = new System.Drawing.Point(-5, 1);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(849, 622);
+            this.panel16.TabIndex = 5;
             // 
-            // dgv_StatisticsMember_CardID
+            // btn_SystemCunsumeType_Delete
             // 
-            this.dgv_StatisticsMember_CardID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_CardID.Frozen = true;
-            this.dgv_StatisticsMember_CardID.HeaderText = "卡号";
-            this.dgv_StatisticsMember_CardID.Name = "dgv_StatisticsMember_CardID";
-            this.dgv_StatisticsMember_CardID.ReadOnly = true;
-            this.dgv_StatisticsMember_CardID.Width = 65;
+            this.btn_SystemCunsumeType_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemCunsumeType_Delete.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemCunsumeType_Delete.Location = new System.Drawing.Point(648, 11);
+            this.btn_SystemCunsumeType_Delete.Name = "btn_SystemCunsumeType_Delete";
+            this.btn_SystemCunsumeType_Delete.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemCunsumeType_Delete.TabIndex = 234;
+            this.btn_SystemCunsumeType_Delete.Text = "删除";
+            this.btn_SystemCunsumeType_Delete.UseVisualStyleBackColor = true;
+            this.btn_SystemCunsumeType_Delete.Click += new System.EventHandler(this.btn_SystemCunsumeType_Delete_Click);
             // 
-            // dgv_StatisticsMember_MemberName
+            // btn_SystemCunsumeType_Add
             // 
-            this.dgv_StatisticsMember_MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberName.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberName.Frozen = true;
-            this.dgv_StatisticsMember_MemberName.HeaderText = "姓名";
-            this.dgv_StatisticsMember_MemberName.MinimumWidth = 80;
-            this.dgv_StatisticsMember_MemberName.Name = "dgv_StatisticsMember_MemberName";
-            this.dgv_StatisticsMember_MemberName.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberName.Width = 80;
+            this.btn_SystemCunsumeType_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemCunsumeType_Add.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemCunsumeType_Add.Location = new System.Drawing.Point(549, 11);
+            this.btn_SystemCunsumeType_Add.Name = "btn_SystemCunsumeType_Add";
+            this.btn_SystemCunsumeType_Add.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemCunsumeType_Add.TabIndex = 233;
+            this.btn_SystemCunsumeType_Add.Text = "添加";
+            this.btn_SystemCunsumeType_Add.UseVisualStyleBackColor = true;
+            this.btn_SystemCunsumeType_Add.Click += new System.EventHandler(this.btn_SystemCunsumeType_Add_Click);
             // 
-            // dgv_StatisticsMember_MemberPhone
+            // dgv_SystemCunsumeType_Manager
             // 
-            this.dgv_StatisticsMember_MemberPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberPhone.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberPhone.Frozen = true;
-            this.dgv_StatisticsMember_MemberPhone.HeaderText = "电话";
-            this.dgv_StatisticsMember_MemberPhone.Name = "dgv_StatisticsMember_MemberPhone";
-            this.dgv_StatisticsMember_MemberPhone.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberPhone.Width = 65;
+            this.dgv_SystemCunsumeType_Manager.AllowUserToAddRows = false;
+            this.dgv_SystemCunsumeType_Manager.AllowUserToResizeRows = false;
+            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemCunsumeType_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgv_SystemCunsumeType_Manager.ColumnHeadersHeight = 25;
+            this.dgv_SystemCunsumeType_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_SystemCunsumeType_Id,
+            this.dgv_SystemCunsumeType_Num,
+            this.dgv_SystemCunsumeType_Name,
+            this.dgv_SystemCunsumeType_Price,
+            this.dgv_SystemCunsumeType_AddTime});
+            this.dgv_SystemCunsumeType_Manager.Location = new System.Drawing.Point(3, 49);
+            this.dgv_SystemCunsumeType_Manager.Name = "dgv_SystemCunsumeType_Manager";
+            this.dgv_SystemCunsumeType_Manager.RowHeadersVisible = false;
+            this.dgv_SystemCunsumeType_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_SystemCunsumeType_Manager.RowTemplate.Height = 23;
+            this.dgv_SystemCunsumeType_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_SystemCunsumeType_Manager.Size = new System.Drawing.Size(839, 540);
+            this.dgv_SystemCunsumeType_Manager.TabIndex = 215;
             // 
-            // dgv_StatisticsMember_MemberSex
+            // btn_SystemCunsumeType_Update
             // 
-            this.dgv_StatisticsMember_MemberSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberSex.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberSex.Frozen = true;
-            this.dgv_StatisticsMember_MemberSex.HeaderText = "性别";
-            this.dgv_StatisticsMember_MemberSex.Name = "dgv_StatisticsMember_MemberSex";
-            this.dgv_StatisticsMember_MemberSex.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberSex.Width = 65;
+            this.btn_SystemCunsumeType_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemCunsumeType_Update.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemCunsumeType_Update.Location = new System.Drawing.Point(749, 11);
+            this.btn_SystemCunsumeType_Update.Name = "btn_SystemCunsumeType_Update";
+            this.btn_SystemCunsumeType_Update.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemCunsumeType_Update.TabIndex = 235;
+            this.btn_SystemCunsumeType_Update.Text = "修改";
+            this.btn_SystemCunsumeType_Update.UseVisualStyleBackColor = true;
+            this.btn_SystemCunsumeType_Update.Click += new System.EventHandler(this.btn_SystemCunsumeType_Update_Click);
             // 
-            // dgv_StatisticsMember_MemberCardType
+            // dgv_SystemCunsumeType_Id
             // 
-            this.dgv_StatisticsMember_MemberCardType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberCardType.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberCardType.Frozen = true;
-            this.dgv_StatisticsMember_MemberCardType.HeaderText = "卡类型";
-            this.dgv_StatisticsMember_MemberCardType.Name = "dgv_StatisticsMember_MemberCardType";
-            this.dgv_StatisticsMember_MemberCardType.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberCardType.Width = 81;
+            this.dgv_SystemCunsumeType_Id.Frozen = true;
+            this.dgv_SystemCunsumeType_Id.HeaderText = "Id";
+            this.dgv_SystemCunsumeType_Id.Name = "dgv_SystemCunsumeType_Id";
+            this.dgv_SystemCunsumeType_Id.Visible = false;
+            this.dgv_SystemCunsumeType_Id.Width = 42;
             // 
-            // dgv_StatisticsMember_State
+            // dgv_SystemCunsumeType_Num
             // 
-            this.dgv_StatisticsMember_State.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_State.HeaderText = "状态";
-            this.dgv_StatisticsMember_State.Name = "dgv_StatisticsMember_State";
-            this.dgv_StatisticsMember_State.ReadOnly = true;
-            this.dgv_StatisticsMember_State.Width = 65;
+            this.dgv_SystemCunsumeType_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_SystemCunsumeType_Num.FillWeight = 50F;
+            this.dgv_SystemCunsumeType_Num.Frozen = true;
+            this.dgv_SystemCunsumeType_Num.HeaderText = "序号";
+            this.dgv_SystemCunsumeType_Num.MinimumWidth = 50;
+            this.dgv_SystemCunsumeType_Num.Name = "dgv_SystemCunsumeType_Num";
+            this.dgv_SystemCunsumeType_Num.Width = 70;
             // 
-            // dgv_StatisticsMember_MemberStartTime
+            // dgv_SystemCunsumeType_Name
             // 
-            this.dgv_StatisticsMember_MemberStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberStartTime.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberStartTime.HeaderText = "生效日期";
-            this.dgv_StatisticsMember_MemberStartTime.Name = "dgv_StatisticsMember_MemberStartTime";
-            this.dgv_StatisticsMember_MemberStartTime.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberStartTime.Width = 97;
+            this.dgv_SystemCunsumeType_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_SystemCunsumeType_Name.Frozen = true;
+            this.dgv_SystemCunsumeType_Name.HeaderText = "名称";
+            this.dgv_SystemCunsumeType_Name.Name = "dgv_SystemCunsumeType_Name";
+            this.dgv_SystemCunsumeType_Name.Width = 141;
             // 
-            // dgv_StatisticsMember_MemberEndTime
+            // dgv_SystemCunsumeType_Price
             // 
-            this.dgv_StatisticsMember_MemberEndTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberEndTime.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberEndTime.HeaderText = "失效日期";
-            this.dgv_StatisticsMember_MemberEndTime.Name = "dgv_StatisticsMember_MemberEndTime";
-            this.dgv_StatisticsMember_MemberEndTime.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberEndTime.Width = 97;
+            this.dgv_SystemCunsumeType_Price.HeaderText = "价格（元）";
+            this.dgv_SystemCunsumeType_Price.Name = "dgv_SystemCunsumeType_Price";
+            this.dgv_SystemCunsumeType_Price.Width = 113;
             // 
-            // dgv_StatisticsMember_MemberCount
+            // dgv_SystemCunsumeType_AddTime
             // 
-            this.dgv_StatisticsMember_MemberCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberCount.FillWeight = 57.46837F;
-            this.dgv_StatisticsMember_MemberCount.HeaderText = "剩余次数";
-            this.dgv_StatisticsMember_MemberCount.Name = "dgv_StatisticsMember_MemberCount";
-            this.dgv_StatisticsMember_MemberCount.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberCount.Width = 97;
+            this.dgv_SystemCunsumeType_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_SystemCunsumeType_AddTime.HeaderText = "日期";
+            this.dgv_SystemCunsumeType_AddTime.Name = "dgv_SystemCunsumeType_AddTime";
             // 
-            // dgv_StatisticsMember_MemberAddUserName
+            // uC_Page_RoleManager
             // 
-            this.dgv_StatisticsMember_MemberAddUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_StatisticsMember_MemberAddUserName.HeaderText = "经手人";
-            this.dgv_StatisticsMember_MemberAddUserName.Name = "dgv_StatisticsMember_MemberAddUserName";
-            this.dgv_StatisticsMember_MemberAddUserName.ReadOnly = true;
-            this.dgv_StatisticsMember_MemberAddUserName.Width = 81;
+            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_RoleManager.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
+            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_RoleManager.TabIndex = 236;
             // 
-            // dgv_StatisticsMember_MemberAddTime
+            // uC_Page_CardTypeManager
             // 
-            this.dgv_StatisticsMember_MemberAddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_StatisticsMember_MemberAddTime.HeaderText = "办理日期";
-            this.dgv_StatisticsMember_MemberAddTime.Name = "dgv_StatisticsMember_MemberAddTime";
-            this.dgv_StatisticsMember_MemberAddTime.ReadOnly = true;
+            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
+            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_CardTypeManager.TabIndex = 236;
+            // 
+            // uC_Page_SystemLog
+            // 
+            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemLog.Location = new System.Drawing.Point(248, 596);
+            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
+            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemLog.TabIndex = 242;
+            // 
+            // uC_Page_SystemCunsumeType
+            // 
+            this.uC_Page_SystemCunsumeType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemCunsumeType.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_SystemCunsumeType.Name = "uC_Page_SystemCunsumeType";
+            this.uC_Page_SystemCunsumeType.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemCunsumeType.TabIndex = 236;
+            // 
+            // uC_Page_Statistics_Member
+            // 
+            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(248, 593);
+            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
+            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Member.TabIndex = 242;
+            // 
+            // uC_Page_Statistics_SellCast
+            // 
+            this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(249, 594);
+            this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
+            this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_SellCast.TabIndex = 244;
+            // 
+            // uC_Page_Statistics_Swiping
+            // 
+            this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(250, 594);
+            this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
+            this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Swiping.TabIndex = 244;
+            // 
+            // uC_Page_Statistics_BackCard
+            // 
+            this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(246, 594);
+            this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
+            this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_BackCard.TabIndex = 244;
+            // 
+            // uC_Page_Statistics_LossCard
+            // 
+            this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 594);
+            this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
+            this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_LossCard.TabIndex = 244;
+            // 
+            // uC_Page_Main_Member
+            // 
+            this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Main_Member.Location = new System.Drawing.Point(250, 594);
+            this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
+            this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Main_Member.TabIndex = 244;
+            // 
+            // uC_Page_Main_SellCast
+            // 
+            this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(249, 594);
+            this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
+            this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Main_SellCast.TabIndex = 244;
             // 
             // MainForm
             // 
@@ -3535,6 +3686,9 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tp_SystemCunsumeType.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemCunsumeType_Manager)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3823,6 +3977,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberAddUserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_StatisticsMember_MemberAddTime;
+        private System.Windows.Forms.TabPage tp_SystemCunsumeType;
+        private System.Windows.Forms.Panel panel16;
+        private UC.UC_Page uC_Page_SystemCunsumeType;
+        private System.Windows.Forms.Button btn_SystemCunsumeType_Delete;
+        private System.Windows.Forms.Button btn_SystemCunsumeType_Add;
+        private System.Windows.Forms.DataGridView dgv_SystemCunsumeType_Manager;
+        private System.Windows.Forms.Button btn_SystemCunsumeType_Update;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemCunsumeType_Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemCunsumeType_Num;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemCunsumeType_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemCunsumeType_Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_SystemCunsumeType_AddTime;
  
     }
 }

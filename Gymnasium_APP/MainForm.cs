@@ -55,6 +55,7 @@ namespace Gymnasium_APP
             uC_Page_Statistics_Swiping.OnPageChanged += new EventHandler(uC_Page_Statistics_Swiping_OnPageChanged);
             uC_Page_Statistics_BackCard.OnPageChanged += new EventHandler(uC_Page_Statistics_BackCard_OnPageChanged);
             uC_Page_Statistics_LossCard.OnPageChanged += new EventHandler(uC_Page_Statistics_LossCard_OnPageChanged);
+            uC_Page_SystemCunsumeType.OnPageChanged+=new EventHandler(uC_Page_SystemCunsumeType_OnPageChanged);
             tabc_SystemManager.Visible = false;
             tabc_Mian.Visible = true;
             tbc_Statistics.Visible = false;
@@ -651,6 +652,81 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
             }
         }
         #endregion
+
+        #region 消费类型管理
+        private string CunsumeType_TiaoJian = " 1=1";
+        private CunsumeTypeManager cunsumeTypeManager = new CunsumeTypeManager();
+        public void GetCunsumeTypeDataList()
+        {
+            this.dgv_SystemCunsumeType_Manager.Rows.Clear();
+            uC_Page_SystemCunsumeType.tp.DataTotalCount = cunsumeTypeManager.GetRecordCount(CunsumeType_TiaoJian);
+            DataSet ds_CardTypeManagerList = cunsumeTypeManager.GetList(uC_Page_SystemCunsumeType.tp.Count, uC_Page_SystemCunsumeType.tp.CurrentPage, CunsumeType_TiaoJian);
+            if (ds_CardTypeManagerList != null && ds_CardTypeManagerList.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_CardTypeManagerList.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_CardTypeManagerList.Tables[0].Rows[i] != null)
+                        this.dgv_SystemCunsumeType_Manager.Rows.Add();
+                    this.dgv_SystemCunsumeType_Manager.Rows[i].Cells["dgv_SystemCunsumeType_Num"].Value = (uC_Page_CardTypeManager.tp.CurrentPage * uC_Page_CardTypeManager.tp.Count) - uC_Page_CardTypeManager.tp.Count + i + 1;//序号
+                    this.dgv_SystemCunsumeType_Manager.Rows[i].Cells["dgv_SystemCunsumeType_Id"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["Id"].ToString();
+                    this.dgv_SystemCunsumeType_Manager.Rows[i].Cells["dgv_SystemCunsumeType_Name"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["CusType"].ToString();
+                    this.dgv_SystemCunsumeType_Manager.Rows[i].Cells["dgv_SystemCunsumeType_Price"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["CusPrice"].ToString();
+                    this.dgv_SystemCunsumeType_Manager.Rows[i].Cells["dgv_SystemCunsumeType_AddTime"].Value = ds_CardTypeManagerList.Tables[0].Rows[i]["CreateTime"].ToString();
+
+                }
+
+            }
+            uC_Page_SystemCunsumeType.lbl_Count.Text = uC_Page_SystemCunsumeType.tp.DataTotalCount.ToString();
+            uC_Page_SystemCunsumeType.lbl_Page.Text = uC_Page_SystemCunsumeType.tp.CurrentPage + "/" + uC_Page_SystemCunsumeType.tp.PageTotalCount + "页";
+        }
+        private void uC_Page_SystemCunsumeType_OnPageChanged(object sender, EventArgs e)
+        {
+            GetCunsumeTypeDataList();
+        }
+        private void btn_SystemCunsumeType_Delete_Click(object sender, EventArgs e)
+        {
+            string str = this.dgv_SystemCunsumeType_Manager.SelectedCells[0].Value.ToString();
+            DialogResult result = MessageBox.Show("您确认要删除第" + this.dgv_SystemCunsumeType_Manager.SelectedCells[1].Value.ToString() + "条数据吗?", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result == DialogResult.OK)
+            {
+                try
+                {
+
+                    bool isDelete = cunsumeTypeManager.Delete(Convert.ToInt32(str));
+                    GetCunsumeTypeDataList();
+                    MessageBox.Show("      删除数据" + (isDelete == true ? "成功！" : "失败！     "));
+                    CommTools.AddSystemLog("删除", "删除消费型产品信息数据" + (isDelete == true ? "成功！" : "失败！"));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                    return;
+                }
+            }
+        }
+
+        private void btn_SystemCunsumeType_Add_Click(object sender, EventArgs e)
+        {
+            AddAndUpdateCunsumeTypeForm actf = new AddAndUpdateCunsumeTypeForm("ADD",0);
+            actf.Owner = this;
+            actf.ShowDialog();
+        }
+
+        private void btn_SystemCunsumeType_Update_Click(object sender, EventArgs e)
+        {
+            if (dgv_SystemCunsumeType_Manager.RowCount > 0)
+            {
+                string str = this.dgv_SystemCunsumeType_Manager.SelectedCells[0].Value.ToString();
+                AddAndUpdateCunsumeTypeForm actf = new AddAndUpdateCunsumeTypeForm("UPDATE", Convert.ToInt32(str));
+                actf.Owner = this;
+                actf.ShowDialog();
+            }
+           
+        }
+
+        #endregion
+
+
         private void tabc_SystemManager_SelectedIndexChanged(object sender, EventArgs e)
         {
             int _Index = tabc_SystemManager.SelectedIndex;
@@ -668,6 +744,11 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
             {
                 GetCardTypeDataList();
             }
+            if (tabc_SystemManager.TabPages[_Index].Text.Equals("消费类型"))
+            {
+                GetCunsumeTypeDataList();
+            }
+
         }
 
         #region 售卡
@@ -1267,7 +1348,7 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
         #region 读卡
         private void btn_Read_Click(object sender, EventArgs e)
         {
-            new MemberEditFrm().Show();
+            new ReaderCardInfo().Show();
         }
         #endregion
 
@@ -1352,6 +1433,12 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
             reportform.Show();
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
      
 
 

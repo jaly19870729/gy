@@ -124,6 +124,12 @@
       <DependentUpon>UpdateCardTypeInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="CunsumeFrom\AddAndUpdateCunsumeTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CunsumeFrom\AddAndUpdateCunsumeTypeForm.Designer.cs">
+      <DependentUpon>AddAndUpdateCunsumeTypeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CunsumeFrom\CunsumeFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,12 @@
     <Compile Include="SellCard\AddAndUpdateSellCardForm.Designer.cs">
       <DependentUpon>AddAndUpdateSellCardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SellCard\ReaderCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellCard\ReaderCardInfo.designer.cs">
+      <DependentUpon>ReaderCardInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SellCard\ShowCardInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CardType\UpdateCardTypeInfoForm.resx">
       <DependentUpon>UpdateCardTypeInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CunsumeFrom\AddAndUpdateCunsumeTypeForm.resx">
+      <DependentUpon>AddAndUpdateCunsumeTypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CunsumeFrom\CunsumeFrm.resx">
       <DependentUpon>CunsumeFrm.cs</DependentUpon>
@@ -335,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SellCard\AddAndUpdateSellCardForm.resx">
       <DependentUpon>AddAndUpdateSellCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellCard\ReaderCardInfo.resx">
+      <DependentUpon>ReaderCardInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SellCard\ShowCardInfo.resx">
       <DependentUpon>ShowCardInfo.cs</DependentUpon>

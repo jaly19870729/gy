@@ -121,7 +121,7 @@ namespace Gymnasium_APP.CunsumeFrom
                 if (memberInfoModels != null && memberInfoModels.Count > 0 && memberInfoModels[0].CardType.Contains("次"))
                 {
                     memberId = memberInfoModels[0].MemberID;
-                    return false;
+                    return true;
                 }
                 else
                 {
@@ -161,8 +161,8 @@ namespace Gymnasium_APP.CunsumeFrom
             cunsumeCastModel.PriceAmount = Convert.ToDecimal(this.txt_PriceAmount.Text);
             cunsumeCastModel.TransactDate = this.dtp_AddTime.Value;
             int result = this.cunsumeCastManager.Add(cunsumeCastModel);
-            CommTools.AddSystemLog("单次消费","卡号："+this.txt_CardNumber.Text+"消费："+this.txt_PayableAmount+(result>0?"成功":"失败"));
-            MessageBox.Show("卡号："+this.txt_CardNumber.Text+"消费："+this.txt_PayableAmount+(result>0?"成功":"失败"));
+            CommTools.AddSystemLog("单次消费", "卡号：" + this.txt_CardNumber.Text + "消费：" + this.txt_PayableAmount.Text + (result > 0 ? "成功" : "失败"));
+            MessageBox.Show("卡号："+this.txt_CardNumber.Text+"消费："+this.txt_PayableAmount.Text+(result>0?"成功":"失败"));
             this.Close();
         }
         /// <summary>
@@ -183,7 +183,7 @@ namespace Gymnasium_APP.CunsumeFrom
         private void SetPayableAmount()
         {
             this.txt_PayableAmount.Text =
-                Convert.ToString(Convert.ToInt32(this.txt_CunsumeCount)*Convert.ToDecimal(this.txt_PriceAmount.Text));
+                Convert.ToString(Convert.ToInt32(this.txt_CunsumeCount.Text)*Convert.ToDecimal(this.txt_PriceAmount.Text));
         }
         /// <summary>
         /// 计算找零
@@ -209,6 +209,11 @@ namespace Gymnasium_APP.CunsumeFrom
 
         }
         #endregion
+
+        private void txt_PayableAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         
 

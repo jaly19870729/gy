@@ -216,6 +216,7 @@
             this.txt_PayableAmount.Name = "txt_PayableAmount";
             this.txt_PayableAmount.Size = new System.Drawing.Size(221, 29);
             this.txt_PayableAmount.TabIndex = 32;
+            this.txt_PayableAmount.TextChanged += new System.EventHandler(this.txt_PayableAmount_TextChanged);
             // 
             // label18
             // 

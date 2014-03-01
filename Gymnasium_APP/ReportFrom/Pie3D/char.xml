@@ -1,3 +1,4 @@
 <chart palette="4" decimals="0" enableSmartLabels="1" enableRotation="0" bgColor="99CCFF,FFFFFF" bgAlpha="40,100" bgRatio="0,100" bgAngle="360" showBorder="1" startingAngle="70" baseFont="Arial" baseFontSize="12" caption="会员人数统计" xAxisName="会员信息" showFCMenuItem="0"> 
+ <set label="10次体验卡" value="1" /> 
  <set label="包年卡" value="3" /> 
 </chart> 
