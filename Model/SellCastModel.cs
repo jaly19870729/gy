@@ -23,6 +23,8 @@ namespace Gymnasium_APP.Model
 		private string _peoples;
 		private string _des;
 		private string _prices;
+		private string _custype;
+		private string _cusnum;
 		/// <summary>
 		/// 售卡费用ID
 		/// </summary>
@@ -126,6 +128,22 @@ namespace Gymnasium_APP.Model
 		{
 			set{ _prices=value;}
 			get{return _prices;}
+		}
+		/// <summary>
+		/// 消费类别
+		/// </summary>
+		public string CusType
+		{
+			set{ _custype=value;}
+			get{return _custype;}
+		}
+		/// <summary>
+		/// 消费编号
+		/// </summary>
+		public string CusNum
+		{
+			set{ _cusnum=value;}
+			get{return _cusnum;}
 		}
 		#endregion Model
 

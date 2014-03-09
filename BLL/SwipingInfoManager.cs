@@ -5,7 +5,7 @@ using Gymnasium_APP.Model;
 namespace Gymnasium_APP.BLL
 {
 	/// <summary>
-	/// SwipingInfoManager
+	/// 售卡交费信息
 	/// </summary>
 	public partial class SwipingInfoManager
 	{
@@ -71,7 +71,8 @@ namespace Gymnasium_APP.BLL
 			return dal.GetModel(ID);
 		}
 
-	
+		
+
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>

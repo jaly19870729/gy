@@ -318,6 +318,7 @@
             // txt_Unit
             // 
             this.txt_Unit.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Unit.CausesValidation = false;
             this.txt_Unit.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Unit.Location = new System.Drawing.Point(105, 415);
             this.txt_Unit.Name = "txt_Unit";
@@ -393,6 +394,7 @@
             // txt_Phone
             // 
             this.txt_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Phone.CausesValidation = false;
             this.txt_Phone.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Phone.Location = new System.Drawing.Point(105, 323);
             this.txt_Phone.Name = "txt_Phone";
@@ -416,6 +418,7 @@
             // txt_Mail
             // 
             this.txt_Mail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Mail.CausesValidation = false;
             this.txt_Mail.Font = new System.Drawing.Font("宋体", 14F);
             this.txt_Mail.Location = new System.Drawing.Point(105, 368);
             this.txt_Mail.Name = "txt_Mail";

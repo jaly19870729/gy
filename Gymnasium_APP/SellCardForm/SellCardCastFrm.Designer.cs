@@ -52,6 +52,8 @@
             this.btn_OK = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdUpload = new System.Windows.Forms.OpenFileDialog();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmb_PayType = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -67,9 +69,10 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(694, 261);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -80,7 +83,7 @@
             this.label1.Font = new System.Drawing.Font("宋体", 22F);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(688, 30);
+            this.label1.Size = new System.Drawing.Size(688, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "售卡收费";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -90,9 +93,9 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Location = new System.Drawing.Point(3, 34);
+            this.panel1.Location = new System.Drawing.Point(3, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(688, 224);
+            this.panel1.Size = new System.Drawing.Size(688, 206);
             this.panel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -105,13 +108,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel2.Controls.Add(this.cmb_PayType, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.dtp_EndTime, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.dtp_StartTime, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.txt_LeftCount, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txt_ChangeAmount, 3, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txt_PaymentAmount, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.txt_PriceAmount, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.label16, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 3);
@@ -119,6 +120,10 @@
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txt_CardType, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label18, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txt_ChangeAmount, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label17, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txt_PaymentAmount, 3, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
@@ -132,7 +137,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(680, 216);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(680, 198);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // dtp_EndTime
@@ -142,7 +147,7 @@
             this.dtp_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dtp_EndTime.Font = new System.Drawing.Font("宋体", 13F);
             this.dtp_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_EndTime.Location = new System.Drawing.Point(105, 121);
+            this.dtp_EndTime.Location = new System.Drawing.Point(105, 109);
             this.dtp_EndTime.Name = "dtp_EndTime";
             this.dtp_EndTime.Size = new System.Drawing.Size(221, 27);
             this.dtp_EndTime.TabIndex = 36;
@@ -154,7 +159,7 @@
             this.dtp_StartTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dtp_StartTime.Font = new System.Drawing.Font("宋体", 13F);
             this.dtp_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_StartTime.Location = new System.Drawing.Point(105, 67);
+            this.dtp_StartTime.Location = new System.Drawing.Point(105, 60);
             this.dtp_StartTime.Name = "dtp_StartTime";
             this.dtp_StartTime.Size = new System.Drawing.Size(221, 27);
             this.dtp_StartTime.TabIndex = 35;
@@ -163,7 +168,7 @@
             // 
             this.txt_LeftCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_LeftCount.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_LeftCount.Location = new System.Drawing.Point(105, 174);
+            this.txt_LeftCount.Location = new System.Drawing.Point(105, 158);
             this.txt_LeftCount.Name = "txt_LeftCount";
             this.txt_LeftCount.Size = new System.Drawing.Size(221, 29);
             this.txt_LeftCount.TabIndex = 34;
@@ -172,7 +177,7 @@
             // 
             this.txt_ChangeAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_ChangeAmount.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_ChangeAmount.Location = new System.Drawing.Point(445, 120);
+            this.txt_ChangeAmount.Location = new System.Drawing.Point(445, 158);
             this.txt_ChangeAmount.Name = "txt_ChangeAmount";
             this.txt_ChangeAmount.Size = new System.Drawing.Size(221, 29);
             this.txt_ChangeAmount.TabIndex = 32;
@@ -184,9 +189,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 14F);
-            this.label18.Location = new System.Drawing.Point(343, 108);
+            this.label18.Location = new System.Drawing.Point(343, 147);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(96, 54);
+            this.label18.Size = new System.Drawing.Size(96, 51);
             this.label18.TabIndex = 31;
             this.label18.Text = "找零金额";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -195,7 +200,7 @@
             // 
             this.txt_PaymentAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_PaymentAmount.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_PaymentAmount.Location = new System.Drawing.Point(445, 66);
+            this.txt_PaymentAmount.Location = new System.Drawing.Point(445, 108);
             this.txt_PaymentAmount.Name = "txt_PaymentAmount";
             this.txt_PaymentAmount.Size = new System.Drawing.Size(221, 29);
             this.txt_PaymentAmount.TabIndex = 30;
@@ -208,9 +213,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("宋体", 14F);
-            this.label17.Location = new System.Drawing.Point(343, 54);
+            this.label17.Location = new System.Drawing.Point(343, 98);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 54);
+            this.label17.Size = new System.Drawing.Size(96, 49);
             this.label17.TabIndex = 29;
             this.label17.Text = "交易金额";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -219,7 +224,7 @@
             // 
             this.txt_PriceAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_PriceAmount.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_PriceAmount.Location = new System.Drawing.Point(445, 12);
+            this.txt_PriceAmount.Location = new System.Drawing.Point(445, 10);
             this.txt_PriceAmount.Name = "txt_PriceAmount";
             this.txt_PriceAmount.Size = new System.Drawing.Size(221, 29);
             this.txt_PriceAmount.TabIndex = 28;
@@ -233,7 +238,7 @@
             this.label16.Font = new System.Drawing.Font("宋体", 14F);
             this.label16.Location = new System.Drawing.Point(343, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 54);
+            this.label16.Size = new System.Drawing.Size(96, 49);
             this.label16.TabIndex = 27;
             this.label16.Text = "单价金额";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -245,9 +250,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 14F);
-            this.label8.Location = new System.Drawing.Point(3, 162);
+            this.label8.Location = new System.Drawing.Point(3, 147);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 54);
+            this.label8.Size = new System.Drawing.Size(96, 51);
             this.label8.TabIndex = 12;
             this.label8.Text = "剩余次数";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -259,9 +264,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 14F);
-            this.label6.Location = new System.Drawing.Point(3, 108);
+            this.label6.Location = new System.Drawing.Point(3, 98);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 54);
+            this.label6.Size = new System.Drawing.Size(96, 49);
             this.label6.TabIndex = 8;
             this.label6.Text = "失效日期";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -273,9 +278,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 14F);
-            this.label4.Location = new System.Drawing.Point(3, 54);
+            this.label4.Location = new System.Drawing.Point(3, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 54);
+            this.label4.Size = new System.Drawing.Size(96, 49);
             this.label4.TabIndex = 4;
             this.label4.Text = "生效日期";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -289,7 +294,7 @@
             this.label2.Font = new System.Drawing.Font("宋体", 14F);
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 54);
+            this.label2.Size = new System.Drawing.Size(96, 49);
             this.label2.TabIndex = 0;
             this.label2.Text = "卡类别";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -298,7 +303,7 @@
             // 
             this.txt_CardType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_CardType.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_CardType.Location = new System.Drawing.Point(105, 12);
+            this.txt_CardType.Location = new System.Drawing.Point(105, 10);
             this.txt_CardType.Name = "txt_CardType";
             this.txt_CardType.Size = new System.Drawing.Size(221, 29);
             this.txt_CardType.TabIndex = 1;
@@ -330,6 +335,37 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 14F);
+            this.label3.Location = new System.Drawing.Point(343, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 49);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "消费类型";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cmb_PayType
+            // 
+            this.cmb_PayType.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmb_PayType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_PayType.Font = new System.Drawing.Font("宋体", 14F);
+            this.cmb_PayType.FormattingEnabled = true;
+            this.cmb_PayType.Items.AddRange(new object[] {
+            "现金消费",
+            "刷卡消费",
+            "转账消费",
+            "支票消费",
+            "其他消费"});
+            this.cmb_PayType.Location = new System.Drawing.Point(445, 60);
+            this.cmb_PayType.Name = "cmb_PayType";
+            this.cmb_PayType.Size = new System.Drawing.Size(221, 27);
+            this.cmb_PayType.TabIndex = 37;
             // 
             // SellCardCastFrm
             // 
@@ -383,5 +419,7 @@
         private System.Windows.Forms.TextBox txt_LeftCount;
         private System.Windows.Forms.DateTimePicker dtp_StartTime;
         private System.Windows.Forms.DateTimePicker dtp_EndTime;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmb_PayType;
     }
 }

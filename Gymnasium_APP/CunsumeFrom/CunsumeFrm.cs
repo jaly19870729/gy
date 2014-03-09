@@ -72,10 +72,10 @@ namespace Gymnasium_APP.CunsumeFrom
         private void txt_CardNumber_TextChanged(object sender, EventArgs e)
         {
 
-                if (ValidateMember())
-                {
+                //if (ValidateMember())
+                //{
 
-                }
+                //}
             
     }
 
@@ -102,7 +102,7 @@ namespace Gymnasium_APP.CunsumeFrom
             if (!AppConfig.ValidateInt(this.txt_CunsumeCount.Text))
             {
                 this.errorProvider1.Clear();
-                this.errorProvider1.SetError(this.txt_CardNumber,AppConfig.IntRegexError);
+                this.errorProvider1.SetError(this.txt_CunsumeCount, AppConfig.IntRegexError);
                 return false;
             }
             return true;
@@ -143,27 +143,47 @@ namespace Gymnasium_APP.CunsumeFrom
         /// <returns></returns>
         private bool ValidateControl()
         {
-            return ValidatePaymentAmount() && ValidateCount() && ValidateMember();
+            return ValidatePaymentAmount() && ValidateCount();
         }
+        private SellCastManager manager = new SellCastManager();
+        private SellCastModel model = new SellCastModel();
         /// <summary>
         /// 提交数据
         /// </summary>
         private void SubmitData()
         {
-            CunsumeCastModel cunsumeCastModel=new CunsumeCastModel();
-            cunsumeCastModel.ChangeAmount = Convert.ToDecimal(this.txt_ChangeAmount.Text);
-            cunsumeCastModel.Count = Convert.ToInt32(this.txt_CunsumeCount.Text);
-            cunsumeCastModel.CreateTime = this.dtp_AddTime.Value;
-            cunsumeCastModel.CusType = this.cmb_CunsumeType.Text;
-            cunsumeCastModel.MemberId = memberId;
-            cunsumeCastModel.PayableAmount = Convert.ToDecimal(this.txt_PayableAmount.Text);
-            cunsumeCastModel.PayableAmount = Convert.ToDecimal(this.txt_PaymentAmount.Text);
-            cunsumeCastModel.PriceAmount = Convert.ToDecimal(this.txt_PriceAmount.Text);
-            cunsumeCastModel.TransactDate = this.dtp_AddTime.Value;
-            int result = this.cunsumeCastManager.Add(cunsumeCastModel);
-            CommTools.AddSystemLog("单次消费", "卡号：" + this.txt_CardNumber.Text + "消费：" + this.txt_PayableAmount.Text + (result > 0 ? "成功" : "失败"));
-            MessageBox.Show("卡号："+this.txt_CardNumber.Text+"消费："+this.txt_PayableAmount.Text+(result>0?"成功":"失败"));
+            model.CastId = manager.GetMaxId();
+            model.CusNum = txt_CardNumber.Text.Trim();
+            model.MemberId = "";
+            model.CardID = "";
+            model.PriceAmount =0;
+            model.PaymentAmount = Convert.ToDecimal(txt_PaymentAmount.Text.Trim());
+            model.ChangeAmount = Convert.ToDecimal(txt_ChangeAmount.Text.Trim());
+            model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
+            model.CusType = this.cmb_CunsumeType.Text;
+            model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
+            model.Peoples = txt_CunsumeCount.Text.Trim();
+            model.Prices = txt_PriceAmount.Text.Trim();
+            model.Des = "单次消费";
+            model.AddUserName = MainForm.userName;
+            int isAdd = manager.Add(model);
+            MessageBox.Show("单号：" +  txt_CardNumber.Text.Trim() + " 消费" + (isAdd > 0 ? "成功！" : "失败！"));
+            CommTools.AddSystemLog("添加", "单次消费：" + txt_CardNumber.Text.Trim() + " 消费信息 " + this.cmb_CunsumeType.Text + "添加" + (isAdd > 0 ? "成功！" : "失败！"));
             this.Close();
+            //CunsumeCastModel cunsumeCastModel=new CunsumeCastModel();
+            //cunsumeCastModel.Id = cunsumeCastManager.GetMaxId();
+            //cunsumeCastModel.ChangeAmount = Convert.ToDecimal(this.txt_ChangeAmount.Text);
+            //cunsumeCastModel.Count = Convert.ToInt32(this.txt_CunsumeCount.Text);
+            //cunsumeCastModel.CreateTime = this.dtp_AddTime.Value;
+            //cunsumeCastModel.CusType = this.cmb_CunsumeType.Text;
+            //cunsumeCastModel.MemberId = Convert.ToInt32(txt_CardNumber.Text.Trim());
+            //cunsumeCastModel.PayableAmount = Convert.ToDecimal(this.txt_PayableAmount.Text);
+            //cunsumeCastModel.PriceAmount = Convert.ToDecimal(this.txt_PriceAmount.Text);
+            //cunsumeCastModel.TransactDate = this.dtp_AddTime.Value;
+            //int result = this.cunsumeCastManager.Add(cunsumeCastModel);
+            //CommTools.AddSystemLog("单次消费", "卡号：" + this.txt_CardNumber.Text + "消费：" + this.txt_PayableAmount.Text + (result > 0 ? "成功" : "失败"));
+            //MessageBox.Show("卡号："+this.txt_CardNumber.Text+"消费："+this.txt_PayableAmount.Text+(result>0?"成功":"失败"));
+            //this.Close();
         }
         /// <summary>
         /// 设置单价
@@ -211,6 +231,11 @@ namespace Gymnasium_APP.CunsumeFrom
         #endregion
 
         private void txt_PayableAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

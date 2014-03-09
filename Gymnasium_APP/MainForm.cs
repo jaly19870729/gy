@@ -157,7 +157,7 @@ namespace Gymnasium_APP
    
         private SwipingInfoManager swipManager = new SwipingInfoManager();
 
-        private string Main_MemberNamager_TiaoJian = " 1=1 and AddTime like '%" + CommTools.GetDateFormatStrot(DateTime.Now)+ "%'";
+        private string Main_MemberNamager_TiaoJian = " 1=1 and AddTime like '%" + CommTools.GetDateFormatStrot(DateTime.Now)+ "%' and SwipingType like '%会员%'";
         private void GetMain_MemberList()
         {
             this.dgv_Main_Member_Manager.Rows.Clear();
@@ -180,7 +180,7 @@ namespace Gymnasium_APP
                     this.dgv_Main_Member_Manager.Rows[i].Cells["dgv_Main_Member_MemberCardType"].Value =
                      ds_List.Tables[0].Rows[i]["CardType"].ToString();
                     this.dgv_Main_Member_Manager.Rows[i].Cells["dgv_Main_Member_Desc"].Value =
-          ds_List.Tables[0].Rows[i]["Desc"].ToString();
+          ds_List.Tables[0].Rows[i]["Des"].ToString();
                     this.dgv_Main_Member_Manager.Rows[i].Cells["dgv_Main_Member_MemberAddTime"].Value =
          ds_List.Tables[0].Rows[i]["AddTime"].ToString();
                 }
@@ -237,9 +237,17 @@ namespace Gymnasium_APP
          ds_List.Tables[0].Rows[i]["Des"].ToString();
                     this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_AddTime"].Value =
 ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
+                    this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_CusNum"].Value =
+ds_List.Tables[0].Rows[i]["CusNum"].ToString();
                     this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_CardID"].Value =
 ds_List.Tables[0].Rows[i]["CardID"].ToString();
-                    
+                        MemberInfoModel member_model=memberManager.GetModel(Convert.ToInt32(ds_List.Tables[0].Rows[i]["MemberId"]));
+                    if (member_model != null)
+                    {
+                        this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_Name"].Value = member_model.Name;
+                    }
+
+
                 }
 
             }
@@ -1057,7 +1065,7 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
                     this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_CardTypeName"].Value =
                      ds_List.Tables[0].Rows[i]["CardType"].ToString();
                     this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_Des"].Value =
-          ds_List.Tables[0].Rows[i]["Desc"].ToString();
+          ds_List.Tables[0].Rows[i]["Des"].ToString();
                     this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_Type"].Value =
     ds_List.Tables[0].Rows[i]["SwipingType"].ToString();
                     this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_PeoPles"].Value =
@@ -1066,6 +1074,8 @@ ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
          ds_List.Tables[0].Rows[i]["AddTime"].ToString();
                     this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_AddUserName"].Value =
        ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
+                    this.dgv_Statistics_Swiping_Manager.Rows[i].Cells["dgv_Statistics_Swiping_CusNum"].Value =
+ds_List.Tables[0].Rows[i]["CusNum"].ToString();
                 }
 
             }

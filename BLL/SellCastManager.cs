@@ -72,6 +72,7 @@ namespace Gymnasium_APP.BLL
 		}
 
 		
+
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>

@@ -45,9 +45,9 @@ namespace Gymnasium_APP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into SwipingInfo(");
-			strSql.Append("ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,[Desc])");
+			strSql.Append("ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Des,CusNum,Peoples)");
 			strSql.Append(" values (");
-			strSql.Append("@ID,@SwipingType,@CardID,@CardType,@SwipingPeople,@AddTime,@AddUserName,@Name,@Desc)");
+			strSql.Append("@ID,@SwipingType,@CardID,@CardType,@SwipingPeople,@AddTime,@AddUserName,@Name,@Des,@CusNum,@Peoples)");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4),
 					new SqlParameter("@SwipingType", SqlDbType.VarChar,50),
@@ -57,7 +57,9 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@AddTime", SqlDbType.VarChar,50),
 					new SqlParameter("@AddUserName", SqlDbType.VarChar,50),
 					new SqlParameter("@Name", SqlDbType.VarChar,50),
-					new SqlParameter("@Desc", SqlDbType.VarChar,50)};
+					new SqlParameter("@Des", SqlDbType.VarChar,50),
+					new SqlParameter("@CusNum", SqlDbType.VarChar,50),
+					new SqlParameter("@Peoples", SqlDbType.VarChar,50)};
 			parameters[0].Value = model.ID;
 			parameters[1].Value = model.SwipingType;
 			parameters[2].Value = model.CardID;
@@ -66,7 +68,9 @@ namespace Gymnasium_APP.DAL
 			parameters[5].Value = model.AddTime;
 			parameters[6].Value = model.AddUserName;
 			parameters[7].Value = model.Name;
-			parameters[8].Value = model.Desc;
+			parameters[8].Value = model.Des;
+			parameters[9].Value = model.CusNum;
+			parameters[10].Value = model.Peoples;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -92,7 +96,9 @@ namespace Gymnasium_APP.DAL
 			strSql.Append("AddTime=@AddTime,");
 			strSql.Append("AddUserName=@AddUserName,");
 			strSql.Append("Name=@Name,");
-			strSql.Append("Desc=@Desc");
+			strSql.Append("Des=@Des,");
+			strSql.Append("CusNum=@CusNum,");
+			strSql.Append("Peoples=@Peoples");
 			strSql.Append(" where ID=@ID ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@SwipingType", SqlDbType.VarChar,50),
@@ -102,7 +108,9 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@AddTime", SqlDbType.VarChar,50),
 					new SqlParameter("@AddUserName", SqlDbType.VarChar,50),
 					new SqlParameter("@Name", SqlDbType.VarChar,50),
-					new SqlParameter("@Desc", SqlDbType.VarChar,50),
+					new SqlParameter("@Des", SqlDbType.VarChar,50),
+					new SqlParameter("@CusNum", SqlDbType.VarChar,50),
+					new SqlParameter("@Peoples", SqlDbType.VarChar,50),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
 			parameters[0].Value = model.SwipingType;
 			parameters[1].Value = model.CardID;
@@ -111,8 +119,10 @@ namespace Gymnasium_APP.DAL
 			parameters[4].Value = model.AddTime;
 			parameters[5].Value = model.AddUserName;
 			parameters[6].Value = model.Name;
-			parameters[7].Value = model.Desc;
-			parameters[8].Value = model.ID;
+			parameters[7].Value = model.Des;
+			parameters[8].Value = model.CusNum;
+			parameters[9].Value = model.Peoples;
+			parameters[10].Value = model.ID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -175,7 +185,7 @@ namespace Gymnasium_APP.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Desc from SwipingInfo ");
+			strSql.Append("select  top 1 ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Des,CusNum,Peoples from SwipingInfo ");
 			strSql.Append(" where ID=@ID ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ID", SqlDbType.Int,4)			};
@@ -234,9 +244,17 @@ namespace Gymnasium_APP.DAL
 				{
 					model.Name=row["Name"].ToString();
 				}
-				if(row["Desc"]!=null)
+				if(row["Des"]!=null)
 				{
-					model.Desc=row["Desc"].ToString();
+					model.Des=row["Des"].ToString();
+				}
+				if(row["CusNum"]!=null)
+				{
+					model.CusNum=row["CusNum"].ToString();
+				}
+				if(row["Peoples"]!=null)
+				{
+					model.Peoples=row["Peoples"].ToString();
 				}
 			}
 			return model;
@@ -248,7 +266,7 @@ namespace Gymnasium_APP.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Desc ");
+			strSql.Append("select ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Des,CusNum,Peoples ");
 			strSql.Append(" FROM SwipingInfo ");
 			if(strWhere.Trim()!="")
 			{
@@ -268,7 +286,7 @@ namespace Gymnasium_APP.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Desc ");
+			strSql.Append(" ID,SwipingType,CardID,CardType,SwipingPeople,AddTime,AddUserName,Name,Des,CusNum,Peoples ");
 			strSql.Append(" FROM SwipingInfo ");
 			if(strWhere.Trim()!="")
 			{

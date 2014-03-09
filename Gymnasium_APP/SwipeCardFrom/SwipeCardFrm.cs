@@ -51,6 +51,9 @@ namespace Gymnasium_APP.SwipeCardFrom
                 switch (this.cmb_CunsumeType.Text)
                 {
                     case "会员卡刷卡":
+                        txt_CardNumber.Enabled = true;
+                        cmb_CardType.Enabled = true;
+                        txt_CusNum.Enabled = false;
                         if (AppConfig.ValidateCardNumber(this.txt_CardNumber.Text))
                         {
                             MemberSwipeCaseInit();
@@ -64,6 +67,7 @@ namespace Gymnasium_APP.SwipeCardFrom
                         }
                         break;
                     case "现金消费":
+                        txt_CusNum.Enabled = true;
                         CashSwipeCaseInit();
                         break;
                 }
@@ -115,15 +119,20 @@ namespace Gymnasium_APP.SwipeCardFrom
             if (ValidateFlag)
             {
                 SwipingInfoModel swipingInfoModel = new SwipingInfoModel();
+                swipingInfoModel.ID = swipingInfoManager.GetMaxId();
                 swipingInfoModel.AddTime = this.dtp_AddTime.Text;
                 swipingInfoModel.CardID = this.txt_CardNumber.Text;
                 swipingInfoModel.CardType = this.cmb_CardType.Text;
-                swipingInfoModel.Desc = this.cmb_CunsumeType.Text.Equals("会员卡刷卡") ? "刷卡出场" : "现金消费出场";
+                swipingInfoModel.Des = this.cmb_CunsumeType.Text.Equals("会员卡刷卡") ? "刷卡出场" : "现金消费出场";
                 swipingInfoModel.SwipingPeople = this.txt_CunsumeCount.Text;
                 swipingInfoModel.SwipingType = this.cmb_CunsumeType.Text;
+                swipingInfoModel.Name = txt_UserName.Text.Trim();
+                swipingInfoModel.CusNum = txt_CusNum.Text.Trim();
+                swipingInfoModel.SwipingPeople = txt_CunsumeCount.Text.Trim();
+                swipingInfoModel.AddUserName = MainForm.userName;
                 bool result = swipingInfoManager.Add(swipingInfoModel);
-                CommTools.AddSystemLog("出场刷卡", swipingInfoModel.Desc + " " + (result ? "成功" : "失败"));
-                MessageBox.Show(swipingInfoModel.Desc + " " + (result ? "成功" : "失败"));
+                CommTools.AddSystemLog("出场刷卡", swipingInfoModel.Des + " " + (result ? "成功" : "失败"));
+                MessageBox.Show(swipingInfoModel.Des + " " + (result ? "成功" : "失败"));
                 this.Close();
             }
             
@@ -138,15 +147,20 @@ namespace Gymnasium_APP.SwipeCardFrom
           if (ValidateFlag)
           {
               SwipingInfoModel swipingInfoModel=new SwipingInfoModel();
+              swipingInfoModel.ID = swipingInfoManager.GetMaxId();
               swipingInfoModel.AddTime = this.dtp_AddTime.Text;
               swipingInfoModel.CardID = this.txt_CardNumber.Text;
               swipingInfoModel.CardType = this.cmb_CardType.Text;
-              swipingInfoModel.Desc = this.cmb_CunsumeType.Text.Equals("会员卡刷卡") ? "刷卡入场" : "现金消费入场";
+              swipingInfoModel.Des = this.cmb_CunsumeType.Text.Equals("会员卡刷卡") ? "刷卡入场" : "现金消费入场";
               swipingInfoModel.SwipingPeople = this.txt_CunsumeCount.Text;
+              swipingInfoModel.AddUserName = MainForm.userName;
+              swipingInfoModel.Name = txt_UserName.Text.Trim();
               swipingInfoModel.SwipingType = this.cmb_CunsumeType.Text;
+              swipingInfoModel.CusNum = txt_CusNum.Text.Trim();
+              swipingInfoModel.SwipingPeople = txt_CunsumeCount.Text.Trim();
               bool result=swipingInfoManager.Add(swipingInfoModel);
-              CommTools.AddSystemLog("入场刷卡",swipingInfoModel.Desc+" "+(result?"成功":"失败"));
-              MessageBox.Show(swipingInfoModel.Desc + " " + (result ? "成功" : "失败"));
+              CommTools.AddSystemLog("入场刷卡",swipingInfoModel.Des+" "+(result?"成功":"失败"));
+              MessageBox.Show(swipingInfoModel.Des + " " + (result ? "成功" : "失败"));
               // 如果是次卡，那么剩余次数会自动显示当前剩余次数，点进场以后，剩余次数自动减1，然后显示新的剩余次数
               SubmitByTimesCardType();
               this.Close();
@@ -176,6 +190,7 @@ namespace Gymnasium_APP.SwipeCardFrom
         /// </summary>
         private void MemberSwipeCaseInit()
         {
+           
             ValidateFlag = true;   
             String cardNumber = this.txt_CardNumber.Text;
             List<MemberInfoModel> memberInfoModels =
@@ -186,6 +201,7 @@ namespace Gymnasium_APP.SwipeCardFrom
                 if (memberInfoModels[0].Photo != null && memberInfoModels[0].Photo.Length > 0)
                 {
                     this.pictureBox1.Image = CommTools.ByteToImg(memberInfoModels[0].Photo);
+                    txt_UserName.Text = memberInfoModels[0].Name;
 
                 }
                 this.cmb_CardType.Items.Add(memberInfoModels[0].CardType);
@@ -238,7 +254,31 @@ namespace Gymnasium_APP.SwipeCardFrom
         }
         #endregion
 
-        
+        private SellCastManager cunManager = new SellCastManager();
+
+        private void txt_CusNum_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+            List<SellCastModel> cus_model_list = cunManager.GetModelList(" CusNum='" + txt_CusNum.Text.Trim() + "' ");
+            if (cus_model_list != null && cus_model_list.Count > 0)
+            {
+                txt_CunsumeCount.Text = cus_model_list[0].Peoples;
+            }
+            else
+            {
+                errorProvider1.SetError(txt_CusNum, "消费单号不存在！");
+                return;
+
+            }
+        }
+
+        private void txt_CunsumeCount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
 
 
 

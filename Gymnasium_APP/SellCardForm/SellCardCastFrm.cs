@@ -46,7 +46,7 @@ namespace Gymnasium_APP.SellCardForm
 
         private void SellCardCastFrmBak_Load(object sender, EventArgs e)
         {
-
+            cmb_PayType.SelectedIndex = 0;
         }
 
         private void txt_PaymentAmount_TextChanged(object sender, EventArgs e)
@@ -62,6 +62,25 @@ namespace Gymnasium_APP.SellCardForm
 
         private void btn_OK_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
+            if (txt_PaymentAmount.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txt_PaymentAmount, "请输入正确的金额！");
+
+            
+                return; 
+            }
+            try
+            {
+                Convert.ToDecimal(txt_PaymentAmount.Text.Trim());
+            }
+            catch (Exception)
+            {
+                errorProvider1.SetError(txt_PaymentAmount, "请输入正确的金额！");
+                return;
+
+
+            }
             model.CastId = manager.GetMaxId();
             model.MemberId = addMemberModel.MemberID.ToString();
             model.PriceAmount = Convert.ToDecimal(txt_PriceAmount.Text.Trim());
@@ -70,7 +89,7 @@ namespace Gymnasium_APP.SellCardForm
             model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             model.AddTypeName = addMemberModel.CardType;
             model.CardID = addMemberModel.CardID;
-            model.TypeName = "现金消费";
+            model.TypeName =cmb_PayType.Text.Trim();
             model.Des = "售卡";
             model.AddUserName = MainForm.userName;
             int isAdd = manager.Add(model);

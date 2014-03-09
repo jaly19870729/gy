@@ -52,7 +52,7 @@ namespace Gymnasium_APP.SellCard
             SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             InitializeComponent();
             LoadFormForSellCard();
-            this.Text = "会员信息 — 添加 ";
+            this.Text = "会员信息 — 售卡 ";
             FormName = formName;
             if (!formName.Equals("ADD"))
             {
@@ -124,11 +124,11 @@ namespace Gymnasium_APP.SellCard
                     return;
                 }
             }
-            if (txt_Mail.Text.Trim() == "")
-            {
-                errorProvider1.SetError(txt_Mail, "邮箱不能为空！");
-                return;
-            }
+            //if (txt_Mail.Text.Trim() == "")
+            //{
+            //    errorProvider1.SetError(txt_Mail, "邮箱不能为空！");
+            //    return;
+            //}
             if (cmb_CardType.Text.Trim() == "")
             {
                 errorProvider1.SetError(cmb_CardType, "卡类别不能为空！");
@@ -188,11 +188,11 @@ namespace Gymnasium_APP.SellCard
                 errorProvider1.SetError(dtp_Birthday, "生日不能为空！");
                 return;
             }
-            if (txt_Phone.Text.Trim() == "")
-            {
-                errorProvider1.SetError(txt_Phone, "电话不能为空！");
-                return;
-            }
+            //if (txt_Phone.Text.Trim() == "")
+            //{
+            //    errorProvider1.SetError(txt_Phone, "电话不能为空！");
+            //    return;
+            //}
             if (dtp_AddTime.Text.Trim() == "")
             {
                 errorProvider1.SetError(dtp_AddTime, "办理日期不能为空！");
@@ -230,7 +230,7 @@ namespace Gymnasium_APP.SellCard
                 {
                         case MemberBusinessType.SellCardType:
                          isAdd= manager.Add(model);
-                MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd > 0 ? "成功！" : "失败！"));
+                //MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd > 0 ? "成功！" : "失败！"));
                 CommTools.AddSystemLog("添加", "会员：" + txt_Name.Text.Trim() + " 添加" + (isAdd > 0 ? "成功！" : "失败！"));
                         break;
                         case MemberBusinessType.ContinuedCardType:
@@ -240,7 +240,7 @@ namespace Gymnasium_APP.SellCard
                             model.MemberID = memberInfoModels[0].MemberID;
                             bool isFlag = manager.Update(model);
                             if (isFlag) isAdd = 1;
-                            MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 续卡" + (isAdd > 0 ? "成功！" : "失败！"));
+                           // MessageBox.Show("会员：" + txt_Name.Text.Trim() + " 续卡" + (isAdd > 0 ? "成功！" : "失败！"));
                             CommTools.AddSystemLog("续卡", "会员：" + txt_Name.Text.Trim() + " 续卡" + (isAdd > 0 ? "成功！" : "失败！"));
                         }
                        

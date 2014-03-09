@@ -12,6 +12,7 @@ using Gymnasium_APP.Model;
 using Gymnasium_APP.BLL;
 using System.IO;
 using Gymnasium_APP.SellCardForm;
+using Gymnasium_APP.Config;
 
 namespace Gymnasium_APP.ExtensionFrom
 {
@@ -112,11 +113,11 @@ namespace Gymnasium_APP.ExtensionFrom
         private bool ValidateCtronl()
         {
             errorProvider1.Clear();
-            Regex regex=new Regex("^\\w{8}$");
+            Regex regex = new Regex(AppConfig.CardNumberRegex);
             bool flag = regex.IsMatch(this.txt_CardNumber.Text);
             if (!flag)
             {
-                errorProvider1.SetError(txt_CardNumber, "卡号输入有误,卡号8位!");
+                errorProvider1.SetError(txt_CardNumber, AppConfig.CardNumberRegexError);
               //  MessageBox.Show("卡号输入有误!");
             }
             return flag;

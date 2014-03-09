@@ -3,6 +3,7 @@ using System.Data;
 using System.Text;
 using System.Data.SqlClient;
 using DAL;
+
 namespace Gymnasium_APP.DAL
 {
 	/// <summary>
@@ -46,9 +47,9 @@ namespace Gymnasium_APP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into SellCast(");
-			strSql.Append("MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices)");
+			strSql.Append("MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum)");
 			strSql.Append(" values (");
-			strSql.Append("@MemberId,@PriceAmount,@PaymentAmount,@ChangeAmount,@CreateTime,@AddUserName,@AddTypeName,@CardID,@TypeName,@Peoples,@Des,@Prices)");
+			strSql.Append("@MemberId,@PriceAmount,@PaymentAmount,@ChangeAmount,@CreateTime,@AddUserName,@AddTypeName,@CardID,@TypeName,@Peoples,@Des,@Prices,@CusType,@CusNum)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@MemberId", SqlDbType.VarChar,50),
@@ -62,7 +63,9 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@TypeName", SqlDbType.VarChar,50),
 					new SqlParameter("@Peoples", SqlDbType.VarChar,50),
 					new SqlParameter("@Des", SqlDbType.VarChar,500),
-					new SqlParameter("@Prices", SqlDbType.VarChar,50)};
+					new SqlParameter("@Prices", SqlDbType.VarChar,50),
+					new SqlParameter("@CusType", SqlDbType.VarChar,50),
+					new SqlParameter("@CusNum", SqlDbType.VarChar,50)};
 			parameters[0].Value = model.MemberId;
 			parameters[1].Value = model.PriceAmount;
 			parameters[2].Value = model.PaymentAmount;
@@ -75,6 +78,8 @@ namespace Gymnasium_APP.DAL
 			parameters[9].Value = model.Peoples;
 			parameters[10].Value = model.Des;
 			parameters[11].Value = model.Prices;
+			parameters[12].Value = model.CusType;
+			parameters[13].Value = model.CusNum;
 
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
@@ -104,7 +109,9 @@ namespace Gymnasium_APP.DAL
 			strSql.Append("TypeName=@TypeName,");
 			strSql.Append("Peoples=@Peoples,");
 			strSql.Append("Des=@Des,");
-			strSql.Append("Prices=@Prices");
+			strSql.Append("Prices=@Prices,");
+			strSql.Append("CusType=@CusType,");
+			strSql.Append("CusNum=@CusNum");
 			strSql.Append(" where CastId=@CastId");
 			SqlParameter[] parameters = {
 					new SqlParameter("@MemberId", SqlDbType.VarChar,50),
@@ -119,6 +126,8 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@Peoples", SqlDbType.VarChar,50),
 					new SqlParameter("@Des", SqlDbType.VarChar,500),
 					new SqlParameter("@Prices", SqlDbType.VarChar,50),
+					new SqlParameter("@CusType", SqlDbType.VarChar,50),
+					new SqlParameter("@CusNum", SqlDbType.VarChar,50),
 					new SqlParameter("@CastId", SqlDbType.Int,4)};
 			parameters[0].Value = model.MemberId;
 			parameters[1].Value = model.PriceAmount;
@@ -132,7 +141,9 @@ namespace Gymnasium_APP.DAL
 			parameters[9].Value = model.Peoples;
 			parameters[10].Value = model.Des;
 			parameters[11].Value = model.Prices;
-			parameters[12].Value = model.CastId;
+			parameters[12].Value = model.CusType;
+			parameters[13].Value = model.CusNum;
+			parameters[14].Value = model.CastId;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -196,7 +207,7 @@ namespace Gymnasium_APP.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices from SellCast ");
+			strSql.Append("select  top 1 CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum from SellCast ");
 			strSql.Append(" where CastId=@CastId");
 			SqlParameter[] parameters = {
 					new SqlParameter("@CastId", SqlDbType.Int,4)
@@ -276,6 +287,14 @@ namespace Gymnasium_APP.DAL
 				{
 					model.Prices=row["Prices"].ToString();
 				}
+				if(row["CusType"]!=null)
+				{
+					model.CusType=row["CusType"].ToString();
+				}
+				if(row["CusNum"]!=null)
+				{
+					model.CusNum=row["CusNum"].ToString();
+				}
 			}
 			return model;
 		}
@@ -286,7 +305,7 @@ namespace Gymnasium_APP.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices ");
+			strSql.Append("select CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum ");
 			strSql.Append(" FROM SellCast ");
 			if(strWhere.Trim()!="")
 			{
@@ -306,7 +325,7 @@ namespace Gymnasium_APP.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices ");
+			strSql.Append(" CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum ");
 			strSql.Append(" FROM SellCast ");
 			if(strWhere.Trim()!="")
 			{
@@ -383,7 +402,7 @@ namespace Gymnasium_APP.DAL
 			parameters[2].Value = PageSize;
 			parameters[3].Value = PageIndex;
 			parameters[4].Value = 0;
-			parameters[5].Value = 1;
+			parameters[5].Value = 0;
 			parameters[6].Value = strWhere;	
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}

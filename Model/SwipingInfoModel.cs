@@ -2,7 +2,7 @@
 namespace Gymnasium_APP.Model
 {
 	/// <summary>
-	/// SwipingInfoModel:实体类(属性说明自动提取数据库字段的描述信息)
+	/// 售卡交费信息
 	/// </summary>
 	[Serializable]
 	public partial class SwipingInfoModel
@@ -18,7 +18,9 @@ namespace Gymnasium_APP.Model
 		private string _addtime;
 		private string _addusername;
 		private string _name;
-		private string _desc;
+		private string _des;
+		private string _cusnum;
+		private string _peoples;
 		/// <summary>
 		/// 
 		/// </summary>
@@ -86,10 +88,26 @@ namespace Gymnasium_APP.Model
 		/// <summary>
 		/// 
 		/// </summary>
-		public string Desc
+		public string Des
 		{
-			set{ _desc=value;}
-			get{return _desc;}
+			set{ _des=value;}
+			get{return _des;}
+		}
+		/// <summary>
+		/// 消费序号
+		/// </summary>
+		public string CusNum
+		{
+			set{ _cusnum=value;}
+			get{return _cusnum;}
+		}
+		/// <summary>
+		/// 人数
+		/// </summary>
+		public string Peoples
+		{
+			set{ _peoples=value;}
+			get{return _peoples;}
 		}
 		#endregion Model
 
