@@ -156,7 +156,7 @@ namespace Gymnasium_APP.CunsumeFrom
             model.CusNum = txt_CardNumber.Text.Trim();
             model.MemberId = "";
             model.CardID = "";
-            model.PriceAmount =0;
+            model.PriceAmount = Convert.ToDecimal(txt_PayableAmount.Text.Trim());
             model.PaymentAmount = Convert.ToDecimal(txt_PaymentAmount.Text.Trim());
             model.ChangeAmount = Convert.ToDecimal(txt_ChangeAmount.Text.Trim());
             model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);

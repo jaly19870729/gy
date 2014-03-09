@@ -988,6 +988,8 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
 ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
                     this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_AddUserName"].Value =
 ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CusNum"].Value =
+ds_List.Tables[0].Rows[i]["CusNum"].ToString();
                 }
 
             }
