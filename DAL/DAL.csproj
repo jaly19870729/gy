@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleDal.cs" />
     <Compile Include="SellCastDal.cs" />
+    <Compile Include="SiteDal.cs" />
     <Compile Include="SwipingInfoDal.cs" />
     <Compile Include="SystemLoginLogDal.cs" />
     <Compile Include="Sys_FunctionBigDal.cs" />

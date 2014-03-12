@@ -54,6 +54,7 @@ namespace Gymnasium_APP.SwipeCardFrom
                         txt_CardNumber.Enabled = true;
                         cmb_CardType.Enabled = true;
                         txt_CusNum.Enabled = false;
+                        txt_CunsumeCount.Text = "1";
                         if (AppConfig.ValidateCardNumber(this.txt_CardNumber.Text))
                         {
                             MemberSwipeCaseInit();
@@ -131,6 +132,10 @@ namespace Gymnasium_APP.SwipeCardFrom
                 swipingInfoModel.SwipingPeople = txt_CunsumeCount.Text.Trim();
                 swipingInfoModel.AddUserName = MainForm.userName;
                 bool result = swipingInfoManager.Add(swipingInfoModel);
+                if (result)
+                {
+                    GetSite(false);
+                }
                 CommTools.AddSystemLog("出场刷卡", swipingInfoModel.Des + " " + (result ? "成功" : "失败"));
                 MessageBox.Show(swipingInfoModel.Des + " " + (result ? "成功" : "失败"));
                 this.Close();
@@ -161,11 +166,49 @@ namespace Gymnasium_APP.SwipeCardFrom
               bool result=swipingInfoManager.Add(swipingInfoModel);
               CommTools.AddSystemLog("入场刷卡",swipingInfoModel.Des+" "+(result?"成功":"失败"));
               MessageBox.Show(swipingInfoModel.Des + " " + (result ? "成功" : "失败"));
+              if (result)
+              {
+                  GetSite(true);
+              }
               // 如果是次卡，那么剩余次数会自动显示当前剩余次数，点进场以后，剩余次数自动减1，然后显示新的剩余次数
               SubmitByTimesCardType();
               this.Close();
 
           }
+        }
+        private SiteManager siteManager = new SiteManager();
+
+        private void GetSite(bool countPeople)
+        {
+            List<SiteModel> site_list =
+                siteManager.GetModelList(" TimeNow='" + CommTools.GetDateFormatStrot(DateTime.Now) + "'");
+            if (site_list.Count == 0)
+            {
+                SiteModel siteModel = new SiteModel();
+                siteModel.ID = siteManager.GetMaxId();
+                siteModel.TimeNow = CommTools.GetDateFormatStrot(DateTime.Now);
+                siteModel.Peoples = "0";
+                siteManager.Add(siteModel);
+            }
+            else
+            {
+                if (countPeople)
+                {
+                    SiteModel siteModel = new SiteModel();
+                    siteModel = site_list[0];
+                    siteModel.Peoples = (Convert.ToInt32(siteModel.Peoples) + Convert.ToInt32(txt_CunsumeCount.Text.Trim())).ToString();
+                    siteManager.Update(siteModel);
+                }
+                else
+                {
+
+                    SiteModel siteModel = new SiteModel();
+                    siteModel = site_list[0];
+                    siteModel.Peoples = (Convert.ToInt32(siteModel.Peoples) - Convert.ToInt32(txt_CunsumeCount.Text.Trim())).ToString();
+                    siteManager.Update(siteModel);
+                }
+
+            }
         }
         private void SubmitByTimesCardType()
         {

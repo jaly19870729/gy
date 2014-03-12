@@ -35,6 +35,7 @@ namespace Gymnasium_APP.CunsumeFrom
         private void CunsumeFrm_Load(object sender, EventArgs e)
         {
             Init();
+            cmb_PayType.SelectedIndex = 0;
         }
 
         private void btn_OK_Click(object sender, EventArgs e)
@@ -154,8 +155,8 @@ namespace Gymnasium_APP.CunsumeFrom
         {
             model.CastId = manager.GetMaxId();
             model.CusNum = txt_CardNumber.Text.Trim();
-            model.MemberId = "";
-            model.CardID = "";
+            model.MemberId = "0";
+            model.CardID = "0";
             model.PriceAmount = Convert.ToDecimal(txt_PayableAmount.Text.Trim());
             model.PaymentAmount = Convert.ToDecimal(txt_PaymentAmount.Text.Trim());
             model.ChangeAmount = Convert.ToDecimal(txt_ChangeAmount.Text.Trim());
@@ -163,6 +164,7 @@ namespace Gymnasium_APP.CunsumeFrom
             model.CusType = this.cmb_CunsumeType.Text;
             model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             model.Peoples = txt_CunsumeCount.Text.Trim();
+            model.TypeName = cmb_PayType.Text.Trim();
             model.Prices = txt_PriceAmount.Text.Trim();
             model.Des = "单次消费";
             model.AddUserName = MainForm.userName;
@@ -238,6 +240,28 @@ namespace Gymnasium_APP.CunsumeFrom
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            List<SellCastModel> sellCastModelsList = manager.GetModelList(" Des='单次消费'");
+            if (sellCastModelsList.Count == 0)
+            {
+                txt_CardNumber.Text = "000001";
+            }
+            else
+            {
+                int d = Convert.ToInt32(sellCastModelsList[sellCastModelsList.Count-1].CusNum) + 1;
+                string a = "";
+                if (d.ToString().Length < 6)
+                {
+                    for (int i = 0; i < 6-d.ToString().Length; i++)
+                    {
+                        a += "0";
+                    }
+                }
+                txt_CardNumber.Text = a+d.ToString();
+            }
         }
 
         

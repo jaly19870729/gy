@@ -41,7 +41,6 @@ namespace Gymnasium_APP
         #endregion
 
         private MemberInfoManager memberInfoManager=new MemberInfoManager();
-
         public static string userName = string.Empty;
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -56,12 +55,15 @@ namespace Gymnasium_APP
             uC_Page_Statistics_BackCard.OnPageChanged += new EventHandler(uC_Page_Statistics_BackCard_OnPageChanged);
             uC_Page_Statistics_LossCard.OnPageChanged += new EventHandler(uC_Page_Statistics_LossCard_OnPageChanged);
             uC_Page_SystemCunsumeType.OnPageChanged+=new EventHandler(uC_Page_SystemCunsumeType_OnPageChanged);
+            uC_Page_Mian_Site.OnPageChanged += new EventHandler(uC_Page_Mian_Site_OnPageChanged);
             tabc_SystemManager.Visible = false;
             tabc_Mian.Visible = true;
             tbc_Statistics.Visible = false;
             userName = lbl_login_name.Text.Trim().Split(':')[1];
             btn_MainPage_Click(sender, e);
         }
+
+     
         private void notifyIcon1_MouseDown(object sender, MouseEventArgs e)
         {
             this.Visible = true;
@@ -143,7 +145,34 @@ namespace Gymnasium_APP
             {
                 GetMain_MemberList();
             }
+            if (tabc_Mian.SelectedIndex == 2)
+            {
+                GetSite();
+                GetMian_SiteList();
+            }
         }
+
+        private SiteManager siteManager = new SiteManager();
+        
+        private void GetSite()
+        {
+            List<SiteModel> site_list =
+                siteManager.GetModelList(" TimeNow='" + CommTools.GetDateFormatStrot(DateTime.Now) + "'");
+            if (site_list.Count == 0)
+            {
+                SiteModel siteModel = new SiteModel();
+                siteModel.ID = siteManager.GetMaxId();
+                siteModel.TimeNow = CommTools.GetDateFormatStrot(DateTime.Now);
+                siteModel.Peoples = "0";
+                siteManager.Add(siteModel);
+            }
+            else
+            {
+                lbl_Site_PeoPles.Text = "场内人数:" + site_list[0].Peoples;
+
+            }
+        }
+
         #region 会员刷卡信息
         private void btn_MainPage_Click(object sender, EventArgs e)
         { 
@@ -1449,6 +1478,84 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
         {
 
         }
+        private string Mian_Site_TiaoJian = " 1=1";
+        private void GetMian_SiteList()
+        {
+            this.dgv_Mian_Site_Manager.Rows.Clear();
+            uC_Page_Mian_Site.tp.DataTotalCount = swipManager.GetRecordCount(Mian_Site_TiaoJian);
+            DataSet ds_List = swipManager.GetList(uC_Page_Mian_Site.tp.Count,
+                                                                 uC_Page_Mian_Site.tp.CurrentPage, Mian_Site_TiaoJian);
+            if (ds_List != null && ds_List.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_List.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_List.Tables[0].Rows[i] != null)
+                        this.dgv_Mian_Site_Manager.Rows.Add();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_Num"].Value =
+                        (uC_Page_Mian_Site.tp.CurrentPage * uC_Page_Mian_Site.tp.Count) - uC_Page_Mian_Site.tp.Count + i +
+                        1; //序号
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_ID"].Value =
+                        ds_List.Tables[0].Rows[i]["ID"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_CardID"].Value =
+                        ds_List.Tables[0].Rows[i]["CardID"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_Name"].Value =
+                        ds_List.Tables[0].Rows[i]["Name"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_CardType"].Value =
+                     ds_List.Tables[0].Rows[i]["CardType"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_Desc"].Value =
+          ds_List.Tables[0].Rows[i]["Des"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_Type"].Value =
+    ds_List.Tables[0].Rows[i]["SwipingType"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_PeoPles"].Value =
+      ds_List.Tables[0].Rows[i]["SwipingPeoPle"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_AddTime"].Value =
+         ds_List.Tables[0].Rows[i]["AddTime"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_AddUserName"].Value =
+       ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
+                    this.dgv_Mian_Site_Manager.Rows[i].Cells["dgv_Mian_Site_CusNum"].Value =
+ds_List.Tables[0].Rows[i]["CusNum"].ToString();
+                }
+
+            }
+            uC_Page_Mian_Site.lbl_Count.Text = uC_Page_Mian_Site.tp.DataTotalCount.ToString();
+            uC_Page_Mian_Site.lbl_Page.Text = uC_Page_Mian_Site.tp.CurrentPage + "/" +
+                                              uC_Page_Mian_Site.tp.PageTotalCount + "页";
+        }
+        void uC_Page_Mian_Site_OnPageChanged(object sender, EventArgs e)
+        {
+            GetMian_SiteList();
+        }
+        private void btn_Select_Click(object sender, EventArgs e)
+        {
+            if (dtp_Mian_Site_Start.Value > dtp_Mian_Site_Stop.Value)
+            {
+                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dt_SystemLogManager_BeginTime.Value = StartTime;
+                return;
+            }
+            if (dtp_Mian_Site_Stop.Value < dtp_Mian_Site_Start.Value)
+            {
+                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //dtStopTime.Value = StopTime;
+                return;
+            }
+            Mian_Site_TiaoJian = " 1=1";
+
+            if (txt_Mian_Site_CardID.Text.Trim() != "")
+            {
+
+                Mian_Site_TiaoJian += " and (CardID  like '%" + txt_Mian_Site_CardID.Text.Trim() + "%')";
+
+            }
+
+            Mian_Site_TiaoJian += " and (AddTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Mian_Site_Start.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  AddTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Mian_Site_Stop.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
+            uC_Page_Mian_Site.tp.CurrentPage = 1;
+            GetMian_SiteList();
+        }
+
+       
+
+   
 
         
      
