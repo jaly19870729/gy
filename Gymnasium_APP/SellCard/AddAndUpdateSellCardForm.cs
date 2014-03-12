@@ -550,6 +550,13 @@ namespace Gymnasium_APP.SellCard
             }
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            VideoForm videoForm = new VideoForm();
+            videoForm.Owner = this;
+            videoForm.ShowDialog();
+        }
+
        
 
        
