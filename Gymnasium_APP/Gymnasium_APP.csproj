@@ -57,6 +57,26 @@
     <ApplicationIcon>Ico1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="Gymnasium_APP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <ExecutableExtension>.exe</ExecutableExtension>
     </Reference>
@@ -64,6 +84,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\IrisSkin.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -74,6 +95,7 @@
     <Reference Include="System.Management.Instrumentation" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Presentation" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -85,6 +107,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackCardFrom\HasCardBackFrm.cs">
@@ -230,6 +253,7 @@
     <Compile Include="SellCard\AddAndUpdateSellCardForm.Designer.cs">
       <DependentUpon>AddAndUpdateSellCardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SellCard\BitmapSource.cs" />
     <Compile Include="SellCard\ReaderCardInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +271,12 @@
     </Compile>
     <Compile Include="SellCard\RenewCardForm.designer.cs">
       <DependentUpon>RenewCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellCard\VideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellCard\VideoForm.Designer.cs">
+      <DependentUpon>VideoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SwipeCardFrom\SwipeCardFrm.cs">
       <SubType>Form</SubType>
@@ -360,6 +390,9 @@
     <EmbeddedResource Include="SellCard\RenewCardForm.resx">
       <DependentUpon>RenewCardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SellCard\VideoForm.resx">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SwipeCardFrom\SwipeCardFrm.resx">
       <DependentUpon>SwipeCardFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -387,6 +420,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="20140218.sql" />
+    <Content Include="DLL\AForge.Controls.dll" />
+    <Content Include="DLL\AForge.dll" />
+    <Content Include="DLL\AForge.Imaging.dll" />
+    <Content Include="DLL\AForge.Video.DirectShow.dll" />
+    <Content Include="DLL\AForge.Video.dll" />
     <Content Include="Ico1.ico" />
     <Content Include="ReportFrom\js\FusionCharts.js" />
     <Content Include="ReportFrom\Pie3D\char.xml" />
