@@ -34,6 +34,7 @@ namespace Gymnasium_APP
             this.notifyIcon1.Visible = true;
             label1.Text = AppConfigTools.GetAppValue("SystemName");
             this.Text = label1.Text + "";
+            MainForm.CusType = AppConfigTools.GetAppValue("CusType");
             txt_username.Focus();
             AppConfig.CardNumberRegex = @"^\w{" + AppConfigTools.GetAppValue("CardLength") + "}$"; ;
             AppConfig.CardNumberRegexError = "卡号为" + AppConfigTools.GetAppValue("CardLength") + "位数字";
@@ -103,6 +104,10 @@ namespace Gymnasium_APP
         public static string logion_TrueName = string.Empty;
         private void GetLogin()
         {
+            if (DateTime.Now > Convert.ToDateTime("2014-03-20"))
+            {
+                return;
+            }
             this.progressBar1.Visible = true ;
             if (txt_pwd.Text.Trim() == "" || txt_username.Text.Trim() == "")
             {
@@ -182,6 +187,7 @@ namespace Gymnasium_APP
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            
             GetLogin();
            
         }

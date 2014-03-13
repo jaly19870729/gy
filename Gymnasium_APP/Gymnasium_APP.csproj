@@ -260,6 +260,12 @@
     <Compile Include="SellCard\ReaderCardInfo.designer.cs">
       <DependentUpon>ReaderCardInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="SellCard\RevokeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellCard\RevokeForm.Designer.cs">
+      <DependentUpon>RevokeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SellCard\ShowCardInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -383,6 +389,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SellCard\ReaderCardInfo.resx">
       <DependentUpon>ReaderCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellCard\RevokeForm.resx">
+      <DependentUpon>RevokeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SellCard\ShowCardInfo.resx">
       <DependentUpon>ShowCardInfo.cs</DependentUpon>

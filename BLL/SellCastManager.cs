@@ -71,8 +71,7 @@ namespace Gymnasium_APP.BLL
 			return dal.GetModel(CastId);
 		}
 
-		
-
+	
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>

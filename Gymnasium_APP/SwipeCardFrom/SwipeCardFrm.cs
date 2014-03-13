@@ -212,7 +212,7 @@ namespace Gymnasium_APP.SwipeCardFrom
         }
         private void SubmitByTimesCardType()
         {
-            if (String.IsNullOrEmpty(this.cmb_CardType.Text))
+            if (!String.IsNullOrEmpty(this.cmb_CardType.Text))
             {
                 List<CardTypeInfoModel> cardTypeInfoModels =cardTypeInfoManager.GetModelList("CardTypeName='" + this.cmb_CardType.Text + "'");
                 if (cardTypeInfoModels!= null && cardTypeInfoModels.Count > 0)
@@ -221,6 +221,7 @@ namespace Gymnasium_APP.SwipeCardFrom
                     {
                         memberInfoModel.Count = Convert.ToInt32(memberInfoModel.Count) > 0
                             ? Convert.ToString(Convert.ToInt32(memberInfoModel.Count) - 1):"";
+                        memberInfoManager.Update(memberInfoModel);
 
                     }
                 }

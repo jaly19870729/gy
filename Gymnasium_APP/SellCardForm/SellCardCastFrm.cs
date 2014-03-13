@@ -92,6 +92,8 @@ namespace Gymnasium_APP.SellCardForm
             model.TypeName =cmb_PayType.Text.Trim();
             model.Des = "售卡";
             model.AddUserName = MainForm.userName;
+            model.CusType = MainForm.CusType;
+            model.CusState = 0;
             int isAdd = manager.Add(model);
             MessageBox.Show("会员：" + addMemberModel.Name + " 消费" + (isAdd > 0 ? "成功！" : "失败！"));
             CommTools.AddSystemLog("添加", "会员：" + addMemberModel.Name + " 消费信息 " + addMemberModel.CardType + "添加" + (isAdd > 0 ? "成功！" : "失败！"));

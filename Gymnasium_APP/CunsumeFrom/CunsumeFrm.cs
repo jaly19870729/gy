@@ -163,11 +163,13 @@ namespace Gymnasium_APP.CunsumeFrom
             model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             model.CusType = this.cmb_CunsumeType.Text;
             model.CreateTime = CommTools.GetDateFormatStrot2(DateTime.Now);
-            model.Peoples = txt_CunsumeCount.Text.Trim();
+            model.Peoples = txt_PeoPles.Text.Trim();
+            model.CusCount = txt_CunsumeCount.Text.Trim();
             model.TypeName = cmb_PayType.Text.Trim();
             model.Prices = txt_PriceAmount.Text.Trim();
             model.Des = "单次消费";
             model.AddUserName = MainForm.userName;
+            model.CusState = 0;
             int isAdd = manager.Add(model);
             MessageBox.Show("单号：" +  txt_CardNumber.Text.Trim() + " 消费" + (isAdd > 0 ? "成功！" : "失败！"));
             CommTools.AddSystemLog("添加", "单次消费：" + txt_CardNumber.Text.Trim() + " 消费信息 " + this.cmb_CunsumeType.Text + "添加" + (isAdd > 0 ? "成功！" : "失败！"));

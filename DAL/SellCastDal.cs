@@ -3,7 +3,6 @@ using System.Data;
 using System.Text;
 using System.Data.SqlClient;
 using DAL;
-
 namespace Gymnasium_APP.DAL
 {
 	/// <summary>
@@ -47,9 +46,9 @@ namespace Gymnasium_APP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into SellCast(");
-			strSql.Append("MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum)");
+			strSql.Append("MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum,CusCount,CusState)");
 			strSql.Append(" values (");
-			strSql.Append("@MemberId,@PriceAmount,@PaymentAmount,@ChangeAmount,@CreateTime,@AddUserName,@AddTypeName,@CardID,@TypeName,@Peoples,@Des,@Prices,@CusType,@CusNum)");
+			strSql.Append("@MemberId,@PriceAmount,@PaymentAmount,@ChangeAmount,@CreateTime,@AddUserName,@AddTypeName,@CardID,@TypeName,@Peoples,@Des,@Prices,@CusType,@CusNum,@CusCount,@CusState)");
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@MemberId", SqlDbType.VarChar,50),
@@ -65,7 +64,9 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@Des", SqlDbType.VarChar,500),
 					new SqlParameter("@Prices", SqlDbType.VarChar,50),
 					new SqlParameter("@CusType", SqlDbType.VarChar,50),
-					new SqlParameter("@CusNum", SqlDbType.VarChar,50)};
+					new SqlParameter("@CusNum", SqlDbType.VarChar,50),
+					new SqlParameter("@CusCount", SqlDbType.VarChar,50),
+					new SqlParameter("@CusState", SqlDbType.Int,4)};
 			parameters[0].Value = model.MemberId;
 			parameters[1].Value = model.PriceAmount;
 			parameters[2].Value = model.PaymentAmount;
@@ -80,6 +81,8 @@ namespace Gymnasium_APP.DAL
 			parameters[11].Value = model.Prices;
 			parameters[12].Value = model.CusType;
 			parameters[13].Value = model.CusNum;
+			parameters[14].Value = model.CusCount;
+			parameters[15].Value = model.CusState;
 
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
@@ -111,7 +114,9 @@ namespace Gymnasium_APP.DAL
 			strSql.Append("Des=@Des,");
 			strSql.Append("Prices=@Prices,");
 			strSql.Append("CusType=@CusType,");
-			strSql.Append("CusNum=@CusNum");
+			strSql.Append("CusNum=@CusNum,");
+			strSql.Append("CusCount=@CusCount,");
+			strSql.Append("CusState=@CusState");
 			strSql.Append(" where CastId=@CastId");
 			SqlParameter[] parameters = {
 					new SqlParameter("@MemberId", SqlDbType.VarChar,50),
@@ -128,6 +133,8 @@ namespace Gymnasium_APP.DAL
 					new SqlParameter("@Prices", SqlDbType.VarChar,50),
 					new SqlParameter("@CusType", SqlDbType.VarChar,50),
 					new SqlParameter("@CusNum", SqlDbType.VarChar,50),
+					new SqlParameter("@CusCount", SqlDbType.VarChar,50),
+					new SqlParameter("@CusState", SqlDbType.Int,4),
 					new SqlParameter("@CastId", SqlDbType.Int,4)};
 			parameters[0].Value = model.MemberId;
 			parameters[1].Value = model.PriceAmount;
@@ -143,7 +150,9 @@ namespace Gymnasium_APP.DAL
 			parameters[11].Value = model.Prices;
 			parameters[12].Value = model.CusType;
 			parameters[13].Value = model.CusNum;
-			parameters[14].Value = model.CastId;
+			parameters[14].Value = model.CusCount;
+			parameters[15].Value = model.CusState;
+			parameters[16].Value = model.CastId;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -207,7 +216,7 @@ namespace Gymnasium_APP.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum from SellCast ");
+			strSql.Append("select  top 1 CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum,CusCount,CusState from SellCast ");
 			strSql.Append(" where CastId=@CastId");
 			SqlParameter[] parameters = {
 					new SqlParameter("@CastId", SqlDbType.Int,4)
@@ -295,6 +304,14 @@ namespace Gymnasium_APP.DAL
 				{
 					model.CusNum=row["CusNum"].ToString();
 				}
+				if(row["CusCount"]!=null)
+				{
+					model.CusCount=row["CusCount"].ToString();
+				}
+				if(row["CusState"]!=null && row["CusState"].ToString()!="")
+				{
+					model.CusState=int.Parse(row["CusState"].ToString());
+				}
 			}
 			return model;
 		}
@@ -305,7 +322,7 @@ namespace Gymnasium_APP.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum ");
+			strSql.Append("select CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum,CusCount,CusState ");
 			strSql.Append(" FROM SellCast ");
 			if(strWhere.Trim()!="")
 			{
@@ -325,7 +342,7 @@ namespace Gymnasium_APP.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum ");
+			strSql.Append(" CastId,MemberId,PriceAmount,PaymentAmount,ChangeAmount,CreateTime,AddUserName,AddTypeName,CardID,TypeName,Peoples,Des,Prices,CusType,CusNum,CusCount,CusState ");
 			strSql.Append(" FROM SellCast ");
 			if(strWhere.Trim()!="")
 			{

@@ -30,6 +30,7 @@ namespace Gymnasium_APP
         public MainForm()
         {
             InitializeComponent();
+            
             this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
             UpdateStyles();
             notifyIcon1.Visible = true;
@@ -42,6 +43,7 @@ namespace Gymnasium_APP
 
         private MemberInfoManager memberInfoManager=new MemberInfoManager();
         public static string userName = string.Empty;
+        public static string CusType = string.Empty;
         private void MainForm_Load(object sender, EventArgs e)
         {
             uC_Page_SystemLog.OnPageChanged += new EventHandler(uC_Page_SystemLog_OnPageChanged);
@@ -61,6 +63,7 @@ namespace Gymnasium_APP
             tbc_Statistics.Visible = false;
             userName = lbl_login_name.Text.Trim().Split(':')[1];
             btn_MainPage_Click(sender, e);
+           
         }
 
      
@@ -231,7 +234,7 @@ namespace Gymnasium_APP
             GetMainCellCastList();
         }
 
-        private string Main_SellCast_TiaoJian = " 1=1 and CreateTime like '%" + CommTools.GetDateFormatStrot(DateTime.Now) + "%'";
+        private string Main_SellCast_TiaoJian = " 1=1 and CreateTime like '%" + CommTools.GetDateFormatStrot(DateTime.Now) + "%' and CusType='"+CusType+"'";
         private SellCastManager sellCastManager = new SellCastManager();
         private void GetMainCellCastList()
         {
@@ -275,7 +278,9 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
                     {
                         this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_Name"].Value = member_model.Name;
                     }
-
+                    this.dgv_Main_SellCast_Manager.Rows[i].Cells["dgv_Main_SellCast_CusCount"].Value =
+ds_List.Tables[0].Rows[i]["CusCount"].ToString();
+                    
 
                 }
 
@@ -869,6 +874,7 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
             }
         }
         #region 统计
+     
         private void tbc_Statistics_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tbc_Statistics.SelectedIndex == 0)
@@ -880,6 +886,20 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
                 dtp_Statistics_SellCast_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
                 cmb_Statistics_SellCast_Type.SelectedIndex = 0;
                 uC_Page_Statistics_SellCast.tp.CurrentPage = 1;
+                List<CunsumeTypeModel> cardTypeInfoList = cunsumeTypeManager.GetModelList(" 1=1");
+                if (cardTypeInfoList != null)
+                {
+                    CunsumeTypeModel model = new CunsumeTypeModel();
+                    model.CusType = "全部";
+                    model.Id = 0;
+                    cardTypeInfoList.Add(model);
+
+                    cmb_CusType.DataSource = cardTypeInfoList;
+                    cmb_CusType.DisplayMember = "CusType";
+                    cmb_CusType.ValueMember = "Id";
+                    cmb_CusType.SelectedIndex = 0;
+                    cmb_State.SelectedIndex = 0;
+                }
                 GetStatisticsCellCastList();
             }
             if (tbc_Statistics.SelectedIndex == 2)
@@ -967,7 +987,14 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
                 Statistics_SellCast_TiaoJian += " and (CardID  like '%" + txt_Statistics_SellCast_CardID.Text.Trim() + "%')";
 
             }
-
+            if (cmb_State.Text.Trim() != "" && cmb_State.Text.Trim() != "全部")
+            {
+                Statistics_SellCast_TiaoJian += " and CusState=" + (cmb_State.Text.Trim().Equals("正常") ? 0 : 1) + "";
+            }
+            if (cmb_CusType.Text.Trim() != "" && cmb_CusType.Text.Trim() != "全部")
+            {
+                Statistics_SellCast_TiaoJian += " and CusType='" + cmb_CusType.Text.Trim() + "'";
+            }
             if (cmb_Statistics_SellCast_Type.Text.Trim() != "" && cmb_Statistics_SellCast_Type.Text.Trim() != "全部")
             {
                 Statistics_SellCast_TiaoJian += " and TypeName='" + cmb_Statistics_SellCast_Type.Text.Trim() + "'";
@@ -977,8 +1004,8 @@ ds_List.Tables[0].Rows[i]["CardID"].ToString();
             GetStatisticsCellCastList();
 
         }
-        private string Statistics_SellCast_TiaoJian = " 1=1 ";
-        private void GetStatisticsCellCastList()
+        private string Statistics_SellCast_TiaoJian = " 1=1";
+        public void GetStatisticsCellCastList()
         {
             this.dgv_Statistics_SellCast_Manager.Rows.Clear();
             uC_Page_Statistics_SellCast.tp.DataTotalCount = sellCastManager.GetRecordCount(Statistics_SellCast_TiaoJian);
@@ -1019,6 +1046,13 @@ ds_List.Tables[0].Rows[i]["CreateTime"].ToString();
 ds_List.Tables[0].Rows[i]["AddUserName"].ToString();
                     this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CusNum"].Value =
 ds_List.Tables[0].Rows[i]["CusNum"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CusCount"].Value =
+ds_List.Tables[0].Rows[i]["CusCount"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_CusType"].Value =
+ds_List.Tables[0].Rows[i]["CusType"].ToString();
+                    this.dgv_Statistics_SellCast_Manager.Rows[i].Cells["dgv_Statistics_SellCast_State"].Value =
+                        ds_List.Tables[0].Rows[i]["CusState"].ToString().Equals("0")?"正常":"撤单";
+                    
                 }
 
             }
@@ -1474,6 +1508,7 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
             reportform.Show();
         }
 
+        #region 场地
         private void button6_Click(object sender, EventArgs e)
         {
 
@@ -1553,12 +1588,30 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
             GetMian_SiteList();
         }
 
-       
+        #endregion
 
-   
+        #region 预订
+        private void btn_Reservation_Click(object sender, EventArgs e)
+        {
 
-        
-     
+        }
+        #endregion
+
+        #region 消费撤单
+        private void 撤单ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string str = this.dgv_Statistics_SellCast_Manager.SelectedCells[1].Value.ToString();
+            RevokeForm rf = new RevokeForm(str);
+            rf.Owner = this;
+            rf.ShowDialog();
+        }
+        #endregion
+
+
+
+
+
+
 
 
     }

@@ -34,29 +34,31 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.cmb_PayType = new System.Windows.Forms.ComboBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
             this.txt_CunsumeCount = new System.Windows.Forms.TextBox();
             this.cmb_CunsumeType = new System.Windows.Forms.ComboBox();
-            this.txt_ChangeAmount = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.dtp_AddTime = new System.Windows.Forms.DateTimePicker();
             this.txt_PaymentAmount = new System.Windows.Forms.TextBox();
-            this.txt_PayableAmount = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txt_PriceAmount = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txt_CardNumber = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_ChangeAmount = new System.Windows.Forms.TextBox();
+            this.txt_PayableAmount = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_PriceAmount = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_Abolish = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdUpload = new System.Windows.Forms.OpenFileDialog();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.cmb_PayType = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_PeoPles = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -102,14 +104,16 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel2.Controls.Add(this.txt_PeoPles, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.cmb_PayType, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.linkLabel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 2, 1);
@@ -122,12 +126,12 @@
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.txt_CardNumber, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.txt_ChangeAmount, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.txt_PayableAmount, 3, 3);
             this.tableLayoutPanel2.Controls.Add(this.label18, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label17, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.txt_PriceAmount, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txt_ChangeAmount, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 2, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -138,6 +142,50 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(680, 204);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // cmb_PayType
+            // 
+            this.cmb_PayType.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmb_PayType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_PayType.Font = new System.Drawing.Font("宋体", 14F);
+            this.cmb_PayType.FormattingEnabled = true;
+            this.cmb_PayType.Items.AddRange(new object[] {
+            "现金消费",
+            "刷卡消费",
+            "转账消费",
+            "支票消费",
+            "其他消费"});
+            this.cmb_PayType.Location = new System.Drawing.Point(445, 46);
+            this.cmb_PayType.Name = "cmb_PayType";
+            this.cmb_PayType.Size = new System.Drawing.Size(221, 27);
+            this.cmb_PayType.TabIndex = 39;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("宋体", 14F);
+            this.linkLabel1.Location = new System.Drawing.Point(14, 10);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(85, 19);
+            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "消费序号";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 14F);
+            this.label5.Location = new System.Drawing.Point(343, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 40);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "消费类型";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_CunsumeCount
             // 
@@ -163,29 +211,6 @@
             this.cmb_CunsumeType.TabIndex = 39;
             this.cmb_CunsumeType.SelectedIndexChanged += new System.EventHandler(this.cmb_CunsumeType_SelectedIndexChanged);
             // 
-            // txt_ChangeAmount
-            // 
-            this.txt_ChangeAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_ChangeAmount.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_ChangeAmount.Location = new System.Drawing.Point(105, 167);
-            this.txt_ChangeAmount.Name = "txt_ChangeAmount";
-            this.txt_ChangeAmount.Size = new System.Drawing.Size(221, 29);
-            this.txt_ChangeAmount.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 14F);
-            this.label3.Location = new System.Drawing.Point(3, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 44);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "找零金额";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // dtp_AddTime
             // 
             this.dtp_AddTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -208,6 +233,95 @@
             this.txt_PaymentAmount.TabIndex = 34;
             this.txt_PaymentAmount.TextChanged += new System.EventHandler(this.txt_PaymentAmount_TextChanged);
             // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("宋体", 14F);
+            this.label16.Location = new System.Drawing.Point(343, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(96, 40);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "消费类别";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 14F);
+            this.label8.Location = new System.Drawing.Point(3, 120);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 40);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "交费金额";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 14F);
+            this.label6.Location = new System.Drawing.Point(3, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 40);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "项目数";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 14F);
+            this.label4.Location = new System.Drawing.Point(3, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 40);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "办理日期";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txt_CardNumber
+            // 
+            this.txt_CardNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_CardNumber.Font = new System.Drawing.Font("宋体", 14F);
+            this.txt_CardNumber.Location = new System.Drawing.Point(105, 5);
+            this.txt_CardNumber.Name = "txt_CardNumber";
+            this.txt_CardNumber.Size = new System.Drawing.Size(221, 29);
+            this.txt_CardNumber.TabIndex = 1;
+            this.txt_CardNumber.TextChanged += new System.EventHandler(this.txt_CardNumber_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 14F);
+            this.label3.Location = new System.Drawing.Point(343, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 44);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "找零金额";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txt_ChangeAmount
+            // 
+            this.txt_ChangeAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_ChangeAmount.Font = new System.Drawing.Font("宋体", 14F);
+            this.txt_ChangeAmount.Location = new System.Drawing.Point(445, 167);
+            this.txt_ChangeAmount.Name = "txt_ChangeAmount";
+            this.txt_ChangeAmount.Size = new System.Drawing.Size(221, 29);
+            this.txt_ChangeAmount.TabIndex = 38;
+            // 
             // txt_PayableAmount
             // 
             this.txt_PayableAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -220,9 +334,9 @@
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 14F);
             this.label18.Location = new System.Drawing.Point(343, 120);
@@ -231,6 +345,20 @@
             this.label18.TabIndex = 31;
             this.label18.Text = "应付金额";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("宋体", 14F);
+            this.label17.Location = new System.Drawing.Point(343, 80);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(96, 40);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "单价金额";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_PriceAmount
             // 
@@ -241,81 +369,11 @@
             this.txt_PriceAmount.Size = new System.Drawing.Size(221, 29);
             this.txt_PriceAmount.TabIndex = 30;
             // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("宋体", 14F);
-            this.label17.Location = new System.Drawing.Point(343, 80);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 40);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "单价金额";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("宋体", 14F);
-            this.label16.Location = new System.Drawing.Point(343, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 40);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "消费类别";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 14F);
-            this.label8.Location = new System.Drawing.Point(3, 120);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 40);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "交费金额";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 14F);
-            this.label6.Location = new System.Drawing.Point(3, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 40);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "消费人数";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 14F);
-            this.label4.Location = new System.Drawing.Point(3, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 40);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "办理日期";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 14F);
             this.label2.Location = new System.Drawing.Point(108, -21);
@@ -325,16 +383,6 @@
             this.label2.Text = "消费序号";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txt_CardNumber
-            // 
-            this.txt_CardNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_CardNumber.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_CardNumber.Location = new System.Drawing.Point(105, 5);
-            this.txt_CardNumber.Name = "txt_CardNumber";
-            this.txt_CardNumber.Size = new System.Drawing.Size(221, 29);
-            this.txt_CardNumber.TabIndex = 1;
-            this.txt_CardNumber.TextChanged += new System.EventHandler(this.txt_CardNumber_TextChanged);
             // 
             // btn_Abolish
             // 
@@ -364,49 +412,28 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // linkLabel1
+            // label7
             // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("宋体", 14F);
-            this.linkLabel1.Location = new System.Drawing.Point(14, 10);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(85, 19);
-            this.linkLabel1.TabIndex = 17;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "消费序号";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("宋体", 14F);
+            this.label7.Location = new System.Drawing.Point(3, 160);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 44);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "人数";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // cmb_PayType
+            // txt_PeoPles
             // 
-            this.cmb_PayType.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cmb_PayType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_PayType.Font = new System.Drawing.Font("宋体", 14F);
-            this.cmb_PayType.FormattingEnabled = true;
-            this.cmb_PayType.Items.AddRange(new object[] {
-            "现金消费",
-            "刷卡消费",
-            "转账消费",
-            "支票消费",
-            "其他消费"});
-            this.cmb_PayType.Location = new System.Drawing.Point(445, 46);
-            this.cmb_PayType.Name = "cmb_PayType";
-            this.cmb_PayType.Size = new System.Drawing.Size(221, 27);
-            this.cmb_PayType.TabIndex = 39;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 14F);
-            this.label5.Location = new System.Drawing.Point(343, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 40);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "消费类型";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txt_PeoPles.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_PeoPles.Font = new System.Drawing.Font("宋体", 14F);
+            this.txt_PeoPles.Location = new System.Drawing.Point(105, 167);
+            this.txt_PeoPles.Name = "txt_PeoPles";
+            this.txt_PeoPles.Size = new System.Drawing.Size(221, 29);
+            this.txt_PeoPles.TabIndex = 42;
             // 
             // CunsumeFrm
             // 
@@ -466,5 +493,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.ComboBox cmb_PayType;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_PeoPles;
     }
 }

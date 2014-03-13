@@ -60,6 +60,7 @@
             this.cmb_page.TabIndex = 183;
             this.cmb_page.Text = "15";
             this.cmb_page.SelectedIndexChanged += new System.EventHandler(this.cmb_page_SelectedIndexChanged);
+            this.cmb_page.TextChanged += new System.EventHandler(this.cmb_page_TextChanged);
             // 
             // lbl_My
             // 

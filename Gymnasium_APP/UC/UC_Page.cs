@@ -64,5 +64,12 @@ namespace Gymnasium_APP.UC
             tp.CurrentPage = 1;
             HuiDiao();
         }
+
+        private void cmb_page_TextChanged(object sender, EventArgs e)
+        {
+            tp.Count = Convert.ToInt32(cmb_page.Text);
+            tp.CurrentPage = 1;
+            HuiDiao();
+        }
     }
 }
