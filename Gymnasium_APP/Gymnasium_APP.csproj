@@ -229,6 +229,12 @@
     <Compile Include="ReportFrom\ReportsFrom.Designer.cs">
       <DependentUpon>ReportsFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReservationFrom\ReaservationCustForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationFrom\ReaservationCustForm.Designer.cs">
+      <DependentUpon>ReaservationCustForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReservationFrom\ReservationMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,6 +386,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportFrom\ReportsFrom.resx">
       <DependentUpon>ReportsFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationFrom\ReaservationCustForm.resx">
+      <DependentUpon>ReaservationCustForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReservationFrom\ReservationMainForm.resx">
       <DependentUpon>ReservationMainForm.cs</DependentUpon>

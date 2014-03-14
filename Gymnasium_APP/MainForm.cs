@@ -21,6 +21,7 @@ using Gymnasium_APP.BackCardFrom;
 using Gymnasium_APP.CunsumeFrom;
 using Gymnasium_APP.SwipeCardFrom;
 using Gymnasium_APP.ReportFrom;
+using Gymnasium_APP.ReservationFrom;
 
 namespace Gymnasium_APP
 {
@@ -1593,7 +1594,8 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
         #region 预订
         private void btn_Reservation_Click(object sender, EventArgs e)
         {
-
+            ReservationMainForm rmf = new ReservationMainForm();
+            rmf.ShowDialog();
         }
         #endregion
 
