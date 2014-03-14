@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Gymnasium_APP.ReportFrom;
+using Gymnasium_APP.ReservationFrom;
 
 namespace Gymnasium_APP
 {
@@ -16,7 +17,7 @@ namespace Gymnasium_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new ReservationMainForm());
         }
     }
 }

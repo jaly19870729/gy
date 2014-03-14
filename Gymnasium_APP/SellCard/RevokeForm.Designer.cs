@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RevokeForm));
             this.btn_OK = new System.Windows.Forms.Button();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             this.ClientSize = new System.Drawing.Size(281, 98);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.btn_OK);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(297, 136);
             this.MinimizeBox = false;
