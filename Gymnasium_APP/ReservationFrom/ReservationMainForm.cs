@@ -47,12 +47,15 @@ namespace Gymnasium_APP.ReservationFrom
             }
             //this.dataGridView1.Rows[0].Selected = false;
         }
-        private int beforRowIndex = -1;
+        private int beforRowIndex = -2;
         private Dictionary<string, Dictionary<string, string>> dic_collesIndex = new Dictionary<string, Dictionary<string, string>>();
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
-            if (beforRowIndex == -1 || beforRowIndex == e.RowIndex)
+            if (e.RowIndex == -1||e.ColumnIndex==0)
+            {
+                return;
+            }
+            if (beforRowIndex == -2 || beforRowIndex == e.RowIndex)
             {
                 dataGridView1.DefaultCellStyle.SelectionBackColor = Color.BurlyWood;
                 if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor == Color.BurlyWood)

@@ -446,7 +446,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="20140218.sql" />
     <Content Include="DLL\AForge.Controls.dll" />
     <Content Include="DLL\AForge.dll" />
     <Content Include="DLL\AForge.Imaging.dll" />
