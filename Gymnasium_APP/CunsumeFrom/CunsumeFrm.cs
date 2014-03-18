@@ -34,6 +34,7 @@ namespace Gymnasium_APP.CunsumeFrom
         #region 窗体事件
         private void CunsumeFrm_Load(object sender, EventArgs e)
         {
+            linkLabel1_LinkClicked(null, null);
             Init();
             cmb_PayType.SelectedIndex = 0;
         }

@@ -15,15 +15,15 @@ namespace Gymnasium_APP.BLL
         }
         public void LoadAppConfig()
         {
-            Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
+            Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
         }
         public static void SetAppValue(string key, string newValue)
         {
             try
             {
-                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
+                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
                 Doc.SelectSingleNode("/configuration/appSettings/add[@key='" + key + "']").Attributes["value"].Value = newValue;
-                Doc.Save(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
+                Doc.Save(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
             }
             catch (Exception)
             {
@@ -34,9 +34,9 @@ namespace Gymnasium_APP.BLL
         {
             try
             {
-                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
-                Doc.Save(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
-                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
+                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
+                Doc.Save(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
+                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
             }
             catch (Exception)
             {
@@ -47,7 +47,7 @@ namespace Gymnasium_APP.BLL
         {
             try
             {
-                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.vshost.exe.config");
+                Doc.Load(AppDomain.CurrentDomain.BaseDirectory.ToString() + "Gymnasium_APP.exe.config");
                 return Doc.SelectSingleNode("/configuration/appSettings/add[@key='" + key + "']").Attributes["value"].Value;
             }
             catch (Exception ex)

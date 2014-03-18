@@ -118,11 +118,10 @@ namespace Gymnasium_APP.SellCard
             List<MemberInfoModel> modelList = manager.GetModelList(" CardID='" + txt_CardNumber.Text + "'");
             if (modelList.Count > 0)
             {
-                if (txt_CardNumber.Text.Trim() == "")
-                {
-                    errorProvider1.SetError(txt_CardNumber, "卡号已经存在，请更换！");
-                    return;
-                }
+
+                errorProvider1.SetError(txt_CardNumber, "卡号已经存在，请更换！");
+                return;
+
             }
             //if (txt_Mail.Text.Trim() == "")
             //{
@@ -292,11 +291,8 @@ namespace Gymnasium_APP.SellCard
             List<MemberInfoModel> modelList = manager.GetModelList(" CardID='" + txt_CardNumber.Text + "' and MemberID <> "+ID+"");
             if (modelList.Count > 0)
             {
-                if (txt_CardNumber.Text.Trim() == "")
-                {
-                    errorProvider1.SetError(txt_CardNumber, "卡号已经存在，请更换！");
-                    return;
-                }
+                errorProvider1.SetError(txt_CardNumber, "卡号已经存在，请更换！");
+                return;
             }
             if (txt_Mail.Text.Trim() == "")
             {

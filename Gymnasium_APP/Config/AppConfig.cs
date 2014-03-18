@@ -49,9 +49,17 @@ namespace Gymnasium_APP.Config
         /// </summary>
         public static String AmountRegexError = "金额输入错误";
         /// <summary>
+        /// 内容信息
+        /// </summary>
+        public static String ContentError = "不能为空";
+        /// <summary>
         /// 数字验证错误信息
         /// </summary>
         public static String IntRegexError = "请输入数字";
+        /// <summary>
+        /// 名称验证
+        /// </summary>
+        public static String NameRegex = @"^[^\s]*$";
         /// <summary>
         /// 姓名验证
         /// </summary>
@@ -68,6 +76,16 @@ namespace Gymnasium_APP.Config
         /// 教师卡验证错误
         /// </summary>
         public static string TeacherRegexError = "教师卡输入错误";
+        /// <summary>
+        /// 验证姓名
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static bool ValidateName(string name)
+        {
+            Regex regex = new Regex(NameRegex);
+            return regex.IsMatch(name);
+        }
         /// <summary>
         /// 验证姓名
         /// </summary>
