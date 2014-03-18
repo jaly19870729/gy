@@ -55,6 +55,7 @@
     <Compile Include="PositionInfoModel.cs" />
     <Compile Include="PositionReservationInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationInfoModel.cs" />
     <Compile Include="RoleModel.cs" />
     <Compile Include="SellCastModel.cs" />
     <Compile Include="SiteModel.cs" />

@@ -256,6 +256,8 @@ namespace Gymnasium_APP.ReservationFrom
 
         private void cmb_CunsumeType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            dic_collesIndex.Clear();
+            beforRowIndex = -2;
             lbl_CusType.Text = cmb_CunsumeType.Text.Trim();
             dataGridView1.Columns.Clear();
             dataGridView1.Rows.Clear();

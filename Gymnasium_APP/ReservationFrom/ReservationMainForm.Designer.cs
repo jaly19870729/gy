@@ -60,6 +60,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -91,7 +92,8 @@
             this.dgv_Position_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Position_Update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txt_RDesc = new System.Windows.Forms.TextBox();
             this.uC_Page_Position = new Gymnasium_APP.UC.UC_Page();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -112,9 +114,9 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.label12, 0, 0);
@@ -141,9 +143,9 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.tabControl1);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(3, 50);
@@ -153,9 +155,9 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -181,9 +183,9 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
@@ -198,9 +200,9 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.tableLayoutPanel4);
             this.panel2.Location = new System.Drawing.Point(756, 3);
@@ -210,12 +212,14 @@
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.txt_RDesc, 1, 9);
+            this.tableLayoutPanel4.Controls.Add(this.label18, 0, 9);
             this.tableLayoutPanel4.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel4.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.lbl_Times, 1, 4);
@@ -232,22 +236,22 @@
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 8);
             this.tableLayoutPanel4.Controls.Add(this.textBox2, 1, 8);
             this.tableLayoutPanel4.Controls.Add(this.txt_CusMoney, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.panel5, 0, 9);
             this.tableLayoutPanel4.Controls.Add(this.label14, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel5, 0, 10);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, -1);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 10;
+            this.tableLayoutPanel4.RowCount = 11;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.16564F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.883367F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(210, 527);
             this.tableLayoutPanel4.TabIndex = 246;
             // 
@@ -257,7 +261,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 14F);
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Location = new System.Drawing.Point(22, 280);
+            this.label7.Location = new System.Drawing.Point(22, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 19);
             this.label7.TabIndex = 250;
@@ -269,7 +273,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 14F);
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Location = new System.Drawing.Point(32, 229);
+            this.label5.Location = new System.Drawing.Point(32, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 19);
             this.label5.TabIndex = 247;
@@ -280,7 +284,7 @@
             this.lbl_Times.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_Times.AutoSize = true;
             this.lbl_Times.Font = new System.Drawing.Font("宋体", 14F);
-            this.lbl_Times.Location = new System.Drawing.Point(85, 229);
+            this.lbl_Times.Location = new System.Drawing.Point(85, 197);
             this.lbl_Times.Name = "lbl_Times";
             this.lbl_Times.Size = new System.Drawing.Size(19, 19);
             this.lbl_Times.TabIndex = 245;
@@ -292,7 +296,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 14F);
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Location = new System.Drawing.Point(32, 178);
+            this.label4.Location = new System.Drawing.Point(32, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 19);
             this.label4.TabIndex = 246;
@@ -303,7 +307,7 @@
             this.lbl_place.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_place.AutoSize = true;
             this.lbl_place.Font = new System.Drawing.Font("宋体", 14F);
-            this.lbl_place.Location = new System.Drawing.Point(85, 178);
+            this.lbl_place.Location = new System.Drawing.Point(85, 155);
             this.lbl_place.Name = "lbl_place";
             this.lbl_place.Size = new System.Drawing.Size(49, 19);
             this.lbl_place.TabIndex = 244;
@@ -315,7 +319,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 14F);
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label6.Location = new System.Drawing.Point(32, 127);
+            this.label6.Location = new System.Drawing.Point(32, 113);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 19);
             this.label6.TabIndex = 248;
@@ -327,7 +331,7 @@
             this.lbl_CusType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_CusType.AutoSize = true;
             this.lbl_CusType.Font = new System.Drawing.Font("宋体", 14F);
-            this.lbl_CusType.Location = new System.Drawing.Point(85, 127);
+            this.lbl_CusType.Location = new System.Drawing.Point(85, 113);
             this.lbl_CusType.Name = "lbl_CusType";
             this.lbl_CusType.Size = new System.Drawing.Size(49, 19);
             this.lbl_CusType.TabIndex = 249;
@@ -340,7 +344,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("宋体", 14F);
             this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.linkLabel1.Location = new System.Drawing.Point(3, 76);
+            this.linkLabel1.Location = new System.Drawing.Point(3, 71);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(76, 19);
             this.linkLabel1.TabIndex = 252;
@@ -352,7 +356,7 @@
             // 
             this.txt_CusNum.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_CusNum.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_CusNum.Location = new System.Drawing.Point(85, 72);
+            this.txt_CusNum.Location = new System.Drawing.Point(85, 68);
             this.txt_CusNum.Name = "txt_CusNum";
             this.txt_CusNum.Size = new System.Drawing.Size(115, 26);
             this.txt_CusNum.TabIndex = 253;
@@ -363,7 +367,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 14F);
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label9.Location = new System.Drawing.Point(32, 331);
+            this.label9.Location = new System.Drawing.Point(32, 281);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 19);
             this.label9.TabIndex = 254;
@@ -374,7 +378,7 @@
             // 
             this.txt_Peoples.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_Peoples.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Peoples.Location = new System.Drawing.Point(85, 327);
+            this.txt_Peoples.Location = new System.Drawing.Point(85, 278);
             this.txt_Peoples.Name = "txt_Peoples";
             this.txt_Peoples.Size = new System.Drawing.Size(115, 26);
             this.txt_Peoples.TabIndex = 255;
@@ -384,7 +388,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("宋体", 14F);
-            this.label10.Location = new System.Drawing.Point(32, 382);
+            this.label10.Location = new System.Drawing.Point(32, 323);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 19);
             this.label10.TabIndex = 256;
@@ -394,7 +398,7 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox1.Location = new System.Drawing.Point(85, 378);
+            this.textBox1.Location = new System.Drawing.Point(85, 320);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 26);
             this.textBox1.TabIndex = 257;
@@ -404,7 +408,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("宋体", 14F);
-            this.label11.Location = new System.Drawing.Point(22, 433);
+            this.label11.Location = new System.Drawing.Point(22, 365);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 19);
             this.label11.TabIndex = 258;
@@ -414,7 +418,7 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox2.Location = new System.Drawing.Point(85, 429);
+            this.textBox2.Location = new System.Drawing.Point(85, 362);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(115, 26);
             this.textBox2.TabIndex = 259;
@@ -423,30 +427,30 @@
             // 
             this.txt_CusMoney.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_CusMoney.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_CusMoney.Location = new System.Drawing.Point(85, 276);
+            this.txt_CusMoney.Location = new System.Drawing.Point(85, 236);
             this.txt_CusMoney.Name = "txt_CusMoney";
             this.txt_CusMoney.Size = new System.Drawing.Size(115, 26);
             this.txt_CusMoney.TabIndex = 251;
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.SetColumnSpan(this.panel5, 2);
             this.panel5.Controls.Add(this.btn_Clear);
             this.panel5.Controls.Add(this.btn_OK);
-            this.panel5.Location = new System.Drawing.Point(3, 471);
+            this.panel5.Location = new System.Drawing.Point(3, 483);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(204, 53);
+            this.panel5.Size = new System.Drawing.Size(204, 41);
             this.panel5.TabIndex = 261;
             // 
             // btn_Clear
             // 
             this.btn_Clear.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Clear.Location = new System.Drawing.Point(103, 9);
+            this.btn_Clear.Location = new System.Drawing.Point(103, 3);
             this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(98, 42);
+            this.btn_Clear.Size = new System.Drawing.Size(98, 35);
             this.btn_Clear.TabIndex = 5;
             this.btn_Clear.Text = "重置";
             this.btn_Clear.UseVisualStyleBackColor = true;
@@ -455,19 +459,32 @@
             // btn_OK
             // 
             this.btn_OK.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_OK.Location = new System.Drawing.Point(4, 8);
+            this.btn_OK.Location = new System.Drawing.Point(4, 3);
             this.btn_OK.Name = "btn_OK";
-            this.btn_OK.Size = new System.Drawing.Size(98, 42);
+            this.btn_OK.Size = new System.Drawing.Size(98, 35);
             this.btn_OK.TabIndex = 4;
             this.btn_OK.Text = "确认";
             this.btn_OK.UseVisualStyleBackColor = true;
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
             // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label14, 2);
+            this.label14.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(3, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(204, 22);
+            this.label14.TabIndex = 242;
+            this.label14.Text = "订单信息";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.tableLayoutPanel3);
             this.panel3.Location = new System.Drawing.Point(3, 3);
@@ -477,9 +494,9 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 1);
@@ -498,9 +515,9 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 20F);
@@ -539,9 +556,9 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.cmb_CunsumeType);
@@ -649,9 +666,9 @@
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.cmb_Position_State);
             this.panel10.Controls.Add(this.label13);
@@ -785,9 +802,9 @@
             // 
             this.dgv_Position_Manager.AllowUserToAddRows = false;
             this.dgv_Position_Manager.AllowUserToResizeRows = false;
-            this.dgv_Position_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Position_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Position_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Position_Manager.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Position_Manager.ColumnHeadersHeight = 25;
@@ -881,18 +898,26 @@
             this.label1.Text = "预订";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
+            // label18
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label14, 2);
-            this.label14.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(3, 19);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(204, 22);
-            this.label14.TabIndex = 242;
-            this.label14.Text = "订单信息";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("宋体", 14F);
+            this.label18.Location = new System.Drawing.Point(32, 428);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 19);
+            this.label18.TabIndex = 262;
+            this.label18.Text = "备注";
+            // 
+            // txt_RDesc
+            // 
+            this.txt_RDesc.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_RDesc.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_RDesc.Location = new System.Drawing.Point(85, 403);
+            this.txt_RDesc.Multiline = true;
+            this.txt_RDesc.Name = "txt_RDesc";
+            this.txt_RDesc.Size = new System.Drawing.Size(115, 70);
+            this.txt_RDesc.TabIndex = 263;
             // 
             // uC_Page_Position
             // 
@@ -1002,5 +1027,7 @@
         private System.Windows.Forms.ComboBox cmb_Position_State;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txt_RDesc;
     }
 }
