@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,6 +42,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_RDesc = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_Times = new System.Windows.Forms.Label();
@@ -53,14 +56,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_Peoples = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Name = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Phone = new System.Windows.Forms.TextBox();
             this.txt_CusMoney = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -92,9 +95,9 @@
             this.dgv_Position_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Position_Update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txt_RDesc = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.uC_Page_Position = new Gymnasium_APP.UC.UC_Page();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -110,6 +113,7 @@
             this.tabPage3.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Position_Manager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -232,9 +236,9 @@
             this.tableLayoutPanel4.Controls.Add(this.label9, 0, 6);
             this.tableLayoutPanel4.Controls.Add(this.txt_Peoples, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.label10, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 1, 7);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Name, 1, 7);
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 8);
-            this.tableLayoutPanel4.Controls.Add(this.textBox2, 1, 8);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Phone, 1, 8);
             this.tableLayoutPanel4.Controls.Add(this.txt_CusMoney, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel5, 0, 10);
@@ -254,6 +258,27 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.883367F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(210, 527);
             this.tableLayoutPanel4.TabIndex = 246;
+            // 
+            // txt_RDesc
+            // 
+            this.txt_RDesc.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_RDesc.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_RDesc.Location = new System.Drawing.Point(85, 403);
+            this.txt_RDesc.Multiline = true;
+            this.txt_RDesc.Name = "txt_RDesc";
+            this.txt_RDesc.Size = new System.Drawing.Size(115, 70);
+            this.txt_RDesc.TabIndex = 263;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("宋体", 14F);
+            this.label18.Location = new System.Drawing.Point(32, 428);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 19);
+            this.label18.TabIndex = 262;
+            this.label18.Text = "备注";
             // 
             // label7
             // 
@@ -388,20 +413,20 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("宋体", 14F);
-            this.label10.Location = new System.Drawing.Point(32, 323);
+            this.label10.Location = new System.Drawing.Point(22, 323);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 19);
+            this.label10.Size = new System.Drawing.Size(57, 19);
             this.label10.TabIndex = 256;
-            this.label10.Text = "姓名";
+            this.label10.Text = "*姓名";
             // 
-            // textBox1
+            // txt_Name
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox1.Location = new System.Drawing.Point(85, 320);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 26);
-            this.textBox1.TabIndex = 257;
+            this.txt_Name.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Name.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Name.Location = new System.Drawing.Point(85, 320);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.Size = new System.Drawing.Size(115, 26);
+            this.txt_Name.TabIndex = 257;
             // 
             // label11
             // 
@@ -414,14 +439,14 @@
             this.label11.TabIndex = 258;
             this.label11.Text = "*电话";
             // 
-            // textBox2
+            // txt_Phone
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox2.Location = new System.Drawing.Point(85, 362);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(115, 26);
-            this.textBox2.TabIndex = 259;
+            this.txt_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Phone.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Phone.Location = new System.Drawing.Point(85, 362);
+            this.txt_Phone.Name = "txt_Phone";
+            this.txt_Phone.Size = new System.Drawing.Size(115, 26);
+            this.txt_Phone.TabIndex = 259;
             // 
             // txt_CusMoney
             // 
@@ -431,6 +456,19 @@
             this.txt_CusMoney.Name = "txt_CusMoney";
             this.txt_CusMoney.Size = new System.Drawing.Size(115, 26);
             this.txt_CusMoney.TabIndex = 251;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label14, 2);
+            this.label14.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(3, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(204, 22);
+            this.label14.TabIndex = 242;
+            this.label14.Text = "订单信息";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -466,19 +504,6 @@
             this.btn_OK.Text = "确认";
             this.btn_OK.UseVisualStyleBackColor = true;
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label14, 2);
-            this.label14.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(3, 19);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(204, 22);
-            this.label14.TabIndex = 242;
-            this.label14.Text = "订单信息";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -559,6 +584,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.label19);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.cmb_CunsumeType);
@@ -898,26 +924,15 @@
             this.label1.Text = "预订";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label18
+            // label19
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("宋体", 14F);
-            this.label18.Location = new System.Drawing.Point(32, 428);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(47, 19);
-            this.label18.TabIndex = 262;
-            this.label18.Text = "备注";
-            // 
-            // txt_RDesc
-            // 
-            this.txt_RDesc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_RDesc.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_RDesc.Location = new System.Drawing.Point(85, 403);
-            this.txt_RDesc.Multiline = true;
-            this.txt_RDesc.Name = "txt_RDesc";
-            this.txt_RDesc.Size = new System.Drawing.Size(115, 70);
-            this.txt_RDesc.TabIndex = 263;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 12F);
+            this.label19.Location = new System.Drawing.Point(16, 7);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(64, 16);
+            this.label19.TabIndex = 245;
+            this.label19.Text = "label19";
             // 
             // uC_Page_Position
             // 
@@ -927,6 +942,10 @@
             this.uC_Page_Position.Name = "uC_Page_Position";
             this.uC_Page_Position.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Position.TabIndex = 240;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // ReservationMainForm
             // 
@@ -961,6 +980,7 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Position_Manager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -986,9 +1006,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_Peoples;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Name;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Phone;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.Button btn_OK;
@@ -1029,5 +1049,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_RDesc;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

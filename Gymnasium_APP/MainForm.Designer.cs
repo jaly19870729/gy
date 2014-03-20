@@ -35,6 +35,7 @@
             this.tbc_Statistics = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
             this.btn_Statistics_Member_Select = new System.Windows.Forms.Button();
             this.dtp__Statistics_Member_EndTime = new System.Windows.Forms.DateTimePicker();
             this.dtp_Statistics_Member_StartTime = new System.Windows.Forms.DateTimePicker();
@@ -66,6 +67,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.cmb_CusType = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
+            this.uC_Page_Statistics_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.btn_Statistics_SellCast_Select = new System.Windows.Forms.Button();
             this.dtp_Statistics_SellCast_EndTime = new System.Windows.Forms.DateTimePicker();
             this.dtp_Statistics_SellCast_StartTime = new System.Windows.Forms.DateTimePicker();
@@ -98,6 +100,7 @@
             this.撤单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.uC_Page_Statistics_Swiping = new Gymnasium_APP.UC.UC_Page();
             this.btn_Statistics_Swiping_Select = new System.Windows.Forms.Button();
             this.dtp_Statistics_Swiping_EndTime = new System.Windows.Forms.DateTimePicker();
             this.dtp_Statistics_Swiping_StartTime = new System.Windows.Forms.DateTimePicker();
@@ -122,6 +125,7 @@
             this.dgv_Statistics_Swiping_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.uC_Page_Statistics_BackCard = new Gymnasium_APP.UC.UC_Page();
             this.btn_Statistics_BackCard_Select = new System.Windows.Forms.Button();
             this.dtp_Statistics_BackCard_EndTime = new System.Windows.Forms.DateTimePicker();
             this.dtp_Statistics_BackCard_StartTime = new System.Windows.Forms.DateTimePicker();
@@ -151,6 +155,7 @@
             this.dgv_Statistics_BackCard_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.uC_Page_Statistics_LossCard = new Gymnasium_APP.UC.UC_Page();
             this.btn_Statistics_LossCard_Select = new System.Windows.Forms.Button();
             this.dtp_Statistics_LossCard_EndTime = new System.Windows.Forms.DateTimePicker();
             this.dtp_Statistics_LossCard_CardID_StartTime = new System.Windows.Forms.DateTimePicker();
@@ -172,6 +177,7 @@
             this.tabc_Mian = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Main_Member_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Main_Member_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Main_Member_MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -183,6 +189,7 @@
             this.dgv_Main_Member_MemberAddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab_SellCast = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
             this.dgv_Main_SellCast_Manager = new System.Windows.Forms.DataGridView();
             this.dgv_Main_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_Main_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -202,6 +209,7 @@
             this.tab_Mian_Site = new System.Windows.Forms.TabPage();
             this.panel17 = new System.Windows.Forms.Panel();
             this.lbl_Site_PeoPles = new System.Windows.Forms.Label();
+            this.uC_Page_Mian_Site = new Gymnasium_APP.UC.UC_Page();
             this.btn_Select = new System.Windows.Forms.Button();
             this.dtp_Mian_Site_Stop = new System.Windows.Forms.DateTimePicker();
             this.dtp_Mian_Site_Start = new System.Windows.Forms.DateTimePicker();
@@ -261,6 +269,7 @@
             this.tp_PrivilegeManager = new System.Windows.Forms.TabPage();
             this.tp_RoleManager = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
             this.btn_RoleManager_Delete = new System.Windows.Forms.Button();
             this.btn_RoleManager_Add = new System.Windows.Forms.Button();
             this.dgv_RoleManager = new System.Windows.Forms.DataGridView();
@@ -272,6 +281,7 @@
             this.btn_RoleManager_Update = new System.Windows.Forms.Button();
             this.tp_CardTypeManager = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
             this.btn_Delete_CardTypeManager = new System.Windows.Forms.Button();
             this.btn_Add_CardTypeManager = new System.Windows.Forms.Button();
             this.dgv_CardTypeManager = new System.Windows.Forms.DataGridView();
@@ -288,6 +298,7 @@
             this.tp_SystemLog = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
             this.cb_SystemLog = new System.Windows.Forms.CheckBox();
             this.btn_SystemLogManager_Select = new System.Windows.Forms.Button();
             this.dt_SystemLogManager_StopTime = new System.Windows.Forms.DateTimePicker();
@@ -315,6 +326,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tp_SystemCunsumeType = new System.Windows.Forms.TabPage();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.uC_Page_SystemCunsumeType = new Gymnasium_APP.UC.UC_Page();
             this.btn_SystemCunsumeType_Delete = new System.Windows.Forms.Button();
             this.btn_SystemCunsumeType_Add = new System.Windows.Forms.Button();
             this.dgv_SystemCunsumeType_Manager = new System.Windows.Forms.DataGridView();
@@ -327,6 +339,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_MainPage = new System.Windows.Forms.Button();
+            this.btn_Reservation = new System.Windows.Forms.Button();
             this.btn_Sell = new System.Windows.Forms.Button();
             this.btn_Continue = new System.Windows.Forms.Button();
             this.btn_Postpone = new System.Windows.Forms.Button();
@@ -339,25 +352,12 @@
             this.btn_Report_Manager = new System.Windows.Forms.Button();
             this.btn_SystemManager = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_Exit = new System.Windows.Forms.Button();
-            this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.btn_Reservation = new System.Windows.Forms.Button();
-            this.uC_Page_Statistics_Member = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_SellCast = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_Swiping = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_BackCard = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Statistics_LossCard = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Main_Member = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Main_SellCast = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_Mian_Site = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
-            this.uC_Page_SystemCunsumeType = new Gymnasium_APP.UC.UC_Page();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_login_name = new System.Windows.Forms.Label();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
             this.tbc_Statistics.SuspendLayout();
@@ -407,18 +407,18 @@
             this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_Main
             // 
-            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tlp_Main.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tlp_Main.ColumnCount = 2;
-            this.tlp_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tlp_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.tlp_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_Main.Controls.Add(this.pl_Mind, 1, 1);
             this.tlp_Main.Controls.Add(this.panel5, 0, 1);
@@ -434,23 +434,23 @@
             // 
             // pl_Mind
             // 
-            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pl_Mind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pl_Mind.Controls.Add(this.tbc_Statistics);
             this.pl_Mind.Controls.Add(this.tabc_Mian);
             this.pl_Mind.Controls.Add(this.tabc_SystemManager);
-            this.pl_Mind.Location = new System.Drawing.Point(153, 53);
+            this.pl_Mind.Location = new System.Drawing.Point(171, 53);
             this.pl_Mind.Name = "pl_Mind";
-            this.pl_Mind.Size = new System.Drawing.Size(859, 653);
+            this.pl_Mind.Size = new System.Drawing.Size(841, 653);
             this.pl_Mind.TabIndex = 2;
             // 
             // tbc_Statistics
             // 
-            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tbc_Statistics.Controls.Add(this.tabPage4);
             this.tbc_Statistics.Controls.Add(this.tab_Statistics_SellCast);
             this.tbc_Statistics.Controls.Add(this.tabPage2);
@@ -460,7 +460,7 @@
             this.tbc_Statistics.Location = new System.Drawing.Point(0, 0);
             this.tbc_Statistics.Name = "tbc_Statistics";
             this.tbc_Statistics.SelectedIndex = 0;
-            this.tbc_Statistics.Size = new System.Drawing.Size(848, 652);
+            this.tbc_Statistics.Size = new System.Drawing.Size(830, 652);
             this.tbc_Statistics.TabIndex = 2;
             this.tbc_Statistics.SelectedIndexChanged += new System.EventHandler(this.tbc_Statistics_SelectedIndexChanged);
             // 
@@ -470,16 +470,16 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(840, 622);
+            this.tabPage4.Size = new System.Drawing.Size(822, 622);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "会员信息";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.uC_Page_Statistics_Member);
             this.panel10.Controls.Add(this.btn_Statistics_Member_Select);
@@ -496,14 +496,23 @@
             this.panel10.Controls.Add(this.btn_Statistics_Member_Update);
             this.panel10.Location = new System.Drawing.Point(-4, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(849, 622);
+            this.panel10.Size = new System.Drawing.Size(831, 622);
             this.panel10.TabIndex = 3;
+            // 
+            // uC_Page_Statistics_Member
+            // 
+            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(233, 594);
+            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
+            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Member.TabIndex = 240;
             // 
             // btn_Statistics_Member_Select
             // 
             this.btn_Statistics_Member_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Member_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Select.Location = new System.Drawing.Point(552, 45);
+            this.btn_Statistics_Member_Select.Location = new System.Drawing.Point(534, 45);
             this.btn_Statistics_Member_Select.Name = "btn_Statistics_Member_Select";
             this.btn_Statistics_Member_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Member_Select.TabIndex = 232;
@@ -555,7 +564,7 @@
             // 
             this.btn_Statistics_Member_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Member_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Delete.Location = new System.Drawing.Point(649, 45);
+            this.btn_Statistics_Member_Delete.Location = new System.Drawing.Point(631, 45);
             this.btn_Statistics_Member_Delete.Name = "btn_Statistics_Member_Delete";
             this.btn_Statistics_Member_Delete.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Member_Delete.TabIndex = 234;
@@ -612,9 +621,9 @@
             // 
             this.dgv_Statistics_MemberManager.AllowUserToAddRows = false;
             this.dgv_Statistics_MemberManager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_MemberManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_MemberManager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_MemberManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -639,7 +648,7 @@
             this.dgv_Statistics_MemberManager.RowTemplate.Height = 23;
             this.dgv_Statistics_MemberManager.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgv_Statistics_MemberManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(843, 506);
+            this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(825, 506);
             this.dgv_Statistics_MemberManager.TabIndex = 215;
             this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
             // 
@@ -766,7 +775,7 @@
             // 
             this.btn_Statistics_Member_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Member_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Update.Location = new System.Drawing.Point(747, 45);
+            this.btn_Statistics_Member_Update.Location = new System.Drawing.Point(729, 45);
             this.btn_Statistics_Member_Update.Name = "btn_Statistics_Member_Update";
             this.btn_Statistics_Member_Update.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Member_Update.TabIndex = 235;
@@ -787,9 +796,9 @@
             // 
             // panel12
             // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel12.Controls.Add(this.cmb_State);
             this.panel12.Controls.Add(this.label31);
@@ -858,6 +867,15 @@
             this.label29.Size = new System.Drawing.Size(72, 16);
             this.label29.TabIndex = 257;
             this.label29.Text = "消费项目";
+            // 
+            // uC_Page_Statistics_SellCast
+            // 
+            this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(248, 591);
+            this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
+            this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_SellCast.TabIndex = 256;
             // 
             // btn_Statistics_SellCast_Select
             // 
@@ -961,9 +979,9 @@
             // 
             this.dgv_Statistics_SellCast_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_SellCast_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_SellCast_Manager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Statistics_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgv_Statistics_SellCast_cb,
@@ -1138,9 +1156,9 @@
             // 
             // panel13
             // 
-            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel13.Controls.Add(this.uC_Page_Statistics_Swiping);
             this.panel13.Controls.Add(this.btn_Statistics_Swiping_Select);
@@ -1157,6 +1175,15 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(849, 622);
             this.panel13.TabIndex = 5;
+            // 
+            // uC_Page_Statistics_Swiping
+            // 
+            this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(248, 595);
+            this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
+            this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_Swiping.TabIndex = 265;
             // 
             // btn_Statistics_Swiping_Select
             // 
@@ -1258,9 +1285,9 @@
             // 
             this.dgv_Statistics_Swiping_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_Swiping_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_Swiping_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_Swiping_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_Swiping_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_Swiping_Manager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_Swiping_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1404,9 +1431,9 @@
             // 
             // panel14
             // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel14.Controls.Add(this.uC_Page_Statistics_BackCard);
             this.panel14.Controls.Add(this.btn_Statistics_BackCard_Select);
@@ -1423,6 +1450,15 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(845, 622);
             this.panel14.TabIndex = 6;
+            // 
+            // uC_Page_Statistics_BackCard
+            // 
+            this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(250, 593);
+            this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
+            this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_BackCard.TabIndex = 266;
             // 
             // btn_Statistics_BackCard_Select
             // 
@@ -1522,9 +1558,9 @@
             // 
             this.dgv_Statistics_BackCard_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_BackCard_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_BackCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_BackCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_BackCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_BackCard_Manager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_BackCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1715,9 +1751,9 @@
             // 
             // panel15
             // 
-            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel15.Controls.Add(this.uC_Page_Statistics_LossCard);
             this.panel15.Controls.Add(this.btn_Statistics_LossCard_Select);
@@ -1732,6 +1768,15 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(845, 622);
             this.panel15.TabIndex = 7;
+            // 
+            // uC_Page_Statistics_LossCard
+            // 
+            this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 592);
+            this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
+            this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Statistics_LossCard.TabIndex = 267;
             // 
             // btn_Statistics_LossCard_Select
             // 
@@ -1807,9 +1852,9 @@
             // 
             this.dgv_Statistics_LossCard_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_LossCard_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_LossCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_LossCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_LossCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_LossCard_Manager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_LossCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1922,9 +1967,9 @@
             // 
             // tabc_Mian
             // 
-            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_Mian.Controls.Add(this.tabPage1);
             this.tabc_Mian.Controls.Add(this.tab_SellCast);
             this.tabc_Mian.Controls.Add(this.tab_Mian_Site);
@@ -1932,7 +1977,7 @@
             this.tabc_Mian.Location = new System.Drawing.Point(-1, -1);
             this.tabc_Mian.Name = "tabc_Mian";
             this.tabc_Mian.SelectedIndex = 0;
-            this.tabc_Mian.Size = new System.Drawing.Size(844, 654);
+            this.tabc_Mian.Size = new System.Drawing.Size(826, 654);
             this.tabc_Mian.TabIndex = 3;
             this.tabc_Mian.SelectedIndexChanged += new System.EventHandler(this.tabc_Mian_SelectedIndexChanged);
             // 
@@ -1942,31 +1987,40 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(836, 624);
+            this.tabPage1.Size = new System.Drawing.Size(818, 624);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "会员信息";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Controls.Add(this.uC_Page_Main_Member);
             this.panel4.Controls.Add(this.dgv_Main_Member_Manager);
             this.panel4.Location = new System.Drawing.Point(-4, 1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(849, 622);
+            this.panel4.Size = new System.Drawing.Size(831, 622);
             this.panel4.TabIndex = 4;
+            // 
+            // uC_Page_Main_Member
+            // 
+            this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Main_Member.Location = new System.Drawing.Point(229, 595);
+            this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
+            this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Main_Member.TabIndex = 268;
             // 
             // dgv_Main_Member_Manager
             // 
             this.dgv_Main_Member_Manager.AllowUserToAddRows = false;
             this.dgv_Main_Member_Manager.AllowUserToResizeRows = false;
-            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Main_Member_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Main_Member_Manager.ColumnHeadersHeight = 25;
             this.dgv_Main_Member_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1986,7 +2040,7 @@
             this.dgv_Main_Member_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Main_Member_Manager.RowTemplate.Height = 23;
             this.dgv_Main_Member_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(838, 587);
+            this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(820, 587);
             this.dgv_Main_Member_Manager.TabIndex = 215;
             this.dgv_Main_Member_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Main_Member_Manager_CellDoubleClick);
             // 
@@ -2074,9 +2128,9 @@
             // 
             // panel11
             // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel11.Controls.Add(this.uC_Page_Main_SellCast);
             this.panel11.Controls.Add(this.dgv_Main_SellCast_Manager);
@@ -2085,12 +2139,21 @@
             this.panel11.Size = new System.Drawing.Size(848, 622);
             this.panel11.TabIndex = 5;
             // 
+            // uC_Page_Main_SellCast
+            // 
+            this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(247, 594);
+            this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
+            this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Main_SellCast.TabIndex = 269;
+            // 
             // dgv_Main_SellCast_Manager
             // 
             this.dgv_Main_SellCast_Manager.AllowUserToAddRows = false;
-            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Main_SellCast_Manager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Main_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgv_Main_SellCast_cb,
@@ -2216,9 +2279,9 @@
             // 
             // panel17
             // 
-            this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel17.Controls.Add(this.lbl_Site_PeoPles);
             this.panel17.Controls.Add(this.uC_Page_Mian_Site);
@@ -2245,6 +2308,15 @@
             this.lbl_Site_PeoPles.Size = new System.Drawing.Size(94, 16);
             this.lbl_Site_PeoPles.TabIndex = 266;
             this.lbl_Site_PeoPles.Text = "场内人数:0";
+            // 
+            // uC_Page_Mian_Site
+            // 
+            this.uC_Page_Mian_Site.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Mian_Site.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Mian_Site.Location = new System.Drawing.Point(248, 595);
+            this.uC_Page_Mian_Site.Name = "uC_Page_Mian_Site";
+            this.uC_Page_Mian_Site.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Mian_Site.TabIndex = 265;
             // 
             // btn_Select
             // 
@@ -2320,9 +2392,9 @@
             // 
             this.dgv_Mian_Site_Manager.AllowUserToAddRows = false;
             this.dgv_Mian_Site_Manager.AllowUserToResizeRows = false;
-            this.dgv_Mian_Site_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Mian_Site_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Mian_Site_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Mian_Site_Manager.ColumnHeadersHeight = 25;
             this.dgv_Mian_Site_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2454,9 +2526,9 @@
             // 
             // tabc_SystemManager
             // 
-            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_SystemManager.Controls.Add(this.tp_UserManager);
             this.tabc_SystemManager.Controls.Add(this.tp_PrivilegeManager);
             this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
@@ -2470,7 +2542,7 @@
             this.tabc_SystemManager.Name = "tabc_SystemManager";
             this.tabc_SystemManager.Padding = new System.Drawing.Point(20, 0);
             this.tabc_SystemManager.SelectedIndex = 0;
-            this.tabc_SystemManager.Size = new System.Drawing.Size(846, 652);
+            this.tabc_SystemManager.Size = new System.Drawing.Size(828, 652);
             this.tabc_SystemManager.TabIndex = 0;
             this.tabc_SystemManager.SelectedIndexChanged += new System.EventHandler(this.tabc_SystemManager_SelectedIndexChanged);
             // 
@@ -2481,16 +2553,16 @@
             this.tp_UserManager.Location = new System.Drawing.Point(4, 24);
             this.tp_UserManager.Name = "tp_UserManager";
             this.tp_UserManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_UserManager.Size = new System.Drawing.Size(838, 624);
+            this.tp_UserManager.Size = new System.Drawing.Size(820, 624);
             this.tp_UserManager.TabIndex = 3;
             this.tp_UserManager.Text = "用户管理";
             this.tp_UserManager.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.btn_UserManager_Update);
             this.panel3.Controls.Add(this.btn_UserManager_Delete);
@@ -2515,14 +2587,14 @@
             this.panel3.Controls.Add(this.dgv_UserManager);
             this.panel3.Location = new System.Drawing.Point(-1, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(841, 624);
+            this.panel3.Size = new System.Drawing.Size(823, 624);
             this.panel3.TabIndex = 1;
             // 
             // btn_UserManager_Update
             // 
             this.btn_UserManager_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_UserManager_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Update.Location = new System.Drawing.Point(748, 10);
+            this.btn_UserManager_Update.Location = new System.Drawing.Point(730, 10);
             this.btn_UserManager_Update.Name = "btn_UserManager_Update";
             this.btn_UserManager_Update.Size = new System.Drawing.Size(91, 32);
             this.btn_UserManager_Update.TabIndex = 235;
@@ -2534,7 +2606,7 @@
             // 
             this.btn_UserManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_UserManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Delete.Location = new System.Drawing.Point(651, 10);
+            this.btn_UserManager_Delete.Location = new System.Drawing.Point(633, 10);
             this.btn_UserManager_Delete.Name = "btn_UserManager_Delete";
             this.btn_UserManager_Delete.Size = new System.Drawing.Size(91, 32);
             this.btn_UserManager_Delete.TabIndex = 234;
@@ -2546,7 +2618,7 @@
             // 
             this.btn_UserManager_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_UserManager_Add.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Add.Location = new System.Drawing.Point(554, 10);
+            this.btn_UserManager_Add.Location = new System.Drawing.Point(536, 10);
             this.btn_UserManager_Add.Name = "btn_UserManager_Add";
             this.btn_UserManager_Add.Size = new System.Drawing.Size(91, 32);
             this.btn_UserManager_Add.TabIndex = 233;
@@ -2558,7 +2630,7 @@
             // 
             this.btn_UserManager_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_UserManager_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Select.Location = new System.Drawing.Point(457, 10);
+            this.btn_UserManager_Select.Location = new System.Drawing.Point(439, 10);
             this.btn_UserManager_Select.Name = "btn_UserManager_Select";
             this.btn_UserManager_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_UserManager_Select.TabIndex = 232;
@@ -2575,7 +2647,7 @@
             "全部",
             "男",
             "女"});
-            this.cmb_UserManager_Sex.Location = new System.Drawing.Point(382, 15);
+            this.cmb_UserManager_Sex.Location = new System.Drawing.Point(364, 15);
             this.cmb_UserManager_Sex.Name = "cmb_UserManager_Sex";
             this.cmb_UserManager_Sex.Size = new System.Drawing.Size(54, 24);
             this.cmb_UserManager_Sex.TabIndex = 231;
@@ -2586,7 +2658,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F);
-            this.label4.Location = new System.Drawing.Point(347, 21);
+            this.label4.Location = new System.Drawing.Point(329, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 16);
             this.label4.TabIndex = 230;
@@ -2601,7 +2673,7 @@
             "全部",
             "正常",
             "未开启"});
-            this.cmb_UserManager_State.Location = new System.Drawing.Point(270, 15);
+            this.cmb_UserManager_State.Location = new System.Drawing.Point(252, 15);
             this.cmb_UserManager_State.Name = "cmb_UserManager_State";
             this.cmb_UserManager_State.Size = new System.Drawing.Size(71, 24);
             this.cmb_UserManager_State.TabIndex = 229;
@@ -2612,7 +2684,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F);
-            this.label3.Location = new System.Drawing.Point(233, 21);
+            this.label3.Location = new System.Drawing.Point(215, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 16);
             this.label3.TabIndex = 228;
@@ -2622,7 +2694,7 @@
             // 
             this.txt_UserManager_UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_UserManager_UserName.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_UserManager_UserName.Location = new System.Drawing.Point(127, 13);
+            this.txt_UserManager_UserName.Location = new System.Drawing.Point(109, 13);
             this.txt_UserManager_UserName.Name = "txt_UserManager_UserName";
             this.txt_UserManager_UserName.Size = new System.Drawing.Size(100, 26);
             this.txt_UserManager_UserName.TabIndex = 227;
@@ -2632,7 +2704,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F);
-            this.label2.Location = new System.Drawing.Point(74, 23);
+            this.label2.Location = new System.Drawing.Point(56, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 226;
@@ -2652,7 +2724,7 @@
             "20",
             "30",
             "40"});
-            this.cmb_UserManager_page.Location = new System.Drawing.Point(310, 598);
+            this.cmb_UserManager_page.Location = new System.Drawing.Point(292, 598);
             this.cmb_UserManager_page.Name = "cmb_UserManager_page";
             this.cmb_UserManager_page.Size = new System.Drawing.Size(47, 24);
             this.cmb_UserManager_page.TabIndex = 225;
@@ -2664,7 +2736,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 12F);
-            this.label5.Location = new System.Drawing.Point(231, 604);
+            this.label5.Location = new System.Drawing.Point(213, 604);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 16);
             this.label5.TabIndex = 224;
@@ -2675,7 +2747,7 @@
             this.lblPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPage.AutoSize = true;
             this.lblPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblPage.Location = new System.Drawing.Point(567, 604);
+            this.lblPage.Location = new System.Drawing.Point(549, 604);
             this.lblPage.Name = "lblPage";
             this.lblPage.Size = new System.Drawing.Size(16, 16);
             this.lblPage.TabIndex = 223;
@@ -2686,7 +2758,7 @@
             this.lblCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblCount.Location = new System.Drawing.Point(455, 602);
+            this.lblCount.Location = new System.Drawing.Point(437, 602);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(16, 16);
             this.lblCount.TabIndex = 222;
@@ -2697,7 +2769,7 @@
             this.linkEndPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkEndPage.AutoSize = true;
             this.linkEndPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkEndPage.Location = new System.Drawing.Point(801, 603);
+            this.linkEndPage.Location = new System.Drawing.Point(783, 603);
             this.linkEndPage.Name = "linkEndPage";
             this.linkEndPage.Size = new System.Drawing.Size(40, 16);
             this.linkEndPage.TabIndex = 221;
@@ -2710,7 +2782,7 @@
             this.linkFirstPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkFirstPage.AutoSize = true;
             this.linkFirstPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkFirstPage.Location = new System.Drawing.Point(615, 603);
+            this.linkFirstPage.Location = new System.Drawing.Point(597, 603);
             this.linkFirstPage.Name = "linkFirstPage";
             this.linkFirstPage.Size = new System.Drawing.Size(40, 16);
             this.linkFirstPage.TabIndex = 220;
@@ -2723,7 +2795,7 @@
             this.lblPageTotalCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPageTotalCount.AutoSize = true;
             this.lblPageTotalCount.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblPageTotalCount.Location = new System.Drawing.Point(504, 602);
+            this.lblPageTotalCount.Location = new System.Drawing.Point(486, 602);
             this.lblPageTotalCount.Name = "lblPageTotalCount";
             this.lblPageTotalCount.Size = new System.Drawing.Size(64, 16);
             this.lblPageTotalCount.TabIndex = 219;
@@ -2734,7 +2806,7 @@
             this.lblDataTotalCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDataTotalCount.AutoSize = true;
             this.lblDataTotalCount.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblDataTotalCount.Location = new System.Drawing.Point(381, 602);
+            this.lblDataTotalCount.Location = new System.Drawing.Point(363, 602);
             this.lblDataTotalCount.Name = "lblDataTotalCount";
             this.lblDataTotalCount.Size = new System.Drawing.Size(80, 16);
             this.lblDataTotalCount.TabIndex = 218;
@@ -2745,7 +2817,7 @@
             this.linkNextPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkNextPage.AutoSize = true;
             this.linkNextPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkNextPage.Location = new System.Drawing.Point(734, 603);
+            this.linkNextPage.Location = new System.Drawing.Point(716, 603);
             this.linkNextPage.Name = "linkNextPage";
             this.linkNextPage.Size = new System.Drawing.Size(56, 16);
             this.linkNextPage.TabIndex = 217;
@@ -2758,7 +2830,7 @@
             this.linkBeforePage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkBeforePage.AutoSize = true;
             this.linkBeforePage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkBeforePage.Location = new System.Drawing.Point(665, 603);
+            this.linkBeforePage.Location = new System.Drawing.Point(647, 603);
             this.linkBeforePage.Name = "linkBeforePage";
             this.linkBeforePage.Size = new System.Drawing.Size(56, 16);
             this.linkBeforePage.TabIndex = 216;
@@ -2770,9 +2842,9 @@
             // 
             this.dgv_UserManager.AllowUserToAddRows = false;
             this.dgv_UserManager.AllowUserToResizeRows = false;
-            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_UserManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_UserManager.ColumnHeadersHeight = 25;
             this.dgv_UserManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2793,7 +2865,7 @@
             this.dgv_UserManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_UserManager.RowTemplate.Height = 23;
             this.dgv_UserManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_UserManager.Size = new System.Drawing.Size(835, 543);
+            this.dgv_UserManager.Size = new System.Drawing.Size(817, 543);
             this.dgv_UserManager.TabIndex = 215;
             // 
             // UserID
@@ -2880,13 +2952,13 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(843, 623);
+            this.panel1.Size = new System.Drawing.Size(825, 623);
             this.panel1.TabIndex = 0;
             // 
             // tp_PrivilegeManager
@@ -2912,9 +2984,9 @@
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.Controls.Add(this.uC_Page_RoleManager);
             this.panel8.Controls.Add(this.btn_RoleManager_Delete);
@@ -2925,6 +2997,15 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(849, 622);
             this.panel8.TabIndex = 3;
+            // 
+            // uC_Page_RoleManager
+            // 
+            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_RoleManager.Location = new System.Drawing.Point(245, 593);
+            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
+            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_RoleManager.TabIndex = 244;
             // 
             // btn_RoleManager_Delete
             // 
@@ -2954,9 +3035,9 @@
             // 
             this.dgv_RoleManager.AllowUserToAddRows = false;
             this.dgv_RoleManager.AllowUserToResizeRows = false;
-            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_RoleManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_RoleManager.ColumnHeadersHeight = 25;
             this.dgv_RoleManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3028,9 +3109,9 @@
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel9.Controls.Add(this.uC_Page_CardTypeManager);
             this.panel9.Controls.Add(this.btn_Delete_CardTypeManager);
@@ -3041,6 +3122,15 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(849, 622);
             this.panel9.TabIndex = 4;
+            // 
+            // uC_Page_CardTypeManager
+            // 
+            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(245, 593);
+            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
+            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_CardTypeManager.TabIndex = 245;
             // 
             // btn_Delete_CardTypeManager
             // 
@@ -3070,9 +3160,9 @@
             // 
             this.dgv_CardTypeManager.AllowUserToAddRows = false;
             this.dgv_CardTypeManager.AllowUserToResizeRows = false;
-            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_CardTypeManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_CardTypeManager.ColumnHeadersHeight = 25;
             this.dgv_CardTypeManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3183,9 +3273,9 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(0, 3);
@@ -3195,9 +3285,9 @@
             // 
             // panel7
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.Controls.Add(this.uC_Page_SystemLog);
             this.panel7.Controls.Add(this.cb_SystemLog);
@@ -3218,6 +3308,15 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(849, 622);
             this.panel7.TabIndex = 2;
+            // 
+            // uC_Page_SystemLog
+            // 
+            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemLog.Location = new System.Drawing.Point(244, 593);
+            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
+            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemLog.TabIndex = 243;
             // 
             // cb_SystemLog
             // 
@@ -3355,9 +3454,9 @@
             // 
             this.dgv_SystemLogManager.AllowUserToAddRows = false;
             this.dgv_SystemLogManager.AllowUserToResizeRows = false;
-            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_SystemLogManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_SystemLogManager.ColumnHeadersHeight = 25;
             this.dgv_SystemLogManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3488,9 +3587,9 @@
             // 
             // panel16
             // 
-            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel16.Controls.Add(this.uC_Page_SystemCunsumeType);
             this.panel16.Controls.Add(this.btn_SystemCunsumeType_Delete);
@@ -3501,6 +3600,15 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(849, 622);
             this.panel16.TabIndex = 5;
+            // 
+            // uC_Page_SystemCunsumeType
+            // 
+            this.uC_Page_SystemCunsumeType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemCunsumeType.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_SystemCunsumeType.Name = "uC_Page_SystemCunsumeType";
+            this.uC_Page_SystemCunsumeType.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemCunsumeType.TabIndex = 246;
             // 
             // btn_SystemCunsumeType_Delete
             // 
@@ -3530,9 +3638,9 @@
             // 
             this.dgv_SystemCunsumeType_Manager.AllowUserToAddRows = false;
             this.dgv_SystemCunsumeType_Manager.AllowUserToResizeRows = false;
-            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_SystemCunsumeType_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_SystemCunsumeType_Manager.ColumnHeadersHeight = 25;
             this.dgv_SystemCunsumeType_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3602,22 +3710,23 @@
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
             this.panel5.Location = new System.Drawing.Point(3, 53);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(144, 653);
+            this.panel5.Size = new System.Drawing.Size(162, 653);
             this.panel5.TabIndex = 3;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.btn_MainPage);
             this.flowLayoutPanel1.Controls.Add(this.btn_Reservation);
             this.flowLayoutPanel1.Controls.Add(this.btn_Sell);
@@ -3633,7 +3742,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_SystemManager);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(136, 642);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 642);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // btn_MainPage
@@ -3647,6 +3756,18 @@
             this.btn_MainPage.Text = "首   页";
             this.btn_MainPage.UseVisualStyleBackColor = true;
             this.btn_MainPage.Click += new System.EventHandler(this.btn_MainPage_Click);
+            // 
+            // btn_Reservation
+            // 
+            this.btn_Reservation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Reservation.Font = new System.Drawing.Font("宋体", 14F);
+            this.btn_Reservation.Location = new System.Drawing.Point(3, 54);
+            this.btn_Reservation.Name = "btn_Reservation";
+            this.btn_Reservation.Size = new System.Drawing.Size(130, 45);
+            this.btn_Reservation.TabIndex = 260;
+            this.btn_Reservation.Text = "预   订";
+            this.btn_Reservation.UseVisualStyleBackColor = true;
+            this.btn_Reservation.Click += new System.EventHandler(this.btn_Reservation_Click);
             // 
             // btn_Sell
             // 
@@ -3782,9 +3903,9 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.tlp_Main.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
@@ -3793,23 +3914,55 @@
             this.panel2.Size = new System.Drawing.Size(1009, 44);
             this.panel2.TabIndex = 4;
             // 
-            // tableLayoutPanel2
+            // notifyIcon1
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 2);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1010, 47);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.notifyIcon1.BalloonTipText = "系统后台运行中..";
+            this.notifyIcon1.BalloonTipTitle = "系统最小化运行";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "系统后台运行中..";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel3.Controls.Add(this.btn_Exit, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_login_name, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(798, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(209, 41);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // lbl_login_name
+            // 
+            this.lbl_login_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_login_name.AutoSize = true;
+            this.lbl_login_name.Font = new System.Drawing.Font("宋体", 12F);
+            this.lbl_login_name.Location = new System.Drawing.Point(3, 12);
+            this.lbl_login_name.Name = "lbl_login_name";
+            this.lbl_login_name.Size = new System.Drawing.Size(129, 16);
+            this.lbl_login_name.TabIndex = 1;
+            this.lbl_login_name.Text = "用户名：";
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.Location = new System.Drawing.Point(138, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(68, 35);
+            this.btn_Exit.TabIndex = 0;
+            this.btn_Exit.Text = "退出";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // label1
             // 
@@ -3823,175 +3976,23 @@
             this.label1.Text = "XX管理软件";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel3
+            // tableLayoutPanel2
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel3.Controls.Add(this.btn_Exit, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lbl_login_name, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(798, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(209, 41);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Exit.Location = new System.Drawing.Point(138, 3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(68, 35);
-            this.btn_Exit.TabIndex = 0;
-            this.btn_Exit.Text = "退出";
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // lbl_login_name
-            // 
-            this.lbl_login_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_login_name.AutoSize = true;
-            this.lbl_login_name.Font = new System.Drawing.Font("宋体", 12F);
-            this.lbl_login_name.Location = new System.Drawing.Point(3, 12);
-            this.lbl_login_name.Name = "lbl_login_name";
-            this.lbl_login_name.Size = new System.Drawing.Size(129, 16);
-            this.lbl_login_name.TabIndex = 1;
-            this.lbl_login_name.Text = "用户名：";
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.BalloonTipText = "系统后台运行中..";
-            this.notifyIcon1.BalloonTipTitle = "系统最小化运行";
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "系统后台运行中..";
-            this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
-            // 
-            // btn_Reservation
-            // 
-            this.btn_Reservation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Reservation.Font = new System.Drawing.Font("宋体", 14F);
-            this.btn_Reservation.Location = new System.Drawing.Point(3, 54);
-            this.btn_Reservation.Name = "btn_Reservation";
-            this.btn_Reservation.Size = new System.Drawing.Size(130, 45);
-            this.btn_Reservation.TabIndex = 260;
-            this.btn_Reservation.Text = "预   订";
-            this.btn_Reservation.UseVisualStyleBackColor = true;
-            this.btn_Reservation.Click += new System.EventHandler(this.btn_Reservation_Click);
-            // 
-            // uC_Page_Statistics_Member
-            // 
-            this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(251, 594);
-            this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
-            this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Member.TabIndex = 240;
-            // 
-            // uC_Page_Statistics_SellCast
-            // 
-            this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(248, 591);
-            this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
-            this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_SellCast.TabIndex = 256;
-            // 
-            // uC_Page_Statistics_Swiping
-            // 
-            this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(248, 595);
-            this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
-            this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_Swiping.TabIndex = 265;
-            // 
-            // uC_Page_Statistics_BackCard
-            // 
-            this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(250, 593);
-            this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
-            this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_BackCard.TabIndex = 266;
-            // 
-            // uC_Page_Statistics_LossCard
-            // 
-            this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 592);
-            this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
-            this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Statistics_LossCard.TabIndex = 267;
-            // 
-            // uC_Page_Main_Member
-            // 
-            this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_Member.Location = new System.Drawing.Point(247, 595);
-            this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
-            this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Main_Member.TabIndex = 268;
-            // 
-            // uC_Page_Main_SellCast
-            // 
-            this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(247, 594);
-            this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
-            this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Main_SellCast.TabIndex = 269;
-            // 
-            // uC_Page_Mian_Site
-            // 
-            this.uC_Page_Mian_Site.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_Mian_Site.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Mian_Site.Location = new System.Drawing.Point(248, 595);
-            this.uC_Page_Mian_Site.Name = "uC_Page_Mian_Site";
-            this.uC_Page_Mian_Site.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_Mian_Site.TabIndex = 265;
-            // 
-            // uC_Page_RoleManager
-            // 
-            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_RoleManager.Location = new System.Drawing.Point(245, 593);
-            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
-            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_RoleManager.TabIndex = 244;
-            // 
-            // uC_Page_CardTypeManager
-            // 
-            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(245, 593);
-            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
-            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_CardTypeManager.TabIndex = 245;
-            // 
-            // uC_Page_SystemLog
-            // 
-            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemLog.Location = new System.Drawing.Point(244, 593);
-            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
-            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_SystemLog.TabIndex = 243;
-            // 
-            // uC_Page_SystemCunsumeType
-            // 
-            this.uC_Page_SystemCunsumeType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_SystemCunsumeType.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(247, 593);
-            this.uC_Page_SystemCunsumeType.Name = "uC_Page_SystemCunsumeType";
-            this.uC_Page_SystemCunsumeType.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_SystemCunsumeType.TabIndex = 246;
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
+            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 2);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1010, 47);
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -4066,10 +4067,10 @@
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4081,16 +4082,11 @@
         private System.Windows.Forms.Panel pl_Mind;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.TabPage tp_PrivilegeManager;
         private System.Windows.Forms.TabPage tp_RoleManager;
         private System.Windows.Forms.TabPage tp_SystemLog;
         private System.Windows.Forms.Button btn_SystemManager;
         private System.Windows.Forms.Button btn_MainPage;
-        public System.Windows.Forms.Label lbl_login_name;
         private System.Windows.Forms.TabPage tp_UserManager;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
@@ -4419,6 +4415,11 @@
         private System.Windows.Forms.ComboBox cmb_State;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button btn_Reservation;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button btn_Exit;
+        public System.Windows.Forms.Label lbl_login_name;
  
     }
 }

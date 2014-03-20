@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Gymnasium_APP.BLL;
 using Gymnasium_APP.Model;
+using Gymnasium_APP.Config;
 
 namespace Gymnasium_APP.ReservationFrom
 {
@@ -242,6 +243,7 @@ namespace Gymnasium_APP.ReservationFrom
                     lbl_place.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                     lbl_Times.Text = label3.Text;
                     txt_CusMoney.Text = (Convert.ToInt32(lbl_Times.Text) * Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells[0].ToolTipText.Split(',')[2])).ToString();
+                    label19.Text = dataGridView1.Rows[e.RowIndex].Cells[0].ToolTipText.Split(',')[2].ToString();
                 }
             }
            
@@ -254,7 +256,7 @@ namespace Gymnasium_APP.ReservationFrom
         }
         private PositionReservationInfoManager prm = new PositionReservationInfoManager();
 
-        private void cmb_CunsumeType_SelectedIndexChanged(object sender, EventArgs e)
+        public void cmb_CunsumeType_SelectedIndexChanged(object sender, EventArgs e)
         {
             dic_collesIndex.Clear();
             beforRowIndex = -2;
@@ -309,24 +311,120 @@ namespace Gymnasium_APP.ReservationFrom
             }
         }
 
+        public void ClearText()
+        {
+            beforRowIndex = -2;
+            dic_collesIndex.Clear();
+            linkLabel1_LinkClicked(null, null);
+            lbl_CusType.Text = cmb_CunsumeType.Text.Trim();
+            lbl_Times.Text = "0";
+            lbl_place.Text = "null";
+            txt_CusMoney.Text = "";
+            txt_Name.Text = "";
+            txt_Peoples.Text = "";
+            txt_Phone.Text = "";
+            txt_RDesc.Text = "";
+        }
+
+        private ReservationInfoManager reservationInfoManager = new ReservationInfoManager();//预定单
+        private PositionReservationInfoManager positionReservationInfoManager = new PositionReservationInfoManager();
         private void btn_OK_Click(object sender, EventArgs e)
         {
-            ReaservationCustForm rcf = new ReaservationCustForm();
+            this.errorProvider1.Clear();
+            
+            if (!AppConfig.ValidateName(this.txt_CusNum.Text))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_CusNum, AppConfig.ContentError);
+                return;
+            }
+            if (!AppConfig.ValidateAmount(this.txt_CusMoney.Text))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_CusMoney, AppConfig.AmountRegexError);
+                return;
+            }
+
+            if (!AppConfig.ValidateName(this.txt_Name.Text))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_Name, AppConfig.ContentError);
+                return;
+            }
+            if (!AppConfig.ValidatePhone(this.txt_Phone.Text))
+            {
+                this.errorProvider1.Clear();
+                this.errorProvider1.SetError(this.txt_Phone, AppConfig.PhoneRegexError);
+                return;
+            }
+            ReservationInfoModel reservationInfoModel = new ReservationInfoModel();
+            reservationInfoModel.ID = reservationInfoManager.GetMaxId();
+            reservationInfoModel.ReservationNum = txt_CusNum.Text.Trim();
+            reservationInfoModel.TypeName = lbl_CusType.Text.Trim();
+            reservationInfoModel.Position = lbl_place.Text.Trim();
+            reservationInfoModel.Times = lbl_Times.Text.Trim();
+            reservationInfoModel.Money = txt_CusMoney.Text.Trim();
+            reservationInfoModel.Name = txt_Name.Text.Trim();
+            reservationInfoModel.Phone = txt_Phone.Text.Trim();
+            reservationInfoModel.Des = txt_RDesc.Text.Trim();
+            reservationInfoModel.RState = "0";
+            reservationInfoModel.AddTime = CommTools.GetDateFormatStrot2(DateTime.Now);
+            reservationInfoModel.AddUserName = MainForm.userName;
+            reservationInfoModel.PriceAmount = label19.Text.Trim();
+            foreach (var item in dic_collesIndex)
+            {
+                PositionReservationInfoModel positionReservationInfoModel = new PositionReservationInfoModel();
+                Dictionary<string, string> dic_a = item.Value;
+                string postionName = item.Key.ToString();
+                foreach (var item2 in dic_a)
+                {
+                    string times = (Convert.ToInt32(item2.Key)+8).ToString();
+                    positionReservationInfoModel.ID = positionReservationInfoManager.GetMaxId();
+                    positionReservationInfoModel.PositionName = postionName;
+                    positionReservationInfoModel.HTime = times;
+                    positionReservationInfoModel.Name = txt_Name.Text.Trim();
+                    positionReservationInfoModel.Phone = txt_Phone.Text.Trim();
+                    positionReservationInfoModel.State = "0";
+                    positionReservationInfoModel.ReservationNum = txt_CusNum.Text.Trim();
+                    positionReservationInfoModel.TypeName = lbl_CusType.Text.Trim();
+                    positionReservationInfoModel.DTime = CommTools.GetDateFormatStrot(Convert.ToDateTime(dtp_Statistics_Member_StartTime.Text.Trim()));
+                    positionReservationInfoManager.Add(positionReservationInfoModel);
+                }
+            }
+            bool isadd= reservationInfoManager.Add(reservationInfoModel);
+            if (!isadd)
+            {
+                return;
+            }
+            ReaservationCustForm rcf = new ReaservationCustForm(reservationInfoModel);
+            rcf.Owner = this;
             rcf.ShowDialog();
         }
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
-            beforRowIndex =-1;
-            dic_collesIndex.Clear();
-            txt_CusMoney.Text = "";
-            txt_Peoples.Text = "";
-            txt_CusNum.Text = "";
+           
+            ClearText();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            txt_CusNum.Text = "00001";
+            txt_CusNum.Text = "000001";
+            List<ReservationInfoModel> reservationInfoModelsList = reservationInfoManager.GetModelList(" 1=1");
+            if (reservationInfoModelsList != null && reservationInfoModelsList.Count > 0)
+            {
+                int d = Convert.ToInt32(reservationInfoModelsList[reservationInfoModelsList.Count-1].ReservationNum) + 1;
+                string a = "";
+                if (d.ToString().Length < 6)
+                {
+                    for (int i = 0; i < 6 - d.ToString().Length; i++)
+                    {
+                        a += "0";
+                    }
+                }
+                txt_CusNum.Text = a + d.ToString();
+            }
+           
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
