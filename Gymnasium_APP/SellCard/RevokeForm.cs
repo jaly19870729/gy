@@ -39,6 +39,7 @@ namespace Gymnasium_APP.SellCard
                           if (model != null)
                           {
                               model.CusState = 1;
+                              model.PriceAmount = Convert.ToDecimal("-" + model.PriceAmount.ToString());
                               bool dst = manager.Update(model);
                               MessageBox.Show("撤单：" + (dst == true ? "成功！" : "失败！"));
                               CommTools.AddSystemLog("修改", "撤单" + ID + " " + model.CardID + " " + model.CusNum + " 金额：" + model.PriceAmount+(dst == true ? " 成功！" : " 失败！"));
@@ -55,6 +56,7 @@ namespace Gymnasium_APP.SellCard
                           if (model != null)
                           {
                               model.RState = "2";
+                              model.Money = "-" + model.Money;
                               bool dst = reservationInfoManager.Update(model);
                               MessageBox.Show("预订撤单：" + (dst == true ? "成功！" : "失败！"));
                               if (dst)

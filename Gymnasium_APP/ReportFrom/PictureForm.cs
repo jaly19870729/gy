@@ -59,5 +59,10 @@ namespace Gymnasium_APP.ReportFrom
                 }
             }
         }
+
+        private void PictureForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

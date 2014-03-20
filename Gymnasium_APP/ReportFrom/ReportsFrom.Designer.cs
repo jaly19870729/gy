@@ -39,12 +39,12 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Reservation_StopTime = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Reservation_StartTime = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
+            this.btn_Reservation_Select = new System.Windows.Forms.Button();
+            this.web_Reservation = new System.Windows.Forms.WebBrowser();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
@@ -109,6 +109,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(924, 524);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             this.tabControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ReportsFrom_KeyDown);
             // 
             // tabPage1
@@ -214,38 +215,38 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.webBrowser2);
+            this.tabPage2.Controls.Add(this.web_Reservation);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(916, 494);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "预订统计";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dtp_Reservation_StopTime);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.dtp_Reservation_StartTime);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_Reservation_Select);
             this.panel2.Location = new System.Drawing.Point(7, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(900, 66);
             this.panel2.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // dtp_Reservation_StopTime
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("宋体", 14F);
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dateTimePicker1.Font = new System.Drawing.Font("宋体", 13F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(565, 23);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(221, 27);
-            this.dateTimePicker1.TabIndex = 35;
+            this.dtp_Reservation_StopTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtp_Reservation_StopTime.CalendarFont = new System.Drawing.Font("宋体", 14F);
+            this.dtp_Reservation_StopTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Reservation_StopTime.Font = new System.Drawing.Font("宋体", 13F);
+            this.dtp_Reservation_StopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Reservation_StopTime.Location = new System.Drawing.Point(565, 23);
+            this.dtp_Reservation_StopTime.Name = "dtp_Reservation_StopTime";
+            this.dtp_Reservation_StopTime.Size = new System.Drawing.Size(221, 27);
+            this.dtp_Reservation_StopTime.TabIndex = 35;
             // 
             // label1
             // 
@@ -261,17 +262,17 @@
             this.label1.Text = "结束时间";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dateTimePicker2
+            // dtp_Reservation_StartTime
             // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("宋体", 14F);
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dateTimePicker2.Font = new System.Drawing.Font("宋体", 13F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(237, 23);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(221, 27);
-            this.dateTimePicker2.TabIndex = 33;
+            this.dtp_Reservation_StartTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtp_Reservation_StartTime.CalendarFont = new System.Drawing.Font("宋体", 14F);
+            this.dtp_Reservation_StartTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Reservation_StartTime.Font = new System.Drawing.Font("宋体", 13F);
+            this.dtp_Reservation_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Reservation_StartTime.Location = new System.Drawing.Point(237, 23);
+            this.dtp_Reservation_StartTime.Name = "dtp_Reservation_StartTime";
+            this.dtp_Reservation_StartTime.Size = new System.Drawing.Size(221, 27);
+            this.dtp_Reservation_StartTime.TabIndex = 33;
             // 
             // label2
             // 
@@ -287,28 +288,29 @@
             this.label2.Text = "开始时间";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // button1
+            // btn_Reservation_Select
             // 
-            this.button1.Font = new System.Drawing.Font("宋体", 14F);
-            this.button1.Location = new System.Drawing.Point(792, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "确定";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Reservation_Select.Font = new System.Drawing.Font("宋体", 14F);
+            this.btn_Reservation_Select.Location = new System.Drawing.Point(792, 11);
+            this.btn_Reservation_Select.Name = "btn_Reservation_Select";
+            this.btn_Reservation_Select.Size = new System.Drawing.Size(105, 42);
+            this.btn_Reservation_Select.TabIndex = 0;
+            this.btn_Reservation_Select.Text = "确定";
+            this.btn_Reservation_Select.UseVisualStyleBackColor = true;
+            this.btn_Reservation_Select.Click += new System.EventHandler(this.button1_Click);
             // 
-            // webBrowser2
+            // web_Reservation
             // 
-            this.webBrowser2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.web_Reservation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser2.Location = new System.Drawing.Point(4, 76);
-            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.ScrollBarsEnabled = false;
-            this.webBrowser2.Size = new System.Drawing.Size(909, 414);
-            this.webBrowser2.TabIndex = 2;
-            this.webBrowser2.WebBrowserShortcutsEnabled = false;
+            this.web_Reservation.Location = new System.Drawing.Point(4, 76);
+            this.web_Reservation.MinimumSize = new System.Drawing.Size(20, 20);
+            this.web_Reservation.Name = "web_Reservation";
+            this.web_Reservation.ScrollBarsEnabled = false;
+            this.web_Reservation.Size = new System.Drawing.Size(909, 414);
+            this.web_Reservation.TabIndex = 2;
+            this.web_Reservation.WebBrowserShortcutsEnabled = false;
             // 
             // tabPage3
             // 
@@ -757,12 +759,12 @@
         private System.Windows.Forms.DateTimePicker dtp_Member_StartTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_Reservation_StopTime;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtp_Reservation_StartTime;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.WebBrowser webBrowser2;
+        private System.Windows.Forms.Button btn_Reservation_Select;
+        private System.Windows.Forms.WebBrowser web_Reservation;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
