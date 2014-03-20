@@ -168,7 +168,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 49);
             this.label3.TabIndex = 30;
-            this.label3.Text = "消费类型";
+            this.label3.Text = "支付类型";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtp_EndTime

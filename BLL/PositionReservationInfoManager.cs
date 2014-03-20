@@ -14,6 +14,16 @@ namespace Gymnasium_APP.BLL
 		{}
 		#region  BasicMethod
 
+        /// <summary>
+        /// 执行sql
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public int ExecuteSql(string sql)
+        {
+            return dal.ExecuteSql(sql);
+        }
+
 		/// <summary>
 		/// 得到最大ID
 		/// </summary>

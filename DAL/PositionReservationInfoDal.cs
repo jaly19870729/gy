@@ -12,8 +12,18 @@ namespace Gymnasium_APP.DAL
 	{
 		public PositionReservationInfoDal()
 		{}
+
 		#region  BasicMethod
 
+        /// <summary>
+        /// 执行sql语句
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public int ExecuteSql(string sql)
+        {
+            return DbHelperSQL.ExecuteSql(sql); 
+        }
 		/// <summary>
 		/// 得到最大ID
 		/// </summary>

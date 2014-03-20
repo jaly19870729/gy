@@ -51,7 +51,7 @@ namespace Gymnasium_APP.Config
         /// <summary>
         /// 内容信息
         /// </summary>
-        public static String ContentError = "不能为空";
+        public static String ContentError = "输入错误";
         /// <summary>
         /// 数字验证错误信息
         /// </summary>
@@ -59,7 +59,7 @@ namespace Gymnasium_APP.Config
         /// <summary>
         /// 名称验证
         /// </summary>
-        public static String NameRegex = @"^[^\s]*$";
+        public static String NameRegex = @"^[\u4e00-\u9fa5_a-zA-Z0-9]+$";
         /// <summary>
         /// 姓名验证
         /// </summary>

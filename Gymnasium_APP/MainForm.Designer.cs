@@ -78,24 +78,6 @@
             this.txt_Statistics_SellCast_CardID = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dgv_Statistics_SellCast_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CusType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_AddType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CusNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CusCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CreateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.撤单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -352,12 +334,30 @@
             this.btn_Report_Manager = new System.Windows.Forms.Button();
             this.btn_SystemManager = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_login_name = new System.Windows.Forms.Label();
-            this.btn_Exit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.lbl_login_name = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CusType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_AddType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CusNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CusCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CreateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
             this.tbc_Statistics.SuspendLayout();
@@ -407,15 +407,15 @@
             this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_Main
             // 
-            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlp_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlp_Main.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tlp_Main.ColumnCount = 2;
             this.tlp_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
@@ -429,28 +429,28 @@
             this.tlp_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tlp_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlp_Main.Size = new System.Drawing.Size(1015, 729);
+            this.tlp_Main.Size = new System.Drawing.Size(1015, 726);
             this.tlp_Main.TabIndex = 0;
             // 
             // pl_Mind
             // 
-            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pl_Mind.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pl_Mind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pl_Mind.Controls.Add(this.tbc_Statistics);
             this.pl_Mind.Controls.Add(this.tabc_Mian);
             this.pl_Mind.Controls.Add(this.tabc_SystemManager);
             this.pl_Mind.Location = new System.Drawing.Point(171, 53);
             this.pl_Mind.Name = "pl_Mind";
-            this.pl_Mind.Size = new System.Drawing.Size(841, 653);
+            this.pl_Mind.Size = new System.Drawing.Size(841, 650);
             this.pl_Mind.TabIndex = 2;
             // 
             // tbc_Statistics
             // 
-            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbc_Statistics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbc_Statistics.Controls.Add(this.tabPage4);
             this.tbc_Statistics.Controls.Add(this.tab_Statistics_SellCast);
             this.tbc_Statistics.Controls.Add(this.tabPage2);
@@ -460,7 +460,7 @@
             this.tbc_Statistics.Location = new System.Drawing.Point(0, 0);
             this.tbc_Statistics.Name = "tbc_Statistics";
             this.tbc_Statistics.SelectedIndex = 0;
-            this.tbc_Statistics.Size = new System.Drawing.Size(830, 652);
+            this.tbc_Statistics.Size = new System.Drawing.Size(830, 649);
             this.tbc_Statistics.TabIndex = 2;
             this.tbc_Statistics.SelectedIndexChanged += new System.EventHandler(this.tbc_Statistics_SelectedIndexChanged);
             // 
@@ -477,9 +477,9 @@
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.uC_Page_Statistics_Member);
             this.panel10.Controls.Add(this.btn_Statistics_Member_Select);
@@ -496,14 +496,14 @@
             this.panel10.Controls.Add(this.btn_Statistics_Member_Update);
             this.panel10.Location = new System.Drawing.Point(-4, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(831, 622);
+            this.panel10.Size = new System.Drawing.Size(825, 622);
             this.panel10.TabIndex = 3;
             // 
             // uC_Page_Statistics_Member
             // 
             this.uC_Page_Statistics_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Statistics_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(233, 594);
+            this.uC_Page_Statistics_Member.Location = new System.Drawing.Point(227, 594);
             this.uC_Page_Statistics_Member.Name = "uC_Page_Statistics_Member";
             this.uC_Page_Statistics_Member.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Statistics_Member.TabIndex = 240;
@@ -512,7 +512,7 @@
             // 
             this.btn_Statistics_Member_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Member_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Select.Location = new System.Drawing.Point(534, 45);
+            this.btn_Statistics_Member_Select.Location = new System.Drawing.Point(528, 45);
             this.btn_Statistics_Member_Select.Name = "btn_Statistics_Member_Select";
             this.btn_Statistics_Member_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Member_Select.TabIndex = 232;
@@ -525,7 +525,7 @@
             this.dtp__Statistics_Member_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dtp__Statistics_Member_EndTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp__Statistics_Member_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp__Statistics_Member_EndTime.Location = new System.Drawing.Point(648, 7);
+            this.dtp__Statistics_Member_EndTime.Location = new System.Drawing.Point(631, 7);
             this.dtp__Statistics_Member_EndTime.Name = "dtp__Statistics_Member_EndTime";
             this.dtp__Statistics_Member_EndTime.Size = new System.Drawing.Size(189, 26);
             this.dtp__Statistics_Member_EndTime.TabIndex = 239;
@@ -535,7 +535,7 @@
             this.dtp_Statistics_Member_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_Member_StartTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_Member_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_Member_StartTime.Location = new System.Drawing.Point(375, 8);
+            this.dtp_Statistics_Member_StartTime.Location = new System.Drawing.Point(358, 8);
             this.dtp_Statistics_Member_StartTime.Name = "dtp_Statistics_Member_StartTime";
             this.dtp_Statistics_Member_StartTime.Size = new System.Drawing.Size(191, 26);
             this.dtp_Statistics_Member_StartTime.TabIndex = 238;
@@ -544,7 +544,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 12F);
-            this.label8.Location = new System.Drawing.Point(302, 16);
+            this.label8.Location = new System.Drawing.Point(290, 16);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 16);
             this.label8.TabIndex = 236;
@@ -554,7 +554,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 12F);
-            this.label9.Location = new System.Drawing.Point(577, 15);
+            this.label9.Location = new System.Drawing.Point(555, 15);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 16);
             this.label9.TabIndex = 237;
@@ -564,7 +564,7 @@
             // 
             this.btn_Statistics_Member_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Member_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Delete.Location = new System.Drawing.Point(631, 45);
+            this.btn_Statistics_Member_Delete.Location = new System.Drawing.Point(625, 45);
             this.btn_Statistics_Member_Delete.Name = "btn_Statistics_Member_Delete";
             this.btn_Statistics_Member_Delete.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Member_Delete.TabIndex = 234;
@@ -584,7 +584,7 @@
             "添加",
             "删除",
             "修改"});
-            this.cmb_Statistics_Member_Type.Location = new System.Drawing.Point(206, 9);
+            this.cmb_Statistics_Member_Type.Location = new System.Drawing.Point(199, 9);
             this.cmb_Statistics_Member_Type.Name = "cmb_Statistics_Member_Type";
             this.cmb_Statistics_Member_Type.Size = new System.Drawing.Size(90, 24);
             this.cmb_Statistics_Member_Type.TabIndex = 229;
@@ -593,7 +593,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("宋体", 12F);
-            this.label10.Location = new System.Drawing.Point(168, 15);
+            this.label10.Location = new System.Drawing.Point(161, 15);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 16);
             this.label10.TabIndex = 228;
@@ -602,7 +602,7 @@
             // txt_Statistics_Member_Name
             // 
             this.txt_Statistics_Member_Name.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_Member_Name.Location = new System.Drawing.Point(62, 7);
+            this.txt_Statistics_Member_Name.Location = new System.Drawing.Point(59, 7);
             this.txt_Statistics_Member_Name.Name = "txt_Statistics_Member_Name";
             this.txt_Statistics_Member_Name.Size = new System.Drawing.Size(100, 26);
             this.txt_Statistics_Member_Name.TabIndex = 227;
@@ -611,7 +611,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("宋体", 12F);
-            this.label11.Location = new System.Drawing.Point(9, 17);
+            this.label11.Location = new System.Drawing.Point(6, 17);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 16);
             this.label11.TabIndex = 226;
@@ -621,9 +621,9 @@
             // 
             this.dgv_Statistics_MemberManager.AllowUserToAddRows = false;
             this.dgv_Statistics_MemberManager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_MemberManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_MemberManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_MemberManager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_MemberManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -648,7 +648,7 @@
             this.dgv_Statistics_MemberManager.RowTemplate.Height = 23;
             this.dgv_Statistics_MemberManager.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgv_Statistics_MemberManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(825, 506);
+            this.dgv_Statistics_MemberManager.Size = new System.Drawing.Size(819, 506);
             this.dgv_Statistics_MemberManager.TabIndex = 215;
             this.dgv_Statistics_MemberManager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_MemberManager_CellDoubleClick);
             // 
@@ -775,7 +775,7 @@
             // 
             this.btn_Statistics_Member_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Member_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Member_Update.Location = new System.Drawing.Point(729, 45);
+            this.btn_Statistics_Member_Update.Location = new System.Drawing.Point(723, 45);
             this.btn_Statistics_Member_Update.Name = "btn_Statistics_Member_Update";
             this.btn_Statistics_Member_Update.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Member_Update.TabIndex = 235;
@@ -789,16 +789,16 @@
             this.tab_Statistics_SellCast.Location = new System.Drawing.Point(4, 26);
             this.tab_Statistics_SellCast.Name = "tab_Statistics_SellCast";
             this.tab_Statistics_SellCast.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Statistics_SellCast.Size = new System.Drawing.Size(840, 622);
+            this.tab_Statistics_SellCast.Size = new System.Drawing.Size(822, 619);
             this.tab_Statistics_SellCast.TabIndex = 1;
             this.tab_Statistics_SellCast.Text = "消费信息";
             this.tab_Statistics_SellCast.UseVisualStyleBackColor = true;
             // 
             // panel12
             // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel12.Controls.Add(this.cmb_State);
             this.panel12.Controls.Add(this.label31);
@@ -817,7 +817,7 @@
             this.panel12.Controls.Add(this.dgv_Statistics_SellCast_Manager);
             this.panel12.Location = new System.Drawing.Point(-4, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(848, 622);
+            this.panel12.Size = new System.Drawing.Size(827, 619);
             this.panel12.TabIndex = 6;
             // 
             // cmb_State
@@ -872,7 +872,7 @@
             // 
             this.uC_Page_Statistics_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Statistics_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(248, 591);
+            this.uC_Page_Statistics_SellCast.Location = new System.Drawing.Point(227, 588);
             this.uC_Page_Statistics_SellCast.Name = "uC_Page_Statistics_SellCast";
             this.uC_Page_Statistics_SellCast.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Statistics_SellCast.TabIndex = 256;
@@ -881,7 +881,7 @@
             // 
             this.btn_Statistics_SellCast_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_SellCast_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_SellCast_Select.Location = new System.Drawing.Point(748, 42);
+            this.btn_Statistics_SellCast_Select.Location = new System.Drawing.Point(732, 42);
             this.btn_Statistics_SellCast_Select.Name = "btn_Statistics_SellCast_Select";
             this.btn_Statistics_SellCast_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_SellCast_Select.TabIndex = 249;
@@ -895,7 +895,7 @@
             this.dtp_Statistics_SellCast_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_SellCast_EndTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_SellCast_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_SellCast_EndTime.Location = new System.Drawing.Point(553, 45);
+            this.dtp_Statistics_SellCast_EndTime.Location = new System.Drawing.Point(532, 45);
             this.dtp_Statistics_SellCast_EndTime.Name = "dtp_Statistics_SellCast_EndTime";
             this.dtp_Statistics_SellCast_EndTime.Size = new System.Drawing.Size(189, 26);
             this.dtp_Statistics_SellCast_EndTime.TabIndex = 255;
@@ -906,7 +906,7 @@
             this.dtp_Statistics_SellCast_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_SellCast_StartTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_SellCast_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_SellCast_StartTime.Location = new System.Drawing.Point(280, 46);
+            this.dtp_Statistics_SellCast_StartTime.Location = new System.Drawing.Point(259, 46);
             this.dtp_Statistics_SellCast_StartTime.Name = "dtp_Statistics_SellCast_StartTime";
             this.dtp_Statistics_SellCast_StartTime.Size = new System.Drawing.Size(191, 26);
             this.dtp_Statistics_SellCast_StartTime.TabIndex = 254;
@@ -916,7 +916,7 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("宋体", 12F);
-            this.label12.Location = new System.Drawing.Point(207, 54);
+            this.label12.Location = new System.Drawing.Point(186, 54);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(72, 16);
             this.label12.TabIndex = 252;
@@ -927,7 +927,7 @@
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 12F);
-            this.label13.Location = new System.Drawing.Point(482, 53);
+            this.label13.Location = new System.Drawing.Point(461, 53);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 16);
             this.label13.TabIndex = 253;
@@ -941,7 +941,10 @@
             this.cmb_Statistics_SellCast_Type.Items.AddRange(new object[] {
             "全部",
             "现金消费",
-            "刷卡消费"});
+            "刷卡消费",
+            "转账消费",
+            "支票消费",
+            "其他消费"});
             this.cmb_Statistics_SellCast_Type.Location = new System.Drawing.Point(384, 12);
             this.cmb_Statistics_SellCast_Type.Name = "cmb_Statistics_SellCast_Type";
             this.cmb_Statistics_SellCast_Type.Size = new System.Drawing.Size(90, 24);
@@ -979,9 +982,9 @@
             // 
             this.dgv_Statistics_SellCast_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_SellCast_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_SellCast_Manager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Statistics_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgv_Statistics_SellCast_cb,
@@ -1010,124 +1013,9 @@
             this.dgv_Statistics_SellCast_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Statistics_SellCast_Manager.RowTemplate.Height = 23;
             this.dgv_Statistics_SellCast_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_SellCast_Manager.Size = new System.Drawing.Size(837, 506);
+            this.dgv_Statistics_SellCast_Manager.Size = new System.Drawing.Size(821, 503);
             this.dgv_Statistics_SellCast_Manager.TabIndex = 215;
             this.dgv_Statistics_SellCast_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_SellCast_Manager_CellContentDoubleClick);
-            // 
-            // dgv_Statistics_SellCast_cb
-            // 
-            this.dgv_Statistics_SellCast_cb.FillWeight = 1F;
-            this.dgv_Statistics_SellCast_cb.Frozen = true;
-            this.dgv_Statistics_SellCast_cb.HeaderText = "选择";
-            this.dgv_Statistics_SellCast_cb.Name = "dgv_Statistics_SellCast_cb";
-            this.dgv_Statistics_SellCast_cb.ReadOnly = true;
-            this.dgv_Statistics_SellCast_cb.Visible = false;
-            // 
-            // dgv_Statistics_SellCast_CastID
-            // 
-            this.dgv_Statistics_SellCast_CastID.HeaderText = "CastID";
-            this.dgv_Statistics_SellCast_CastID.Name = "dgv_Statistics_SellCast_CastID";
-            this.dgv_Statistics_SellCast_CastID.ReadOnly = true;
-            this.dgv_Statistics_SellCast_CastID.Visible = false;
-            // 
-            // dgv_Statistics_SellCast_Num
-            // 
-            this.dgv_Statistics_SellCast_Num.FillWeight = 65F;
-            this.dgv_Statistics_SellCast_Num.HeaderText = "序号";
-            this.dgv_Statistics_SellCast_Num.MinimumWidth = 65;
-            this.dgv_Statistics_SellCast_Num.Name = "dgv_Statistics_SellCast_Num";
-            this.dgv_Statistics_SellCast_Num.ReadOnly = true;
-            this.dgv_Statistics_SellCast_Num.Width = 65;
-            // 
-            // dgv_Statistics_SellCast_CusType
-            // 
-            this.dgv_Statistics_SellCast_CusType.HeaderText = "消费项目";
-            this.dgv_Statistics_SellCast_CusType.Name = "dgv_Statistics_SellCast_CusType";
-            this.dgv_Statistics_SellCast_CusType.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_AddType
-            // 
-            this.dgv_Statistics_SellCast_AddType.HeaderText = "消费类型";
-            this.dgv_Statistics_SellCast_AddType.Name = "dgv_Statistics_SellCast_AddType";
-            this.dgv_Statistics_SellCast_AddType.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_CardID
-            // 
-            this.dgv_Statistics_SellCast_CardID.HeaderText = "卡号";
-            this.dgv_Statistics_SellCast_CardID.Name = "dgv_Statistics_SellCast_CardID";
-            this.dgv_Statistics_SellCast_CardID.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_TypeName
-            // 
-            this.dgv_Statistics_SellCast_TypeName.HeaderText = "交易类型";
-            this.dgv_Statistics_SellCast_TypeName.Name = "dgv_Statistics_SellCast_TypeName";
-            this.dgv_Statistics_SellCast_TypeName.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_PriceAmount
-            // 
-            this.dgv_Statistics_SellCast_PriceAmount.HeaderText = "总额";
-            this.dgv_Statistics_SellCast_PriceAmount.Name = "dgv_Statistics_SellCast_PriceAmount";
-            this.dgv_Statistics_SellCast_PriceAmount.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_PaymentAmount
-            // 
-            this.dgv_Statistics_SellCast_PaymentAmount.HeaderText = "实收金额";
-            this.dgv_Statistics_SellCast_PaymentAmount.Name = "dgv_Statistics_SellCast_PaymentAmount";
-            this.dgv_Statistics_SellCast_PaymentAmount.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_ChangeAmount
-            // 
-            this.dgv_Statistics_SellCast_ChangeAmount.HeaderText = "找零金额";
-            this.dgv_Statistics_SellCast_ChangeAmount.Name = "dgv_Statistics_SellCast_ChangeAmount";
-            this.dgv_Statistics_SellCast_ChangeAmount.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_CusNum
-            // 
-            this.dgv_Statistics_SellCast_CusNum.HeaderText = "消费序号";
-            this.dgv_Statistics_SellCast_CusNum.Name = "dgv_Statistics_SellCast_CusNum";
-            this.dgv_Statistics_SellCast_CusNum.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_Prices
-            // 
-            this.dgv_Statistics_SellCast_Prices.HeaderText = "单价";
-            this.dgv_Statistics_SellCast_Prices.Name = "dgv_Statistics_SellCast_Prices";
-            this.dgv_Statistics_SellCast_Prices.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_CusCount
-            // 
-            this.dgv_Statistics_SellCast_CusCount.HeaderText = "项目数";
-            this.dgv_Statistics_SellCast_CusCount.Name = "dgv_Statistics_SellCast_CusCount";
-            this.dgv_Statistics_SellCast_CusCount.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_PeoPles
-            // 
-            this.dgv_Statistics_SellCast_PeoPles.HeaderText = "人数";
-            this.dgv_Statistics_SellCast_PeoPles.Name = "dgv_Statistics_SellCast_PeoPles";
-            this.dgv_Statistics_SellCast_PeoPles.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_Des
-            // 
-            this.dgv_Statistics_SellCast_Des.HeaderText = "描述";
-            this.dgv_Statistics_SellCast_Des.Name = "dgv_Statistics_SellCast_Des";
-            this.dgv_Statistics_SellCast_Des.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_AddUserName
-            // 
-            this.dgv_Statistics_SellCast_AddUserName.HeaderText = "操作员";
-            this.dgv_Statistics_SellCast_AddUserName.Name = "dgv_Statistics_SellCast_AddUserName";
-            this.dgv_Statistics_SellCast_AddUserName.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_CreateTime
-            // 
-            this.dgv_Statistics_SellCast_CreateTime.HeaderText = "消费时间";
-            this.dgv_Statistics_SellCast_CreateTime.Name = "dgv_Statistics_SellCast_CreateTime";
-            this.dgv_Statistics_SellCast_CreateTime.ReadOnly = true;
-            // 
-            // dgv_Statistics_SellCast_State
-            // 
-            this.dgv_Statistics_SellCast_State.HeaderText = "状态";
-            this.dgv_Statistics_SellCast_State.Name = "dgv_Statistics_SellCast_State";
-            this.dgv_Statistics_SellCast_State.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 
@@ -1149,16 +1037,16 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(840, 622);
+            this.tabPage2.Size = new System.Drawing.Size(822, 622);
             this.tabPage2.TabIndex = 2;
             this.tabPage2.Text = "刷卡信息";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel13
             // 
-            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel13.Controls.Add(this.uC_Page_Statistics_Swiping);
             this.panel13.Controls.Add(this.btn_Statistics_Swiping_Select);
@@ -1173,14 +1061,14 @@
             this.panel13.Controls.Add(this.dgv_Statistics_Swiping_Manager);
             this.panel13.Location = new System.Drawing.Point(-4, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(849, 622);
+            this.panel13.Size = new System.Drawing.Size(825, 622);
             this.panel13.TabIndex = 5;
             // 
             // uC_Page_Statistics_Swiping
             // 
             this.uC_Page_Statistics_Swiping.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Statistics_Swiping.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(248, 595);
+            this.uC_Page_Statistics_Swiping.Location = new System.Drawing.Point(224, 595);
             this.uC_Page_Statistics_Swiping.Name = "uC_Page_Statistics_Swiping";
             this.uC_Page_Statistics_Swiping.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Statistics_Swiping.TabIndex = 265;
@@ -1189,7 +1077,7 @@
             // 
             this.btn_Statistics_Swiping_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_Swiping_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_Swiping_Select.Location = new System.Drawing.Point(745, 43);
+            this.btn_Statistics_Swiping_Select.Location = new System.Drawing.Point(721, 43);
             this.btn_Statistics_Swiping_Select.Name = "btn_Statistics_Swiping_Select";
             this.btn_Statistics_Swiping_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_Swiping_Select.TabIndex = 260;
@@ -1246,7 +1134,7 @@
             "全部",
             "会员刷卡",
             "临时刷卡"});
-            this.cmb_Statistics_Swiping_TypeName.Location = new System.Drawing.Point(57, 12);
+            this.cmb_Statistics_Swiping_TypeName.Location = new System.Drawing.Point(224, 53);
             this.cmb_Statistics_Swiping_TypeName.Name = "cmb_Statistics_Swiping_TypeName";
             this.cmb_Statistics_Swiping_TypeName.Size = new System.Drawing.Size(90, 24);
             this.cmb_Statistics_Swiping_TypeName.TabIndex = 259;
@@ -1256,7 +1144,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 12F);
-            this.label18.Location = new System.Drawing.Point(19, 18);
+            this.label18.Location = new System.Drawing.Point(178, 59);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(40, 16);
             this.label18.TabIndex = 258;
@@ -1285,9 +1173,9 @@
             // 
             this.dgv_Statistics_Swiping_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_Swiping_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_Swiping_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_Swiping_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_Swiping_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_Swiping_Manager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_Swiping_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1311,7 +1199,7 @@
             this.dgv_Statistics_Swiping_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Statistics_Swiping_Manager.RowTemplate.Height = 23;
             this.dgv_Statistics_Swiping_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_Swiping_Manager.Size = new System.Drawing.Size(838, 506);
+            this.dgv_Statistics_Swiping_Manager.Size = new System.Drawing.Size(822, 506);
             this.dgv_Statistics_Swiping_Manager.TabIndex = 215;
             this.dgv_Statistics_Swiping_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_Swiping_Manager_CellContentDoubleClick);
             // 
@@ -1424,16 +1312,16 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 26);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(840, 622);
+            this.tabPage5.Size = new System.Drawing.Size(822, 622);
             this.tabPage5.TabIndex = 3;
             this.tabPage5.Text = "退卡信息";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // panel14
             // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel14.Controls.Add(this.uC_Page_Statistics_BackCard);
             this.panel14.Controls.Add(this.btn_Statistics_BackCard_Select);
@@ -1448,14 +1336,14 @@
             this.panel14.Controls.Add(this.dgv_Statistics_BackCard_Manager);
             this.panel14.Location = new System.Drawing.Point(-3, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(845, 622);
+            this.panel14.Size = new System.Drawing.Size(828, 622);
             this.panel14.TabIndex = 6;
             // 
             // uC_Page_Statistics_BackCard
             // 
             this.uC_Page_Statistics_BackCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Statistics_BackCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(250, 593);
+            this.uC_Page_Statistics_BackCard.Location = new System.Drawing.Point(233, 593);
             this.uC_Page_Statistics_BackCard.Name = "uC_Page_Statistics_BackCard";
             this.uC_Page_Statistics_BackCard.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Statistics_BackCard.TabIndex = 266;
@@ -1464,7 +1352,7 @@
             // 
             this.btn_Statistics_BackCard_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_BackCard_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_BackCard_Select.Location = new System.Drawing.Point(741, 43);
+            this.btn_Statistics_BackCard_Select.Location = new System.Drawing.Point(724, 43);
             this.btn_Statistics_BackCard_Select.Name = "btn_Statistics_BackCard_Select";
             this.btn_Statistics_BackCard_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_BackCard_Select.TabIndex = 260;
@@ -1477,7 +1365,7 @@
             this.dtp_Statistics_BackCard_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_BackCard_EndTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_BackCard_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_BackCard_EndTime.Location = new System.Drawing.Point(644, 8);
+            this.dtp_Statistics_BackCard_EndTime.Location = new System.Drawing.Point(626, 8);
             this.dtp_Statistics_BackCard_EndTime.Name = "dtp_Statistics_BackCard_EndTime";
             this.dtp_Statistics_BackCard_EndTime.Size = new System.Drawing.Size(189, 26);
             this.dtp_Statistics_BackCard_EndTime.TabIndex = 264;
@@ -1487,7 +1375,7 @@
             this.dtp_Statistics_BackCard_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_BackCard_StartTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_BackCard_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_BackCard_StartTime.Location = new System.Drawing.Point(371, 9);
+            this.dtp_Statistics_BackCard_StartTime.Location = new System.Drawing.Point(360, 9);
             this.dtp_Statistics_BackCard_StartTime.Name = "dtp_Statistics_BackCard_StartTime";
             this.dtp_Statistics_BackCard_StartTime.Size = new System.Drawing.Size(191, 26);
             this.dtp_Statistics_BackCard_StartTime.TabIndex = 263;
@@ -1496,7 +1384,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("宋体", 12F);
-            this.label20.Location = new System.Drawing.Point(298, 17);
+            this.label20.Location = new System.Drawing.Point(288, 17);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(72, 16);
             this.label20.TabIndex = 261;
@@ -1506,7 +1394,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("宋体", 12F);
-            this.label21.Location = new System.Drawing.Point(573, 16);
+            this.label21.Location = new System.Drawing.Point(558, 16);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 16);
             this.label21.TabIndex = 262;
@@ -1521,7 +1409,7 @@
             "全部",
             "会员刷卡",
             "临时刷卡"});
-            this.cmb_Statistics_BackCard_CardType.Location = new System.Drawing.Point(202, 10);
+            this.cmb_Statistics_BackCard_CardType.Location = new System.Drawing.Point(194, 10);
             this.cmb_Statistics_BackCard_CardType.Name = "cmb_Statistics_BackCard_CardType";
             this.cmb_Statistics_BackCard_CardType.Size = new System.Drawing.Size(90, 24);
             this.cmb_Statistics_BackCard_CardType.TabIndex = 259;
@@ -1530,7 +1418,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("宋体", 12F);
-            this.label22.Location = new System.Drawing.Point(164, 16);
+            this.label22.Location = new System.Drawing.Point(156, 16);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(40, 16);
             this.label22.TabIndex = 258;
@@ -1539,7 +1427,7 @@
             // txt_Statistics_BackCard_CardID
             // 
             this.txt_Statistics_BackCard_CardID.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_BackCard_CardID.Location = new System.Drawing.Point(58, 8);
+            this.txt_Statistics_BackCard_CardID.Location = new System.Drawing.Point(50, 10);
             this.txt_Statistics_BackCard_CardID.Name = "txt_Statistics_BackCard_CardID";
             this.txt_Statistics_BackCard_CardID.Size = new System.Drawing.Size(100, 26);
             this.txt_Statistics_BackCard_CardID.TabIndex = 257;
@@ -1558,9 +1446,9 @@
             // 
             this.dgv_Statistics_BackCard_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_BackCard_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_BackCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_BackCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_BackCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_BackCard_Manager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_BackCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1589,7 +1477,7 @@
             this.dgv_Statistics_BackCard_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Statistics_BackCard_Manager.RowTemplate.Height = 23;
             this.dgv_Statistics_BackCard_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_BackCard_Manager.Size = new System.Drawing.Size(839, 506);
+            this.dgv_Statistics_BackCard_Manager.Size = new System.Drawing.Size(822, 506);
             this.dgv_Statistics_BackCard_Manager.TabIndex = 215;
             this.dgv_Statistics_BackCard_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_BackCard_Manager_CellContentDoubleClick);
             // 
@@ -1744,16 +1632,16 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 26);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(840, 622);
+            this.tabPage6.Size = new System.Drawing.Size(822, 622);
             this.tabPage6.TabIndex = 4;
             this.tabPage6.Text = "挂失信息";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // panel15
             // 
-            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel15.Controls.Add(this.uC_Page_Statistics_LossCard);
             this.panel15.Controls.Add(this.btn_Statistics_LossCard_Select);
@@ -1766,14 +1654,14 @@
             this.panel15.Controls.Add(this.dgv_Statistics_LossCard_Manager);
             this.panel15.Location = new System.Drawing.Point(-2, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(845, 622);
+            this.panel15.Size = new System.Drawing.Size(823, 622);
             this.panel15.TabIndex = 7;
             // 
             // uC_Page_Statistics_LossCard
             // 
             this.uC_Page_Statistics_LossCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Statistics_LossCard.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(246, 592);
+            this.uC_Page_Statistics_LossCard.Location = new System.Drawing.Point(224, 592);
             this.uC_Page_Statistics_LossCard.Name = "uC_Page_Statistics_LossCard";
             this.uC_Page_Statistics_LossCard.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Statistics_LossCard.TabIndex = 267;
@@ -1782,7 +1670,7 @@
             // 
             this.btn_Statistics_LossCard_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Statistics_LossCard_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Statistics_LossCard_Select.Location = new System.Drawing.Point(741, 43);
+            this.btn_Statistics_LossCard_Select.Location = new System.Drawing.Point(719, 43);
             this.btn_Statistics_LossCard_Select.Name = "btn_Statistics_LossCard_Select";
             this.btn_Statistics_LossCard_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Statistics_LossCard_Select.TabIndex = 260;
@@ -1795,7 +1683,7 @@
             this.dtp_Statistics_LossCard_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_LossCard_EndTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_LossCard_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_LossCard_EndTime.Location = new System.Drawing.Point(644, 8);
+            this.dtp_Statistics_LossCard_EndTime.Location = new System.Drawing.Point(620, 8);
             this.dtp_Statistics_LossCard_EndTime.Name = "dtp_Statistics_LossCard_EndTime";
             this.dtp_Statistics_LossCard_EndTime.Size = new System.Drawing.Size(189, 26);
             this.dtp_Statistics_LossCard_EndTime.TabIndex = 264;
@@ -1805,7 +1693,7 @@
             this.dtp_Statistics_LossCard_CardID_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
             this.dtp_Statistics_LossCard_CardID_StartTime.Font = new System.Drawing.Font("宋体", 12F);
             this.dtp_Statistics_LossCard_CardID_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_LossCard_CardID_StartTime.Location = new System.Drawing.Point(371, 9);
+            this.dtp_Statistics_LossCard_CardID_StartTime.Location = new System.Drawing.Point(347, 9);
             this.dtp_Statistics_LossCard_CardID_StartTime.Name = "dtp_Statistics_LossCard_CardID_StartTime";
             this.dtp_Statistics_LossCard_CardID_StartTime.Size = new System.Drawing.Size(191, 26);
             this.dtp_Statistics_LossCard_CardID_StartTime.TabIndex = 263;
@@ -1814,7 +1702,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("宋体", 12F);
-            this.label24.Location = new System.Drawing.Point(298, 17);
+            this.label24.Location = new System.Drawing.Point(274, 17);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(72, 16);
             this.label24.TabIndex = 261;
@@ -1824,7 +1712,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("宋体", 12F);
-            this.label25.Location = new System.Drawing.Point(573, 16);
+            this.label25.Location = new System.Drawing.Point(549, 16);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(72, 16);
             this.label25.TabIndex = 262;
@@ -1833,7 +1721,7 @@
             // txt_Statistics_LossCard_CardID
             // 
             this.txt_Statistics_LossCard_CardID.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_Statistics_LossCard_CardID.Location = new System.Drawing.Point(192, 9);
+            this.txt_Statistics_LossCard_CardID.Location = new System.Drawing.Point(168, 9);
             this.txt_Statistics_LossCard_CardID.Name = "txt_Statistics_LossCard_CardID";
             this.txt_Statistics_LossCard_CardID.Size = new System.Drawing.Size(100, 26);
             this.txt_Statistics_LossCard_CardID.TabIndex = 257;
@@ -1842,7 +1730,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("宋体", 12F);
-            this.label27.Location = new System.Drawing.Point(146, 19);
+            this.label27.Location = new System.Drawing.Point(122, 19);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(40, 16);
             this.label27.TabIndex = 256;
@@ -1852,9 +1740,9 @@
             // 
             this.dgv_Statistics_LossCard_Manager.AllowUserToAddRows = false;
             this.dgv_Statistics_LossCard_Manager.AllowUserToResizeRows = false;
-            this.dgv_Statistics_LossCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Statistics_LossCard_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Statistics_LossCard_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Statistics_LossCard_Manager.ColumnHeadersHeight = 25;
             this.dgv_Statistics_LossCard_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1876,7 +1764,7 @@
             this.dgv_Statistics_LossCard_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Statistics_LossCard_Manager.RowTemplate.Height = 23;
             this.dgv_Statistics_LossCard_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Statistics_LossCard_Manager.Size = new System.Drawing.Size(839, 506);
+            this.dgv_Statistics_LossCard_Manager.Size = new System.Drawing.Size(817, 506);
             this.dgv_Statistics_LossCard_Manager.TabIndex = 215;
             this.dgv_Statistics_LossCard_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_LossCard_Manager_CellContentDoubleClick);
             // 
@@ -1967,9 +1855,9 @@
             // 
             // tabc_Mian
             // 
-            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_Mian.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_Mian.Controls.Add(this.tabPage1);
             this.tabc_Mian.Controls.Add(this.tab_SellCast);
             this.tabc_Mian.Controls.Add(this.tab_Mian_Site);
@@ -1977,7 +1865,7 @@
             this.tabc_Mian.Location = new System.Drawing.Point(-1, -1);
             this.tabc_Mian.Name = "tabc_Mian";
             this.tabc_Mian.SelectedIndex = 0;
-            this.tabc_Mian.Size = new System.Drawing.Size(826, 654);
+            this.tabc_Mian.Size = new System.Drawing.Size(826, 651);
             this.tabc_Mian.TabIndex = 3;
             this.tabc_Mian.SelectedIndexChanged += new System.EventHandler(this.tabc_Mian_SelectedIndexChanged);
             // 
@@ -1994,22 +1882,22 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Controls.Add(this.uC_Page_Main_Member);
             this.panel4.Controls.Add(this.dgv_Main_Member_Manager);
             this.panel4.Location = new System.Drawing.Point(-4, 1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(831, 622);
+            this.panel4.Size = new System.Drawing.Size(824, 622);
             this.panel4.TabIndex = 4;
             // 
             // uC_Page_Main_Member
             // 
             this.uC_Page_Main_Member.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Main_Member.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_Member.Location = new System.Drawing.Point(229, 595);
+            this.uC_Page_Main_Member.Location = new System.Drawing.Point(222, 595);
             this.uC_Page_Main_Member.Name = "uC_Page_Main_Member";
             this.uC_Page_Main_Member.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Main_Member.TabIndex = 268;
@@ -2018,9 +1906,9 @@
             // 
             this.dgv_Main_Member_Manager.AllowUserToAddRows = false;
             this.dgv_Main_Member_Manager.AllowUserToResizeRows = false;
-            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_Member_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Main_Member_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Main_Member_Manager.ColumnHeadersHeight = 25;
             this.dgv_Main_Member_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2040,7 +1928,7 @@
             this.dgv_Main_Member_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Main_Member_Manager.RowTemplate.Height = 23;
             this.dgv_Main_Member_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(820, 587);
+            this.dgv_Main_Member_Manager.Size = new System.Drawing.Size(819, 587);
             this.dgv_Main_Member_Manager.TabIndex = 215;
             this.dgv_Main_Member_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Main_Member_Manager_CellDoubleClick);
             // 
@@ -2121,29 +2009,29 @@
             this.tab_SellCast.Location = new System.Drawing.Point(4, 26);
             this.tab_SellCast.Name = "tab_SellCast";
             this.tab_SellCast.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_SellCast.Size = new System.Drawing.Size(836, 624);
+            this.tab_SellCast.Size = new System.Drawing.Size(818, 621);
             this.tab_SellCast.TabIndex = 1;
             this.tab_SellCast.Text = "消费信息 ";
             this.tab_SellCast.UseVisualStyleBackColor = true;
             // 
             // panel11
             // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel11.Controls.Add(this.uC_Page_Main_SellCast);
             this.panel11.Controls.Add(this.dgv_Main_SellCast_Manager);
             this.panel11.Location = new System.Drawing.Point(-4, 1);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(848, 622);
+            this.panel11.Size = new System.Drawing.Size(821, 619);
             this.panel11.TabIndex = 5;
             // 
             // uC_Page_Main_SellCast
             // 
             this.uC_Page_Main_SellCast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Main_SellCast.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(247, 594);
+            this.uC_Page_Main_SellCast.Location = new System.Drawing.Point(220, 591);
             this.uC_Page_Main_SellCast.Name = "uC_Page_Main_SellCast";
             this.uC_Page_Main_SellCast.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Main_SellCast.TabIndex = 269;
@@ -2151,9 +2039,9 @@
             // dgv_Main_SellCast_Manager
             // 
             this.dgv_Main_SellCast_Manager.AllowUserToAddRows = false;
-            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Main_SellCast_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Main_SellCast_Manager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Main_SellCast_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgv_Main_SellCast_cb,
@@ -2176,7 +2064,7 @@
             this.dgv_Main_SellCast_Manager.RowHeadersVisible = false;
             this.dgv_Main_SellCast_Manager.RowTemplate.Height = 23;
             this.dgv_Main_SellCast_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Main_SellCast_Manager.Size = new System.Drawing.Size(837, 586);
+            this.dgv_Main_SellCast_Manager.Size = new System.Drawing.Size(817, 583);
             this.dgv_Main_SellCast_Manager.TabIndex = 215;
             this.dgv_Main_SellCast_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Main_SellCast_Manager_CellContentDoubleClick);
             // 
@@ -2272,16 +2160,16 @@
             this.tab_Mian_Site.Location = new System.Drawing.Point(4, 26);
             this.tab_Mian_Site.Name = "tab_Mian_Site";
             this.tab_Mian_Site.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Mian_Site.Size = new System.Drawing.Size(836, 624);
+            this.tab_Mian_Site.Size = new System.Drawing.Size(818, 624);
             this.tab_Mian_Site.TabIndex = 2;
             this.tab_Mian_Site.Text = "场地信息";
             this.tab_Mian_Site.UseVisualStyleBackColor = true;
             // 
             // panel17
             // 
-            this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel17.Controls.Add(this.lbl_Site_PeoPles);
             this.panel17.Controls.Add(this.uC_Page_Mian_Site);
@@ -2295,7 +2183,7 @@
             this.panel17.Controls.Add(this.dgv_Mian_Site_Manager);
             this.panel17.Location = new System.Drawing.Point(-6, 1);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(849, 622);
+            this.panel17.Size = new System.Drawing.Size(826, 622);
             this.panel17.TabIndex = 6;
             // 
             // lbl_Site_PeoPles
@@ -2313,7 +2201,7 @@
             // 
             this.uC_Page_Mian_Site.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_Mian_Site.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_Mian_Site.Location = new System.Drawing.Point(248, 595);
+            this.uC_Page_Mian_Site.Location = new System.Drawing.Point(225, 595);
             this.uC_Page_Mian_Site.Name = "uC_Page_Mian_Site";
             this.uC_Page_Mian_Site.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Mian_Site.TabIndex = 265;
@@ -2322,7 +2210,7 @@
             // 
             this.btn_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Select.Location = new System.Drawing.Point(745, 43);
+            this.btn_Select.Location = new System.Drawing.Point(722, 43);
             this.btn_Select.Name = "btn_Select";
             this.btn_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_Select.TabIndex = 260;
@@ -2392,9 +2280,9 @@
             // 
             this.dgv_Mian_Site_Manager.AllowUserToAddRows = false;
             this.dgv_Mian_Site_Manager.AllowUserToResizeRows = false;
-            this.dgv_Mian_Site_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Mian_Site_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Mian_Site_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Mian_Site_Manager.ColumnHeadersHeight = 25;
             this.dgv_Mian_Site_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2418,7 +2306,7 @@
             this.dgv_Mian_Site_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Mian_Site_Manager.RowTemplate.Height = 23;
             this.dgv_Mian_Site_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Mian_Site_Manager.Size = new System.Drawing.Size(838, 506);
+            this.dgv_Mian_Site_Manager.Size = new System.Drawing.Size(820, 506);
             this.dgv_Mian_Site_Manager.TabIndex = 215;
             // 
             // dgv_Mian_Site_cb
@@ -2526,9 +2414,9 @@
             // 
             // tabc_SystemManager
             // 
-            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabc_SystemManager.Controls.Add(this.tp_UserManager);
             this.tabc_SystemManager.Controls.Add(this.tp_PrivilegeManager);
             this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
@@ -2542,7 +2430,7 @@
             this.tabc_SystemManager.Name = "tabc_SystemManager";
             this.tabc_SystemManager.Padding = new System.Drawing.Point(20, 0);
             this.tabc_SystemManager.SelectedIndex = 0;
-            this.tabc_SystemManager.Size = new System.Drawing.Size(828, 652);
+            this.tabc_SystemManager.Size = new System.Drawing.Size(828, 649);
             this.tabc_SystemManager.TabIndex = 0;
             this.tabc_SystemManager.SelectedIndexChanged += new System.EventHandler(this.tabc_SystemManager_SelectedIndexChanged);
             // 
@@ -2560,9 +2448,9 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.btn_UserManager_Update);
             this.panel3.Controls.Add(this.btn_UserManager_Delete);
@@ -2842,9 +2730,9 @@
             // 
             this.dgv_UserManager.AllowUserToAddRows = false;
             this.dgv_UserManager.AllowUserToResizeRows = false;
-            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_UserManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_UserManager.ColumnHeadersHeight = 25;
             this.dgv_UserManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2952,9 +2840,9 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
@@ -2966,7 +2854,7 @@
             this.tp_PrivilegeManager.Location = new System.Drawing.Point(4, 24);
             this.tp_PrivilegeManager.Name = "tp_PrivilegeManager";
             this.tp_PrivilegeManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_PrivilegeManager.Size = new System.Drawing.Size(838, 624);
+            this.tp_PrivilegeManager.Size = new System.Drawing.Size(820, 624);
             this.tp_PrivilegeManager.TabIndex = 4;
             this.tp_PrivilegeManager.Text = "权限管理";
             this.tp_PrivilegeManager.UseVisualStyleBackColor = true;
@@ -2977,16 +2865,16 @@
             this.tp_RoleManager.Location = new System.Drawing.Point(4, 24);
             this.tp_RoleManager.Name = "tp_RoleManager";
             this.tp_RoleManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_RoleManager.Size = new System.Drawing.Size(838, 624);
+            this.tp_RoleManager.Size = new System.Drawing.Size(820, 624);
             this.tp_RoleManager.TabIndex = 5;
             this.tp_RoleManager.Text = "角色管理";
             this.tp_RoleManager.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.Controls.Add(this.uC_Page_RoleManager);
             this.panel8.Controls.Add(this.btn_RoleManager_Delete);
@@ -2995,14 +2883,14 @@
             this.panel8.Controls.Add(this.btn_RoleManager_Update);
             this.panel8.Location = new System.Drawing.Point(-3, 1);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(849, 622);
+            this.panel8.Size = new System.Drawing.Size(823, 622);
             this.panel8.TabIndex = 3;
             // 
             // uC_Page_RoleManager
             // 
             this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_RoleManager.Location = new System.Drawing.Point(245, 593);
+            this.uC_Page_RoleManager.Location = new System.Drawing.Point(219, 593);
             this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
             this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_RoleManager.TabIndex = 244;
@@ -3011,7 +2899,7 @@
             // 
             this.btn_RoleManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_RoleManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_RoleManager_Delete.Location = new System.Drawing.Point(648, 11);
+            this.btn_RoleManager_Delete.Location = new System.Drawing.Point(622, 11);
             this.btn_RoleManager_Delete.Name = "btn_RoleManager_Delete";
             this.btn_RoleManager_Delete.Size = new System.Drawing.Size(91, 32);
             this.btn_RoleManager_Delete.TabIndex = 234;
@@ -3023,7 +2911,7 @@
             // 
             this.btn_RoleManager_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_RoleManager_Add.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_RoleManager_Add.Location = new System.Drawing.Point(549, 11);
+            this.btn_RoleManager_Add.Location = new System.Drawing.Point(523, 11);
             this.btn_RoleManager_Add.Name = "btn_RoleManager_Add";
             this.btn_RoleManager_Add.Size = new System.Drawing.Size(91, 32);
             this.btn_RoleManager_Add.TabIndex = 233;
@@ -3035,9 +2923,9 @@
             // 
             this.dgv_RoleManager.AllowUserToAddRows = false;
             this.dgv_RoleManager.AllowUserToResizeRows = false;
-            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_RoleManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_RoleManager.ColumnHeadersHeight = 25;
             this.dgv_RoleManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3052,7 +2940,7 @@
             this.dgv_RoleManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_RoleManager.RowTemplate.Height = 23;
             this.dgv_RoleManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_RoleManager.Size = new System.Drawing.Size(843, 540);
+            this.dgv_RoleManager.Size = new System.Drawing.Size(817, 540);
             this.dgv_RoleManager.TabIndex = 215;
             // 
             // dgv_RoleManager_RoleId
@@ -3088,7 +2976,7 @@
             // 
             this.btn_RoleManager_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_RoleManager_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_RoleManager_Update.Location = new System.Drawing.Point(749, 11);
+            this.btn_RoleManager_Update.Location = new System.Drawing.Point(723, 11);
             this.btn_RoleManager_Update.Name = "btn_RoleManager_Update";
             this.btn_RoleManager_Update.Size = new System.Drawing.Size(91, 32);
             this.btn_RoleManager_Update.TabIndex = 235;
@@ -3102,16 +2990,16 @@
             this.tp_CardTypeManager.Location = new System.Drawing.Point(4, 24);
             this.tp_CardTypeManager.Name = "tp_CardTypeManager";
             this.tp_CardTypeManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_CardTypeManager.Size = new System.Drawing.Size(838, 624);
+            this.tp_CardTypeManager.Size = new System.Drawing.Size(820, 624);
             this.tp_CardTypeManager.TabIndex = 7;
             this.tp_CardTypeManager.Text = "消费型产品理";
             this.tp_CardTypeManager.UseVisualStyleBackColor = true;
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel9.Controls.Add(this.uC_Page_CardTypeManager);
             this.panel9.Controls.Add(this.btn_Delete_CardTypeManager);
@@ -3120,14 +3008,14 @@
             this.panel9.Controls.Add(this.btn_Update_CardTypeManager);
             this.panel9.Location = new System.Drawing.Point(-3, 1);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(849, 622);
+            this.panel9.Size = new System.Drawing.Size(821, 622);
             this.panel9.TabIndex = 4;
             // 
             // uC_Page_CardTypeManager
             // 
             this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(245, 593);
+            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(217, 593);
             this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
             this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_CardTypeManager.TabIndex = 245;
@@ -3136,7 +3024,7 @@
             // 
             this.btn_Delete_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Delete_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Delete_CardTypeManager.Location = new System.Drawing.Point(648, 11);
+            this.btn_Delete_CardTypeManager.Location = new System.Drawing.Point(620, 11);
             this.btn_Delete_CardTypeManager.Name = "btn_Delete_CardTypeManager";
             this.btn_Delete_CardTypeManager.Size = new System.Drawing.Size(91, 32);
             this.btn_Delete_CardTypeManager.TabIndex = 234;
@@ -3148,7 +3036,7 @@
             // 
             this.btn_Add_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Add_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Add_CardTypeManager.Location = new System.Drawing.Point(549, 11);
+            this.btn_Add_CardTypeManager.Location = new System.Drawing.Point(521, 11);
             this.btn_Add_CardTypeManager.Name = "btn_Add_CardTypeManager";
             this.btn_Add_CardTypeManager.Size = new System.Drawing.Size(91, 32);
             this.btn_Add_CardTypeManager.TabIndex = 233;
@@ -3160,9 +3048,9 @@
             // 
             this.dgv_CardTypeManager.AllowUserToAddRows = false;
             this.dgv_CardTypeManager.AllowUserToResizeRows = false;
-            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_CardTypeManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_CardTypeManager.ColumnHeadersHeight = 25;
             this.dgv_CardTypeManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3181,7 +3069,7 @@
             this.dgv_CardTypeManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_CardTypeManager.RowTemplate.Height = 23;
             this.dgv_CardTypeManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_CardTypeManager.Size = new System.Drawing.Size(839, 540);
+            this.dgv_CardTypeManager.Size = new System.Drawing.Size(817, 540);
             this.dgv_CardTypeManager.TabIndex = 215;
             // 
             // dgv_CardTypeManager_CardTypeID
@@ -3251,7 +3139,7 @@
             // 
             this.btn_Update_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Update_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Update_CardTypeManager.Location = new System.Drawing.Point(749, 11);
+            this.btn_Update_CardTypeManager.Location = new System.Drawing.Point(721, 11);
             this.btn_Update_CardTypeManager.Name = "btn_Update_CardTypeManager";
             this.btn_Update_CardTypeManager.Size = new System.Drawing.Size(91, 32);
             this.btn_Update_CardTypeManager.TabIndex = 235;
@@ -3265,7 +3153,7 @@
             this.tp_SystemLog.Location = new System.Drawing.Point(4, 24);
             this.tp_SystemLog.Name = "tp_SystemLog";
             this.tp_SystemLog.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_SystemLog.Size = new System.Drawing.Size(838, 624);
+            this.tp_SystemLog.Size = new System.Drawing.Size(820, 624);
             this.tp_SystemLog.TabIndex = 6;
             this.tp_SystemLog.Text = "系统日志";
             this.tp_SystemLog.UseVisualStyleBackColor = true;
@@ -3273,9 +3161,9 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(0, 3);
@@ -3285,9 +3173,9 @@
             // 
             // panel7
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.Controls.Add(this.uC_Page_SystemLog);
             this.panel7.Controls.Add(this.cb_SystemLog);
@@ -3306,14 +3194,14 @@
             this.panel7.Controls.Add(this.button1);
             this.panel7.Location = new System.Drawing.Point(-3, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(849, 622);
+            this.panel7.Size = new System.Drawing.Size(823, 622);
             this.panel7.TabIndex = 2;
             // 
             // uC_Page_SystemLog
             // 
             this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemLog.Location = new System.Drawing.Point(244, 593);
+            this.uC_Page_SystemLog.Location = new System.Drawing.Point(218, 593);
             this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
             this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_SystemLog.TabIndex = 243;
@@ -3332,7 +3220,7 @@
             // 
             this.btn_SystemLogManager_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SystemLogManager_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemLogManager_Select.Location = new System.Drawing.Point(656, 58);
+            this.btn_SystemLogManager_Select.Location = new System.Drawing.Point(630, 58);
             this.btn_SystemLogManager_Select.Name = "btn_SystemLogManager_Select";
             this.btn_SystemLogManager_Select.Size = new System.Drawing.Size(91, 32);
             this.btn_SystemLogManager_Select.TabIndex = 232;
@@ -3384,7 +3272,7 @@
             // 
             this.btn_SystemLogManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SystemLogManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemLogManager_Delete.Location = new System.Drawing.Point(752, 58);
+            this.btn_SystemLogManager_Delete.Location = new System.Drawing.Point(726, 58);
             this.btn_SystemLogManager_Delete.Name = "btn_SystemLogManager_Delete";
             this.btn_SystemLogManager_Delete.Size = new System.Drawing.Size(91, 32);
             this.btn_SystemLogManager_Delete.TabIndex = 234;
@@ -3396,7 +3284,7 @@
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.Font = new System.Drawing.Font("宋体", 12F);
-            this.button6.Location = new System.Drawing.Point(558, 58);
+            this.button6.Location = new System.Drawing.Point(532, 58);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(91, 32);
             this.button6.TabIndex = 233;
@@ -3454,9 +3342,9 @@
             // 
             this.dgv_SystemLogManager.AllowUserToAddRows = false;
             this.dgv_SystemLogManager.AllowUserToResizeRows = false;
-            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_SystemLogManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_SystemLogManager.ColumnHeadersHeight = 25;
             this.dgv_SystemLogManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3477,7 +3365,7 @@
             this.dgv_SystemLogManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_SystemLogManager.RowTemplate.Height = 23;
             this.dgv_SystemLogManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_SystemLogManager.Size = new System.Drawing.Size(843, 489);
+            this.dgv_SystemLogManager.Size = new System.Drawing.Size(817, 489);
             this.dgv_SystemLogManager.TabIndex = 215;
             // 
             // cbox
@@ -3566,7 +3454,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("宋体", 12F);
-            this.button1.Location = new System.Drawing.Point(752, 58);
+            this.button1.Location = new System.Drawing.Point(726, 58);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 32);
             this.button1.TabIndex = 235;
@@ -3580,16 +3468,16 @@
             this.tp_SystemCunsumeType.Location = new System.Drawing.Point(4, 24);
             this.tp_SystemCunsumeType.Name = "tp_SystemCunsumeType";
             this.tp_SystemCunsumeType.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_SystemCunsumeType.Size = new System.Drawing.Size(838, 624);
+            this.tp_SystemCunsumeType.Size = new System.Drawing.Size(820, 621);
             this.tp_SystemCunsumeType.TabIndex = 8;
             this.tp_SystemCunsumeType.Text = "消费类型";
             this.tp_SystemCunsumeType.UseVisualStyleBackColor = true;
             // 
             // panel16
             // 
-            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel16.Controls.Add(this.uC_Page_SystemCunsumeType);
             this.panel16.Controls.Add(this.btn_SystemCunsumeType_Delete);
@@ -3598,14 +3486,14 @@
             this.panel16.Controls.Add(this.btn_SystemCunsumeType_Update);
             this.panel16.Location = new System.Drawing.Point(-5, 1);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(849, 622);
+            this.panel16.Size = new System.Drawing.Size(828, 619);
             this.panel16.TabIndex = 5;
             // 
             // uC_Page_SystemCunsumeType
             // 
             this.uC_Page_SystemCunsumeType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_Page_SystemCunsumeType.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(247, 593);
+            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(226, 590);
             this.uC_Page_SystemCunsumeType.Name = "uC_Page_SystemCunsumeType";
             this.uC_Page_SystemCunsumeType.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_SystemCunsumeType.TabIndex = 246;
@@ -3614,7 +3502,7 @@
             // 
             this.btn_SystemCunsumeType_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SystemCunsumeType_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemCunsumeType_Delete.Location = new System.Drawing.Point(648, 11);
+            this.btn_SystemCunsumeType_Delete.Location = new System.Drawing.Point(627, 11);
             this.btn_SystemCunsumeType_Delete.Name = "btn_SystemCunsumeType_Delete";
             this.btn_SystemCunsumeType_Delete.Size = new System.Drawing.Size(91, 32);
             this.btn_SystemCunsumeType_Delete.TabIndex = 234;
@@ -3626,7 +3514,7 @@
             // 
             this.btn_SystemCunsumeType_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SystemCunsumeType_Add.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemCunsumeType_Add.Location = new System.Drawing.Point(549, 11);
+            this.btn_SystemCunsumeType_Add.Location = new System.Drawing.Point(528, 11);
             this.btn_SystemCunsumeType_Add.Name = "btn_SystemCunsumeType_Add";
             this.btn_SystemCunsumeType_Add.Size = new System.Drawing.Size(91, 32);
             this.btn_SystemCunsumeType_Add.TabIndex = 233;
@@ -3638,9 +3526,9 @@
             // 
             this.dgv_SystemCunsumeType_Manager.AllowUserToAddRows = false;
             this.dgv_SystemCunsumeType_Manager.AllowUserToResizeRows = false;
-            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_SystemCunsumeType_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_SystemCunsumeType_Manager.ColumnHeadersHeight = 25;
             this.dgv_SystemCunsumeType_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3655,7 +3543,7 @@
             this.dgv_SystemCunsumeType_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_SystemCunsumeType_Manager.RowTemplate.Height = 23;
             this.dgv_SystemCunsumeType_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_SystemCunsumeType_Manager.Size = new System.Drawing.Size(839, 540);
+            this.dgv_SystemCunsumeType_Manager.Size = new System.Drawing.Size(821, 537);
             this.dgv_SystemCunsumeType_Manager.TabIndex = 215;
             // 
             // dgv_SystemCunsumeType_Id
@@ -3700,7 +3588,7 @@
             // 
             this.btn_SystemCunsumeType_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SystemCunsumeType_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemCunsumeType_Update.Location = new System.Drawing.Point(749, 11);
+            this.btn_SystemCunsumeType_Update.Location = new System.Drawing.Point(728, 11);
             this.btn_SystemCunsumeType_Update.Name = "btn_SystemCunsumeType_Update";
             this.btn_SystemCunsumeType_Update.Size = new System.Drawing.Size(91, 32);
             this.btn_SystemCunsumeType_Update.TabIndex = 235;
@@ -3710,22 +3598,22 @@
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
             this.panel5.Location = new System.Drawing.Point(3, 53);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(162, 653);
+            this.panel5.Size = new System.Drawing.Size(162, 650);
             this.panel5.TabIndex = 3;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.btn_MainPage);
             this.flowLayoutPanel1.Controls.Add(this.btn_Reservation);
@@ -3742,7 +3630,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_SystemManager);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 642);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 639);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // btn_MainPage
@@ -3903,9 +3791,9 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.tlp_Main.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
@@ -3914,55 +3802,23 @@
             this.panel2.Size = new System.Drawing.Size(1009, 44);
             this.panel2.TabIndex = 4;
             // 
-            // notifyIcon1
+            // tableLayoutPanel2
             // 
-            this.notifyIcon1.BalloonTipText = "系统后台运行中..";
-            this.notifyIcon1.BalloonTipTitle = "系统最小化运行";
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "系统后台运行中..";
-            this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel3.Controls.Add(this.btn_Exit, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lbl_login_name, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(798, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(209, 41);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // lbl_login_name
-            // 
-            this.lbl_login_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_login_name.AutoSize = true;
-            this.lbl_login_name.Font = new System.Drawing.Font("宋体", 12F);
-            this.lbl_login_name.Location = new System.Drawing.Point(3, 12);
-            this.lbl_login_name.Name = "lbl_login_name";
-            this.lbl_login_name.Size = new System.Drawing.Size(129, 16);
-            this.lbl_login_name.TabIndex = 1;
-            this.lbl_login_name.Text = "用户名：";
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Exit.Location = new System.Drawing.Point(138, 3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(68, 35);
-            this.btn_Exit.TabIndex = 0;
-            this.btn_Exit.Text = "退出";
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
+            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 2);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1010, 47);
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
             // 
@@ -3976,23 +3832,170 @@
             this.label1.Text = "XX管理软件";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel2
+            // tableLayoutPanel3
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 2);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1010, 47);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel3.Controls.Add(this.btn_Exit, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_login_name, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(798, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(209, 41);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.Location = new System.Drawing.Point(138, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(68, 35);
+            this.btn_Exit.TabIndex = 0;
+            this.btn_Exit.Text = "退出";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // lbl_login_name
+            // 
+            this.lbl_login_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_login_name.AutoSize = true;
+            this.lbl_login_name.Font = new System.Drawing.Font("宋体", 12F);
+            this.lbl_login_name.Location = new System.Drawing.Point(3, 12);
+            this.lbl_login_name.Name = "lbl_login_name";
+            this.lbl_login_name.Size = new System.Drawing.Size(129, 16);
+            this.lbl_login_name.TabIndex = 1;
+            this.lbl_login_name.Text = "用户名：";
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipText = "系统后台运行中..";
+            this.notifyIcon1.BalloonTipTitle = "系统最小化运行";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "系统后台运行中..";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
+            // 
+            // dgv_Statistics_SellCast_cb
+            // 
+            this.dgv_Statistics_SellCast_cb.FillWeight = 1F;
+            this.dgv_Statistics_SellCast_cb.Frozen = true;
+            this.dgv_Statistics_SellCast_cb.HeaderText = "选择";
+            this.dgv_Statistics_SellCast_cb.Name = "dgv_Statistics_SellCast_cb";
+            this.dgv_Statistics_SellCast_cb.ReadOnly = true;
+            this.dgv_Statistics_SellCast_cb.Visible = false;
+            // 
+            // dgv_Statistics_SellCast_CastID
+            // 
+            this.dgv_Statistics_SellCast_CastID.HeaderText = "CastID";
+            this.dgv_Statistics_SellCast_CastID.Name = "dgv_Statistics_SellCast_CastID";
+            this.dgv_Statistics_SellCast_CastID.ReadOnly = true;
+            this.dgv_Statistics_SellCast_CastID.Visible = false;
+            // 
+            // dgv_Statistics_SellCast_Num
+            // 
+            this.dgv_Statistics_SellCast_Num.FillWeight = 65F;
+            this.dgv_Statistics_SellCast_Num.HeaderText = "序号";
+            this.dgv_Statistics_SellCast_Num.MinimumWidth = 65;
+            this.dgv_Statistics_SellCast_Num.Name = "dgv_Statistics_SellCast_Num";
+            this.dgv_Statistics_SellCast_Num.ReadOnly = true;
+            this.dgv_Statistics_SellCast_Num.Width = 65;
+            // 
+            // dgv_Statistics_SellCast_CusType
+            // 
+            this.dgv_Statistics_SellCast_CusType.HeaderText = "消费项目";
+            this.dgv_Statistics_SellCast_CusType.Name = "dgv_Statistics_SellCast_CusType";
+            this.dgv_Statistics_SellCast_CusType.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_AddType
+            // 
+            this.dgv_Statistics_SellCast_AddType.HeaderText = "项目";
+            this.dgv_Statistics_SellCast_AddType.Name = "dgv_Statistics_SellCast_AddType";
+            this.dgv_Statistics_SellCast_AddType.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CardID
+            // 
+            this.dgv_Statistics_SellCast_CardID.HeaderText = "卡号";
+            this.dgv_Statistics_SellCast_CardID.Name = "dgv_Statistics_SellCast_CardID";
+            this.dgv_Statistics_SellCast_CardID.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_TypeName
+            // 
+            this.dgv_Statistics_SellCast_TypeName.HeaderText = "支付类型";
+            this.dgv_Statistics_SellCast_TypeName.Name = "dgv_Statistics_SellCast_TypeName";
+            this.dgv_Statistics_SellCast_TypeName.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_PriceAmount
+            // 
+            this.dgv_Statistics_SellCast_PriceAmount.HeaderText = "总额";
+            this.dgv_Statistics_SellCast_PriceAmount.Name = "dgv_Statistics_SellCast_PriceAmount";
+            this.dgv_Statistics_SellCast_PriceAmount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_PaymentAmount
+            // 
+            this.dgv_Statistics_SellCast_PaymentAmount.HeaderText = "实收金额";
+            this.dgv_Statistics_SellCast_PaymentAmount.Name = "dgv_Statistics_SellCast_PaymentAmount";
+            this.dgv_Statistics_SellCast_PaymentAmount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_ChangeAmount
+            // 
+            this.dgv_Statistics_SellCast_ChangeAmount.HeaderText = "找零金额";
+            this.dgv_Statistics_SellCast_ChangeAmount.Name = "dgv_Statistics_SellCast_ChangeAmount";
+            this.dgv_Statistics_SellCast_ChangeAmount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CusNum
+            // 
+            this.dgv_Statistics_SellCast_CusNum.HeaderText = "消费序号";
+            this.dgv_Statistics_SellCast_CusNum.Name = "dgv_Statistics_SellCast_CusNum";
+            this.dgv_Statistics_SellCast_CusNum.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_Prices
+            // 
+            this.dgv_Statistics_SellCast_Prices.HeaderText = "单价";
+            this.dgv_Statistics_SellCast_Prices.Name = "dgv_Statistics_SellCast_Prices";
+            this.dgv_Statistics_SellCast_Prices.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CusCount
+            // 
+            this.dgv_Statistics_SellCast_CusCount.HeaderText = "项目数";
+            this.dgv_Statistics_SellCast_CusCount.Name = "dgv_Statistics_SellCast_CusCount";
+            this.dgv_Statistics_SellCast_CusCount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_PeoPles
+            // 
+            this.dgv_Statistics_SellCast_PeoPles.HeaderText = "人数";
+            this.dgv_Statistics_SellCast_PeoPles.Name = "dgv_Statistics_SellCast_PeoPles";
+            this.dgv_Statistics_SellCast_PeoPles.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_Des
+            // 
+            this.dgv_Statistics_SellCast_Des.HeaderText = "描述";
+            this.dgv_Statistics_SellCast_Des.Name = "dgv_Statistics_SellCast_Des";
+            this.dgv_Statistics_SellCast_Des.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_AddUserName
+            // 
+            this.dgv_Statistics_SellCast_AddUserName.HeaderText = "操作员";
+            this.dgv_Statistics_SellCast_AddUserName.Name = "dgv_Statistics_SellCast_AddUserName";
+            this.dgv_Statistics_SellCast_AddUserName.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CreateTime
+            // 
+            this.dgv_Statistics_SellCast_CreateTime.HeaderText = "消费时间";
+            this.dgv_Statistics_SellCast_CreateTime.Name = "dgv_Statistics_SellCast_CreateTime";
+            this.dgv_Statistics_SellCast_CreateTime.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_State
+            // 
+            this.dgv_Statistics_SellCast_State.HeaderText = "状态";
+            this.dgv_Statistics_SellCast_State.Name = "dgv_Statistics_SellCast_State";
+            this.dgv_Statistics_SellCast_State.ReadOnly = true;
             // 
             // MainForm
             // 
@@ -4067,10 +4070,10 @@
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4394,6 +4397,14 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 撤单ToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cmb_State;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button btn_Reservation;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button btn_Exit;
+        public System.Windows.Forms.Label lbl_login_name;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dgv_Statistics_SellCast_cb;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_CastID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_Num;
@@ -4412,14 +4423,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_AddUserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_CreateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_State;
-        private System.Windows.Forms.ComboBox cmb_State;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Button btn_Reservation;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button btn_Exit;
-        public System.Windows.Forms.Label lbl_login_name;
  
     }
 }

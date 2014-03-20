@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Gymnasium_APP.BLL;
 using Gymnasium_APP.Model;
 using Gymnasium_APP.Config;
+using Gymnasium_APP.SellCard;
 
 namespace Gymnasium_APP.ReservationFrom
 {
@@ -18,8 +19,10 @@ namespace Gymnasium_APP.ReservationFrom
         {
             InitializeComponent();
             uC_Page_Position.OnPageChanged += new EventHandler(uC_Page_Position_OnPageChanged);
+            uC_Page_Reservation_Manager.OnPageChanged += new EventHandler(uC_Page_Reservation_Manager_OnPageChanged);
         }
 
+      
         #region 位置设置
         private string position_TiaoJian = " 1=1";
         private PositionInfoManager positionInfoManager = new PositionInfoManager();
@@ -126,16 +129,150 @@ namespace Gymnasium_APP.ReservationFrom
         }
         #endregion
 
+
+        #region 预订单信息
+        private string ReservationInfo_TiaoJian = " 1=1";
+
+        public void GetReservationInfoManagerList()
+        {
+            this.dgv_Reservation_Manager.Rows.Clear();
+            uC_Page_Reservation_Manager.tp.DataTotalCount = reservationInfoManager.GetRecordCount(ReservationInfo_TiaoJian);
+            DataSet ds_RoleManagerList = reservationInfoManager.GetList(uC_Page_Reservation_Manager.tp.Count,
+                                                             uC_Page_Reservation_Manager.tp.CurrentPage, ReservationInfo_TiaoJian);
+            if (ds_RoleManagerList != null && ds_RoleManagerList.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds_RoleManagerList.Tables[0].Rows.Count; i++)
+                {
+                    if (ds_RoleManagerList.Tables[0].Rows[i] != null)
+                        this.dgv_Reservation_Manager.Rows.Add();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Num"].Value =
+                        (uC_Page_Reservation_Manager.tp.CurrentPage * uC_Page_Reservation_Manager.tp.Count) - uC_Page_Reservation_Manager.tp.Count +
+                        i + 1; //序号
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_ID"].Value =
+                        ds_RoleManagerList.Tables[0].Rows[i]["ID"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_ReservationNum"].Value =
+                        ds_RoleManagerList.Tables[0].Rows[i]["ReservationNum"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Position"].Value =
+                       ds_RoleManagerList.Tables[0].Rows[i]["Position"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Times"].Value =
+                    ds_RoleManagerList.Tables[0].Rows[i]["Times"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Money"].Value =
+                ds_RoleManagerList.Tables[0].Rows[i]["Money"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Peoples"].Value =
+            ds_RoleManagerList.Tables[0].Rows[i]["Peoples"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Phone"].Value =
+      ds_RoleManagerList.Tables[0].Rows[i]["Phone"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_PayType"].Value =
+    ds_RoleManagerList.Tables[0].Rows[i]["PayType"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_PriceAmount"].Value =
+ ds_RoleManagerList.Tables[0].Rows[i]["PriceAmount"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_PaymentAmount"].Value =
+ds_RoleManagerList.Tables[0].Rows[i]["PaymentAmount"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_ChangeAmount"].Value =
+ds_RoleManagerList.Tables[0].Rows[i]["ChangeAmount"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_AddTime"].Value =
+ds_RoleManagerList.Tables[0].Rows[i]["AddTime"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_AddUserName"].Value =
+ds_RoleManagerList.Tables[0].Rows[i]["AddUserName"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Name"].Value =
+                        ds_RoleManagerList.Tables[0].Rows[i]["Name"].ToString();
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_TypeName"].Value =
+                        ds_RoleManagerList.Tables[0].Rows[i]["TypeName"].ToString();
+                    string state = "已完成";
+                    string sd=ds_RoleManagerList.Tables[0].Rows[i]["RState"].ToString().Trim();
+                    switch (sd)
+                    {
+                        case "0":
+                            state = "未完成";
+                            break;
+                        case "2":
+                            state = "已撤单";
+                            break;
+                    }
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_RState"].Value = state;
+                    this.dgv_Reservation_Manager.Rows[i].Cells["dgv_Reservation_Des"].Value =
+                       ds_RoleManagerList.Tables[0].Rows[i]["Des"].ToString();
+                }
+
+            }
+            uC_Page_Reservation_Manager.lbl_Count.Text = uC_Page_Reservation_Manager.tp.DataTotalCount.ToString();
+            uC_Page_Reservation_Manager.lbl_Page.Text = uC_Page_Reservation_Manager.tp.CurrentPage + "/" +
+                                                uC_Page_Reservation_Manager.tp.PageTotalCount + "页";
+        }
+        void uC_Page_Reservation_Manager_OnPageChanged(object sender, EventArgs e)
+        {
+            GetReservationInfoManagerList();
+        }
+        private void btn_Reservation_Select_Click(object sender, EventArgs e)
+        {
+            if (dtp_Reservation_StartTime.Value > dtp_Reservation_EndTime.Value)
+            {
+                MessageBox.Show("起始时间不得大于截止时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (dtp_Reservation_EndTime.Value < dtp_Reservation_StartTime.Value)
+            {
+                MessageBox.Show("截止时间不得小于起始时间！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            ReservationInfo_TiaoJian = " 1=1";
+            if (txt_Reservation_ReservationNum.Text.Trim() != "")
+            {
+                ReservationInfo_TiaoJian += " and (ReservationNum  like '%" + txt_Reservation_ReservationNum.Text.Trim() + "%')";
+            }
+            if (cmb_ReservationType.Text.Trim() != "" && cmb_ReservationType.Text.Trim() != "全部")
+            {
+                ReservationInfo_TiaoJian += " and TypeName='" + cmb_ReservationType.Text.Trim() + "'";
+            }
+            if (cmb_Reservation_PayType.Text.Trim() != "" && cmb_Reservation_PayType.Text.Trim() != "全部")
+            {
+                ReservationInfo_TiaoJian += " and PayType='" + cmb_Reservation_PayType.Text.Trim() + "'";
+            }
+            if (cmb_Reservation_State.Text.Trim() != "" && cmb_Reservation_State.Text.Trim() != "全部")
+            {
+                string state = "1";
+                switch (cmb_Reservation_State.Text.Trim())
+                { 
+                         
+                    case "未完成":
+                        state = "0";
+                        break;
+                    case "已撤单":
+                        state = "2";
+                        break;
+                }
+                ReservationInfo_TiaoJian += " and RState='" + state + "'";
+            }
+            ReservationInfo_TiaoJian += " and (AddTime > '" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Reservation_StartTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "' and  AddTime<'" + CommTools.GetDateFormatStrot2(Convert.ToDateTime(dtp_Reservation_EndTime.Value.ToString("yyyy-MM-dd HH:mm:ss"))) + "')";
+            uC_Page_Reservation_Manager.tp.CurrentPage = 1;
+            GetReservationInfoManagerList();
+        }
+
+        #endregion
         private CunsumeTypeManager cunsumeTypeManager = new CunsumeTypeManager();
         private void ReservationMainForm_Load(object sender, EventArgs e)
         {
             label2.Text= System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetDayName(DateTime.Now.DayOfWeek);
             this.dataGridView1.MultiSelect = false;
-            
-            this.cmb_CunsumeType.DataSource = this.cunsumeTypeManager.GetModelList("1=1");
-            this.cmb_CunsumeType.DisplayMember = "CusType";
-            this.cmb_CunsumeType.ValueMember = "Id";
-            dtp_Statistics_Member_StartTime.MinDate = DateTime.Now;
+            List<CunsumeTypeModel> ctmList = this.cunsumeTypeManager.GetModelList("1=1");
+            if (ctmList != null && ctmList.Count > 0)
+            {
+                this.cmb_CunsumeType.DataSource = ctmList;
+                this.cmb_CunsumeType.DisplayMember = "CusType";
+                this.cmb_CunsumeType.ValueMember = "Id";
+                dtp_Statistics_Member_StartTime.MinDate = DateTime.Now;
+
+                CunsumeTypeModel model = new CunsumeTypeModel();
+                model.CusType = "全部";
+                model.Id = 0;
+                ctmList.Add(model);
+                cmb_ReservationType.DataSource = ctmList;
+                this.cmb_ReservationType.DisplayMember = "CusType";
+                this.cmb_ReservationType.ValueMember = "Id";
+                cmb_ReservationType.SelectedIndex = ctmList.Count-1;
+            }
+            cmb_Reservation_PayType.SelectedIndex = 0;
+            cmb_Reservation_State.SelectedIndex = 0;
             //DataGridViewTextBoxColumn acCode0 = new DataGridViewTextBoxColumn();
             //acCode0.HeaderText = " ";
             //acCode0.Frozen = true;
@@ -331,7 +468,7 @@ namespace Gymnasium_APP.ReservationFrom
         private void btn_OK_Click(object sender, EventArgs e)
         {
             this.errorProvider1.Clear();
-            
+
             if (!AppConfig.ValidateName(this.txt_CusNum.Text))
             {
                 this.errorProvider1.Clear();
@@ -368,9 +505,11 @@ namespace Gymnasium_APP.ReservationFrom
             reservationInfoModel.Phone = txt_Phone.Text.Trim();
             reservationInfoModel.Des = txt_RDesc.Text.Trim();
             reservationInfoModel.RState = "0";
+            reservationInfoModel.Peoples = txt_Peoples.Text.Trim();
             reservationInfoModel.AddTime = CommTools.GetDateFormatStrot2(DateTime.Now);
             reservationInfoModel.AddUserName = MainForm.userName;
             reservationInfoModel.PriceAmount = label19.Text.Trim();
+            string desc = reservationInfoModel.Des;
             foreach (var item in dic_collesIndex)
             {
                 PositionReservationInfoModel positionReservationInfoModel = new PositionReservationInfoModel();
@@ -379,6 +518,7 @@ namespace Gymnasium_APP.ReservationFrom
                 foreach (var item2 in dic_a)
                 {
                     string times = (Convert.ToInt32(item2.Key)+8).ToString();
+                    desc += ","+times ;
                     positionReservationInfoModel.ID = positionReservationInfoManager.GetMaxId();
                     positionReservationInfoModel.PositionName = postionName;
                     positionReservationInfoModel.HTime = times;
@@ -391,6 +531,7 @@ namespace Gymnasium_APP.ReservationFrom
                     positionReservationInfoManager.Add(positionReservationInfoModel);
                 }
             }
+            reservationInfoModel.Des = desc;
             bool isadd= reservationInfoManager.Add(reservationInfoModel);
             if (!isadd)
             {
@@ -403,7 +544,6 @@ namespace Gymnasium_APP.ReservationFrom
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
-           
             ClearText();
         }
 
@@ -429,6 +569,11 @@ namespace Gymnasium_APP.ReservationFrom
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (tabControl1.SelectedIndex == 1)
+            {
+                dtp_Reservation_StartTime.Text = DateTime.Now.AddDays(-1).ToString();
+                GetReservationInfoManagerList();
+            }
             if (tabControl1.SelectedIndex == 2)
             {
                 List<CunsumeTypeModel> cardTypeInfoList = cunsumeTypeManager.GetModelList(" 1=1");
@@ -438,7 +583,6 @@ namespace Gymnasium_APP.ReservationFrom
                     model.CusType = "全部";
                     model.Id = 0;
                     cardTypeInfoList.Add(model);
-
                     this.cmb_Position_Type.DataSource = cardTypeInfoList;
                     this.cmb_Position_Type.DisplayMember = "CusType";
                     this.cmb_Position_Type.ValueMember = "Id";
@@ -449,6 +593,33 @@ namespace Gymnasium_APP.ReservationFrom
             }
         }
 
-        
+        #region 签到
+        private void btn_SignIN_Click(object sender, EventArgs e)
+        {
+            if (txt_CusNum.Text.Trim() != "")
+            {
+                string sql = "update PositionReservationInfo set State=1 where ReservationNum='"+txt_CusNum.Text.Trim()+"'";
+                int count = positionReservationInfoManager.ExecuteSql(sql);
+                MessageBox.Show("签到"+(count>0?"成功":"失败"));
+                cmb_CunsumeType_SelectedIndexChanged(null,null);
+            }
+        }
+        #endregion
+
+        private void 撤单ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string str = this.dgv_Reservation_Manager.SelectedCells[0].Value.ToString();
+            RevokeForm rf = new RevokeForm(str, "Reservation");
+            rf.Owner = this;
+            rf.ShowDialog();
+        }
+
+        private void dgv_Reservation_Manager_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+       
+
     }
 }

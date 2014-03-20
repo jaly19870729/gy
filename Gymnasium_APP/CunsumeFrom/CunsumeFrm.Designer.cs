@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_PeoPles = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.cmb_PayType = new System.Windows.Forms.ComboBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,19 +48,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_CardNumber = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_ChangeAmount = new System.Windows.Forms.TextBox();
             this.txt_PayableAmount = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.txt_PriceAmount = new System.Windows.Forms.TextBox();
+            this.txt_ChangeAmount = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Abolish = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdUpload = new System.Windows.Forms.OpenFileDialog();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_PeoPles = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -143,6 +143,29 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(680, 204);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // txt_PeoPles
+            // 
+            this.txt_PeoPles.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_PeoPles.Font = new System.Drawing.Font("宋体", 14F);
+            this.txt_PeoPles.Location = new System.Drawing.Point(105, 167);
+            this.txt_PeoPles.Name = "txt_PeoPles";
+            this.txt_PeoPles.Size = new System.Drawing.Size(221, 29);
+            this.txt_PeoPles.TabIndex = 42;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("宋体", 14F);
+            this.label7.Location = new System.Drawing.Point(3, 160);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 44);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "人数";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // cmb_PayType
             // 
             this.cmb_PayType.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -184,7 +207,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 40);
             this.label5.TabIndex = 38;
-            this.label5.Text = "消费类型";
+            this.label5.Text = "支付类型";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_CunsumeCount
@@ -299,29 +322,6 @@
             this.txt_CardNumber.TabIndex = 1;
             this.txt_CardNumber.TextChanged += new System.EventHandler(this.txt_CardNumber_TextChanged);
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 14F);
-            this.label3.Location = new System.Drawing.Point(343, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 44);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "找零金额";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_ChangeAmount
-            // 
-            this.txt_ChangeAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_ChangeAmount.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_ChangeAmount.Location = new System.Drawing.Point(445, 167);
-            this.txt_ChangeAmount.Name = "txt_ChangeAmount";
-            this.txt_ChangeAmount.Size = new System.Drawing.Size(221, 29);
-            this.txt_ChangeAmount.TabIndex = 38;
-            // 
             // txt_PayableAmount
             // 
             this.txt_PayableAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -369,6 +369,29 @@
             this.txt_PriceAmount.Size = new System.Drawing.Size(221, 29);
             this.txt_PriceAmount.TabIndex = 30;
             // 
+            // txt_ChangeAmount
+            // 
+            this.txt_ChangeAmount.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_ChangeAmount.Font = new System.Drawing.Font("宋体", 14F);
+            this.txt_ChangeAmount.Location = new System.Drawing.Point(445, 167);
+            this.txt_ChangeAmount.Name = "txt_ChangeAmount";
+            this.txt_ChangeAmount.Size = new System.Drawing.Size(221, 29);
+            this.txt_ChangeAmount.TabIndex = 38;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 14F);
+            this.label3.Location = new System.Drawing.Point(343, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 44);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "找零金额";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -411,29 +434,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("宋体", 14F);
-            this.label7.Location = new System.Drawing.Point(3, 160);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 44);
-            this.label7.TabIndex = 41;
-            this.label7.Text = "人数";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_PeoPles
-            // 
-            this.txt_PeoPles.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_PeoPles.Font = new System.Drawing.Font("宋体", 14F);
-            this.txt_PeoPles.Location = new System.Drawing.Point(105, 167);
-            this.txt_PeoPles.Name = "txt_PeoPles";
-            this.txt_PeoPles.Size = new System.Drawing.Size(221, 29);
-            this.txt_PeoPles.TabIndex = 42;
             // 
             // CunsumeFrm
             // 

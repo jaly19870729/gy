@@ -68,6 +68,8 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_SignIN = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmb_CunsumeType = new System.Windows.Forms.ComboBox();
@@ -75,6 +77,40 @@
             this.dtp_Statistics_Member_StartTime = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.cmb_Reservation_State = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cmb_ReservationType = new System.Windows.Forms.ComboBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.btn_Reservation_Select = new System.Windows.Forms.Button();
+            this.dtp_Reservation_EndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Reservation_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cmb_Reservation_PayType = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txt_Reservation_ReservationNum = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.dgv_Reservation_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Reservation_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Reservation_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_ReservationNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Money = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Times = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Peoples = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_PayType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_RState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cmb_Position_State = new System.Windows.Forms.ComboBox();
@@ -95,9 +131,11 @@
             this.dgv_Position_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Position_Update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.uC_Page_Position = new Gymnasium_APP.UC.UC_Page();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.撤单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uC_Page_Reservation_Manager = new Gymnasium_APP.UC.UC_Page();
+            this.uC_Page_Position = new Gymnasium_APP.UC.UC_Page();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -110,17 +148,21 @@
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Reservation_Manager)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Position_Manager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.label12, 0, 0);
@@ -147,9 +189,9 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.tabControl1);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(3, 50);
@@ -159,9 +201,9 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -187,9 +229,9 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
@@ -204,9 +246,9 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.tableLayoutPanel4);
             this.panel2.Location = new System.Drawing.Point(756, 3);
@@ -216,9 +258,9 @@
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -256,7 +298,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.993874F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.16564F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.883367F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(210, 527);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(209, 527);
             this.tableLayoutPanel4.TabIndex = 246;
             // 
             // txt_RDesc
@@ -383,7 +425,7 @@
             this.txt_CusNum.Font = new System.Drawing.Font("宋体", 12F);
             this.txt_CusNum.Location = new System.Drawing.Point(85, 68);
             this.txt_CusNum.Name = "txt_CusNum";
-            this.txt_CusNum.Size = new System.Drawing.Size(115, 26);
+            this.txt_CusNum.Size = new System.Drawing.Size(107, 26);
             this.txt_CusNum.TabIndex = 253;
             // 
             // label9
@@ -405,7 +447,7 @@
             this.txt_Peoples.Font = new System.Drawing.Font("宋体", 12F);
             this.txt_Peoples.Location = new System.Drawing.Point(85, 278);
             this.txt_Peoples.Name = "txt_Peoples";
-            this.txt_Peoples.Size = new System.Drawing.Size(115, 26);
+            this.txt_Peoples.Size = new System.Drawing.Size(107, 26);
             this.txt_Peoples.TabIndex = 255;
             // 
             // label10
@@ -425,7 +467,7 @@
             this.txt_Name.Font = new System.Drawing.Font("宋体", 12F);
             this.txt_Name.Location = new System.Drawing.Point(85, 320);
             this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(115, 26);
+            this.txt_Name.Size = new System.Drawing.Size(107, 26);
             this.txt_Name.TabIndex = 257;
             // 
             // label11
@@ -445,7 +487,7 @@
             this.txt_Phone.Font = new System.Drawing.Font("宋体", 12F);
             this.txt_Phone.Location = new System.Drawing.Point(85, 362);
             this.txt_Phone.Name = "txt_Phone";
-            this.txt_Phone.Size = new System.Drawing.Size(115, 26);
+            this.txt_Phone.Size = new System.Drawing.Size(107, 26);
             this.txt_Phone.TabIndex = 259;
             // 
             // txt_CusMoney
@@ -454,7 +496,7 @@
             this.txt_CusMoney.Font = new System.Drawing.Font("宋体", 12F);
             this.txt_CusMoney.Location = new System.Drawing.Point(85, 236);
             this.txt_CusMoney.Name = "txt_CusMoney";
-            this.txt_CusMoney.Size = new System.Drawing.Size(115, 26);
+            this.txt_CusMoney.Size = new System.Drawing.Size(107, 26);
             this.txt_CusMoney.TabIndex = 251;
             // 
             // label14
@@ -465,22 +507,22 @@
             this.label14.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Bold);
             this.label14.Location = new System.Drawing.Point(3, 19);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(204, 22);
+            this.label14.Size = new System.Drawing.Size(203, 22);
             this.label14.TabIndex = 242;
             this.label14.Text = "订单信息";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.SetColumnSpan(this.panel5, 2);
             this.panel5.Controls.Add(this.btn_Clear);
             this.panel5.Controls.Add(this.btn_OK);
             this.panel5.Location = new System.Drawing.Point(3, 483);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(204, 41);
+            this.panel5.Size = new System.Drawing.Size(203, 41);
             this.panel5.TabIndex = 261;
             // 
             // btn_Clear
@@ -507,9 +549,9 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.tableLayoutPanel3);
             this.panel3.Location = new System.Drawing.Point(3, 3);
@@ -519,9 +561,9 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 1);
@@ -540,9 +582,9 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 20F);
@@ -581,9 +623,10 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.btn_SignIN);
             this.panel4.Controls.Add(this.label19);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
@@ -596,12 +639,34 @@
             this.panel4.Size = new System.Drawing.Size(733, 54);
             this.panel4.TabIndex = 1;
             // 
+            // btn_SignIN
+            // 
+            this.btn_SignIN.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SignIN.Location = new System.Drawing.Point(669, 10);
+            this.btn_SignIN.Name = "btn_SignIN";
+            this.btn_SignIN.Size = new System.Drawing.Size(58, 35);
+            this.btn_SignIN.TabIndex = 246;
+            this.btn_SignIN.Text = "签到";
+            this.btn_SignIN.UseVisualStyleBackColor = true;
+            this.btn_SignIN.Click += new System.EventHandler(this.btn_SignIN_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 12F);
+            this.label19.Location = new System.Drawing.Point(40, 24);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(64, 16);
+            this.label19.TabIndex = 245;
+            this.label19.Text = "label19";
+            this.label19.Visible = false;
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 14F);
-            this.label3.Location = new System.Drawing.Point(88, 22);
+            this.label3.Location = new System.Drawing.Point(110, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 19);
             this.label3.TabIndex = 244;
@@ -613,7 +678,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 14F);
-            this.label2.Location = new System.Drawing.Point(645, 19);
+            this.label2.Location = new System.Drawing.Point(597, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 19);
             this.label2.TabIndex = 243;
@@ -627,7 +692,7 @@
             this.cmb_CunsumeType.FormattingEnabled = true;
             this.cmb_CunsumeType.Items.AddRange(new object[] {
             "健身房"});
-            this.cmb_CunsumeType.Location = new System.Drawing.Point(251, 12);
+            this.cmb_CunsumeType.Location = new System.Drawing.Point(225, 14);
             this.cmb_CunsumeType.Name = "cmb_CunsumeType";
             this.cmb_CunsumeType.Size = new System.Drawing.Size(133, 27);
             this.cmb_CunsumeType.TabIndex = 242;
@@ -638,7 +703,7 @@
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("宋体", 14F);
-            this.label16.Location = new System.Drawing.Point(160, 19);
+            this.label16.Location = new System.Drawing.Point(134, 21);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(85, 19);
             this.label16.TabIndex = 241;
@@ -652,7 +717,7 @@
             this.dtp_Statistics_Member_StartTime.CustomFormat = "yyy-MM-dd";
             this.dtp_Statistics_Member_StartTime.Font = new System.Drawing.Font("宋体", 14F);
             this.dtp_Statistics_Member_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Statistics_Member_StartTime.Location = new System.Drawing.Point(481, 12);
+            this.dtp_Statistics_Member_StartTime.Location = new System.Drawing.Point(455, 14);
             this.dtp_Statistics_Member_StartTime.Name = "dtp_Statistics_Member_StartTime";
             this.dtp_Statistics_Member_StartTime.Size = new System.Drawing.Size(138, 29);
             this.dtp_Statistics_Member_StartTime.TabIndex = 240;
@@ -663,7 +728,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 14F);
-            this.label8.Location = new System.Drawing.Point(390, 19);
+            this.label8.Location = new System.Drawing.Point(364, 21);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 19);
             this.label8.TabIndex = 239;
@@ -671,6 +736,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel12);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -678,6 +744,345 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "预订信息";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel12.Controls.Add(this.cmb_Reservation_State);
+            this.panel12.Controls.Add(this.label31);
+            this.panel12.Controls.Add(this.cmb_ReservationType);
+            this.panel12.Controls.Add(this.label29);
+            this.panel12.Controls.Add(this.uC_Page_Reservation_Manager);
+            this.panel12.Controls.Add(this.btn_Reservation_Select);
+            this.panel12.Controls.Add(this.dtp_Reservation_EndTime);
+            this.panel12.Controls.Add(this.dtp_Reservation_StartTime);
+            this.panel12.Controls.Add(this.label20);
+            this.panel12.Controls.Add(this.label21);
+            this.panel12.Controls.Add(this.cmb_Reservation_PayType);
+            this.panel12.Controls.Add(this.label22);
+            this.panel12.Controls.Add(this.txt_Reservation_ReservationNum);
+            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.dgv_Reservation_Manager);
+            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(965, 540);
+            this.panel12.TabIndex = 7;
+            // 
+            // cmb_Reservation_State
+            // 
+            this.cmb_Reservation_State.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Reservation_State.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Reservation_State.FormattingEnabled = true;
+            this.cmb_Reservation_State.Items.AddRange(new object[] {
+            "全部",
+            "未完成",
+            "已完成",
+            "已撤单"});
+            this.cmb_Reservation_State.Location = new System.Drawing.Point(526, 10);
+            this.cmb_Reservation_State.Name = "cmb_Reservation_State";
+            this.cmb_Reservation_State.Size = new System.Drawing.Size(90, 24);
+            this.cmb_Reservation_State.TabIndex = 260;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("宋体", 12F);
+            this.label31.Location = new System.Drawing.Point(488, 16);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(40, 16);
+            this.label31.TabIndex = 259;
+            this.label31.Text = "状态";
+            // 
+            // cmb_ReservationType
+            // 
+            this.cmb_ReservationType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_ReservationType.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_ReservationType.FormattingEnabled = true;
+            this.cmb_ReservationType.Items.AddRange(new object[] {
+            "全部",
+            "现金消费",
+            "刷卡消费"});
+            this.cmb_ReservationType.Location = new System.Drawing.Point(210, 12);
+            this.cmb_ReservationType.Name = "cmb_ReservationType";
+            this.cmb_ReservationType.Size = new System.Drawing.Size(90, 24);
+            this.cmb_ReservationType.TabIndex = 258;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("宋体", 12F);
+            this.label29.Location = new System.Drawing.Point(164, 20);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(40, 16);
+            this.label29.TabIndex = 257;
+            this.label29.Text = "项目";
+            // 
+            // btn_Reservation_Select
+            // 
+            this.btn_Reservation_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Reservation_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Reservation_Select.Location = new System.Drawing.Point(865, 42);
+            this.btn_Reservation_Select.Name = "btn_Reservation_Select";
+            this.btn_Reservation_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_Reservation_Select.TabIndex = 249;
+            this.btn_Reservation_Select.Text = "查询";
+            this.btn_Reservation_Select.UseVisualStyleBackColor = true;
+            this.btn_Reservation_Select.Click += new System.EventHandler(this.btn_Reservation_Select_Click);
+            // 
+            // dtp_Reservation_EndTime
+            // 
+            this.dtp_Reservation_EndTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtp_Reservation_EndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtp_Reservation_EndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Reservation_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Reservation_EndTime.Location = new System.Drawing.Point(670, 45);
+            this.dtp_Reservation_EndTime.Name = "dtp_Reservation_EndTime";
+            this.dtp_Reservation_EndTime.Size = new System.Drawing.Size(189, 26);
+            this.dtp_Reservation_EndTime.TabIndex = 255;
+            // 
+            // dtp_Reservation_StartTime
+            // 
+            this.dtp_Reservation_StartTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtp_Reservation_StartTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dtp_Reservation_StartTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dtp_Reservation_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_Reservation_StartTime.Location = new System.Drawing.Point(397, 46);
+            this.dtp_Reservation_StartTime.Name = "dtp_Reservation_StartTime";
+            this.dtp_Reservation_StartTime.Size = new System.Drawing.Size(191, 26);
+            this.dtp_Reservation_StartTime.TabIndex = 254;
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("宋体", 12F);
+            this.label20.Location = new System.Drawing.Point(324, 54);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(72, 16);
+            this.label20.TabIndex = 252;
+            this.label20.Text = "开始时间";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("宋体", 12F);
+            this.label21.Location = new System.Drawing.Point(599, 53);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(72, 16);
+            this.label21.TabIndex = 253;
+            this.label21.Text = "结束时间";
+            // 
+            // cmb_Reservation_PayType
+            // 
+            this.cmb_Reservation_PayType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Reservation_PayType.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Reservation_PayType.FormattingEnabled = true;
+            this.cmb_Reservation_PayType.Items.AddRange(new object[] {
+            "全部",
+            "现金消费",
+            "刷卡消费",
+            "转账消费",
+            "支票消费",
+            "其他消费"});
+            this.cmb_Reservation_PayType.Location = new System.Drawing.Point(384, 12);
+            this.cmb_Reservation_PayType.Name = "cmb_Reservation_PayType";
+            this.cmb_Reservation_PayType.Size = new System.Drawing.Size(90, 24);
+            this.cmb_Reservation_PayType.TabIndex = 248;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("宋体", 12F);
+            this.label22.Location = new System.Drawing.Point(306, 20);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(72, 16);
+            this.label22.TabIndex = 247;
+            this.label22.Text = "支付类型";
+            // 
+            // txt_Reservation_ReservationNum
+            // 
+            this.txt_Reservation_ReservationNum.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_Reservation_ReservationNum.Location = new System.Drawing.Point(43, 12);
+            this.txt_Reservation_ReservationNum.Name = "txt_Reservation_ReservationNum";
+            this.txt_Reservation_ReservationNum.Size = new System.Drawing.Size(115, 26);
+            this.txt_Reservation_ReservationNum.TabIndex = 246;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("宋体", 12F);
+            this.label23.Location = new System.Drawing.Point(9, 22);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 16);
+            this.label23.TabIndex = 245;
+            this.label23.Text = "单号";
+            // 
+            // dgv_Reservation_Manager
+            // 
+            this.dgv_Reservation_Manager.AllowUserToAddRows = false;
+            this.dgv_Reservation_Manager.AllowUserToResizeRows = false;
+            this.dgv_Reservation_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Reservation_Manager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Reservation_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Reservation_ID,
+            this.dgv_Reservation_cb,
+            this.dgv_Reservation_Num,
+            this.dgv_Reservation_ReservationNum,
+            this.dgv_Reservation_Name,
+            this.dgv_Reservation_TypeName,
+            this.dgv_Reservation_Position,
+            this.dgv_Reservation_Money,
+            this.dgv_Reservation_Times,
+            this.dgv_Reservation_Peoples,
+            this.dgv_Reservation_PayType,
+            this.dgv_Reservation_Phone,
+            this.dgv_Reservation_PriceAmount,
+            this.dgv_Reservation_PaymentAmount,
+            this.dgv_Reservation_ChangeAmount,
+            this.dgv_Reservation_RState,
+            this.dgv_Reservation_Des,
+            this.dgv_Reservation_AddUserName,
+            this.dgv_Reservation_AddTime});
+            this.dgv_Reservation_Manager.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgv_Reservation_Manager.Location = new System.Drawing.Point(3, 83);
+            this.dgv_Reservation_Manager.Name = "dgv_Reservation_Manager";
+            this.dgv_Reservation_Manager.ReadOnly = true;
+            this.dgv_Reservation_Manager.RowHeadersVisible = false;
+            this.dgv_Reservation_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_Reservation_Manager.RowTemplate.Height = 23;
+            this.dgv_Reservation_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Reservation_Manager.Size = new System.Drawing.Size(954, 424);
+            this.dgv_Reservation_Manager.TabIndex = 215;
+            this.dgv_Reservation_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Reservation_Manager_CellDoubleClick);
+            // 
+            // dgv_Reservation_ID
+            // 
+            this.dgv_Reservation_ID.Frozen = true;
+            this.dgv_Reservation_ID.HeaderText = "ID";
+            this.dgv_Reservation_ID.Name = "dgv_Reservation_ID";
+            this.dgv_Reservation_ID.ReadOnly = true;
+            this.dgv_Reservation_ID.Visible = false;
+            // 
+            // dgv_Reservation_cb
+            // 
+            this.dgv_Reservation_cb.FillWeight = 1F;
+            this.dgv_Reservation_cb.HeaderText = "选择";
+            this.dgv_Reservation_cb.Name = "dgv_Reservation_cb";
+            this.dgv_Reservation_cb.ReadOnly = true;
+            this.dgv_Reservation_cb.Visible = false;
+            // 
+            // dgv_Reservation_Num
+            // 
+            this.dgv_Reservation_Num.FillWeight = 65F;
+            this.dgv_Reservation_Num.Frozen = true;
+            this.dgv_Reservation_Num.HeaderText = "序号";
+            this.dgv_Reservation_Num.MinimumWidth = 65;
+            this.dgv_Reservation_Num.Name = "dgv_Reservation_Num";
+            this.dgv_Reservation_Num.ReadOnly = true;
+            this.dgv_Reservation_Num.Width = 65;
+            // 
+            // dgv_Reservation_ReservationNum
+            // 
+            this.dgv_Reservation_ReservationNum.Frozen = true;
+            this.dgv_Reservation_ReservationNum.HeaderText = "消费单号";
+            this.dgv_Reservation_ReservationNum.Name = "dgv_Reservation_ReservationNum";
+            this.dgv_Reservation_ReservationNum.ReadOnly = true;
+            // 
+            // dgv_Reservation_Name
+            // 
+            this.dgv_Reservation_Name.HeaderText = "姓名";
+            this.dgv_Reservation_Name.Name = "dgv_Reservation_Name";
+            this.dgv_Reservation_Name.ReadOnly = true;
+            // 
+            // dgv_Reservation_TypeName
+            // 
+            this.dgv_Reservation_TypeName.HeaderText = "项目";
+            this.dgv_Reservation_TypeName.Name = "dgv_Reservation_TypeName";
+            this.dgv_Reservation_TypeName.ReadOnly = true;
+            // 
+            // dgv_Reservation_Position
+            // 
+            this.dgv_Reservation_Position.HeaderText = "位置";
+            this.dgv_Reservation_Position.Name = "dgv_Reservation_Position";
+            this.dgv_Reservation_Position.ReadOnly = true;
+            // 
+            // dgv_Reservation_Money
+            // 
+            this.dgv_Reservation_Money.HeaderText = "金额";
+            this.dgv_Reservation_Money.Name = "dgv_Reservation_Money";
+            this.dgv_Reservation_Money.ReadOnly = true;
+            // 
+            // dgv_Reservation_Times
+            // 
+            this.dgv_Reservation_Times.HeaderText = "时长";
+            this.dgv_Reservation_Times.Name = "dgv_Reservation_Times";
+            this.dgv_Reservation_Times.ReadOnly = true;
+            // 
+            // dgv_Reservation_Peoples
+            // 
+            this.dgv_Reservation_Peoples.HeaderText = "人数";
+            this.dgv_Reservation_Peoples.Name = "dgv_Reservation_Peoples";
+            this.dgv_Reservation_Peoples.ReadOnly = true;
+            // 
+            // dgv_Reservation_PayType
+            // 
+            this.dgv_Reservation_PayType.HeaderText = "支付类型";
+            this.dgv_Reservation_PayType.Name = "dgv_Reservation_PayType";
+            this.dgv_Reservation_PayType.ReadOnly = true;
+            // 
+            // dgv_Reservation_Phone
+            // 
+            this.dgv_Reservation_Phone.HeaderText = "电话";
+            this.dgv_Reservation_Phone.Name = "dgv_Reservation_Phone";
+            this.dgv_Reservation_Phone.ReadOnly = true;
+            // 
+            // dgv_Reservation_PriceAmount
+            // 
+            this.dgv_Reservation_PriceAmount.HeaderText = "单价";
+            this.dgv_Reservation_PriceAmount.Name = "dgv_Reservation_PriceAmount";
+            this.dgv_Reservation_PriceAmount.ReadOnly = true;
+            // 
+            // dgv_Reservation_PaymentAmount
+            // 
+            this.dgv_Reservation_PaymentAmount.HeaderText = "实收";
+            this.dgv_Reservation_PaymentAmount.Name = "dgv_Reservation_PaymentAmount";
+            this.dgv_Reservation_PaymentAmount.ReadOnly = true;
+            // 
+            // dgv_Reservation_ChangeAmount
+            // 
+            this.dgv_Reservation_ChangeAmount.HeaderText = "找零";
+            this.dgv_Reservation_ChangeAmount.Name = "dgv_Reservation_ChangeAmount";
+            this.dgv_Reservation_ChangeAmount.ReadOnly = true;
+            // 
+            // dgv_Reservation_RState
+            // 
+            this.dgv_Reservation_RState.HeaderText = "状态";
+            this.dgv_Reservation_RState.Name = "dgv_Reservation_RState";
+            this.dgv_Reservation_RState.ReadOnly = true;
+            // 
+            // dgv_Reservation_Des
+            // 
+            this.dgv_Reservation_Des.HeaderText = "描述";
+            this.dgv_Reservation_Des.Name = "dgv_Reservation_Des";
+            this.dgv_Reservation_Des.ReadOnly = true;
+            // 
+            // dgv_Reservation_AddUserName
+            // 
+            this.dgv_Reservation_AddUserName.HeaderText = "操作员";
+            this.dgv_Reservation_AddUserName.Name = "dgv_Reservation_AddUserName";
+            this.dgv_Reservation_AddUserName.ReadOnly = true;
+            // 
+            // dgv_Reservation_AddTime
+            // 
+            this.dgv_Reservation_AddTime.HeaderText = "时间";
+            this.dgv_Reservation_AddTime.Name = "dgv_Reservation_AddTime";
+            this.dgv_Reservation_AddTime.ReadOnly = true;
             // 
             // tabPage3
             // 
@@ -692,9 +1097,9 @@
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.cmb_Position_State);
             this.panel10.Controls.Add(this.label13);
@@ -828,9 +1233,9 @@
             // 
             this.dgv_Position_Manager.AllowUserToAddRows = false;
             this.dgv_Position_Manager.AllowUserToResizeRows = false;
-            this.dgv_Position_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Position_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Position_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Position_Manager.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Position_Manager.ColumnHeadersHeight = 25;
@@ -924,15 +1329,32 @@
             this.label1.Text = "预订";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // errorProvider1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 12F);
-            this.label19.Location = new System.Drawing.Point(16, 7);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(64, 16);
-            this.label19.TabIndex = 245;
-            this.label19.Text = "label19";
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.撤单ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 撤单ToolStripMenuItem
+            // 
+            this.撤单ToolStripMenuItem.Name = "撤单ToolStripMenuItem";
+            this.撤单ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.撤单ToolStripMenuItem.Text = "撤单";
+            this.撤单ToolStripMenuItem.Click += new System.EventHandler(this.撤单ToolStripMenuItem_Click);
+            // 
+            // uC_Page_Reservation_Manager
+            // 
+            this.uC_Page_Reservation_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_Reservation_Manager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_Reservation_Manager.Location = new System.Drawing.Point(365, 509);
+            this.uC_Page_Reservation_Manager.Name = "uC_Page_Reservation_Manager";
+            this.uC_Page_Reservation_Manager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_Reservation_Manager.TabIndex = 256;
             // 
             // uC_Page_Position
             // 
@@ -942,10 +1364,6 @@
             this.uC_Page_Position.Name = "uC_Page_Position";
             this.uC_Page_Position.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Position.TabIndex = 240;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // ReservationMainForm
             // 
@@ -976,11 +1394,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Reservation_Manager)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Position_Manager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1051,5 +1474,43 @@
         private System.Windows.Forms.TextBox txt_RDesc;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btn_SignIN;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.ComboBox cmb_Reservation_State;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox cmb_ReservationType;
+        private System.Windows.Forms.Label label29;
+        private UC.UC_Page uC_Page_Reservation_Manager;
+        private System.Windows.Forms.Button btn_Reservation_Select;
+        private System.Windows.Forms.DateTimePicker dtp_Reservation_EndTime;
+        private System.Windows.Forms.DateTimePicker dtp_Reservation_StartTime;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cmb_Reservation_PayType;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txt_Reservation_ReservationNum;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.DataGridView dgv_Reservation_Manager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_ID;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dgv_Reservation_cb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Num;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_ReservationNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_TypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Position;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Money;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Times;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Peoples;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_PayType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_PriceAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_PaymentAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_ChangeAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_RState;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Des;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_AddUserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_AddTime;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 撤单ToolStripMenuItem;
     }
 }

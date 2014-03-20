@@ -18,7 +18,8 @@ namespace Gymnasium_APP.ReportFrom
         {
             InitializeComponent();
         }
-        string reportPath = Application.StartupPath.Substring(0, Application.StartupPath.Substring(0, Application.StartupPath.LastIndexOf("\\")).LastIndexOf("\\"));
+        //string reportPath = Application.StartupPath.Substring(0, Application.StartupPath.Substring(0, Application.StartupPath.LastIndexOf("\\")).LastIndexOf("\\"));
+        string reportPath = Application.StartupPath;
         MemberInfoManager memberManager = new MemberInfoManager();
         private string MemberTiaoJian = " 1=1";
         #region 写日志

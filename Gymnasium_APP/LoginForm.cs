@@ -104,7 +104,7 @@ namespace Gymnasium_APP
         public static string logion_TrueName = string.Empty;
         private void GetLogin()
         {
-            if (DateTime.Now > Convert.ToDateTime("2014-03-20"))
+            if (DateTime.Now > Convert.ToDateTime("2014-03-31"))
             {
                 return;
             }

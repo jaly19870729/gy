@@ -1603,7 +1603,7 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
         private void 撤单ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string str = this.dgv_Statistics_SellCast_Manager.SelectedCells[1].Value.ToString();
-            RevokeForm rf = new RevokeForm(str);
+            RevokeForm rf = new RevokeForm(str, "SellCast");
             rf.Owner = this;
             rf.ShowDialog();
         }
