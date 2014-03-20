@@ -1,0 +1,50 @@
+<chart palette="2" caption="销售的产品" subCaption="2009年10月" showValues="0" divLineDecimalPrecision="1" limitsDecimalPrecision="1" PYAxisName="金额" SYAxisName="数量" numberPrefix="￥" formatNumberScale="0" baseFont="Arial" baseFontSize="12" rotateYAxisName='0'>
+ <categories>
+  <category label="A产品" />
+  <category label="B产品" />
+  <category label="C产品" />
+  <category label="D产品" />
+  <category label="E产品" />
+  <category label="F产品" />
+  <category label="G产品" />
+  <category label="H产品" />
+  <category label="I产品" />
+  <category label="J产品" />
+  </categories>
+ <dataset seriesName="收入">
+  <set value="5854" />
+  <set value="4171" />
+  <set value="1375" />
+  <set value="1875" />
+  <set value="2246" />
+  <set value="2696" />
+  <set value="1287" />
+  <set value="2140" />
+  <set value="1603" />
+  <set value="1628" />
+  </dataset>
+ <dataset seriesName="利润" renderAs="Area" parentYAxis="P">
+  <set value="3242" />
+  <set value="3171" />
+  <set value="700" />
+  <set value="1287" />
+  <set value="1856" />
+  <set value="1126" />
+  <set value="987" />
+  <set value="1610" />
+  <set value="903" />
+  <set value="928" />
+  </dataset>
+ <dataset lineThickness="3" seriesName="数量" parentYAxis="S">
+  <set value="174" />
+  <set value="197" />
+  <set value="155" />
+  <set value="15" />
+  <set value="66" />
+  <set value="85" />
+  <set value="37" />
+  <set value="10" />
+  <set value="44" />
+  <set value="322" />
+  </dataset>
+  </chart>
