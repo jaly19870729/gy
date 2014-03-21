@@ -11,6 +11,7 @@ using Gymnasium_APP.Model;
 using Gymnasium_APP.BLL;
 using System.IO;
 using Gymnasium_APP.SellCardForm;
+using System.Text.RegularExpressions;
 
 namespace Gymnasium_APP.CunsumeFrom
 {
@@ -173,7 +174,17 @@ namespace Gymnasium_APP.CunsumeFrom
             model.CusState = 0;
             int isAdd = manager.Add(model);
             MessageBox.Show("单号：" +  txt_CardNumber.Text.Trim() + " 消费" + (isAdd > 0 ? "成功！" : "失败！"));
+            //StringBuilder sb = new StringBuilder();
+            //string content = Regex.Replace(CommTools.GetString(cmb_CunsumeType.Text.Trim(), 8), @" ", "    ");
+            //string coi = Regex.Replace(CommTools.GetString(txt_CunsumeCount.Text.Trim(), 6), @" ", "    ");
+            //string coi2 = Regex.Replace(CommTools.GetString(txt_PriceAmount.Text.Trim(), 6), @" ", "    ");
+            //string coi3 = Regex.Replace(CommTools.GetString(txt_PaymentAmount.Text.Trim(), 6), @" ", "    ");
+            //sb.Append(content + coi + coi2 + coi3);
             CommTools.AddSystemLog("添加", "单次消费：" + txt_CardNumber.Text.Trim() + " 消费信息 " + this.cmb_CunsumeType.Text + "添加" + (isAdd > 0 ? "成功！" : "失败！"));
+            //string mes = CommTools.GetPrintStr(MainForm.PrintTitle, model.CusNum, MainForm.PrintAddress, MainForm.PrintPhone, MainForm.PrintEnd, Convert.ToDouble(model.PriceAmount), Convert.ToDouble(model.PaymentAmount), sb.ToString(), txt_PeoPles.Text.Trim());
+            //MessageBox.Show(mes);
+            PrintForm pf=new PrintForm (model.CusNum,cmb_CunsumeType.Text.Trim(),txt_CunsumeCount.Text.Trim(),txt_PriceAmount.Text.Trim(),txt_PayableAmount.Text.Trim(),txt_PeoPles.Text.Trim(),txt_PayableAmount.Text.Trim(),txt_PaymentAmount.Text.Trim(),txt_ChangeAmount.Text.Trim(),cmb_PayType.Text.Trim());
+            pf.ShowDialog();
             this.Close();
             //CunsumeCastModel cunsumeCastModel=new CunsumeCastModel();
             //cunsumeCastModel.Id = cunsumeCastManager.GetMaxId();
@@ -264,6 +275,17 @@ namespace Gymnasium_APP.CunsumeFrom
                     }
                 }
                 txt_CardNumber.Text = a+d.ToString();
+            }
+        }
+
+        private void CunsumeFrm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (ValidateControl())
+                {
+                    SubmitData();
+                }
             }
         }
 

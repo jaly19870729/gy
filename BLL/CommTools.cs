@@ -9,6 +9,9 @@ using System.Threading;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
+using System.Drawing.Printing;
+using System.Text.RegularExpressions;
 
 namespace Gymnasium_APP.BLL
 {
@@ -217,6 +220,116 @@ namespace Gymnasium_APP.BLL
                     bar.Value = i;
                     Thread.Sleep(50);
                 }
+            }
+        }
+        #endregion
+
+
+        #region 打印机
+        public static void InitprinterComboBox(ComboBox comboBox)
+        {
+            List<String> list = LocalPrinter.GetLocalPrinters(); //获得系统中的打印机列表
+            foreach (String s in list)
+            {
+                comboBox.Items.Add(s); //将打印机名称添加到下拉框中
+            }
+            if (list.Count > 0)
+            {
+                comboBox.SelectedIndex = 0;
+            }
+        }
+        private int getYc(double cm)
+        {
+
+            return (int)(cm / 25.4) * 100;
+
+        }
+        public static string GetString(string str, int len)
+        {
+            string newStr = str;
+            if (str.Length > len)
+            {
+                newStr = string.Empty;
+                int s = str.Length % len;
+                for (int i = 0; i < s; i++)
+                {
+                    str += " ";
+                }
+                for (int i = 0; i < str.Length; i++)
+                {
+                    if (i % len - 1 == 0 && i != 0 && str != "")
+                    {
+                        if (str.Trim().Length > 0)
+                        {
+                            newStr += str.Substring(0, len);
+                            str = str.Substring(len, str.Length - 8);
+                            i = 0;
+                            if (str.Trim().Length > 0)
+                            {
+                                newStr += "\r\n";
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < len-str.Length; i++)
+                {
+                    str += " ";
+                }
+                newStr = str;
+            }
+
+            return newStr;
+        }
+        public static string GetPrintStr(string title, string numbers, string address, string phone, string printEnd, double total, double fukuan, string content, string peoples)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("                " + title + "     \r\n");
+            sb.Append("-----------------------------------------------------------------\r\n");
+            sb.Append("日期:" + DateTime.Now.ToShortDateString() + "  " + "单号:" + numbers + "\r\n");
+            sb.Append("-----------------------------------------------------------------\r\n");
+            sb.Append("项目" + "                    " + "数量" + "    " + "单价" + "  " + "小计" + "\r\n");
+            sb.Append(content);
+            sb.Append("-----------------------------------------------------------------\r\n");
+            sb.Append("人数:   " + peoples + "\r\n");
+            sb.Append("合计:   " + total + "\r\n");
+            sb.Append("付款: 现金" + "    " + fukuan + "\r\n");
+            sb.Append("现金找零:" + "   " + (fukuan - total) + "\r\n");
+            sb.Append("-----------------------------------------------------------------\r\n");
+            sb.Append("地址：" + address + "\r\n");
+            sb.Append("电话：" + phone + "\r\n");
+            sb.Append(printEnd + "\r\n");
+            sb.Append(DateTime.Now.ToString() + "\r\n");
+            return sb.ToString();
+        }
+
+        public static class Externs
+        {
+            [DllImport("winspool.drv")]
+            public static extern bool SetDefaultPrinter(String Name); //调用win api将指定名称的打印机设置为默认打印机
+        }
+        public static class LocalPrinter
+        {
+            private static PrintDocument fPrintDocument = new PrintDocument();
+            //获取本机默认打印机名称
+            public static String DefaultPrinter()
+            {
+                return fPrintDocument.PrinterSettings.PrinterName;
+            }
+            public static List<String> GetLocalPrinters()
+            {
+                List<String> fPrinters = new List<String>();
+                fPrinters.Add(DefaultPrinter()); //默认打印机始终出现在列表的第一项
+                foreach (String fPrinterName in PrinterSettings.InstalledPrinters)
+                {
+                    if (!fPrinters.Contains(fPrinterName))
+                    {
+                        fPrinters.Add(fPrinterName);
+                    }
+                }
+                return fPrinters;
             }
         }
         #endregion

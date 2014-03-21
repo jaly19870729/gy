@@ -75,7 +75,7 @@ namespace Gymnasium_APP.ReportFrom
         {
             if (e.KeyCode == Keys.F5)
             {
-                new PictureForm(GetFromPicture.GetWindowCapture(this.webBrowser1.Handle)).Show();
+                new PictureForm(GetFromPicture.GetWindowCapture(this.webBrowser1.Handle),null).Show();
             }
         }
         #region MemberInfo 会员统计

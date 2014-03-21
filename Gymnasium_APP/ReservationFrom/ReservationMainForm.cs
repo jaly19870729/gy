@@ -260,7 +260,7 @@ ds_RoleManagerList.Tables[0].Rows[i]["AddUserName"].ToString();
                 this.cmb_CunsumeType.DataSource = ctmList;
                 this.cmb_CunsumeType.DisplayMember = "CusType";
                 this.cmb_CunsumeType.ValueMember = "Id";
-                dtp_Statistics_Member_StartTime.MinDate = DateTime.Now;
+                //dtp_Statistics_Member_StartTime.MinDate = DateTime.Now;
 
                 CunsumeTypeModel model = new CunsumeTypeModel();
                 model.CusType = "全部";

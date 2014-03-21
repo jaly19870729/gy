@@ -92,25 +92,8 @@
             this.txt_Reservation_ReservationNum = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.dgv_Reservation_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_Reservation_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Reservation_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_ReservationNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Money = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Times = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Peoples = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_PayType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_RState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Reservation_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.撤单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cmb_Position_State = new System.Windows.Forms.ComboBox();
@@ -132,10 +115,27 @@
             this.btn_Position_Update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.撤单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uC_Page_Reservation_Manager = new Gymnasium_APP.UC.UC_Page();
             this.uC_Page_Position = new Gymnasium_APP.UC.UC_Page();
+            this.dgv_Reservation_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Reservation_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_ReservationNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Money = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Times = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Peoples = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_PayType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_RState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Reservation_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -151,11 +151,11 @@
             this.tabPage2.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Reservation_Manager)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Position_Manager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -961,128 +961,19 @@
             this.dgv_Reservation_Manager.TabIndex = 215;
             this.dgv_Reservation_Manager.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Reservation_Manager_CellDoubleClick);
             // 
-            // dgv_Reservation_ID
+            // contextMenuStrip1
             // 
-            this.dgv_Reservation_ID.Frozen = true;
-            this.dgv_Reservation_ID.HeaderText = "ID";
-            this.dgv_Reservation_ID.Name = "dgv_Reservation_ID";
-            this.dgv_Reservation_ID.ReadOnly = true;
-            this.dgv_Reservation_ID.Visible = false;
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.撤单ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
             // 
-            // dgv_Reservation_cb
+            // 撤单ToolStripMenuItem
             // 
-            this.dgv_Reservation_cb.FillWeight = 1F;
-            this.dgv_Reservation_cb.HeaderText = "选择";
-            this.dgv_Reservation_cb.Name = "dgv_Reservation_cb";
-            this.dgv_Reservation_cb.ReadOnly = true;
-            this.dgv_Reservation_cb.Visible = false;
-            // 
-            // dgv_Reservation_Num
-            // 
-            this.dgv_Reservation_Num.FillWeight = 65F;
-            this.dgv_Reservation_Num.Frozen = true;
-            this.dgv_Reservation_Num.HeaderText = "序号";
-            this.dgv_Reservation_Num.MinimumWidth = 65;
-            this.dgv_Reservation_Num.Name = "dgv_Reservation_Num";
-            this.dgv_Reservation_Num.ReadOnly = true;
-            this.dgv_Reservation_Num.Width = 65;
-            // 
-            // dgv_Reservation_ReservationNum
-            // 
-            this.dgv_Reservation_ReservationNum.Frozen = true;
-            this.dgv_Reservation_ReservationNum.HeaderText = "消费单号";
-            this.dgv_Reservation_ReservationNum.Name = "dgv_Reservation_ReservationNum";
-            this.dgv_Reservation_ReservationNum.ReadOnly = true;
-            // 
-            // dgv_Reservation_Name
-            // 
-            this.dgv_Reservation_Name.HeaderText = "姓名";
-            this.dgv_Reservation_Name.Name = "dgv_Reservation_Name";
-            this.dgv_Reservation_Name.ReadOnly = true;
-            // 
-            // dgv_Reservation_TypeName
-            // 
-            this.dgv_Reservation_TypeName.HeaderText = "项目";
-            this.dgv_Reservation_TypeName.Name = "dgv_Reservation_TypeName";
-            this.dgv_Reservation_TypeName.ReadOnly = true;
-            // 
-            // dgv_Reservation_Position
-            // 
-            this.dgv_Reservation_Position.HeaderText = "位置";
-            this.dgv_Reservation_Position.Name = "dgv_Reservation_Position";
-            this.dgv_Reservation_Position.ReadOnly = true;
-            // 
-            // dgv_Reservation_Money
-            // 
-            this.dgv_Reservation_Money.HeaderText = "金额";
-            this.dgv_Reservation_Money.Name = "dgv_Reservation_Money";
-            this.dgv_Reservation_Money.ReadOnly = true;
-            // 
-            // dgv_Reservation_Times
-            // 
-            this.dgv_Reservation_Times.HeaderText = "时长";
-            this.dgv_Reservation_Times.Name = "dgv_Reservation_Times";
-            this.dgv_Reservation_Times.ReadOnly = true;
-            // 
-            // dgv_Reservation_Peoples
-            // 
-            this.dgv_Reservation_Peoples.HeaderText = "人数";
-            this.dgv_Reservation_Peoples.Name = "dgv_Reservation_Peoples";
-            this.dgv_Reservation_Peoples.ReadOnly = true;
-            // 
-            // dgv_Reservation_PayType
-            // 
-            this.dgv_Reservation_PayType.HeaderText = "支付类型";
-            this.dgv_Reservation_PayType.Name = "dgv_Reservation_PayType";
-            this.dgv_Reservation_PayType.ReadOnly = true;
-            // 
-            // dgv_Reservation_Phone
-            // 
-            this.dgv_Reservation_Phone.HeaderText = "电话";
-            this.dgv_Reservation_Phone.Name = "dgv_Reservation_Phone";
-            this.dgv_Reservation_Phone.ReadOnly = true;
-            // 
-            // dgv_Reservation_PriceAmount
-            // 
-            this.dgv_Reservation_PriceAmount.HeaderText = "单价";
-            this.dgv_Reservation_PriceAmount.Name = "dgv_Reservation_PriceAmount";
-            this.dgv_Reservation_PriceAmount.ReadOnly = true;
-            // 
-            // dgv_Reservation_PaymentAmount
-            // 
-            this.dgv_Reservation_PaymentAmount.HeaderText = "实收";
-            this.dgv_Reservation_PaymentAmount.Name = "dgv_Reservation_PaymentAmount";
-            this.dgv_Reservation_PaymentAmount.ReadOnly = true;
-            // 
-            // dgv_Reservation_ChangeAmount
-            // 
-            this.dgv_Reservation_ChangeAmount.HeaderText = "找零";
-            this.dgv_Reservation_ChangeAmount.Name = "dgv_Reservation_ChangeAmount";
-            this.dgv_Reservation_ChangeAmount.ReadOnly = true;
-            // 
-            // dgv_Reservation_RState
-            // 
-            this.dgv_Reservation_RState.HeaderText = "状态";
-            this.dgv_Reservation_RState.Name = "dgv_Reservation_RState";
-            this.dgv_Reservation_RState.ReadOnly = true;
-            // 
-            // dgv_Reservation_Des
-            // 
-            this.dgv_Reservation_Des.HeaderText = "描述";
-            this.dgv_Reservation_Des.Name = "dgv_Reservation_Des";
-            this.dgv_Reservation_Des.ReadOnly = true;
-            // 
-            // dgv_Reservation_AddUserName
-            // 
-            this.dgv_Reservation_AddUserName.HeaderText = "操作员";
-            this.dgv_Reservation_AddUserName.Name = "dgv_Reservation_AddUserName";
-            this.dgv_Reservation_AddUserName.ReadOnly = true;
-            // 
-            // dgv_Reservation_AddTime
-            // 
-            this.dgv_Reservation_AddTime.HeaderText = "时间";
-            this.dgv_Reservation_AddTime.Name = "dgv_Reservation_AddTime";
-            this.dgv_Reservation_AddTime.ReadOnly = true;
+            this.撤单ToolStripMenuItem.Name = "撤单ToolStripMenuItem";
+            this.撤单ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.撤单ToolStripMenuItem.Text = "撤单";
+            this.撤单ToolStripMenuItem.Click += new System.EventHandler(this.撤单ToolStripMenuItem_Click);
             // 
             // tabPage3
             // 
@@ -1333,20 +1224,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.撤单ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
-            // 
-            // 撤单ToolStripMenuItem
-            // 
-            this.撤单ToolStripMenuItem.Name = "撤单ToolStripMenuItem";
-            this.撤单ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.撤单ToolStripMenuItem.Text = "撤单";
-            this.撤单ToolStripMenuItem.Click += new System.EventHandler(this.撤单ToolStripMenuItem_Click);
-            // 
             // uC_Page_Reservation_Manager
             // 
             this.uC_Page_Reservation_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -1364,6 +1241,131 @@
             this.uC_Page_Position.Name = "uC_Page_Position";
             this.uC_Page_Position.Size = new System.Drawing.Size(593, 24);
             this.uC_Page_Position.TabIndex = 240;
+            // 
+            // dgv_Reservation_ID
+            // 
+            this.dgv_Reservation_ID.Frozen = true;
+            this.dgv_Reservation_ID.HeaderText = "ID";
+            this.dgv_Reservation_ID.Name = "dgv_Reservation_ID";
+            this.dgv_Reservation_ID.ReadOnly = true;
+            this.dgv_Reservation_ID.Visible = false;
+            // 
+            // dgv_Reservation_cb
+            // 
+            this.dgv_Reservation_cb.FillWeight = 1F;
+            this.dgv_Reservation_cb.HeaderText = "选择";
+            this.dgv_Reservation_cb.Name = "dgv_Reservation_cb";
+            this.dgv_Reservation_cb.ReadOnly = true;
+            this.dgv_Reservation_cb.Visible = false;
+            // 
+            // dgv_Reservation_Num
+            // 
+            this.dgv_Reservation_Num.FillWeight = 65F;
+            this.dgv_Reservation_Num.Frozen = true;
+            this.dgv_Reservation_Num.HeaderText = "序号";
+            this.dgv_Reservation_Num.MinimumWidth = 65;
+            this.dgv_Reservation_Num.Name = "dgv_Reservation_Num";
+            this.dgv_Reservation_Num.ReadOnly = true;
+            this.dgv_Reservation_Num.Width = 65;
+            // 
+            // dgv_Reservation_ReservationNum
+            // 
+            this.dgv_Reservation_ReservationNum.Frozen = true;
+            this.dgv_Reservation_ReservationNum.HeaderText = "消费单号";
+            this.dgv_Reservation_ReservationNum.Name = "dgv_Reservation_ReservationNum";
+            this.dgv_Reservation_ReservationNum.ReadOnly = true;
+            // 
+            // dgv_Reservation_Name
+            // 
+            this.dgv_Reservation_Name.HeaderText = "姓名";
+            this.dgv_Reservation_Name.Name = "dgv_Reservation_Name";
+            this.dgv_Reservation_Name.ReadOnly = true;
+            // 
+            // dgv_Reservation_TypeName
+            // 
+            this.dgv_Reservation_TypeName.HeaderText = "项目";
+            this.dgv_Reservation_TypeName.Name = "dgv_Reservation_TypeName";
+            this.dgv_Reservation_TypeName.ReadOnly = true;
+            // 
+            // dgv_Reservation_Position
+            // 
+            this.dgv_Reservation_Position.HeaderText = "位置";
+            this.dgv_Reservation_Position.Name = "dgv_Reservation_Position";
+            this.dgv_Reservation_Position.ReadOnly = true;
+            // 
+            // dgv_Reservation_Money
+            // 
+            this.dgv_Reservation_Money.HeaderText = "金额";
+            this.dgv_Reservation_Money.Name = "dgv_Reservation_Money";
+            this.dgv_Reservation_Money.ReadOnly = true;
+            // 
+            // dgv_Reservation_Times
+            // 
+            this.dgv_Reservation_Times.HeaderText = "时长";
+            this.dgv_Reservation_Times.Name = "dgv_Reservation_Times";
+            this.dgv_Reservation_Times.ReadOnly = true;
+            // 
+            // dgv_Reservation_Peoples
+            // 
+            this.dgv_Reservation_Peoples.HeaderText = "人数";
+            this.dgv_Reservation_Peoples.Name = "dgv_Reservation_Peoples";
+            this.dgv_Reservation_Peoples.ReadOnly = true;
+            // 
+            // dgv_Reservation_PayType
+            // 
+            this.dgv_Reservation_PayType.HeaderText = "支付类型";
+            this.dgv_Reservation_PayType.Name = "dgv_Reservation_PayType";
+            this.dgv_Reservation_PayType.ReadOnly = true;
+            // 
+            // dgv_Reservation_Phone
+            // 
+            this.dgv_Reservation_Phone.HeaderText = "电话";
+            this.dgv_Reservation_Phone.Name = "dgv_Reservation_Phone";
+            this.dgv_Reservation_Phone.ReadOnly = true;
+            // 
+            // dgv_Reservation_PriceAmount
+            // 
+            this.dgv_Reservation_PriceAmount.HeaderText = "单价";
+            this.dgv_Reservation_PriceAmount.Name = "dgv_Reservation_PriceAmount";
+            this.dgv_Reservation_PriceAmount.ReadOnly = true;
+            // 
+            // dgv_Reservation_PaymentAmount
+            // 
+            this.dgv_Reservation_PaymentAmount.HeaderText = "实收";
+            this.dgv_Reservation_PaymentAmount.Name = "dgv_Reservation_PaymentAmount";
+            this.dgv_Reservation_PaymentAmount.ReadOnly = true;
+            // 
+            // dgv_Reservation_ChangeAmount
+            // 
+            this.dgv_Reservation_ChangeAmount.HeaderText = "找零";
+            this.dgv_Reservation_ChangeAmount.Name = "dgv_Reservation_ChangeAmount";
+            this.dgv_Reservation_ChangeAmount.ReadOnly = true;
+            // 
+            // dgv_Reservation_RState
+            // 
+            this.dgv_Reservation_RState.HeaderText = "状态";
+            this.dgv_Reservation_RState.Name = "dgv_Reservation_RState";
+            this.dgv_Reservation_RState.ReadOnly = true;
+            // 
+            // dgv_Reservation_Des
+            // 
+            this.dgv_Reservation_Des.HeaderText = "描述";
+            this.dgv_Reservation_Des.Name = "dgv_Reservation_Des";
+            this.dgv_Reservation_Des.ReadOnly = true;
+            // 
+            // dgv_Reservation_AddUserName
+            // 
+            this.dgv_Reservation_AddUserName.HeaderText = "操作员";
+            this.dgv_Reservation_AddUserName.Name = "dgv_Reservation_AddUserName";
+            this.dgv_Reservation_AddUserName.ReadOnly = true;
+            // 
+            // dgv_Reservation_AddTime
+            // 
+            this.dgv_Reservation_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_Reservation_AddTime.HeaderText = "时间";
+            this.dgv_Reservation_AddTime.Name = "dgv_Reservation_AddTime";
+            this.dgv_Reservation_AddTime.ReadOnly = true;
+            this.dgv_Reservation_AddTime.Width = 65;
             // 
             // ReservationMainForm
             // 
@@ -1398,12 +1400,12 @@
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Reservation_Manager)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Position_Manager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1491,6 +1493,8 @@
         private System.Windows.Forms.TextBox txt_Reservation_ReservationNum;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.DataGridView dgv_Reservation_Manager;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 撤单ToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_ID;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dgv_Reservation_cb;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Num;
@@ -1510,7 +1514,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_Des;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_AddUserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Reservation_AddTime;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 撤单ToolStripMenuItem;
     }
 }

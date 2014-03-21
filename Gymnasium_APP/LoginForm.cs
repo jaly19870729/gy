@@ -15,6 +15,7 @@ using Gymnasium_APP.Model;
 using System.Security.Cryptography;
 using System.Web.Security;
 using Gymnasium_APP.Config;
+using System.Text.RegularExpressions;
 namespace Gymnasium_APP
 {
     public partial class LoginForm : Form
@@ -38,6 +39,12 @@ namespace Gymnasium_APP
             txt_username.Focus();
             AppConfig.CardNumberRegex = @"^\w{" + AppConfigTools.GetAppValue("CardLength") + "}$"; ;
             AppConfig.CardNumberRegexError = "卡号为" + AppConfigTools.GetAppValue("CardLength") + "位数字";
+            MainForm.PrintTitle = AppConfigTools.GetAppValue("PrintTitle");
+            MainForm.PrintPhone = AppConfigTools.GetAppValue("PrintPhone");
+            MainForm.PrintAddress = AppConfigTools.GetAppValue("PrintAddress");
+            MainForm.PrintEnd = AppConfigTools.GetAppValue("PrintEnd");
+            MainForm.PrintFontSize = AppConfigTools.GetAppValue("PrintFontSize");
+
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +70,17 @@ namespace Gymnasium_APP
         SystemLoginLogModel systemLoginLogModel = new SystemLoginLogModel();
         private void LoginForm_Load(object sender, EventArgs e)
         {
+
+            //StringBuilder sb = new StringBuilder();
+            ////sb.Append("项目" + "     
+
+            //string content = Regex.Replace(CommTools.GetString("羽毛球羽", 10), @" ", "   ");
+            //string coi = Regex.Replace(CommTools.GetString("100", 6), @" ", "   ");
+            //string coi2 = Regex.Replace(CommTools.GetString("1000", 6), @" ", "   ");
+            //string coi3 = Regex.Replace(CommTools.GetString("1000", 6), @" ", "   ");
+            //sb.Append(content + coi + coi2 + coi3);
+            //string mes = CommTools.GetPrintStr(MainForm.PrintTitle, "12345678", MainForm.PrintAddress, MainForm.PrintPhone, MainForm.PrintEnd, Convert.ToDouble(100), Convert.ToDouble(1), sb.ToString(), "1");
+            //MessageBox.Show(mes);
             //获取Mac
             GetMacByIP();
         }
@@ -286,6 +304,11 @@ namespace Gymnasium_APP
         private void LoginForm_Activated(object sender, EventArgs e)
         {
             txt_username.Focus();
+        }
+
+        private void txt_pwd_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
    

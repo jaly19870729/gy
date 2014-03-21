@@ -89,6 +89,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PictureForm";
             this.Load += new System.EventHandler(this.PictureForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PictureForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

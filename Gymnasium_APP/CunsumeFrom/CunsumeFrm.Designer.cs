@@ -453,6 +453,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "单次消费";
             this.Load += new System.EventHandler(this.CunsumeFrm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CunsumeFrm_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);

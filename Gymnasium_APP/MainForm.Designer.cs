@@ -78,6 +78,24 @@
             this.txt_Statistics_SellCast_CardID = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dgv_Statistics_SellCast_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CusType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_AddType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CusNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CusCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_CreateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Statistics_SellCast_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.撤单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -340,24 +358,24 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.dgv_Statistics_SellCast_cb = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_Statistics_SellCast_CastID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CusType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_AddType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CardID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PriceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PaymentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_ChangeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CusNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CusCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_PeoPles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_CreateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Statistics_SellCast_State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp_System_SystemSet = new System.Windows.Forms.TabPage();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.cmb_Printer = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.txt_Print_Title = new System.Windows.Forms.TextBox();
+            this.txt_Print_Address = new System.Windows.Forms.TextBox();
+            this.txt_Print_Phone = new System.Windows.Forms.TextBox();
+            this.txt_Print_End = new System.Windows.Forms.TextBox();
+            this.txt_Print_Size = new System.Windows.Forms.TextBox();
+            this.btn_Print_OK = new System.Windows.Forms.Button();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
             this.tbc_Statistics.SuspendLayout();
@@ -409,6 +427,11 @@
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tp_System_SystemSet.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_Main
@@ -438,9 +461,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pl_Mind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_Mind.Controls.Add(this.tabc_SystemManager);
             this.pl_Mind.Controls.Add(this.tbc_Statistics);
             this.pl_Mind.Controls.Add(this.tabc_Mian);
-            this.pl_Mind.Controls.Add(this.tabc_SystemManager);
             this.pl_Mind.Location = new System.Drawing.Point(171, 53);
             this.pl_Mind.Name = "pl_Mind";
             this.pl_Mind.Size = new System.Drawing.Size(841, 650);
@@ -470,7 +493,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(822, 622);
+            this.tabPage4.Size = new System.Drawing.Size(822, 619);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "会员信息";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1017,6 +1040,121 @@
             this.dgv_Statistics_SellCast_Manager.TabIndex = 215;
             this.dgv_Statistics_SellCast_Manager.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Statistics_SellCast_Manager_CellContentDoubleClick);
             // 
+            // dgv_Statistics_SellCast_cb
+            // 
+            this.dgv_Statistics_SellCast_cb.FillWeight = 1F;
+            this.dgv_Statistics_SellCast_cb.Frozen = true;
+            this.dgv_Statistics_SellCast_cb.HeaderText = "选择";
+            this.dgv_Statistics_SellCast_cb.Name = "dgv_Statistics_SellCast_cb";
+            this.dgv_Statistics_SellCast_cb.ReadOnly = true;
+            this.dgv_Statistics_SellCast_cb.Visible = false;
+            // 
+            // dgv_Statistics_SellCast_CastID
+            // 
+            this.dgv_Statistics_SellCast_CastID.HeaderText = "CastID";
+            this.dgv_Statistics_SellCast_CastID.Name = "dgv_Statistics_SellCast_CastID";
+            this.dgv_Statistics_SellCast_CastID.ReadOnly = true;
+            this.dgv_Statistics_SellCast_CastID.Visible = false;
+            // 
+            // dgv_Statistics_SellCast_Num
+            // 
+            this.dgv_Statistics_SellCast_Num.FillWeight = 65F;
+            this.dgv_Statistics_SellCast_Num.HeaderText = "序号";
+            this.dgv_Statistics_SellCast_Num.MinimumWidth = 65;
+            this.dgv_Statistics_SellCast_Num.Name = "dgv_Statistics_SellCast_Num";
+            this.dgv_Statistics_SellCast_Num.ReadOnly = true;
+            this.dgv_Statistics_SellCast_Num.Width = 65;
+            // 
+            // dgv_Statistics_SellCast_CusType
+            // 
+            this.dgv_Statistics_SellCast_CusType.HeaderText = "消费项目";
+            this.dgv_Statistics_SellCast_CusType.Name = "dgv_Statistics_SellCast_CusType";
+            this.dgv_Statistics_SellCast_CusType.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_AddType
+            // 
+            this.dgv_Statistics_SellCast_AddType.HeaderText = "项目";
+            this.dgv_Statistics_SellCast_AddType.Name = "dgv_Statistics_SellCast_AddType";
+            this.dgv_Statistics_SellCast_AddType.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CardID
+            // 
+            this.dgv_Statistics_SellCast_CardID.HeaderText = "卡号";
+            this.dgv_Statistics_SellCast_CardID.Name = "dgv_Statistics_SellCast_CardID";
+            this.dgv_Statistics_SellCast_CardID.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_TypeName
+            // 
+            this.dgv_Statistics_SellCast_TypeName.HeaderText = "支付类型";
+            this.dgv_Statistics_SellCast_TypeName.Name = "dgv_Statistics_SellCast_TypeName";
+            this.dgv_Statistics_SellCast_TypeName.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_PriceAmount
+            // 
+            this.dgv_Statistics_SellCast_PriceAmount.HeaderText = "总额";
+            this.dgv_Statistics_SellCast_PriceAmount.Name = "dgv_Statistics_SellCast_PriceAmount";
+            this.dgv_Statistics_SellCast_PriceAmount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_PaymentAmount
+            // 
+            this.dgv_Statistics_SellCast_PaymentAmount.HeaderText = "实收金额";
+            this.dgv_Statistics_SellCast_PaymentAmount.Name = "dgv_Statistics_SellCast_PaymentAmount";
+            this.dgv_Statistics_SellCast_PaymentAmount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_ChangeAmount
+            // 
+            this.dgv_Statistics_SellCast_ChangeAmount.HeaderText = "找零金额";
+            this.dgv_Statistics_SellCast_ChangeAmount.Name = "dgv_Statistics_SellCast_ChangeAmount";
+            this.dgv_Statistics_SellCast_ChangeAmount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CusNum
+            // 
+            this.dgv_Statistics_SellCast_CusNum.HeaderText = "消费序号";
+            this.dgv_Statistics_SellCast_CusNum.Name = "dgv_Statistics_SellCast_CusNum";
+            this.dgv_Statistics_SellCast_CusNum.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_Prices
+            // 
+            this.dgv_Statistics_SellCast_Prices.HeaderText = "单价";
+            this.dgv_Statistics_SellCast_Prices.Name = "dgv_Statistics_SellCast_Prices";
+            this.dgv_Statistics_SellCast_Prices.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CusCount
+            // 
+            this.dgv_Statistics_SellCast_CusCount.HeaderText = "项目数";
+            this.dgv_Statistics_SellCast_CusCount.Name = "dgv_Statistics_SellCast_CusCount";
+            this.dgv_Statistics_SellCast_CusCount.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_PeoPles
+            // 
+            this.dgv_Statistics_SellCast_PeoPles.HeaderText = "人数";
+            this.dgv_Statistics_SellCast_PeoPles.Name = "dgv_Statistics_SellCast_PeoPles";
+            this.dgv_Statistics_SellCast_PeoPles.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_Des
+            // 
+            this.dgv_Statistics_SellCast_Des.HeaderText = "描述";
+            this.dgv_Statistics_SellCast_Des.Name = "dgv_Statistics_SellCast_Des";
+            this.dgv_Statistics_SellCast_Des.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_AddUserName
+            // 
+            this.dgv_Statistics_SellCast_AddUserName.HeaderText = "操作员";
+            this.dgv_Statistics_SellCast_AddUserName.Name = "dgv_Statistics_SellCast_AddUserName";
+            this.dgv_Statistics_SellCast_AddUserName.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_CreateTime
+            // 
+            this.dgv_Statistics_SellCast_CreateTime.HeaderText = "消费时间";
+            this.dgv_Statistics_SellCast_CreateTime.Name = "dgv_Statistics_SellCast_CreateTime";
+            this.dgv_Statistics_SellCast_CreateTime.ReadOnly = true;
+            // 
+            // dgv_Statistics_SellCast_State
+            // 
+            this.dgv_Statistics_SellCast_State.HeaderText = "状态";
+            this.dgv_Statistics_SellCast_State.Name = "dgv_Statistics_SellCast_State";
+            this.dgv_Statistics_SellCast_State.ReadOnly = true;
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1037,7 +1175,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(822, 622);
+            this.tabPage2.Size = new System.Drawing.Size(822, 619);
             this.tabPage2.TabIndex = 2;
             this.tabPage2.Text = "刷卡信息";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1312,7 +1450,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 26);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(822, 622);
+            this.tabPage5.Size = new System.Drawing.Size(822, 619);
             this.tabPage5.TabIndex = 3;
             this.tabPage5.Text = "退卡信息";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1632,7 +1770,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 26);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(822, 622);
+            this.tabPage6.Size = new System.Drawing.Size(822, 619);
             this.tabPage6.TabIndex = 4;
             this.tabPage6.Text = "挂失信息";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1875,7 +2013,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(818, 624);
+            this.tabPage1.Size = new System.Drawing.Size(818, 621);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "会员信息";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -2160,7 +2298,7 @@
             this.tab_Mian_Site.Location = new System.Drawing.Point(4, 26);
             this.tab_Mian_Site.Name = "tab_Mian_Site";
             this.tab_Mian_Site.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Mian_Site.Size = new System.Drawing.Size(818, 624);
+            this.tab_Mian_Site.Size = new System.Drawing.Size(818, 621);
             this.tab_Mian_Site.TabIndex = 2;
             this.tab_Mian_Site.Text = "场地信息";
             this.tab_Mian_Site.UseVisualStyleBackColor = true;
@@ -2423,6 +2561,7 @@
             this.tabc_SystemManager.Controls.Add(this.tp_CardTypeManager);
             this.tabc_SystemManager.Controls.Add(this.tp_SystemLog);
             this.tabc_SystemManager.Controls.Add(this.tp_SystemCunsumeType);
+            this.tabc_SystemManager.Controls.Add(this.tp_System_SystemSet);
             this.tabc_SystemManager.Font = new System.Drawing.Font("宋体", 12F);
             this.tabc_SystemManager.Location = new System.Drawing.Point(-1, -1);
             this.tabc_SystemManager.Margin = new System.Windows.Forms.Padding(0);
@@ -2441,7 +2580,7 @@
             this.tp_UserManager.Location = new System.Drawing.Point(4, 24);
             this.tp_UserManager.Name = "tp_UserManager";
             this.tp_UserManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_UserManager.Size = new System.Drawing.Size(820, 624);
+            this.tp_UserManager.Size = new System.Drawing.Size(820, 621);
             this.tp_UserManager.TabIndex = 3;
             this.tp_UserManager.Text = "用户管理";
             this.tp_UserManager.UseVisualStyleBackColor = true;
@@ -2854,7 +2993,7 @@
             this.tp_PrivilegeManager.Location = new System.Drawing.Point(4, 24);
             this.tp_PrivilegeManager.Name = "tp_PrivilegeManager";
             this.tp_PrivilegeManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_PrivilegeManager.Size = new System.Drawing.Size(820, 624);
+            this.tp_PrivilegeManager.Size = new System.Drawing.Size(820, 621);
             this.tp_PrivilegeManager.TabIndex = 4;
             this.tp_PrivilegeManager.Text = "权限管理";
             this.tp_PrivilegeManager.UseVisualStyleBackColor = true;
@@ -2865,7 +3004,7 @@
             this.tp_RoleManager.Location = new System.Drawing.Point(4, 24);
             this.tp_RoleManager.Name = "tp_RoleManager";
             this.tp_RoleManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_RoleManager.Size = new System.Drawing.Size(820, 624);
+            this.tp_RoleManager.Size = new System.Drawing.Size(820, 621);
             this.tp_RoleManager.TabIndex = 5;
             this.tp_RoleManager.Text = "角色管理";
             this.tp_RoleManager.UseVisualStyleBackColor = true;
@@ -2990,7 +3129,7 @@
             this.tp_CardTypeManager.Location = new System.Drawing.Point(4, 24);
             this.tp_CardTypeManager.Name = "tp_CardTypeManager";
             this.tp_CardTypeManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_CardTypeManager.Size = new System.Drawing.Size(820, 624);
+            this.tp_CardTypeManager.Size = new System.Drawing.Size(820, 621);
             this.tp_CardTypeManager.TabIndex = 7;
             this.tp_CardTypeManager.Text = "消费型产品理";
             this.tp_CardTypeManager.UseVisualStyleBackColor = true;
@@ -3153,7 +3292,7 @@
             this.tp_SystemLog.Location = new System.Drawing.Point(4, 24);
             this.tp_SystemLog.Name = "tp_SystemLog";
             this.tp_SystemLog.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_SystemLog.Size = new System.Drawing.Size(820, 624);
+            this.tp_SystemLog.Size = new System.Drawing.Size(820, 621);
             this.tp_SystemLog.TabIndex = 6;
             this.tp_SystemLog.Text = "系统日志";
             this.tp_SystemLog.UseVisualStyleBackColor = true;
@@ -3882,120 +4021,216 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
             // 
-            // dgv_Statistics_SellCast_cb
+            // tp_System_SystemSet
             // 
-            this.dgv_Statistics_SellCast_cb.FillWeight = 1F;
-            this.dgv_Statistics_SellCast_cb.Frozen = true;
-            this.dgv_Statistics_SellCast_cb.HeaderText = "选择";
-            this.dgv_Statistics_SellCast_cb.Name = "dgv_Statistics_SellCast_cb";
-            this.dgv_Statistics_SellCast_cb.ReadOnly = true;
-            this.dgv_Statistics_SellCast_cb.Visible = false;
+            this.tp_System_SystemSet.Controls.Add(this.panel18);
+            this.tp_System_SystemSet.Location = new System.Drawing.Point(4, 24);
+            this.tp_System_SystemSet.Name = "tp_System_SystemSet";
+            this.tp_System_SystemSet.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_System_SystemSet.Size = new System.Drawing.Size(820, 621);
+            this.tp_System_SystemSet.TabIndex = 9;
+            this.tp_System_SystemSet.Text = "参数设置";
+            this.tp_System_SystemSet.UseVisualStyleBackColor = true;
             // 
-            // dgv_Statistics_SellCast_CastID
+            // panel18
             // 
-            this.dgv_Statistics_SellCast_CastID.HeaderText = "CastID";
-            this.dgv_Statistics_SellCast_CastID.Name = "dgv_Statistics_SellCast_CastID";
-            this.dgv_Statistics_SellCast_CastID.ReadOnly = true;
-            this.dgv_Statistics_SellCast_CastID.Visible = false;
+            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel18.Controls.Add(this.tableLayoutPanel1);
+            this.panel18.Location = new System.Drawing.Point(-4, 1);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(828, 619);
+            this.panel18.TabIndex = 6;
             // 
-            // dgv_Statistics_SellCast_Num
+            // tableLayoutPanel1
             // 
-            this.dgv_Statistics_SellCast_Num.FillWeight = 65F;
-            this.dgv_Statistics_SellCast_Num.HeaderText = "序号";
-            this.dgv_Statistics_SellCast_Num.MinimumWidth = 65;
-            this.dgv_Statistics_SellCast_Num.Name = "dgv_Statistics_SellCast_Num";
-            this.dgv_Statistics_SellCast_Num.ReadOnly = true;
-            this.dgv_Statistics_SellCast_Num.Width = 65;
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(819, 617);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dgv_Statistics_SellCast_CusType
+            // groupBox1
             // 
-            this.dgv_Statistics_SellCast_CusType.HeaderText = "消费项目";
-            this.dgv_Statistics_SellCast_CusType.Name = "dgv_Statistics_SellCast_CusType";
-            this.dgv_Statistics_SellCast_CusType.ReadOnly = true;
+            this.groupBox1.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(403, 302);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "打印设置";
             // 
-            // dgv_Statistics_SellCast_AddType
+            // tableLayoutPanel4
             // 
-            this.dgv_Statistics_SellCast_AddType.HeaderText = "项目";
-            this.dgv_Statistics_SellCast_AddType.Name = "dgv_Statistics_SellCast_AddType";
-            this.dgv_Statistics_SellCast_AddType.ReadOnly = true;
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.btn_Print_OK, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Size, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_End, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Phone, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Address, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label33, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label32, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.cmb_Printer, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label34, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label35, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label36, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.label37, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Title, 1, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 7;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.3037F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.17782F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(391, 280);
+            this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // dgv_Statistics_SellCast_CardID
+            // label32
             // 
-            this.dgv_Statistics_SellCast_CardID.HeaderText = "卡号";
-            this.dgv_Statistics_SellCast_CardID.Name = "dgv_Statistics_SellCast_CardID";
-            this.dgv_Statistics_SellCast_CardID.ReadOnly = true;
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label32.AutoSize = true;
+            this.label32.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label32.Location = new System.Drawing.Point(6, 12);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(88, 16);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "默认打印机";
             // 
-            // dgv_Statistics_SellCast_TypeName
+            // cmb_Printer
             // 
-            this.dgv_Statistics_SellCast_TypeName.HeaderText = "支付类型";
-            this.dgv_Statistics_SellCast_TypeName.Name = "dgv_Statistics_SellCast_TypeName";
-            this.dgv_Statistics_SellCast_TypeName.ReadOnly = true;
+            this.cmb_Printer.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmb_Printer.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Printer.FormattingEnabled = true;
+            this.cmb_Printer.Location = new System.Drawing.Point(100, 10);
+            this.cmb_Printer.Name = "cmb_Printer";
+            this.cmb_Printer.Size = new System.Drawing.Size(288, 24);
+            this.cmb_Printer.TabIndex = 1;
             // 
-            // dgv_Statistics_SellCast_PriceAmount
+            // label33
             // 
-            this.dgv_Statistics_SellCast_PriceAmount.HeaderText = "总额";
-            this.dgv_Statistics_SellCast_PriceAmount.Name = "dgv_Statistics_SellCast_PriceAmount";
-            this.dgv_Statistics_SellCast_PriceAmount.ReadOnly = true;
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label33.AutoSize = true;
+            this.label33.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label33.Location = new System.Drawing.Point(54, 52);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(40, 16);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "标题";
             // 
-            // dgv_Statistics_SellCast_PaymentAmount
+            // label34
             // 
-            this.dgv_Statistics_SellCast_PaymentAmount.HeaderText = "实收金额";
-            this.dgv_Statistics_SellCast_PaymentAmount.Name = "dgv_Statistics_SellCast_PaymentAmount";
-            this.dgv_Statistics_SellCast_PaymentAmount.ReadOnly = true;
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label34.AutoSize = true;
+            this.label34.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label34.Location = new System.Drawing.Point(54, 92);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(40, 16);
+            this.label34.TabIndex = 3;
+            this.label34.Text = "地址";
             // 
-            // dgv_Statistics_SellCast_ChangeAmount
+            // label35
             // 
-            this.dgv_Statistics_SellCast_ChangeAmount.HeaderText = "找零金额";
-            this.dgv_Statistics_SellCast_ChangeAmount.Name = "dgv_Statistics_SellCast_ChangeAmount";
-            this.dgv_Statistics_SellCast_ChangeAmount.ReadOnly = true;
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label35.AutoSize = true;
+            this.label35.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label35.Location = new System.Drawing.Point(54, 132);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(40, 16);
+            this.label35.TabIndex = 4;
+            this.label35.Text = "电话";
             // 
-            // dgv_Statistics_SellCast_CusNum
+            // label36
             // 
-            this.dgv_Statistics_SellCast_CusNum.HeaderText = "消费序号";
-            this.dgv_Statistics_SellCast_CusNum.Name = "dgv_Statistics_SellCast_CusNum";
-            this.dgv_Statistics_SellCast_CusNum.ReadOnly = true;
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label36.AutoSize = true;
+            this.label36.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label36.Location = new System.Drawing.Point(38, 172);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(56, 16);
+            this.label36.TabIndex = 5;
+            this.label36.Text = "结束语";
             // 
-            // dgv_Statistics_SellCast_Prices
+            // label37
             // 
-            this.dgv_Statistics_SellCast_Prices.HeaderText = "单价";
-            this.dgv_Statistics_SellCast_Prices.Name = "dgv_Statistics_SellCast_Prices";
-            this.dgv_Statistics_SellCast_Prices.ReadOnly = true;
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label37.AutoSize = true;
+            this.label37.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label37.Location = new System.Drawing.Point(22, 212);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(72, 16);
+            this.label37.TabIndex = 6;
+            this.label37.Text = "字体大小";
             // 
-            // dgv_Statistics_SellCast_CusCount
+            // txt_Print_Title
             // 
-            this.dgv_Statistics_SellCast_CusCount.HeaderText = "项目数";
-            this.dgv_Statistics_SellCast_CusCount.Name = "dgv_Statistics_SellCast_CusCount";
-            this.dgv_Statistics_SellCast_CusCount.ReadOnly = true;
+            this.txt_Print_Title.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Title.Location = new System.Drawing.Point(100, 47);
+            this.txt_Print_Title.Name = "txt_Print_Title";
+            this.txt_Print_Title.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Title.TabIndex = 7;
             // 
-            // dgv_Statistics_SellCast_PeoPles
+            // txt_Print_Address
             // 
-            this.dgv_Statistics_SellCast_PeoPles.HeaderText = "人数";
-            this.dgv_Statistics_SellCast_PeoPles.Name = "dgv_Statistics_SellCast_PeoPles";
-            this.dgv_Statistics_SellCast_PeoPles.ReadOnly = true;
+            this.txt_Print_Address.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Address.Location = new System.Drawing.Point(100, 87);
+            this.txt_Print_Address.Name = "txt_Print_Address";
+            this.txt_Print_Address.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Address.TabIndex = 8;
             // 
-            // dgv_Statistics_SellCast_Des
+            // txt_Print_Phone
             // 
-            this.dgv_Statistics_SellCast_Des.HeaderText = "描述";
-            this.dgv_Statistics_SellCast_Des.Name = "dgv_Statistics_SellCast_Des";
-            this.dgv_Statistics_SellCast_Des.ReadOnly = true;
+            this.txt_Print_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Phone.Location = new System.Drawing.Point(100, 127);
+            this.txt_Print_Phone.Name = "txt_Print_Phone";
+            this.txt_Print_Phone.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Phone.TabIndex = 9;
             // 
-            // dgv_Statistics_SellCast_AddUserName
+            // txt_Print_End
             // 
-            this.dgv_Statistics_SellCast_AddUserName.HeaderText = "操作员";
-            this.dgv_Statistics_SellCast_AddUserName.Name = "dgv_Statistics_SellCast_AddUserName";
-            this.dgv_Statistics_SellCast_AddUserName.ReadOnly = true;
+            this.txt_Print_End.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_End.Location = new System.Drawing.Point(100, 167);
+            this.txt_Print_End.Name = "txt_Print_End";
+            this.txt_Print_End.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_End.TabIndex = 10;
             // 
-            // dgv_Statistics_SellCast_CreateTime
+            // txt_Print_Size
             // 
-            this.dgv_Statistics_SellCast_CreateTime.HeaderText = "消费时间";
-            this.dgv_Statistics_SellCast_CreateTime.Name = "dgv_Statistics_SellCast_CreateTime";
-            this.dgv_Statistics_SellCast_CreateTime.ReadOnly = true;
+            this.txt_Print_Size.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Size.Location = new System.Drawing.Point(100, 207);
+            this.txt_Print_Size.Name = "txt_Print_Size";
+            this.txt_Print_Size.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Size.TabIndex = 11;
             // 
-            // dgv_Statistics_SellCast_State
+            // btn_Print_OK
             // 
-            this.dgv_Statistics_SellCast_State.HeaderText = "状态";
-            this.dgv_Statistics_SellCast_State.Name = "dgv_Statistics_SellCast_State";
-            this.dgv_Statistics_SellCast_State.ReadOnly = true;
+            this.btn_Print_OK.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Print_OK.Location = new System.Drawing.Point(100, 243);
+            this.btn_Print_OK.Name = "btn_Print_OK";
+            this.btn_Print_OK.Size = new System.Drawing.Size(216, 34);
+            this.btn_Print_OK.TabIndex = 12;
+            this.btn_Print_OK.Text = "确认";
+            this.btn_Print_OK.UseVisualStyleBackColor = true;
+            this.btn_Print_OK.Click += new System.EventHandler(this.btn_Print_OK_Click);
             // 
             // MainForm
             // 
@@ -4074,6 +4309,12 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tp_System_SystemSet.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4423,6 +4664,24 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_AddUserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_CreateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgv_Statistics_SellCast_State;
+        private System.Windows.Forms.TabPage tp_System_SystemSet;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ComboBox cmb_Printer;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox txt_Print_Title;
+        private System.Windows.Forms.TextBox txt_Print_Size;
+        private System.Windows.Forms.TextBox txt_Print_End;
+        private System.Windows.Forms.TextBox txt_Print_Phone;
+        private System.Windows.Forms.TextBox txt_Print_Address;
+        private System.Windows.Forms.Button btn_Print_OK;
  
     }
 }

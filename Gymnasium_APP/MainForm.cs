@@ -791,6 +791,21 @@ ds_List.Tables[0].Rows[i]["CusCount"].ToString();
             {
                 GetCunsumeTypeDataList();
             }
+            if (tabc_SystemManager.TabPages[_Index].Text.Equals("参数设置"))
+            {
+                cmb_Printer.Items.Clear();
+                CommTools.InitprinterComboBox(cmb_Printer); //初始化打印机下拉列表选项
+                txt_Print_Title.Text = AppConfigTools.GetAppValue("PrintTitle");
+                txt_Print_Phone.Text = AppConfigTools.GetAppValue("PrintPhone");
+                txt_Print_Address.Text = AppConfigTools.GetAppValue("PrintAddress");
+                txt_Print_End.Text = AppConfigTools.GetAppValue("PrintEnd");
+                txt_Print_Size.Text = AppConfigTools.GetAppValue("PrintFontSize");
+                PrintTitle = txt_Print_Title.Text;
+                PrintAddress = txt_Print_Address.Text;
+                PrintPhone = txt_Print_Phone.Text;
+                PrintEnd = txt_Print_End.Text;
+                PrintFontSize = txt_Print_Size.Text;
+            }
 
         }
 
@@ -1609,12 +1624,69 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
         }
         #endregion
 
-
-
-
-
-
-
+        #region 打印设置
+        public static string PrintTitle = "";
+        public static string PrintAddress = "";
+        public static string PrintPhone = "";
+        public static string PrintEnd = "";
+        public static string PrintFontSize = "";
+        private void btn_Print_OK_Click(object sender, EventArgs e)
+        {
+            if (txt_Print_Title.Text.Trim() != "")
+            {
+                AppConfigTools.SetAppValue("PrintTitle", txt_Print_Title.Text.Trim());
+            }
+            if (txt_Print_Address.Text.Trim() != "")
+            {
+                AppConfigTools.SetAppValue("PrintAddress", txt_Print_Title.Text.Trim());
+            }
+            if (txt_Print_Phone.Text.Trim()!="")
+            {
+                AppConfigTools.SetAppValue("PrintPhone", txt_Print_Title.Text.Trim());
+            }
+            if (txt_Print_End.Text.Trim() != "")
+            {
+                AppConfigTools.SetAppValue("PrintEnd", txt_Print_Title.Text.Trim());
+            }
+            if (txt_Print_Size.Text.Trim() != "")
+            {
+                try
+                {
+                    Convert.ToInt32(txt_Print_Size.Text.Trim());
+                    AppConfigTools.SetAppValue("PrintFontSize", txt_Print_Size.Text.Trim());
+                }
+                catch (Exception ex)
+                {
+                    return;
+                }
+            }
+            if (cmb_Printer.SelectedItem != null) //判断是否有选中值
+            {
+                if (CommTools.Externs.SetDefaultPrinter(cmb_Printer.SelectedItem.ToString())) //设置默认打印机
+                {
+                    MessageBox.Show(cmb_Printer.SelectedItem.ToString() + "设置为默认打印机成功！");
+                }
+                else
+                {
+                    MessageBox.Show(cmb_Printer.SelectedItem.ToString() + "设置为默认打印机失败！");
+                }
+            }
+            MessageBox.Show("设置成功，重启后生效！");
+            MessageBox.Show(CommTools.GetPrintStr("伊尹餐饮公司", "2010930233330", "深圳市罗湖区东门老街", "123456789   123456789", "谢谢惠顾欢迎下次光临", 500, 500, "","0"));
+            cmb_Printer.Items.Clear();
+            CommTools.InitprinterComboBox(cmb_Printer); //初始化打印机下拉列表选项
+            txt_Print_Title.Text = AppConfigTools.GetAppValue("PrintTitle");
+            txt_Print_Phone.Text = AppConfigTools.GetAppValue("PrintPhone");
+            txt_Print_Address.Text = AppConfigTools.GetAppValue("PrintAddress");
+            txt_Print_End.Text = AppConfigTools.GetAppValue("PrintEnd");
+            txt_Print_Size.Text = AppConfigTools.GetAppValue("PrintFontSize");
+            PrintTitle = txt_Print_Title.Text;
+            PrintAddress = txt_Print_Address.Text;
+            PrintPhone = txt_Print_Phone.Text;
+            PrintEnd = txt_Print_End.Text;
+            PrintFontSize = txt_Print_Size.Text;
+        }
+        #endregion
 
     }
 }

@@ -6,18 +6,24 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Gymnasium_APP.ReportFrom
 {
     public partial class PictureForm : Form
     {
-        public PictureForm(Image img)
+        public PictureForm(Image img,object size)
         {
             InitializeComponent();
+            if (size != null)
+            {
+                this.Size = (Size)size;
+            }
             if (img != null)
             {
                 this.pictureBox1.Image = img;
             }
+
         }
 
         private void 打印ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,6 +69,26 @@ namespace Gymnasium_APP.ReportFrom
         private void PictureForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                PrintDialog MyPrintDg = new PrintDialog();
+                MyPrintDg.Document = printDocument1;
+                printDocument1.PrintController = new StandardPrintController();
+                try
+                {
+                    printDocument1.Print();
+                }
+                catch
+                {   //停止打印
+                    printDocument1.PrintController.OnEndPrint(printDocument1, new System.Drawing.Printing.PrintEventArgs());
+                }
+
+            }
+            this.Close();
         }
     }
 }

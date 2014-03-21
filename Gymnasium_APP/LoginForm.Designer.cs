@@ -195,6 +195,7 @@
             this.txt_pwd.Size = new System.Drawing.Size(183, 26);
             this.txt_pwd.TabIndex = 1;
             this.txt_pwd.UseSystemPasswordChar = true;
+            this.txt_pwd.TextChanged += new System.EventHandler(this.txt_pwd_TextChanged);
             this.txt_pwd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_pwd_KeyDown);
             // 
             // label3
