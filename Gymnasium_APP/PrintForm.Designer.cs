@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_Title = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_DateTime = new System.Windows.Forms.Label();
-            this.lbl_CusNum = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_Title = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_CusNum = new System.Windows.Forms.Label();
+            this.lbl_DateTime = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lbl_Peoples = new System.Windows.Forms.Label();
             this.lbl_Sum = new System.Windows.Forms.Label();
             this.lbl_PayMoney = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lbl_ChangPrice = new System.Windows.Forms.Label();
             this.lbl_Address = new System.Windows.Forms.Label();
             this.lbl_Phone = new System.Windows.Forms.Label();
@@ -51,13 +52,14 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_ItemName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbl_item_Sum = new System.Windows.Forms.Label();
-            this.lbl_ItemPrice = new System.Windows.Forms.Label();
             this.lbl_ItemMoney = new System.Windows.Forms.Label();
+            this.lbl_ItemPrice = new System.Windows.Forms.Label();
+            this.lbl_item_Sum = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -105,6 +107,56 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(239, 333);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(3, 63);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(233, 14);
+            this.panel2.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(195, 2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "小计";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(140, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "单价";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(85, 2);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "数量";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 2);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "项目";
+            // 
             // lbl_Title
             // 
             this.lbl_Title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -129,15 +181,6 @@
             this.panel1.Size = new System.Drawing.Size(233, 14);
             this.panel1.TabIndex = 1;
             // 
-            // lbl_DateTime
-            // 
-            this.lbl_DateTime.AutoSize = true;
-            this.lbl_DateTime.Location = new System.Drawing.Point(3, 2);
-            this.lbl_DateTime.Name = "lbl_DateTime";
-            this.lbl_DateTime.Size = new System.Drawing.Size(101, 12);
-            this.lbl_DateTime.TabIndex = 0;
-            this.lbl_DateTime.Text = "日期：2010-03-21";
-            // 
             // lbl_CusNum
             // 
             this.lbl_CusNum.AutoSize = true;
@@ -146,6 +189,15 @@
             this.lbl_CusNum.Size = new System.Drawing.Size(95, 12);
             this.lbl_CusNum.TabIndex = 1;
             this.lbl_CusNum.Text = "单号：123456789";
+            // 
+            // lbl_DateTime
+            // 
+            this.lbl_DateTime.AutoSize = true;
+            this.lbl_DateTime.Location = new System.Drawing.Point(3, 2);
+            this.lbl_DateTime.Name = "lbl_DateTime";
+            this.lbl_DateTime.Size = new System.Drawing.Size(101, 12);
+            this.lbl_DateTime.TabIndex = 0;
+            this.lbl_DateTime.Text = "日期：2010-03-21";
             // 
             // label1
             // 
@@ -168,67 +220,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "--------------------------------------";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 224);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 12);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "--------------------------------------";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(3, 63);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(233, 14);
-            this.panel2.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(85, 2);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "数量";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 2);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "项目";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(140, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "单价";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(195, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "小计";
             // 
             // lbl_Peoples
             // 
@@ -259,6 +250,17 @@
             this.lbl_PayMoney.Size = new System.Drawing.Size(107, 12);
             this.lbl_PayMoney.TabIndex = 8;
             this.lbl_PayMoney.Text = "付款：现金   1000";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 224);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(233, 12);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "--------------------------------------";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_ChangPrice
             // 
@@ -340,14 +342,14 @@
             this.panel3.Size = new System.Drawing.Size(147, 28);
             this.panel3.TabIndex = 1;
             // 
-            // lbl_item_Sum
+            // lbl_ItemMoney
             // 
-            this.lbl_item_Sum.AutoSize = true;
-            this.lbl_item_Sum.Location = new System.Drawing.Point(2, 0);
-            this.lbl_item_Sum.Name = "lbl_item_Sum";
-            this.lbl_item_Sum.Size = new System.Drawing.Size(41, 12);
-            this.lbl_item_Sum.TabIndex = 1;
-            this.lbl_item_Sum.Text = "label8";
+            this.lbl_ItemMoney.AutoSize = true;
+            this.lbl_ItemMoney.Location = new System.Drawing.Point(106, 0);
+            this.lbl_ItemMoney.Name = "lbl_ItemMoney";
+            this.lbl_ItemMoney.Size = new System.Drawing.Size(41, 12);
+            this.lbl_ItemMoney.TabIndex = 3;
+            this.lbl_ItemMoney.Text = "label8";
             // 
             // lbl_ItemPrice
             // 
@@ -358,18 +360,23 @@
             this.lbl_ItemPrice.TabIndex = 2;
             this.lbl_ItemPrice.Text = "label8";
             // 
-            // lbl_ItemMoney
+            // lbl_item_Sum
             // 
-            this.lbl_ItemMoney.AutoSize = true;
-            this.lbl_ItemMoney.Location = new System.Drawing.Point(106, 0);
-            this.lbl_ItemMoney.Name = "lbl_ItemMoney";
-            this.lbl_ItemMoney.Size = new System.Drawing.Size(41, 12);
-            this.lbl_ItemMoney.TabIndex = 3;
-            this.lbl_ItemMoney.Text = "label8";
+            this.lbl_item_Sum.AutoSize = true;
+            this.lbl_item_Sum.Location = new System.Drawing.Point(2, 0);
+            this.lbl_item_Sum.Name = "lbl_item_Sum";
+            this.lbl_item_Sum.Size = new System.Drawing.Size(41, 12);
+            this.lbl_item_Sum.TabIndex = 1;
+            this.lbl_item_Sum.Text = "label8";
             // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // PrintForm
             // 
@@ -386,10 +393,10 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PrintForm_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -427,5 +434,6 @@
         private System.Windows.Forms.Label lbl_ItemPrice;
         private System.Windows.Forms.Label lbl_ItemMoney;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

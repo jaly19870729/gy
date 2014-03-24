@@ -385,6 +385,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "售卡收费";
             this.Load += new System.EventHandler(this.SellCardCastFrmBak_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SellCardCastFrm_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -1650,15 +1650,10 @@ ds_List.Tables[0].Rows[i]["CusNum"].ToString();
             }
             if (txt_Print_Size.Text.Trim() != "")
             {
-                try
-                {
-                    Convert.ToInt32(txt_Print_Size.Text.Trim());
-                    AppConfigTools.SetAppValue("PrintFontSize", txt_Print_Size.Text.Trim());
-                }
-                catch (Exception ex)
-                {
-                    return;
-                }
+
+                //Convert.ToInt32(txt_Print_Size.Text.Trim());
+                AppConfigTools.SetAppValue("PrintFontSize", txt_Print_Size.Text.Trim());
+
             }
             if (cmb_Printer.SelectedItem != null) //判断是否有选中值
             {

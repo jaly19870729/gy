@@ -97,6 +97,8 @@ namespace Gymnasium_APP.SellCardForm
             int isAdd = manager.Add(model);
             MessageBox.Show("会员：" + addMemberModel.Name + " 消费" + (isAdd > 0 ? "成功！" : "失败！"));
             CommTools.AddSystemLog("添加", "会员：" + addMemberModel.Name + " 消费信息 " + addMemberModel.CardType + "添加" + (isAdd > 0 ? "成功！" : "失败！"));
+            PrintForm pf = new PrintForm(model.CusNum, model.AddTypeName, "1", txt_PriceAmount.Text.Trim(), txt_PriceAmount.Text.Trim(), "1", txt_PriceAmount.Text.Trim(), txt_PaymentAmount.Text.Trim(), txt_ChangeAmount.Text.Trim(), cmb_PayType.Text.Trim());
+            pf.ShowDialog();
             this.Close();
         }
 
@@ -106,6 +108,14 @@ namespace Gymnasium_APP.SellCardForm
             if (result == DialogResult.OK)
             {
                 this.Close();
+            }
+        }
+
+        private void SellCardCastFrm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_OK_Click(null,null);
             }
         }
         

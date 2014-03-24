@@ -32,6 +32,130 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tlp_Main = new System.Windows.Forms.TableLayoutPanel();
             this.pl_Mind = new System.Windows.Forms.Panel();
+            this.tabc_SystemManager = new System.Windows.Forms.TabControl();
+            this.tp_UserManager = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_UserManager_Update = new System.Windows.Forms.Button();
+            this.btn_UserManager_Delete = new System.Windows.Forms.Button();
+            this.btn_UserManager_Add = new System.Windows.Forms.Button();
+            this.btn_UserManager_Select = new System.Windows.Forms.Button();
+            this.cmb_UserManager_Sex = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmb_UserManager_State = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_UserManager_UserName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmb_UserManager_page = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblPage = new System.Windows.Forms.Label();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.linkEndPage = new System.Windows.Forms.LinkLabel();
+            this.linkFirstPage = new System.Windows.Forms.LinkLabel();
+            this.lblPageTotalCount = new System.Windows.Forms.Label();
+            this.lblDataTotalCount = new System.Windows.Forms.Label();
+            this.linkNextPage = new System.Windows.Forms.LinkLabel();
+            this.linkBeforePage = new System.Windows.Forms.LinkLabel();
+            this.dgv_UserManager = new System.Windows.Forms.DataGridView();
+            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RealName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tp_PrivilegeManager = new System.Windows.Forms.TabPage();
+            this.tp_RoleManager = new System.Windows.Forms.TabPage();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
+            this.btn_RoleManager_Delete = new System.Windows.Forms.Button();
+            this.btn_RoleManager_Add = new System.Windows.Forms.Button();
+            this.dgv_RoleManager = new System.Windows.Forms.DataGridView();
+            this.dgv_RoleManager_RoleId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_RoleManager_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_RoleManager_RoleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_RoleManager_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_RoleManager_RoleSynopsis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_RoleManager_Update = new System.Windows.Forms.Button();
+            this.tp_CardTypeManager = new System.Windows.Forms.TabPage();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
+            this.btn_Delete_CardTypeManager = new System.Windows.Forms.Button();
+            this.btn_Add_CardTypeManager = new System.Windows.Forms.Button();
+            this.dgv_CardTypeManager = new System.Windows.Forms.DataGridView();
+            this.dgv_CardTypeManager_CardTypeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_CardTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_MonthsPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardType_CardCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_Months = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_DayPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_CardTypeManager_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Update_CardTypeManager = new System.Windows.Forms.Button();
+            this.tp_SystemLog = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
+            this.cb_SystemLog = new System.Windows.Forms.CheckBox();
+            this.btn_SystemLogManager_Select = new System.Windows.Forms.Button();
+            this.dt_SystemLogManager_StopTime = new System.Windows.Forms.DateTimePicker();
+            this.dt_SystemLogManager_BeginTime = new System.Windows.Forms.DateTimePicker();
+            this.labBeginTime = new System.Windows.Forms.Label();
+            this.labEndTime = new System.Windows.Forms.Label();
+            this.btn_SystemLogManager_Delete = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.cmb_SystemLogManager_State = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_SystemLogManager_UserName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dgv_SystemLogManager = new System.Windows.Forms.DataGridView();
+            this.cbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_SystemLog_LoginID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_RealName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_LoginIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_LoginAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemLog_Cont = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tp_SystemCunsumeType = new System.Windows.Forms.TabPage();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.uC_Page_SystemCunsumeType = new Gymnasium_APP.UC.UC_Page();
+            this.btn_SystemCunsumeType_Delete = new System.Windows.Forms.Button();
+            this.btn_SystemCunsumeType_Add = new System.Windows.Forms.Button();
+            this.dgv_SystemCunsumeType_Manager = new System.Windows.Forms.DataGridView();
+            this.dgv_SystemCunsumeType_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_SystemCunsumeType_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_SystemCunsumeType_Update = new System.Windows.Forms.Button();
+            this.tp_System_SystemSet = new System.Windows.Forms.TabPage();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_Print_OK = new System.Windows.Forms.Button();
+            this.txt_Print_Size = new System.Windows.Forms.TextBox();
+            this.txt_Print_End = new System.Windows.Forms.TextBox();
+            this.txt_Print_Phone = new System.Windows.Forms.TextBox();
+            this.txt_Print_Address = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.cmb_Printer = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.txt_Print_Title = new System.Windows.Forms.TextBox();
             this.tbc_Statistics = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -230,112 +354,6 @@
             this.dgv_Mian_Site_Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_Mian_Site_AddUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_Mian_Site_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabc_SystemManager = new System.Windows.Forms.TabControl();
-            this.tp_UserManager = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_UserManager_Update = new System.Windows.Forms.Button();
-            this.btn_UserManager_Delete = new System.Windows.Forms.Button();
-            this.btn_UserManager_Add = new System.Windows.Forms.Button();
-            this.btn_UserManager_Select = new System.Windows.Forms.Button();
-            this.cmb_UserManager_Sex = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmb_UserManager_State = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_UserManager_UserName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmb_UserManager_page = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblPage = new System.Windows.Forms.Label();
-            this.lblCount = new System.Windows.Forms.Label();
-            this.linkEndPage = new System.Windows.Forms.LinkLabel();
-            this.linkFirstPage = new System.Windows.Forms.LinkLabel();
-            this.lblPageTotalCount = new System.Windows.Forms.Label();
-            this.lblDataTotalCount = new System.Windows.Forms.Label();
-            this.linkNextPage = new System.Windows.Forms.LinkLabel();
-            this.linkBeforePage = new System.Windows.Forms.LinkLabel();
-            this.dgv_UserManager = new System.Windows.Forms.DataGridView();
-            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RealName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tp_PrivilegeManager = new System.Windows.Forms.TabPage();
-            this.tp_RoleManager = new System.Windows.Forms.TabPage();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.uC_Page_RoleManager = new Gymnasium_APP.UC.UC_Page();
-            this.btn_RoleManager_Delete = new System.Windows.Forms.Button();
-            this.btn_RoleManager_Add = new System.Windows.Forms.Button();
-            this.dgv_RoleManager = new System.Windows.Forms.DataGridView();
-            this.dgv_RoleManager_RoleId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_RoleManager_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_RoleManager_RoleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_RoleManager_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_RoleManager_RoleSynopsis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_RoleManager_Update = new System.Windows.Forms.Button();
-            this.tp_CardTypeManager = new System.Windows.Forms.TabPage();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.uC_Page_CardTypeManager = new Gymnasium_APP.UC.UC_Page();
-            this.btn_Delete_CardTypeManager = new System.Windows.Forms.Button();
-            this.btn_Add_CardTypeManager = new System.Windows.Forms.Button();
-            this.dgv_CardTypeManager = new System.Windows.Forms.DataGridView();
-            this.dgv_CardTypeManager_CardTypeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_CardTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_TypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_MonthsPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardType_CardCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_Months = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_DayPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CardTypeManager_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Update_CardTypeManager = new System.Windows.Forms.Button();
-            this.tp_SystemLog = new System.Windows.Forms.TabPage();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.uC_Page_SystemLog = new Gymnasium_APP.UC.UC_Page();
-            this.cb_SystemLog = new System.Windows.Forms.CheckBox();
-            this.btn_SystemLogManager_Select = new System.Windows.Forms.Button();
-            this.dt_SystemLogManager_StopTime = new System.Windows.Forms.DateTimePicker();
-            this.dt_SystemLogManager_BeginTime = new System.Windows.Forms.DateTimePicker();
-            this.labBeginTime = new System.Windows.Forms.Label();
-            this.labEndTime = new System.Windows.Forms.Label();
-            this.btn_SystemLogManager_Delete = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.cmb_SystemLogManager_State = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_SystemLogManager_UserName = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dgv_SystemLogManager = new System.Windows.Forms.DataGridView();
-            this.cbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_SystemLog_LoginID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_RealName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_LoginIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_LoginAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemLog_Cont = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tp_SystemCunsumeType = new System.Windows.Forms.TabPage();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.uC_Page_SystemCunsumeType = new Gymnasium_APP.UC.UC_Page();
-            this.btn_SystemCunsumeType_Delete = new System.Windows.Forms.Button();
-            this.btn_SystemCunsumeType_Add = new System.Windows.Forms.Button();
-            this.dgv_SystemCunsumeType_Manager = new System.Windows.Forms.DataGridView();
-            this.dgv_SystemCunsumeType_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemCunsumeType_Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemCunsumeType_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemCunsumeType_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_SystemCunsumeType_AddTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_SystemCunsumeType_Update = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_MainPage = new System.Windows.Forms.Button();
@@ -358,26 +376,30 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_login_name = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.tp_System_SystemSet = new System.Windows.Forms.TabPage();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.cmb_Printer = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.txt_Print_Title = new System.Windows.Forms.TextBox();
-            this.txt_Print_Address = new System.Windows.Forms.TextBox();
-            this.txt_Print_Phone = new System.Windows.Forms.TextBox();
-            this.txt_Print_End = new System.Windows.Forms.TextBox();
-            this.txt_Print_Size = new System.Windows.Forms.TextBox();
-            this.btn_Print_OK = new System.Windows.Forms.Button();
             this.tlp_Main.SuspendLayout();
             this.pl_Mind.SuspendLayout();
+            this.tabc_SystemManager.SuspendLayout();
+            this.tp_UserManager.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UserManager)).BeginInit();
+            this.tp_RoleManager.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_RoleManager)).BeginInit();
+            this.tp_CardTypeManager.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CardTypeManager)).BeginInit();
+            this.tp_SystemLog.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemLogManager)).BeginInit();
+            this.tp_SystemCunsumeType.SuspendLayout();
+            this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemCunsumeType_Manager)).BeginInit();
+            this.tp_System_SystemSet.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.tbc_Statistics.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -405,33 +427,11 @@
             this.tab_Mian_Site.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Mian_Site_Manager)).BeginInit();
-            this.tabc_SystemManager.SuspendLayout();
-            this.tp_UserManager.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UserManager)).BeginInit();
-            this.tp_RoleManager.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_RoleManager)).BeginInit();
-            this.tp_CardTypeManager.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_CardTypeManager)).BeginInit();
-            this.tp_SystemLog.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemLogManager)).BeginInit();
-            this.tp_SystemCunsumeType.SuspendLayout();
-            this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemCunsumeType_Manager)).BeginInit();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tp_System_SystemSet.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_Main
@@ -468,6 +468,1403 @@
             this.pl_Mind.Name = "pl_Mind";
             this.pl_Mind.Size = new System.Drawing.Size(841, 650);
             this.pl_Mind.TabIndex = 2;
+            // 
+            // tabc_SystemManager
+            // 
+            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabc_SystemManager.Controls.Add(this.tp_UserManager);
+            this.tabc_SystemManager.Controls.Add(this.tp_PrivilegeManager);
+            this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
+            this.tabc_SystemManager.Controls.Add(this.tp_CardTypeManager);
+            this.tabc_SystemManager.Controls.Add(this.tp_SystemLog);
+            this.tabc_SystemManager.Controls.Add(this.tp_SystemCunsumeType);
+            this.tabc_SystemManager.Controls.Add(this.tp_System_SystemSet);
+            this.tabc_SystemManager.Font = new System.Drawing.Font("宋体", 12F);
+            this.tabc_SystemManager.Location = new System.Drawing.Point(-1, -1);
+            this.tabc_SystemManager.Margin = new System.Windows.Forms.Padding(0);
+            this.tabc_SystemManager.Multiline = true;
+            this.tabc_SystemManager.Name = "tabc_SystemManager";
+            this.tabc_SystemManager.Padding = new System.Drawing.Point(20, 0);
+            this.tabc_SystemManager.SelectedIndex = 0;
+            this.tabc_SystemManager.Size = new System.Drawing.Size(828, 649);
+            this.tabc_SystemManager.TabIndex = 0;
+            this.tabc_SystemManager.SelectedIndexChanged += new System.EventHandler(this.tabc_SystemManager_SelectedIndexChanged);
+            // 
+            // tp_UserManager
+            // 
+            this.tp_UserManager.Controls.Add(this.panel3);
+            this.tp_UserManager.Controls.Add(this.panel1);
+            this.tp_UserManager.Location = new System.Drawing.Point(4, 24);
+            this.tp_UserManager.Name = "tp_UserManager";
+            this.tp_UserManager.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_UserManager.Size = new System.Drawing.Size(820, 621);
+            this.tp_UserManager.TabIndex = 3;
+            this.tp_UserManager.Text = "用户管理";
+            this.tp_UserManager.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.btn_UserManager_Update);
+            this.panel3.Controls.Add(this.btn_UserManager_Delete);
+            this.panel3.Controls.Add(this.btn_UserManager_Add);
+            this.panel3.Controls.Add(this.btn_UserManager_Select);
+            this.panel3.Controls.Add(this.cmb_UserManager_Sex);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.cmb_UserManager_State);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.txt_UserManager_UserName);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.cmb_UserManager_page);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lblPage);
+            this.panel3.Controls.Add(this.lblCount);
+            this.panel3.Controls.Add(this.linkEndPage);
+            this.panel3.Controls.Add(this.linkFirstPage);
+            this.panel3.Controls.Add(this.lblPageTotalCount);
+            this.panel3.Controls.Add(this.lblDataTotalCount);
+            this.panel3.Controls.Add(this.linkNextPage);
+            this.panel3.Controls.Add(this.linkBeforePage);
+            this.panel3.Controls.Add(this.dgv_UserManager);
+            this.panel3.Location = new System.Drawing.Point(-1, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(823, 624);
+            this.panel3.TabIndex = 1;
+            // 
+            // btn_UserManager_Update
+            // 
+            this.btn_UserManager_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_UserManager_Update.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_UserManager_Update.Location = new System.Drawing.Point(730, 10);
+            this.btn_UserManager_Update.Name = "btn_UserManager_Update";
+            this.btn_UserManager_Update.Size = new System.Drawing.Size(91, 32);
+            this.btn_UserManager_Update.TabIndex = 235;
+            this.btn_UserManager_Update.Text = "修改";
+            this.btn_UserManager_Update.UseVisualStyleBackColor = true;
+            this.btn_UserManager_Update.Click += new System.EventHandler(this.btn_UserManager_Update_Click);
+            // 
+            // btn_UserManager_Delete
+            // 
+            this.btn_UserManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_UserManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_UserManager_Delete.Location = new System.Drawing.Point(633, 10);
+            this.btn_UserManager_Delete.Name = "btn_UserManager_Delete";
+            this.btn_UserManager_Delete.Size = new System.Drawing.Size(91, 32);
+            this.btn_UserManager_Delete.TabIndex = 234;
+            this.btn_UserManager_Delete.Text = "删除";
+            this.btn_UserManager_Delete.UseVisualStyleBackColor = true;
+            this.btn_UserManager_Delete.Click += new System.EventHandler(this.btn_UserManager_Delete_Click);
+            // 
+            // btn_UserManager_Add
+            // 
+            this.btn_UserManager_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_UserManager_Add.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_UserManager_Add.Location = new System.Drawing.Point(536, 10);
+            this.btn_UserManager_Add.Name = "btn_UserManager_Add";
+            this.btn_UserManager_Add.Size = new System.Drawing.Size(91, 32);
+            this.btn_UserManager_Add.TabIndex = 233;
+            this.btn_UserManager_Add.Text = "添加";
+            this.btn_UserManager_Add.UseVisualStyleBackColor = true;
+            this.btn_UserManager_Add.Click += new System.EventHandler(this.btn_UserManager_Add_Click);
+            // 
+            // btn_UserManager_Select
+            // 
+            this.btn_UserManager_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_UserManager_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_UserManager_Select.Location = new System.Drawing.Point(439, 10);
+            this.btn_UserManager_Select.Name = "btn_UserManager_Select";
+            this.btn_UserManager_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_UserManager_Select.TabIndex = 232;
+            this.btn_UserManager_Select.Text = "查询";
+            this.btn_UserManager_Select.UseVisualStyleBackColor = true;
+            this.btn_UserManager_Select.Click += new System.EventHandler(this.btn_UserManager_Select_Click);
+            // 
+            // cmb_UserManager_Sex
+            // 
+            this.cmb_UserManager_Sex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_UserManager_Sex.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_UserManager_Sex.FormattingEnabled = true;
+            this.cmb_UserManager_Sex.Items.AddRange(new object[] {
+            "全部",
+            "男",
+            "女"});
+            this.cmb_UserManager_Sex.Location = new System.Drawing.Point(364, 15);
+            this.cmb_UserManager_Sex.Name = "cmb_UserManager_Sex";
+            this.cmb_UserManager_Sex.Size = new System.Drawing.Size(54, 24);
+            this.cmb_UserManager_Sex.TabIndex = 231;
+            this.cmb_UserManager_Sex.Text = "全部";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 12F);
+            this.label4.Location = new System.Drawing.Point(329, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 16);
+            this.label4.TabIndex = 230;
+            this.label4.Text = "性别";
+            // 
+            // cmb_UserManager_State
+            // 
+            this.cmb_UserManager_State.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_UserManager_State.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_UserManager_State.FormattingEnabled = true;
+            this.cmb_UserManager_State.Items.AddRange(new object[] {
+            "全部",
+            "正常",
+            "未开启"});
+            this.cmb_UserManager_State.Location = new System.Drawing.Point(252, 15);
+            this.cmb_UserManager_State.Name = "cmb_UserManager_State";
+            this.cmb_UserManager_State.Size = new System.Drawing.Size(71, 24);
+            this.cmb_UserManager_State.TabIndex = 229;
+            this.cmb_UserManager_State.Text = "全部";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 12F);
+            this.label3.Location = new System.Drawing.Point(215, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.TabIndex = 228;
+            this.label3.Text = "状态";
+            // 
+            // txt_UserManager_UserName
+            // 
+            this.txt_UserManager_UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_UserManager_UserName.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_UserManager_UserName.Location = new System.Drawing.Point(109, 13);
+            this.txt_UserManager_UserName.Name = "txt_UserManager_UserName";
+            this.txt_UserManager_UserName.Size = new System.Drawing.Size(100, 26);
+            this.txt_UserManager_UserName.TabIndex = 227;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 12F);
+            this.label2.Location = new System.Drawing.Point(56, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.TabIndex = 226;
+            this.label2.Text = "用户名";
+            // 
+            // cmb_UserManager_page
+            // 
+            this.cmb_UserManager_page.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_UserManager_page.AutoCompleteCustomSource.AddRange(new string[] {
+            "10",
+            "20",
+            "30"});
+            this.cmb_UserManager_page.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_UserManager_page.FormattingEnabled = true;
+            this.cmb_UserManager_page.Items.AddRange(new object[] {
+            "10",
+            "20",
+            "30",
+            "40"});
+            this.cmb_UserManager_page.Location = new System.Drawing.Point(292, 598);
+            this.cmb_UserManager_page.Name = "cmb_UserManager_page";
+            this.cmb_UserManager_page.Size = new System.Drawing.Size(47, 24);
+            this.cmb_UserManager_page.TabIndex = 225;
+            this.cmb_UserManager_page.Text = "15";
+            this.cmb_UserManager_page.SelectedIndexChanged += new System.EventHandler(this.cmb_UserManager_page_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 12F);
+            this.label5.Location = new System.Drawing.Point(213, 604);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 16);
+            this.label5.TabIndex = 224;
+            this.label5.Text = "每页显示:";
+            // 
+            // lblPage
+            // 
+            this.lblPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPage.AutoSize = true;
+            this.lblPage.Font = new System.Drawing.Font("宋体", 12F);
+            this.lblPage.Location = new System.Drawing.Point(549, 604);
+            this.lblPage.Name = "lblPage";
+            this.lblPage.Size = new System.Drawing.Size(16, 16);
+            this.lblPage.TabIndex = 223;
+            this.lblPage.Text = "0";
+            // 
+            // lblCount
+            // 
+            this.lblCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("宋体", 12F);
+            this.lblCount.Location = new System.Drawing.Point(437, 602);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(16, 16);
+            this.lblCount.TabIndex = 222;
+            this.lblCount.Text = "0";
+            // 
+            // linkEndPage
+            // 
+            this.linkEndPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkEndPage.AutoSize = true;
+            this.linkEndPage.Font = new System.Drawing.Font("宋体", 12F);
+            this.linkEndPage.Location = new System.Drawing.Point(783, 603);
+            this.linkEndPage.Name = "linkEndPage";
+            this.linkEndPage.Size = new System.Drawing.Size(40, 16);
+            this.linkEndPage.TabIndex = 221;
+            this.linkEndPage.TabStop = true;
+            this.linkEndPage.Text = "尾页";
+            this.linkEndPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEndPage_LinkClicked);
+            // 
+            // linkFirstPage
+            // 
+            this.linkFirstPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkFirstPage.AutoSize = true;
+            this.linkFirstPage.Font = new System.Drawing.Font("宋体", 12F);
+            this.linkFirstPage.Location = new System.Drawing.Point(597, 603);
+            this.linkFirstPage.Name = "linkFirstPage";
+            this.linkFirstPage.Size = new System.Drawing.Size(40, 16);
+            this.linkFirstPage.TabIndex = 220;
+            this.linkFirstPage.TabStop = true;
+            this.linkFirstPage.Text = "首页";
+            this.linkFirstPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkFirstPage_LinkClicked);
+            // 
+            // lblPageTotalCount
+            // 
+            this.lblPageTotalCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPageTotalCount.AutoSize = true;
+            this.lblPageTotalCount.Font = new System.Drawing.Font("宋体", 12F);
+            this.lblPageTotalCount.Location = new System.Drawing.Point(486, 602);
+            this.lblPageTotalCount.Name = "lblPageTotalCount";
+            this.lblPageTotalCount.Size = new System.Drawing.Size(64, 16);
+            this.lblPageTotalCount.TabIndex = 219;
+            this.lblPageTotalCount.Text = "总页数:";
+            // 
+            // lblDataTotalCount
+            // 
+            this.lblDataTotalCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDataTotalCount.AutoSize = true;
+            this.lblDataTotalCount.Font = new System.Drawing.Font("宋体", 12F);
+            this.lblDataTotalCount.Location = new System.Drawing.Point(363, 602);
+            this.lblDataTotalCount.Name = "lblDataTotalCount";
+            this.lblDataTotalCount.Size = new System.Drawing.Size(80, 16);
+            this.lblDataTotalCount.TabIndex = 218;
+            this.lblDataTotalCount.Text = "总记录数:";
+            // 
+            // linkNextPage
+            // 
+            this.linkNextPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkNextPage.AutoSize = true;
+            this.linkNextPage.Font = new System.Drawing.Font("宋体", 12F);
+            this.linkNextPage.Location = new System.Drawing.Point(716, 603);
+            this.linkNextPage.Name = "linkNextPage";
+            this.linkNextPage.Size = new System.Drawing.Size(56, 16);
+            this.linkNextPage.TabIndex = 217;
+            this.linkNextPage.TabStop = true;
+            this.linkNextPage.Text = "下一页";
+            this.linkNextPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNextPage_LinkClicked);
+            // 
+            // linkBeforePage
+            // 
+            this.linkBeforePage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkBeforePage.AutoSize = true;
+            this.linkBeforePage.Font = new System.Drawing.Font("宋体", 12F);
+            this.linkBeforePage.Location = new System.Drawing.Point(647, 603);
+            this.linkBeforePage.Name = "linkBeforePage";
+            this.linkBeforePage.Size = new System.Drawing.Size(56, 16);
+            this.linkBeforePage.TabIndex = 216;
+            this.linkBeforePage.TabStop = true;
+            this.linkBeforePage.Text = "上一页";
+            this.linkBeforePage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBeforePage_LinkClicked);
+            // 
+            // dgv_UserManager
+            // 
+            this.dgv_UserManager.AllowUserToAddRows = false;
+            this.dgv_UserManager.AllowUserToResizeRows = false;
+            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_UserManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgv_UserManager.ColumnHeadersHeight = 25;
+            this.dgv_UserManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UserID,
+            this.ID,
+            this.RoleID,
+            this.dgv_UserName,
+            this.RealName,
+            this.Sex,
+            this.State,
+            this.Mac,
+            this.Phone,
+            this.Mail,
+            this.dgv_DateTime});
+            this.dgv_UserManager.Location = new System.Drawing.Point(3, 48);
+            this.dgv_UserManager.Name = "dgv_UserManager";
+            this.dgv_UserManager.RowHeadersVisible = false;
+            this.dgv_UserManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_UserManager.RowTemplate.Height = 23;
+            this.dgv_UserManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_UserManager.Size = new System.Drawing.Size(817, 543);
+            this.dgv_UserManager.TabIndex = 215;
+            // 
+            // UserID
+            // 
+            this.UserID.Frozen = true;
+            this.UserID.HeaderText = "UserID";
+            this.UserID.Name = "UserID";
+            this.UserID.Visible = false;
+            this.UserID.Width = 66;
+            // 
+            // ID
+            // 
+            this.ID.FillWeight = 50F;
+            this.ID.Frozen = true;
+            this.ID.HeaderText = "序号";
+            this.ID.MinimumWidth = 50;
+            this.ID.Name = "ID";
+            this.ID.Width = 65;
+            // 
+            // RoleID
+            // 
+            this.RoleID.FillWeight = 82.91032F;
+            this.RoleID.Frozen = true;
+            this.RoleID.HeaderText = "角色";
+            this.RoleID.Name = "RoleID";
+            this.RoleID.Width = 65;
+            // 
+            // dgv_UserName
+            // 
+            this.dgv_UserName.HeaderText = "用户名";
+            this.dgv_UserName.Name = "dgv_UserName";
+            this.dgv_UserName.Width = 81;
+            // 
+            // RealName
+            // 
+            this.RealName.FillWeight = 82.91032F;
+            this.RealName.HeaderText = "姓名";
+            this.RealName.Name = "RealName";
+            this.RealName.Width = 65;
+            // 
+            // Sex
+            // 
+            this.Sex.FillWeight = 82.91032F;
+            this.Sex.HeaderText = "性别";
+            this.Sex.Name = "Sex";
+            this.Sex.Width = 65;
+            // 
+            // State
+            // 
+            this.State.FillWeight = 82.91032F;
+            this.State.HeaderText = "状态";
+            this.State.Name = "State";
+            this.State.Width = 65;
+            // 
+            // Mac
+            // 
+            this.Mac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Mac.FillWeight = 1F;
+            this.Mac.HeaderText = "MAC";
+            this.Mac.MaxInputLength = 1000;
+            this.Mac.MinimumWidth = 100;
+            this.Mac.Name = "Mac";
+            // 
+            // Phone
+            // 
+            this.Phone.FillWeight = 82.91032F;
+            this.Phone.HeaderText = "电话";
+            this.Phone.Name = "Phone";
+            this.Phone.Width = 65;
+            // 
+            // Mail
+            // 
+            this.Mail.FillWeight = 82.91032F;
+            this.Mail.HeaderText = "Mail";
+            this.Mail.Name = "Mail";
+            this.Mail.Width = 65;
+            // 
+            // dgv_DateTime
+            // 
+            this.dgv_DateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_DateTime.FillWeight = 82.91032F;
+            this.dgv_DateTime.HeaderText = "时间";
+            this.dgv_DateTime.Name = "dgv_DateTime";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(825, 623);
+            this.panel1.TabIndex = 0;
+            // 
+            // tp_PrivilegeManager
+            // 
+            this.tp_PrivilegeManager.Location = new System.Drawing.Point(4, 24);
+            this.tp_PrivilegeManager.Name = "tp_PrivilegeManager";
+            this.tp_PrivilegeManager.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_PrivilegeManager.Size = new System.Drawing.Size(820, 621);
+            this.tp_PrivilegeManager.TabIndex = 4;
+            this.tp_PrivilegeManager.Text = "权限管理";
+            this.tp_PrivilegeManager.UseVisualStyleBackColor = true;
+            // 
+            // tp_RoleManager
+            // 
+            this.tp_RoleManager.Controls.Add(this.panel8);
+            this.tp_RoleManager.Location = new System.Drawing.Point(4, 24);
+            this.tp_RoleManager.Name = "tp_RoleManager";
+            this.tp_RoleManager.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_RoleManager.Size = new System.Drawing.Size(820, 621);
+            this.tp_RoleManager.TabIndex = 5;
+            this.tp_RoleManager.Text = "角色管理";
+            this.tp_RoleManager.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.uC_Page_RoleManager);
+            this.panel8.Controls.Add(this.btn_RoleManager_Delete);
+            this.panel8.Controls.Add(this.btn_RoleManager_Add);
+            this.panel8.Controls.Add(this.dgv_RoleManager);
+            this.panel8.Controls.Add(this.btn_RoleManager_Update);
+            this.panel8.Location = new System.Drawing.Point(-3, 1);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(823, 622);
+            this.panel8.TabIndex = 3;
+            // 
+            // uC_Page_RoleManager
+            // 
+            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_RoleManager.Location = new System.Drawing.Point(219, 593);
+            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
+            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_RoleManager.TabIndex = 244;
+            // 
+            // btn_RoleManager_Delete
+            // 
+            this.btn_RoleManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_RoleManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_RoleManager_Delete.Location = new System.Drawing.Point(622, 11);
+            this.btn_RoleManager_Delete.Name = "btn_RoleManager_Delete";
+            this.btn_RoleManager_Delete.Size = new System.Drawing.Size(91, 32);
+            this.btn_RoleManager_Delete.TabIndex = 234;
+            this.btn_RoleManager_Delete.Text = "删除";
+            this.btn_RoleManager_Delete.UseVisualStyleBackColor = true;
+            this.btn_RoleManager_Delete.Click += new System.EventHandler(this.btn_RoleManager_Delete_Click);
+            // 
+            // btn_RoleManager_Add
+            // 
+            this.btn_RoleManager_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_RoleManager_Add.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_RoleManager_Add.Location = new System.Drawing.Point(523, 11);
+            this.btn_RoleManager_Add.Name = "btn_RoleManager_Add";
+            this.btn_RoleManager_Add.Size = new System.Drawing.Size(91, 32);
+            this.btn_RoleManager_Add.TabIndex = 233;
+            this.btn_RoleManager_Add.Text = "添加";
+            this.btn_RoleManager_Add.UseVisualStyleBackColor = true;
+            this.btn_RoleManager_Add.Click += new System.EventHandler(this.btn_RoleManager_Add_Click);
+            // 
+            // dgv_RoleManager
+            // 
+            this.dgv_RoleManager.AllowUserToAddRows = false;
+            this.dgv_RoleManager.AllowUserToResizeRows = false;
+            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_RoleManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_RoleManager.ColumnHeadersHeight = 25;
+            this.dgv_RoleManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_RoleManager_RoleId,
+            this.dgv_RoleManager_ID,
+            this.dgv_RoleManager_RoleName,
+            this.dgv_RoleManager_DateTime,
+            this.dgv_RoleManager_RoleSynopsis});
+            this.dgv_RoleManager.Location = new System.Drawing.Point(3, 49);
+            this.dgv_RoleManager.Name = "dgv_RoleManager";
+            this.dgv_RoleManager.RowHeadersVisible = false;
+            this.dgv_RoleManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_RoleManager.RowTemplate.Height = 23;
+            this.dgv_RoleManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_RoleManager.Size = new System.Drawing.Size(817, 540);
+            this.dgv_RoleManager.TabIndex = 215;
+            // 
+            // dgv_RoleManager_RoleId
+            // 
+            this.dgv_RoleManager_RoleId.DataPropertyName = "RoleId";
+            this.dgv_RoleManager_RoleId.HeaderText = "RoleId";
+            this.dgv_RoleManager_RoleId.Name = "dgv_RoleManager_RoleId";
+            this.dgv_RoleManager_RoleId.Visible = false;
+            // 
+            // dgv_RoleManager_ID
+            // 
+            this.dgv_RoleManager_ID.FillWeight = 50F;
+            this.dgv_RoleManager_ID.HeaderText = "序号";
+            this.dgv_RoleManager_ID.MinimumWidth = 50;
+            this.dgv_RoleManager_ID.Name = "dgv_RoleManager_ID";
+            // 
+            // dgv_RoleManager_RoleName
+            // 
+            this.dgv_RoleManager_RoleName.HeaderText = "角色名称";
+            this.dgv_RoleManager_RoleName.Name = "dgv_RoleManager_RoleName";
+            // 
+            // dgv_RoleManager_DateTime
+            // 
+            this.dgv_RoleManager_DateTime.HeaderText = "日期";
+            this.dgv_RoleManager_DateTime.Name = "dgv_RoleManager_DateTime";
+            // 
+            // dgv_RoleManager_RoleSynopsis
+            // 
+            this.dgv_RoleManager_RoleSynopsis.HeaderText = "描述";
+            this.dgv_RoleManager_RoleSynopsis.Name = "dgv_RoleManager_RoleSynopsis";
+            // 
+            // btn_RoleManager_Update
+            // 
+            this.btn_RoleManager_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_RoleManager_Update.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_RoleManager_Update.Location = new System.Drawing.Point(723, 11);
+            this.btn_RoleManager_Update.Name = "btn_RoleManager_Update";
+            this.btn_RoleManager_Update.Size = new System.Drawing.Size(91, 32);
+            this.btn_RoleManager_Update.TabIndex = 235;
+            this.btn_RoleManager_Update.Text = "修改";
+            this.btn_RoleManager_Update.UseVisualStyleBackColor = true;
+            this.btn_RoleManager_Update.Click += new System.EventHandler(this.btn_RoleManager_Update_Click);
+            // 
+            // tp_CardTypeManager
+            // 
+            this.tp_CardTypeManager.Controls.Add(this.panel9);
+            this.tp_CardTypeManager.Location = new System.Drawing.Point(4, 24);
+            this.tp_CardTypeManager.Name = "tp_CardTypeManager";
+            this.tp_CardTypeManager.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_CardTypeManager.Size = new System.Drawing.Size(820, 621);
+            this.tp_CardTypeManager.TabIndex = 7;
+            this.tp_CardTypeManager.Text = "消费型产品理";
+            this.tp_CardTypeManager.UseVisualStyleBackColor = true;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.Controls.Add(this.uC_Page_CardTypeManager);
+            this.panel9.Controls.Add(this.btn_Delete_CardTypeManager);
+            this.panel9.Controls.Add(this.btn_Add_CardTypeManager);
+            this.panel9.Controls.Add(this.dgv_CardTypeManager);
+            this.panel9.Controls.Add(this.btn_Update_CardTypeManager);
+            this.panel9.Location = new System.Drawing.Point(-3, 1);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(821, 622);
+            this.panel9.TabIndex = 4;
+            // 
+            // uC_Page_CardTypeManager
+            // 
+            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(217, 593);
+            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
+            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_CardTypeManager.TabIndex = 245;
+            // 
+            // btn_Delete_CardTypeManager
+            // 
+            this.btn_Delete_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Delete_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Delete_CardTypeManager.Location = new System.Drawing.Point(620, 11);
+            this.btn_Delete_CardTypeManager.Name = "btn_Delete_CardTypeManager";
+            this.btn_Delete_CardTypeManager.Size = new System.Drawing.Size(91, 32);
+            this.btn_Delete_CardTypeManager.TabIndex = 234;
+            this.btn_Delete_CardTypeManager.Text = "删除";
+            this.btn_Delete_CardTypeManager.UseVisualStyleBackColor = true;
+            this.btn_Delete_CardTypeManager.Click += new System.EventHandler(this.btn_Delete_CardTypeManager_Click);
+            // 
+            // btn_Add_CardTypeManager
+            // 
+            this.btn_Add_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Add_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Add_CardTypeManager.Location = new System.Drawing.Point(521, 11);
+            this.btn_Add_CardTypeManager.Name = "btn_Add_CardTypeManager";
+            this.btn_Add_CardTypeManager.Size = new System.Drawing.Size(91, 32);
+            this.btn_Add_CardTypeManager.TabIndex = 233;
+            this.btn_Add_CardTypeManager.Text = "添加";
+            this.btn_Add_CardTypeManager.UseVisualStyleBackColor = true;
+            this.btn_Add_CardTypeManager.Click += new System.EventHandler(this.btn_Add_CardTypeManager_Click);
+            // 
+            // dgv_CardTypeManager
+            // 
+            this.dgv_CardTypeManager.AllowUserToAddRows = false;
+            this.dgv_CardTypeManager.AllowUserToResizeRows = false;
+            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_CardTypeManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgv_CardTypeManager.ColumnHeadersHeight = 25;
+            this.dgv_CardTypeManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_CardTypeManager_CardTypeID,
+            this.dgv_CardTypeManager_ID,
+            this.dgv_CardTypeManager_CardTypeName,
+            this.dgv_CardTypeManager_TypeName,
+            this.dgv_CardTypeManager_MonthsPrice,
+            this.dgv_CardType_CardCount,
+            this.dgv_CardTypeManager_Months,
+            this.dgv_CardTypeManager_DayPrice,
+            this.dgv_CardTypeManager_DateTime});
+            this.dgv_CardTypeManager.Location = new System.Drawing.Point(3, 49);
+            this.dgv_CardTypeManager.Name = "dgv_CardTypeManager";
+            this.dgv_CardTypeManager.RowHeadersVisible = false;
+            this.dgv_CardTypeManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_CardTypeManager.RowTemplate.Height = 23;
+            this.dgv_CardTypeManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_CardTypeManager.Size = new System.Drawing.Size(817, 540);
+            this.dgv_CardTypeManager.TabIndex = 215;
+            // 
+            // dgv_CardTypeManager_CardTypeID
+            // 
+            this.dgv_CardTypeManager_CardTypeID.DataPropertyName = "CardTypeID";
+            this.dgv_CardTypeManager_CardTypeID.Frozen = true;
+            this.dgv_CardTypeManager_CardTypeID.HeaderText = "CardTypeID";
+            this.dgv_CardTypeManager_CardTypeID.Name = "dgv_CardTypeManager_CardTypeID";
+            this.dgv_CardTypeManager_CardTypeID.Visible = false;
+            this.dgv_CardTypeManager_CardTypeID.Width = 90;
+            // 
+            // dgv_CardTypeManager_ID
+            // 
+            this.dgv_CardTypeManager_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_CardTypeManager_ID.FillWeight = 50F;
+            this.dgv_CardTypeManager_ID.Frozen = true;
+            this.dgv_CardTypeManager_ID.HeaderText = "序号";
+            this.dgv_CardTypeManager_ID.MinimumWidth = 50;
+            this.dgv_CardTypeManager_ID.Name = "dgv_CardTypeManager_ID";
+            this.dgv_CardTypeManager_ID.Width = 70;
+            // 
+            // dgv_CardTypeManager_CardTypeName
+            // 
+            this.dgv_CardTypeManager_CardTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_CardTypeManager_CardTypeName.Frozen = true;
+            this.dgv_CardTypeManager_CardTypeName.HeaderText = "名称";
+            this.dgv_CardTypeManager_CardTypeName.Name = "dgv_CardTypeManager_CardTypeName";
+            this.dgv_CardTypeManager_CardTypeName.Width = 141;
+            // 
+            // dgv_CardTypeManager_TypeName
+            // 
+            this.dgv_CardTypeManager_TypeName.HeaderText = "类型";
+            this.dgv_CardTypeManager_TypeName.Name = "dgv_CardTypeManager_TypeName";
+            this.dgv_CardTypeManager_TypeName.Width = 65;
+            // 
+            // dgv_CardTypeManager_MonthsPrice
+            // 
+            this.dgv_CardTypeManager_MonthsPrice.HeaderText = "价格（元）";
+            this.dgv_CardTypeManager_MonthsPrice.Name = "dgv_CardTypeManager_MonthsPrice";
+            this.dgv_CardTypeManager_MonthsPrice.Width = 113;
+            // 
+            // dgv_CardType_CardCount
+            // 
+            this.dgv_CardType_CardCount.HeaderText = "使用次数";
+            this.dgv_CardType_CardCount.Name = "dgv_CardType_CardCount";
+            this.dgv_CardType_CardCount.Width = 97;
+            // 
+            // dgv_CardTypeManager_Months
+            // 
+            this.dgv_CardTypeManager_Months.HeaderText = "有效期（月）";
+            this.dgv_CardTypeManager_Months.Name = "dgv_CardTypeManager_Months";
+            this.dgv_CardTypeManager_Months.Width = 129;
+            // 
+            // dgv_CardTypeManager_DayPrice
+            // 
+            this.dgv_CardTypeManager_DayPrice.HeaderText = "单日价格（元）";
+            this.dgv_CardTypeManager_DayPrice.Name = "dgv_CardTypeManager_DayPrice";
+            this.dgv_CardTypeManager_DayPrice.Width = 145;
+            // 
+            // dgv_CardTypeManager_DateTime
+            // 
+            this.dgv_CardTypeManager_DateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_CardTypeManager_DateTime.HeaderText = "日期";
+            this.dgv_CardTypeManager_DateTime.Name = "dgv_CardTypeManager_DateTime";
+            // 
+            // btn_Update_CardTypeManager
+            // 
+            this.btn_Update_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Update_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Update_CardTypeManager.Location = new System.Drawing.Point(721, 11);
+            this.btn_Update_CardTypeManager.Name = "btn_Update_CardTypeManager";
+            this.btn_Update_CardTypeManager.Size = new System.Drawing.Size(91, 32);
+            this.btn_Update_CardTypeManager.TabIndex = 235;
+            this.btn_Update_CardTypeManager.Text = "修改";
+            this.btn_Update_CardTypeManager.UseVisualStyleBackColor = true;
+            this.btn_Update_CardTypeManager.Click += new System.EventHandler(this.btn_Update_CardTypeManager_Click);
+            // 
+            // tp_SystemLog
+            // 
+            this.tp_SystemLog.Controls.Add(this.panel6);
+            this.tp_SystemLog.Location = new System.Drawing.Point(4, 24);
+            this.tp_SystemLog.Name = "tp_SystemLog";
+            this.tp_SystemLog.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_SystemLog.Size = new System.Drawing.Size(820, 621);
+            this.tp_SystemLog.TabIndex = 6;
+            this.tp_SystemLog.Text = "系统日志";
+            this.tp_SystemLog.UseVisualStyleBackColor = true;
+            this.tp_SystemLog.Click += new System.EventHandler(this.tp_SystemLog_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Location = new System.Drawing.Point(0, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(843, 621);
+            this.panel6.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel7.Controls.Add(this.uC_Page_SystemLog);
+            this.panel7.Controls.Add(this.cb_SystemLog);
+            this.panel7.Controls.Add(this.btn_SystemLogManager_Select);
+            this.panel7.Controls.Add(this.dt_SystemLogManager_StopTime);
+            this.panel7.Controls.Add(this.dt_SystemLogManager_BeginTime);
+            this.panel7.Controls.Add(this.labBeginTime);
+            this.panel7.Controls.Add(this.labEndTime);
+            this.panel7.Controls.Add(this.btn_SystemLogManager_Delete);
+            this.panel7.Controls.Add(this.button6);
+            this.panel7.Controls.Add(this.cmb_SystemLogManager_State);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Controls.Add(this.txt_SystemLogManager_UserName);
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.dgv_SystemLogManager);
+            this.panel7.Controls.Add(this.button1);
+            this.panel7.Location = new System.Drawing.Point(-3, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(823, 622);
+            this.panel7.TabIndex = 2;
+            // 
+            // uC_Page_SystemLog
+            // 
+            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemLog.Location = new System.Drawing.Point(218, 593);
+            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
+            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemLog.TabIndex = 243;
+            // 
+            // cb_SystemLog
+            // 
+            this.cb_SystemLog.AutoSize = true;
+            this.cb_SystemLog.Location = new System.Drawing.Point(48, 106);
+            this.cb_SystemLog.Name = "cb_SystemLog";
+            this.cb_SystemLog.Size = new System.Drawing.Size(15, 14);
+            this.cb_SystemLog.TabIndex = 241;
+            this.cb_SystemLog.UseVisualStyleBackColor = true;
+            this.cb_SystemLog.CheckedChanged += new System.EventHandler(this.cb_SystemLog_CheckedChanged);
+            // 
+            // btn_SystemLogManager_Select
+            // 
+            this.btn_SystemLogManager_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemLogManager_Select.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemLogManager_Select.Location = new System.Drawing.Point(630, 58);
+            this.btn_SystemLogManager_Select.Name = "btn_SystemLogManager_Select";
+            this.btn_SystemLogManager_Select.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemLogManager_Select.TabIndex = 232;
+            this.btn_SystemLogManager_Select.Text = "查询";
+            this.btn_SystemLogManager_Select.UseVisualStyleBackColor = true;
+            this.btn_SystemLogManager_Select.Click += new System.EventHandler(this.btn_SystemLogManager_Select_Click);
+            // 
+            // dt_SystemLogManager_StopTime
+            // 
+            this.dt_SystemLogManager_StopTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dt_SystemLogManager_StopTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dt_SystemLogManager_StopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_SystemLogManager_StopTime.Location = new System.Drawing.Point(655, 19);
+            this.dt_SystemLogManager_StopTime.Name = "dt_SystemLogManager_StopTime";
+            this.dt_SystemLogManager_StopTime.Size = new System.Drawing.Size(172, 26);
+            this.dt_SystemLogManager_StopTime.TabIndex = 239;
+            // 
+            // dt_SystemLogManager_BeginTime
+            // 
+            this.dt_SystemLogManager_BeginTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
+            this.dt_SystemLogManager_BeginTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.dt_SystemLogManager_BeginTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_SystemLogManager_BeginTime.Location = new System.Drawing.Point(380, 21);
+            this.dt_SystemLogManager_BeginTime.Name = "dt_SystemLogManager_BeginTime";
+            this.dt_SystemLogManager_BeginTime.Size = new System.Drawing.Size(172, 26);
+            this.dt_SystemLogManager_BeginTime.TabIndex = 238;
+            // 
+            // labBeginTime
+            // 
+            this.labBeginTime.AutoSize = true;
+            this.labBeginTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.labBeginTime.Location = new System.Drawing.Point(302, 29);
+            this.labBeginTime.Name = "labBeginTime";
+            this.labBeginTime.Size = new System.Drawing.Size(72, 16);
+            this.labBeginTime.TabIndex = 236;
+            this.labBeginTime.Text = "开始时间";
+            // 
+            // labEndTime
+            // 
+            this.labEndTime.AutoSize = true;
+            this.labEndTime.Font = new System.Drawing.Font("宋体", 12F);
+            this.labEndTime.Location = new System.Drawing.Point(577, 29);
+            this.labEndTime.Name = "labEndTime";
+            this.labEndTime.Size = new System.Drawing.Size(72, 16);
+            this.labEndTime.TabIndex = 237;
+            this.labEndTime.Text = "结束时间";
+            // 
+            // btn_SystemLogManager_Delete
+            // 
+            this.btn_SystemLogManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemLogManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemLogManager_Delete.Location = new System.Drawing.Point(726, 58);
+            this.btn_SystemLogManager_Delete.Name = "btn_SystemLogManager_Delete";
+            this.btn_SystemLogManager_Delete.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemLogManager_Delete.TabIndex = 234;
+            this.btn_SystemLogManager_Delete.Text = "删除";
+            this.btn_SystemLogManager_Delete.UseVisualStyleBackColor = true;
+            this.btn_SystemLogManager_Delete.Click += new System.EventHandler(this.btn_SystemLogManager_Delete_Click);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Font = new System.Drawing.Font("宋体", 12F);
+            this.button6.Location = new System.Drawing.Point(532, 58);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(91, 32);
+            this.button6.TabIndex = 233;
+            this.button6.Text = "添加";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // cmb_SystemLogManager_State
+            // 
+            this.cmb_SystemLogManager_State.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_SystemLogManager_State.FormattingEnabled = true;
+            this.cmb_SystemLogManager_State.Items.AddRange(new object[] {
+            "全部",
+            "登录",
+            "浏览",
+            "添加",
+            "删除",
+            "修改"});
+            this.cmb_SystemLogManager_State.Location = new System.Drawing.Point(205, 21);
+            this.cmb_SystemLogManager_State.Name = "cmb_SystemLogManager_State";
+            this.cmb_SystemLogManager_State.Size = new System.Drawing.Size(71, 24);
+            this.cmb_SystemLogManager_State.TabIndex = 229;
+            this.cmb_SystemLogManager_State.Text = "全部";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 12F);
+            this.label6.Location = new System.Drawing.Point(167, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 16);
+            this.label6.TabIndex = 228;
+            this.label6.Text = "类型";
+            // 
+            // txt_SystemLogManager_UserName
+            // 
+            this.txt_SystemLogManager_UserName.Font = new System.Drawing.Font("宋体", 12F);
+            this.txt_SystemLogManager_UserName.Location = new System.Drawing.Point(61, 19);
+            this.txt_SystemLogManager_UserName.Name = "txt_SystemLogManager_UserName";
+            this.txt_SystemLogManager_UserName.Size = new System.Drawing.Size(100, 26);
+            this.txt_SystemLogManager_UserName.TabIndex = 227;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("宋体", 12F);
+            this.label7.Location = new System.Drawing.Point(8, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 16);
+            this.label7.TabIndex = 226;
+            this.label7.Text = "用户名";
+            // 
+            // dgv_SystemLogManager
+            // 
+            this.dgv_SystemLogManager.AllowUserToAddRows = false;
+            this.dgv_SystemLogManager.AllowUserToResizeRows = false;
+            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemLogManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_SystemLogManager.ColumnHeadersHeight = 25;
+            this.dgv_SystemLogManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cbox,
+            this.dgv_SystemLog_LoginID,
+            this.dgv_SystemLog_ID,
+            this.dgv_SystemLog_UserID,
+            this.dgv_SystemLog_UserName,
+            this.dgv_SystemLog_RealName,
+            this.dgv_SystemLog_LoginIP,
+            this.dgv_SystemLog_LoginAddress,
+            this.dgv_SystemLog_Type,
+            this.dgv_SystemLog_DateTime,
+            this.dgv_SystemLog_Cont});
+            this.dgv_SystemLogManager.Location = new System.Drawing.Point(3, 100);
+            this.dgv_SystemLogManager.Name = "dgv_SystemLogManager";
+            this.dgv_SystemLogManager.RowHeadersVisible = false;
+            this.dgv_SystemLogManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_SystemLogManager.RowTemplate.Height = 23;
+            this.dgv_SystemLogManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_SystemLogManager.Size = new System.Drawing.Size(817, 489);
+            this.dgv_SystemLogManager.TabIndex = 215;
+            // 
+            // cbox
+            // 
+            this.cbox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.cbox.FillWeight = 1F;
+            this.cbox.Frozen = true;
+            this.cbox.HeaderText = "选择";
+            this.cbox.MinimumWidth = 60;
+            this.cbox.Name = "cbox";
+            this.cbox.Width = 60;
+            // 
+            // dgv_SystemLog_LoginID
+            // 
+            this.dgv_SystemLog_LoginID.HeaderText = "SystemLog_LoginID";
+            this.dgv_SystemLog_LoginID.Name = "dgv_SystemLog_LoginID";
+            this.dgv_SystemLog_LoginID.Visible = false;
+            // 
+            // dgv_SystemLog_ID
+            // 
+            this.dgv_SystemLog_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_SystemLog_ID.FillWeight = 28.73418F;
+            this.dgv_SystemLog_ID.Frozen = true;
+            this.dgv_SystemLog_ID.HeaderText = "序号";
+            this.dgv_SystemLog_ID.MinimumWidth = 50;
+            this.dgv_SystemLog_ID.Name = "dgv_SystemLog_ID";
+            this.dgv_SystemLog_ID.Width = 52;
+            // 
+            // dgv_SystemLog_UserID
+            // 
+            this.dgv_SystemLog_UserID.DataPropertyName = "UserID";
+            this.dgv_SystemLog_UserID.HeaderText = "UserID";
+            this.dgv_SystemLog_UserID.Name = "dgv_SystemLog_UserID";
+            this.dgv_SystemLog_UserID.Visible = false;
+            // 
+            // dgv_SystemLog_UserName
+            // 
+            this.dgv_SystemLog_UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_SystemLog_UserName.FillWeight = 57.46837F;
+            this.dgv_SystemLog_UserName.Frozen = true;
+            this.dgv_SystemLog_UserName.HeaderText = "用户名";
+            this.dgv_SystemLog_UserName.Name = "dgv_SystemLog_UserName";
+            this.dgv_SystemLog_UserName.Width = 104;
+            // 
+            // dgv_SystemLog_RealName
+            // 
+            this.dgv_SystemLog_RealName.FillWeight = 57.46837F;
+            this.dgv_SystemLog_RealName.HeaderText = "真实姓名";
+            this.dgv_SystemLog_RealName.Name = "dgv_SystemLog_RealName";
+            // 
+            // dgv_SystemLog_LoginIP
+            // 
+            this.dgv_SystemLog_LoginIP.FillWeight = 57.46837F;
+            this.dgv_SystemLog_LoginIP.HeaderText = "登录IP";
+            this.dgv_SystemLog_LoginIP.Name = "dgv_SystemLog_LoginIP";
+            // 
+            // dgv_SystemLog_LoginAddress
+            // 
+            this.dgv_SystemLog_LoginAddress.FillWeight = 57.46837F;
+            this.dgv_SystemLog_LoginAddress.HeaderText = "登录地址";
+            this.dgv_SystemLog_LoginAddress.Name = "dgv_SystemLog_LoginAddress";
+            // 
+            // dgv_SystemLog_Type
+            // 
+            this.dgv_SystemLog_Type.FillWeight = 57.46837F;
+            this.dgv_SystemLog_Type.HeaderText = "类型";
+            this.dgv_SystemLog_Type.Name = "dgv_SystemLog_Type";
+            // 
+            // dgv_SystemLog_DateTime
+            // 
+            this.dgv_SystemLog_DateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dgv_SystemLog_DateTime.FillWeight = 57.46837F;
+            this.dgv_SystemLog_DateTime.HeaderText = "时间";
+            this.dgv_SystemLog_DateTime.Name = "dgv_SystemLog_DateTime";
+            this.dgv_SystemLog_DateTime.Width = 65;
+            // 
+            // dgv_SystemLog_Cont
+            // 
+            this.dgv_SystemLog_Cont.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgv_SystemLog_Cont.FillWeight = 57.46837F;
+            this.dgv_SystemLog_Cont.HeaderText = "内容";
+            this.dgv_SystemLog_Cont.Name = "dgv_SystemLog_Cont";
+            this.dgv_SystemLog_Cont.Width = 65;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("宋体", 12F);
+            this.button1.Location = new System.Drawing.Point(726, 58);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 32);
+            this.button1.TabIndex = 235;
+            this.button1.Text = "修改";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            // 
+            // tp_SystemCunsumeType
+            // 
+            this.tp_SystemCunsumeType.Controls.Add(this.panel16);
+            this.tp_SystemCunsumeType.Location = new System.Drawing.Point(4, 24);
+            this.tp_SystemCunsumeType.Name = "tp_SystemCunsumeType";
+            this.tp_SystemCunsumeType.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_SystemCunsumeType.Size = new System.Drawing.Size(820, 621);
+            this.tp_SystemCunsumeType.TabIndex = 8;
+            this.tp_SystemCunsumeType.Text = "消费类型";
+            this.tp_SystemCunsumeType.UseVisualStyleBackColor = true;
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel16.Controls.Add(this.uC_Page_SystemCunsumeType);
+            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Delete);
+            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Add);
+            this.panel16.Controls.Add(this.dgv_SystemCunsumeType_Manager);
+            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Update);
+            this.panel16.Location = new System.Drawing.Point(-5, 1);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(828, 619);
+            this.panel16.TabIndex = 5;
+            // 
+            // uC_Page_SystemCunsumeType
+            // 
+            this.uC_Page_SystemCunsumeType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Page_SystemCunsumeType.BackColor = System.Drawing.Color.Transparent;
+            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(226, 590);
+            this.uC_Page_SystemCunsumeType.Name = "uC_Page_SystemCunsumeType";
+            this.uC_Page_SystemCunsumeType.Size = new System.Drawing.Size(593, 24);
+            this.uC_Page_SystemCunsumeType.TabIndex = 246;
+            // 
+            // btn_SystemCunsumeType_Delete
+            // 
+            this.btn_SystemCunsumeType_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemCunsumeType_Delete.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemCunsumeType_Delete.Location = new System.Drawing.Point(627, 11);
+            this.btn_SystemCunsumeType_Delete.Name = "btn_SystemCunsumeType_Delete";
+            this.btn_SystemCunsumeType_Delete.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemCunsumeType_Delete.TabIndex = 234;
+            this.btn_SystemCunsumeType_Delete.Text = "删除";
+            this.btn_SystemCunsumeType_Delete.UseVisualStyleBackColor = true;
+            this.btn_SystemCunsumeType_Delete.Click += new System.EventHandler(this.btn_SystemCunsumeType_Delete_Click);
+            // 
+            // btn_SystemCunsumeType_Add
+            // 
+            this.btn_SystemCunsumeType_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemCunsumeType_Add.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemCunsumeType_Add.Location = new System.Drawing.Point(528, 11);
+            this.btn_SystemCunsumeType_Add.Name = "btn_SystemCunsumeType_Add";
+            this.btn_SystemCunsumeType_Add.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemCunsumeType_Add.TabIndex = 233;
+            this.btn_SystemCunsumeType_Add.Text = "添加";
+            this.btn_SystemCunsumeType_Add.UseVisualStyleBackColor = true;
+            this.btn_SystemCunsumeType_Add.Click += new System.EventHandler(this.btn_SystemCunsumeType_Add_Click);
+            // 
+            // dgv_SystemCunsumeType_Manager
+            // 
+            this.dgv_SystemCunsumeType_Manager.AllowUserToAddRows = false;
+            this.dgv_SystemCunsumeType_Manager.AllowUserToResizeRows = false;
+            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_SystemCunsumeType_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgv_SystemCunsumeType_Manager.ColumnHeadersHeight = 25;
+            this.dgv_SystemCunsumeType_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_SystemCunsumeType_Id,
+            this.dgv_SystemCunsumeType_Num,
+            this.dgv_SystemCunsumeType_Name,
+            this.dgv_SystemCunsumeType_Price,
+            this.dgv_SystemCunsumeType_AddTime});
+            this.dgv_SystemCunsumeType_Manager.Location = new System.Drawing.Point(3, 49);
+            this.dgv_SystemCunsumeType_Manager.Name = "dgv_SystemCunsumeType_Manager";
+            this.dgv_SystemCunsumeType_Manager.RowHeadersVisible = false;
+            this.dgv_SystemCunsumeType_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_SystemCunsumeType_Manager.RowTemplate.Height = 23;
+            this.dgv_SystemCunsumeType_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_SystemCunsumeType_Manager.Size = new System.Drawing.Size(821, 537);
+            this.dgv_SystemCunsumeType_Manager.TabIndex = 215;
+            // 
+            // dgv_SystemCunsumeType_Id
+            // 
+            this.dgv_SystemCunsumeType_Id.Frozen = true;
+            this.dgv_SystemCunsumeType_Id.HeaderText = "Id";
+            this.dgv_SystemCunsumeType_Id.Name = "dgv_SystemCunsumeType_Id";
+            this.dgv_SystemCunsumeType_Id.Visible = false;
+            this.dgv_SystemCunsumeType_Id.Width = 42;
+            // 
+            // dgv_SystemCunsumeType_Num
+            // 
+            this.dgv_SystemCunsumeType_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_SystemCunsumeType_Num.FillWeight = 50F;
+            this.dgv_SystemCunsumeType_Num.Frozen = true;
+            this.dgv_SystemCunsumeType_Num.HeaderText = "序号";
+            this.dgv_SystemCunsumeType_Num.MinimumWidth = 50;
+            this.dgv_SystemCunsumeType_Num.Name = "dgv_SystemCunsumeType_Num";
+            this.dgv_SystemCunsumeType_Num.Width = 70;
+            // 
+            // dgv_SystemCunsumeType_Name
+            // 
+            this.dgv_SystemCunsumeType_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgv_SystemCunsumeType_Name.Frozen = true;
+            this.dgv_SystemCunsumeType_Name.HeaderText = "名称";
+            this.dgv_SystemCunsumeType_Name.Name = "dgv_SystemCunsumeType_Name";
+            this.dgv_SystemCunsumeType_Name.Width = 141;
+            // 
+            // dgv_SystemCunsumeType_Price
+            // 
+            this.dgv_SystemCunsumeType_Price.HeaderText = "价格（元）";
+            this.dgv_SystemCunsumeType_Price.Name = "dgv_SystemCunsumeType_Price";
+            this.dgv_SystemCunsumeType_Price.Width = 113;
+            // 
+            // dgv_SystemCunsumeType_AddTime
+            // 
+            this.dgv_SystemCunsumeType_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgv_SystemCunsumeType_AddTime.HeaderText = "日期";
+            this.dgv_SystemCunsumeType_AddTime.Name = "dgv_SystemCunsumeType_AddTime";
+            // 
+            // btn_SystemCunsumeType_Update
+            // 
+            this.btn_SystemCunsumeType_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_SystemCunsumeType_Update.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_SystemCunsumeType_Update.Location = new System.Drawing.Point(728, 11);
+            this.btn_SystemCunsumeType_Update.Name = "btn_SystemCunsumeType_Update";
+            this.btn_SystemCunsumeType_Update.Size = new System.Drawing.Size(91, 32);
+            this.btn_SystemCunsumeType_Update.TabIndex = 235;
+            this.btn_SystemCunsumeType_Update.Text = "修改";
+            this.btn_SystemCunsumeType_Update.UseVisualStyleBackColor = true;
+            this.btn_SystemCunsumeType_Update.Click += new System.EventHandler(this.btn_SystemCunsumeType_Update_Click);
+            // 
+            // tp_System_SystemSet
+            // 
+            this.tp_System_SystemSet.Controls.Add(this.panel18);
+            this.tp_System_SystemSet.Location = new System.Drawing.Point(4, 24);
+            this.tp_System_SystemSet.Name = "tp_System_SystemSet";
+            this.tp_System_SystemSet.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_System_SystemSet.Size = new System.Drawing.Size(820, 621);
+            this.tp_System_SystemSet.TabIndex = 9;
+            this.tp_System_SystemSet.Text = "参数设置";
+            this.tp_System_SystemSet.UseVisualStyleBackColor = true;
+            // 
+            // panel18
+            // 
+            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel18.Controls.Add(this.tableLayoutPanel1);
+            this.panel18.Location = new System.Drawing.Point(-4, 1);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(828, 619);
+            this.panel18.TabIndex = 6;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(819, 617);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(403, 302);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "打印设置";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.btn_Print_OK, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Size, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_End, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Phone, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Address, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label33, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label32, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.cmb_Printer, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label34, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label35, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label36, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.label37, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Title, 1, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 7;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.3037F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.17782F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(391, 280);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // btn_Print_OK
+            // 
+            this.btn_Print_OK.Font = new System.Drawing.Font("宋体", 12F);
+            this.btn_Print_OK.Location = new System.Drawing.Point(100, 243);
+            this.btn_Print_OK.Name = "btn_Print_OK";
+            this.btn_Print_OK.Size = new System.Drawing.Size(216, 34);
+            this.btn_Print_OK.TabIndex = 12;
+            this.btn_Print_OK.Text = "确认";
+            this.btn_Print_OK.UseVisualStyleBackColor = true;
+            this.btn_Print_OK.Click += new System.EventHandler(this.btn_Print_OK_Click);
+            // 
+            // txt_Print_Size
+            // 
+            this.txt_Print_Size.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Size.Location = new System.Drawing.Point(100, 207);
+            this.txt_Print_Size.Name = "txt_Print_Size";
+            this.txt_Print_Size.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Size.TabIndex = 11;
+            this.txt_Print_Size.Text = "258, 374";
+            // 
+            // txt_Print_End
+            // 
+            this.txt_Print_End.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_End.Location = new System.Drawing.Point(100, 167);
+            this.txt_Print_End.Name = "txt_Print_End";
+            this.txt_Print_End.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_End.TabIndex = 10;
+            // 
+            // txt_Print_Phone
+            // 
+            this.txt_Print_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Phone.Location = new System.Drawing.Point(100, 127);
+            this.txt_Print_Phone.Name = "txt_Print_Phone";
+            this.txt_Print_Phone.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Phone.TabIndex = 9;
+            // 
+            // txt_Print_Address
+            // 
+            this.txt_Print_Address.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Address.Location = new System.Drawing.Point(100, 87);
+            this.txt_Print_Address.Name = "txt_Print_Address";
+            this.txt_Print_Address.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Address.TabIndex = 8;
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label33.AutoSize = true;
+            this.label33.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label33.Location = new System.Drawing.Point(54, 52);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(40, 16);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "标题";
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label32.AutoSize = true;
+            this.label32.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label32.Location = new System.Drawing.Point(6, 12);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(88, 16);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "默认打印机";
+            // 
+            // cmb_Printer
+            // 
+            this.cmb_Printer.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmb_Printer.Font = new System.Drawing.Font("宋体", 12F);
+            this.cmb_Printer.FormattingEnabled = true;
+            this.cmb_Printer.Location = new System.Drawing.Point(100, 8);
+            this.cmb_Printer.Name = "cmb_Printer";
+            this.cmb_Printer.Size = new System.Drawing.Size(288, 24);
+            this.cmb_Printer.TabIndex = 1;
+            // 
+            // label34
+            // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label34.AutoSize = true;
+            this.label34.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label34.Location = new System.Drawing.Point(54, 92);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(40, 16);
+            this.label34.TabIndex = 3;
+            this.label34.Text = "地址";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label35.AutoSize = true;
+            this.label35.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label35.Location = new System.Drawing.Point(54, 132);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(40, 16);
+            this.label35.TabIndex = 4;
+            this.label35.Text = "电话";
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label36.AutoSize = true;
+            this.label36.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label36.Location = new System.Drawing.Point(38, 172);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(56, 16);
+            this.label36.TabIndex = 5;
+            this.label36.Text = "结束语";
+            // 
+            // label37
+            // 
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label37.AutoSize = true;
+            this.label37.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label37.Location = new System.Drawing.Point(54, 212);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(40, 16);
+            this.label37.TabIndex = 6;
+            this.label37.Text = "大小";
+            // 
+            // txt_Print_Title
+            // 
+            this.txt_Print_Title.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Print_Title.Location = new System.Drawing.Point(100, 47);
+            this.txt_Print_Title.Name = "txt_Print_Title";
+            this.txt_Print_Title.Size = new System.Drawing.Size(288, 26);
+            this.txt_Print_Title.TabIndex = 7;
             // 
             // tbc_Statistics
             // 
@@ -2550,1191 +3947,6 @@
             this.dgv_Mian_Site_AddTime.Name = "dgv_Mian_Site_AddTime";
             this.dgv_Mian_Site_AddTime.ReadOnly = true;
             // 
-            // tabc_SystemManager
-            // 
-            this.tabc_SystemManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabc_SystemManager.Controls.Add(this.tp_UserManager);
-            this.tabc_SystemManager.Controls.Add(this.tp_PrivilegeManager);
-            this.tabc_SystemManager.Controls.Add(this.tp_RoleManager);
-            this.tabc_SystemManager.Controls.Add(this.tp_CardTypeManager);
-            this.tabc_SystemManager.Controls.Add(this.tp_SystemLog);
-            this.tabc_SystemManager.Controls.Add(this.tp_SystemCunsumeType);
-            this.tabc_SystemManager.Controls.Add(this.tp_System_SystemSet);
-            this.tabc_SystemManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.tabc_SystemManager.Location = new System.Drawing.Point(-1, -1);
-            this.tabc_SystemManager.Margin = new System.Windows.Forms.Padding(0);
-            this.tabc_SystemManager.Multiline = true;
-            this.tabc_SystemManager.Name = "tabc_SystemManager";
-            this.tabc_SystemManager.Padding = new System.Drawing.Point(20, 0);
-            this.tabc_SystemManager.SelectedIndex = 0;
-            this.tabc_SystemManager.Size = new System.Drawing.Size(828, 649);
-            this.tabc_SystemManager.TabIndex = 0;
-            this.tabc_SystemManager.SelectedIndexChanged += new System.EventHandler(this.tabc_SystemManager_SelectedIndexChanged);
-            // 
-            // tp_UserManager
-            // 
-            this.tp_UserManager.Controls.Add(this.panel3);
-            this.tp_UserManager.Controls.Add(this.panel1);
-            this.tp_UserManager.Location = new System.Drawing.Point(4, 24);
-            this.tp_UserManager.Name = "tp_UserManager";
-            this.tp_UserManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_UserManager.Size = new System.Drawing.Size(820, 621);
-            this.tp_UserManager.TabIndex = 3;
-            this.tp_UserManager.Text = "用户管理";
-            this.tp_UserManager.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.btn_UserManager_Update);
-            this.panel3.Controls.Add(this.btn_UserManager_Delete);
-            this.panel3.Controls.Add(this.btn_UserManager_Add);
-            this.panel3.Controls.Add(this.btn_UserManager_Select);
-            this.panel3.Controls.Add(this.cmb_UserManager_Sex);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.cmb_UserManager_State);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.txt_UserManager_UserName);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.cmb_UserManager_page);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.lblPage);
-            this.panel3.Controls.Add(this.lblCount);
-            this.panel3.Controls.Add(this.linkEndPage);
-            this.panel3.Controls.Add(this.linkFirstPage);
-            this.panel3.Controls.Add(this.lblPageTotalCount);
-            this.panel3.Controls.Add(this.lblDataTotalCount);
-            this.panel3.Controls.Add(this.linkNextPage);
-            this.panel3.Controls.Add(this.linkBeforePage);
-            this.panel3.Controls.Add(this.dgv_UserManager);
-            this.panel3.Location = new System.Drawing.Point(-1, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(823, 624);
-            this.panel3.TabIndex = 1;
-            // 
-            // btn_UserManager_Update
-            // 
-            this.btn_UserManager_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_UserManager_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Update.Location = new System.Drawing.Point(730, 10);
-            this.btn_UserManager_Update.Name = "btn_UserManager_Update";
-            this.btn_UserManager_Update.Size = new System.Drawing.Size(91, 32);
-            this.btn_UserManager_Update.TabIndex = 235;
-            this.btn_UserManager_Update.Text = "修改";
-            this.btn_UserManager_Update.UseVisualStyleBackColor = true;
-            this.btn_UserManager_Update.Click += new System.EventHandler(this.btn_UserManager_Update_Click);
-            // 
-            // btn_UserManager_Delete
-            // 
-            this.btn_UserManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_UserManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Delete.Location = new System.Drawing.Point(633, 10);
-            this.btn_UserManager_Delete.Name = "btn_UserManager_Delete";
-            this.btn_UserManager_Delete.Size = new System.Drawing.Size(91, 32);
-            this.btn_UserManager_Delete.TabIndex = 234;
-            this.btn_UserManager_Delete.Text = "删除";
-            this.btn_UserManager_Delete.UseVisualStyleBackColor = true;
-            this.btn_UserManager_Delete.Click += new System.EventHandler(this.btn_UserManager_Delete_Click);
-            // 
-            // btn_UserManager_Add
-            // 
-            this.btn_UserManager_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_UserManager_Add.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Add.Location = new System.Drawing.Point(536, 10);
-            this.btn_UserManager_Add.Name = "btn_UserManager_Add";
-            this.btn_UserManager_Add.Size = new System.Drawing.Size(91, 32);
-            this.btn_UserManager_Add.TabIndex = 233;
-            this.btn_UserManager_Add.Text = "添加";
-            this.btn_UserManager_Add.UseVisualStyleBackColor = true;
-            this.btn_UserManager_Add.Click += new System.EventHandler(this.btn_UserManager_Add_Click);
-            // 
-            // btn_UserManager_Select
-            // 
-            this.btn_UserManager_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_UserManager_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_UserManager_Select.Location = new System.Drawing.Point(439, 10);
-            this.btn_UserManager_Select.Name = "btn_UserManager_Select";
-            this.btn_UserManager_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_UserManager_Select.TabIndex = 232;
-            this.btn_UserManager_Select.Text = "查询";
-            this.btn_UserManager_Select.UseVisualStyleBackColor = true;
-            this.btn_UserManager_Select.Click += new System.EventHandler(this.btn_UserManager_Select_Click);
-            // 
-            // cmb_UserManager_Sex
-            // 
-            this.cmb_UserManager_Sex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_UserManager_Sex.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_UserManager_Sex.FormattingEnabled = true;
-            this.cmb_UserManager_Sex.Items.AddRange(new object[] {
-            "全部",
-            "男",
-            "女"});
-            this.cmb_UserManager_Sex.Location = new System.Drawing.Point(364, 15);
-            this.cmb_UserManager_Sex.Name = "cmb_UserManager_Sex";
-            this.cmb_UserManager_Sex.Size = new System.Drawing.Size(54, 24);
-            this.cmb_UserManager_Sex.TabIndex = 231;
-            this.cmb_UserManager_Sex.Text = "全部";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 12F);
-            this.label4.Location = new System.Drawing.Point(329, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 16);
-            this.label4.TabIndex = 230;
-            this.label4.Text = "性别";
-            // 
-            // cmb_UserManager_State
-            // 
-            this.cmb_UserManager_State.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_UserManager_State.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_UserManager_State.FormattingEnabled = true;
-            this.cmb_UserManager_State.Items.AddRange(new object[] {
-            "全部",
-            "正常",
-            "未开启"});
-            this.cmb_UserManager_State.Location = new System.Drawing.Point(252, 15);
-            this.cmb_UserManager_State.Name = "cmb_UserManager_State";
-            this.cmb_UserManager_State.Size = new System.Drawing.Size(71, 24);
-            this.cmb_UserManager_State.TabIndex = 229;
-            this.cmb_UserManager_State.Text = "全部";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F);
-            this.label3.Location = new System.Drawing.Point(215, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
-            this.label3.TabIndex = 228;
-            this.label3.Text = "状态";
-            // 
-            // txt_UserManager_UserName
-            // 
-            this.txt_UserManager_UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_UserManager_UserName.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_UserManager_UserName.Location = new System.Drawing.Point(109, 13);
-            this.txt_UserManager_UserName.Name = "txt_UserManager_UserName";
-            this.txt_UserManager_UserName.Size = new System.Drawing.Size(100, 26);
-            this.txt_UserManager_UserName.TabIndex = 227;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F);
-            this.label2.Location = new System.Drawing.Point(56, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
-            this.label2.TabIndex = 226;
-            this.label2.Text = "用户名";
-            // 
-            // cmb_UserManager_page
-            // 
-            this.cmb_UserManager_page.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_UserManager_page.AutoCompleteCustomSource.AddRange(new string[] {
-            "10",
-            "20",
-            "30"});
-            this.cmb_UserManager_page.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_UserManager_page.FormattingEnabled = true;
-            this.cmb_UserManager_page.Items.AddRange(new object[] {
-            "10",
-            "20",
-            "30",
-            "40"});
-            this.cmb_UserManager_page.Location = new System.Drawing.Point(292, 598);
-            this.cmb_UserManager_page.Name = "cmb_UserManager_page";
-            this.cmb_UserManager_page.Size = new System.Drawing.Size(47, 24);
-            this.cmb_UserManager_page.TabIndex = 225;
-            this.cmb_UserManager_page.Text = "15";
-            this.cmb_UserManager_page.SelectedIndexChanged += new System.EventHandler(this.cmb_UserManager_page_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 12F);
-            this.label5.Location = new System.Drawing.Point(213, 604);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 16);
-            this.label5.TabIndex = 224;
-            this.label5.Text = "每页显示:";
-            // 
-            // lblPage
-            // 
-            this.lblPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPage.AutoSize = true;
-            this.lblPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblPage.Location = new System.Drawing.Point(549, 604);
-            this.lblPage.Name = "lblPage";
-            this.lblPage.Size = new System.Drawing.Size(16, 16);
-            this.lblPage.TabIndex = 223;
-            this.lblPage.Text = "0";
-            // 
-            // lblCount
-            // 
-            this.lblCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCount.AutoSize = true;
-            this.lblCount.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblCount.Location = new System.Drawing.Point(437, 602);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(16, 16);
-            this.lblCount.TabIndex = 222;
-            this.lblCount.Text = "0";
-            // 
-            // linkEndPage
-            // 
-            this.linkEndPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkEndPage.AutoSize = true;
-            this.linkEndPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkEndPage.Location = new System.Drawing.Point(783, 603);
-            this.linkEndPage.Name = "linkEndPage";
-            this.linkEndPage.Size = new System.Drawing.Size(40, 16);
-            this.linkEndPage.TabIndex = 221;
-            this.linkEndPage.TabStop = true;
-            this.linkEndPage.Text = "尾页";
-            this.linkEndPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEndPage_LinkClicked);
-            // 
-            // linkFirstPage
-            // 
-            this.linkFirstPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkFirstPage.AutoSize = true;
-            this.linkFirstPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkFirstPage.Location = new System.Drawing.Point(597, 603);
-            this.linkFirstPage.Name = "linkFirstPage";
-            this.linkFirstPage.Size = new System.Drawing.Size(40, 16);
-            this.linkFirstPage.TabIndex = 220;
-            this.linkFirstPage.TabStop = true;
-            this.linkFirstPage.Text = "首页";
-            this.linkFirstPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkFirstPage_LinkClicked);
-            // 
-            // lblPageTotalCount
-            // 
-            this.lblPageTotalCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPageTotalCount.AutoSize = true;
-            this.lblPageTotalCount.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblPageTotalCount.Location = new System.Drawing.Point(486, 602);
-            this.lblPageTotalCount.Name = "lblPageTotalCount";
-            this.lblPageTotalCount.Size = new System.Drawing.Size(64, 16);
-            this.lblPageTotalCount.TabIndex = 219;
-            this.lblPageTotalCount.Text = "总页数:";
-            // 
-            // lblDataTotalCount
-            // 
-            this.lblDataTotalCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDataTotalCount.AutoSize = true;
-            this.lblDataTotalCount.Font = new System.Drawing.Font("宋体", 12F);
-            this.lblDataTotalCount.Location = new System.Drawing.Point(363, 602);
-            this.lblDataTotalCount.Name = "lblDataTotalCount";
-            this.lblDataTotalCount.Size = new System.Drawing.Size(80, 16);
-            this.lblDataTotalCount.TabIndex = 218;
-            this.lblDataTotalCount.Text = "总记录数:";
-            // 
-            // linkNextPage
-            // 
-            this.linkNextPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkNextPage.AutoSize = true;
-            this.linkNextPage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkNextPage.Location = new System.Drawing.Point(716, 603);
-            this.linkNextPage.Name = "linkNextPage";
-            this.linkNextPage.Size = new System.Drawing.Size(56, 16);
-            this.linkNextPage.TabIndex = 217;
-            this.linkNextPage.TabStop = true;
-            this.linkNextPage.Text = "下一页";
-            this.linkNextPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNextPage_LinkClicked);
-            // 
-            // linkBeforePage
-            // 
-            this.linkBeforePage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkBeforePage.AutoSize = true;
-            this.linkBeforePage.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkBeforePage.Location = new System.Drawing.Point(647, 603);
-            this.linkBeforePage.Name = "linkBeforePage";
-            this.linkBeforePage.Size = new System.Drawing.Size(56, 16);
-            this.linkBeforePage.TabIndex = 216;
-            this.linkBeforePage.TabStop = true;
-            this.linkBeforePage.Text = "上一页";
-            this.linkBeforePage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBeforePage_LinkClicked);
-            // 
-            // dgv_UserManager
-            // 
-            this.dgv_UserManager.AllowUserToAddRows = false;
-            this.dgv_UserManager.AllowUserToResizeRows = false;
-            this.dgv_UserManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_UserManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgv_UserManager.ColumnHeadersHeight = 25;
-            this.dgv_UserManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.UserID,
-            this.ID,
-            this.RoleID,
-            this.dgv_UserName,
-            this.RealName,
-            this.Sex,
-            this.State,
-            this.Mac,
-            this.Phone,
-            this.Mail,
-            this.dgv_DateTime});
-            this.dgv_UserManager.Location = new System.Drawing.Point(3, 48);
-            this.dgv_UserManager.Name = "dgv_UserManager";
-            this.dgv_UserManager.RowHeadersVisible = false;
-            this.dgv_UserManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_UserManager.RowTemplate.Height = 23;
-            this.dgv_UserManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_UserManager.Size = new System.Drawing.Size(817, 543);
-            this.dgv_UserManager.TabIndex = 215;
-            // 
-            // UserID
-            // 
-            this.UserID.Frozen = true;
-            this.UserID.HeaderText = "UserID";
-            this.UserID.Name = "UserID";
-            this.UserID.Visible = false;
-            this.UserID.Width = 66;
-            // 
-            // ID
-            // 
-            this.ID.FillWeight = 50F;
-            this.ID.Frozen = true;
-            this.ID.HeaderText = "序号";
-            this.ID.MinimumWidth = 50;
-            this.ID.Name = "ID";
-            this.ID.Width = 65;
-            // 
-            // RoleID
-            // 
-            this.RoleID.FillWeight = 82.91032F;
-            this.RoleID.Frozen = true;
-            this.RoleID.HeaderText = "角色";
-            this.RoleID.Name = "RoleID";
-            this.RoleID.Width = 65;
-            // 
-            // dgv_UserName
-            // 
-            this.dgv_UserName.HeaderText = "用户名";
-            this.dgv_UserName.Name = "dgv_UserName";
-            this.dgv_UserName.Width = 81;
-            // 
-            // RealName
-            // 
-            this.RealName.FillWeight = 82.91032F;
-            this.RealName.HeaderText = "姓名";
-            this.RealName.Name = "RealName";
-            this.RealName.Width = 65;
-            // 
-            // Sex
-            // 
-            this.Sex.FillWeight = 82.91032F;
-            this.Sex.HeaderText = "性别";
-            this.Sex.Name = "Sex";
-            this.Sex.Width = 65;
-            // 
-            // State
-            // 
-            this.State.FillWeight = 82.91032F;
-            this.State.HeaderText = "状态";
-            this.State.Name = "State";
-            this.State.Width = 65;
-            // 
-            // Mac
-            // 
-            this.Mac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Mac.FillWeight = 1F;
-            this.Mac.HeaderText = "MAC";
-            this.Mac.MaxInputLength = 1000;
-            this.Mac.MinimumWidth = 100;
-            this.Mac.Name = "Mac";
-            // 
-            // Phone
-            // 
-            this.Phone.FillWeight = 82.91032F;
-            this.Phone.HeaderText = "电话";
-            this.Phone.Name = "Phone";
-            this.Phone.Width = 65;
-            // 
-            // Mail
-            // 
-            this.Mail.FillWeight = 82.91032F;
-            this.Mail.HeaderText = "Mail";
-            this.Mail.Name = "Mail";
-            this.Mail.Width = 65;
-            // 
-            // dgv_DateTime
-            // 
-            this.dgv_DateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_DateTime.FillWeight = 82.91032F;
-            this.dgv_DateTime.HeaderText = "时间";
-            this.dgv_DateTime.Name = "dgv_DateTime";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Location = new System.Drawing.Point(1, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(825, 623);
-            this.panel1.TabIndex = 0;
-            // 
-            // tp_PrivilegeManager
-            // 
-            this.tp_PrivilegeManager.Location = new System.Drawing.Point(4, 24);
-            this.tp_PrivilegeManager.Name = "tp_PrivilegeManager";
-            this.tp_PrivilegeManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_PrivilegeManager.Size = new System.Drawing.Size(820, 621);
-            this.tp_PrivilegeManager.TabIndex = 4;
-            this.tp_PrivilegeManager.Text = "权限管理";
-            this.tp_PrivilegeManager.UseVisualStyleBackColor = true;
-            // 
-            // tp_RoleManager
-            // 
-            this.tp_RoleManager.Controls.Add(this.panel8);
-            this.tp_RoleManager.Location = new System.Drawing.Point(4, 24);
-            this.tp_RoleManager.Name = "tp_RoleManager";
-            this.tp_RoleManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_RoleManager.Size = new System.Drawing.Size(820, 621);
-            this.tp_RoleManager.TabIndex = 5;
-            this.tp_RoleManager.Text = "角色管理";
-            this.tp_RoleManager.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.Controls.Add(this.uC_Page_RoleManager);
-            this.panel8.Controls.Add(this.btn_RoleManager_Delete);
-            this.panel8.Controls.Add(this.btn_RoleManager_Add);
-            this.panel8.Controls.Add(this.dgv_RoleManager);
-            this.panel8.Controls.Add(this.btn_RoleManager_Update);
-            this.panel8.Location = new System.Drawing.Point(-3, 1);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(823, 622);
-            this.panel8.TabIndex = 3;
-            // 
-            // uC_Page_RoleManager
-            // 
-            this.uC_Page_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_RoleManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_RoleManager.Location = new System.Drawing.Point(219, 593);
-            this.uC_Page_RoleManager.Name = "uC_Page_RoleManager";
-            this.uC_Page_RoleManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_RoleManager.TabIndex = 244;
-            // 
-            // btn_RoleManager_Delete
-            // 
-            this.btn_RoleManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_RoleManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_RoleManager_Delete.Location = new System.Drawing.Point(622, 11);
-            this.btn_RoleManager_Delete.Name = "btn_RoleManager_Delete";
-            this.btn_RoleManager_Delete.Size = new System.Drawing.Size(91, 32);
-            this.btn_RoleManager_Delete.TabIndex = 234;
-            this.btn_RoleManager_Delete.Text = "删除";
-            this.btn_RoleManager_Delete.UseVisualStyleBackColor = true;
-            this.btn_RoleManager_Delete.Click += new System.EventHandler(this.btn_RoleManager_Delete_Click);
-            // 
-            // btn_RoleManager_Add
-            // 
-            this.btn_RoleManager_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_RoleManager_Add.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_RoleManager_Add.Location = new System.Drawing.Point(523, 11);
-            this.btn_RoleManager_Add.Name = "btn_RoleManager_Add";
-            this.btn_RoleManager_Add.Size = new System.Drawing.Size(91, 32);
-            this.btn_RoleManager_Add.TabIndex = 233;
-            this.btn_RoleManager_Add.Text = "添加";
-            this.btn_RoleManager_Add.UseVisualStyleBackColor = true;
-            this.btn_RoleManager_Add.Click += new System.EventHandler(this.btn_RoleManager_Add_Click);
-            // 
-            // dgv_RoleManager
-            // 
-            this.dgv_RoleManager.AllowUserToAddRows = false;
-            this.dgv_RoleManager.AllowUserToResizeRows = false;
-            this.dgv_RoleManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_RoleManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_RoleManager.ColumnHeadersHeight = 25;
-            this.dgv_RoleManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_RoleManager_RoleId,
-            this.dgv_RoleManager_ID,
-            this.dgv_RoleManager_RoleName,
-            this.dgv_RoleManager_DateTime,
-            this.dgv_RoleManager_RoleSynopsis});
-            this.dgv_RoleManager.Location = new System.Drawing.Point(3, 49);
-            this.dgv_RoleManager.Name = "dgv_RoleManager";
-            this.dgv_RoleManager.RowHeadersVisible = false;
-            this.dgv_RoleManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_RoleManager.RowTemplate.Height = 23;
-            this.dgv_RoleManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_RoleManager.Size = new System.Drawing.Size(817, 540);
-            this.dgv_RoleManager.TabIndex = 215;
-            // 
-            // dgv_RoleManager_RoleId
-            // 
-            this.dgv_RoleManager_RoleId.DataPropertyName = "RoleId";
-            this.dgv_RoleManager_RoleId.HeaderText = "RoleId";
-            this.dgv_RoleManager_RoleId.Name = "dgv_RoleManager_RoleId";
-            this.dgv_RoleManager_RoleId.Visible = false;
-            // 
-            // dgv_RoleManager_ID
-            // 
-            this.dgv_RoleManager_ID.FillWeight = 50F;
-            this.dgv_RoleManager_ID.HeaderText = "序号";
-            this.dgv_RoleManager_ID.MinimumWidth = 50;
-            this.dgv_RoleManager_ID.Name = "dgv_RoleManager_ID";
-            // 
-            // dgv_RoleManager_RoleName
-            // 
-            this.dgv_RoleManager_RoleName.HeaderText = "角色名称";
-            this.dgv_RoleManager_RoleName.Name = "dgv_RoleManager_RoleName";
-            // 
-            // dgv_RoleManager_DateTime
-            // 
-            this.dgv_RoleManager_DateTime.HeaderText = "日期";
-            this.dgv_RoleManager_DateTime.Name = "dgv_RoleManager_DateTime";
-            // 
-            // dgv_RoleManager_RoleSynopsis
-            // 
-            this.dgv_RoleManager_RoleSynopsis.HeaderText = "描述";
-            this.dgv_RoleManager_RoleSynopsis.Name = "dgv_RoleManager_RoleSynopsis";
-            // 
-            // btn_RoleManager_Update
-            // 
-            this.btn_RoleManager_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_RoleManager_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_RoleManager_Update.Location = new System.Drawing.Point(723, 11);
-            this.btn_RoleManager_Update.Name = "btn_RoleManager_Update";
-            this.btn_RoleManager_Update.Size = new System.Drawing.Size(91, 32);
-            this.btn_RoleManager_Update.TabIndex = 235;
-            this.btn_RoleManager_Update.Text = "修改";
-            this.btn_RoleManager_Update.UseVisualStyleBackColor = true;
-            this.btn_RoleManager_Update.Click += new System.EventHandler(this.btn_RoleManager_Update_Click);
-            // 
-            // tp_CardTypeManager
-            // 
-            this.tp_CardTypeManager.Controls.Add(this.panel9);
-            this.tp_CardTypeManager.Location = new System.Drawing.Point(4, 24);
-            this.tp_CardTypeManager.Name = "tp_CardTypeManager";
-            this.tp_CardTypeManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_CardTypeManager.Size = new System.Drawing.Size(820, 621);
-            this.tp_CardTypeManager.TabIndex = 7;
-            this.tp_CardTypeManager.Text = "消费型产品理";
-            this.tp_CardTypeManager.UseVisualStyleBackColor = true;
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.Controls.Add(this.uC_Page_CardTypeManager);
-            this.panel9.Controls.Add(this.btn_Delete_CardTypeManager);
-            this.panel9.Controls.Add(this.btn_Add_CardTypeManager);
-            this.panel9.Controls.Add(this.dgv_CardTypeManager);
-            this.panel9.Controls.Add(this.btn_Update_CardTypeManager);
-            this.panel9.Location = new System.Drawing.Point(-3, 1);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(821, 622);
-            this.panel9.TabIndex = 4;
-            // 
-            // uC_Page_CardTypeManager
-            // 
-            this.uC_Page_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_CardTypeManager.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_CardTypeManager.Location = new System.Drawing.Point(217, 593);
-            this.uC_Page_CardTypeManager.Name = "uC_Page_CardTypeManager";
-            this.uC_Page_CardTypeManager.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_CardTypeManager.TabIndex = 245;
-            // 
-            // btn_Delete_CardTypeManager
-            // 
-            this.btn_Delete_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Delete_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Delete_CardTypeManager.Location = new System.Drawing.Point(620, 11);
-            this.btn_Delete_CardTypeManager.Name = "btn_Delete_CardTypeManager";
-            this.btn_Delete_CardTypeManager.Size = new System.Drawing.Size(91, 32);
-            this.btn_Delete_CardTypeManager.TabIndex = 234;
-            this.btn_Delete_CardTypeManager.Text = "删除";
-            this.btn_Delete_CardTypeManager.UseVisualStyleBackColor = true;
-            this.btn_Delete_CardTypeManager.Click += new System.EventHandler(this.btn_Delete_CardTypeManager_Click);
-            // 
-            // btn_Add_CardTypeManager
-            // 
-            this.btn_Add_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Add_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Add_CardTypeManager.Location = new System.Drawing.Point(521, 11);
-            this.btn_Add_CardTypeManager.Name = "btn_Add_CardTypeManager";
-            this.btn_Add_CardTypeManager.Size = new System.Drawing.Size(91, 32);
-            this.btn_Add_CardTypeManager.TabIndex = 233;
-            this.btn_Add_CardTypeManager.Text = "添加";
-            this.btn_Add_CardTypeManager.UseVisualStyleBackColor = true;
-            this.btn_Add_CardTypeManager.Click += new System.EventHandler(this.btn_Add_CardTypeManager_Click);
-            // 
-            // dgv_CardTypeManager
-            // 
-            this.dgv_CardTypeManager.AllowUserToAddRows = false;
-            this.dgv_CardTypeManager.AllowUserToResizeRows = false;
-            this.dgv_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_CardTypeManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgv_CardTypeManager.ColumnHeadersHeight = 25;
-            this.dgv_CardTypeManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_CardTypeManager_CardTypeID,
-            this.dgv_CardTypeManager_ID,
-            this.dgv_CardTypeManager_CardTypeName,
-            this.dgv_CardTypeManager_TypeName,
-            this.dgv_CardTypeManager_MonthsPrice,
-            this.dgv_CardType_CardCount,
-            this.dgv_CardTypeManager_Months,
-            this.dgv_CardTypeManager_DayPrice,
-            this.dgv_CardTypeManager_DateTime});
-            this.dgv_CardTypeManager.Location = new System.Drawing.Point(3, 49);
-            this.dgv_CardTypeManager.Name = "dgv_CardTypeManager";
-            this.dgv_CardTypeManager.RowHeadersVisible = false;
-            this.dgv_CardTypeManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_CardTypeManager.RowTemplate.Height = 23;
-            this.dgv_CardTypeManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_CardTypeManager.Size = new System.Drawing.Size(817, 540);
-            this.dgv_CardTypeManager.TabIndex = 215;
-            // 
-            // dgv_CardTypeManager_CardTypeID
-            // 
-            this.dgv_CardTypeManager_CardTypeID.DataPropertyName = "CardTypeID";
-            this.dgv_CardTypeManager_CardTypeID.Frozen = true;
-            this.dgv_CardTypeManager_CardTypeID.HeaderText = "CardTypeID";
-            this.dgv_CardTypeManager_CardTypeID.Name = "dgv_CardTypeManager_CardTypeID";
-            this.dgv_CardTypeManager_CardTypeID.Visible = false;
-            this.dgv_CardTypeManager_CardTypeID.Width = 90;
-            // 
-            // dgv_CardTypeManager_ID
-            // 
-            this.dgv_CardTypeManager_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_CardTypeManager_ID.FillWeight = 50F;
-            this.dgv_CardTypeManager_ID.Frozen = true;
-            this.dgv_CardTypeManager_ID.HeaderText = "序号";
-            this.dgv_CardTypeManager_ID.MinimumWidth = 50;
-            this.dgv_CardTypeManager_ID.Name = "dgv_CardTypeManager_ID";
-            this.dgv_CardTypeManager_ID.Width = 70;
-            // 
-            // dgv_CardTypeManager_CardTypeName
-            // 
-            this.dgv_CardTypeManager_CardTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_CardTypeManager_CardTypeName.Frozen = true;
-            this.dgv_CardTypeManager_CardTypeName.HeaderText = "名称";
-            this.dgv_CardTypeManager_CardTypeName.Name = "dgv_CardTypeManager_CardTypeName";
-            this.dgv_CardTypeManager_CardTypeName.Width = 141;
-            // 
-            // dgv_CardTypeManager_TypeName
-            // 
-            this.dgv_CardTypeManager_TypeName.HeaderText = "类型";
-            this.dgv_CardTypeManager_TypeName.Name = "dgv_CardTypeManager_TypeName";
-            this.dgv_CardTypeManager_TypeName.Width = 65;
-            // 
-            // dgv_CardTypeManager_MonthsPrice
-            // 
-            this.dgv_CardTypeManager_MonthsPrice.HeaderText = "价格（元）";
-            this.dgv_CardTypeManager_MonthsPrice.Name = "dgv_CardTypeManager_MonthsPrice";
-            this.dgv_CardTypeManager_MonthsPrice.Width = 113;
-            // 
-            // dgv_CardType_CardCount
-            // 
-            this.dgv_CardType_CardCount.HeaderText = "使用次数";
-            this.dgv_CardType_CardCount.Name = "dgv_CardType_CardCount";
-            this.dgv_CardType_CardCount.Width = 97;
-            // 
-            // dgv_CardTypeManager_Months
-            // 
-            this.dgv_CardTypeManager_Months.HeaderText = "有效期（月）";
-            this.dgv_CardTypeManager_Months.Name = "dgv_CardTypeManager_Months";
-            this.dgv_CardTypeManager_Months.Width = 129;
-            // 
-            // dgv_CardTypeManager_DayPrice
-            // 
-            this.dgv_CardTypeManager_DayPrice.HeaderText = "单日价格（元）";
-            this.dgv_CardTypeManager_DayPrice.Name = "dgv_CardTypeManager_DayPrice";
-            this.dgv_CardTypeManager_DayPrice.Width = 145;
-            // 
-            // dgv_CardTypeManager_DateTime
-            // 
-            this.dgv_CardTypeManager_DateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_CardTypeManager_DateTime.HeaderText = "日期";
-            this.dgv_CardTypeManager_DateTime.Name = "dgv_CardTypeManager_DateTime";
-            // 
-            // btn_Update_CardTypeManager
-            // 
-            this.btn_Update_CardTypeManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Update_CardTypeManager.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Update_CardTypeManager.Location = new System.Drawing.Point(721, 11);
-            this.btn_Update_CardTypeManager.Name = "btn_Update_CardTypeManager";
-            this.btn_Update_CardTypeManager.Size = new System.Drawing.Size(91, 32);
-            this.btn_Update_CardTypeManager.TabIndex = 235;
-            this.btn_Update_CardTypeManager.Text = "修改";
-            this.btn_Update_CardTypeManager.UseVisualStyleBackColor = true;
-            this.btn_Update_CardTypeManager.Click += new System.EventHandler(this.btn_Update_CardTypeManager_Click);
-            // 
-            // tp_SystemLog
-            // 
-            this.tp_SystemLog.Controls.Add(this.panel6);
-            this.tp_SystemLog.Location = new System.Drawing.Point(4, 24);
-            this.tp_SystemLog.Name = "tp_SystemLog";
-            this.tp_SystemLog.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_SystemLog.Size = new System.Drawing.Size(820, 621);
-            this.tp_SystemLog.TabIndex = 6;
-            this.tp_SystemLog.Text = "系统日志";
-            this.tp_SystemLog.UseVisualStyleBackColor = true;
-            this.tp_SystemLog.Click += new System.EventHandler(this.tp_SystemLog_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(0, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(843, 621);
-            this.panel6.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel7.Controls.Add(this.uC_Page_SystemLog);
-            this.panel7.Controls.Add(this.cb_SystemLog);
-            this.panel7.Controls.Add(this.btn_SystemLogManager_Select);
-            this.panel7.Controls.Add(this.dt_SystemLogManager_StopTime);
-            this.panel7.Controls.Add(this.dt_SystemLogManager_BeginTime);
-            this.panel7.Controls.Add(this.labBeginTime);
-            this.panel7.Controls.Add(this.labEndTime);
-            this.panel7.Controls.Add(this.btn_SystemLogManager_Delete);
-            this.panel7.Controls.Add(this.button6);
-            this.panel7.Controls.Add(this.cmb_SystemLogManager_State);
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.txt_SystemLogManager_UserName);
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.dgv_SystemLogManager);
-            this.panel7.Controls.Add(this.button1);
-            this.panel7.Location = new System.Drawing.Point(-3, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(823, 622);
-            this.panel7.TabIndex = 2;
-            // 
-            // uC_Page_SystemLog
-            // 
-            this.uC_Page_SystemLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_SystemLog.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemLog.Location = new System.Drawing.Point(218, 593);
-            this.uC_Page_SystemLog.Name = "uC_Page_SystemLog";
-            this.uC_Page_SystemLog.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_SystemLog.TabIndex = 243;
-            // 
-            // cb_SystemLog
-            // 
-            this.cb_SystemLog.AutoSize = true;
-            this.cb_SystemLog.Location = new System.Drawing.Point(48, 106);
-            this.cb_SystemLog.Name = "cb_SystemLog";
-            this.cb_SystemLog.Size = new System.Drawing.Size(15, 14);
-            this.cb_SystemLog.TabIndex = 241;
-            this.cb_SystemLog.UseVisualStyleBackColor = true;
-            this.cb_SystemLog.CheckedChanged += new System.EventHandler(this.cb_SystemLog_CheckedChanged);
-            // 
-            // btn_SystemLogManager_Select
-            // 
-            this.btn_SystemLogManager_Select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SystemLogManager_Select.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemLogManager_Select.Location = new System.Drawing.Point(630, 58);
-            this.btn_SystemLogManager_Select.Name = "btn_SystemLogManager_Select";
-            this.btn_SystemLogManager_Select.Size = new System.Drawing.Size(91, 32);
-            this.btn_SystemLogManager_Select.TabIndex = 232;
-            this.btn_SystemLogManager_Select.Text = "查询";
-            this.btn_SystemLogManager_Select.UseVisualStyleBackColor = true;
-            this.btn_SystemLogManager_Select.Click += new System.EventHandler(this.btn_SystemLogManager_Select_Click);
-            // 
-            // dt_SystemLogManager_StopTime
-            // 
-            this.dt_SystemLogManager_StopTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dt_SystemLogManager_StopTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dt_SystemLogManager_StopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_SystemLogManager_StopTime.Location = new System.Drawing.Point(655, 19);
-            this.dt_SystemLogManager_StopTime.Name = "dt_SystemLogManager_StopTime";
-            this.dt_SystemLogManager_StopTime.Size = new System.Drawing.Size(172, 26);
-            this.dt_SystemLogManager_StopTime.TabIndex = 239;
-            // 
-            // dt_SystemLogManager_BeginTime
-            // 
-            this.dt_SystemLogManager_BeginTime.CustomFormat = "yyy-MM-dd HH:mm:ss";
-            this.dt_SystemLogManager_BeginTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.dt_SystemLogManager_BeginTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_SystemLogManager_BeginTime.Location = new System.Drawing.Point(380, 21);
-            this.dt_SystemLogManager_BeginTime.Name = "dt_SystemLogManager_BeginTime";
-            this.dt_SystemLogManager_BeginTime.Size = new System.Drawing.Size(172, 26);
-            this.dt_SystemLogManager_BeginTime.TabIndex = 238;
-            // 
-            // labBeginTime
-            // 
-            this.labBeginTime.AutoSize = true;
-            this.labBeginTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.labBeginTime.Location = new System.Drawing.Point(302, 29);
-            this.labBeginTime.Name = "labBeginTime";
-            this.labBeginTime.Size = new System.Drawing.Size(72, 16);
-            this.labBeginTime.TabIndex = 236;
-            this.labBeginTime.Text = "开始时间";
-            // 
-            // labEndTime
-            // 
-            this.labEndTime.AutoSize = true;
-            this.labEndTime.Font = new System.Drawing.Font("宋体", 12F);
-            this.labEndTime.Location = new System.Drawing.Point(577, 29);
-            this.labEndTime.Name = "labEndTime";
-            this.labEndTime.Size = new System.Drawing.Size(72, 16);
-            this.labEndTime.TabIndex = 237;
-            this.labEndTime.Text = "结束时间";
-            // 
-            // btn_SystemLogManager_Delete
-            // 
-            this.btn_SystemLogManager_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SystemLogManager_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemLogManager_Delete.Location = new System.Drawing.Point(726, 58);
-            this.btn_SystemLogManager_Delete.Name = "btn_SystemLogManager_Delete";
-            this.btn_SystemLogManager_Delete.Size = new System.Drawing.Size(91, 32);
-            this.btn_SystemLogManager_Delete.TabIndex = 234;
-            this.btn_SystemLogManager_Delete.Text = "删除";
-            this.btn_SystemLogManager_Delete.UseVisualStyleBackColor = true;
-            this.btn_SystemLogManager_Delete.Click += new System.EventHandler(this.btn_SystemLogManager_Delete_Click);
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Font = new System.Drawing.Font("宋体", 12F);
-            this.button6.Location = new System.Drawing.Point(532, 58);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(91, 32);
-            this.button6.TabIndex = 233;
-            this.button6.Text = "添加";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // cmb_SystemLogManager_State
-            // 
-            this.cmb_SystemLogManager_State.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_SystemLogManager_State.FormattingEnabled = true;
-            this.cmb_SystemLogManager_State.Items.AddRange(new object[] {
-            "全部",
-            "登录",
-            "浏览",
-            "添加",
-            "删除",
-            "修改"});
-            this.cmb_SystemLogManager_State.Location = new System.Drawing.Point(205, 21);
-            this.cmb_SystemLogManager_State.Name = "cmb_SystemLogManager_State";
-            this.cmb_SystemLogManager_State.Size = new System.Drawing.Size(71, 24);
-            this.cmb_SystemLogManager_State.TabIndex = 229;
-            this.cmb_SystemLogManager_State.Text = "全部";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 12F);
-            this.label6.Location = new System.Drawing.Point(167, 27);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 16);
-            this.label6.TabIndex = 228;
-            this.label6.Text = "类型";
-            // 
-            // txt_SystemLogManager_UserName
-            // 
-            this.txt_SystemLogManager_UserName.Font = new System.Drawing.Font("宋体", 12F);
-            this.txt_SystemLogManager_UserName.Location = new System.Drawing.Point(61, 19);
-            this.txt_SystemLogManager_UserName.Name = "txt_SystemLogManager_UserName";
-            this.txt_SystemLogManager_UserName.Size = new System.Drawing.Size(100, 26);
-            this.txt_SystemLogManager_UserName.TabIndex = 227;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("宋体", 12F);
-            this.label7.Location = new System.Drawing.Point(8, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 16);
-            this.label7.TabIndex = 226;
-            this.label7.Text = "用户名";
-            // 
-            // dgv_SystemLogManager
-            // 
-            this.dgv_SystemLogManager.AllowUserToAddRows = false;
-            this.dgv_SystemLogManager.AllowUserToResizeRows = false;
-            this.dgv_SystemLogManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_SystemLogManager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_SystemLogManager.ColumnHeadersHeight = 25;
-            this.dgv_SystemLogManager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cbox,
-            this.dgv_SystemLog_LoginID,
-            this.dgv_SystemLog_ID,
-            this.dgv_SystemLog_UserID,
-            this.dgv_SystemLog_UserName,
-            this.dgv_SystemLog_RealName,
-            this.dgv_SystemLog_LoginIP,
-            this.dgv_SystemLog_LoginAddress,
-            this.dgv_SystemLog_Type,
-            this.dgv_SystemLog_DateTime,
-            this.dgv_SystemLog_Cont});
-            this.dgv_SystemLogManager.Location = new System.Drawing.Point(3, 100);
-            this.dgv_SystemLogManager.Name = "dgv_SystemLogManager";
-            this.dgv_SystemLogManager.RowHeadersVisible = false;
-            this.dgv_SystemLogManager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_SystemLogManager.RowTemplate.Height = 23;
-            this.dgv_SystemLogManager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_SystemLogManager.Size = new System.Drawing.Size(817, 489);
-            this.dgv_SystemLogManager.TabIndex = 215;
-            // 
-            // cbox
-            // 
-            this.cbox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.cbox.FillWeight = 1F;
-            this.cbox.Frozen = true;
-            this.cbox.HeaderText = "选择";
-            this.cbox.MinimumWidth = 60;
-            this.cbox.Name = "cbox";
-            this.cbox.Width = 60;
-            // 
-            // dgv_SystemLog_LoginID
-            // 
-            this.dgv_SystemLog_LoginID.HeaderText = "SystemLog_LoginID";
-            this.dgv_SystemLog_LoginID.Name = "dgv_SystemLog_LoginID";
-            this.dgv_SystemLog_LoginID.Visible = false;
-            // 
-            // dgv_SystemLog_ID
-            // 
-            this.dgv_SystemLog_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_SystemLog_ID.FillWeight = 28.73418F;
-            this.dgv_SystemLog_ID.Frozen = true;
-            this.dgv_SystemLog_ID.HeaderText = "序号";
-            this.dgv_SystemLog_ID.MinimumWidth = 50;
-            this.dgv_SystemLog_ID.Name = "dgv_SystemLog_ID";
-            this.dgv_SystemLog_ID.Width = 52;
-            // 
-            // dgv_SystemLog_UserID
-            // 
-            this.dgv_SystemLog_UserID.DataPropertyName = "UserID";
-            this.dgv_SystemLog_UserID.HeaderText = "UserID";
-            this.dgv_SystemLog_UserID.Name = "dgv_SystemLog_UserID";
-            this.dgv_SystemLog_UserID.Visible = false;
-            // 
-            // dgv_SystemLog_UserName
-            // 
-            this.dgv_SystemLog_UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_SystemLog_UserName.FillWeight = 57.46837F;
-            this.dgv_SystemLog_UserName.Frozen = true;
-            this.dgv_SystemLog_UserName.HeaderText = "用户名";
-            this.dgv_SystemLog_UserName.Name = "dgv_SystemLog_UserName";
-            this.dgv_SystemLog_UserName.Width = 104;
-            // 
-            // dgv_SystemLog_RealName
-            // 
-            this.dgv_SystemLog_RealName.FillWeight = 57.46837F;
-            this.dgv_SystemLog_RealName.HeaderText = "真实姓名";
-            this.dgv_SystemLog_RealName.Name = "dgv_SystemLog_RealName";
-            // 
-            // dgv_SystemLog_LoginIP
-            // 
-            this.dgv_SystemLog_LoginIP.FillWeight = 57.46837F;
-            this.dgv_SystemLog_LoginIP.HeaderText = "登录IP";
-            this.dgv_SystemLog_LoginIP.Name = "dgv_SystemLog_LoginIP";
-            // 
-            // dgv_SystemLog_LoginAddress
-            // 
-            this.dgv_SystemLog_LoginAddress.FillWeight = 57.46837F;
-            this.dgv_SystemLog_LoginAddress.HeaderText = "登录地址";
-            this.dgv_SystemLog_LoginAddress.Name = "dgv_SystemLog_LoginAddress";
-            // 
-            // dgv_SystemLog_Type
-            // 
-            this.dgv_SystemLog_Type.FillWeight = 57.46837F;
-            this.dgv_SystemLog_Type.HeaderText = "类型";
-            this.dgv_SystemLog_Type.Name = "dgv_SystemLog_Type";
-            // 
-            // dgv_SystemLog_DateTime
-            // 
-            this.dgv_SystemLog_DateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dgv_SystemLog_DateTime.FillWeight = 57.46837F;
-            this.dgv_SystemLog_DateTime.HeaderText = "时间";
-            this.dgv_SystemLog_DateTime.Name = "dgv_SystemLog_DateTime";
-            this.dgv_SystemLog_DateTime.Width = 65;
-            // 
-            // dgv_SystemLog_Cont
-            // 
-            this.dgv_SystemLog_Cont.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgv_SystemLog_Cont.FillWeight = 57.46837F;
-            this.dgv_SystemLog_Cont.HeaderText = "内容";
-            this.dgv_SystemLog_Cont.Name = "dgv_SystemLog_Cont";
-            this.dgv_SystemLog_Cont.Width = 65;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("宋体", 12F);
-            this.button1.Location = new System.Drawing.Point(726, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 32);
-            this.button1.TabIndex = 235;
-            this.button1.Text = "修改";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            // 
-            // tp_SystemCunsumeType
-            // 
-            this.tp_SystemCunsumeType.Controls.Add(this.panel16);
-            this.tp_SystemCunsumeType.Location = new System.Drawing.Point(4, 24);
-            this.tp_SystemCunsumeType.Name = "tp_SystemCunsumeType";
-            this.tp_SystemCunsumeType.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_SystemCunsumeType.Size = new System.Drawing.Size(820, 621);
-            this.tp_SystemCunsumeType.TabIndex = 8;
-            this.tp_SystemCunsumeType.Text = "消费类型";
-            this.tp_SystemCunsumeType.UseVisualStyleBackColor = true;
-            // 
-            // panel16
-            // 
-            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel16.Controls.Add(this.uC_Page_SystemCunsumeType);
-            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Delete);
-            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Add);
-            this.panel16.Controls.Add(this.dgv_SystemCunsumeType_Manager);
-            this.panel16.Controls.Add(this.btn_SystemCunsumeType_Update);
-            this.panel16.Location = new System.Drawing.Point(-5, 1);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(828, 619);
-            this.panel16.TabIndex = 5;
-            // 
-            // uC_Page_SystemCunsumeType
-            // 
-            this.uC_Page_SystemCunsumeType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_Page_SystemCunsumeType.BackColor = System.Drawing.Color.Transparent;
-            this.uC_Page_SystemCunsumeType.Location = new System.Drawing.Point(226, 590);
-            this.uC_Page_SystemCunsumeType.Name = "uC_Page_SystemCunsumeType";
-            this.uC_Page_SystemCunsumeType.Size = new System.Drawing.Size(593, 24);
-            this.uC_Page_SystemCunsumeType.TabIndex = 246;
-            // 
-            // btn_SystemCunsumeType_Delete
-            // 
-            this.btn_SystemCunsumeType_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SystemCunsumeType_Delete.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemCunsumeType_Delete.Location = new System.Drawing.Point(627, 11);
-            this.btn_SystemCunsumeType_Delete.Name = "btn_SystemCunsumeType_Delete";
-            this.btn_SystemCunsumeType_Delete.Size = new System.Drawing.Size(91, 32);
-            this.btn_SystemCunsumeType_Delete.TabIndex = 234;
-            this.btn_SystemCunsumeType_Delete.Text = "删除";
-            this.btn_SystemCunsumeType_Delete.UseVisualStyleBackColor = true;
-            this.btn_SystemCunsumeType_Delete.Click += new System.EventHandler(this.btn_SystemCunsumeType_Delete_Click);
-            // 
-            // btn_SystemCunsumeType_Add
-            // 
-            this.btn_SystemCunsumeType_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SystemCunsumeType_Add.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemCunsumeType_Add.Location = new System.Drawing.Point(528, 11);
-            this.btn_SystemCunsumeType_Add.Name = "btn_SystemCunsumeType_Add";
-            this.btn_SystemCunsumeType_Add.Size = new System.Drawing.Size(91, 32);
-            this.btn_SystemCunsumeType_Add.TabIndex = 233;
-            this.btn_SystemCunsumeType_Add.Text = "添加";
-            this.btn_SystemCunsumeType_Add.UseVisualStyleBackColor = true;
-            this.btn_SystemCunsumeType_Add.Click += new System.EventHandler(this.btn_SystemCunsumeType_Add_Click);
-            // 
-            // dgv_SystemCunsumeType_Manager
-            // 
-            this.dgv_SystemCunsumeType_Manager.AllowUserToAddRows = false;
-            this.dgv_SystemCunsumeType_Manager.AllowUserToResizeRows = false;
-            this.dgv_SystemCunsumeType_Manager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_SystemCunsumeType_Manager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgv_SystemCunsumeType_Manager.ColumnHeadersHeight = 25;
-            this.dgv_SystemCunsumeType_Manager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_SystemCunsumeType_Id,
-            this.dgv_SystemCunsumeType_Num,
-            this.dgv_SystemCunsumeType_Name,
-            this.dgv_SystemCunsumeType_Price,
-            this.dgv_SystemCunsumeType_AddTime});
-            this.dgv_SystemCunsumeType_Manager.Location = new System.Drawing.Point(3, 49);
-            this.dgv_SystemCunsumeType_Manager.Name = "dgv_SystemCunsumeType_Manager";
-            this.dgv_SystemCunsumeType_Manager.RowHeadersVisible = false;
-            this.dgv_SystemCunsumeType_Manager.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_SystemCunsumeType_Manager.RowTemplate.Height = 23;
-            this.dgv_SystemCunsumeType_Manager.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_SystemCunsumeType_Manager.Size = new System.Drawing.Size(821, 537);
-            this.dgv_SystemCunsumeType_Manager.TabIndex = 215;
-            // 
-            // dgv_SystemCunsumeType_Id
-            // 
-            this.dgv_SystemCunsumeType_Id.Frozen = true;
-            this.dgv_SystemCunsumeType_Id.HeaderText = "Id";
-            this.dgv_SystemCunsumeType_Id.Name = "dgv_SystemCunsumeType_Id";
-            this.dgv_SystemCunsumeType_Id.Visible = false;
-            this.dgv_SystemCunsumeType_Id.Width = 42;
-            // 
-            // dgv_SystemCunsumeType_Num
-            // 
-            this.dgv_SystemCunsumeType_Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_SystemCunsumeType_Num.FillWeight = 50F;
-            this.dgv_SystemCunsumeType_Num.Frozen = true;
-            this.dgv_SystemCunsumeType_Num.HeaderText = "序号";
-            this.dgv_SystemCunsumeType_Num.MinimumWidth = 50;
-            this.dgv_SystemCunsumeType_Num.Name = "dgv_SystemCunsumeType_Num";
-            this.dgv_SystemCunsumeType_Num.Width = 70;
-            // 
-            // dgv_SystemCunsumeType_Name
-            // 
-            this.dgv_SystemCunsumeType_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgv_SystemCunsumeType_Name.Frozen = true;
-            this.dgv_SystemCunsumeType_Name.HeaderText = "名称";
-            this.dgv_SystemCunsumeType_Name.Name = "dgv_SystemCunsumeType_Name";
-            this.dgv_SystemCunsumeType_Name.Width = 141;
-            // 
-            // dgv_SystemCunsumeType_Price
-            // 
-            this.dgv_SystemCunsumeType_Price.HeaderText = "价格（元）";
-            this.dgv_SystemCunsumeType_Price.Name = "dgv_SystemCunsumeType_Price";
-            this.dgv_SystemCunsumeType_Price.Width = 113;
-            // 
-            // dgv_SystemCunsumeType_AddTime
-            // 
-            this.dgv_SystemCunsumeType_AddTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgv_SystemCunsumeType_AddTime.HeaderText = "日期";
-            this.dgv_SystemCunsumeType_AddTime.Name = "dgv_SystemCunsumeType_AddTime";
-            // 
-            // btn_SystemCunsumeType_Update
-            // 
-            this.btn_SystemCunsumeType_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SystemCunsumeType_Update.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_SystemCunsumeType_Update.Location = new System.Drawing.Point(728, 11);
-            this.btn_SystemCunsumeType_Update.Name = "btn_SystemCunsumeType_Update";
-            this.btn_SystemCunsumeType_Update.Size = new System.Drawing.Size(91, 32);
-            this.btn_SystemCunsumeType_Update.TabIndex = 235;
-            this.btn_SystemCunsumeType_Update.Text = "修改";
-            this.btn_SystemCunsumeType_Update.UseVisualStyleBackColor = true;
-            this.btn_SystemCunsumeType_Update.Click += new System.EventHandler(this.btn_SystemCunsumeType_Update_Click);
-            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -4021,217 +4233,6 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDown);
             // 
-            // tp_System_SystemSet
-            // 
-            this.tp_System_SystemSet.Controls.Add(this.panel18);
-            this.tp_System_SystemSet.Location = new System.Drawing.Point(4, 24);
-            this.tp_System_SystemSet.Name = "tp_System_SystemSet";
-            this.tp_System_SystemSet.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_System_SystemSet.Size = new System.Drawing.Size(820, 621);
-            this.tp_System_SystemSet.TabIndex = 9;
-            this.tp_System_SystemSet.Text = "参数设置";
-            this.tp_System_SystemSet.UseVisualStyleBackColor = true;
-            // 
-            // panel18
-            // 
-            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel18.Controls.Add(this.tableLayoutPanel1);
-            this.panel18.Location = new System.Drawing.Point(-4, 1);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(828, 619);
-            this.panel18.TabIndex = 6;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(819, 617);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 302);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "打印设置";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.btn_Print_OK, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Size, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.txt_Print_End, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Phone, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Address, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label33, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label32, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.cmb_Printer, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label34, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label35, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label36, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label37, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.txt_Print_Title, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 19);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 7;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.3037F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30369F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.17782F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(391, 280);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label32.AutoSize = true;
-            this.label32.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label32.Location = new System.Drawing.Point(6, 12);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(88, 16);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "默认打印机";
-            // 
-            // cmb_Printer
-            // 
-            this.cmb_Printer.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cmb_Printer.Font = new System.Drawing.Font("宋体", 12F);
-            this.cmb_Printer.FormattingEnabled = true;
-            this.cmb_Printer.Location = new System.Drawing.Point(100, 10);
-            this.cmb_Printer.Name = "cmb_Printer";
-            this.cmb_Printer.Size = new System.Drawing.Size(288, 24);
-            this.cmb_Printer.TabIndex = 1;
-            // 
-            // label33
-            // 
-            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label33.AutoSize = true;
-            this.label33.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label33.Location = new System.Drawing.Point(54, 52);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(40, 16);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "标题";
-            // 
-            // label34
-            // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label34.AutoSize = true;
-            this.label34.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label34.Location = new System.Drawing.Point(54, 92);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(40, 16);
-            this.label34.TabIndex = 3;
-            this.label34.Text = "地址";
-            // 
-            // label35
-            // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label35.AutoSize = true;
-            this.label35.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label35.Location = new System.Drawing.Point(54, 132);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(40, 16);
-            this.label35.TabIndex = 4;
-            this.label35.Text = "电话";
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label36.AutoSize = true;
-            this.label36.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label36.Location = new System.Drawing.Point(38, 172);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(56, 16);
-            this.label36.TabIndex = 5;
-            this.label36.Text = "结束语";
-            // 
-            // label37
-            // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label37.AutoSize = true;
-            this.label37.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label37.Location = new System.Drawing.Point(22, 212);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(72, 16);
-            this.label37.TabIndex = 6;
-            this.label37.Text = "字体大小";
-            // 
-            // txt_Print_Title
-            // 
-            this.txt_Print_Title.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Print_Title.Location = new System.Drawing.Point(100, 47);
-            this.txt_Print_Title.Name = "txt_Print_Title";
-            this.txt_Print_Title.Size = new System.Drawing.Size(288, 26);
-            this.txt_Print_Title.TabIndex = 7;
-            // 
-            // txt_Print_Address
-            // 
-            this.txt_Print_Address.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Print_Address.Location = new System.Drawing.Point(100, 87);
-            this.txt_Print_Address.Name = "txt_Print_Address";
-            this.txt_Print_Address.Size = new System.Drawing.Size(288, 26);
-            this.txt_Print_Address.TabIndex = 8;
-            // 
-            // txt_Print_Phone
-            // 
-            this.txt_Print_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Print_Phone.Location = new System.Drawing.Point(100, 127);
-            this.txt_Print_Phone.Name = "txt_Print_Phone";
-            this.txt_Print_Phone.Size = new System.Drawing.Size(288, 26);
-            this.txt_Print_Phone.TabIndex = 9;
-            // 
-            // txt_Print_End
-            // 
-            this.txt_Print_End.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Print_End.Location = new System.Drawing.Point(100, 167);
-            this.txt_Print_End.Name = "txt_Print_End";
-            this.txt_Print_End.Size = new System.Drawing.Size(288, 26);
-            this.txt_Print_End.TabIndex = 10;
-            // 
-            // txt_Print_Size
-            // 
-            this.txt_Print_Size.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Print_Size.Location = new System.Drawing.Point(100, 207);
-            this.txt_Print_Size.Name = "txt_Print_Size";
-            this.txt_Print_Size.Size = new System.Drawing.Size(288, 26);
-            this.txt_Print_Size.TabIndex = 11;
-            // 
-            // btn_Print_OK
-            // 
-            this.btn_Print_OK.Font = new System.Drawing.Font("宋体", 12F);
-            this.btn_Print_OK.Location = new System.Drawing.Point(100, 243);
-            this.btn_Print_OK.Name = "btn_Print_OK";
-            this.btn_Print_OK.Size = new System.Drawing.Size(216, 34);
-            this.btn_Print_OK.TabIndex = 12;
-            this.btn_Print_OK.Text = "确认";
-            this.btn_Print_OK.UseVisualStyleBackColor = true;
-            this.btn_Print_OK.Click += new System.EventHandler(this.btn_Print_OK_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -4250,6 +4251,31 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tlp_Main.ResumeLayout(false);
             this.pl_Mind.ResumeLayout(false);
+            this.tabc_SystemManager.ResumeLayout(false);
+            this.tp_UserManager.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UserManager)).EndInit();
+            this.tp_RoleManager.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_RoleManager)).EndInit();
+            this.tp_CardTypeManager.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CardTypeManager)).EndInit();
+            this.tp_SystemLog.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemLogManager)).EndInit();
+            this.tp_SystemCunsumeType.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemCunsumeType_Manager)).EndInit();
+            this.tp_System_SystemSet.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.tbc_Statistics.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -4283,25 +4309,6 @@
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Mian_Site_Manager)).EndInit();
-            this.tabc_SystemManager.ResumeLayout(false);
-            this.tp_UserManager.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UserManager)).EndInit();
-            this.tp_RoleManager.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_RoleManager)).EndInit();
-            this.tp_CardTypeManager.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_CardTypeManager)).EndInit();
-            this.tp_SystemLog.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemLogManager)).EndInit();
-            this.tp_SystemCunsumeType.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_SystemCunsumeType_Manager)).EndInit();
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -4309,12 +4316,6 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tp_System_SystemSet.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
